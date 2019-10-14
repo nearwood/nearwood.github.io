@@ -1,0 +1,754 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Nick</title>
+    <link>https://blog.nearwood.net/tags/</link>
+    <description>Recent content in Tags on Nick</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© 2019 Nicholas Earwood</copyright>
+    <lastBuildDate>Sat, 17 Feb 2018 19:45:25 +0000</lastBuildDate>
+    
+	<atom:link href="https://blog.nearwood.net/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>browser</title>
+      <link>https://blog.nearwood.net/tags/browser/</link>
+      <pubDate>Sat, 17 Feb 2018 19:45:25 +0000</pubDate>
+      
+      <guid>https://blog.nearwood.net/tags/browser/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>chrome</title>
+      <link>https://blog.nearwood.net/tags/chrome/</link>
+      <pubDate>Sat, 17 Feb 2018 19:45:25 +0000</pubDate>
+      
+      <guid>https://blog.nearwood.net/tags/chrome/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>firefox</title>
+      <link>https://blog.nearwood.net/tags/firefox/</link>
+      <pubDate>Sat, 17 Feb 2018 19:45:25 +0000</pubDate>
+      
+      <guid>https://blog.nearwood.net/tags/firefox/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>bitcoin</title>
+      <link>https://blog.nearwood.net/tags/bitcoin/</link>
+      <pubDate>Fri, 12 Jan 2018 02:13:38 +0000</pubDate>
+      
+      <guid>https://blog.nearwood.net/tags/bitcoin/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>cryptocurrency</title>
+      <link>https://blog.nearwood.net/tags/cryptocurrency/</link>
+      <pubDate>Fri, 12 Jan 2018 02:13:38 +0000</pubDate>
+      
+      <guid>https://blog.nearwood.net/tags/cryptocurrency/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>android</title>
+      <link>https://blog.nearwood.net/tags/android/</link>
+      <pubDate>Sat, 28 Oct 2017 03:06:49 +0000</pubDate>
+      
+      <guid>https://blog.nearwood.net/tags/android/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>firwmare</title>
+      <link>https://blog.nearwood.net/tags/firwmare/</link>
+      <pubDate>Sat, 28 Oct 2017 03:06:49 +0000</pubDate>
+      
+      <guid>https://blog.nearwood.net/tags/firwmare/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>reverse engineering</title>
+      <link>https://blog.nearwood.net/tags/reverse-engineering/</link>
+      <pubDate>Sat, 28 Oct 2017 03:06:49 +0000</pubDate>
+      
+      <guid>https://blog.nearwood.net/tags/reverse-engineering/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>dmcrypt</title>
+      <link>https://blog.nearwood.net/tags/dmcrypt/</link>
+      <pubDate>Mon, 25 Sep 2017 00:27:40 +0000</pubDate>
+      
+      <guid>https://blog.nearwood.net/tags/dmcrypt/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Linux</title>
+      <link>https://blog.nearwood.net/tags/linux/</link>
+      <pubDate>Mon, 25 Sep 2017 00:27:40 +0000</pubDate>
+      
+      <guid>https://blog.nearwood.net/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>mdadm</title>
+      <link>https://blog.nearwood.net/tags/mdadm/</link>
+      <pubDate>Mon, 25 Sep 2017 00:27:40 +0000</pubDate>
+      
+      <guid>https://blog.nearwood.net/tags/mdadm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>raid</title>
+      <link>https://blog.nearwood.net/tags/raid/</link>
+      <pubDate>Mon, 25 Sep 2017 00:27:40 +0000</pubDate>
+      
+      <guid>https://blog.nearwood.net/tags/raid/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Background</title>
+      <link>https://blog.nearwood.net/tags/background/</link>
+      <pubDate>Sun, 04 Jun 2017 15:20:43 +0000</pubDate>
+      
+      <guid>https://blog.nearwood.net/tags/background/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Desktop</title>
+      <link>https://blog.nearwood.net/tags/desktop/</link>
+      <pubDate>Sun, 04 Jun 2017 15:20:43 +0000</pubDate>
+      
+      <guid>https://blog.nearwood.net/tags/desktop/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>PowerShell</title>
+      <link>https://blog.nearwood.net/tags/powershell/</link>
+      <pubDate>Sun, 04 Jun 2017 15:20:43 +0000</pubDate>
+      
+      <guid>https://blog.nearwood.net/tags/powershell/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>c</title>
+      <link>https://blog.nearwood.net/tags/c/</link>
+      <pubDate>Wed, 15 Mar 2017 17:30:13 +0000</pubDate>
+      
+      <guid>https://blog.nearwood.net/tags/c/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Win32</title>
+      <link>https://blog.nearwood.net/tags/win32/</link>
+      <pubDate>Wed, 15 Mar 2017 17:30:13 +0000</pubDate>
+      
+      <guid>https://blog.nearwood.net/tags/win32/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>280Z</title>
+      <link>https://blog.nearwood.net/tags/280z/</link>
+      <pubDate>Wed, 12 Oct 2016 17:21:44 +0000</pubDate>
+      
+      <guid>https://blog.nearwood.net/tags/280z/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>archlinux</title>
+      <link>https://blog.nearwood.net/tags/archlinux/</link>
+      <pubDate>Sat, 21 May 2016 22:06:00 +0000</pubDate>
+      
+      <guid>https://blog.nearwood.net/tags/archlinux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>drd</title>
+      <link>https://blog.nearwood.net/tags/drd/</link>
+      <pubDate>Sat, 21 May 2016 22:06:00 +0000</pubDate>
+      
+      <guid>https://blog.nearwood.net/tags/drd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>raspberry pi</title>
+      <link>https://blog.nearwood.net/tags/raspberry-pi/</link>
+      <pubDate>Sat, 21 May 2016 22:06:00 +0000</pubDate>
+      
+      <guid>https://blog.nearwood.net/tags/raspberry-pi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Gentoo</title>
+      <link>https://blog.nearwood.net/tags/gentoo/</link>
+      <pubDate>Thu, 21 Apr 2016 22:07:09 +0000</pubDate>
+      
+      <guid>https://blog.nearwood.net/tags/gentoo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tesla</title>
+      <link>https://blog.nearwood.net/tags/tesla/</link>
+      <pubDate>Thu, 21 Apr 2016 22:07:09 +0000</pubDate>
+      
+      <guid>https://blog.nearwood.net/tags/tesla/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>dcs</title>
+      <link>https://blog.nearwood.net/tags/dcs/</link>
+      <pubDate>Sat, 16 Jan 2016 03:44:07 +0000</pubDate>
+      
+      <guid>https://blog.nearwood.net/tags/dcs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>flightsim</title>
+      <link>https://blog.nearwood.net/tags/flightsim/</link>
+      <pubDate>Sat, 16 Jan 2016 03:44:07 +0000</pubDate>
+      
+      <guid>https://blog.nearwood.net/tags/flightsim/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>autocross</title>
+      <link>https://blog.nearwood.net/tags/autocross/</link>
+      <pubDate>Wed, 21 Oct 2015 02:59:35 +0000</pubDate>
+      
+      <guid>https://blog.nearwood.net/tags/autocross/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>msqur</title>
+      <link>https://blog.nearwood.net/tags/msqur/</link>
+      <pubDate>Wed, 30 Sep 2015 00:31:51 +0000</pubDate>
+      
+      <guid>https://blog.nearwood.net/tags/msqur/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>fps</title>
+      <link>https://blog.nearwood.net/tags/fps/</link>
+      <pubDate>Sun, 02 Aug 2015 23:25:29 +0000</pubDate>
+      
+      <guid>https://blog.nearwood.net/tags/fps/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>video</title>
+      <link>https://blog.nearwood.net/tags/video/</link>
+      <pubDate>Sun, 02 Aug 2015 23:25:29 +0000</pubDate>
+      
+      <guid>https://blog.nearwood.net/tags/video/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>gaming</title>
+      <link>https://blog.nearwood.net/tags/gaming/</link>
+      <pubDate>Fri, 12 Jun 2015 00:59:51 +0000</pubDate>
+      
+      <guid>https://blog.nearwood.net/tags/gaming/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hmd</title>
+      <link>https://blog.nearwood.net/tags/hmd/</link>
+      <pubDate>Fri, 12 Jun 2015 00:59:51 +0000</pubDate>
+      
+      <guid>https://blog.nearwood.net/tags/hmd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>oculus rift</title>
+      <link>https://blog.nearwood.net/tags/oculus-rift/</link>
+      <pubDate>Fri, 12 Jun 2015 00:59:51 +0000</pubDate>
+      
+      <guid>https://blog.nearwood.net/tags/oculus-rift/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>trailer</title>
+      <link>https://blog.nearwood.net/tags/trailer/</link>
+      <pubDate>Sat, 02 May 2015 16:00:58 +0000</pubDate>
+      
+      <guid>https://blog.nearwood.net/tags/trailer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>action camera</title>
+      <link>https://blog.nearwood.net/tags/action-camera/</link>
+      <pubDate>Fri, 10 Apr 2015 02:51:49 +0000</pubDate>
+      
+      <guid>https://blog.nearwood.net/tags/action-camera/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>gopro</title>
+      <link>https://blog.nearwood.net/tags/gopro/</link>
+      <pubDate>Fri, 10 Apr 2015 02:51:49 +0000</pubDate>
+      
+      <guid>https://blog.nearwood.net/tags/gopro/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>megasquirt</title>
+      <link>https://blog.nearwood.net/tags/megasquirt/</link>
+      <pubDate>Sun, 08 Mar 2015 17:31:21 +0000</pubDate>
+      
+      <guid>https://blog.nearwood.net/tags/megasquirt/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tuning</title>
+      <link>https://blog.nearwood.net/tags/tuning/</link>
+      <pubDate>Sun, 08 Mar 2015 17:31:21 +0000</pubDate>
+      
+      <guid>https://blog.nearwood.net/tags/tuning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>programming</title>
+      <link>https://blog.nearwood.net/tags/programming/</link>
+      <pubDate>Mon, 16 Feb 2015 21:27:29 +0000</pubDate>
+      
+      <guid>https://blog.nearwood.net/tags/programming/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>welding</title>
+      <link>https://blog.nearwood.net/tags/welding/</link>
+      <pubDate>Mon, 19 Jan 2015 17:01:39 +0000</pubDate>
+      
+      <guid>https://blog.nearwood.net/tags/welding/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ECU</title>
+      <link>https://blog.nearwood.net/tags/ecu/</link>
+      <pubDate>Wed, 31 Dec 2014 01:39:42 +0000</pubDate>
+      
+      <guid>https://blog.nearwood.net/tags/ecu/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>msq</title>
+      <link>https://blog.nearwood.net/tags/msq/</link>
+      <pubDate>Wed, 31 Dec 2014 01:39:42 +0000</pubDate>
+      
+      <guid>https://blog.nearwood.net/tags/msq/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>dm-crypt</title>
+      <link>https://blog.nearwood.net/tags/dm-crypt/</link>
+      <pubDate>Sat, 06 Dec 2014 03:00:22 +0000</pubDate>
+      
+      <guid>https://blog.nearwood.net/tags/dm-crypt/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>encryption</title>
+      <link>https://blog.nearwood.net/tags/encryption/</link>
+      <pubDate>Sat, 06 Dec 2014 03:00:22 +0000</pubDate>
+      
+      <guid>https://blog.nearwood.net/tags/encryption/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>bcm2835</title>
+      <link>https://blog.nearwood.net/tags/bcm2835/</link>
+      <pubDate>Mon, 01 Dec 2014 02:26:47 +0000</pubDate>
+      
+      <guid>https://blog.nearwood.net/tags/bcm2835/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>cross compiling</title>
+      <link>https://blog.nearwood.net/tags/cross-compiling/</link>
+      <pubDate>Mon, 01 Dec 2014 02:26:47 +0000</pubDate>
+      
+      <guid>https://blog.nearwood.net/tags/cross-compiling/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>robot</title>
+      <link>https://blog.nearwood.net/tags/robot/</link>
+      <pubDate>Wed, 26 Nov 2014 04:01:23 +0000</pubDate>
+      
+      <guid>https://blog.nearwood.net/tags/robot/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>spam</title>
+      <link>https://blog.nearwood.net/tags/spam/</link>
+      <pubDate>Thu, 20 Nov 2014 18:22:33 +0000</pubDate>
+      
+      <guid>https://blog.nearwood.net/tags/spam/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>arduino</title>
+      <link>https://blog.nearwood.net/tags/arduino/</link>
+      <pubDate>Wed, 12 Nov 2014 02:04:43 +0000</pubDate>
+      
+      <guid>https://blog.nearwood.net/tags/arduino/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>galileo</title>
+      <link>https://blog.nearwood.net/tags/galileo/</link>
+      <pubDate>Wed, 12 Nov 2014 02:04:43 +0000</pubDate>
+      
+      <guid>https://blog.nearwood.net/tags/galileo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>canbus</title>
+      <link>https://blog.nearwood.net/tags/canbus/</link>
+      <pubDate>Sun, 09 Nov 2014 18:19:24 +0000</pubDate>
+      
+      <guid>https://blog.nearwood.net/tags/canbus/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>cars</title>
+      <link>https://blog.nearwood.net/tags/cars/</link>
+      <pubDate>Sun, 09 Nov 2014 18:19:24 +0000</pubDate>
+      
+      <guid>https://blog.nearwood.net/tags/cars/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>VG33</title>
+      <link>https://blog.nearwood.net/tags/vg33/</link>
+      <pubDate>Mon, 27 Oct 2014 02:01:31 +0000</pubDate>
+      
+      <guid>https://blog.nearwood.net/tags/vg33/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>LED</title>
+      <link>https://blog.nearwood.net/tags/led/</link>
+      <pubDate>Tue, 21 Oct 2014 23:08:25 +0000</pubDate>
+      
+      <guid>https://blog.nearwood.net/tags/led/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>backup</title>
+      <link>https://blog.nearwood.net/tags/backup/</link>
+      <pubDate>Tue, 09 Sep 2014 00:10:08 +0000</pubDate>
+      
+      <guid>https://blog.nearwood.net/tags/backup/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mac</title>
+      <link>https://blog.nearwood.net/tags/mac/</link>
+      <pubDate>Tue, 09 Sep 2014 00:10:08 +0000</pubDate>
+      
+      <guid>https://blog.nearwood.net/tags/mac/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>MacBook</title>
+      <link>https://blog.nearwood.net/tags/macbook/</link>
+      <pubDate>Tue, 09 Sep 2014 00:10:08 +0000</pubDate>
+      
+      <guid>https://blog.nearwood.net/tags/macbook/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>OS X</title>
+      <link>https://blog.nearwood.net/tags/os-x/</link>
+      <pubDate>Tue, 09 Sep 2014 00:10:08 +0000</pubDate>
+      
+      <guid>https://blog.nearwood.net/tags/os-x/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Windows</title>
+      <link>https://blog.nearwood.net/tags/windows/</link>
+      <pubDate>Tue, 09 Sep 2014 00:10:08 +0000</pubDate>
+      
+      <guid>https://blog.nearwood.net/tags/windows/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>automotive</title>
+      <link>https://blog.nearwood.net/tags/automotive/</link>
+      <pubDate>Tue, 29 Jul 2014 00:10:14 +0000</pubDate>
+      
+      <guid>https://blog.nearwood.net/tags/automotive/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>router</title>
+      <link>https://blog.nearwood.net/tags/router/</link>
+      <pubDate>Thu, 19 Jun 2014 02:09:16 +0000</pubDate>
+      
+      <guid>https://blog.nearwood.net/tags/router/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>wifi</title>
+      <link>https://blog.nearwood.net/tags/wifi/</link>
+      <pubDate>Thu, 19 Jun 2014 02:09:16 +0000</pubDate>
+      
+      <guid>https://blog.nearwood.net/tags/wifi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>wireless</title>
+      <link>https://blog.nearwood.net/tags/wireless/</link>
+      <pubDate>Thu, 19 Jun 2014 02:09:16 +0000</pubDate>
+      
+      <guid>https://blog.nearwood.net/tags/wireless/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>DOGE</title>
+      <link>https://blog.nearwood.net/tags/doge/</link>
+      <pubDate>Tue, 17 Jun 2014 00:08:03 +0000</pubDate>
+      
+      <guid>https://blog.nearwood.net/tags/doge/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>mining</title>
+      <link>https://blog.nearwood.net/tags/mining/</link>
+      <pubDate>Tue, 17 Jun 2014 00:08:03 +0000</pubDate>
+      
+      <guid>https://blog.nearwood.net/tags/mining/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Windows 7</title>
+      <link>https://blog.nearwood.net/tags/windows-7/</link>
+      <pubDate>Sat, 15 Mar 2014 13:01:13 +0000</pubDate>
+      
+      <guid>https://blog.nearwood.net/tags/windows-7/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ThinkPad</title>
+      <link>https://blog.nearwood.net/tags/thinkpad/</link>
+      <pubDate>Sun, 09 Mar 2014 00:42:37 +0000</pubDate>
+      
+      <guid>https://blog.nearwood.net/tags/thinkpad/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>python</title>
+      <link>https://blog.nearwood.net/tags/python/</link>
+      <pubDate>Wed, 11 Dec 2013 01:52:16 +0000</pubDate>
+      
+      <guid>https://blog.nearwood.net/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>javascript</title>
+      <link>https://blog.nearwood.net/tags/javascript/</link>
+      <pubDate>Wed, 07 Aug 2013 00:29:51 +0000</pubDate>
+      
+      <guid>https://blog.nearwood.net/tags/javascript/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>reddit</title>
+      <link>https://blog.nearwood.net/tags/reddit/</link>
+      <pubDate>Wed, 07 Aug 2013 00:29:51 +0000</pubDate>
+      
+      <guid>https://blog.nearwood.net/tags/reddit/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>laptop</title>
+      <link>https://blog.nearwood.net/tags/laptop/</link>
+      <pubDate>Sun, 07 Apr 2013 12:56:52 +0000</pubDate>
+      
+      <guid>https://blog.nearwood.net/tags/laptop/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>udev</title>
+      <link>https://blog.nearwood.net/tags/udev/</link>
+      <pubDate>Mon, 18 Feb 2013 02:30:09 +0000</pubDate>
+      
+      <guid>https://blog.nearwood.net/tags/udev/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Apple</title>
+      <link>https://blog.nearwood.net/tags/apple/</link>
+      <pubDate>Mon, 04 Feb 2013 01:05:39 +0000</pubDate>
+      
+      <guid>https://blog.nearwood.net/tags/apple/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>c/c&#43;&#43;</title>
+      <link>https://blog.nearwood.net/tags/c/c&#43;&#43;/</link>
+      <pubDate>Thu, 31 Jan 2013 02:36:47 +0000</pubDate>
+      
+      <guid>https://blog.nearwood.net/tags/c/c&#43;&#43;/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>obd</title>
+      <link>https://blog.nearwood.net/tags/obd/</link>
+      <pubDate>Thu, 31 Jan 2013 02:36:47 +0000</pubDate>
+      
+      <guid>https://blog.nearwood.net/tags/obd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Top Gear</title>
+      <link>https://blog.nearwood.net/tags/top-gear/</link>
+      <pubDate>Sun, 27 Jan 2013 18:54:17 +0000</pubDate>
+      
+      <guid>https://blog.nearwood.net/tags/top-gear/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>home server</title>
+      <link>https://blog.nearwood.net/tags/home-server/</link>
+      <pubDate>Sun, 27 Jan 2013 01:24:24 +0000</pubDate>
+      
+      <guid>https://blog.nearwood.net/tags/home-server/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>EFI</title>
+      <link>https://blog.nearwood.net/tags/efi/</link>
+      <pubDate>Mon, 19 Nov 2012 05:50:42 +0000</pubDate>
+      
+      <guid>https://blog.nearwood.net/tags/efi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>rEFInd</title>
+      <link>https://blog.nearwood.net/tags/refind/</link>
+      <pubDate>Mon, 19 Nov 2012 05:50:42 +0000</pubDate>
+      
+      <guid>https://blog.nearwood.net/tags/refind/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Adobe</title>
+      <link>https://blog.nearwood.net/tags/adobe/</link>
+      <pubDate>Wed, 25 Jul 2012 00:10:02 +0000</pubDate>
+      
+      <guid>https://blog.nearwood.net/tags/adobe/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>UXD</title>
+      <link>https://blog.nearwood.net/tags/uxd/</link>
+      <pubDate>Sun, 08 Jul 2012 22:48:23 +0000</pubDate>
+      
+      <guid>https://blog.nearwood.net/tags/uxd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ubuntu</title>
+      <link>https://blog.nearwood.net/tags/ubuntu/</link>
+      <pubDate>Fri, 06 Jul 2012 01:29:31 +0000</pubDate>
+      
+      <guid>https://blog.nearwood.net/tags/ubuntu/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>VM</title>
+      <link>https://blog.nearwood.net/tags/vm/</link>
+      <pubDate>Fri, 06 Jul 2012 01:29:31 +0000</pubDate>
+      
+      <guid>https://blog.nearwood.net/tags/vm/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

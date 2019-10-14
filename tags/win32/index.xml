@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Win32 on Nick</title>
+    <link>https://blog.nearwood.net/tags/win32/</link>
+    <description>Recent content in Win32 on Nick</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© 2019 Nicholas Earwood</copyright>
+    <lastBuildDate>Wed, 15 Mar 2017 17:30:13 +0000</lastBuildDate>
+    
+	<atom:link href="https://blog.nearwood.net/tags/win32/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Windmill – Windows Window unclobberer</title>
+      <link>https://blog.nearwood.net/windmill-windows-window-unclobberer/</link>
+      <pubDate>Wed, 15 Mar 2017 17:30:13 +0000</pubDate>
+      
+      <guid>https://blog.nearwood.net/windmill-windows-window-unclobberer/</guid>
+      <description>I noticed during the (many) meetings I attend that disconnecting and reconnecting my laptop from the dock reorganizes all my windows to the laptop&amp;#8217;s display. This got annoying to have to drag and resize everything when returning to my desk, which has a 3 monitor setup. So, I wrote this small Win32 application to allow you to save the positioning and size of all windows and then restore them at a later time.</description>
+    </item>
+    
+  </channel>
+</rss>

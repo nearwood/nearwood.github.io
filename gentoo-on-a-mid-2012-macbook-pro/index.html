@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#1b1b1b">
+	<title>Gentoo on a mid-2012 MacBook Pro | Nick</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		<meta property="og:title" content="Gentoo on a mid-2012 MacBook Pro" />
+<meta property="og:description" content="If your sick of your brand new MacBook just working (more or less), and you just feel like modifying your kernel&#8217;s source to get your computer to work right, you&#8217;ve come to the right place. I (finally) managed to get Gentoo booting on a new MacBook Pro (15&#8243;, Core i7, mid-2012) alongside OS X 10.8.2. I suppose it actually wasn&#8217;t that bad, it could have been much worse. I only had to reinstall OS X once after a wonky partition editor&#8230;." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://blog.nearwood.net/gentoo-on-a-mid-2012-macbook-pro/" />
+<meta property="article:published_time" content="2012-11-19T05:50:42+00:00" />
+<meta property="article:modified_time" content="2019-02-03T12:15:22-05:00" />
+
+		<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Gentoo on a mid-2012 MacBook Pro"/>
+<meta name="twitter:description" content="If your sick of your brand new MacBook just working (more or less), and you just feel like modifying your kernel&#8217;s source to get your computer to work right, you&#8217;ve come to the right place. I (finally) managed to get Gentoo booting on a new MacBook Pro (15&#8243;, Core i7, mid-2012) alongside OS X 10.8.2. I suppose it actually wasn&#8217;t that bad, it could have been much worse. I only had to reinstall OS X once after a wonky partition editor&#8230;."/>
+
+	<link rel="stylesheet" href="/css/main.css">
+	<link rel="stylesheet" href="/css/themes/dark-green.css">
+	<link rel="icon" href="/icons/16.png" sizes="16x16" type="image/png">
+	<link rel="icon" href="/icons/32.png" sizes="32x32" type="image/png">
+		
+</head>
+<body>
+	<header class="header">
+	<a class="logo" href="/">Nick</a>
+	
+<nav class="main-nav" role="navigation">
+	<button id="toggle" class="main-nav__btn" aria-label="Menu toggle" aria-expanded="false" tabindex="0">
+		<div class="main-nav__btn-box" tabindex="-1">
+			<svg class="main-nav__icon icon-menu" width="18" height="18" viewBox="0 0 18 18">
+				<path class="icon-menu__burger" d="M18 0v3.6H0V0h18zM0 10.8h18V7.2H0v3.6zM0 18h18v-3.6H0V18z"/>
+				<path class="icon-menu__x" d="M11.55 9L18 15.45 15.45 18 9 11.55 2.55 18 0 15.45 6.45 9 0 2.55 2.55 0 9 6.45 15.45 0 18 2.55 11.55 9z"/>
+			</svg>
+		</div>
+	</button>
+	<ul id="menu" class="main-nav__list">
+		<li class="main-nav__item"><a class="main-nav__link" href="/">Home</a></li>
+		<li class="main-nav__item"><a class="main-nav__link" href="/pages/about/">About</a></li>
+		<li class="main-nav__item"><a class="main-nav__link" href="/pages/contact/">Contact</a></li>
+	</ul>
+</nav>
+</header>
+	<div class="primary">
+	
+	<main class="main">
+		<div class="single block">
+			<article class="post">
+				<h1 class="post__title">Gentoo on a mid-2012 MacBook Pro</h1>
+				<div class="post__content"><p>If your sick of your brand new MacBook just working (more or less), and you just feel like modifying your kernel&#8217;s source to get your computer to work right, you&#8217;ve come to the right place. I (finally) managed to get Gentoo booting on a new MacBook Pro (15&#8243;, Core i7, mid-2012) alongside OS X 10.8.2. I suppose it actually wasn&#8217;t that bad, it could have been much worse. I only had to reinstall OS X once after a wonky partition editor&#8230;. edited a little more than I wanted.</p>
+
+<p>What I have in the end is a MacBook Pro that dual boots Gentoo Linux and OS X using rEFInd. Gentoo boots via EFI, I did not use a boot loader (in the traditional sense).</p>
+
+<p>My first attempt&#8211;you know, the one where I left my backup drive at work, was a miserable failure from the get-go. I went with what I was reading online, to use a boot manager/loader. Specifically GRUB/GRUB2 (I tried both). Also I used rEFIt, which has a wobbly gptsync utility, that as far as I can tell, hosed my entire drive. I had even tried building a modified gptsync from source. Although, maybe it was gparted. Since I had problems with that on both occassions.</p>
+
+<p>In either case, I couldn&#8217;t get gparted/parted to change the partition type to linux (0x83 or  82 or whatever it is). It kept reporting that the partition I created was &#8216;MSDOS&#8217;. And in both cases, I shrugged it off because as far as I know, the kernel doesn&#8217;t really care as long as it has the drivers to load the root filesystem&#8217;s actual type.</p>
+
+<p>Where I went wrong in the first case was to attempt to use GRUB/GRUB2 to boot. I had heard that you could use rEFIt to load grub, and then grub would boot the kernel. I didn&#8217;t read a whole lot on EFI booting the kernel directly, so I avoided it. Trying this involved setting up the GPT tables along with legacy MBR tables, and then supposedly I had to &#8216;sync&#8217; them to get rEFIt to see the new partition/OS. Since my OS X partition is encrypted, this caused problems with the gptsync utility. I followed <a href="http://www.insanelymac.com/forum/topic/264528-making-gptsync-in-refit-play-nice-with-filevault-2-for-dual-boot/">these</a> <a href="http://forums.gentoo.org/viewtopic-t-934708.html">two</a> guides which ended up in grub sort of working and OS X completely gone. Oops. I had a backup though.</p>
+
+<p>So I retried it this weekend, convinced that with EFI (even Apple&#8217;s &#8220;EFI&#8221;), you shouldn&#8217;t need any boot manager or loader (other than the EFI program itself). A little more searching and I managed to get it to work. And this skips the whole gptsync fiasco, the GRUB mess, etc.</p>
+
+<p>My first hurdle though, was getting the partitions right. I swear it was a bug in parted or something. Because the man pages online and the one&#8217;s on the minimal Gentoo CD were way different. Any attempts to run the command &#8216;mkpart&#8217; with any of the FS type options would result in a partition with MSDOS type. I eventually just settled with that for reasons I mentioned earlier.</p>
+
+<p>rEFInd seemed to ignore the command line options it&#8217;s own readme specified (specifically, &#8216;&#8211;esp&#8217;). So it ended up installing on the root of the OS X filesystem. I had the EFI (ESP) partition mounted at /boot, so I just moved the files there and re-ran the &#8216;bless&#8217; command.</p>
+
+<p>This is how I did it:</p>
+
+<ol>
+<li>Partition: Use disk utility to make a partition for Linux</li>
+<li>Install rEFInd</li>
+<li>Plug in to your network and reboot to Gentoo CD: I used gentoo-minimal-amd64</li>
+<li>Format the new partition: I chose ext4</li>
+<li>Obtain stage, initial package sources and unpack/install</li>
+<li>Configure and install kernel</li>
+<li>Reboot and pray</li>
+<li>BCM4331 wireless</li>
+<li><a href="http://www.grimsby.us/?p=123" target="_blank">Fixing</a> that annoying &#8216;applesmc: read arg failed&#8217; kernel error message</li>
+<li>ethernet</li>
+<li>X, audio, etc.?</li>
+</ol>
+
+<p>I now have a working Gentoo living along side OS X. It&#8217;s a pain to switch between them, since rEFInd takes ~20 seconds to show up on boot. Now if only I could get X and nvidia-settings to work well with an additional monitor that isn&#8217;t always present, I could do all my work on it.</p>
+
+<p>Config Files</p>
+
+<ul>
+<li>.config</li>
+<li>make.conf</li>
+<li>xorg.conf</li>
+</ul>
+
+<p>&nbsp;</p>
+</div>
+				
+				<footer class="post__footer">
+					
+
+
+<div class="post__tags">
+	<a class="post__tag btn" href="/tags/apple">Apple</a><a class="post__tag btn" href="/tags/efi">EFI</a><a class="post__tag btn" href="/tags/gentoo">Gentoo</a><a class="post__tag btn" href="/tags/linux">Linux</a><a class="post__tag btn" href="/tags/macbook">MacBook</a><a class="post__tag btn" href="/tags/refind">rEFInd</a>
+</div>
+
+
+					
+<div class="post__share share">
+	<a class="share__link btn" title="Share on Twitter" href="https://twitter.com/intent/tweet/?url=https%3a%2f%2fblog.nearwood.net%2fgentoo-on-a-mid-2012-macbook-pro%2f&amp;text=Gentoo%20on%20a%20mid-2012%20MacBook%20Pro" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, 'Share on Twitter', 'width=800,height=450,resizable=yes,toolbar=0,status=0'); return false">
+		<svg class="share__icon" aria-label="Twitter" role="img" width="32" height="32" viewBox="0 0 512 512"><path d="M437 152a72 72 0 0 1-40 12 72 72 0 0 0 32-40 72 72 0 0 1-45 17 72 72 0 0 0-122 65 200 200 0 0 1-145-74 72 72 0 0 0 22 94 72 72 0 0 1-32-7 72 72 0 0 0 56 69 72 72 0 0 1-32 1 72 72 0 0 0 67 50 200 200 0 0 1-105 29 200 200 0 0 0 309-179 200 200 0 0 0 35-37"/></svg>
+	</a>
+	<a class="share__link btn" title="Share on Reddit" href="https://www.reddit.com/submit?url=https%3a%2f%2fblog.nearwood.net%2fgentoo-on-a-mid-2012-macbook-pro%2f&amp;title=Gentoo%20on%20a%20mid-2012%20MacBook%20Pro" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, 'Share on Reddit', 'width=832,height=624,toolbar=0,status=0'); return false">
+		<svg class="share__icon" aria-label="Reddit" role="img" width="32" height="32" viewBox="0 0 512 512"><path fill-rule="evenodd" d="M375 146a32 32 0 1 0-29-46l-65-13c-5-1-9 2-10 6l-22 97c-45 1-85 15-113 36a42 42 0 1 0-45 69l-1 12c0 65 74 117 166 117s166-52 166-117l-1-11a42 42 0 1 0-44-69c-28-21-67-35-111-37l19-86 58 13a32 32 0 0 0 32 29zM190 353c2-1 4 0 5 1 15 11 38 18 61 18s46-6 61-18a7 7 0 0 1 8 10c-18 14-44 21-69 21-25-1-51-7-69-21a6 6 0 0 1 3-11zm23-44a31 31 0 1 1-44-44 31 31 0 0 1 44 44zm130 0a31 31 0 1 0-44-44 31 31 0 0 0 44 44z"/></svg>
+	</a>
+</div>
+				</footer>
+				
+			</article>
+		</div>
+	</main>
+	
+	
+
+
+
+<div class="related block">
+	<h3 class="related__title">Related</h3>
+	<ul class="related__list">
+		
+		<li class="related__item"><a class="related__link" href="/posts/2012-07-05-qemu-on-windows/">QEMU on Windows</a></li>
+		
+	</ul>
+</div>
+
+	
+
+	</div>
+	<footer class="footer">
+<div class="footer__social social">
+		<a class="social__link" target="_blank" rel="noopener noreferrer" href="https://twitter.com/nearwood">
+			<svg class="social__icon" aria-label="Twitter" role="img" width="32" height="32" viewBox="0 0 512 512"><path d="M437 152a72 72 0 0 1-40 12 72 72 0 0 0 32-40 72 72 0 0 1-45 17 72 72 0 0 0-122 65 200 200 0 0 1-145-74 72 72 0 0 0 22 94 72 72 0 0 1-32-7 72 72 0 0 0 56 69 72 72 0 0 1-32 1 72 72 0 0 0 67 50 200 200 0 0 1-105 29 200 200 0 0 0 309-179 200 200 0 0 0 35-37"/></svg>
+		</a>
+		<a class="social__link" target="_blank" rel="noopener noreferrer" href="https://github.com/nearwood">
+			<svg class="social__icon" aria-label="Github" role="img" width="32" height="32" viewBox="0 0 512 512"><path d="M335 499c14 0 12 17 12 17H165s-2-17 12-17c13 0 16-6 16-12l-1-50c-71 16-86-28-86-28-12-30-28-37-28-37-24-16 1-16 1-16 26 2 40 26 40 26 22 39 59 28 74 22 2-17 9-28 16-35-57-6-116-28-116-126 0-28 10-51 26-69-3-6-11-32 3-67 0 0 21-7 70 26 42-12 86-12 128 0 49-33 70-26 70-26 14 35 6 61 3 67 16 18 26 41 26 69 0 98-60 120-117 126 10 8 18 24 18 48l-1 70c0 6 3 12 16 12z"/></svg>
+		</a>
+</div>
+	<div class="footer__copyright">© 2019 Nick Earwood. <span class="footer__copyright-credits">Powered by <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/vimux/binario" rel="nofollow noopener" target="_blank">Binario</a> theme.</span></div>
+</footer>
+<script src="/js/menu.js"></script>
+</body>
+</html>

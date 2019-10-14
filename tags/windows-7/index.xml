@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Windows 7 on Nick</title>
+    <link>https://blog.nearwood.net/tags/windows-7/</link>
+    <description>Recent content in Windows 7 on Nick</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© 2019 Nicholas Earwood</copyright>
+    <lastBuildDate>Sat, 15 Mar 2014 13:01:13 +0000</lastBuildDate>
+    
+	<atom:link href="https://blog.nearwood.net/tags/windows-7/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Windows bugs</title>
+      <link>https://blog.nearwood.net/windows-bugs/</link>
+      <pubDate>Sat, 15 Mar 2014 13:01:13 +0000</pubDate>
+      
+      <guid>https://blog.nearwood.net/windows-bugs/</guid>
+      <description>Over the years I&amp;#8217;ve noticed a couple bugs that are present in in some or all of NT/Vista/7. I experience these on a daily basis, across dozens of computers. So it can&amp;#8217;t just be me, right?
+ Focus bug. If the timing is right, some windows remain on top despite clicking on a background window. The background window obtains focus, but does not move to the front. This is typically when the foreground window does some focus changing action (Showing a dialog, opening a new tab, etc.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>c/c&#43;&#43; on Nick</title>
+    <link>https://blog.nearwood.net/tags/c/c&#43;&#43;/</link>
+    <description>Recent content in c/c&#43;&#43; on Nick</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© 2019 Nicholas Earwood</copyright>
+    <lastBuildDate>Thu, 31 Jan 2013 02:36:47 +0000</lastBuildDate>
+    
+	<atom:link href="https://blog.nearwood.net/tags/c/c++/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Carduino</title>
+      <link>https://blog.nearwood.net/carduino/</link>
+      <pubDate>Thu, 31 Jan 2013 02:36:47 +0000</pubDate>
+      
+      <guid>https://blog.nearwood.net/carduino/</guid>
+      <description>I&amp;#8217;ve been working on a small Arduino project to datalog my commute. I&amp;#8217;m using an Arduino Uno with SK Pang&amp;#8217;s CAN Bus Shield. I also have added the optional GPS and LCD to the mix. There is an micro-SD card slot for storage.
+
+The aim of the project is just to collect data. As much as I can put into the SD card. I plan on calculating driving efficiency using somewhat arbitrary measures like throttle modulation, temperature, etc.</description>
+    </item>
+    
+  </channel>
+</rss>

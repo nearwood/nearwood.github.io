@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#1b1b1b">
+	<title>QEMU on Windows | Nick</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		<meta property="og:title" content="QEMU on Windows" />
+<meta property="og:description" content="After fumbling around with various downloads and patches, I was able to find a working QEMU build for windows. I am running Windows 7 64-bit, and I wanted to run an ARM system (specifically, to develop for a Stratus plug computer). Before this, I was running a virtualized Ubuntu using VirtualBox and then running QEMU within that. Performance was not noticeably bad.
+However, I had problems bridging the QEMU to the Ubuntu host, which was bridged itself." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://blog.nearwood.net/posts/2012-07-05-qemu-on-windows/" />
+<meta property="article:published_time" content="2012-07-06T01:29:31+00:00" />
+<meta property="article:modified_time" content="2019-09-11T22:19:53-05:00" />
+
+		<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="QEMU on Windows"/>
+<meta name="twitter:description" content="After fumbling around with various downloads and patches, I was able to find a working QEMU build for windows. I am running Windows 7 64-bit, and I wanted to run an ARM system (specifically, to develop for a Stratus plug computer). Before this, I was running a virtualized Ubuntu using VirtualBox and then running QEMU within that. Performance was not noticeably bad.
+However, I had problems bridging the QEMU to the Ubuntu host, which was bridged itself."/>
+
+	<link rel="stylesheet" href="/css/main.css">
+	<link rel="stylesheet" href="/css/themes/dark-green.css">
+	<link rel="icon" href="/icons/16.png" sizes="16x16" type="image/png">
+	<link rel="icon" href="/icons/32.png" sizes="32x32" type="image/png">
+		
+</head>
+<body>
+	<header class="header">
+	<a class="logo" href="/">Nick</a>
+	
+<nav class="main-nav" role="navigation">
+	<button id="toggle" class="main-nav__btn" aria-label="Menu toggle" aria-expanded="false" tabindex="0">
+		<div class="main-nav__btn-box" tabindex="-1">
+			<svg class="main-nav__icon icon-menu" width="18" height="18" viewBox="0 0 18 18">
+				<path class="icon-menu__burger" d="M18 0v3.6H0V0h18zM0 10.8h18V7.2H0v3.6zM0 18h18v-3.6H0V18z"/>
+				<path class="icon-menu__x" d="M11.55 9L18 15.45 15.45 18 9 11.55 2.55 18 0 15.45 6.45 9 0 2.55 2.55 0 9 6.45 15.45 0 18 2.55 11.55 9z"/>
+			</svg>
+		</div>
+	</button>
+	<ul id="menu" class="main-nav__list">
+		<li class="main-nav__item"><a class="main-nav__link" href="/">Home</a></li>
+		<li class="main-nav__item"><a class="main-nav__link" href="/pages/about/">About</a></li>
+		<li class="main-nav__item"><a class="main-nav__link" href="/pages/contact/">Contact</a></li>
+	</ul>
+</nav>
+</header>
+	<div class="primary">
+	
+	<main class="main">
+		<div class="single block">
+			<article class="post">
+				<h1 class="post__title">QEMU on Windows</h1>
+				<div class="post__content"><p>After fumbling around with various downloads and patches, I was able to find a working QEMU build for windows. I am running Windows 7 64-bit, and I wanted to run an ARM system (specifically, to develop for a Stratus plug computer). Before this, I was running a virtualized Ubuntu using VirtualBox and then running QEMU within that. Performance was not noticeably bad.</p>
+
+<p>However, I had problems bridging the QEMU to the Ubuntu host, which was bridged itself. I stumbled upon a page about <a href="http://www.smallbulb.net/2012/225-emulating-raspberry-pi" target="_blank">emulating a Rasberry Pi within QEMU on Windows</a>. The <a href="http://homepage3.nifty.com/takeda-toshiya/qemu/qemu-0.13.0-windows.zip" target="_blank">QEMU download link</a> there was the ticket.</p>
+
+<p>Ignore the rest of the post there, all you need is QEMU. Using the kernel and ramdisk <a href="http://people.debian.org/~aurel32/qemu/armel/" target="_blank">here</a> (and instructions from <a href="http://www.aurel32.net/info/debian_arm_qemu.php" target="_blank">here</a>), you can install Debian on your ARM system.</p>
+
+<p>To launch, first create or download a disk image. Then copy the qemu-system-arm.exe from the bin folder to QEMU&#8217;s root folder (it was easier than specifying the paths manually). Then, you can modify the last line in the batch file provided (qemu-win.bat):</p>
+
+<blockquote>
+<pre>qemu-system-arm.exe -M versatilepb -L . -m 256 -hda arm.img.backup -kernel vmlinuz-2.6.32-5-versatile -initrd initrd.img-2.6.32-5-versatile -localtime -append "root=/dev/sda1"</pre>
+</blockquote>
+
+<p>That&#8217;s assuming your image and kernels are named as such. The kernel will crash if you try to specify more than 256MB of RAM, however building a custom kernel is now possible.</p>
+
+<p>My next task will be to see if I can bridge the network interface. If not, I&#8217;ll go back and try the virtual virtual machine approach again&#8211;since appears to be faster anyway&#8230;</p>
+
+<p><a href="http://www.nearwood.net/wp-content/uploads/qemu-vs-qemu.png"><img class="alignnone size-medium wp-image-42" title="qemu-vs-qemu" src="http://www.nearwood.net/wp-content/uploads/qemu-vs-qemu-300x140.png" alt="Winows(QEMU) vs Windows(Ubuntu(QEMU))" width="300" height="140" srcset="https://www.nearwood.net/wp-content/uploads/qemu-vs-qemu-300x140.png 300w, https://www.nearwood.net/wp-content/uploads/qemu-vs-qemu-1024x480.png 1024w, https://www.nearwood.net/wp-content/uploads/qemu-vs-qemu.png 1350w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+</div>
+				
+				<footer class="post__footer">
+					
+
+
+<div class="post__tags">
+	<a class="post__tag btn" href="/tags/linux">Linux</a><a class="post__tag btn" href="/tags/ubuntu">Ubuntu</a><a class="post__tag btn" href="/tags/vm">VM</a><a class="post__tag btn" href="/tags/windows">Windows</a>
+</div>
+
+
+					
+<div class="post__share share">
+	<a class="share__link btn" title="Share on Twitter" href="https://twitter.com/intent/tweet/?url=https%3a%2f%2fblog.nearwood.net%2fposts%2f2012-07-05-qemu-on-windows%2f&amp;text=QEMU%20on%20Windows" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, 'Share on Twitter', 'width=800,height=450,resizable=yes,toolbar=0,status=0'); return false">
+		<svg class="share__icon" aria-label="Twitter" role="img" width="32" height="32" viewBox="0 0 512 512"><path d="M437 152a72 72 0 0 1-40 12 72 72 0 0 0 32-40 72 72 0 0 1-45 17 72 72 0 0 0-122 65 200 200 0 0 1-145-74 72 72 0 0 0 22 94 72 72 0 0 1-32-7 72 72 0 0 0 56 69 72 72 0 0 1-32 1 72 72 0 0 0 67 50 200 200 0 0 1-105 29 200 200 0 0 0 309-179 200 200 0 0 0 35-37"/></svg>
+	</a>
+	<a class="share__link btn" title="Share on Reddit" href="https://www.reddit.com/submit?url=https%3a%2f%2fblog.nearwood.net%2fposts%2f2012-07-05-qemu-on-windows%2f&amp;title=QEMU%20on%20Windows" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, 'Share on Reddit', 'width=832,height=624,toolbar=0,status=0'); return false">
+		<svg class="share__icon" aria-label="Reddit" role="img" width="32" height="32" viewBox="0 0 512 512"><path fill-rule="evenodd" d="M375 146a32 32 0 1 0-29-46l-65-13c-5-1-9 2-10 6l-22 97c-45 1-85 15-113 36a42 42 0 1 0-45 69l-1 12c0 65 74 117 166 117s166-52 166-117l-1-11a42 42 0 1 0-44-69c-28-21-67-35-111-37l19-86 58 13a32 32 0 0 0 32 29zM190 353c2-1 4 0 5 1 15 11 38 18 61 18s46-6 61-18a7 7 0 0 1 8 10c-18 14-44 21-69 21-25-1-51-7-69-21a6 6 0 0 1 3-11zm23-44a31 31 0 1 1-44-44 31 31 0 0 1 44 44zm130 0a31 31 0 1 0-44-44 31 31 0 0 0 44 44z"/></svg>
+	</a>
+</div>
+				</footer>
+				
+			</article>
+		</div>
+	</main>
+	
+	
+
+
+
+	
+
+	</div>
+	<footer class="footer">
+<div class="footer__social social">
+		<a class="social__link" target="_blank" rel="noopener noreferrer" href="https://twitter.com/nearwood">
+			<svg class="social__icon" aria-label="Twitter" role="img" width="32" height="32" viewBox="0 0 512 512"><path d="M437 152a72 72 0 0 1-40 12 72 72 0 0 0 32-40 72 72 0 0 1-45 17 72 72 0 0 0-122 65 200 200 0 0 1-145-74 72 72 0 0 0 22 94 72 72 0 0 1-32-7 72 72 0 0 0 56 69 72 72 0 0 1-32 1 72 72 0 0 0 67 50 200 200 0 0 1-105 29 200 200 0 0 0 309-179 200 200 0 0 0 35-37"/></svg>
+		</a>
+		<a class="social__link" target="_blank" rel="noopener noreferrer" href="https://github.com/nearwood">
+			<svg class="social__icon" aria-label="Github" role="img" width="32" height="32" viewBox="0 0 512 512"><path d="M335 499c14 0 12 17 12 17H165s-2-17 12-17c13 0 16-6 16-12l-1-50c-71 16-86-28-86-28-12-30-28-37-28-37-24-16 1-16 1-16 26 2 40 26 40 26 22 39 59 28 74 22 2-17 9-28 16-35-57-6-116-28-116-126 0-28 10-51 26-69-3-6-11-32 3-67 0 0 21-7 70 26 42-12 86-12 128 0 49-33 70-26 70-26 14 35 6 61 3 67 16 18 26 41 26 69 0 98-60 120-117 126 10 8 18 24 18 48l-1 70c0 6 3 12 16 12z"/></svg>
+		</a>
+</div>
+	<div class="footer__copyright">© 2019 Nick Earwood. <span class="footer__copyright-credits">Powered by <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/vimux/binario" rel="nofollow noopener" target="_blank">Binario</a> theme.</span></div>
+</footer>
+<script src="/js/menu.js"></script>
+</body>
+</html>

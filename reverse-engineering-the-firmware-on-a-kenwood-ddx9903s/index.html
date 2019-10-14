@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#1b1b1b">
+	<title>Reverse Engineering the firmware on a Kenwood DDX9903S | Nick</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		<meta property="og:title" content="Reverse Engineering the firmware on a Kenwood DDX9903S" />
+<meta property="og:description" content="I bought and really like my Kenwood Excelon DDX9903S headunit. I had it in my WRX, and moved it to my LS430. It supports Android Auto and CarPlay, which I find really useful when driving.
+
+However, it has a nag screen every time it boots up. This got me curious as to how it worked, and see if it could be patched to skip this disclaimer. I figured it probably ran Linux on a SoC, as pretty much everything does nowadays. So I grabbed the latest firmware for it (mine was already updated to it), and started probing.
+
+S_V2_7_0008_0600_AT1.zip
+
+Extract that and you get 3 folders under S_V2_7_0008_0600/:
+
+BOOT_V2_7_0008_0600_release/
+MAIN_V1_0_2758_0400/
+SOC_V2_7_0008_0600/
+
+
+In each there&#8217;s a .nfu file, which I&#8217;ve never encountered before. I ran binwalk on each:
+
+[BOOT_V2_7_0008_0600_release]$ binwalk Boot_2.7.0008.0600.nfu
+DECIMAL HEXADECIMAL DESCRIPTION
+--------------------------------------------------------------------------------
+248776 0x3CBC8 Android bootimg, kernel size: 0 bytes, kernel addr: 0x4F525245, ramdisk size: 1226848850 bytes, ramdisk addr: 0x6C61766E, product name: &#34;ERROR: Cannot read kernel image&#34;
+1571592 0x17FB08 ELF, 64-bit LSB shared object, AMD x86-64, version 1 (SYSV)
+2358024 0x23FB08 ELF, 64-bit LSB shared object, AMD x86-64, version 1 (SYSV)
+3209992 0x30FB08 ELF, 64-bit LSB shared object, AMD x86-64, version 1 (SYSV)
+
+
+Surprise, surprise, it runs Android. But, I&#8217;m thinking this image is possibly just the firmware updater, and not what I am looking for." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://blog.nearwood.net/reverse-engineering-the-firmware-on-a-kenwood-ddx9903s/" />
+<meta property="article:published_time" content="2017-10-28T03:06:49+00:00" />
+<meta property="article:modified_time" content="2019-02-03T12:15:22-05:00" />
+
+		<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Reverse Engineering the firmware on a Kenwood DDX9903S"/>
+<meta name="twitter:description" content="I bought and really like my Kenwood Excelon DDX9903S headunit. I had it in my WRX, and moved it to my LS430. It supports Android Auto and CarPlay, which I find really useful when driving.
+
+However, it has a nag screen every time it boots up. This got me curious as to how it worked, and see if it could be patched to skip this disclaimer. I figured it probably ran Linux on a SoC, as pretty much everything does nowadays. So I grabbed the latest firmware for it (mine was already updated to it), and started probing.
+
+S_V2_7_0008_0600_AT1.zip
+
+Extract that and you get 3 folders under S_V2_7_0008_0600/:
+
+BOOT_V2_7_0008_0600_release/
+MAIN_V1_0_2758_0400/
+SOC_V2_7_0008_0600/
+
+
+In each there&#8217;s a .nfu file, which I&#8217;ve never encountered before. I ran binwalk on each:
+
+[BOOT_V2_7_0008_0600_release]$ binwalk Boot_2.7.0008.0600.nfu
+DECIMAL HEXADECIMAL DESCRIPTION
+--------------------------------------------------------------------------------
+248776 0x3CBC8 Android bootimg, kernel size: 0 bytes, kernel addr: 0x4F525245, ramdisk size: 1226848850 bytes, ramdisk addr: 0x6C61766E, product name: &#34;ERROR: Cannot read kernel image&#34;
+1571592 0x17FB08 ELF, 64-bit LSB shared object, AMD x86-64, version 1 (SYSV)
+2358024 0x23FB08 ELF, 64-bit LSB shared object, AMD x86-64, version 1 (SYSV)
+3209992 0x30FB08 ELF, 64-bit LSB shared object, AMD x86-64, version 1 (SYSV)
+
+
+Surprise, surprise, it runs Android. But, I&#8217;m thinking this image is possibly just the firmware updater, and not what I am looking for."/>
+
+	<link rel="stylesheet" href="/css/main.css">
+	<link rel="stylesheet" href="/css/themes/dark-green.css">
+	<link rel="icon" href="/icons/16.png" sizes="16x16" type="image/png">
+	<link rel="icon" href="/icons/32.png" sizes="32x32" type="image/png">
+		
+</head>
+<body>
+	<header class="header">
+	<a class="logo" href="/">Nick</a>
+	
+<nav class="main-nav" role="navigation">
+	<button id="toggle" class="main-nav__btn" aria-label="Menu toggle" aria-expanded="false" tabindex="0">
+		<div class="main-nav__btn-box" tabindex="-1">
+			<svg class="main-nav__icon icon-menu" width="18" height="18" viewBox="0 0 18 18">
+				<path class="icon-menu__burger" d="M18 0v3.6H0V0h18zM0 10.8h18V7.2H0v3.6zM0 18h18v-3.6H0V18z"/>
+				<path class="icon-menu__x" d="M11.55 9L18 15.45 15.45 18 9 11.55 2.55 18 0 15.45 6.45 9 0 2.55 2.55 0 9 6.45 15.45 0 18 2.55 11.55 9z"/>
+			</svg>
+		</div>
+	</button>
+	<ul id="menu" class="main-nav__list">
+		<li class="main-nav__item"><a class="main-nav__link" href="/">Home</a></li>
+		<li class="main-nav__item"><a class="main-nav__link" href="/pages/about/">About</a></li>
+		<li class="main-nav__item"><a class="main-nav__link" href="/pages/contact/">Contact</a></li>
+	</ul>
+</nav>
+</header>
+	<div class="primary">
+	
+	<main class="main">
+		<div class="single block">
+			<article class="post">
+				<h1 class="post__title">Reverse Engineering the firmware on a Kenwood DDX9903S</h1>
+				<div class="post__content"><p>I bought and really like my Kenwood Excelon DDX9903S headunit. I had it in my WRX, and moved it to my LS430. It supports Android Auto and CarPlay, which I find really useful when driving.</p>
+
+<p>However, it has a nag screen every time it boots up. This got me curious as to how it worked, and see if it could be patched to skip this disclaimer. I figured it probably ran Linux on a SoC, as pretty much everything does nowadays. So I grabbed the latest firmware for it (mine was already updated to it), and started probing.</p>
+
+<p><code>S_V2_7_0008_0600_AT1.zip</code></p>
+
+<p>Extract that and you get 3 folders under S_V2_7_0008_0600/:</p>
+
+<pre class="brush: plain; light: true; title: ; notranslate" title="">BOOT_V2_7_0008_0600_release/
+MAIN_V1_0_2758_0400/
+SOC_V2_7_0008_0600/
+</pre>
+
+<p>In each there&#8217;s a .nfu file, which I&#8217;ve never encountered before. I ran binwalk on each:</p>
+
+<pre class="brush: plain; light: true; title: ; notranslate" title="">[BOOT_V2_7_0008_0600_release]$ binwalk Boot_2.7.0008.0600.nfu
+DECIMAL HEXADECIMAL DESCRIPTION
+--------------------------------------------------------------------------------
+248776 0x3CBC8 Android bootimg, kernel size: 0 bytes, kernel addr: 0x4F525245, ramdisk size: 1226848850 bytes, ramdisk addr: 0x6C61766E, product name: "ERROR: Cannot read kernel image"
+1571592 0x17FB08 ELF, 64-bit LSB shared object, AMD x86-64, version 1 (SYSV)
+2358024 0x23FB08 ELF, 64-bit LSB shared object, AMD x86-64, version 1 (SYSV)
+3209992 0x30FB08 ELF, 64-bit LSB shared object, AMD x86-64, version 1 (SYSV)
+</pre>
+
+<p>Surprise, surprise, it runs Android. But, I&#8217;m thinking this image is possibly just the firmware updater, and not what I am looking for.</p>
+
+<pre class="brush: plain; light: true; title: ; notranslate" title="">[SOC_V2_7_0008_0600]$ binwalk Soc_V2_7_0008_0600.nfu
+DECIMAL HEXADECIMAL DESCRIPTION
+--------------------------------------------------------------------------------
+5767936 0x580300 Android bootimg, kernel size: 16823168 bytes, kernel addr: 0x80008000, ramdisk size: 0 bytes, ramdisk addr: 0x81000000, product name: ""
+5784320 0x584300 Linux kernel ARM boot executable zImage (little-endian)
+5800283 0x58815B gzip compressed data, maximum compression, from Unix, last modified: 1970-01-01 00:00:00 (null date)
+41943040 0x2800000 Zip archive data, at least v2.0 to extract, compressed size: 14612206, uncompressed size: 14696448, name: 16dnx_2.5s_fbios_bootimg.img
+56555332 0x35EF744 Zip archive data, at least v2.0 to extract, compressed size: 16765150, uncompressed size: 16842752, name: TCC893X_recovery.img
+73320560 0x45EC870 Zip archive data, at least v2.0 to extract, compressed size: 210950775, uncompressed size: 1825360896, name: automotive-linux-16DDX-image.ext4
+284271426 0x10F1A342 Zip archive data, at least v2.0 to extract, compressed size: 87690, uncompressed size: 524288, name: fbios_dual.bin
+284359188 0x10F2FA14 Zip archive data, at least v2.0 to extract, compressed size: 168, uncompressed size: 223, name: filelist.txt
+284359426 0x10F2FB02 Zip archive data, at least v2.0 to extract, compressed size: 29903609, uncompressed size: 39549952, name: qboot_ddx.bin
+314263106 0x12BB4642 Zip archive data, at least v2.0 to extract, compressed size: 33193, uncompressed size: 5242880, name: sbios_dual.bin
+314296995 0x12BBCAA3 End of Zip archive, footer length: 22
+</pre>
+
+<p>Here we go. A kernel with a sane size and name string, some recovery images, and what looks like a filesystem image! qboot_ddx.bin must be part of Ubiquitous&#8217; <a href="https://www.ubiquitous.co.jp/en/products/qb/md/quickboot/" rel="noopener" target="_blank">QuickBoot</a> software. It does boot awfully fast, so that explains that. Would be interesting to see full kernel and init output on a stereo headunit. Well, once anyway.</p>
+
+<p>Running binwalk on MAIN_V1_0_2758_0400/MainFw_1.0.2758.0400.mfu didn&#8217;t output anything. Not sure what that is.</p>
+
+<p>I tried unzip to extract Soc_V2_7_0008_0600.nfu. Seemed to work, though it complained about a 41MB extra bytes at the beginning. I was really just interested in the filesystem image for the moment:</p>
+
+<pre class="brush: plain; light: true; title: ; notranslate" title="">[SOC_V2_7_0008_0600]$ unzip Soc_V2_7_0008_0600.nfu
+Archive: Soc_V2_7_0008_0600.nfu
+warning [Soc_V2_7_0008_0600.nfu]: 41943040 extra bytes at beginning or within zipfile
+(attempting to process anyway)
+inflating: 16dnx_2.5s_fbios_bootimg.img
+inflating: TCC893X_recovery.img
+inflating: automotive-linux-16DDX-image.ext4
+inflating: fbios_dual.bin
+inflating: filelist.txt
+inflating: qboot_ddx.bin
+inflating: sbios_dual.bin
+</pre>
+
+<p>Running binwalk on the .ext4 verifies it is an ext4 filesystem image. I ran binwalk on the others and nothing was notable except the presumed QuickBoot file, qboot_ddx.bin which had images, and what looks like Qt library .qml files for some type of GUI. Also a Pandora image and other images. Hmm&#8230;</p>
+
+<p>I decided to mount the ext4 image to take a look.</p>
+
+<pre class="brush: plain; light: true; title: ; notranslate" title="">[SOC_V2_7_0008_0600]$ sudo mount -o loop automotive-linux-16DDX-image.ext4 /mnt/temp
+[SOC_V2_7_0008_0600]$ cd /mnt/temp/
+[temp]$ ls
+bin dev home lost+found Music proc sbin sys temp usr
+boot etc IMG_DEC_WORK media nand1 RAMDISK sdcard Syslog Temp var
+DB filesave lib mnt opt run share system tmp
+</pre>
+
+<p>Interesting things appear to be in: /opt/jkpf:</p>
+
+<pre class="brush: plain; light: true; title: ; notranslate" title="">bin dbg_daemon_starter.sh etc kill_applications.sh lib rsc script system_init.sh
+</pre>
+
+<p>That appears to be where lots of magic happens. Whenever I&#8217;m done disassembling the rest of the car for a particularly annoying remote start installation, I&#8217;ll come back to it.</p></div>
+				
+				<footer class="post__footer">
+					
+
+
+<div class="post__tags">
+	<a class="post__tag btn" href="/tags/android">android</a><a class="post__tag btn" href="/tags/firwmare">firwmare</a><a class="post__tag btn" href="/tags/reverse-engineering">reverse engineering</a>
+</div>
+
+
+					
+<div class="post__share share">
+	<a class="share__link btn" title="Share on Twitter" href="https://twitter.com/intent/tweet/?url=https%3a%2f%2fblog.nearwood.net%2freverse-engineering-the-firmware-on-a-kenwood-ddx9903s%2f&amp;text=Reverse%20Engineering%20the%20firmware%20on%20a%20Kenwood%20DDX9903S" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, 'Share on Twitter', 'width=800,height=450,resizable=yes,toolbar=0,status=0'); return false">
+		<svg class="share__icon" aria-label="Twitter" role="img" width="32" height="32" viewBox="0 0 512 512"><path d="M437 152a72 72 0 0 1-40 12 72 72 0 0 0 32-40 72 72 0 0 1-45 17 72 72 0 0 0-122 65 200 200 0 0 1-145-74 72 72 0 0 0 22 94 72 72 0 0 1-32-7 72 72 0 0 0 56 69 72 72 0 0 1-32 1 72 72 0 0 0 67 50 200 200 0 0 1-105 29 200 200 0 0 0 309-179 200 200 0 0 0 35-37"/></svg>
+	</a>
+	<a class="share__link btn" title="Share on Reddit" href="https://www.reddit.com/submit?url=https%3a%2f%2fblog.nearwood.net%2freverse-engineering-the-firmware-on-a-kenwood-ddx9903s%2f&amp;title=Reverse%20Engineering%20the%20firmware%20on%20a%20Kenwood%20DDX9903S" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, 'Share on Reddit', 'width=832,height=624,toolbar=0,status=0'); return false">
+		<svg class="share__icon" aria-label="Reddit" role="img" width="32" height="32" viewBox="0 0 512 512"><path fill-rule="evenodd" d="M375 146a32 32 0 1 0-29-46l-65-13c-5-1-9 2-10 6l-22 97c-45 1-85 15-113 36a42 42 0 1 0-45 69l-1 12c0 65 74 117 166 117s166-52 166-117l-1-11a42 42 0 1 0-44-69c-28-21-67-35-111-37l19-86 58 13a32 32 0 0 0 32 29zM190 353c2-1 4 0 5 1 15 11 38 18 61 18s46-6 61-18a7 7 0 0 1 8 10c-18 14-44 21-69 21-25-1-51-7-69-21a6 6 0 0 1 3-11zm23-44a31 31 0 1 1-44-44 31 31 0 0 1 44 44zm130 0a31 31 0 1 0-44-44 31 31 0 0 0 44 44z"/></svg>
+	</a>
+</div>
+				</footer>
+				
+			</article>
+		</div>
+	</main>
+	
+	
+
+
+
+<div class="related block">
+	<h3 class="related__title">Related</h3>
+	<ul class="related__list">
+		
+		<li class="related__item"><a class="related__link" href="/custom-speed-app-update/">Custom Speed app update</a></li>
+		
+		<li class="related__item"><a class="related__link" href="/released-my-first-android-app/">Released my first Android app</a></li>
+		
+	</ul>
+</div>
+
+	
+
+	</div>
+	<footer class="footer">
+<div class="footer__social social">
+		<a class="social__link" target="_blank" rel="noopener noreferrer" href="https://twitter.com/nearwood">
+			<svg class="social__icon" aria-label="Twitter" role="img" width="32" height="32" viewBox="0 0 512 512"><path d="M437 152a72 72 0 0 1-40 12 72 72 0 0 0 32-40 72 72 0 0 1-45 17 72 72 0 0 0-122 65 200 200 0 0 1-145-74 72 72 0 0 0 22 94 72 72 0 0 1-32-7 72 72 0 0 0 56 69 72 72 0 0 1-32 1 72 72 0 0 0 67 50 200 200 0 0 1-105 29 200 200 0 0 0 309-179 200 200 0 0 0 35-37"/></svg>
+		</a>
+		<a class="social__link" target="_blank" rel="noopener noreferrer" href="https://github.com/nearwood">
+			<svg class="social__icon" aria-label="Github" role="img" width="32" height="32" viewBox="0 0 512 512"><path d="M335 499c14 0 12 17 12 17H165s-2-17 12-17c13 0 16-6 16-12l-1-50c-71 16-86-28-86-28-12-30-28-37-28-37-24-16 1-16 1-16 26 2 40 26 40 26 22 39 59 28 74 22 2-17 9-28 16-35-57-6-116-28-116-126 0-28 10-51 26-69-3-6-11-32 3-67 0 0 21-7 70 26 42-12 86-12 128 0 49-33 70-26 70-26 14 35 6 61 3 67 16 18 26 41 26 69 0 98-60 120-117 126 10 8 18 24 18 48l-1 70c0 6 3 12 16 12z"/></svg>
+		</a>
+</div>
+	<div class="footer__copyright">© 2019 Nick Earwood. <span class="footer__copyright-credits">Powered by <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/vimux/binario" rel="nofollow noopener" target="_blank">Binario</a> theme.</span></div>
+</footer>
+<script src="/js/menu.js"></script>
+</body>
+</html>

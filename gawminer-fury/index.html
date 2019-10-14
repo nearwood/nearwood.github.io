@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#1b1b1b">
+	<title>GAWMiner Fury | Nick</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		<meta property="og:title" content="GAWMiner Fury" />
+<meta property="og:description" content="So I&#8217;m attempting to jump on the Scrypt based ASIC coin mining bandwagon. I got a GAWMiner Fury to try out. It came with a free ZenMiner, which is a Raspberry Pi with a custom image that runs mining software automatically, and connects to a 3rd party website to allow remote control and monitoring.
+
+
+  
+  
+  
+    GAWMiner Fury and ZenMiner
+  
+
+
+It came with everything needed to power up and get started. The included instructions just mention how to get started using the ZenMiner, so it&#8217;s pretty skimpy compared to most other packaged products. Being an ASIC cryptocurrency miner, it&#8217;s already a specialty device so you likely know what you are doing. Still, the ZenMiner is geared to newcomers so they can easily start mining. In that respect I think it still needs work as the ZenOS web interface is pretty but limited." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://blog.nearwood.net/gawminer-fury/" />
+<meta property="article:published_time" content="2014-06-17T00:08:03+00:00" />
+<meta property="article:modified_time" content="2019-02-03T12:15:22-05:00" />
+
+		<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="GAWMiner Fury"/>
+<meta name="twitter:description" content="So I&#8217;m attempting to jump on the Scrypt based ASIC coin mining bandwagon. I got a GAWMiner Fury to try out. It came with a free ZenMiner, which is a Raspberry Pi with a custom image that runs mining software automatically, and connects to a 3rd party website to allow remote control and monitoring.
+
+
+  
+  
+  
+    GAWMiner Fury and ZenMiner
+  
+
+
+It came with everything needed to power up and get started. The included instructions just mention how to get started using the ZenMiner, so it&#8217;s pretty skimpy compared to most other packaged products. Being an ASIC cryptocurrency miner, it&#8217;s already a specialty device so you likely know what you are doing. Still, the ZenMiner is geared to newcomers so they can easily start mining. In that respect I think it still needs work as the ZenOS web interface is pretty but limited."/>
+
+	<link rel="stylesheet" href="/css/main.css">
+	<link rel="stylesheet" href="/css/themes/dark-green.css">
+	<link rel="icon" href="/icons/16.png" sizes="16x16" type="image/png">
+	<link rel="icon" href="/icons/32.png" sizes="32x32" type="image/png">
+		
+</head>
+<body>
+	<header class="header">
+	<a class="logo" href="/">Nick</a>
+	
+<nav class="main-nav" role="navigation">
+	<button id="toggle" class="main-nav__btn" aria-label="Menu toggle" aria-expanded="false" tabindex="0">
+		<div class="main-nav__btn-box" tabindex="-1">
+			<svg class="main-nav__icon icon-menu" width="18" height="18" viewBox="0 0 18 18">
+				<path class="icon-menu__burger" d="M18 0v3.6H0V0h18zM0 10.8h18V7.2H0v3.6zM0 18h18v-3.6H0V18z"/>
+				<path class="icon-menu__x" d="M11.55 9L18 15.45 15.45 18 9 11.55 2.55 18 0 15.45 6.45 9 0 2.55 2.55 0 9 6.45 15.45 0 18 2.55 11.55 9z"/>
+			</svg>
+		</div>
+	</button>
+	<ul id="menu" class="main-nav__list">
+		<li class="main-nav__item"><a class="main-nav__link" href="/">Home</a></li>
+		<li class="main-nav__item"><a class="main-nav__link" href="/pages/about/">About</a></li>
+		<li class="main-nav__item"><a class="main-nav__link" href="/pages/contact/">Contact</a></li>
+	</ul>
+</nav>
+</header>
+	<div class="primary">
+	
+	<main class="main">
+		<div class="single block">
+			<article class="post">
+				<h1 class="post__title">GAWMiner Fury</h1>
+				<div class="post__content"><p>So I&#8217;m attempting to jump on the Scrypt based ASIC coin mining bandwagon. I got a GAWMiner Fury to try out. It came with a free ZenMiner, which is a Raspberry Pi with a custom image that runs mining software automatically, and connects to a 3rd party website to allow remote control and monitoring.</p>
+
+<div id="attachment_354" style="width: 310px" class="wp-caption alignnone">
+  <img class="size-medium wp-image-354" src="http://www.nearwood.net/wp-content/uploads/IMG_20140606_181256-300x225.jpg" alt="GAWMiner Fury and ZenMiner" width="300" height="225" srcset="https://www.nearwood.net/wp-content/uploads/IMG_20140606_181256-300x225.jpg 300w, https://www.nearwood.net/wp-content/uploads/IMG_20140606_181256.jpg 1024w" sizes="(max-width: 300px) 100vw, 300px" />
+  
+  <p class="wp-caption-text">
+    GAWMiner Fury and ZenMiner
+  </p>
+</div>
+
+<p>It came with everything needed to power up and get started. The included instructions just mention how to get started using the ZenMiner, so it&#8217;s pretty skimpy compared to most other packaged products. Being an ASIC cryptocurrency miner, it&#8217;s already a specialty device so you likely know what you are doing. Still, the ZenMiner is geared to newcomers so they can easily start mining. In that respect I think it still needs work as the ZenOS web interface is pretty but limited.</p>
+
+<p>The software it runs is a few python scripts, a bash script or two, and a custom cgminer 3.1.1.1 build. That build of cgminer (either the vanilla or their modifications, I&#8217;m not sure which) has a bug that causes a lot of invalid shares. Originally I thought the problem was with cgminer not using the broadcasted network difficulty. There was even an updated release found on the ZeusMiner Blizzard site to fix this, but after building the results were the same: low hashrate at the pool due to discarded shares.</p>
+
+<p>So, on the various mining forums someone discovered a <a href="https://github.com/Darkwinde/bfgminer" target="_blank">BFGMiner fork</a> that has support for GAWMiner/ZeusMiner Fury/Blizzard devices (they are the same). So, now many forks later, it looks like there is some stable software. I&#8217;m pretty disappointed that the hardware ships out with broken software and no pointers at all on how to fix it. Luckily I was able to troubleshoot well enough on my own. Other users on the forums are clearly frustrated with the stock software setup.</p>
+
+<p>That said, I&#8217;ve bought a few more to try my luck out with mining. Bitcoin mining is out of reach save for only the largest mining groups since the difficulty is so high. Litecoin and other Scrypt based coins are headed that way as well, but I should be able to get on the train and ride for a little bit. Whether it turns out to be a wise investment or not remains to be seen, doubtful considering that once the Scrypt ASIC fad starts taking off, older models will be worthless.</p>
+
+<p>I am using the ZenMiner as just a rPi with BFGminer 4.2 built and running my own script to mine. I configured it to skip building in other drivers and unneeded stuff:</p>
+
+<pre>CFLAGS="-O3" ./configure --enable-scrypt --disable-other-drivers --enable-zeus --without-sensors --without-libmicrohttpd</pre>
+
+<p>Here is the command line:</p>
+
+<pre>./bfgminer --zeus-cc 6 --zeus-clk 328 --config bfgminer.conf</pre>
+
+<p>And bfgminer.conf:</p>
+
+<pre>"scan-serial" : [
+  "zeus:/dev/ttyUSB0"
+],
+"failover-only" : true, 
+"expiry" : "10", 
+"hotplug" : "5", 
+"log" : "20", 
+"no-pool-disable" : true, 
+"queue" : "1", 
+"scan-time" : "1", 
+"scrypt" : true, 
+"shares" : "0", 
+"kernel-path" : "/usr/local/bin"
+</pre>
+
+<p>Note that 4.1 uses &#8211;ltc-* and 4.2 uses &#8211;zeus-* for some command line options.</p>
+
+<p>With the new BFGMiner 4.2.1, I&#8217;m getting excellent hashing rates:</p>
+
+<div id="attachment_363" style="width: 369px" class="wp-caption alignnone">
+  <a href="http://www.nearwood.net/wp-content/uploads/hashing.png"><img class="wp-image-363 size-full" src="http://www.nearwood.net/wp-content/uploads/hashing.png" alt="DOGE Hashrate sample" width="359" height="235" srcset="https://www.nearwood.net/wp-content/uploads/hashing.png 359w, https://www.nearwood.net/wp-content/uploads/hashing-300x196.png 300w" sizes="(max-width: 359px) 100vw, 359px" /></a>
+  
+  <p class="wp-caption-text">
+    DOGE Hashrate sample
+  </p>
+</div></div>
+				
+				<footer class="post__footer">
+					
+
+
+<div class="post__tags">
+	<a class="post__tag btn" href="/tags/cryptocurrency">cryptocurrency</a><a class="post__tag btn" href="/tags/doge">DOGE</a><a class="post__tag btn" href="/tags/mining">mining</a>
+</div>
+
+
+					
+<div class="post__share share">
+	<a class="share__link btn" title="Share on Twitter" href="https://twitter.com/intent/tweet/?url=https%3a%2f%2fblog.nearwood.net%2fgawminer-fury%2f&amp;text=GAWMiner%20Fury" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, 'Share on Twitter', 'width=800,height=450,resizable=yes,toolbar=0,status=0'); return false">
+		<svg class="share__icon" aria-label="Twitter" role="img" width="32" height="32" viewBox="0 0 512 512"><path d="M437 152a72 72 0 0 1-40 12 72 72 0 0 0 32-40 72 72 0 0 1-45 17 72 72 0 0 0-122 65 200 200 0 0 1-145-74 72 72 0 0 0 22 94 72 72 0 0 1-32-7 72 72 0 0 0 56 69 72 72 0 0 1-32 1 72 72 0 0 0 67 50 200 200 0 0 1-105 29 200 200 0 0 0 309-179 200 200 0 0 0 35-37"/></svg>
+	</a>
+	<a class="share__link btn" title="Share on Reddit" href="https://www.reddit.com/submit?url=https%3a%2f%2fblog.nearwood.net%2fgawminer-fury%2f&amp;title=GAWMiner%20Fury" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, 'Share on Reddit', 'width=832,height=624,toolbar=0,status=0'); return false">
+		<svg class="share__icon" aria-label="Reddit" role="img" width="32" height="32" viewBox="0 0 512 512"><path fill-rule="evenodd" d="M375 146a32 32 0 1 0-29-46l-65-13c-5-1-9 2-10 6l-22 97c-45 1-85 15-113 36a42 42 0 1 0-45 69l-1 12c0 65 74 117 166 117s166-52 166-117l-1-11a42 42 0 1 0-44-69c-28-21-67-35-111-37l19-86 58 13a32 32 0 0 0 32 29zM190 353c2-1 4 0 5 1 15 11 38 18 61 18s46-6 61-18a7 7 0 0 1 8 10c-18 14-44 21-69 21-25-1-51-7-69-21a6 6 0 0 1 3-11zm23-44a31 31 0 1 1-44-44 31 31 0 0 1 44 44zm130 0a31 31 0 1 0-44-44 31 31 0 0 0 44 44z"/></svg>
+	</a>
+</div>
+				</footer>
+				
+			</article>
+		</div>
+	</main>
+	
+	
+
+
+
+	
+
+	</div>
+	<footer class="footer">
+<div class="footer__social social">
+		<a class="social__link" target="_blank" rel="noopener noreferrer" href="https://twitter.com/nearwood">
+			<svg class="social__icon" aria-label="Twitter" role="img" width="32" height="32" viewBox="0 0 512 512"><path d="M437 152a72 72 0 0 1-40 12 72 72 0 0 0 32-40 72 72 0 0 1-45 17 72 72 0 0 0-122 65 200 200 0 0 1-145-74 72 72 0 0 0 22 94 72 72 0 0 1-32-7 72 72 0 0 0 56 69 72 72 0 0 1-32 1 72 72 0 0 0 67 50 200 200 0 0 1-105 29 200 200 0 0 0 309-179 200 200 0 0 0 35-37"/></svg>
+		</a>
+		<a class="social__link" target="_blank" rel="noopener noreferrer" href="https://github.com/nearwood">
+			<svg class="social__icon" aria-label="Github" role="img" width="32" height="32" viewBox="0 0 512 512"><path d="M335 499c14 0 12 17 12 17H165s-2-17 12-17c13 0 16-6 16-12l-1-50c-71 16-86-28-86-28-12-30-28-37-28-37-24-16 1-16 1-16 26 2 40 26 40 26 22 39 59 28 74 22 2-17 9-28 16-35-57-6-116-28-116-126 0-28 10-51 26-69-3-6-11-32 3-67 0 0 21-7 70 26 42-12 86-12 128 0 49-33 70-26 70-26 14 35 6 61 3 67 16 18 26 41 26 69 0 98-60 120-117 126 10 8 18 24 18 48l-1 70c0 6 3 12 16 12z"/></svg>
+		</a>
+</div>
+	<div class="footer__copyright">© 2019 Nick Earwood. <span class="footer__copyright-credits">Powered by <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/vimux/binario" rel="nofollow noopener" target="_blank">Binario</a> theme.</span></div>
+</footer>
+<script src="/js/menu.js"></script>
+</body>
+</html>

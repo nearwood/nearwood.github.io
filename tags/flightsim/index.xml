@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>flightsim on Nick</title>
+    <link>https://blog.nearwood.net/tags/flightsim/</link>
+    <description>Recent content in flightsim on Nick</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© 2019 Nicholas Earwood</copyright>
+    <lastBuildDate>Sat, 16 Jan 2016 03:44:07 +0000</lastBuildDate>
+    
+	<atom:link href="https://blog.nearwood.net/tags/flightsim/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>DCS MiG-21: First Flight</title>
+      <link>https://blog.nearwood.net/dcs-mig-21-first-flight/</link>
+      <pubDate>Sat, 16 Jan 2016 03:44:07 +0000</pubDate>
+      
+      <guid>https://blog.nearwood.net/dcs-mig-21-first-flight/</guid>
+      <description>I have DCS World, and whenever I get a new module I like to try and &amp;#8220;just fly the thing&amp;#8221; with minimal cockpit familiarity. I always expect hilarity to ensue but it&amp;#8217;s really not that exciting. Like with the Ka-50 I just crashed with in-air starts, and could never get it off the ground with a cold start (until I read the operating manual). But helicopters are hard, so that&amp;#8217;s not a surprise.</description>
+    </item>
+    
+  </channel>
+</rss>

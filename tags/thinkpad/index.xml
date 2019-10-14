@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ThinkPad on Nick</title>
+    <link>https://blog.nearwood.net/tags/thinkpad/</link>
+    <description>Recent content in ThinkPad on Nick</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© 2019 Nicholas Earwood</copyright>
+    <lastBuildDate>Sun, 09 Mar 2014 00:42:37 +0000</lastBuildDate>
+    
+	<atom:link href="https://blog.nearwood.net/tags/thinkpad/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Arch Linux on Lenovo ThinkPad T410</title>
+      <link>https://blog.nearwood.net/arch-linux-on-lenovo-thinkpad-t410/</link>
+      <pubDate>Sun, 09 Mar 2014 00:42:37 +0000</pubDate>
+      
+      <guid>https://blog.nearwood.net/arch-linux-on-lenovo-thinkpad-t410/</guid>
+      <description>I picked up a really cheap ThinkPad T410 from Craigslist. First-gen mobile Core i5, 4GB, 320GB drive and most importantly: 1440&amp;#215;900. A 40% increase in horizontal space (and 17% vertical). Finally I can tune without trying to get TunerStudio to fit.
+Installing Arch was quick, as usual. The laptop has a fingerprint reader, which works really well in Linux. Now I can log in with a finger swipe&amp;#8211;although you have to press enter after swiping.</description>
+    </item>
+    
+  </channel>
+</rss>

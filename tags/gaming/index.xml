@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>gaming on Nick</title>
+    <link>https://blog.nearwood.net/tags/gaming/</link>
+    <description>Recent content in gaming on Nick</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© 2019 Nicholas Earwood</copyright>
+    <lastBuildDate>Fri, 12 Jun 2015 00:59:51 +0000</lastBuildDate>
+    
+	<atom:link href="https://blog.nearwood.net/tags/gaming/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Oculus Rift and Touch</title>
+      <link>https://blog.nearwood.net/oculus-rift-and-touch/</link>
+      <pubDate>Fri, 12 Jun 2015 00:59:51 +0000</pubDate>
+      
+      <guid>https://blog.nearwood.net/oculus-rift-and-touch/</guid>
+      <description>I&amp;#8217;m super excited for the imminent onslaught of consumer grade VR equipment and game support. I think it will change how games are played from now on. Not all games, mind you, it takes a certain level of involvement to strap on a head-mounted display and get into the experience. The military already uses similar technology extensively for training. It&amp;#8217;s just a matter of months before equipment hits shelves.
+That said, there&amp;#8217;s a serious problem with it already.</description>
+    </item>
+    
+  </channel>
+</rss>

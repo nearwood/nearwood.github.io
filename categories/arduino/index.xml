@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Arduino on Nick</title>
+    <link>https://blog.nearwood.net/categories/arduino/</link>
+    <description>Recent content in Arduino on Nick</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© 2019 Nicholas Earwood</copyright>
+    <lastBuildDate>Wed, 12 Nov 2014 02:04:43 +0000</lastBuildDate>
+    
+	<atom:link href="https://blog.nearwood.net/categories/arduino/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Carduino 2.0 – Intel Galileo Setup</title>
+      <link>https://blog.nearwood.net/carduino-2-0-intel-galileo-setup/</link>
+      <pubDate>Wed, 12 Nov 2014 02:04:43 +0000</pubDate>
+      
+      <guid>https://blog.nearwood.net/carduino-2-0-intel-galileo-setup/</guid>
+      <description>&lt;p&gt;Out of the box the Galileo is setup to run sketches uploaded from volatile memory, which is really lame. I didn&amp;#8217;t spend much time with it using the stock SPI kernel. So, an SD card is pretty much required to do any serious development with this board. This is not a bad thing (although you aren&amp;#8217;t running in real-time anymore), since having a full OS to use has lots of advantages. Plus, this way I can automate the build process in a way I&amp;#8217;m more familiar with.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

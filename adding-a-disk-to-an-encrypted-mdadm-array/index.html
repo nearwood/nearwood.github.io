@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#1b1b1b">
+	<title>Adding a disk to an encrypted mdadm array | Nick</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		<meta property="og:title" content="Adding a disk to an encrypted mdadm array" />
+<meta property="og:description" content="My RAID6 was originally planned with 6 drives, but only had 5 for a while due to space concerns with the case. However, I found as a file, media, and multiple cryptocurrency node it filled up the 2.7TB pretty quickly. So, I got a new case (and some more RAM), which has proper space for 6 3.5&#8243; drives (and 2 5.25&#8243;). When migrating to this I decided to add the extra 1TB WD Red NAS drive I bought but have not been able to use.
+
+The case is a Fractal Design Define Mini, and I am thoroughly impressed. Six 3.5&#8243; slots, two 5.25&#8243; external slots, and lots of sound padding on the doors and sides.
+
+" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://blog.nearwood.net/adding-a-disk-to-an-encrypted-mdadm-array/" />
+<meta property="article:published_time" content="2017-09-25T00:27:40+00:00" />
+<meta property="article:modified_time" content="2019-02-03T12:15:22-05:00" />
+
+		<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Adding a disk to an encrypted mdadm array"/>
+<meta name="twitter:description" content="My RAID6 was originally planned with 6 drives, but only had 5 for a while due to space concerns with the case. However, I found as a file, media, and multiple cryptocurrency node it filled up the 2.7TB pretty quickly. So, I got a new case (and some more RAM), which has proper space for 6 3.5&#8243; drives (and 2 5.25&#8243;). When migrating to this I decided to add the extra 1TB WD Red NAS drive I bought but have not been able to use.
+
+The case is a Fractal Design Define Mini, and I am thoroughly impressed. Six 3.5&#8243; slots, two 5.25&#8243; external slots, and lots of sound padding on the doors and sides.
+
+"/>
+
+	<link rel="stylesheet" href="/css/main.css">
+	<link rel="stylesheet" href="/css/themes/dark-green.css">
+	<link rel="icon" href="/icons/16.png" sizes="16x16" type="image/png">
+	<link rel="icon" href="/icons/32.png" sizes="32x32" type="image/png">
+		
+</head>
+<body>
+	<header class="header">
+	<a class="logo" href="/">Nick</a>
+	
+<nav class="main-nav" role="navigation">
+	<button id="toggle" class="main-nav__btn" aria-label="Menu toggle" aria-expanded="false" tabindex="0">
+		<div class="main-nav__btn-box" tabindex="-1">
+			<svg class="main-nav__icon icon-menu" width="18" height="18" viewBox="0 0 18 18">
+				<path class="icon-menu__burger" d="M18 0v3.6H0V0h18zM0 10.8h18V7.2H0v3.6zM0 18h18v-3.6H0V18z"/>
+				<path class="icon-menu__x" d="M11.55 9L18 15.45 15.45 18 9 11.55 2.55 18 0 15.45 6.45 9 0 2.55 2.55 0 9 6.45 15.45 0 18 2.55 11.55 9z"/>
+			</svg>
+		</div>
+	</button>
+	<ul id="menu" class="main-nav__list">
+		<li class="main-nav__item"><a class="main-nav__link" href="/">Home</a></li>
+		<li class="main-nav__item"><a class="main-nav__link" href="/pages/about/">About</a></li>
+		<li class="main-nav__item"><a class="main-nav__link" href="/pages/contact/">Contact</a></li>
+	</ul>
+</nav>
+</header>
+	<div class="primary">
+	
+	<main class="main">
+		<div class="single block">
+			<article class="post">
+				<h1 class="post__title">Adding a disk to an encrypted mdadm array</h1>
+				<div class="post__content"><p>My RAID6 was originally planned with 6 drives, but only had 5 for a while due to space concerns with the case. However, I found as a file, media, and multiple cryptocurrency node it filled up the 2.7TB pretty quickly. So, I got a new case (and some more RAM), which has proper space for 6 3.5&#8243; drives (and 2 5.25&#8243;). When migrating to this I decided to add the extra 1TB WD Red NAS drive I bought but have not been able to use.</p>
+
+<p>The case is a Fractal Design Define Mini, and I am thoroughly impressed. Six 3.5&#8243; slots, two 5.25&#8243; external slots, and lots of sound padding on the doors and sides.</p>
+
+<p><img class="aligncenter size-large wp-image-773" src="http://www.nearwood.net/wp-content/uploads/IMG_20170924_120224-1024x768.jpg" alt="" width="640" height="480" srcset="https://www.nearwood.net/wp-content/uploads/IMG_20170924_120224-1024x768.jpg 1024w, https://www.nearwood.net/wp-content/uploads/IMG_20170924_120224-300x225.jpg 300w, https://www.nearwood.net/wp-content/uploads/IMG_20170924_120224-768x576.jpg 768w" sizes="(max-width: 640px) 100vw, 640px" /></p>
+
+<p>So, at first I was worried it would be a huge PITA to add another drive, since I have a fake RAID under a encrypted volume. But, Linux. It was easy. Keep in mind in this instance,  the new device node is <code>/dev/sdf</code>, yours will likely be different. After connecting the disk and powering up, partition the disk. I have set it up identical to all other disks, 128MiB EFI partition on <code>sdf1</code>, 931.4GiB <code>sdf2</code> (you can use <code>fdisk</code>/<code>gdisk</code> to partition manually or <code>sfdisk</code> to copy the partition structure of another drive). Having the EFI partition on each disk allows me to boot if any drive fails, since the mdraid is setup only across the second partitions on each drive. That is, my boot partition is not part of the array. Note that you have to synchronize any updated kernel or boot files across these boot partitions. This can be automated with a kernel build time hook.</p>
+
+<p>Now you can add the disk (more accurately, the partition) as a spare:</p>
+
+<p><code class="bash">mdadm &ndash;add /dev/md0 /dev/sdf2</code></p>
+
+<p>If you cat <code>/proc/mdstat</code>, you will see it&#8217;s been added as a spare:</p>
+
+<pre>md0 : active raid6 sdf2[5](S) sdc2[2] sdb2[1] sda2[0] sde2[4] sdd2[3]</pre>
+
+<p>mdadm will now resync the array, which will take a while (about 4 hours, in my case). Be sure to adjust your mdadm speed limits in /proc/sys/dev/raid/speed_limit_max to speed things up considerably.</p>
+
+<p>Once that&#8217;s done, you can grow the array. You can technically grow an array while it&#8217;s still syncing but when sensitive data is in play I tend to get a little superstitious:</p>
+
+<p><code class="bash">mdadm &ndash;grow /dev/md0 &ndash;raid-devices=6</code></p>
+
+<p>This will, again, take hours and since I have all of our digital lives on here (and backed up, but still), I am still too nervous to continue until after the reshape is done. Though you can without issue, I think&#8230;</p>
+
+<pre>md0 : active raid6 sdf2[5] sdc2[2] sdb2[1] sda2[0] sde2[4] sdd2[3]
+ 2929501200 blocks super 1.2 level 6, 16k chunk, algorithm 2 [6/6] [UUUUUU]
+ [&gt;....................] reshape = 0.1% (1146936/976500400) finish=585.9min speed=27744K/sec</pre>
+
+<p>Now normally this is where you&#8217;d extend the filesystem, but the next layer is the encryption, so we have to resize that first:</p>
+
+<p><code class="bash">cryptsetup resize root</code></p>
+
+<p>That only takes a few seconds, since it just adds available free space. Now you can finally extend the filesystem itself:</p>
+
+<pre>/dev/mapper/root 2.7T 2.2T 540G 81% /</pre>
+
+<p><code class="bash">resize2fs /dev/mapper/root</code></p>
+
+<pre>/dev/mapper/root 3.6T 2.2T 1.5T 61% /</pre>
+
+<p>That&#8217;s it. A dmcrypt layer really only adds one quick command to the procedure. Now hopefully it lasts this way for a while!</p></div>
+				
+				<footer class="post__footer">
+					
+
+
+<div class="post__tags">
+	<a class="post__tag btn" href="/tags/dmcrypt">dmcrypt</a><a class="post__tag btn" href="/tags/linux">Linux</a><a class="post__tag btn" href="/tags/mdadm">mdadm</a><a class="post__tag btn" href="/tags/raid">raid</a>
+</div>
+
+
+					
+<div class="post__share share">
+	<a class="share__link btn" title="Share on Twitter" href="https://twitter.com/intent/tweet/?url=https%3a%2f%2fblog.nearwood.net%2fadding-a-disk-to-an-encrypted-mdadm-array%2f&amp;text=Adding%20a%20disk%20to%20an%20encrypted%20mdadm%20array" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, 'Share on Twitter', 'width=800,height=450,resizable=yes,toolbar=0,status=0'); return false">
+		<svg class="share__icon" aria-label="Twitter" role="img" width="32" height="32" viewBox="0 0 512 512"><path d="M437 152a72 72 0 0 1-40 12 72 72 0 0 0 32-40 72 72 0 0 1-45 17 72 72 0 0 0-122 65 200 200 0 0 1-145-74 72 72 0 0 0 22 94 72 72 0 0 1-32-7 72 72 0 0 0 56 69 72 72 0 0 1-32 1 72 72 0 0 0 67 50 200 200 0 0 1-105 29 200 200 0 0 0 309-179 200 200 0 0 0 35-37"/></svg>
+	</a>
+	<a class="share__link btn" title="Share on Reddit" href="https://www.reddit.com/submit?url=https%3a%2f%2fblog.nearwood.net%2fadding-a-disk-to-an-encrypted-mdadm-array%2f&amp;title=Adding%20a%20disk%20to%20an%20encrypted%20mdadm%20array" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, 'Share on Reddit', 'width=832,height=624,toolbar=0,status=0'); return false">
+		<svg class="share__icon" aria-label="Reddit" role="img" width="32" height="32" viewBox="0 0 512 512"><path fill-rule="evenodd" d="M375 146a32 32 0 1 0-29-46l-65-13c-5-1-9 2-10 6l-22 97c-45 1-85 15-113 36a42 42 0 1 0-45 69l-1 12c0 65 74 117 166 117s166-52 166-117l-1-11a42 42 0 1 0-44-69c-28-21-67-35-111-37l19-86 58 13a32 32 0 0 0 32 29zM190 353c2-1 4 0 5 1 15 11 38 18 61 18s46-6 61-18a7 7 0 0 1 8 10c-18 14-44 21-69 21-25-1-51-7-69-21a6 6 0 0 1 3-11zm23-44a31 31 0 1 1-44-44 31 31 0 0 1 44 44zm130 0a31 31 0 1 0-44-44 31 31 0 0 0 44 44z"/></svg>
+	</a>
+</div>
+				</footer>
+				
+			</article>
+		</div>
+	</main>
+	
+	
+
+
+
+<div class="related block">
+	<h3 class="related__title">Related</h3>
+	<ul class="related__list">
+		
+		<li class="related__item"><a class="related__link" href="/fixing-mirrorlist-on-arch-linux-arm-raspberry-pi/">Fixing mirrorlist on Arch Linux Arm (Raspberry Pi)</a></li>
+		
+		<li class="related__item"><a class="related__link" href="/gentoo-linux-tesla-it-was-only-a-matter-of-time/">Gentoo Linux Tesla – It was only a matter of time…</a></li>
+		
+		<li class="related__item"><a class="related__link" href="/installing-arch-linux-with-an-encrypted-root/">Installing Arch Linux with an encrypted root</a></li>
+		
+		<li class="related__item"><a class="related__link" href="/carduino-2-0-intel-galileo-setup/">Carduino 2.0 – Intel Galileo Setup</a></li>
+		
+		<li class="related__item"><a class="related__link" href="/arch-linux-on-lenovo-thinkpad-t410/">Arch Linux on Lenovo ThinkPad T410</a></li>
+		
+	</ul>
+</div>
+
+	
+
+	</div>
+	<footer class="footer">
+<div class="footer__social social">
+		<a class="social__link" target="_blank" rel="noopener noreferrer" href="https://twitter.com/nearwood">
+			<svg class="social__icon" aria-label="Twitter" role="img" width="32" height="32" viewBox="0 0 512 512"><path d="M437 152a72 72 0 0 1-40 12 72 72 0 0 0 32-40 72 72 0 0 1-45 17 72 72 0 0 0-122 65 200 200 0 0 1-145-74 72 72 0 0 0 22 94 72 72 0 0 1-32-7 72 72 0 0 0 56 69 72 72 0 0 1-32 1 72 72 0 0 0 67 50 200 200 0 0 1-105 29 200 200 0 0 0 309-179 200 200 0 0 0 35-37"/></svg>
+		</a>
+		<a class="social__link" target="_blank" rel="noopener noreferrer" href="https://github.com/nearwood">
+			<svg class="social__icon" aria-label="Github" role="img" width="32" height="32" viewBox="0 0 512 512"><path d="M335 499c14 0 12 17 12 17H165s-2-17 12-17c13 0 16-6 16-12l-1-50c-71 16-86-28-86-28-12-30-28-37-28-37-24-16 1-16 1-16 26 2 40 26 40 26 22 39 59 28 74 22 2-17 9-28 16-35-57-6-116-28-116-126 0-28 10-51 26-69-3-6-11-32 3-67 0 0 21-7 70 26 42-12 86-12 128 0 49-33 70-26 70-26 14 35 6 61 3 67 16 18 26 41 26 69 0 98-60 120-117 126 10 8 18 24 18 48l-1 70c0 6 3 12 16 12z"/></svg>
+		</a>
+</div>
+	<div class="footer__copyright">© 2019 Nick Earwood. <span class="footer__copyright-credits">Powered by <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/vimux/binario" rel="nofollow noopener" target="_blank">Binario</a> theme.</span></div>
+</footer>
+<script src="/js/menu.js"></script>
+</body>
+</html>

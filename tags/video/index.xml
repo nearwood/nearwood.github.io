@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>video on Nick</title>
+    <link>https://blog.nearwood.net/tags/video/</link>
+    <description>Recent content in video on Nick</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© 2019 Nicholas Earwood</copyright>
+    <lastBuildDate>Sun, 02 Aug 2015 23:25:29 +0000</lastBuildDate>
+    
+	<atom:link href="https://blog.nearwood.net/tags/video/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Find videos by FPS</title>
+      <link>https://blog.nearwood.net/find-videos-by-fps/</link>
+      <pubDate>Sun, 02 Aug 2015 23:25:29 +0000</pubDate>
+      
+      <guid>https://blog.nearwood.net/find-videos-by-fps/</guid>
+      <description>I produced some videos in 60 FPS, but couldn&amp;#8217;t remember which ones. Since, of course, I didn&amp;#8217;t label their FPS at the time, I needed to find them in vast sea of 30 FPS videos. Rather than just use a simple grep with ffmpeg to find which ones, I thought it might be more useful to find all videos that have a certain FPS threshold.
+Usage: ./60fps.sh [directory]
+#!/bin/bash SAVEIFS=$IFS IFS=$&#39;\n&#39; function fpscheck { FPS=$(ffmpeg -i &#34;</description>
+    </item>
+    
+    <item>
+      <title>Action Camera Review: Garmin Virb Elite</title>
+      <link>https://blog.nearwood.net/action-camera-review-garmin-virb-elite/</link>
+      <pubDate>Fri, 10 Apr 2015 02:51:49 +0000</pubDate>
+      
+      <guid>https://blog.nearwood.net/action-camera-review-garmin-virb-elite/</guid>
+      <description>After seeing a fellow MSNE autocrosser post a video with nice data overlays, I asked what datalogger and software he used. It turns out it wasn&amp;#8217;t just a data logger, it was a camera that gathered his speed, acceleration, and so on for him. It was the Garmin Virb Elite. The &amp;#8216;Elite&amp;#8217; part signifying the difference between the non-sensor, data-less variant.
+I&amp;#8217;d never heard of it, and I thought I kept at least a cursory eye on the action camera market.</description>
+    </item>
+    
+  </channel>
+</rss>

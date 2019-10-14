@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>udev on Nick</title>
+    <link>https://blog.nearwood.net/tags/udev/</link>
+    <description>Recent content in udev on Nick</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© 2019 Nicholas Earwood</copyright>
+    <lastBuildDate>Mon, 18 Feb 2013 02:30:09 +0000</lastBuildDate>
+    
+	<atom:link href="https://blog.nearwood.net/tags/udev/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>udev broke, server broke, router broke</title>
+      <link>https://blog.nearwood.net/udev-broke-server-broke-router-broke/</link>
+      <pubDate>Mon, 18 Feb 2013 02:30:09 +0000</pubDate>
+      
+      <guid>https://blog.nearwood.net/udev-broke-server-broke-router-broke/</guid>
+      <description>I attempted to get a webcam going on our home server. So, I plug it in, and since I&amp;#8217;ve done this before I ran a script I made to grab an image from the webcam. Which didn&amp;#8217;t work. So, after checking out why (/dev/video0 node was missing), I noticed that the kernel no longer had support built in.
+After going through the kernel options, I realized they changed the v4l and webcam support options around and since I just upgrade using &amp;#8220;&amp;#8211;silentoldconfig&amp;#8221; (the bad way to do upgrades), it broke whenever I upgraded to 3.</description>
+    </item>
+    
+  </channel>
+</rss>

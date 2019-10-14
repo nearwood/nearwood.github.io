@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#1b1b1b">
+	<title>Migrating to Firefox from Google Chrome | Nick</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		<meta property="og:title" content="Migrating to Firefox from Google Chrome" />
+<meta property="og:description" content="After Firefox Quantum was released, I tried it out and decided to switch. I had a few reasons why:
+ Faster No tracking Can run Add-Ons (Extensions) on mobile  I was very impressed, especially with Tracking Protection, how much faster Firefox has become. Number 2 refers to all your browsing data being sent to Google HQ, encrypted I imagine, but still. And for number 3, on Android certain sites would have 3rd party ads that redirected the browser from the new article or whatever page I was reading to some spammy ad page." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://blog.nearwood.net/migrating-to-firefox-from-google-chrome/" />
+<meta property="article:published_time" content="2018-02-17T19:45:25+00:00" />
+<meta property="article:modified_time" content="2019-02-03T12:15:22-05:00" />
+
+		<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Migrating to Firefox from Google Chrome"/>
+<meta name="twitter:description" content="After Firefox Quantum was released, I tried it out and decided to switch. I had a few reasons why:
+ Faster No tracking Can run Add-Ons (Extensions) on mobile  I was very impressed, especially with Tracking Protection, how much faster Firefox has become. Number 2 refers to all your browsing data being sent to Google HQ, encrypted I imagine, but still. And for number 3, on Android certain sites would have 3rd party ads that redirected the browser from the new article or whatever page I was reading to some spammy ad page."/>
+
+	<link rel="stylesheet" href="/css/main.css">
+	<link rel="stylesheet" href="/css/themes/dark-green.css">
+	<link rel="icon" href="/icons/16.png" sizes="16x16" type="image/png">
+	<link rel="icon" href="/icons/32.png" sizes="32x32" type="image/png">
+		
+</head>
+<body>
+	<header class="header">
+	<a class="logo" href="/">Nick</a>
+	
+<nav class="main-nav" role="navigation">
+	<button id="toggle" class="main-nav__btn" aria-label="Menu toggle" aria-expanded="false" tabindex="0">
+		<div class="main-nav__btn-box" tabindex="-1">
+			<svg class="main-nav__icon icon-menu" width="18" height="18" viewBox="0 0 18 18">
+				<path class="icon-menu__burger" d="M18 0v3.6H0V0h18zM0 10.8h18V7.2H0v3.6zM0 18h18v-3.6H0V18z"/>
+				<path class="icon-menu__x" d="M11.55 9L18 15.45 15.45 18 9 11.55 2.55 18 0 15.45 6.45 9 0 2.55 2.55 0 9 6.45 15.45 0 18 2.55 11.55 9z"/>
+			</svg>
+		</div>
+	</button>
+	<ul id="menu" class="main-nav__list">
+		<li class="main-nav__item"><a class="main-nav__link" href="/">Home</a></li>
+		<li class="main-nav__item"><a class="main-nav__link" href="/pages/about/">About</a></li>
+		<li class="main-nav__item"><a class="main-nav__link" href="/pages/contact/">Contact</a></li>
+	</ul>
+</nav>
+</header>
+	<div class="primary">
+	
+	<main class="main">
+		<div class="single block">
+			<article class="post">
+				<h1 class="post__title">Migrating to Firefox from Google Chrome</h1>
+				<div class="post__content"><p>After <a href="https://hacks.mozilla.org/2017/09/firefox-quantum-developer-edition-fastest-firefox-ever/">Firefox Quantum</a> was released, I tried it out and decided to switch. I had a few reasons why:</p>
+
+<ol>
+<li>Faster</li>
+<li>No tracking</li>
+<li>Can run Add-Ons (Extensions) on mobile</li>
+</ol>
+
+<p>I was very impressed, especially with Tracking Protection, how much faster Firefox has become. Number 2 refers to all your browsing data being sent to Google HQ, encrypted I imagine, but still. And for number 3, on Android certain sites would have 3rd party ads that redirected the browser from the new article or whatever page I was reading to some spammy ad page. After discovering that you can run, say <a href="https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/">uBlock Origin</a>, on mobile I was determined to switch.</p>
+
+<p>So to switch, I needed two profiles (&#8220;work&#8221; and &#8220;personal&#8221;, always separate as God intended) and as I found out later, a way to get those two profiles as separate taskbar tabs&#8211;which was much harder than it should be.</p>
+
+<p>Switching was not so easy. I&#8217;ve had Firefox installed, even with multiple profiles before but it&#8217;s definitely not as simple to setup as Chrome. In Chrome, there&#8217;s a profile button on the top right of the title bar that makes switching profiles easy.</p>
+
+<p><img class="aligncenter size-full wp-image-835" src="https://www.nearwood.net/wp-content/uploads/chrome-profile.png" alt="" width="201" height="108" /></p>
+
+<p>In Firefox, when it first starts after a fresh install it asks you for a profile name but by default will not ever ask again. So you have to run <code>firefox -profilemanager</code> (after closing any and all Firefox windows), and add a new profile.</p>
+
+<p><img class="aligncenter size-full wp-image-836" src="http://www.nearwood.net/wp-content/uploads/FxProfileMgr.png" alt="" width="377" height="293" srcset="https://www.nearwood.net/wp-content/uploads/FxProfileMgr.png 377w, https://www.nearwood.net/wp-content/uploads/FxProfileMgr-300x233.png 300w" sizes="(max-width: 377px) 100vw, 377px" /></p>
+
+<p>Now, you can setup this Firefox installation to allow multiple profiles, but this causes problems with the Windows (7 and 10, at least) taskbar. The separate instances have the same appId, causing both profiles&#8217; windows to be grouped. Which is annoying. And any shortcuts you make to each profile will not inflate with the respective process. In other words, your shortcut and the running application will both be visible at the same time, using up space. And if you click the shortcut, Firefox shows a dialog that complains it can&#8217;t start because it is still running. Ugh.</p>
+
+<p>So forget trying to setup shortcuts and pin them to your taskbar for now. The best solution is to just run two installations of Firefox, each using a separate profile by default.</p>
+
+<p>For work, since I&#8217;m a developer, I&#8217;m using <a href="https://www.mozilla.org/en-US/firefox/developer/">Firefox Developer Edition</a>. For personal crap, I just use regular Firefox. You <em>might</em> be able to install the same edition of Firefox alongside but in a different directory, but I believe the appId will still be the same. In my case, these each have separate appIds, so no issues. Install the second copy of Firefox, and then select the other profile you want to use with it.</p>
+
+<p>Pin it to the taskbar, and your done.</p>
+</div>
+				
+				<footer class="post__footer">
+					
+
+
+<div class="post__tags">
+	<a class="post__tag btn" href="/tags/browser">browser</a><a class="post__tag btn" href="/tags/chrome">chrome</a><a class="post__tag btn" href="/tags/firefox">firefox</a>
+</div>
+
+
+					
+<div class="post__share share">
+	<a class="share__link btn" title="Share on Twitter" href="https://twitter.com/intent/tweet/?url=https%3a%2f%2fblog.nearwood.net%2fmigrating-to-firefox-from-google-chrome%2f&amp;text=Migrating%20to%20Firefox%20from%20Google%20Chrome" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, 'Share on Twitter', 'width=800,height=450,resizable=yes,toolbar=0,status=0'); return false">
+		<svg class="share__icon" aria-label="Twitter" role="img" width="32" height="32" viewBox="0 0 512 512"><path d="M437 152a72 72 0 0 1-40 12 72 72 0 0 0 32-40 72 72 0 0 1-45 17 72 72 0 0 0-122 65 200 200 0 0 1-145-74 72 72 0 0 0 22 94 72 72 0 0 1-32-7 72 72 0 0 0 56 69 72 72 0 0 1-32 1 72 72 0 0 0 67 50 200 200 0 0 1-105 29 200 200 0 0 0 309-179 200 200 0 0 0 35-37"/></svg>
+	</a>
+	<a class="share__link btn" title="Share on Reddit" href="https://www.reddit.com/submit?url=https%3a%2f%2fblog.nearwood.net%2fmigrating-to-firefox-from-google-chrome%2f&amp;title=Migrating%20to%20Firefox%20from%20Google%20Chrome" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, 'Share on Reddit', 'width=832,height=624,toolbar=0,status=0'); return false">
+		<svg class="share__icon" aria-label="Reddit" role="img" width="32" height="32" viewBox="0 0 512 512"><path fill-rule="evenodd" d="M375 146a32 32 0 1 0-29-46l-65-13c-5-1-9 2-10 6l-22 97c-45 1-85 15-113 36a42 42 0 1 0-45 69l-1 12c0 65 74 117 166 117s166-52 166-117l-1-11a42 42 0 1 0-44-69c-28-21-67-35-111-37l19-86 58 13a32 32 0 0 0 32 29zM190 353c2-1 4 0 5 1 15 11 38 18 61 18s46-6 61-18a7 7 0 0 1 8 10c-18 14-44 21-69 21-25-1-51-7-69-21a6 6 0 0 1 3-11zm23-44a31 31 0 1 1-44-44 31 31 0 0 1 44 44zm130 0a31 31 0 1 0-44-44 31 31 0 0 0 44 44z"/></svg>
+	</a>
+</div>
+				</footer>
+				
+			</article>
+		</div>
+	</main>
+	
+	
+
+
+
+	
+
+	</div>
+	<footer class="footer">
+<div class="footer__social social">
+		<a class="social__link" target="_blank" rel="noopener noreferrer" href="https://twitter.com/nearwood">
+			<svg class="social__icon" aria-label="Twitter" role="img" width="32" height="32" viewBox="0 0 512 512"><path d="M437 152a72 72 0 0 1-40 12 72 72 0 0 0 32-40 72 72 0 0 1-45 17 72 72 0 0 0-122 65 200 200 0 0 1-145-74 72 72 0 0 0 22 94 72 72 0 0 1-32-7 72 72 0 0 0 56 69 72 72 0 0 1-32 1 72 72 0 0 0 67 50 200 200 0 0 1-105 29 200 200 0 0 0 309-179 200 200 0 0 0 35-37"/></svg>
+		</a>
+		<a class="social__link" target="_blank" rel="noopener noreferrer" href="https://github.com/nearwood">
+			<svg class="social__icon" aria-label="Github" role="img" width="32" height="32" viewBox="0 0 512 512"><path d="M335 499c14 0 12 17 12 17H165s-2-17 12-17c13 0 16-6 16-12l-1-50c-71 16-86-28-86-28-12-30-28-37-28-37-24-16 1-16 1-16 26 2 40 26 40 26 22 39 59 28 74 22 2-17 9-28 16-35-57-6-116-28-116-126 0-28 10-51 26-69-3-6-11-32 3-67 0 0 21-7 70 26 42-12 86-12 128 0 49-33 70-26 70-26 14 35 6 61 3 67 16 18 26 41 26 69 0 98-60 120-117 126 10 8 18 24 18 48l-1 70c0 6 3 12 16 12z"/></svg>
+		</a>
+</div>
+	<div class="footer__copyright">© 2019 Nick Earwood. <span class="footer__copyright-credits">Powered by <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/vimux/binario" rel="nofollow noopener" target="_blank">Binario</a> theme.</span></div>
+</footer>
+<script src="/js/menu.js"></script>
+</body>
+</html>

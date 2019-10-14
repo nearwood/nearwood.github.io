@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>wireless on Nick</title>
+    <link>https://blog.nearwood.net/tags/wireless/</link>
+    <description>Recent content in wireless on Nick</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© 2019 Nicholas Earwood</copyright>
+    <lastBuildDate>Thu, 19 Jun 2014 02:09:16 +0000</lastBuildDate>
+    
+	<atom:link href="https://blog.nearwood.net/tags/wireless/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>D-Link DIR-860L Woes</title>
+      <link>https://blog.nearwood.net/d-link-dir-860l-woes/</link>
+      <pubDate>Thu, 19 Jun 2014 02:09:16 +0000</pubDate>
+      
+      <guid>https://blog.nearwood.net/d-link-dir-860l-woes/</guid>
+      <description>For the past week our internet service has been slowed to a crawl. Like, dial-up speeds: 0.8&amp;frasl;0,1 Mbps (so 100 kB/s down, 12 kB/s up). I tried restarting our 8 year old modem, our brand new router. I eventually gave up and called Comcast and had a cable guy come out and check the signal level. He says it&amp;#8217;s fine, but our modem is the culprit. So, I figure he&amp;#8217;s right and besides, it&amp;#8217;s an ancient modem anyway.</description>
+    </item>
+    
+  </channel>
+</rss>

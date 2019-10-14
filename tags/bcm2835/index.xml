@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>bcm2835 on Nick</title>
+    <link>https://blog.nearwood.net/tags/bcm2835/</link>
+    <description>Recent content in bcm2835 on Nick</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© 2019 Nicholas Earwood</copyright>
+    <lastBuildDate>Mon, 01 Dec 2014 02:26:47 +0000</lastBuildDate>
+    
+	<atom:link href="https://blog.nearwood.net/tags/bcm2835/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Raspberry Pi – Cross-compiling</title>
+      <link>https://blog.nearwood.net/raspberry-pi-robot-cross-compiling/</link>
+      <pubDate>Mon, 01 Dec 2014 02:26:47 +0000</pubDate>
+      
+      <guid>https://blog.nearwood.net/raspberry-pi-robot-cross-compiling/</guid>
+      <description>&lt;p&gt;Now that you have the hardware built and tested (although that&amp;#8217;s not necessary), you can either use the code I&amp;#8217;ve written&amp;#8211;which is specific to the hardware and environment I have, or compile your own version. If you want to compile your own there are two options:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Compile on the Pi itself&lt;/li&gt;
+&lt;li&gt;Compile on an ARM virtual machine&lt;/li&gt;
+&lt;li&gt;Cross-compile on a faster machine&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;The trade off? Compiling on the Pi is slow (very slow). The virtual machine is a marked improvement for compiling speed, but is complicated to setup. Cross-compiling is about the same difficulty as setting up a virtual machine but a bit faster and less &amp;#8220;bulky&amp;#8221;. So it depends. The virtual machine is nice if you have a lot of libraries you want to use, since you&amp;#8217;ll have to compile all of them to be available for linking. If any of them have poor autoconfig support, it might be a pain to fix if you weren&amp;#8217;t already on the target machine. But, since I just needed one or two popular libraries, I decided to setup cross-compiling from my host (x86_64) machine.&lt;/p&gt;
+
+&lt;p&gt;The last time I setup cross-compiling it was on Gentoo, and it wasn&amp;#8217;t pleasant. However, after a little bit of research it looks like the &lt;a href=&#34;http://crosstool-ng.org/&#34; target=&#34;_blank&#34;&gt;crosstool-ng project&lt;/a&gt; is pretty popular and useful. I only had to patch one tiny thing.&lt;/p&gt;
+
+&lt;p&gt;Here&amp;#8217;s the overall process:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Install crosstool-ng&lt;/li&gt;
+&lt;li&gt;Configure a cross toolchain with it&lt;/li&gt;
+&lt;li&gt;Try and build the toolchain&lt;/li&gt;
+&lt;li&gt;Use the toolchain to build your Pi code&lt;/li&gt;
+&lt;/ol&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

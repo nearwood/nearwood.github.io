@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>rEFInd on Nick</title>
+    <link>https://blog.nearwood.net/tags/refind/</link>
+    <description>Recent content in rEFInd on Nick</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© 2019 Nicholas Earwood</copyright>
+    <lastBuildDate>Mon, 19 Nov 2012 05:50:42 +0000</lastBuildDate>
+    
+	<atom:link href="https://blog.nearwood.net/tags/refind/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Gentoo on a mid-2012 MacBook Pro</title>
+      <link>https://blog.nearwood.net/gentoo-on-a-mid-2012-macbook-pro/</link>
+      <pubDate>Mon, 19 Nov 2012 05:50:42 +0000</pubDate>
+      
+      <guid>https://blog.nearwood.net/gentoo-on-a-mid-2012-macbook-pro/</guid>
+      <description>If your sick of your brand new MacBook just working (more or less), and you just feel like modifying your kernel&amp;#8217;s source to get your computer to work right, you&amp;#8217;ve come to the right place. I (finally) managed to get Gentoo booting on a new MacBook Pro (15&amp;#8243;, Core i7, mid-2012) alongside OS X 10.8.2. I suppose it actually wasn&amp;#8217;t that bad, it could have been much worse. I only had to reinstall OS X once after a wonky partition editor&amp;#8230;.</description>
+    </item>
+    
+  </channel>
+</rss>

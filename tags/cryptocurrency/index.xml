@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>cryptocurrency on Nick</title>
+    <link>https://blog.nearwood.net/tags/cryptocurrency/</link>
+    <description>Recent content in cryptocurrency on Nick</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© 2019 Nicholas Earwood</copyright>
+    <lastBuildDate>Fri, 12 Jan 2018 02:13:38 +0000</lastBuildDate>
+    
+	<atom:link href="https://blog.nearwood.net/tags/cryptocurrency/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Education in Futility: WarpWallet Brute Forcing</title>
+      <link>https://blog.nearwood.net/education-in-futility-warpwallet-brute-forcing/</link>
+      <pubDate>Fri, 12 Jan 2018 02:13:38 +0000</pubDate>
+      
+      <guid>https://blog.nearwood.net/education-in-futility-warpwallet-brute-forcing/</guid>
+      <description>So, WarpWallet is a so-called brain wallet for Bitcoin. That is, you only have to remember a relatively short password and it generates the corresponding private key for use. It uses a memory and CPU hard set of cryptographic algorithms to ensure that brute-forcing is slowed way down. That is, when generating the private key, it takes considerable time. Their Javascript implementation takes over 10 seconds on my machine.
+So the makers of it had challenges setup.</description>
+    </item>
+    
+    <item>
+      <title>GAWMiner Fury</title>
+      <link>https://blog.nearwood.net/gawminer-fury/</link>
+      <pubDate>Tue, 17 Jun 2014 00:08:03 +0000</pubDate>
+      
+      <guid>https://blog.nearwood.net/gawminer-fury/</guid>
+      <description>&lt;p&gt;So I&amp;#8217;m attempting to jump on the Scrypt based ASIC coin mining bandwagon. I got a GAWMiner Fury to try out. It came with a free ZenMiner, which is a Raspberry Pi with a custom image that runs mining software automatically, and connects to a 3rd party website to allow remote control and monitoring.&lt;/p&gt;
+
+&lt;div id=&#34;attachment_354&#34; style=&#34;width: 310px&#34; class=&#34;wp-caption alignnone&#34;&gt;
+  &lt;img class=&#34;size-medium wp-image-354&#34; src=&#34;http://www.nearwood.net/wp-content/uploads/IMG_20140606_181256-300x225.jpg&#34; alt=&#34;GAWMiner Fury and ZenMiner&#34; width=&#34;300&#34; height=&#34;225&#34; srcset=&#34;https://www.nearwood.net/wp-content/uploads/IMG_20140606_181256-300x225.jpg 300w, https://www.nearwood.net/wp-content/uploads/IMG_20140606_181256.jpg 1024w&#34; sizes=&#34;(max-width: 300px) 100vw, 300px&#34; /&gt;
+  
+  &lt;p class=&#34;wp-caption-text&#34;&gt;
+    GAWMiner Fury and ZenMiner
+  &lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;It came with everything needed to power up and get started. The included instructions just mention how to get started using the ZenMiner, so it&amp;#8217;s pretty skimpy compared to most other packaged products. Being an ASIC cryptocurrency miner, it&amp;#8217;s already a specialty device so you likely know what you are doing. Still, the ZenMiner is geared to newcomers so they can easily start mining. In that respect I think it still needs work as the ZenOS web interface is pretty but limited.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

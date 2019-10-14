@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pages on Nick</title>
+    <link>https://blog.nearwood.net/pages/</link>
+    <description>Recent content in Pages on Nick</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© 2019 Nicholas Earwood</copyright>
+    <lastBuildDate>Thu, 11 Dec 2014 03:10:39 +0000</lastBuildDate>
+    
+	<atom:link href="https://blog.nearwood.net/pages/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>MSQur</title>
+      <link>https://blog.nearwood.net/pages/msqur/</link>
+      <pubDate>Thu, 11 Dec 2014 03:10:39 +0000</pubDate>
+      
+      <guid>https://blog.nearwood.net/pages/msqur/</guid>
+      <description>So, years ago I made a C# Application to view .msq tune files from Megasquirt (the DIY car ECU). Specifically the VE and Spark tables. I ported it to Java since using .NET limits my audience to virtually just Windows users. It was okay. It allowed you to export images which you could then post, but it didn&amp;#8217;t really save much time over taking screenshots of the tuning software itself and posting those.</description>
+    </item>
+    
+    <item>
+      <title>Contact</title>
+      <link>https://blog.nearwood.net/pages/contact/</link>
+      <pubDate>Tue, 10 Jul 2012 03:13:56 +0000</pubDate>
+      
+      <guid>https://blog.nearwood.net/pages/contact/</guid>
+      <description>The best way to contact me is via email.</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://blog.nearwood.net/pages/about/</link>
+      <pubDate>Fri, 06 Jul 2012 02:38:51 +0000</pubDate>
+      
+      <guid>https://blog.nearwood.net/pages/about/</guid>
+      <description>I develop software as a hobby and as a career.
+To relax all I need is smoked brisket, sweet tea, and tire smoke.</description>
+    </item>
+    
+  </channel>
+</rss>

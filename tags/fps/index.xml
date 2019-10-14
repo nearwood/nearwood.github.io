@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>fps on Nick</title>
+    <link>https://blog.nearwood.net/tags/fps/</link>
+    <description>Recent content in fps on Nick</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© 2019 Nicholas Earwood</copyright>
+    <lastBuildDate>Sun, 02 Aug 2015 23:25:29 +0000</lastBuildDate>
+    
+	<atom:link href="https://blog.nearwood.net/tags/fps/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Find videos by FPS</title>
+      <link>https://blog.nearwood.net/find-videos-by-fps/</link>
+      <pubDate>Sun, 02 Aug 2015 23:25:29 +0000</pubDate>
+      
+      <guid>https://blog.nearwood.net/find-videos-by-fps/</guid>
+      <description>I produced some videos in 60 FPS, but couldn&amp;#8217;t remember which ones. Since, of course, I didn&amp;#8217;t label their FPS at the time, I needed to find them in vast sea of 30 FPS videos. Rather than just use a simple grep with ffmpeg to find which ones, I thought it might be more useful to find all videos that have a certain FPS threshold.
+Usage: ./60fps.sh [directory]
+#!/bin/bash SAVEIFS=$IFS IFS=$&#39;\n&#39; function fpscheck { FPS=$(ffmpeg -i &#34;</description>
+    </item>
+    
+  </channel>
+</rss>

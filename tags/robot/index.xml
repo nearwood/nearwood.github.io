@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>robot on Nick</title>
+    <link>https://blog.nearwood.net/tags/robot/</link>
+    <description>Recent content in robot on Nick</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© 2019 Nicholas Earwood</copyright>
+    <lastBuildDate>Wed, 26 Nov 2014 04:01:23 +0000</lastBuildDate>
+    
+	<atom:link href="https://blog.nearwood.net/tags/robot/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Raspberry Pi Robot</title>
+      <link>https://blog.nearwood.net/raspberry-pi-robot/</link>
+      <pubDate>Wed, 26 Nov 2014 04:01:23 +0000</pubDate>
+      
+      <guid>https://blog.nearwood.net/raspberry-pi-robot/</guid>
+      <description>&lt;p&gt;So, a while back I gave my wife a &lt;a href=&#34;http://goldenarmor.com/farscape-drd/&#34; target=&#34;_blank&#34;&gt;Farscape DRD kit&lt;/a&gt;. I promised to make it in to a robot. How hard could it be? Well, not too bad. A little more expensive than planned, though&amp;#8230;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.nearwood.net/wp-content/uploads/IMG_20141122_142828.jpg&#34;&gt;&lt;img class=&#34;aligncenter size-medium wp-image-472&#34; src=&#34;http://www.nearwood.net/wp-content/uploads/IMG_20141122_142828-300x225.jpg&#34; alt=&#34;IMG_20141122_142828&#34; width=&#34;300&#34; height=&#34;225&#34; srcset=&#34;https://www.nearwood.net/wp-content/uploads/IMG_20141122_142828-300x225.jpg 300w, https://www.nearwood.net/wp-content/uploads/IMG_20141122_142828.jpg 800w&#34; sizes=&#34;(max-width: 300px) 100vw, 300px&#34; /&gt;&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

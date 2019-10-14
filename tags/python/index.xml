@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>python on Nick</title>
+    <link>https://blog.nearwood.net/tags/python/</link>
+    <description>Recent content in python on Nick</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© 2019 Nicholas Earwood</copyright>
+    <lastBuildDate>Wed, 11 Dec 2013 01:52:16 +0000</lastBuildDate>
+    
+	<atom:link href="https://blog.nearwood.net/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Python script to write a word using the word</title>
+      <link>https://blog.nearwood.net/python-script-to-write-a-word-using-the-word/</link>
+      <pubDate>Wed, 11 Dec 2013 01:52:16 +0000</pubDate>
+      
+      <guid>https://blog.nearwood.net/python-script-to-write-a-word-using-the-word/</guid>
+      <description>&lt;p&gt;That&amp;#8217;s the best title I can come up with. The idea is to do this:&lt;/p&gt;
+
+&lt;pre&gt;THISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHIS
+    THISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHIS
+    THIS            THIS    THIS    THIS            THIS            THIS
+    THIS            THIS    THIS    THIS            THIS            THIS
+    THISTHIS    THISTHIS    THIS    THISTHIS    THISTHIS    THISTHISTHIS
+    THISTHIS    THISTHIS    THIS    THISTHIS    THISTHIS    THISTHISTHIS
+    THISTHIS    THISTHIS            THISTHIS    THISTHIS            THIS
+    THISTHIS    THISTHIS            THISTHIS    THISTHIS            THIS
+    THISTHIS    THISTHIS    THIS    THISTHIS    THISTHIS            THIS
+    THISTHIS    THISTHIS    THIS    THISTHIS    THISTHISTHISTHIS    THIS
+    THISTHIS    THISTHIS    THIS    THISTHIS    THISTHISTHISTHIS    THIS
+    THISTHIS    THISTHIS    THIS    THIS            THIS            THIS
+    THISTHIS    THISTHIS    THIS    THIS            THIS            THIS
+    THISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHIS
+    THISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHIS&lt;/pre&gt;
+
+&lt;p&gt;With any number of alphanumeric characters. The idea comes from a reddit user posting something similar, and then my mind wandered.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

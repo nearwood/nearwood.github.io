@@ -1,0 +1,860 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://blog.nearwood.net/categories/</loc>
+    <lastmod>2019-10-11T21:32:11-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/categories/computing/</loc>
+    <lastmod>2019-09-11T22:19:53-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/migrating-to-a-static-site/</loc>
+    <lastmod>2019-09-11T22:19:53-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/</loc>
+    <lastmod>2019-10-11T21:32:11-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/posts/</loc>
+    <lastmod>2019-10-11T21:32:11-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/tags/browser/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/tags/chrome/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/tags/firefox/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/migrating-to-firefox-from-google-chrome/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/tags/</loc>
+    <lastmod>2019-10-11T21:32:11-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/tags/bitcoin/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/categories/cryptocurrency/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/tags/cryptocurrency/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/education-in-futility-warpwallet-brute-forcing/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/categories/programming/</loc>
+    <lastmod>2019-10-11T21:32:11-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/categories/technology/</loc>
+    <lastmod>2019-10-11T21:32:11-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/categories/android/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/tags/android/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/categories/cars/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/tags/firwmare/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/tags/reverse-engineering/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/reverse-engineering-the-firmware-on-a-kenwood-ddx9903s/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/adding-a-disk-to-an-encrypted-mdadm-array/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/tags/dmcrypt/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/categories/linux/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/tags/linux/</loc>
+    <lastmod>2019-09-11T22:19:53-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/tags/mdadm/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/tags/raid/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/tags/background/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/tags/desktop/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/tags/powershell/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/sync-loginlock-screen-wallpaper-to-current-desktop-background/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/tags/c/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/tags/win32/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/windmill-windows-window-unclobberer/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/tags/280z/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/405hp-280z/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/tags/archlinux/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/tags/drd/</loc>
+    <lastmod>2019-10-11T21:32:11-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/fixing-mirrorlist-on-arch-linux-arm-raspberry-pi/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/categories/raspberry-pi/</loc>
+    <lastmod>2019-10-11T21:32:11-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/tags/raspberry-pi/</loc>
+    <lastmod>2019-10-11T21:32:11-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/tags/gentoo/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/gentoo-linux-tesla-it-was-only-a-matter-of-time/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/tags/tesla/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/raspberry-pi-robot-assembly-part-2/</loc>
+    <lastmod>2019-10-11T21:32:11-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/tags/dcs/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/dcs-mig-21-first-flight/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/tags/flightsim/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/categories/games/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/tags/autocross/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/october-autocross/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/tags/msqur/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/msqur-1-0-update/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/280z-update/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/3rd-pumps-the-charm/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/find-videos-by-fps/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/tags/fps/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/tags/video/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/msqur-1-0-released/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/tags/gaming/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/tags/hmd/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/tags/oculus-rift/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/oculus-rift-and-touch/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/msqur-update-v0-72b/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/harbor-freight-trailer-build-part-3/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/tags/trailer/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/categories/welding/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/tags/action-camera/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/action-camera-review-garmin-virb-elite/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/tags/gopro/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/msqur-update-v0-60b/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/tags/megasquirt/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/on-properly-setting-your-cooling-fan-temperature-threshold/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/tags/tuning/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/harbor-freight-trailer-build-part-2/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/msqur-update-v0-53b/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/tags/programming/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/msqur-update/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/harbor-freight-trailer-build/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/tags/welding/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/tags/ecu/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/tags/msq/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/msqur-com-msq-file-sharing-site/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/raspberry-pi-robot-assembly-part-1/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/pages/msqur/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/pages/</loc>
+    <lastmod>2019-09-11T22:19:53-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/tags/dm-crypt/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/tags/encryption/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/installing-arch-linux-with-an-encrypted-root/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/tags/bcm2835/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/tags/cross-compiling/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/raspberry-pi-robot-cross-compiling/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/raspberry-pi-robot/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/tags/robot/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/interesting-spam/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/tags/spam/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/categories/arduino/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/tags/arduino/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/carduino-2-0-intel-galileo-setup/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/tags/galileo/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/tags/canbus/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/carduino-2-0/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/tags/cars/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/first-autocross-with-a-vg33/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/tags/vg33/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/280z-led-conversion-part-2/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/tags/led/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/280z-led-conversion-part-1/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/updating-wordpress-on-nearlyfreespeech-net-hosts/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/tags/backup/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/tags/mac/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/tags/macbook/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/tags/os-x/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/tags/windows/</loc>
+    <lastmod>2019-09-11T22:19:53-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/windows-backup/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/3-3l-280z-runs/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/tags/automotive/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/d-link-dir-860l-woes/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/tags/router/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/tags/wifi/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/tags/wireless/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/tags/doge/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/gawminer-fury/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/tags/mining/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/280z-speedhut-gauge-conversion/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/tags/windows-7/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/windows-bugs/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/arch-linux-on-lenovo-thinkpad-t410/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/tags/thinkpad/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/custom-speed-app-update/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/exporting-drupal-pagesposts-to-wordpress/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/tags/python/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/python-script-to-write-a-word-using-the-word/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/released-my-first-android-app/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/second-280z-autocross/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/delete-all-your-reddit-comments/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/tags/javascript/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/tags/reddit/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/first-autocross-in-the-280z/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/the-280zs-first-time-at-a-14-mile-drag-strip/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/libgdx/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/moving-home-server-to-arch/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/tags/laptop/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/switched-to-arch-linux-from-gentoo/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/autocross-complete/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/tags/udev/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/udev-broke-server-broke-router-broke/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/tags/apple/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/os-x-unimpressive/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/tags/c/c&#43;&#43;/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/carduino/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/tags/obd/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/bbcs-top-gear-top-gear-usa/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/tags/top-gear/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/tags/home-server/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/home-server-is-back-online/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/refactoring-with-regular-expressions/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/tags/efi/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/gentoo-on-a-mid-2012-macbook-pro/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/tags/refind/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/tags/adobe/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/this-pc-loves-adobe/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/pages/contact/</loc>
+    <lastmod>2019-02-10T13:57:17-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/the-other-end-of-uxd/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/categories/user-experience/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/tags/uxd/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/pages/about/</loc>
+    <lastmod>2019-09-11T22:19:53-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/posts/2012-07-05-qemu-on-windows/</loc>
+    <lastmod>2019-09-11T22:19:53-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/tags/ubuntu/</loc>
+    <lastmod>2019-09-11T22:19:53-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/tags/vm/</loc>
+    <lastmod>2019-09-11T22:19:53-05:00</lastmod>
+  </url>
+  
+</urlset>

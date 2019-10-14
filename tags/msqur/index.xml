@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>msqur on Nick</title>
+    <link>https://blog.nearwood.net/tags/msqur/</link>
+    <description>Recent content in msqur on Nick</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© 2019 Nicholas Earwood</copyright>
+    <lastBuildDate>Wed, 30 Sep 2015 00:31:51 +0000</lastBuildDate>
+    
+	<atom:link href="https://blog.nearwood.net/tags/msqur/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Msqur 1.0 update</title>
+      <link>https://blog.nearwood.net/msqur-1-0-update/</link>
+      <pubDate>Wed, 30 Sep 2015 00:31:51 +0000</pubDate>
+      
+      <guid>https://blog.nearwood.net/msqur-1-0-update/</guid>
+      <description>I added an update to msqur today. Just a small update to the landing page since it was kind of blank. Moved the settings icon to the view page instead of every page. Also fixed the readme and license files for formatting.
+I get a lot of hits from Russia on that site. Actually, I get a lot of hits from Russia on all my sites. I imagine most of them are bots probing for weaknesses.</description>
+    </item>
+    
+    <item>
+      <title>Msqur 1.0 released</title>
+      <link>https://blog.nearwood.net/msqur-1-0-released/</link>
+      <pubDate>Fri, 26 Jun 2015 03:34:02 +0000</pubDate>
+      
+      <guid>https://blog.nearwood.net/msqur-1-0-released/</guid>
+      <description>As mentioned previously, I wanted to open the source to msqur up and put development on the backburner. I have added an appropriate license for it (although I do need to add library licenses/notices in there as well). It is now GPL licensed, and I have made the repository public.
+Some things I added:
+ Added basic charts for the 2D tables Added table header text to tables Added reingest script to allow for easier MSQ cache updates Fixed some of the documentation up  Known issues, mostly the same as before:</description>
+    </item>
+    
+    <item>
+      <title>Msqur Update v0.72b</title>
+      <link>https://blog.nearwood.net/msqur-update-v0-72b/</link>
+      <pubDate>Thu, 21 May 2015 02:20:33 +0000</pubDate>
+      
+      <guid>https://blog.nearwood.net/msqur-update-v0-72b/</guid>
+      <description>I dug in this past weekend and updated a few things:
+ INI Parsing revamp. Support for more tables and curves. UI Update so that all this new information is somewhat organized A few minor bug fixes and enhancements  Known issues:
+ MS3 file support is poor Constants are just blurted out without any organization INI Parsing of formulas and directives not implemented yet  I plan on opening the source code up under some kind of OSS license, after fixing a few more issues and updating the documentation.</description>
+    </item>
+    
+    <item>
+      <title>Msqur Update v0.60b</title>
+      <link>https://blog.nearwood.net/msqur-update-v0-60b/</link>
+      <pubDate>Mon, 23 Mar 2015 00:34:40 +0000</pubDate>
+      
+      <guid>https://blog.nearwood.net/msqur-update-v0-60b/</guid>
+      <description>A little while ago I updated msqur.com to 0.60b. Changes include:
+ Added engine make/code fields for uploads Added view count and increment  And less visibly:
+ Finished OO refactor Update API documentation (not public yet) Added deployment scripts  I still haven&amp;#8217;t finished INI file parsing 100%. There&amp;#8217;s a bit more to do, but I&amp;#8217;ve been busy with work and other projects. I&amp;#8217;m thinking of releasing the project under an appropriate open-source license once I finish that, so hopefully others can join in on the fun.</description>
+    </item>
+    
+    <item>
+      <title>Msqur Update v0.53b</title>
+      <link>https://blog.nearwood.net/msqur-update-v0-53b/</link>
+      <pubDate>Mon, 16 Feb 2015 21:27:29 +0000</pubDate>
+      
+      <guid>https://blog.nearwood.net/msqur-update-v0-53b/</guid>
+      <description>I&amp;#8217;ve rolled out the update 0.53b to msqur.com. This includes:
+ INI Parsing (i.e. better MSQ support) Bug fixes and better error handling  So now it is a bit more usable. The INI Parsing turns out to be a bit more complex than I anticipated, but I rolled out a decent intermediate update in the meantime.
+Before completing the INI parsing (or anything else for that matter), I&amp;#8217;ve decided to overhaul the entire codebase.</description>
+    </item>
+    
+    <item>
+      <title>Msqur Update</title>
+      <link>https://blog.nearwood.net/msqur-update/</link>
+      <pubDate>Mon, 02 Feb 2015 01:06:46 +0000</pubDate>
+      
+      <guid>https://blog.nearwood.net/msqur-update/</guid>
+      <description>Well, the holidays are long over and I haven&amp;#8217;t updated msqur.com in a while. I&amp;#8217;m adding some configuration management to it, so nothing visible will happen for a while. What&amp;#8217;s planned, however, is .ini file parsing so that .msq files can be parsed according to the INI file version they use. That is, I will parse the INI file for the schema to a .msq file instead of hardcoding it. This way showing a .</description>
+    </item>
+    
+    <item>
+      <title>msqur.com – MSQ file sharing site</title>
+      <link>https://blog.nearwood.net/msqur-com-msq-file-sharing-site/</link>
+      <pubDate>Wed, 31 Dec 2014 01:39:42 +0000</pubDate>
+      
+      <guid>https://blog.nearwood.net/msqur-com-msq-file-sharing-site/</guid>
+      <description>Well, I&amp;#8217;ve only been working on it a little so far, but I suppose it&amp;#8217;s good enough to post about at this point.
+The site is msqur.com, and it&amp;#8217;s for Megasquirt ECU users to share their tunes (from the TunerStudio MS software). You can upload (multiple) .msq files, assign some engine information to them at upload, and share them with other people for troubleshooting or tuning help. The goal is to make something easier than attaching a file to a forum post that others have to download and fire up the full tuning software suite to just view it.</description>
+    </item>
+    
+  </channel>
+</rss>

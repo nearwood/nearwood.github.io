@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>router on Nick</title>
+    <link>https://blog.nearwood.net/tags/router/</link>
+    <description>Recent content in router on Nick</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© 2019 Nicholas Earwood</copyright>
+    <lastBuildDate>Thu, 19 Jun 2014 02:09:16 +0000</lastBuildDate>
+    
+	<atom:link href="https://blog.nearwood.net/tags/router/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>D-Link DIR-860L Woes</title>
+      <link>https://blog.nearwood.net/d-link-dir-860l-woes/</link>
+      <pubDate>Thu, 19 Jun 2014 02:09:16 +0000</pubDate>
+      
+      <guid>https://blog.nearwood.net/d-link-dir-860l-woes/</guid>
+      <description>For the past week our internet service has been slowed to a crawl. Like, dial-up speeds: 0.8&amp;frasl;0,1 Mbps (so 100 kB/s down, 12 kB/s up). I tried restarting our 8 year old modem, our brand new router. I eventually gave up and called Comcast and had a cable guy come out and check the signal level. He says it&amp;#8217;s fine, but our modem is the culprit. So, I figure he&amp;#8217;s right and besides, it&amp;#8217;s an ancient modem anyway.</description>
+    </item>
+    
+    <item>
+      <title>udev broke, server broke, router broke</title>
+      <link>https://blog.nearwood.net/udev-broke-server-broke-router-broke/</link>
+      <pubDate>Mon, 18 Feb 2013 02:30:09 +0000</pubDate>
+      
+      <guid>https://blog.nearwood.net/udev-broke-server-broke-router-broke/</guid>
+      <description>I attempted to get a webcam going on our home server. So, I plug it in, and since I&amp;#8217;ve done this before I ran a script I made to grab an image from the webcam. Which didn&amp;#8217;t work. So, after checking out why (/dev/video0 node was missing), I noticed that the kernel no longer had support built in.
+After going through the kernel options, I realized they changed the v4l and webcam support options around and since I just upgrade using &amp;#8220;&amp;#8211;silentoldconfig&amp;#8221; (the bad way to do upgrades), it broke whenever I upgraded to 3.</description>
+    </item>
+    
+  </channel>
+</rss>
