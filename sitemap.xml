@@ -3,6 +3,21 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://blog.nearwood.net/</loc>
+    <lastmod>2019-10-14T16:22:05-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/posts/new-static-site/</loc>
+    <lastmod>2019-10-14T16:22:05-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nearwood.net/posts/</loc>
+    <lastmod>2019-10-14T16:22:05-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://blog.nearwood.net/categories/</loc>
     <lastmod>2019-10-11T21:32:11-05:00</lastmod>
   </url>
@@ -15,16 +30,6 @@
   <url>
     <loc>https://blog.nearwood.net/migrating-to-a-static-site/</loc>
     <lastmod>2019-09-11T22:19:53-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.nearwood.net/</loc>
-    <lastmod>2019-10-11T21:32:11-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.nearwood.net/posts/</loc>
-    <lastmod>2019-10-11T21:32:11-05:00</lastmod>
   </url>
   
   <url>
@@ -123,13 +128,13 @@
   </url>
   
   <url>
-    <loc>https://blog.nearwood.net/categories/linux/</loc>
-    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
+    <loc>https://blog.nearwood.net/tags/linux/</loc>
+    <lastmod>2019-09-11T22:19:53-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.nearwood.net/tags/linux/</loc>
-    <lastmod>2019-09-11T22:19:53-05:00</lastmod>
+    <loc>https://blog.nearwood.net/categories/linux/</loc>
+    <lastmod>2019-02-03T12:15:22-05:00</lastmod>
   </url>
   
   <url>

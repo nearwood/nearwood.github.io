@@ -14,7 +14,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://blog.nearwood.net/" />
 
-<meta property="og:updated_time" content="2019-02-02T19:43:39+00:00" />
+<meta property="og:updated_time" content="2019-10-14T16:22:05-05:00" />
 
 		<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Nick"/>
@@ -51,6 +51,13 @@
 	
 	<main class="main">
 			<div class="cards">
+					<div class="card card--2col">
+					<article class="post card__box block">
+	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/udev-broke-server-broke-router-broke/">udev broke, server broke, router broke</a></h1>
+	<div class="post__content">I attempted to get a webcam going on our home server. So, I plug it in, and since I&#8217;ve done this before I ran a script I made to grab an image from the webcam. Which didn&#8217;t work. So, after checking out why (/dev/video0 node was missing), I noticed that the kernel no longer had support built in.
+After going through the kernel options, I realized they changed the v4l and webcam support options around and since I just upgrade using &#8220;&#8211;silentoldconfig&#8221; (the bad way to do upgrades), it broke whenever I upgraded to 3.</div>
+</article>
+					</div>
 					<div class="card card--2col">
 					<article class="post card__box block">
 	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/os-x-unimpressive/">OS X? Unimpressive.</a></h1>

@@ -14,7 +14,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://blog.nearwood.net/" />
 
-<meta property="og:updated_time" content="2019-02-02T19:43:39+00:00" />
+<meta property="og:updated_time" content="2019-10-14T16:22:05-05:00" />
 
 		<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Nick"/>
@@ -51,6 +51,26 @@
 	
 	<main class="main">
 			<div class="cards">
+					<div class="card card--2col">
+					<article class="post card__box block">
+	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/updating-wordpress-on-nearlyfreespeech-net-hosts/">Updating WordPress on nearlyfreespeech.net hosts</a></h1>
+	<div class="post__content"><h3 id="update-dec-13-2014">Update Dec. 13, 2014:</h3>
+
+<p>These scripts are out of date. NFS has the <a href="http://wp-cli.org/" target="_blank">WP-CLI</a> installed allowing for much, much easier upgrades, backups, etc. See the <a href="https://github.com/nearwood/nfs-scripts" target="_blank">repository</a> for information.</p>
+
+<h3 id="originally-posted-on-sept-10th-2014">Originally posted on Sept. 10th, 2014:</h3>
+
+<p>If you use NearlyFreeSpeech.net as your web host, you may have found it difficult to automate WordPress updates. I&#8217;ve made a script that does this for you. It also calls my backup and permissions fixing scripts, which I include here as well.</p>
+
+<p>Beware of some notes and assumptions though:</p>
+
+<ul>
+<li>Assumes WordPress is installed in /home/public/ (not a subdir of it)</li>
+<li>Scripts are assumed to be in /home/private/</li>
+<li>Does not check or recover from errors</li>
+</ul></div>
+</article>
+					</div>
 					<div class="card card--2col">
 					<article class="post card__box block">
 	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/windows-backup/">Windows Backup</a></h1>
@@ -131,30 +151,6 @@ Installing Arch was quick, as usual. The laptop has a fingerprint reader, which 
 	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/exporting-drupal-pagesposts-to-wordpress/">Exporting Drupal Pages/Posts to WordPress</a></h1>
 	<div class="post__content">I&#8217;ve decided to consolidate some of my web presence. My car&#8217;s website will be merged into this one. Going from WordPress to Drupal is easy, but the other way is not. I found a couple links for SQL scripts to import lots of posts automatically, but these were and are easily outdated by Drupal and to a lesser extent WordPress.
 It was easier just to create my own SQL JOIN statement and export the resulting list.</div>
-</article>
-					</div>
-					<div class="card card--2col">
-					<article class="post card__box block">
-	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/python-script-to-write-a-word-using-the-word/">Python script to write a word using the word</a></h1>
-	<div class="post__content"><p>That&#8217;s the best title I can come up with. The idea is to do this:</p>
-
-<pre>THISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHIS
-    THISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHIS
-    THIS            THIS    THIS    THIS            THIS            THIS
-    THIS            THIS    THIS    THIS            THIS            THIS
-    THISTHIS    THISTHIS    THIS    THISTHIS    THISTHIS    THISTHISTHIS
-    THISTHIS    THISTHIS    THIS    THISTHIS    THISTHIS    THISTHISTHIS
-    THISTHIS    THISTHIS            THISTHIS    THISTHIS            THIS
-    THISTHIS    THISTHIS            THISTHIS    THISTHIS            THIS
-    THISTHIS    THISTHIS    THIS    THISTHIS    THISTHIS            THIS
-    THISTHIS    THISTHIS    THIS    THISTHIS    THISTHISTHISTHIS    THIS
-    THISTHIS    THISTHIS    THIS    THISTHIS    THISTHISTHISTHIS    THIS
-    THISTHIS    THISTHIS    THIS    THIS            THIS            THIS
-    THISTHIS    THISTHIS    THIS    THIS            THIS            THIS
-    THISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHIS
-    THISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHIS</pre>
-
-<p>With any number of alphanumeric characters. The idea comes from a reddit user posting something similar, and then my mind wandered.</p></div>
 </article>
 					</div>
 			</div>
