@@ -1,53 +1,53 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Computing on Nick</title>
-    <link>https://blog.nearwood.net/categories/computing/</link>
+    <link>https://nearwood.dev/categories/computing/</link>
     <description>Recent content in Computing on Nick</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2019 Nicholas Earwood</copyright>
     <lastBuildDate>Sat, 02 Feb 2019 19:43:39 +0000</lastBuildDate>
     
-	<atom:link href="https://blog.nearwood.net/categories/computing/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://nearwood.dev/categories/computing/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Migrating to a static site</title>
-      <link>https://blog.nearwood.net/migrating-to-a-static-site/</link>
+      <link>https://nearwood.dev/migrating-to-a-static-site/</link>
       <pubDate>Sat, 02 Feb 2019 19:43:39 +0000</pubDate>
       
-      <guid>https://blog.nearwood.net/migrating-to-a-static-site/</guid>
-      <description>I&amp;#8217;m testing out various static site generators and will be migrating this site to one in the next month or two.
-I will retain existing post comments, as there are so few but they are useful. The new static site will not allow new comments to be posted. I&amp;#8217;m not sure I want to go with something like Disqus.</description>
+      <guid>https://nearwood.dev/migrating-to-a-static-site/</guid>
+      <description>I&amp;rsquo;m testing out various static site generators and will be migrating this site to one in the next month or two.
+I will retain existing post comments, as there are so few but they are useful. The new static site will not allow new comments to be posted. I&amp;rsquo;m not sure I want to go with something like Disqus.</description>
     </item>
     
     <item>
       <title>Migrating to Firefox from Google Chrome</title>
-      <link>https://blog.nearwood.net/migrating-to-firefox-from-google-chrome/</link>
+      <link>https://nearwood.dev/migrating-to-firefox-from-google-chrome/</link>
       <pubDate>Sat, 17 Feb 2018 19:45:25 +0000</pubDate>
       
-      <guid>https://blog.nearwood.net/migrating-to-firefox-from-google-chrome/</guid>
+      <guid>https://nearwood.dev/migrating-to-firefox-from-google-chrome/</guid>
       <description>After Firefox Quantum was released, I tried it out and decided to switch. I had a few reasons why:
  Faster No tracking Can run Add-Ons (Extensions) on mobile  I was very impressed, especially with Tracking Protection, how much faster Firefox has become. Number 2 refers to all your browsing data being sent to Google HQ, encrypted I imagine, but still. And for number 3, on Android certain sites would have 3rd party ads that redirected the browser from the new article or whatever page I was reading to some spammy ad page.</description>
     </item>
     
     <item>
       <title>Education in Futility: WarpWallet Brute Forcing</title>
-      <link>https://blog.nearwood.net/education-in-futility-warpwallet-brute-forcing/</link>
+      <link>https://nearwood.dev/education-in-futility-warpwallet-brute-forcing/</link>
       <pubDate>Fri, 12 Jan 2018 02:13:38 +0000</pubDate>
       
-      <guid>https://blog.nearwood.net/education-in-futility-warpwallet-brute-forcing/</guid>
+      <guid>https://nearwood.dev/education-in-futility-warpwallet-brute-forcing/</guid>
       <description>So, WarpWallet is a so-called brain wallet for Bitcoin. That is, you only have to remember a relatively short password and it generates the corresponding private key for use. It uses a memory and CPU hard set of cryptographic algorithms to ensure that brute-forcing is slowed way down. That is, when generating the private key, it takes considerable time. Their Javascript implementation takes over 10 seconds on my machine.
 So the makers of it had challenges setup.</description>
     </item>
     
     <item>
       <title>Reverse Engineering the firmware on a Kenwood DDX9903S</title>
-      <link>https://blog.nearwood.net/reverse-engineering-the-firmware-on-a-kenwood-ddx9903s/</link>
+      <link>https://nearwood.dev/reverse-engineering-the-firmware-on-a-kenwood-ddx9903s/</link>
       <pubDate>Sat, 28 Oct 2017 03:06:49 +0000</pubDate>
       
-      <guid>https://blog.nearwood.net/reverse-engineering-the-firmware-on-a-kenwood-ddx9903s/</guid>
+      <guid>https://nearwood.dev/reverse-engineering-the-firmware-on-a-kenwood-ddx9903s/</guid>
       <description>&lt;p&gt;I bought and really like my Kenwood Excelon DDX9903S headunit. I had it in my WRX, and moved it to my LS430. It supports Android Auto and CarPlay, which I find really useful when driving.&lt;/p&gt;
 
 &lt;p&gt;However, it has a nag screen every time it boots up. This got me curious as to how it worked, and see if it could be patched to skip this disclaimer. I figured it probably ran Linux on a SoC, as pretty much everything does nowadays. So I grabbed the latest firmware for it (mine was already updated to it), and started probing.&lt;/p&gt;
@@ -61,7 +61,7 @@ MAIN_V1_0_2758_0400/
 SOC_V2_7_0008_0600/
 &lt;/pre&gt;
 
-&lt;p&gt;In each there&amp;#8217;s a .nfu file, which I&amp;#8217;ve never encountered before. I ran binwalk on each:&lt;/p&gt;
+&lt;p&gt;In each there&amp;rsquo;s a .nfu file, which I&amp;rsquo;ve never encountered before. I ran binwalk on each:&lt;/p&gt;
 
 &lt;pre class=&#34;brush: plain; light: true; title: ; notranslate&#34; title=&#34;&#34;&gt;[BOOT_V2_7_0008_0600_release]$ binwalk Boot_2.7.0008.0600.nfu
 DECIMAL HEXADECIMAL DESCRIPTION
@@ -72,102 +72,102 @@ DECIMAL HEXADECIMAL DESCRIPTION
 3209992 0x30FB08 ELF, 64-bit LSB shared object, AMD x86-64, version 1 (SYSV)
 &lt;/pre&gt;
 
-&lt;p&gt;Surprise, surprise, it runs Android. But, I&amp;#8217;m thinking this image is possibly just the firmware updater, and not what I am looking for.&lt;/p&gt;</description>
+&lt;p&gt;Surprise, surprise, it runs Android. But, I&amp;rsquo;m thinking this image is possibly just the firmware updater, and not what I am looking for.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Adding a disk to an encrypted mdadm array</title>
-      <link>https://blog.nearwood.net/adding-a-disk-to-an-encrypted-mdadm-array/</link>
+      <link>https://nearwood.dev/adding-a-disk-to-an-encrypted-mdadm-array/</link>
       <pubDate>Mon, 25 Sep 2017 00:27:40 +0000</pubDate>
       
-      <guid>https://blog.nearwood.net/adding-a-disk-to-an-encrypted-mdadm-array/</guid>
-      <description>&lt;p&gt;My RAID6 was originally planned with 6 drives, but only had 5 for a while due to space concerns with the case. However, I found as a file, media, and multiple cryptocurrency node it filled up the 2.7TB pretty quickly. So, I got a new case (and some more RAM), which has proper space for 6 3.5&amp;#8243; drives (and 2 5.25&amp;#8243;). When migrating to this I decided to add the extra 1TB WD Red NAS drive I bought but have not been able to use.&lt;/p&gt;
+      <guid>https://nearwood.dev/adding-a-disk-to-an-encrypted-mdadm-array/</guid>
+      <description>&lt;p&gt;My RAID6 was originally planned with 6 drives, but only had 5 for a while due to space concerns with the case. However, I found as a file, media, and multiple cryptocurrency node it filled up the 2.7TB pretty quickly. So, I got a new case (and some more RAM), which has proper space for 6 3.5&amp;rdquo; drives (and 2 5.25&amp;rdquo;). When migrating to this I decided to add the extra 1TB WD Red NAS drive I bought but have not been able to use.&lt;/p&gt;
 
-&lt;p&gt;The case is a Fractal Design Define Mini, and I am thoroughly impressed. Six 3.5&amp;#8243; slots, two 5.25&amp;#8243; external slots, and lots of sound padding on the doors and sides.&lt;/p&gt;
+&lt;p&gt;The case is a Fractal Design Define Mini, and I am thoroughly impressed. Six 3.5&amp;rdquo; slots, two 5.25&amp;rdquo; external slots, and lots of sound padding on the doors and sides.&lt;/p&gt;
 
-&lt;p&gt;&lt;img class=&#34;aligncenter size-large wp-image-773&#34; src=&#34;http://www.nearwood.net/wp-content/uploads/IMG_20170924_120224-1024x768.jpg&#34; alt=&#34;&#34; width=&#34;640&#34; height=&#34;480&#34; srcset=&#34;https://www.nearwood.net/wp-content/uploads/IMG_20170924_120224-1024x768.jpg 1024w, https://www.nearwood.net/wp-content/uploads/IMG_20170924_120224-300x225.jpg 300w, https://www.nearwood.net/wp-content/uploads/IMG_20170924_120224-768x576.jpg 768w&#34; sizes=&#34;(max-width: 640px) 100vw, 640px&#34; /&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;img src=&#34;https://nearwood.dev/images/server.jpg&#34; alt=&#34;My SuperMicro server in the Fractal Design case&#34; /&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Sync login/lock screen wallpaper to current desktop background</title>
-      <link>https://blog.nearwood.net/sync-loginlock-screen-wallpaper-to-current-desktop-background/</link>
+      <link>https://nearwood.dev/sync-loginlock-screen-wallpaper-to-current-desktop-background/</link>
       <pubDate>Sun, 04 Jun 2017 15:20:43 +0000</pubDate>
       
-      <guid>https://blog.nearwood.net/sync-loginlock-screen-wallpaper-to-current-desktop-background/</guid>
-      <description>For Windows 7, this turned out to be pretty easy to do via PowerShell. I just had to look for a native image resizing library since the lock screen for some odd reason, only supports JPEGs up to 256KB in size. Probably one of those legacy items left over from NT, like the file system permissions dialogs, and the built-in environment variables editor&amp;#8230;
-I ended up using WIA&amp;#8217;s ImageProcess COM library which worked surprisingly well.</description>
+      <guid>https://nearwood.dev/sync-loginlock-screen-wallpaper-to-current-desktop-background/</guid>
+      <description>For Windows 7, this turned out to be pretty easy to do via PowerShell. I just had to look for a native image resizing library since the lock screen for some odd reason, only supports JPEGs up to 256KB in size. Probably one of those legacy items left over from NT, like the file system permissions dialogs, and the built-in environment variables editor&amp;hellip;
+I ended up using WIA&amp;rsquo;s ImageProcess COM library which worked surprisingly well.</description>
     </item>
     
     <item>
       <title>Windmill – Windows Window unclobberer</title>
-      <link>https://blog.nearwood.net/windmill-windows-window-unclobberer/</link>
+      <link>https://nearwood.dev/windmill-windows-window-unclobberer/</link>
       <pubDate>Wed, 15 Mar 2017 17:30:13 +0000</pubDate>
       
-      <guid>https://blog.nearwood.net/windmill-windows-window-unclobberer/</guid>
-      <description>I noticed during the (many) meetings I attend that disconnecting and reconnecting my laptop from the dock reorganizes all my windows to the laptop&amp;#8217;s display. This got annoying to have to drag and resize everything when returning to my desk, which has a 3 monitor setup. So, I wrote this small Win32 application to allow you to save the positioning and size of all windows and then restore them at a later time.</description>
+      <guid>https://nearwood.dev/windmill-windows-window-unclobberer/</guid>
+      <description>I noticed during the (many) meetings I attend that disconnecting and reconnecting my laptop from the dock reorganizes all my windows to the laptop&amp;rsquo;s display. This got annoying to have to drag and resize everything when returning to my desk, which has a 3 monitor setup. So, I wrote this small Win32 application to allow you to save the positioning and size of all windows and then restore them at a later time.</description>
     </item>
     
     <item>
       <title>Fixing mirrorlist on Arch Linux Arm (Raspberry Pi)</title>
-      <link>https://blog.nearwood.net/fixing-mirrorlist-on-arch-linux-arm-raspberry-pi/</link>
+      <link>https://nearwood.dev/fixing-mirrorlist-on-arch-linux-arm-raspberry-pi/</link>
       <pubDate>Sat, 21 May 2016 22:06:00 +0000</pubDate>
       
-      <guid>https://blog.nearwood.net/fixing-mirrorlist-on-arch-linux-arm-raspberry-pi/</guid>
-      <description>I hadn&amp;#8217;t updated my Raspberry Pi (a B+ model for my rpi-drd project) in about a year. Pacman -Syu kept complaining about being unable to find files on any of the mirrors.
-So I, without thinking, ran reflector on an x86 host and copied it over. Oops. Now it definitely can&amp;#8217;t find packages.
+      <guid>https://nearwood.dev/fixing-mirrorlist-on-arch-linux-arm-raspberry-pi/</guid>
+      <description>I hadn&amp;rsquo;t updated my Raspberry Pi (a B+ model for my rpi-drd project) in about a year. Pacman -Syu kept complaining about being unable to find files on any of the mirrors.
+So I, without thinking, ran reflector on an x86 host and copied it over. Oops. Now it definitely can&amp;rsquo;t find packages.
 The archlinuxarm.org website gave me the hostname I needed, but not the entire URL. Put this in your mirrorlist (as the sole entry) to restore functionality:</description>
     </item>
     
     <item>
       <title>Gentoo Linux Tesla – It was only a matter of time…</title>
-      <link>https://blog.nearwood.net/gentoo-linux-tesla-it-was-only-a-matter-of-time/</link>
+      <link>https://nearwood.dev/gentoo-linux-tesla-it-was-only-a-matter-of-time/</link>
       <pubDate>Thu, 21 Apr 2016 22:07:09 +0000</pubDate>
       
-      <guid>https://blog.nearwood.net/gentoo-linux-tesla-it-was-only-a-matter-of-time/</guid>
-      <description>Surprise, surprise, my old favorite Gentoo Linux is now running on a Tesla Model S. Hope he doesn&amp;#8217;t emerge world while driving.</description>
+      <guid>https://nearwood.dev/gentoo-linux-tesla-it-was-only-a-matter-of-time/</guid>
+      <description>Surprise, surprise, my old favorite Gentoo Linux is now running on a Tesla Model S. Hope he doesn&amp;rsquo;t emerge world while driving.</description>
     </item>
     
     <item>
       <title>Oculus Rift and Touch</title>
-      <link>https://blog.nearwood.net/oculus-rift-and-touch/</link>
+      <link>https://nearwood.dev/oculus-rift-and-touch/</link>
       <pubDate>Fri, 12 Jun 2015 00:59:51 +0000</pubDate>
       
-      <guid>https://blog.nearwood.net/oculus-rift-and-touch/</guid>
-      <description>I&amp;#8217;m super excited for the imminent onslaught of consumer grade VR equipment and game support. I think it will change how games are played from now on. Not all games, mind you, it takes a certain level of involvement to strap on a head-mounted display and get into the experience. The military already uses similar technology extensively for training. It&amp;#8217;s just a matter of months before equipment hits shelves.
-That said, there&amp;#8217;s a serious problem with it already.</description>
+      <guid>https://nearwood.dev/oculus-rift-and-touch/</guid>
+      <description>I&amp;rsquo;m super excited for the imminent onslaught of consumer grade VR equipment and game support. I think it will change how games are played from now on. Not all games, mind you, it takes a certain level of involvement to strap on a head-mounted display and get into the experience. The military already uses similar technology extensively for training. It&amp;rsquo;s just a matter of months before equipment hits shelves.
+That said, there&amp;rsquo;s a serious problem with it already.</description>
     </item>
     
     <item>
       <title>Installing Arch Linux with an encrypted root</title>
-      <link>https://blog.nearwood.net/installing-arch-linux-with-an-encrypted-root/</link>
+      <link>https://nearwood.dev/installing-arch-linux-with-an-encrypted-root/</link>
       <pubDate>Sat, 06 Dec 2014 03:00:22 +0000</pubDate>
       
-      <guid>https://blog.nearwood.net/installing-arch-linux-with-an-encrypted-root/</guid>
-      <description>&lt;p&gt;I&amp;#8217;ve got a ThinkPad T410. I got it off craigslist in what was a somewhat shady transaction. Regardless, it came with a 300GB spinner. Not interested in finding out how much life was left on it I got a solid state replacement from NewEgg for &amp;#8220;Cyber Monday&amp;#8221;. A 240GB Intel one for $110, that&amp;#8217;s less than 50 cents per GB!&lt;/p&gt;
+      <guid>https://nearwood.dev/installing-arch-linux-with-an-encrypted-root/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve got a ThinkPad T410. I got it off craigslist in what was a somewhat shady transaction. Regardless, it came with a 300GB spinner. Not interested in finding out how much life was left on it I got a solid state replacement from NewEgg for &amp;ldquo;Cyber Monday&amp;rdquo;. A 240GB Intel one for $110, that&amp;rsquo;s less than 50 cents per GB!&lt;/p&gt;
 
-&lt;p&gt;The spinner has a single unencrypted partition with Arch Linux running on it. I wanted to run Arch on an encrypted partition. The main reason: If it&amp;#8217;s ever stolen I don&amp;#8217;t want to have to worry about any of the data on it. Bonus reason: Geek/spy points.&lt;/p&gt;
+&lt;p&gt;The spinner has a single unencrypted partition with Arch Linux running on it. I wanted to run Arch on an encrypted partition. The main reason: If it&amp;rsquo;s ever stolen I don&amp;rsquo;t want to have to worry about any of the data on it. Bonus reason: Geek/spy points.&lt;/p&gt;
 
-&lt;p&gt;So, while there are excellent guides for installing Arch, and setting up encryption, and optimizing an SSD, there don&amp;#8217;t seem to be any combining the three. In reality it&amp;#8217;s not that much more difficult, and if you are motivated to setup encryption on Linux in the first place you probably know what you&amp;#8217;re doing. Still, I was disheartened a bit at the lack of information so I decided to note how I went about it in general.&lt;/p&gt;</description>
+&lt;p&gt;So, while there are excellent guides for installing Arch, and setting up encryption, and optimizing an SSD, there don&amp;rsquo;t seem to be any combining the three. In reality it&amp;rsquo;s not that much more difficult, and if you are motivated to setup encryption on Linux in the first place you probably know what you&amp;rsquo;re doing. Still, I was disheartened a bit at the lack of information so I decided to note how I went about it in general.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Raspberry Pi Robot</title>
-      <link>https://blog.nearwood.net/raspberry-pi-robot/</link>
+      <link>https://nearwood.dev/raspberry-pi-robot/</link>
       <pubDate>Wed, 26 Nov 2014 04:01:23 +0000</pubDate>
       
-      <guid>https://blog.nearwood.net/raspberry-pi-robot/</guid>
-      <description>&lt;p&gt;So, a while back I gave my wife a &lt;a href=&#34;http://goldenarmor.com/farscape-drd/&#34; target=&#34;_blank&#34;&gt;Farscape DRD kit&lt;/a&gt;. I promised to make it in to a robot. How hard could it be? Well, not too bad. A little more expensive than planned, though&amp;#8230;&lt;/p&gt;
+      <guid>https://nearwood.dev/raspberry-pi-robot/</guid>
+      <description>&lt;p&gt;So, a while back I gave my wife a &lt;a href=&#34;https://goldenarmor.com/farscape-drd/&#34; target=&#34;_blank&#34;&gt;Farscape DRD kit&lt;/a&gt;. I promised to make it in to a robot. How hard could it be? Well, not too bad. A little more expensive than planned, though&amp;hellip;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://www.nearwood.net/wp-content/uploads/IMG_20141122_142828.jpg&#34;&gt;&lt;img class=&#34;aligncenter size-medium wp-image-472&#34; src=&#34;http://www.nearwood.net/wp-content/uploads/IMG_20141122_142828-300x225.jpg&#34; alt=&#34;IMG_20141122_142828&#34; width=&#34;300&#34; height=&#34;225&#34; srcset=&#34;https://www.nearwood.net/wp-content/uploads/IMG_20141122_142828-300x225.jpg 300w, https://www.nearwood.net/wp-content/uploads/IMG_20141122_142828.jpg 800w&#34; sizes=&#34;(max-width: 300px) 100vw, 300px&#34; /&gt;&lt;/a&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;img class=&#34;lostImage&#34; src=&#34;&#34; alt=&#34;Image no longer available :(&#34;/&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Interesting Spam</title>
-      <link>https://blog.nearwood.net/interesting-spam/</link>
+      <link>https://nearwood.dev/interesting-spam/</link>
       <pubDate>Thu, 20 Nov 2014 18:22:33 +0000</pubDate>
       
-      <guid>https://blog.nearwood.net/interesting-spam/</guid>
-      <description>Akismet is really good at preventing spam, but I&amp;#8217;ve noticed that spammers don&amp;#8217;t even seem to be trying sometimes. This is what&amp;#8217;s in my spam queue:
+      <guid>https://nearwood.dev/interesting-spam/</guid>
+      <description>Akismet is really good at preventing spam, but I&amp;rsquo;ve noticed that spammers don&amp;rsquo;t even seem to be trying sometimes. This is what&amp;rsquo;s in my spam queue:
  {I have|I’ve} been {surfing|browsing} online
 more than {three|3|2|4} hours today, yet I never found any interesting article like yours.
 {It’s|It is} pretty worth enough for me. {In my opinion|Personally|In my view}, if all {webmasters|site owners|website owners|web owners}
@@ -176,17 +176,17 @@ and bloggers made good content as you did, the {internet|net|web} will be {much 
     
     <item>
       <title>Updating WordPress on nearlyfreespeech.net hosts</title>
-      <link>https://blog.nearwood.net/updating-wordpress-on-nearlyfreespeech-net-hosts/</link>
+      <link>https://nearwood.dev/updating-wordpress-on-nearlyfreespeech-net-hosts/</link>
       <pubDate>Thu, 11 Sep 2014 00:37:52 +0000</pubDate>
       
-      <guid>https://blog.nearwood.net/updating-wordpress-on-nearlyfreespeech-net-hosts/</guid>
+      <guid>https://nearwood.dev/updating-wordpress-on-nearlyfreespeech-net-hosts/</guid>
       <description>&lt;h3 id=&#34;update-dec-13-2014&#34;&gt;Update Dec. 13, 2014:&lt;/h3&gt;
 
-&lt;p&gt;These scripts are out of date. NFS has the &lt;a href=&#34;http://wp-cli.org/&#34; target=&#34;_blank&#34;&gt;WP-CLI&lt;/a&gt; installed allowing for much, much easier upgrades, backups, etc. See the &lt;a href=&#34;https://github.com/nearwood/nfs-scripts&#34; target=&#34;_blank&#34;&gt;repository&lt;/a&gt; for information.&lt;/p&gt;
+&lt;p&gt;These scripts are out of date. NFS has the &lt;a href=&#34;https://wp-cli.org/&#34; target=&#34;_blank&#34;&gt;WP-CLI&lt;/a&gt; installed allowing for much, much easier upgrades, backups, etc. See the &lt;a href=&#34;https://github.com/nearwood/nfs-scripts&#34; target=&#34;_blank&#34;&gt;repository&lt;/a&gt; for information.&lt;/p&gt;
 
 &lt;h3 id=&#34;originally-posted-on-sept-10th-2014&#34;&gt;Originally posted on Sept. 10th, 2014:&lt;/h3&gt;
 
-&lt;p&gt;If you use NearlyFreeSpeech.net as your web host, you may have found it difficult to automate WordPress updates. I&amp;#8217;ve made a script that does this for you. It also calls my backup and permissions fixing scripts, which I include here as well.&lt;/p&gt;
+&lt;p&gt;If you use NearlyFreeSpeech.net as your web host, you may have found it difficult to automate WordPress updates. I&amp;rsquo;ve made a script that does this for you. It also calls my backup and permissions fixing scripts, which I include here as well.&lt;/p&gt;
 
 &lt;p&gt;Beware of some notes and assumptions though:&lt;/p&gt;
 
@@ -199,171 +199,170 @@ and bloggers made good content as you did, the {internet|net|web} will be {much 
     
     <item>
       <title>Windows Backup</title>
-      <link>https://blog.nearwood.net/windows-backup/</link>
+      <link>https://nearwood.dev/windows-backup/</link>
       <pubDate>Tue, 09 Sep 2014 00:10:08 +0000</pubDate>
       
-      <guid>https://blog.nearwood.net/windows-backup/</guid>
+      <guid>https://nearwood.dev/windows-backup/</guid>
       <description>After installing Windows 7 in place of OS X on my MacBook Pro for work, there are only a few things I miss. But man, they were really nice.
- Unix shell Time Machine  The first one I&amp;#8217;ll just say if you haven&amp;#8217;t used a Unix-like shell of some type (Bash, zsh, whatever) then it&amp;#8217;s hard to explain. Just that you can do everything a GUI can do (save for graphics work), but much, much faster.</description>
+ Unix shell Time Machine  The first one I&amp;rsquo;ll just say if you haven&amp;rsquo;t used a Unix-like shell of some type (Bash, zsh, whatever) then it&amp;rsquo;s hard to explain. Just that you can do everything a GUI can do (save for graphics work), but much, much faster.</description>
     </item>
     
     <item>
       <title>D-Link DIR-860L Woes</title>
-      <link>https://blog.nearwood.net/d-link-dir-860l-woes/</link>
+      <link>https://nearwood.dev/d-link-dir-860l-woes/</link>
       <pubDate>Thu, 19 Jun 2014 02:09:16 +0000</pubDate>
       
-      <guid>https://blog.nearwood.net/d-link-dir-860l-woes/</guid>
-      <description>For the past week our internet service has been slowed to a crawl. Like, dial-up speeds: 0.8&amp;frasl;0,1 Mbps (so 100 kB/s down, 12 kB/s up). I tried restarting our 8 year old modem, our brand new router. I eventually gave up and called Comcast and had a cable guy come out and check the signal level. He says it&amp;#8217;s fine, but our modem is the culprit. So, I figure he&amp;#8217;s right and besides, it&amp;#8217;s an ancient modem anyway.</description>
+      <guid>https://nearwood.dev/d-link-dir-860l-woes/</guid>
+      <description>For the past week our internet service has been slowed to a crawl. Like, dial-up speeds: 0.8&amp;frasl;0,1 Mbps (so 100 kB/s down, 12 kB/s up). I tried restarting our 8 year old modem, our brand new router. I eventually gave up and called Comcast and had a cable guy come out and check the signal level. He says it&amp;rsquo;s fine, but our modem is the culprit. So, I figure he&amp;rsquo;s right and besides, it&amp;rsquo;s an ancient modem anyway.</description>
     </item>
     
     <item>
       <title>GAWMiner Fury</title>
-      <link>https://blog.nearwood.net/gawminer-fury/</link>
+      <link>https://nearwood.dev/gawminer-fury/</link>
       <pubDate>Tue, 17 Jun 2014 00:08:03 +0000</pubDate>
       
-      <guid>https://blog.nearwood.net/gawminer-fury/</guid>
-      <description>&lt;p&gt;So I&amp;#8217;m attempting to jump on the Scrypt based ASIC coin mining bandwagon. I got a GAWMiner Fury to try out. It came with a free ZenMiner, which is a Raspberry Pi with a custom image that runs mining software automatically, and connects to a 3rd party website to allow remote control and monitoring.&lt;/p&gt;
+      <guid>https://nearwood.dev/gawminer-fury/</guid>
+      <description>&lt;p&gt;So I&amp;rsquo;m attempting to jump on the Scrypt based ASIC coin mining bandwagon. I got a GAWMiner Fury to try out. It came with a free ZenMiner, which is a Raspberry Pi with a custom image that runs mining software automatically, and connects to a 3rd party website to allow remote control and monitoring.&lt;/p&gt;
 
 &lt;div id=&#34;attachment_354&#34; style=&#34;width: 310px&#34; class=&#34;wp-caption alignnone&#34;&gt;
-  &lt;img class=&#34;size-medium wp-image-354&#34; src=&#34;http://www.nearwood.net/wp-content/uploads/IMG_20140606_181256-300x225.jpg&#34; alt=&#34;GAWMiner Fury and ZenMiner&#34; width=&#34;300&#34; height=&#34;225&#34; srcset=&#34;https://www.nearwood.net/wp-content/uploads/IMG_20140606_181256-300x225.jpg 300w, https://www.nearwood.net/wp-content/uploads/IMG_20140606_181256.jpg 1024w&#34; sizes=&#34;(max-width: 300px) 100vw, 300px&#34; /&gt;
+  &lt;img class=&#34;lostImage&#34; src=&#34;&#34; alt=&#34;Image no longer available :(&#34;/&gt;
   
   &lt;p class=&#34;wp-caption-text&#34;&gt;
     GAWMiner Fury and ZenMiner
   &lt;/p&gt;
 &lt;/div&gt;
 
-&lt;p&gt;It came with everything needed to power up and get started. The included instructions just mention how to get started using the ZenMiner, so it&amp;#8217;s pretty skimpy compared to most other packaged products. Being an ASIC cryptocurrency miner, it&amp;#8217;s already a specialty device so you likely know what you are doing. Still, the ZenMiner is geared to newcomers so they can easily start mining. In that respect I think it still needs work as the ZenOS web interface is pretty but limited.&lt;/p&gt;</description>
+&lt;p&gt;It came with everything needed to power up and get started. The included instructions just mention how to get started using the ZenMiner, so it&amp;rsquo;s pretty skimpy compared to most other packaged products. Being an ASIC cryptocurrency miner, it&amp;rsquo;s already a specialty device so you likely know what you are doing. Still, the ZenMiner is geared to newcomers so they can easily start mining. In that respect I think it still needs work as the ZenOS web interface is pretty but limited.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Windows bugs</title>
-      <link>https://blog.nearwood.net/windows-bugs/</link>
+      <link>https://nearwood.dev/windows-bugs/</link>
       <pubDate>Sat, 15 Mar 2014 13:01:13 +0000</pubDate>
       
-      <guid>https://blog.nearwood.net/windows-bugs/</guid>
-      <description>Over the years I&amp;#8217;ve noticed a couple bugs that are present in in some or all of NT/Vista/7. I experience these on a daily basis, across dozens of computers. So it can&amp;#8217;t just be me, right?
+      <guid>https://nearwood.dev/windows-bugs/</guid>
+      <description>Over the years I&amp;rsquo;ve noticed a couple bugs that are present in in some or all of NT/Vista/7. I experience these on a daily basis, across dozens of computers. So it can&amp;rsquo;t just be me, right?
  Focus bug. If the timing is right, some windows remain on top despite clicking on a background window. The background window obtains focus, but does not move to the front. This is typically when the foreground window does some focus changing action (Showing a dialog, opening a new tab, etc.</description>
     </item>
     
     <item>
       <title>Arch Linux on Lenovo ThinkPad T410</title>
-      <link>https://blog.nearwood.net/arch-linux-on-lenovo-thinkpad-t410/</link>
+      <link>https://nearwood.dev/arch-linux-on-lenovo-thinkpad-t410/</link>
       <pubDate>Sun, 09 Mar 2014 00:42:37 +0000</pubDate>
       
-      <guid>https://blog.nearwood.net/arch-linux-on-lenovo-thinkpad-t410/</guid>
-      <description>I picked up a really cheap ThinkPad T410 from Craigslist. First-gen mobile Core i5, 4GB, 320GB drive and most importantly: 1440&amp;#215;900. A 40% increase in horizontal space (and 17% vertical). Finally I can tune without trying to get TunerStudio to fit.
-Installing Arch was quick, as usual. The laptop has a fingerprint reader, which works really well in Linux. Now I can log in with a finger swipe&amp;#8211;although you have to press enter after swiping.</description>
+      <guid>https://nearwood.dev/arch-linux-on-lenovo-thinkpad-t410/</guid>
+      <description>I picked up a really cheap ThinkPad T410 from Craigslist. First-gen mobile Core i5, 4GB, 320GB drive and most importantly: 1440×900. A 40% increase in horizontal space (and 17% vertical). Finally I can tune without trying to get TunerStudio to fit.
+Installing Arch was quick, as usual. The laptop has a fingerprint reader, which works really well in Linux. Now I can log in with a finger swipe-although you have to press enter after swiping.</description>
     </item>
     
     <item>
       <title>Exporting Drupal Pages/Posts to WordPress</title>
-      <link>https://blog.nearwood.net/exporting-drupal-pagesposts-to-wordpress/</link>
+      <link>https://nearwood.dev/exporting-drupal-pagesposts-to-wordpress/</link>
       <pubDate>Tue, 31 Dec 2013 03:45:18 +0000</pubDate>
       
-      <guid>https://blog.nearwood.net/exporting-drupal-pagesposts-to-wordpress/</guid>
-      <description>I&amp;#8217;ve decided to consolidate some of my web presence. My car&amp;#8217;s website will be merged into this one. Going from WordPress to Drupal is easy, but the other way is not. I found a couple links for SQL scripts to import lots of posts automatically, but these were and are easily outdated by Drupal and to a lesser extent WordPress.
+      <guid>https://nearwood.dev/exporting-drupal-pagesposts-to-wordpress/</guid>
+      <description>I&amp;rsquo;ve decided to consolidate some of my web presence. My car&amp;rsquo;s website will be merged into this one. Going from WordPress to Drupal is easy, but the other way is not. I found a couple links for SQL scripts to import lots of posts automatically, but these were and are easily outdated by Drupal and to a lesser extent WordPress.
 It was easier just to create my own SQL JOIN statement and export the resulting list.</description>
     </item>
     
     <item>
       <title>Released my first Android app</title>
-      <link>https://blog.nearwood.net/released-my-first-android-app/</link>
+      <link>https://nearwood.dev/released-my-first-android-app/</link>
       <pubDate>Thu, 05 Dec 2013 01:00:13 +0000</pubDate>
       
-      <guid>https://blog.nearwood.net/released-my-first-android-app/</guid>
+      <guid>https://nearwood.dev/released-my-first-android-app/</guid>
       <description>After searching for a simple GPS Speedometer app that provided a speed readout in more than just 2 units (a free one, of course), I thought it would be the perfect project for my first Android app. It took only a few hours to make it, the Eclipse ADT makes this pretty easy.
 Google Play link
-I&amp;#8217;m glad I&amp;#8217;ve gotten more familiar with the publishing process. It&amp;#8217;ll help when I release a game I&amp;#8217;ve been tinkering with for a few years.</description>
+I&amp;rsquo;m glad I&amp;rsquo;ve gotten more familiar with the publishing process. It&amp;rsquo;ll help when I release a game I&amp;rsquo;ve been tinkering with for a few years.</description>
     </item>
     
     <item>
       <title>Delete all your reddit comments</title>
-      <link>https://blog.nearwood.net/delete-all-your-reddit-comments/</link>
+      <link>https://nearwood.dev/delete-all-your-reddit-comments/</link>
       <pubDate>Wed, 07 Aug 2013 00:29:51 +0000</pubDate>
       
-      <guid>https://blog.nearwood.net/delete-all-your-reddit-comments/</guid>
+      <guid>https://nearwood.dev/delete-all-your-reddit-comments/</guid>
       <description>I noticed that my reddit account had a few posts that were too revealing. So, I decided to remove them. I stumbled upon a couple greasemonkey scripts to delete all posts, which got my interested in seeing if I could write up a quick script to do the same that could run in the Developer Tools of any browser, rather than relying on an extension.
-The catch is that you, apparently, should edit each comment&amp;#8217;s content to remove it before deleting it, otherwise it&amp;#8217;s still cached in other users&amp;#8217; inboxes or something.</description>
+The catch is that you, apparently, should edit each comment&amp;rsquo;s content to remove it before deleting it, otherwise it&amp;rsquo;s still cached in other users&amp;rsquo; inboxes or something.</description>
     </item>
     
     <item>
       <title>Moving home server to Arch</title>
-      <link>https://blog.nearwood.net/moving-home-server-to-arch/</link>
+      <link>https://nearwood.dev/moving-home-server-to-arch/</link>
       <pubDate>Fri, 26 Apr 2013 23:13:52 +0000</pubDate>
       
-      <guid>https://blog.nearwood.net/moving-home-server-to-arch/</guid>
-      <description>I&amp;#8217;ve ordered a 2 terabyte hard drive to appropriately serve as a backup drive for my home server. This would normally just require swapping the old backup drive out for it, and then performing a backup. But I figure since I&amp;#8217;ll have it down anyway, I&amp;#8217;ll have enough drives to swap to Arch Linux and get things going again with the old drive as a &amp;#8230; backup.
-I&amp;#8217;ve got quite a few services setup on it, and I&amp;#8217;m not looking forward to moving all the config files over</description>
+      <guid>https://nearwood.dev/moving-home-server-to-arch/</guid>
+      <description>I&amp;rsquo;ve ordered a 2 terabyte hard drive to appropriately serve as a backup drive for my home server. This would normally just require swapping the old backup drive out for it, and then performing a backup. But I figure since I&amp;rsquo;ll have it down anyway, I&amp;rsquo;ll have enough drives to swap to Arch Linux and get things going again with the old drive as a &amp;hellip; backup.
+I&amp;rsquo;ve got quite a few services setup on it, and I&amp;rsquo;m not looking forward to moving all the config files over</description>
     </item>
     
     <item>
       <title>Switched to Arch Linux from Gentoo</title>
-      <link>https://blog.nearwood.net/switched-to-arch-linux-from-gentoo/</link>
+      <link>https://nearwood.dev/switched-to-arch-linux-from-gentoo/</link>
       <pubDate>Sun, 07 Apr 2013 12:56:52 +0000</pubDate>
       
-      <guid>https://blog.nearwood.net/switched-to-arch-linux-from-gentoo/</guid>
+      <guid>https://nearwood.dev/switched-to-arch-linux-from-gentoo/</guid>
       <description>Time installing Gentoo: days
 Time installing Archlinux: 30 mins.
-I have an old Intel based Dell laptop with 1.8GHz single-core processor. I&amp;#8217;ve had Windows XP on it for a couple years, then I switched to Gentoo for the past 5 or 6 years. Well, it&amp;#8217;s really not the kind of laptop that you should be compiling everything from source on. I&amp;#8217;m tired of going through the &amp;#8220;everything&amp;#8217;s broken, hook it the ethernet cable and start fixing it&amp;#8221; routine after I&amp;#8217;ve left it alone for months at a time.</description>
+I have an old Intel based Dell laptop with 1.8GHz single-core processor. I&amp;rsquo;ve had Windows XP on it for a couple years, then I switched to Gentoo for the past 5 or 6 years. Well, it&amp;rsquo;s really not the kind of laptop that you should be compiling everything from source on. I&amp;rsquo;m tired of going through the &amp;ldquo;everything&amp;rsquo;s broken, hook it the ethernet cable and start fixing it&amp;rdquo; routine after I&amp;rsquo;ve left it alone for months at a time.</description>
     </item>
     
     <item>
       <title>udev broke, server broke, router broke</title>
-      <link>https://blog.nearwood.net/udev-broke-server-broke-router-broke/</link>
+      <link>https://nearwood.dev/udev-broke-server-broke-router-broke/</link>
       <pubDate>Mon, 18 Feb 2013 02:30:09 +0000</pubDate>
       
-      <guid>https://blog.nearwood.net/udev-broke-server-broke-router-broke/</guid>
-      <description>I attempted to get a webcam going on our home server. So, I plug it in, and since I&amp;#8217;ve done this before I ran a script I made to grab an image from the webcam. Which didn&amp;#8217;t work. So, after checking out why (/dev/video0 node was missing), I noticed that the kernel no longer had support built in.
-After going through the kernel options, I realized they changed the v4l and webcam support options around and since I just upgrade using &amp;#8220;&amp;#8211;silentoldconfig&amp;#8221; (the bad way to do upgrades), it broke whenever I upgraded to 3.</description>
+      <guid>https://nearwood.dev/udev-broke-server-broke-router-broke/</guid>
+      <description>I attempted to get a webcam going on our home server. So, I plug it in, and since I&amp;rsquo;ve done this before I ran a script I made to grab an image from the webcam. Which didn&amp;rsquo;t work. So, after checking out why (/dev/video0 node was missing), I noticed that the kernel no longer had support built in.
+After going through the kernel options, I realized they changed the v4l and webcam support options around and since I just upgrade using &amp;ldquo;-silentoldconfig&amp;rdquo; (the bad way to do upgrades), it broke whenever I upgraded to 3.</description>
     </item>
     
     <item>
       <title>OS X? Unimpressive.</title>
-      <link>https://blog.nearwood.net/os-x-unimpressive/</link>
+      <link>https://nearwood.dev/os-x-unimpressive/</link>
       <pubDate>Mon, 04 Feb 2013 01:05:39 +0000</pubDate>
       
-      <guid>https://blog.nearwood.net/os-x-unimpressive/</guid>
-      <description>I&amp;#8217;ve been working with a MacBook Pro and OS X 10.8.2, and I have to say I&amp;#8217;m not impressed. Coming from a background that consisted almost entirely of Windows and Linux, it isn&amp;#8217;t all it&amp;#8217;s cracked up to be. It&amp;#8217;s still another OS with it&amp;#8217;s own set of problems.
+      <guid>https://nearwood.dev/os-x-unimpressive/</guid>
+      <description>I&amp;rsquo;ve been working with a MacBook Pro and OS X 10.8.2, and I have to say I&amp;rsquo;m not impressed. Coming from a background that consisted almost entirely of Windows and Linux, it isn&amp;rsquo;t all it&amp;rsquo;s cracked up to be. It&amp;rsquo;s still another OS with it&amp;rsquo;s own set of problems.
 That said, the user interface is more consistent and usable, in a lot of cases, than Windows and especially Linux desktop environments.</description>
     </item>
     
     <item>
       <title>Home server is back online</title>
-      <link>https://blog.nearwood.net/home-server-is-back-online/</link>
+      <link>https://nearwood.dev/home-server-is-back-online/</link>
       <pubDate>Sun, 27 Jan 2013 01:24:24 +0000</pubDate>
       
-      <guid>https://blog.nearwood.net/home-server-is-back-online/</guid>
-      <description>I&amp;#8217;ve pulled power and cable from the attic and just powered up the home server again. It&amp;#8217;s been asleep for 5 months until now. I&amp;#8217;ve just done an emerge &amp;#8211;sync, and it took about 10 minutes to complete.
+      <guid>https://nearwood.dev/home-server-is-back-online/</guid>
+      <description>I&amp;rsquo;ve pulled power and cable from the attic and just powered up the home server again. It&amp;rsquo;s been asleep for 5 months until now. I&amp;rsquo;ve just done an emerge -sync, and it took about 10 minutes to complete.
 However, it went up without any problems, which is good. Considering I turned it off in a working state. I was tempted to backup all my config files and start fresh with, say, Arch Linux, but that would take all weekend.</description>
     </item>
     
     <item>
       <title>Gentoo on a mid-2012 MacBook Pro</title>
-      <link>https://blog.nearwood.net/gentoo-on-a-mid-2012-macbook-pro/</link>
+      <link>https://nearwood.dev/gentoo-on-a-mid-2012-macbook-pro/</link>
       <pubDate>Mon, 19 Nov 2012 05:50:42 +0000</pubDate>
       
-      <guid>https://blog.nearwood.net/gentoo-on-a-mid-2012-macbook-pro/</guid>
-      <description>If your sick of your brand new MacBook just working (more or less), and you just feel like modifying your kernel&amp;#8217;s source to get your computer to work right, you&amp;#8217;ve come to the right place. I (finally) managed to get Gentoo booting on a new MacBook Pro (15&amp;#8243;, Core i7, mid-2012) alongside OS X 10.8.2. I suppose it actually wasn&amp;#8217;t that bad, it could have been much worse. I only had to reinstall OS X once after a wonky partition editor&amp;#8230;.</description>
+      <guid>https://nearwood.dev/gentoo-on-a-mid-2012-macbook-pro/</guid>
+      <description>If your sick of your brand new MacBook just working (more or less), and you just feel like modifying your kernel&amp;rsquo;s source to get your computer to work right, you&amp;rsquo;ve come to the right place. I (finally) managed to get Gentoo booting on a new MacBook Pro (15&amp;rdquo;, Core i7, mid-2012) alongside OS X 10.8.2. I suppose it actually wasn&amp;rsquo;t that bad, it could have been much worse. I only had to reinstall OS X once after a wonky partition editor&amp;hellip;.</description>
     </item>
     
     <item>
       <title>This PC loves Adobe</title>
-      <link>https://blog.nearwood.net/this-pc-loves-adobe/</link>
+      <link>https://nearwood.dev/this-pc-loves-adobe/</link>
       <pubDate>Wed, 25 Jul 2012 00:10:02 +0000</pubDate>
       
-      <guid>https://blog.nearwood.net/this-pc-loves-adobe/</guid>
+      <guid>https://nearwood.dev/this-pc-loves-adobe/</guid>
       <description>So much, that it installed multiple copies of the same Flash updates:
-
-Actually, it appears to be a registry glitch rather than multiple copies. As much as I don&amp;#8217;t like Adobe&amp;#8217;s updating/installation practices (opted-in toolbars, programs), they do have a relatively easy to find and use Flash removal application.
+Actually, it appears to be a registry glitch rather than multiple copies. As much as I don&amp;rsquo;t like Adobe&amp;rsquo;s updating/installation practices (opted-in toolbars, programs), they do have a relatively easy to find and use Flash removal application.
 &amp;nbsp;</description>
     </item>
     
     <item>
       <title>QEMU on Windows</title>
-      <link>https://blog.nearwood.net/posts/2012-07-05-qemu-on-windows/</link>
+      <link>https://nearwood.dev/posts/2012-07-05-qemu-on-windows/</link>
       <pubDate>Fri, 06 Jul 2012 01:29:31 +0000</pubDate>
       
-      <guid>https://blog.nearwood.net/posts/2012-07-05-qemu-on-windows/</guid>
+      <guid>https://nearwood.dev/posts/2012-07-05-qemu-on-windows/</guid>
       <description>After fumbling around with various downloads and patches, I was able to find a working QEMU build for windows. I am running Windows 7 64-bit, and I wanted to run an ARM system (specifically, to develop for a Stratus plug computer). Before this, I was running a virtualized Ubuntu using VirtualBox and then running QEMU within that. Performance was not noticeably bad.
 However, I had problems bridging the QEMU to the Ubuntu host, which was bridged itself.</description>
     </item>

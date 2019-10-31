@@ -9,7 +9,7 @@
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
 		<meta property="og:title" content="Raspberry Pi – Cross-compiling" />
-<meta property="og:description" content="Now that you have the hardware built and tested (although that&#8217;s not necessary), you can either use the code I&#8217;ve written&#8211;which is specific to the hardware and environment I have, or compile your own version. If you want to compile your own there are two options:
+<meta property="og:description" content="Now that you have the hardware built and tested (although that&rsquo;s not necessary), you can either use the code I&rsquo;ve written-which is specific to the hardware and environment I have, or compile your own version. If you want to compile your own there are two options:
 
 
 Compile on the Pi itself
@@ -17,11 +17,11 @@ Compile on an ARM virtual machine
 Cross-compile on a faster machine
 
 
-The trade off? Compiling on the Pi is slow (very slow). The virtual machine is a marked improvement for compiling speed, but is complicated to setup. Cross-compiling is about the same difficulty as setting up a virtual machine but a bit faster and less &#8220;bulky&#8221;. So it depends. The virtual machine is nice if you have a lot of libraries you want to use, since you&#8217;ll have to compile all of them to be available for linking. If any of them have poor autoconfig support, it might be a pain to fix if you weren&#8217;t already on the target machine. But, since I just needed one or two popular libraries, I decided to setup cross-compiling from my host (x86_64) machine.
+The trade off? Compiling on the Pi is slow (very slow). The virtual machine is a marked improvement for compiling speed, but is complicated to setup. Cross-compiling is about the same difficulty as setting up a virtual machine but a bit faster and less &ldquo;bulky&rdquo;. So it depends. The virtual machine is nice if you have a lot of libraries you want to use, since you&rsquo;ll have to compile all of them to be available for linking. If any of them have poor autoconfig support, it might be a pain to fix if you weren&rsquo;t already on the target machine. But, since I just needed one or two popular libraries, I decided to setup cross-compiling from my host (x86_64) machine.
 
-The last time I setup cross-compiling it was on Gentoo, and it wasn&#8217;t pleasant. However, after a little bit of research it looks like the crosstool-ng project is pretty popular and useful. I only had to patch one tiny thing.
+The last time I setup cross-compiling it was on Gentoo, and it wasn&rsquo;t pleasant. However, after a little bit of research it looks like the crosstool-ng project is pretty popular and useful. I only had to patch one tiny thing.
 
-Here&#8217;s the overall process:
+Here&rsquo;s the overall process:
 
 
 Install crosstool-ng
@@ -30,13 +30,13 @@ Try and build the toolchain
 Use the toolchain to build your Pi code
 " />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://blog.nearwood.net/raspberry-pi-robot-cross-compiling/" />
+<meta property="og:url" content="https://nearwood.dev/raspberry-pi-robot-cross-compiling/" />
 <meta property="article:published_time" content="2014-12-01T02:26:47+00:00" />
-<meta property="article:modified_time" content="2019-02-03T12:15:22-05:00" />
+<meta property="article:modified_time" content="2019-10-30T12:06:10-05:00" />
 
 		<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Raspberry Pi – Cross-compiling"/>
-<meta name="twitter:description" content="Now that you have the hardware built and tested (although that&#8217;s not necessary), you can either use the code I&#8217;ve written&#8211;which is specific to the hardware and environment I have, or compile your own version. If you want to compile your own there are two options:
+<meta name="twitter:description" content="Now that you have the hardware built and tested (although that&rsquo;s not necessary), you can either use the code I&rsquo;ve written-which is specific to the hardware and environment I have, or compile your own version. If you want to compile your own there are two options:
 
 
 Compile on the Pi itself
@@ -44,11 +44,11 @@ Compile on an ARM virtual machine
 Cross-compile on a faster machine
 
 
-The trade off? Compiling on the Pi is slow (very slow). The virtual machine is a marked improvement for compiling speed, but is complicated to setup. Cross-compiling is about the same difficulty as setting up a virtual machine but a bit faster and less &#8220;bulky&#8221;. So it depends. The virtual machine is nice if you have a lot of libraries you want to use, since you&#8217;ll have to compile all of them to be available for linking. If any of them have poor autoconfig support, it might be a pain to fix if you weren&#8217;t already on the target machine. But, since I just needed one or two popular libraries, I decided to setup cross-compiling from my host (x86_64) machine.
+The trade off? Compiling on the Pi is slow (very slow). The virtual machine is a marked improvement for compiling speed, but is complicated to setup. Cross-compiling is about the same difficulty as setting up a virtual machine but a bit faster and less &ldquo;bulky&rdquo;. So it depends. The virtual machine is nice if you have a lot of libraries you want to use, since you&rsquo;ll have to compile all of them to be available for linking. If any of them have poor autoconfig support, it might be a pain to fix if you weren&rsquo;t already on the target machine. But, since I just needed one or two popular libraries, I decided to setup cross-compiling from my host (x86_64) machine.
 
-The last time I setup cross-compiling it was on Gentoo, and it wasn&#8217;t pleasant. However, after a little bit of research it looks like the crosstool-ng project is pretty popular and useful. I only had to patch one tiny thing.
+The last time I setup cross-compiling it was on Gentoo, and it wasn&rsquo;t pleasant. However, after a little bit of research it looks like the crosstool-ng project is pretty popular and useful. I only had to patch one tiny thing.
 
-Here&#8217;s the overall process:
+Here&rsquo;s the overall process:
 
 
 Install crosstool-ng
@@ -77,7 +77,6 @@ Use the toolchain to build your Pi code
 		</div>
 	</button>
 	<ul id="menu" class="main-nav__list">
-		<li class="main-nav__item"><a class="main-nav__link" href="/">Home</a></li>
 		<li class="main-nav__item"><a class="main-nav__link" href="/pages/about/">About</a></li>
 		<li class="main-nav__item"><a class="main-nav__link" href="/pages/contact/">Contact</a></li>
 	</ul>
@@ -89,7 +88,7 @@ Use the toolchain to build your Pi code
 		<div class="single block">
 			<article class="post">
 				<h1 class="post__title">Raspberry Pi – Cross-compiling</h1>
-				<div class="post__content"><p>Now that you have the hardware built and tested (although that&#8217;s not necessary), you can either use the code I&#8217;ve written&#8211;which is specific to the hardware and environment I have, or compile your own version. If you want to compile your own there are two options:</p>
+				<div class="post__content"><p>Now that you have the hardware built and tested (although that&rsquo;s not necessary), you can either use the code I&rsquo;ve written-which is specific to the hardware and environment I have, or compile your own version. If you want to compile your own there are two options:</p>
 
 <ol>
 <li>Compile on the Pi itself</li>
@@ -97,11 +96,11 @@ Use the toolchain to build your Pi code
 <li>Cross-compile on a faster machine</li>
 </ol>
 
-<p>The trade off? Compiling on the Pi is slow (very slow). The virtual machine is a marked improvement for compiling speed, but is complicated to setup. Cross-compiling is about the same difficulty as setting up a virtual machine but a bit faster and less &#8220;bulky&#8221;. So it depends. The virtual machine is nice if you have a lot of libraries you want to use, since you&#8217;ll have to compile all of them to be available for linking. If any of them have poor autoconfig support, it might be a pain to fix if you weren&#8217;t already on the target machine. But, since I just needed one or two popular libraries, I decided to setup cross-compiling from my host (x86_64) machine.</p>
+<p>The trade off? Compiling on the Pi is slow (very slow). The virtual machine is a marked improvement for compiling speed, but is complicated to setup. Cross-compiling is about the same difficulty as setting up a virtual machine but a bit faster and less &ldquo;bulky&rdquo;. So it depends. The virtual machine is nice if you have a lot of libraries you want to use, since you&rsquo;ll have to compile all of them to be available for linking. If any of them have poor autoconfig support, it might be a pain to fix if you weren&rsquo;t already on the target machine. But, since I just needed one or two popular libraries, I decided to setup cross-compiling from my host (x86_64) machine.</p>
 
-<p>The last time I setup cross-compiling it was on Gentoo, and it wasn&#8217;t pleasant. However, after a little bit of research it looks like the <a href="http://crosstool-ng.org/" target="_blank">crosstool-ng project</a> is pretty popular and useful. I only had to patch one tiny thing.</p>
+<p>The last time I setup cross-compiling it was on Gentoo, and it wasn&rsquo;t pleasant. However, after a little bit of research it looks like the <a href="https://crosstool-ng.org/" target="_blank">crosstool-ng project</a> is pretty popular and useful. I only had to patch one tiny thing.</p>
 
-<p>Here&#8217;s the overall process:</p>
+<p>Here&rsquo;s the overall process:</p>
 
 <ol>
 <li>Install crosstool-ng</li>
@@ -110,9 +109,9 @@ Use the toolchain to build your Pi code
 <li>Use the toolchain to build your Pi code</li>
 </ol>
 
-<p>Here are some <a href="http://stackoverflow.com/questions/10973020/cross-compilation-for-raspberry-pi-in-gcc-where-to-start" target="_blank">relevant</a> <a href="http://raspberrypi.stackexchange.com/questions/1/how-do-i-build-a-gcc-4-7-toolchain-for-cross-compiling/1144#1144" target="_blank">links</a> that I found useful. I installed from source since there wasn&#8217;t a package available. Add `ct-ng` to your PATH if you want. Now create a folder just for Pi compiling, where your toolchain and other libraries will reside. I used `~/dev/rpi`.</p>
+<p>Here are some <a href="https://stackoverflow.com/questions/10973020/cross-compilation-for-raspberry-pi-in-gcc-where-to-start" target="_blank">relevant</a> <a href="https://raspberrypi.stackexchange.com/questions/1/how-do-i-build-a-gcc-4-7-toolchain-for-cross-compiling/1144#1144" target="_blank">links</a> that I found useful. I installed from source since there wasn&rsquo;t a package available. Add `ct-ng` to your PATH if you want. Now create a folder just for Pi compiling, where your toolchain and other libraries will reside. I used `~/dev/rpi`.</p>
 
-<p>You can `ct-ng menuconfig` to configure what compiler and arch you need. I&#8217;ve got all the settings here, which you can save and import:</p>
+<p>You can `ct-ng menuconfig` to configure what compiler and arch you need. I&rsquo;ve got all the settings here, which you can save and import:</p>
 
 <pre>~/dev/rpi/arm-rpi-linux-gnueabi/samples/crosstool.config</pre>
 
@@ -153,11 +152,11 @@ Linux raspberrypi 3.12.33+ #722 PREEMPT Sat Nov 22 12:03:51 GMT 2014 armv6l GNU/
 
 <h4 id="fixing-a-build-problem">Fixing a build problem</h4>
 
-<p>When trying to build eglibc on my machine, crosstool-ng ran into a bug in eglibc&#8217;s configuration scripts where my make was &#8220;too new&#8221;, and the configuration for eglibc borked. While the eglibc INSTALL text says use make 3.79 or newer, the actual configure file limits it to 3.79 or 3.89 (or something like that, I&#8217;m not entirely sure on the matching syntax). You can fix that by changing one line in it&#8217;s configuration script. It took me a while to find a <a href="http://colocsbar.blogspot.fr/2014/01/crosstool-ng-1190-et-make-40.html" target="_blank">solution</a>. It was in French, and it didn&#8217;t mention which file! I knew it was a configure script so I grep&#8217;d all the configure scripts in .build. The file you need to change is:</p>
+<p>When trying to build eglibc on my machine, crosstool-ng ran into a bug in eglibc&rsquo;s configuration scripts where my make was &ldquo;too new&rdquo;, and the configuration for eglibc borked. While the eglibc INSTALL text says use make 3.79 or newer, the actual configure file limits it to 3.79 or 3.89 (or something like that, I&rsquo;m not entirely sure on the matching syntax). You can fix that by changing one line in it&rsquo;s configuration script. It took me a while to find a <a href="https://colocsbar.blogspot.fr/2014/01/crosstool-ng-1190-et-make-40.html" target="_blank">solution</a>. It was in French, and it didn&rsquo;t mention which file! I knew it was a configure script so I grep&rsquo;d all the configure scripts in .build. The file you need to change is:</p>
 
 <pre>.build/src/eglibc-2_13/configure</pre>
 
-<p>Here&#8217;s the patch file from the linked post:</p>
+<p>Here&rsquo;s the patch file from the linked post:</p>
 
 <pre class="brush: plain; gutter: false; title: ; notranslate" title="">--- a/configure    2014-01-03 14:08:59.027618540 +0100
 +++ b/configure    2014-01-03 14:10:24.897615610 +0100
@@ -171,7 +170,7 @@ ac_prog_version="$ac_prog_version, ok"; ac_verc_fail=no;;
 *) ac_prog_version="$ac_prog_version, bad"; ac_verc_fail=yes;;
 </pre>
 
-<p>In my case, the relevant line was around line 5000 in the actual file, in my case. So the patch wouldn&#8217;t have worked anyway.</p>
+<p>In my case, the relevant line was around line 5000 in the actual file, in my case. So the patch wouldn&rsquo;t have worked anyway.</p>
 
 <h3 id="building-round-2">Building (Round 2)</h3>
 
@@ -189,35 +188,35 @@ ac_prog_version="$ac_prog_version, ok"; ac_verc_fail=no;;
 <p>Next up were the libraries I wanted to use. I have just to for my project:</p>
 
 <ul>
-<li>bcm2835 &#8211; A C library for easy access to the GPIO pins</li>
-<li>ncurses &#8211; For writing anywhere to the screen among other useful I/O things</li>
+<li>bcm2835 - A C library for easy access to the GPIO pins</li>
+<li>ncurses - For writing anywhere to the screen among other useful I/O things</li>
 </ul>
 
-<p>bcm2835 is pretty much required on the Pi, although there are <a href="http://elinux.org/RPi_Low-level_peripherals#GPIO_Code_examples" target="_blank">other ways</a> to access the pins. Ncurses is just for pleasant output. If you&#8217;re not familiar with it, you can easily write out text anywhere on the terminal screen. You can also create &#8220;windows&#8221; and GUI controls, all using terminal characters. It&#8217;s what `ct-ng menuconfig`, and lots of other projects (including the Linux kernel configuration) use.</p>
+<p>bcm2835 is pretty much required on the Pi, although there are <a href="https://elinux.org/RPi_Low-level_peripherals#GPIO_Code_examples" target="_blank">other ways</a> to access the pins. Ncurses is just for pleasant output. If you&rsquo;re not familiar with it, you can easily write out text anywhere on the terminal screen. You can also create &ldquo;windows&rdquo; and GUI controls, all using terminal characters. It&rsquo;s what `ct-ng menuconfig`, and lots of other projects (including the Linux kernel configuration) use.</p>
 
 <h3 id="building-bcm2835">Building bcm2835</h3>
 
-<p>Download the <a href="http://www.airspayce.com/mikem/bcm2835/">latest version of the library</a> and extract it. I extracted it in my `~/dev/rpi` directory. I installed it to the same directory as well. You <em>could</em> put it in the cross-tools sysroot (default is ~/x-tools/[system tuple]/sysroot or something like that), but I&#8217;d leave that be.</p>
+<p>Download the <a href="https://www.airspayce.com/mikem/bcm2835/">latest version of the library</a> and extract it. I extracted it in my `~/dev/rpi` directory. I installed it to the same directory as well. You <em>could</em> put it in the cross-tools sysroot (default is ~/x-tools/[system tuple]/sysroot or something like that), but I&rsquo;d leave that be.</p>
 
 <pre class="brush: bash; gutter: false; title: ; notranslate" title="">./configure --build=arm-linux --host=arm-rpi-linux-gnueabi --prefix=/home/nick/dev/rpi
 </pre>
 
-<p>`&#8211;build=arm-linux` &#8211; This will just set the build argument, so the default is not used. It may not be needed.</p>
+<p>`-build=arm-linux` - This will just set the build argument, so the default is not used. It may not be needed.</p>
 
-<p>`&#8211;host=arm-rpi-linux-gnueabi` &#8211; This, in combination with a non-default build value, will allow for cross-compiling. I think the build value can be whatever you want as long as it is defined manually. Ncurses didn&#8217;t seem to need it at all.</p>
+<p>`-host=arm-rpi-linux-gnueabi` - This, in combination with a non-default build value, will allow for cross-compiling. I think the build value can be whatever you want as long as it is defined manually. Ncurses didn&rsquo;t seem to need it at all.</p>
 
-<p>`&#8211;prefix=/home/nick/dev/rpi` &#8211; Where to install the resulting files when doing a make install. It installs into lib/ and include/, which aren&#8217;t used by crosstool-ng so it works for me. This way my ~/dev/rpi can be used as the lib and include folder for other pi projects later on as well.</p>
+<p>`-prefix=/home/nick/dev/rpi` - Where to install the resulting files when doing a make install. It installs into lib/ and include/, which aren&rsquo;t used by crosstool-ng so it works for me. This way my ~/dev/rpi can be used as the lib and include folder for other pi projects later on as well.</p>
 
 <p>After configure runs, just `make &amp;&amp; make install`. No `sudo` needed since your installing under your home.</p>
 
 <h3 id="building-ncurses">Building ncurses</h3>
 
-<p>Acquire the latest version: <a href="http://ftp.gnu.org/pub/gnu/ncurses/" target="_blank"><a href="http://ftp.gnu.org/pub/gnu/ncurses/">http://ftp.gnu.org/pub/gnu/ncurses/</a></a> and extract it. Again I extracted and installed it in my `~/dev/rpi` directory. Run configure:</p>
+<p>Acquire the latest version: <a href="https://ftp.gnu.org/pub/gnu/ncurses/" target="_blank"><a href="https://ftp.gnu.org/pub/gnu/ncurses/">https://ftp.gnu.org/pub/gnu/ncurses/</a></a> and extract it. Again I extracted and installed it in my `~/dev/rpi` directory. Run configure:</p>
 
 <pre class="brush: bash; gutter: false; title: ; notranslate" title="">./configure arm-linux --host=arm-rpi-linux-gnueabi --prefix=/home/nick/dev/rpi --disable-big-core --enable-termcap --with-shared --without-manpages
 </pre>
 
-<p>The additional switches here enable low-memory usage, terminal capability detection, skips the manpages, and I&#8217;m not sure why `&#8211;with-shared` is there, since this should not, ideally, be a shared library. Then again my Pi already has ncurses installed so it might not be so bad after all.</p>
+<p>The additional switches here enable low-memory usage, terminal capability detection, skips the manpages, and I&rsquo;m not sure why `-with-shared` is there, since this should not, ideally, be a shared library. Then again my Pi already has ncurses installed so it might not be so bad after all.</p>
 
 <p>There, done! It took a while, but now you should be able to `make` the <a href="https://github.com/nearwood/rpi-drd" target="_blank">rpi-drd</a> project.</p></div>
 				
@@ -232,10 +231,10 @@ ac_prog_version="$ac_prog_version, ok"; ac_verc_fail=no;;
 
 					
 <div class="post__share share">
-	<a class="share__link btn" title="Share on Twitter" href="https://twitter.com/intent/tweet/?url=https%3a%2f%2fblog.nearwood.net%2fraspberry-pi-robot-cross-compiling%2f&amp;text=Raspberry%20Pi%20%e2%80%93%20Cross-compiling" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, 'Share on Twitter', 'width=800,height=450,resizable=yes,toolbar=0,status=0'); return false">
+	<a class="share__link btn" title="Share on Twitter" href="https://twitter.com/intent/tweet/?url=https%3a%2f%2fnearwood.dev%2fraspberry-pi-robot-cross-compiling%2f&amp;text=Raspberry%20Pi%20%e2%80%93%20Cross-compiling" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, 'Share on Twitter', 'width=800,height=450,resizable=yes,toolbar=0,status=0'); return false">
 		<svg class="share__icon" aria-label="Twitter" role="img" width="32" height="32" viewBox="0 0 512 512"><path d="M437 152a72 72 0 0 1-40 12 72 72 0 0 0 32-40 72 72 0 0 1-45 17 72 72 0 0 0-122 65 200 200 0 0 1-145-74 72 72 0 0 0 22 94 72 72 0 0 1-32-7 72 72 0 0 0 56 69 72 72 0 0 1-32 1 72 72 0 0 0 67 50 200 200 0 0 1-105 29 200 200 0 0 0 309-179 200 200 0 0 0 35-37"/></svg>
 	</a>
-	<a class="share__link btn" title="Share on Reddit" href="https://www.reddit.com/submit?url=https%3a%2f%2fblog.nearwood.net%2fraspberry-pi-robot-cross-compiling%2f&amp;title=Raspberry%20Pi%20%e2%80%93%20Cross-compiling" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, 'Share on Reddit', 'width=832,height=624,toolbar=0,status=0'); return false">
+	<a class="share__link btn" title="Share on Reddit" href="https://www.reddit.com/submit?url=https%3a%2f%2fnearwood.dev%2fraspberry-pi-robot-cross-compiling%2f&amp;title=Raspberry%20Pi%20%e2%80%93%20Cross-compiling" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, 'Share on Reddit', 'width=832,height=624,toolbar=0,status=0'); return false">
 		<svg class="share__icon" aria-label="Reddit" role="img" width="32" height="32" viewBox="0 0 512 512"><path fill-rule="evenodd" d="M375 146a32 32 0 1 0-29-46l-65-13c-5-1-9 2-10 6l-22 97c-45 1-85 15-113 36a42 42 0 1 0-45 69l-1 12c0 65 74 117 166 117s166-52 166-117l-1-11a42 42 0 1 0-44-69c-28-21-67-35-111-37l19-86 58 13a32 32 0 0 0 32 29zM190 353c2-1 4 0 5 1 15 11 38 18 61 18s46-6 61-18a7 7 0 0 1 8 10c-18 14-44 21-69 21-25-1-51-7-69-21a6 6 0 0 1 3-11zm23-44a31 31 0 1 1-44-44 31 31 0 0 1 44 44zm130 0a31 31 0 1 0-44-44 31 31 0 0 0 44 44z"/></svg>
 	</a>
 </div>

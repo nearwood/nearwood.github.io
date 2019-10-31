@@ -1,26 +1,25 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Adobe on Nick</title>
-    <link>https://blog.nearwood.net/tags/adobe/</link>
+    <link>https://nearwood.dev/tags/adobe/</link>
     <description>Recent content in Adobe on Nick</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2019 Nicholas Earwood</copyright>
     <lastBuildDate>Wed, 25 Jul 2012 00:10:02 +0000</lastBuildDate>
     
-	<atom:link href="https://blog.nearwood.net/tags/adobe/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://nearwood.dev/tags/adobe/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>This PC loves Adobe</title>
-      <link>https://blog.nearwood.net/this-pc-loves-adobe/</link>
+      <link>https://nearwood.dev/this-pc-loves-adobe/</link>
       <pubDate>Wed, 25 Jul 2012 00:10:02 +0000</pubDate>
       
-      <guid>https://blog.nearwood.net/this-pc-loves-adobe/</guid>
+      <guid>https://nearwood.dev/this-pc-loves-adobe/</guid>
       <description>So much, that it installed multiple copies of the same Flash updates:
-
-Actually, it appears to be a registry glitch rather than multiple copies. As much as I don&amp;#8217;t like Adobe&amp;#8217;s updating/installation practices (opted-in toolbars, programs), they do have a relatively easy to find and use Flash removal application.
+Actually, it appears to be a registry glitch rather than multiple copies. As much as I don&amp;rsquo;t like Adobe&amp;rsquo;s updating/installation practices (opted-in toolbars, programs), they do have a relatively easy to find and use Flash removal application.
 &amp;nbsp;</description>
     </item>
     

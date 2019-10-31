@@ -1,122 +1,122 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Nick</title>
-    <link>https://blog.nearwood.net/categories/</link>
+    <link>https://nearwood.dev/categories/</link>
     <description>Recent content in Categories on Nick</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2019 Nicholas Earwood</copyright>
     <lastBuildDate>Sat, 02 Feb 2019 19:43:39 +0000</lastBuildDate>
     
-	<atom:link href="https://blog.nearwood.net/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://nearwood.dev/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Computing</title>
-      <link>https://blog.nearwood.net/categories/computing/</link>
+      <link>https://nearwood.dev/categories/computing/</link>
       <pubDate>Sat, 02 Feb 2019 19:43:39 +0000</pubDate>
       
-      <guid>https://blog.nearwood.net/categories/computing/</guid>
+      <guid>https://nearwood.dev/categories/computing/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Cryptocurrency</title>
-      <link>https://blog.nearwood.net/categories/cryptocurrency/</link>
+      <link>https://nearwood.dev/categories/cryptocurrency/</link>
       <pubDate>Fri, 12 Jan 2018 02:13:38 +0000</pubDate>
       
-      <guid>https://blog.nearwood.net/categories/cryptocurrency/</guid>
+      <guid>https://nearwood.dev/categories/cryptocurrency/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Programming</title>
-      <link>https://blog.nearwood.net/categories/programming/</link>
+      <link>https://nearwood.dev/categories/programming/</link>
       <pubDate>Fri, 12 Jan 2018 02:13:38 +0000</pubDate>
       
-      <guid>https://blog.nearwood.net/categories/programming/</guid>
+      <guid>https://nearwood.dev/categories/programming/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Technology</title>
-      <link>https://blog.nearwood.net/categories/technology/</link>
+      <link>https://nearwood.dev/categories/technology/</link>
       <pubDate>Fri, 12 Jan 2018 02:13:38 +0000</pubDate>
       
-      <guid>https://blog.nearwood.net/categories/technology/</guid>
+      <guid>https://nearwood.dev/categories/technology/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Android</title>
-      <link>https://blog.nearwood.net/categories/android/</link>
+      <link>https://nearwood.dev/categories/android/</link>
       <pubDate>Sat, 28 Oct 2017 03:06:49 +0000</pubDate>
       
-      <guid>https://blog.nearwood.net/categories/android/</guid>
+      <guid>https://nearwood.dev/categories/android/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Cars</title>
-      <link>https://blog.nearwood.net/categories/cars/</link>
+      <link>https://nearwood.dev/categories/cars/</link>
       <pubDate>Sat, 28 Oct 2017 03:06:49 +0000</pubDate>
       
-      <guid>https://blog.nearwood.net/categories/cars/</guid>
+      <guid>https://nearwood.dev/categories/cars/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Linux</title>
-      <link>https://blog.nearwood.net/categories/linux/</link>
+      <link>https://nearwood.dev/categories/linux/</link>
       <pubDate>Mon, 25 Sep 2017 00:27:40 +0000</pubDate>
       
-      <guid>https://blog.nearwood.net/categories/linux/</guid>
+      <guid>https://nearwood.dev/categories/linux/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Raspberry Pi</title>
-      <link>https://blog.nearwood.net/categories/raspberry-pi/</link>
+      <link>https://nearwood.dev/categories/raspberry-pi/</link>
       <pubDate>Sat, 21 May 2016 22:06:00 +0000</pubDate>
       
-      <guid>https://blog.nearwood.net/categories/raspberry-pi/</guid>
+      <guid>https://nearwood.dev/categories/raspberry-pi/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Games</title>
-      <link>https://blog.nearwood.net/categories/games/</link>
+      <link>https://nearwood.dev/categories/games/</link>
       <pubDate>Sat, 16 Jan 2016 03:44:07 +0000</pubDate>
       
-      <guid>https://blog.nearwood.net/categories/games/</guid>
+      <guid>https://nearwood.dev/categories/games/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Welding</title>
-      <link>https://blog.nearwood.net/categories/welding/</link>
+      <link>https://nearwood.dev/categories/welding/</link>
       <pubDate>Sat, 02 May 2015 16:00:58 +0000</pubDate>
       
-      <guid>https://blog.nearwood.net/categories/welding/</guid>
+      <guid>https://nearwood.dev/categories/welding/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Arduino</title>
-      <link>https://blog.nearwood.net/categories/arduino/</link>
+      <link>https://nearwood.dev/categories/arduino/</link>
       <pubDate>Wed, 12 Nov 2014 02:04:43 +0000</pubDate>
       
-      <guid>https://blog.nearwood.net/categories/arduino/</guid>
+      <guid>https://nearwood.dev/categories/arduino/</guid>
       <description></description>
     </item>
     
     <item>
       <title>User Experience</title>
-      <link>https://blog.nearwood.net/categories/user-experience/</link>
+      <link>https://nearwood.dev/categories/user-experience/</link>
       <pubDate>Sun, 08 Jul 2012 22:48:23 +0000</pubDate>
       
-      <guid>https://blog.nearwood.net/categories/user-experience/</guid>
+      <guid>https://nearwood.dev/categories/user-experience/</guid>
       <description></description>
     </item>
     

@@ -1,26 +1,25 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>UXD on Nick</title>
-    <link>https://blog.nearwood.net/tags/uxd/</link>
+    <link>https://nearwood.dev/tags/uxd/</link>
     <description>Recent content in UXD on Nick</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2019 Nicholas Earwood</copyright>
     <lastBuildDate>Sun, 08 Jul 2012 22:48:23 +0000</lastBuildDate>
     
-	<atom:link href="https://blog.nearwood.net/tags/uxd/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://nearwood.dev/tags/uxd/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>The Other End of UXD</title>
-      <link>https://blog.nearwood.net/the-other-end-of-uxd/</link>
+      <link>https://nearwood.dev/the-other-end-of-uxd/</link>
       <pubDate>Sun, 08 Jul 2012 22:48:23 +0000</pubDate>
       
-      <guid>https://blog.nearwood.net/the-other-end-of-uxd/</guid>
+      <guid>https://nearwood.dev/the-other-end-of-uxd/</guid>
       <description>What do you do, as a software maker, to discourage someone from uninstalling your software? Make it take a lot of clicking:
-
-Excellent job, WildTangent. Now, I thought I would be clever and just focus onto the listbox and press the space bar and down arrow key multiple&amp;#8230; multiple times. Well, it would seem they thought of that scenario and made the Cancel button the object that receives focus right after the listbox.</description>
+Excellent job, WildTangent. Now, I thought I would be clever and just focus onto the listbox and press the space bar and down arrow key multiple&amp;hellip; multiple times. Well, it would seem they thought of that scenario and made the Cancel button the object that receives focus right after the listbox.</description>
     </item>
     
   </channel>

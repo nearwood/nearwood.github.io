@@ -1,46 +1,46 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>automotive on Nick</title>
-    <link>https://blog.nearwood.net/tags/automotive/</link>
+    <link>https://nearwood.dev/tags/automotive/</link>
     <description>Recent content in automotive on Nick</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2019 Nicholas Earwood</copyright>
     <lastBuildDate>Tue, 29 Jul 2014 00:10:14 +0000</lastBuildDate>
     
-	<atom:link href="https://blog.nearwood.net/tags/automotive/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://nearwood.dev/tags/automotive/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>3.3L 280Z Runs</title>
-      <link>https://blog.nearwood.net/3-3l-280z-runs/</link>
+      <link>https://nearwood.dev/3-3l-280z-runs/</link>
       <pubDate>Tue, 29 Jul 2014 00:10:14 +0000</pubDate>
       
-      <guid>https://blog.nearwood.net/3-3l-280z-runs/</guid>
-      <description>So, am I the first? The first to put a VG33 in an S30? I have doubts but I&amp;#8217;ve never heard of it before. After a bit of late night work and an unplanned oil event and a small unplanned fuel dump after removing and replacing the engine to fix the oil leak, it&amp;#8217;s back in, running, and more importantly: not leaking.
-Here&amp;#8217;s a late night in-progress shot:
+      <guid>https://nearwood.dev/3-3l-280z-runs/</guid>
+      <description>So, am I the first? The first to put a VG33 in an S30? I have doubts but I&amp;rsquo;ve never heard of it before. After a bit of late night work and an unplanned oil event and a small unplanned fuel dump after removing and replacing the engine to fix the oil leak, it&amp;rsquo;s back in, running, and more importantly: not leaking.
+Here&amp;rsquo;s a late night in-progress shot:
 &amp;nbsp;
 All the work was worth it, I had to get it running for a scheduled photoshoot:</description>
     </item>
     
     <item>
       <title>280Z SpeedHut gauge conversion</title>
-      <link>https://blog.nearwood.net/280z-speedhut-gauge-conversion/</link>
+      <link>https://nearwood.dev/280z-speedhut-gauge-conversion/</link>
       <pubDate>Sat, 24 May 2014 01:11:23 +0000</pubDate>
       
-      <guid>https://blog.nearwood.net/280z-speedhut-gauge-conversion/</guid>
+      <guid>https://nearwood.dev/280z-speedhut-gauge-conversion/</guid>
       <description>&lt;p&gt;I acquired some Speedhut gauges a while back for a deal, and I just got a free 240Z wheel, so I decided to do all three. In this part I just remove and fit the Speedhut gauges in the old speedo and tachometer housings. In the next part I wire them up. A few people did this on HybridZ various different ways. I was too cheap to go out and get any other supplies, so I made it work with what I had.&lt;/p&gt;
 
 &lt;p&gt;The gauges I got are:&lt;/p&gt;
 
-&lt;p&gt;Speedometer: 4&amp;#8243; Revolution GPS Speedo with integrated fuel gauge, turn signal LEDs, and high-beam LED&lt;/p&gt;
+&lt;p&gt;Speedometer: 4&amp;rdquo; Revolution GPS Speedo with integrated fuel gauge, turn signal LEDs, and high-beam LED&lt;/p&gt;
 
-&lt;p&gt;Tachometer: 4&amp;#8243; Revolution 8,000RPM with programmable shift LEDs.&lt;/p&gt;
+&lt;p&gt;Tachometer: 4&amp;rdquo; Revolution 8,000RPM with programmable shift LEDs.&lt;/p&gt;
 
-&lt;p&gt;Both have red dials, and red illumination. The fuel gauge is there since I&amp;#8217;ll be replacing the one in the 3 small dash gauges eventually, but don&amp;#8217;t want to lose having a gas gauge.&lt;/p&gt;
+&lt;p&gt;Both have red dials, and red illumination. The fuel gauge is there since I&amp;rsquo;ll be replacing the one in the 3 small dash gauges eventually, but don&amp;rsquo;t want to lose having a gas gauge.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&amp;#8221;http://razzi.me/p/634975&amp;#8243;&gt;&lt;img alt=&amp;#8221;Uploaded on Razzi.me&amp;#8221; height=&amp;#8221;235&amp;#8243; src=&amp;#8221;http://just.razzi.me/photos/634975/692e6df.jpg&amp;#8221; width=&amp;#8221;235&amp;#8243;&gt;&lt;/a&gt; &lt;a href=&amp;#8221;http://razzi.me/p/634976&amp;#8243;&gt;&lt;img alt=&amp;#8221;Uploaded on Razzi.me&amp;#8221; height=&amp;#8221;235&amp;#8243; src=&amp;#8221;http://just.razzi.me/photos/634976/5951aee.jpg&amp;#8221; width=&amp;#8221;235&amp;#8243;&gt;&lt;/a&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;img class=&#34;lostImage&#34; src=&#34;&#34; alt=&#34;Image no longer available :(&#34;/&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

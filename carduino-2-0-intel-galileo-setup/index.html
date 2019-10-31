@@ -9,15 +9,15 @@
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
 		<meta property="og:title" content="Carduino 2.0 – Intel Galileo Setup" />
-<meta property="og:description" content="Out of the box the Galileo is setup to run sketches uploaded from volatile memory, which is really lame. I didn&#8217;t spend much time with it using the stock SPI kernel. So, an SD card is pretty much required to do any serious development with this board. This is not a bad thing (although you aren&#8217;t running in real-time anymore), since having a full OS to use has lots of advantages. Plus, this way I can automate the build process in a way I&#8217;m more familiar with." />
+<meta property="og:description" content="Out of the box the Galileo is setup to run sketches uploaded from volatile memory, which is really lame. I didn&rsquo;t spend much time with it using the stock SPI kernel. So, an SD card is pretty much required to do any serious development with this board. This is not a bad thing (although you aren&rsquo;t running in real-time anymore), since having a full OS to use has lots of advantages. Plus, this way I can automate the build process in a way I&rsquo;m more familiar with." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://blog.nearwood.net/carduino-2-0-intel-galileo-setup/" />
+<meta property="og:url" content="https://nearwood.dev/carduino-2-0-intel-galileo-setup/" />
 <meta property="article:published_time" content="2014-11-12T02:04:43+00:00" />
-<meta property="article:modified_time" content="2019-02-03T12:15:22-05:00" />
+<meta property="article:modified_time" content="2019-10-30T12:06:10-05:00" />
 
 		<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Carduino 2.0 – Intel Galileo Setup"/>
-<meta name="twitter:description" content="Out of the box the Galileo is setup to run sketches uploaded from volatile memory, which is really lame. I didn&#8217;t spend much time with it using the stock SPI kernel. So, an SD card is pretty much required to do any serious development with this board. This is not a bad thing (although you aren&#8217;t running in real-time anymore), since having a full OS to use has lots of advantages. Plus, this way I can automate the build process in a way I&#8217;m more familiar with."/>
+<meta name="twitter:description" content="Out of the box the Galileo is setup to run sketches uploaded from volatile memory, which is really lame. I didn&rsquo;t spend much time with it using the stock SPI kernel. So, an SD card is pretty much required to do any serious development with this board. This is not a bad thing (although you aren&rsquo;t running in real-time anymore), since having a full OS to use has lots of advantages. Plus, this way I can automate the build process in a way I&rsquo;m more familiar with."/>
 
 	<link rel="stylesheet" href="/css/main.css">
 	<link rel="stylesheet" href="/css/themes/dark-green.css">
@@ -39,7 +39,6 @@
 		</div>
 	</button>
 	<ul id="menu" class="main-nav__list">
-		<li class="main-nav__item"><a class="main-nav__link" href="/">Home</a></li>
 		<li class="main-nav__item"><a class="main-nav__link" href="/pages/about/">About</a></li>
 		<li class="main-nav__item"><a class="main-nav__link" href="/pages/contact/">Contact</a></li>
 	</ul>
@@ -51,9 +50,9 @@
 		<div class="single block">
 			<article class="post">
 				<h1 class="post__title">Carduino 2.0 – Intel Galileo Setup</h1>
-				<div class="post__content"><p>Out of the box the Galileo is setup to run sketches uploaded from volatile memory, which is really lame. I didn&#8217;t spend much time with it using the stock SPI kernel. So, an SD card is pretty much required to do any serious development with this board. This is not a bad thing (although you aren&#8217;t running in real-time anymore), since having a full OS to use has lots of advantages. Plus, this way I can automate the build process in a way I&#8217;m more familiar with.</p>
+				<div class="post__content"><p>Out of the box the Galileo is setup to run sketches uploaded from volatile memory, which is really lame. I didn&rsquo;t spend much time with it using the stock SPI kernel. So, an SD card is pretty much required to do any serious development with this board. This is not a bad thing (although you aren&rsquo;t running in real-time anymore), since having a full OS to use has lots of advantages. Plus, this way I can automate the build process in a way I&rsquo;m more familiar with.</p>
 
-<p>Anyway, so after unboxing and testing (and updating firmware while your at it), you can load an SD card up with the larger image. The SD card should be formatting as FAT16 (&lt;= 4GB), or FAT32 (&gt; 4GB). I tried formatting in Linux via mkfs (mkdosfs), but I was getting data errors from the SD card in my kernel messages. I ended up downloading the SD Formatter 4.0 software that <a href="http://www.hofrock.com/sd-card-issues">others recommend</a>, and it worked. This required a Windows (or Mac) computer. I still used Linux to copy the files without issue as I did not have 7zip on Windows (and Windows Updates were installing, preventing the MSI from allowing me to install it!). The tar command will spit out some errors about not being able to set permissions (because of the FAT FS), and exit with a failure code but it works.</p>
+<p>Anyway, so after unboxing and testing (and updating firmware while your at it), you can load an SD card up with the larger image. The SD card should be formatting as FAT16 (&lt;= 4GB), or FAT32 (&gt; 4GB). I tried formatting in Linux via mkfs (mkdosfs), but I was getting data errors from the SD card in my kernel messages. I ended up downloading the SD Formatter 4.0 software that <a href="https://www.hofrock.com/sd-card-issues">others recommend</a>, and it worked. This required a Windows (or Mac) computer. I still used Linux to copy the files without issue as I did not have 7zip on Windows (and Windows Updates were installing, preventing the MSI from allowing me to install it!). The tar command will spit out some errors about not being able to set permissions (because of the FAT FS), and exit with a failure code but it works.</p>
 
 <p>The SD Card image expands to about 330MB (kernel, boot files, and file system image). I used a 1GB microSD card. The SD card tarball has a directory in it, but you need to extract the files within that folder to the root of the SD card:</p>
 
@@ -76,11 +75,11 @@
   </li>
 </ol>
 
-<p>Next, slide the SD card in, power up the board and connect the USB and wait. You&#8217;ll see the SD LED light up a lot (it lights up for only ~10 seconds if formatted incorrectly, ~30-60s if not). Also, your ttyACM device should show up eventually if it boots successfully, allowing you to communicate with it if you don&#8217;t have the stereo-serial cable (<a href="https://learn.sparkfun.com/tutorials/galileo-getting-started-guide/using-the-terminal">Arduino-&gt;Terminal sketch</a>). Otherwise, if you have a LAN and an ethernet cable the SD image is configured with DHCP, so just plug it in and power the board. Now you can use SSH like a civilized person. You&#8217;ll need to grab the IP address from either your router interface or the device itself (using the serial port/serial port sketch). Then you can really start messing around.</p>
+<p>Next, slide the SD card in, power up the board and connect the USB and wait. You&rsquo;ll see the SD LED light up a lot (it lights up for only ~10 seconds if formatted incorrectly, ~30-60s if not). Also, your ttyACM device should show up eventually if it boots successfully, allowing you to communicate with it if you don&rsquo;t have the stereo-serial cable (<a href="https://learn.sparkfun.com/tutorials/galileo-getting-started-guide/using-the-terminal">Arduino-&gt;Terminal sketch</a>). Otherwise, if you have a LAN and an ethernet cable the SD image is configured with DHCP, so just plug it in and power the board. Now you can use SSH like a civilized person. You&rsquo;ll need to grab the IP address from either your router interface or the device itself (using the serial port/serial port sketch). Then you can really start messing around.</p>
 
-<p>The Arduino sketches are run as a user (root, specifically), and they are started via some init scripts. Check out <code>/etc/init.d/</code>, <code>/opt/cln/galileo</code>, and <code>/sketch/</code> for all the relevant files. You can disable the init scripts if you are feeling confident. You&#8217;ll need a stereo-serial cable if you screw up and don&#8217;t have SSH access.</p>
+<p>The Arduino sketches are run as a user (root, specifically), and they are started via some init scripts. Check out <code>/etc/init.d/</code>, <code>/opt/cln/galileo</code>, and <code>/sketch/</code> for all the relevant files. You can disable the init scripts if you are feeling confident. You&rsquo;ll need a stereo-serial cable if you screw up and don&rsquo;t have SSH access.</p>
 
-<p>You&#8217;ll see the board has some space left on the file system image.</p>
+<p>You&rsquo;ll see the board has some space left on the file system image.</p>
 
 <pre class="brush: plain; gutter: false; title: ; notranslate" title="">root@clanton:/# df -h
 Filesystem                Size      Used Available Use% Mounted on
@@ -108,10 +107,10 @@ tmpfs                   116.2M         0    116.2M   0% /media/ram
 
 					
 <div class="post__share share">
-	<a class="share__link btn" title="Share on Twitter" href="https://twitter.com/intent/tweet/?url=https%3a%2f%2fblog.nearwood.net%2fcarduino-2-0-intel-galileo-setup%2f&amp;text=Carduino%202.0%20%e2%80%93%20Intel%20Galileo%20Setup" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, 'Share on Twitter', 'width=800,height=450,resizable=yes,toolbar=0,status=0'); return false">
+	<a class="share__link btn" title="Share on Twitter" href="https://twitter.com/intent/tweet/?url=https%3a%2f%2fnearwood.dev%2fcarduino-2-0-intel-galileo-setup%2f&amp;text=Carduino%202.0%20%e2%80%93%20Intel%20Galileo%20Setup" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, 'Share on Twitter', 'width=800,height=450,resizable=yes,toolbar=0,status=0'); return false">
 		<svg class="share__icon" aria-label="Twitter" role="img" width="32" height="32" viewBox="0 0 512 512"><path d="M437 152a72 72 0 0 1-40 12 72 72 0 0 0 32-40 72 72 0 0 1-45 17 72 72 0 0 0-122 65 200 200 0 0 1-145-74 72 72 0 0 0 22 94 72 72 0 0 1-32-7 72 72 0 0 0 56 69 72 72 0 0 1-32 1 72 72 0 0 0 67 50 200 200 0 0 1-105 29 200 200 0 0 0 309-179 200 200 0 0 0 35-37"/></svg>
 	</a>
-	<a class="share__link btn" title="Share on Reddit" href="https://www.reddit.com/submit?url=https%3a%2f%2fblog.nearwood.net%2fcarduino-2-0-intel-galileo-setup%2f&amp;title=Carduino%202.0%20%e2%80%93%20Intel%20Galileo%20Setup" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, 'Share on Reddit', 'width=832,height=624,toolbar=0,status=0'); return false">
+	<a class="share__link btn" title="Share on Reddit" href="https://www.reddit.com/submit?url=https%3a%2f%2fnearwood.dev%2fcarduino-2-0-intel-galileo-setup%2f&amp;title=Carduino%202.0%20%e2%80%93%20Intel%20Galileo%20Setup" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, 'Share on Reddit', 'width=832,height=624,toolbar=0,status=0'); return false">
 		<svg class="share__icon" aria-label="Reddit" role="img" width="32" height="32" viewBox="0 0 512 512"><path fill-rule="evenodd" d="M375 146a32 32 0 1 0-29-46l-65-13c-5-1-9 2-10 6l-22 97c-45 1-85 15-113 36a42 42 0 1 0-45 69l-1 12c0 65 74 117 166 117s166-52 166-117l-1-11a42 42 0 1 0-44-69c-28-21-67-35-111-37l19-86 58 13a32 32 0 0 0 32 29zM190 353c2-1 4 0 5 1 15 11 38 18 61 18s46-6 61-18a7 7 0 0 1 8 10c-18 14-44 21-69 21-25-1-51-7-69-21a6 6 0 0 1 3-11zm23-44a31 31 0 1 1-44-44 31 31 0 0 1 44 44zm130 0a31 31 0 1 0-44-44 31 31 0 0 0 44 44z"/></svg>
 	</a>
 </div>

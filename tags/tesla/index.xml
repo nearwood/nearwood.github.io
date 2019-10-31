@@ -1,24 +1,24 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tesla on Nick</title>
-    <link>https://blog.nearwood.net/tags/tesla/</link>
+    <link>https://nearwood.dev/tags/tesla/</link>
     <description>Recent content in Tesla on Nick</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2019 Nicholas Earwood</copyright>
     <lastBuildDate>Thu, 21 Apr 2016 22:07:09 +0000</lastBuildDate>
     
-	<atom:link href="https://blog.nearwood.net/tags/tesla/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://nearwood.dev/tags/tesla/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Gentoo Linux Tesla – It was only a matter of time…</title>
-      <link>https://blog.nearwood.net/gentoo-linux-tesla-it-was-only-a-matter-of-time/</link>
+      <link>https://nearwood.dev/gentoo-linux-tesla-it-was-only-a-matter-of-time/</link>
       <pubDate>Thu, 21 Apr 2016 22:07:09 +0000</pubDate>
       
-      <guid>https://blog.nearwood.net/gentoo-linux-tesla-it-was-only-a-matter-of-time/</guid>
-      <description>Surprise, surprise, my old favorite Gentoo Linux is now running on a Tesla Model S. Hope he doesn&amp;#8217;t emerge world while driving.</description>
+      <guid>https://nearwood.dev/gentoo-linux-tesla-it-was-only-a-matter-of-time/</guid>
+      <description>Surprise, surprise, my old favorite Gentoo Linux is now running on a Tesla Model S. Hope he doesn&amp;rsquo;t emerge world while driving.</description>
     </item>
     
   </channel>

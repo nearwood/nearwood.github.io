@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en-us">
 <head>
-	<meta name="generator" content="Hugo 0.58.3" />
+	<meta name="generator" content="Hugo 0.59.0" />
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,7 +12,7 @@
 		<meta property="og:title" content="Nick" />
 <meta property="og:description" content="Responsive card-based &amp; code-light Hugo theme" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://blog.nearwood.net/" />
+<meta property="og:url" content="https://nearwood.dev/" />
 
 <meta property="og:updated_time" content="2019-10-14T16:22:05-05:00" />
 
@@ -41,7 +41,6 @@
 		</div>
 	</button>
 	<ul id="menu" class="main-nav__list">
-		<li class="main-nav__item main-nav__item--active">Home</li>
 		<li class="main-nav__item"><a class="main-nav__link" href="/pages/about/">About</a></li>
 		<li class="main-nav__item"><a class="main-nav__link" href="/pages/contact/">Contact</a></li>
 	</ul>
@@ -54,27 +53,24 @@
 					<div class="card card--2col">
 					<article class="post card__box block">
 	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/raspberry-pi-robot-assembly-part-1/">Raspberry Pi Robot – Assembly Part 1</a></h1>
-	<div class="post__content"><p>So you&#8217;ve got a bunch of parts, assembly is pretty easy. I&#8217;m going to skip over most of the chassis assembly since it came with instructions, but I have a couple pointers and I&#8217;ll go over how I attached the encoders. Then I&#8217;ll talk about soldering the motor controller and wiring the encoders up, and which pins to pick from the GPIO of the Pi.</p>
-
-<p>So this is what the chassis looks like fully assembled:</p>
-
-<p><a href="http://www.nearwood.net/wp-content/uploads/IMG_20141122_141839.jpg"><img class="aligncenter size-medium wp-image-508" src="http://www.nearwood.net/wp-content/uploads/IMG_20141122_141839-300x225.jpg" alt="IMG_20141122_141839" width="300" height="225" srcset="https://www.nearwood.net/wp-content/uploads/IMG_20141122_141839-300x225.jpg 300w, https://www.nearwood.net/wp-content/uploads/IMG_20141122_141839.jpg 800w" sizes="(max-width: 300px) 100vw, 300px" /></a></p></div>
+	<div class="post__content">So you&rsquo;ve got a bunch of parts, assembly is pretty easy. I&rsquo;m going to skip over most of the chassis assembly since it came with instructions, but I have a couple pointers and I&rsquo;ll go over how I attached the encoders. Then I&rsquo;ll talk about soldering the motor controller and wiring the encoders up, and which pins to pick from the GPIO of the Pi.
+So this is what the chassis looks like fully assembled:</div>
 </article>
 					</div>
 					<div class="card card--2col">
 					<article class="post card__box block">
 	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/installing-arch-linux-with-an-encrypted-root/">Installing Arch Linux with an encrypted root</a></h1>
-	<div class="post__content"><p>I&#8217;ve got a ThinkPad T410. I got it off craigslist in what was a somewhat shady transaction. Regardless, it came with a 300GB spinner. Not interested in finding out how much life was left on it I got a solid state replacement from NewEgg for &#8220;Cyber Monday&#8221;. A 240GB Intel one for $110, that&#8217;s less than 50 cents per GB!</p>
+	<div class="post__content"><p>I&rsquo;ve got a ThinkPad T410. I got it off craigslist in what was a somewhat shady transaction. Regardless, it came with a 300GB spinner. Not interested in finding out how much life was left on it I got a solid state replacement from NewEgg for &ldquo;Cyber Monday&rdquo;. A 240GB Intel one for $110, that&rsquo;s less than 50 cents per GB!</p>
 
-<p>The spinner has a single unencrypted partition with Arch Linux running on it. I wanted to run Arch on an encrypted partition. The main reason: If it&#8217;s ever stolen I don&#8217;t want to have to worry about any of the data on it. Bonus reason: Geek/spy points.</p>
+<p>The spinner has a single unencrypted partition with Arch Linux running on it. I wanted to run Arch on an encrypted partition. The main reason: If it&rsquo;s ever stolen I don&rsquo;t want to have to worry about any of the data on it. Bonus reason: Geek/spy points.</p>
 
-<p>So, while there are excellent guides for installing Arch, and setting up encryption, and optimizing an SSD, there don&#8217;t seem to be any combining the three. In reality it&#8217;s not that much more difficult, and if you are motivated to setup encryption on Linux in the first place you probably know what you&#8217;re doing. Still, I was disheartened a bit at the lack of information so I decided to note how I went about it in general.</p></div>
+<p>So, while there are excellent guides for installing Arch, and setting up encryption, and optimizing an SSD, there don&rsquo;t seem to be any combining the three. In reality it&rsquo;s not that much more difficult, and if you are motivated to setup encryption on Linux in the first place you probably know what you&rsquo;re doing. Still, I was disheartened a bit at the lack of information so I decided to note how I went about it in general.</p></div>
 </article>
 					</div>
 					<div class="card card--2col">
 					<article class="post card__box block">
 	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/raspberry-pi-robot-cross-compiling/">Raspberry Pi – Cross-compiling</a></h1>
-	<div class="post__content"><p>Now that you have the hardware built and tested (although that&#8217;s not necessary), you can either use the code I&#8217;ve written&#8211;which is specific to the hardware and environment I have, or compile your own version. If you want to compile your own there are two options:</p>
+	<div class="post__content"><p>Now that you have the hardware built and tested (although that&rsquo;s not necessary), you can either use the code I&rsquo;ve written-which is specific to the hardware and environment I have, or compile your own version. If you want to compile your own there are two options:</p>
 
 <ol>
 <li>Compile on the Pi itself</li>
@@ -82,11 +78,11 @@
 <li>Cross-compile on a faster machine</li>
 </ol>
 
-<p>The trade off? Compiling on the Pi is slow (very slow). The virtual machine is a marked improvement for compiling speed, but is complicated to setup. Cross-compiling is about the same difficulty as setting up a virtual machine but a bit faster and less &#8220;bulky&#8221;. So it depends. The virtual machine is nice if you have a lot of libraries you want to use, since you&#8217;ll have to compile all of them to be available for linking. If any of them have poor autoconfig support, it might be a pain to fix if you weren&#8217;t already on the target machine. But, since I just needed one or two popular libraries, I decided to setup cross-compiling from my host (x86_64) machine.</p>
+<p>The trade off? Compiling on the Pi is slow (very slow). The virtual machine is a marked improvement for compiling speed, but is complicated to setup. Cross-compiling is about the same difficulty as setting up a virtual machine but a bit faster and less &ldquo;bulky&rdquo;. So it depends. The virtual machine is nice if you have a lot of libraries you want to use, since you&rsquo;ll have to compile all of them to be available for linking. If any of them have poor autoconfig support, it might be a pain to fix if you weren&rsquo;t already on the target machine. But, since I just needed one or two popular libraries, I decided to setup cross-compiling from my host (x86_64) machine.</p>
 
-<p>The last time I setup cross-compiling it was on Gentoo, and it wasn&#8217;t pleasant. However, after a little bit of research it looks like the <a href="http://crosstool-ng.org/" target="_blank">crosstool-ng project</a> is pretty popular and useful. I only had to patch one tiny thing.</p>
+<p>The last time I setup cross-compiling it was on Gentoo, and it wasn&rsquo;t pleasant. However, after a little bit of research it looks like the <a href="https://crosstool-ng.org/" target="_blank">crosstool-ng project</a> is pretty popular and useful. I only had to patch one tiny thing.</p>
 
-<p>Here&#8217;s the overall process:</p>
+<p>Here&rsquo;s the overall process:</p>
 
 <ol>
 <li>Install crosstool-ng</li>
@@ -99,15 +95,15 @@
 					<div class="card card--2col">
 					<article class="post card__box block">
 	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/raspberry-pi-robot/">Raspberry Pi Robot</a></h1>
-	<div class="post__content"><p>So, a while back I gave my wife a <a href="http://goldenarmor.com/farscape-drd/" target="_blank">Farscape DRD kit</a>. I promised to make it in to a robot. How hard could it be? Well, not too bad. A little more expensive than planned, though&#8230;</p>
+	<div class="post__content"><p>So, a while back I gave my wife a <a href="https://goldenarmor.com/farscape-drd/" target="_blank">Farscape DRD kit</a>. I promised to make it in to a robot. How hard could it be? Well, not too bad. A little more expensive than planned, though&hellip;</p>
 
-<p><a href="http://www.nearwood.net/wp-content/uploads/IMG_20141122_142828.jpg"><img class="aligncenter size-medium wp-image-472" src="http://www.nearwood.net/wp-content/uploads/IMG_20141122_142828-300x225.jpg" alt="IMG_20141122_142828" width="300" height="225" srcset="https://www.nearwood.net/wp-content/uploads/IMG_20141122_142828-300x225.jpg 300w, https://www.nearwood.net/wp-content/uploads/IMG_20141122_142828.jpg 800w" sizes="(max-width: 300px) 100vw, 300px" /></a></p></div>
+<p><img class="lostImage" src="" alt="Image no longer available :("/></p></div>
 </article>
 					</div>
 					<div class="card card--2col">
 					<article class="post card__box block">
 	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/interesting-spam/">Interesting Spam</a></h1>
-	<div class="post__content">Akismet is really good at preventing spam, but I&#8217;ve noticed that spammers don&#8217;t even seem to be trying sometimes. This is what&#8217;s in my spam queue:
+	<div class="post__content">Akismet is really good at preventing spam, but I&rsquo;ve noticed that spammers don&rsquo;t even seem to be trying sometimes. This is what&rsquo;s in my spam queue:
  {I have|I’ve} been {surfing|browsing} online
 more than {three|3|2|4} hours today, yet I never found any interesting article like yours.
 {It’s|It is} pretty worth enough for me. {In my opinion|Personally|In my view}, if all {webmasters|site owners|website owners|web owners}
@@ -117,31 +113,31 @@ and bloggers made good content as you did, the {internet|net|web} will be {much 
 					<div class="card card--2col">
 					<article class="post card__box block">
 	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/carduino-2-0-intel-galileo-setup/">Carduino 2.0 – Intel Galileo Setup</a></h1>
-	<div class="post__content"><p>Out of the box the Galileo is setup to run sketches uploaded from volatile memory, which is really lame. I didn&#8217;t spend much time with it using the stock SPI kernel. So, an SD card is pretty much required to do any serious development with this board. This is not a bad thing (although you aren&#8217;t running in real-time anymore), since having a full OS to use has lots of advantages. Plus, this way I can automate the build process in a way I&#8217;m more familiar with.</p></div>
+	<div class="post__content"><p>Out of the box the Galileo is setup to run sketches uploaded from volatile memory, which is really lame. I didn&rsquo;t spend much time with it using the stock SPI kernel. So, an SD card is pretty much required to do any serious development with this board. This is not a bad thing (although you aren&rsquo;t running in real-time anymore), since having a full OS to use has lots of advantages. Plus, this way I can automate the build process in a way I&rsquo;m more familiar with.</p></div>
 </article>
 					</div>
 					<div class="card card--2col">
 					<article class="post card__box block">
 	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/carduino-2-0/">Carduino 2.0</a></h1>
-	<div class="post__content">Over a year ago I got an Arduino Uno and a CAN-BUS Shield to try and make some kind of datalogger for my car. I was also interested in using the OpenXC library with it (which might need a port if there isn&#8217;t one already, since it uses the Digilent chipKIT Max32 development board). While OpenXC allows interfacing with Android stuff for phones, I&#8217;m more interested in a self-contained datalogging type deal.</div>
+	<div class="post__content">Over a year ago I got an Arduino Uno and a CAN-BUS Shield to try and make some kind of datalogger for my car. I was also interested in using the OpenXC library with it (which might need a port if there isn&rsquo;t one already, since it uses the Digilent chipKIT Max32 development board). While OpenXC allows interfacing with Android stuff for phones, I&rsquo;m more interested in a self-contained datalogging type deal.</div>
 </article>
 					</div>
 					<div class="card card--2col">
 					<article class="post card__box block">
 	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/first-autocross-with-a-vg33/">First autocross with a VG33</a></h1>
-	<div class="post__content">Well, with less than a couple hundred miles on the rebuilt engine, it was time to really break-in the new VG33. I took it to an autocross. Things were going well until I shut it off after my second run. It didn&#8217;t want to restart after that. It appears that the culprit was low battery voltage, as the ECU was resetting and the fuel pump never even came on during cranking.</div>
+	<div class="post__content">Well, with less than a couple hundred miles on the rebuilt engine, it was time to really break-in the new VG33. I took it to an autocross. Things were going well until I shut it off after my second run. It didn&rsquo;t want to restart after that. It appears that the culprit was low battery voltage, as the ECU was resetting and the fuel pump never even came on during cranking.</div>
 </article>
 					</div>
 					<div class="card card--2col">
 					<article class="post card__box block">
 	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/280z-led-conversion-part-2/">280Z LED Conversion Part 2</a></h1>
-	<div class="post__content">Continuing from part 1, this is the start of installation and results of the LED conversion. I ordered a small bunch of LEDs to get a feel for what brightness I&#8217;m looking at since the website I ordered from has somewhat confusing &#8216;relative intensity&#8217;, &#8216;brightness&#8217;, and &#8216;lumens&#8217; listed for each bulb. Not to mention the prices seemed to fluctuate independently of any of those values so it wasn&#8217;t as simple as &#8216;find the most expensive ones&#8217;.</div>
+	<div class="post__content">Continuing from part 1, this is the start of installation and results of the LED conversion. I ordered a small bunch of LEDs to get a feel for what brightness I&rsquo;m looking at since the website I ordered from has somewhat confusing &lsquo;relative intensity&rsquo;, &lsquo;brightness&rsquo;, and &lsquo;lumens&rsquo; listed for each bulb. Not to mention the prices seemed to fluctuate independently of any of those values so it wasn&rsquo;t as simple as &lsquo;find the most expensive ones&rsquo;.</div>
 </article>
 					</div>
 					<div class="card card--2col">
 					<article class="post card__box block">
 	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/280z-led-conversion-part-1/">280Z LED Conversion Part 1</a></h1>
-	<div class="post__content">My 280Z isn&#8217;t what you could call &#8220;modern&#8221; in the electrical department. Originally, it came with an externally regulated alternator, fusible links, incandescent bulbs, and very few relays. The design inhereted a few things from Lucas eletronics, which is not a good thing. Regardless, it was fairly normal for the time. I&#8217;m glad there are no vacuum operated things, like some makes. The most electrically obtuse part of the design is the lack of relays.</div>
+	<div class="post__content">My 280Z isn&rsquo;t what you could call &ldquo;modern&rdquo; in the electrical department. Originally, it came with an externally regulated alternator, fusible links, incandescent bulbs, and very few relays. The design inhereted a few things from Lucas eletronics, which is not a good thing. Regardless, it was fairly normal for the time. I&rsquo;m glad there are no vacuum operated things, like some makes. The most electrically obtuse part of the design is the lack of relays.</div>
 </article>
 					</div>
 			</div>

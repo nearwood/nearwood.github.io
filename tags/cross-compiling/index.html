@@ -11,7 +11,7 @@
 		<meta property="og:title" content="cross compiling" />
 <meta property="og:description" content="Responsive card-based &amp; code-light Hugo theme" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://blog.nearwood.net/tags/cross-compiling/" />
+<meta property="og:url" content="https://nearwood.dev/tags/cross-compiling/" />
 
 <meta property="og:updated_time" content="2014-12-01T02:26:47+00:00" />
 
@@ -40,7 +40,6 @@
 		</div>
 	</button>
 	<ul id="menu" class="main-nav__list">
-		<li class="main-nav__item"><a class="main-nav__link" href="/">Home</a></li>
 		<li class="main-nav__item"><a class="main-nav__link" href="/pages/about/">About</a></li>
 		<li class="main-nav__item"><a class="main-nav__link" href="/pages/contact/">Contact</a></li>
 	</ul>
@@ -58,7 +57,7 @@
 				<div class="card card--2col">
 					<article class="post card__box block">
 	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/raspberry-pi-robot-cross-compiling/">Raspberry Pi – Cross-compiling</a></h1>
-	<div class="post__content"><p>Now that you have the hardware built and tested (although that&#8217;s not necessary), you can either use the code I&#8217;ve written&#8211;which is specific to the hardware and environment I have, or compile your own version. If you want to compile your own there are two options:</p>
+	<div class="post__content"><p>Now that you have the hardware built and tested (although that&rsquo;s not necessary), you can either use the code I&rsquo;ve written-which is specific to the hardware and environment I have, or compile your own version. If you want to compile your own there are two options:</p>
 
 <ol>
 <li>Compile on the Pi itself</li>
@@ -66,11 +65,11 @@
 <li>Cross-compile on a faster machine</li>
 </ol>
 
-<p>The trade off? Compiling on the Pi is slow (very slow). The virtual machine is a marked improvement for compiling speed, but is complicated to setup. Cross-compiling is about the same difficulty as setting up a virtual machine but a bit faster and less &#8220;bulky&#8221;. So it depends. The virtual machine is nice if you have a lot of libraries you want to use, since you&#8217;ll have to compile all of them to be available for linking. If any of them have poor autoconfig support, it might be a pain to fix if you weren&#8217;t already on the target machine. But, since I just needed one or two popular libraries, I decided to setup cross-compiling from my host (x86_64) machine.</p>
+<p>The trade off? Compiling on the Pi is slow (very slow). The virtual machine is a marked improvement for compiling speed, but is complicated to setup. Cross-compiling is about the same difficulty as setting up a virtual machine but a bit faster and less &ldquo;bulky&rdquo;. So it depends. The virtual machine is nice if you have a lot of libraries you want to use, since you&rsquo;ll have to compile all of them to be available for linking. If any of them have poor autoconfig support, it might be a pain to fix if you weren&rsquo;t already on the target machine. But, since I just needed one or two popular libraries, I decided to setup cross-compiling from my host (x86_64) machine.</p>
 
-<p>The last time I setup cross-compiling it was on Gentoo, and it wasn&#8217;t pleasant. However, after a little bit of research it looks like the <a href="http://crosstool-ng.org/" target="_blank">crosstool-ng project</a> is pretty popular and useful. I only had to patch one tiny thing.</p>
+<p>The last time I setup cross-compiling it was on Gentoo, and it wasn&rsquo;t pleasant. However, after a little bit of research it looks like the <a href="https://crosstool-ng.org/" target="_blank">crosstool-ng project</a> is pretty popular and useful. I only had to patch one tiny thing.</p>
 
-<p>Here&#8217;s the overall process:</p>
+<p>Here&rsquo;s the overall process:</p>
 
 <ol>
 <li>Install crosstool-ng</li>

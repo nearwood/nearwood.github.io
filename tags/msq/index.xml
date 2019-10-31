@@ -1,25 +1,25 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>msq on Nick</title>
-    <link>https://blog.nearwood.net/tags/msq/</link>
+    <link>https://nearwood.dev/tags/msq/</link>
     <description>Recent content in msq on Nick</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2019 Nicholas Earwood</copyright>
     <lastBuildDate>Wed, 31 Dec 2014 01:39:42 +0000</lastBuildDate>
     
-	<atom:link href="https://blog.nearwood.net/tags/msq/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://nearwood.dev/tags/msq/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>msqur.com – MSQ file sharing site</title>
-      <link>https://blog.nearwood.net/msqur-com-msq-file-sharing-site/</link>
+      <link>https://nearwood.dev/msqur-com-msq-file-sharing-site/</link>
       <pubDate>Wed, 31 Dec 2014 01:39:42 +0000</pubDate>
       
-      <guid>https://blog.nearwood.net/msqur-com-msq-file-sharing-site/</guid>
-      <description>Well, I&amp;#8217;ve only been working on it a little so far, but I suppose it&amp;#8217;s good enough to post about at this point.
-The site is msqur.com, and it&amp;#8217;s for Megasquirt ECU users to share their tunes (from the TunerStudio MS software). You can upload (multiple) .msq files, assign some engine information to them at upload, and share them with other people for troubleshooting or tuning help. The goal is to make something easier than attaching a file to a forum post that others have to download and fire up the full tuning software suite to just view it.</description>
+      <guid>https://nearwood.dev/msqur-com-msq-file-sharing-site/</guid>
+      <description>Well, I&amp;rsquo;ve only been working on it a little so far, but I suppose it&amp;rsquo;s good enough to post about at this point.
+The site is msqur.com, and it&amp;rsquo;s for Megasquirt ECU users to share their tunes (from the TunerStudio MS software). You can upload (multiple) .msq files, assign some engine information to them at upload, and share them with other people for troubleshooting or tuning help. The goal is to make something easier than attaching a file to a forum post that others have to download and fire up the full tuning software suite to just view it.</description>
     </item>
     
   </channel>

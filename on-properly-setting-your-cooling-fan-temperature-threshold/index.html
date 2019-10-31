@@ -11,17 +11,17 @@
 		<meta property="og:title" content="On Properly Setting Your Cooling Fan Temperature Threshold" />
 <meta property="og:description" content="When I first installed an aftermarket ECU (Megasquirt I) in my 1984 300ZX, years ago (almost 10 as of this writing!), I used the recommended GM sensor for coolant temperature. It required a bit of machining to fit the sensor, nothing major.
 
-With my latest engine (and the two cars it was in), I decided to use the OEM Cylinder Head Temperature Sensor, since hey, why not? It was already there, in an optimal spot. All I had to do was make software changes to calibrate MS-II to it&#8217;s temperature/resistance curve. I had the data in the Factory Service Manual, all was well." />
+With my latest engine (and the two cars it was in), I decided to use the OEM Cylinder Head Temperature Sensor, since hey, why not? It was already there, in an optimal spot. All I had to do was make software changes to calibrate MS-II to it&rsquo;s temperature/resistance curve. I had the data in the Factory Service Manual, all was well." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://blog.nearwood.net/on-properly-setting-your-cooling-fan-temperature-threshold/" />
+<meta property="og:url" content="https://nearwood.dev/on-properly-setting-your-cooling-fan-temperature-threshold/" />
 <meta property="article:published_time" content="2015-03-08T17:31:21+00:00" />
-<meta property="article:modified_time" content="2019-02-03T12:15:22-05:00" />
+<meta property="article:modified_time" content="2019-10-30T12:04:02-05:00" />
 
 		<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="On Properly Setting Your Cooling Fan Temperature Threshold"/>
 <meta name="twitter:description" content="When I first installed an aftermarket ECU (Megasquirt I) in my 1984 300ZX, years ago (almost 10 as of this writing!), I used the recommended GM sensor for coolant temperature. It required a bit of machining to fit the sensor, nothing major.
 
-With my latest engine (and the two cars it was in), I decided to use the OEM Cylinder Head Temperature Sensor, since hey, why not? It was already there, in an optimal spot. All I had to do was make software changes to calibrate MS-II to it&#8217;s temperature/resistance curve. I had the data in the Factory Service Manual, all was well."/>
+With my latest engine (and the two cars it was in), I decided to use the OEM Cylinder Head Temperature Sensor, since hey, why not? It was already there, in an optimal spot. All I had to do was make software changes to calibrate MS-II to it&rsquo;s temperature/resistance curve. I had the data in the Factory Service Manual, all was well."/>
 
 	<link rel="stylesheet" href="/css/main.css">
 	<link rel="stylesheet" href="/css/themes/dark-green.css">
@@ -43,7 +43,6 @@ With my latest engine (and the two cars it was in), I decided to use the OEM Cyl
 		</div>
 	</button>
 	<ul id="menu" class="main-nav__list">
-		<li class="main-nav__item"><a class="main-nav__link" href="/">Home</a></li>
 		<li class="main-nav__item"><a class="main-nav__link" href="/pages/about/">About</a></li>
 		<li class="main-nav__item"><a class="main-nav__link" href="/pages/contact/">Contact</a></li>
 	</ul>
@@ -57,27 +56,27 @@ With my latest engine (and the two cars it was in), I decided to use the OEM Cyl
 				<h1 class="post__title">On Properly Setting Your Cooling Fan Temperature Threshold</h1>
 				<div class="post__content"><p>When I first installed an aftermarket ECU (Megasquirt I) in my 1984 300ZX, years ago (almost 10 as of this writing!), I used the recommended GM sensor for coolant temperature. It required a bit of machining to fit the sensor, nothing major.</p>
 
-<p>With my latest engine (and the two cars it was in), I decided to use the OEM Cylinder Head Temperature Sensor, since hey, why not? It was already there, in an optimal spot. All I had to do was make software changes to calibrate MS-II to it&#8217;s temperature/resistance curve. I had the data in the Factory Service Manual, all was well.</p>
+<p>With my latest engine (and the two cars it was in), I decided to use the OEM Cylinder Head Temperature Sensor, since hey, why not? It was already there, in an optimal spot. All I had to do was make software changes to calibrate MS-II to it&rsquo;s temperature/resistance curve. I had the data in the Factory Service Manual, all was well.</p>
 
 <p>Sort of. The thought occurred to me that while Megasquirt would be fine with the cylinder head temperature for fuel calculations, I would need to find out exactly what cylinder head temperature corresponded to what coolant temperature. That is, I would need to know at what coolant temperature the car was fully warmed up at, and what temperature the CHTS reported at that point. For the former, pretty much any water-cooled engine sits around 212 degrees (boiling under normal circumstances, but this is coolant, not just water).</p>
 
 <p>The cylinder head temperature was a mystery though. What cylinder heat temperature corresponds to to 212 degree coolant temperature? I would need this to know when to turn on the electric fans to cool the car off.</p>
 
-<p>Well, it was a very good question. Lazily, I set up the cooling fan temperature threshold to 85<span class="Unicode">°</span> C. I knew it was low, but I wanted to be safe. I would figure it out later. The problem is it took me about 5 years to get around to it. It was in the back of my mind and was kind of one of those things that you say you&#8217;ll get around to but never do. It turned out to be quite a bit low. And really, what was I thinking? Of course that&#8217;s way too low&#8230;</p>
+<p>Well, it was a very good question. Lazily, I set up the cooling fan temperature threshold to 85<span class="Unicode">°</span> C. I knew it was low, but I wanted to be safe. I would figure it out later. The problem is it took me about 5 years to get around to it. It was in the back of my mind and was kind of one of those things that you say you&rsquo;ll get around to but never do. It turned out to be quite a bit low. And really, what was I thinking? Of course that&rsquo;s way too low&hellip;</p>
 
-<p>After my engine timing fiasco that I managed to luckily walk away without any damage (so far) on my new engine, I decided to catch up on that &#8220;TO DO&#8221; list, and take care of these small things.</p>
+<p>After my engine timing fiasco that I managed to luckily walk away without any damage (so far) on my new engine, I decided to catch up on that &ldquo;TO DO&rdquo; list, and take care of these small things.</p>
 
-<p>I turned the car on after some winter slumber and plotted the coolant temperature and cylinder heat temperature over time. I measured coolant temperature by an average of a silicone coupler at the water outlet of the engine and the radiator itself (the aluminum was hard to get an accurate IR reading off of). Cylinder head temperature was measured by the ECU&#8217;s sensor reading.</p>
+<p>I turned the car on after some winter slumber and plotted the coolant temperature and cylinder heat temperature over time. I measured coolant temperature by an average of a silicone coupler at the water outlet of the engine and the radiator itself (the aluminum was hard to get an accurate IR reading off of). Cylinder head temperature was measured by the ECU&rsquo;s sensor reading.</p>
 
 <p>I gathered the data starting from a few minutes of running time to about 40 minutes total. It is graphed below:</p>
 
-<p><img class="aligncenter wp-image-629 size-full" src="http://www.nearwood.net/wp-content/uploads/post-1233-0-09280500-1425244243.png" alt="post-1233-0-09280500-1425244243" width="881" height="436" srcset="https://www.nearwood.net/wp-content/uploads/post-1233-0-09280500-1425244243.png 881w, https://www.nearwood.net/wp-content/uploads/post-1233-0-09280500-1425244243-300x148.png 300w" sizes="(max-width: 881px) 100vw, 881px" /></p>
+<p><img class="lostImage" src="" alt="Image no longer available :("/></p>
 
 <p>No surprises here. At the start the temperature varies by quite a lot, due to the thermostat being closed. It slowly opens over time and the temperature differential settles very firmly on 10 degrees Celsius. At the 15 minute mark in the graph, you can see where the fan turns on at 85<span class="Unicode">°. Note that it takes about 3 minutes to cool the car off about 5 degrees.</span></p>
 
 <p>After that I disabled the fans altogether and waited until the coolant temperature was 212<span class="Unicode">°</span> C. It took longer than expected, about 20 minutes. All the while CHTS stayed at almost exactly 10<span class="Unicode">°</span> higher than coolant temperature. Once I had about 212<span class="Unicode">°</span> coolant temperature, I enabled the fans again. I set them to come on at 108<span class="Unicode">°</span> C from the CHTS. This is just below 212<span class="Unicode">° coolant temperature. They stay on until 206°, so just a couple degrees down. And it takes only 15 seconds or so to drop these two degrees. Which makes sense, the temperature differential the radiator sees is drastically larger when the fans come on, and in general the system is much more ready to exchange heat than at 85° C.</span></p>
 
-<p>So, the results? The engine is running much more efficiently. My idle injector pulsewidths dropped by 30%. The entire fuel table will likely see similar changes, but I haven&#8217;t had a chance to tune it. My timing also needed to be adjusted. The engine seems to like quite a bit more idle advance than stock. The exhaust note even changed (for the better!).</p>
+<p>So, the results? The engine is running much more efficiently. My idle injector pulsewidths dropped by 30%. The entire fuel table will likely see similar changes, but I haven&rsquo;t had a chance to tune it. My timing also needed to be adjusted. The engine seems to like quite a bit more idle advance than stock. The exhaust note even changed (for the better!).</p>
 
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
@@ -95,10 +94,10 @@ With my latest engine (and the two cars it was in), I decided to use the OEM Cyl
 
 					
 <div class="post__share share">
-	<a class="share__link btn" title="Share on Twitter" href="https://twitter.com/intent/tweet/?url=https%3a%2f%2fblog.nearwood.net%2fon-properly-setting-your-cooling-fan-temperature-threshold%2f&amp;text=On%20Properly%20Setting%20Your%20Cooling%20Fan%20Temperature%20Threshold" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, 'Share on Twitter', 'width=800,height=450,resizable=yes,toolbar=0,status=0'); return false">
+	<a class="share__link btn" title="Share on Twitter" href="https://twitter.com/intent/tweet/?url=https%3a%2f%2fnearwood.dev%2fon-properly-setting-your-cooling-fan-temperature-threshold%2f&amp;text=On%20Properly%20Setting%20Your%20Cooling%20Fan%20Temperature%20Threshold" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, 'Share on Twitter', 'width=800,height=450,resizable=yes,toolbar=0,status=0'); return false">
 		<svg class="share__icon" aria-label="Twitter" role="img" width="32" height="32" viewBox="0 0 512 512"><path d="M437 152a72 72 0 0 1-40 12 72 72 0 0 0 32-40 72 72 0 0 1-45 17 72 72 0 0 0-122 65 200 200 0 0 1-145-74 72 72 0 0 0 22 94 72 72 0 0 1-32-7 72 72 0 0 0 56 69 72 72 0 0 1-32 1 72 72 0 0 0 67 50 200 200 0 0 1-105 29 200 200 0 0 0 309-179 200 200 0 0 0 35-37"/></svg>
 	</a>
-	<a class="share__link btn" title="Share on Reddit" href="https://www.reddit.com/submit?url=https%3a%2f%2fblog.nearwood.net%2fon-properly-setting-your-cooling-fan-temperature-threshold%2f&amp;title=On%20Properly%20Setting%20Your%20Cooling%20Fan%20Temperature%20Threshold" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, 'Share on Reddit', 'width=832,height=624,toolbar=0,status=0'); return false">
+	<a class="share__link btn" title="Share on Reddit" href="https://www.reddit.com/submit?url=https%3a%2f%2fnearwood.dev%2fon-properly-setting-your-cooling-fan-temperature-threshold%2f&amp;title=On%20Properly%20Setting%20Your%20Cooling%20Fan%20Temperature%20Threshold" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, 'Share on Reddit', 'width=832,height=624,toolbar=0,status=0'); return false">
 		<svg class="share__icon" aria-label="Reddit" role="img" width="32" height="32" viewBox="0 0 512 512"><path fill-rule="evenodd" d="M375 146a32 32 0 1 0-29-46l-65-13c-5-1-9 2-10 6l-22 97c-45 1-85 15-113 36a42 42 0 1 0-45 69l-1 12c0 65 74 117 166 117s166-52 166-117l-1-11a42 42 0 1 0-44-69c-28-21-67-35-111-37l19-86 58 13a32 32 0 0 0 32 29zM190 353c2-1 4 0 5 1 15 11 38 18 61 18s46-6 61-18a7 7 0 0 1 8 10c-18 14-44 21-69 21-25-1-51-7-69-21a6 6 0 0 1 3-11zm23-44a31 31 0 1 1-44-44 31 31 0 0 1 44 44zm130 0a31 31 0 1 0-44-44 31 31 0 0 0 44 44z"/></svg>
 	</a>
 </div>

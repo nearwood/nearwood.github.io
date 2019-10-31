@@ -22,7 +22,7 @@ MAIN_V1_0_2758_0400/
 SOC_V2_7_0008_0600/
 
 
-In each there&#8217;s a .nfu file, which I&#8217;ve never encountered before. I ran binwalk on each:
+In each there&rsquo;s a .nfu file, which I&rsquo;ve never encountered before. I ran binwalk on each:
 
 [BOOT_V2_7_0008_0600_release]$ binwalk Boot_2.7.0008.0600.nfu
 DECIMAL HEXADECIMAL DESCRIPTION
@@ -33,11 +33,11 @@ DECIMAL HEXADECIMAL DESCRIPTION
 3209992 0x30FB08 ELF, 64-bit LSB shared object, AMD x86-64, version 1 (SYSV)
 
 
-Surprise, surprise, it runs Android. But, I&#8217;m thinking this image is possibly just the firmware updater, and not what I am looking for." />
+Surprise, surprise, it runs Android. But, I&rsquo;m thinking this image is possibly just the firmware updater, and not what I am looking for." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://blog.nearwood.net/reverse-engineering-the-firmware-on-a-kenwood-ddx9903s/" />
+<meta property="og:url" content="https://nearwood.dev/reverse-engineering-the-firmware-on-a-kenwood-ddx9903s/" />
 <meta property="article:published_time" content="2017-10-28T03:06:49+00:00" />
-<meta property="article:modified_time" content="2019-02-03T12:15:22-05:00" />
+<meta property="article:modified_time" content="2019-10-30T11:52:57-05:00" />
 
 		<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Reverse Engineering the firmware on a Kenwood DDX9903S"/>
@@ -54,7 +54,7 @@ MAIN_V1_0_2758_0400/
 SOC_V2_7_0008_0600/
 
 
-In each there&#8217;s a .nfu file, which I&#8217;ve never encountered before. I ran binwalk on each:
+In each there&rsquo;s a .nfu file, which I&rsquo;ve never encountered before. I ran binwalk on each:
 
 [BOOT_V2_7_0008_0600_release]$ binwalk Boot_2.7.0008.0600.nfu
 DECIMAL HEXADECIMAL DESCRIPTION
@@ -65,7 +65,7 @@ DECIMAL HEXADECIMAL DESCRIPTION
 3209992 0x30FB08 ELF, 64-bit LSB shared object, AMD x86-64, version 1 (SYSV)
 
 
-Surprise, surprise, it runs Android. But, I&#8217;m thinking this image is possibly just the firmware updater, and not what I am looking for."/>
+Surprise, surprise, it runs Android. But, I&rsquo;m thinking this image is possibly just the firmware updater, and not what I am looking for."/>
 
 	<link rel="stylesheet" href="/css/main.css">
 	<link rel="stylesheet" href="/css/themes/dark-green.css">
@@ -87,7 +87,6 @@ Surprise, surprise, it runs Android. But, I&#8217;m thinking this image is possi
 		</div>
 	</button>
 	<ul id="menu" class="main-nav__list">
-		<li class="main-nav__item"><a class="main-nav__link" href="/">Home</a></li>
 		<li class="main-nav__item"><a class="main-nav__link" href="/pages/about/">About</a></li>
 		<li class="main-nav__item"><a class="main-nav__link" href="/pages/contact/">Contact</a></li>
 	</ul>
@@ -112,7 +111,7 @@ MAIN_V1_0_2758_0400/
 SOC_V2_7_0008_0600/
 </pre>
 
-<p>In each there&#8217;s a .nfu file, which I&#8217;ve never encountered before. I ran binwalk on each:</p>
+<p>In each there&rsquo;s a .nfu file, which I&rsquo;ve never encountered before. I ran binwalk on each:</p>
 
 <pre class="brush: plain; light: true; title: ; notranslate" title="">[BOOT_V2_7_0008_0600_release]$ binwalk Boot_2.7.0008.0600.nfu
 DECIMAL HEXADECIMAL DESCRIPTION
@@ -123,7 +122,7 @@ DECIMAL HEXADECIMAL DESCRIPTION
 3209992 0x30FB08 ELF, 64-bit LSB shared object, AMD x86-64, version 1 (SYSV)
 </pre>
 
-<p>Surprise, surprise, it runs Android. But, I&#8217;m thinking this image is possibly just the firmware updater, and not what I am looking for.</p>
+<p>Surprise, surprise, it runs Android. But, I&rsquo;m thinking this image is possibly just the firmware updater, and not what I am looking for.</p>
 
 <pre class="brush: plain; light: true; title: ; notranslate" title="">[SOC_V2_7_0008_0600]$ binwalk Soc_V2_7_0008_0600.nfu
 DECIMAL HEXADECIMAL DESCRIPTION
@@ -141,9 +140,9 @@ DECIMAL HEXADECIMAL DESCRIPTION
 314296995 0x12BBCAA3 End of Zip archive, footer length: 22
 </pre>
 
-<p>Here we go. A kernel with a sane size and name string, some recovery images, and what looks like a filesystem image! qboot_ddx.bin must be part of Ubiquitous&#8217; <a href="https://www.ubiquitous.co.jp/en/products/qb/md/quickboot/" rel="noopener" target="_blank">QuickBoot</a> software. It does boot awfully fast, so that explains that. Would be interesting to see full kernel and init output on a stereo headunit. Well, once anyway.</p>
+<p>Here we go. A kernel with a sane size and name string, some recovery images, and what looks like a filesystem image! qboot_ddx.bin must be part of Ubiquitous&rsquo; <a href="https://www.ubiquitous.co.jp/en/products/qb/md/quickboot/" rel="noopener" target="_blank">QuickBoot</a> software. It does boot awfully fast, so that explains that. Would be interesting to see full kernel and init output on a stereo headunit. Well, once anyway.</p>
 
-<p>Running binwalk on MAIN_V1_0_2758_0400/MainFw_1.0.2758.0400.mfu didn&#8217;t output anything. Not sure what that is.</p>
+<p>Running binwalk on MAIN_V1_0_2758_0400/MainFw_1.0.2758.0400.mfu didn&rsquo;t output anything. Not sure what that is.</p>
 
 <p>I tried unzip to extract Soc_V2_7_0008_0600.nfu. Seemed to work, though it complained about a 41MB extra bytes at the beginning. I was really just interested in the filesystem image for the moment:</p>
 
@@ -160,7 +159,7 @@ inflating: qboot_ddx.bin
 inflating: sbios_dual.bin
 </pre>
 
-<p>Running binwalk on the .ext4 verifies it is an ext4 filesystem image. I ran binwalk on the others and nothing was notable except the presumed QuickBoot file, qboot_ddx.bin which had images, and what looks like Qt library .qml files for some type of GUI. Also a Pandora image and other images. Hmm&#8230;</p>
+<p>Running binwalk on the .ext4 verifies it is an ext4 filesystem image. I ran binwalk on the others and nothing was notable except the presumed QuickBoot file, qboot_ddx.bin which had images, and what looks like Qt library .qml files for some type of GUI. Also a Pandora image and other images. Hmm&hellip;</p>
 
 <p>I decided to mount the ext4 image to take a look.</p>
 
@@ -177,7 +176,7 @@ DB filesave lib mnt opt run share system tmp
 <pre class="brush: plain; light: true; title: ; notranslate" title="">bin dbg_daemon_starter.sh etc kill_applications.sh lib rsc script system_init.sh
 </pre>
 
-<p>That appears to be where lots of magic happens. Whenever I&#8217;m done disassembling the rest of the car for a particularly annoying remote start installation, I&#8217;ll come back to it.</p></div>
+<p>That appears to be where lots of magic happens. Whenever I&rsquo;m done disassembling the rest of the car for a particularly annoying remote start installation, I&rsquo;ll come back to it.</p></div>
 				
 				<footer class="post__footer">
 					
@@ -190,10 +189,10 @@ DB filesave lib mnt opt run share system tmp
 
 					
 <div class="post__share share">
-	<a class="share__link btn" title="Share on Twitter" href="https://twitter.com/intent/tweet/?url=https%3a%2f%2fblog.nearwood.net%2freverse-engineering-the-firmware-on-a-kenwood-ddx9903s%2f&amp;text=Reverse%20Engineering%20the%20firmware%20on%20a%20Kenwood%20DDX9903S" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, 'Share on Twitter', 'width=800,height=450,resizable=yes,toolbar=0,status=0'); return false">
+	<a class="share__link btn" title="Share on Twitter" href="https://twitter.com/intent/tweet/?url=https%3a%2f%2fnearwood.dev%2freverse-engineering-the-firmware-on-a-kenwood-ddx9903s%2f&amp;text=Reverse%20Engineering%20the%20firmware%20on%20a%20Kenwood%20DDX9903S" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, 'Share on Twitter', 'width=800,height=450,resizable=yes,toolbar=0,status=0'); return false">
 		<svg class="share__icon" aria-label="Twitter" role="img" width="32" height="32" viewBox="0 0 512 512"><path d="M437 152a72 72 0 0 1-40 12 72 72 0 0 0 32-40 72 72 0 0 1-45 17 72 72 0 0 0-122 65 200 200 0 0 1-145-74 72 72 0 0 0 22 94 72 72 0 0 1-32-7 72 72 0 0 0 56 69 72 72 0 0 1-32 1 72 72 0 0 0 67 50 200 200 0 0 1-105 29 200 200 0 0 0 309-179 200 200 0 0 0 35-37"/></svg>
 	</a>
-	<a class="share__link btn" title="Share on Reddit" href="https://www.reddit.com/submit?url=https%3a%2f%2fblog.nearwood.net%2freverse-engineering-the-firmware-on-a-kenwood-ddx9903s%2f&amp;title=Reverse%20Engineering%20the%20firmware%20on%20a%20Kenwood%20DDX9903S" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, 'Share on Reddit', 'width=832,height=624,toolbar=0,status=0'); return false">
+	<a class="share__link btn" title="Share on Reddit" href="https://www.reddit.com/submit?url=https%3a%2f%2fnearwood.dev%2freverse-engineering-the-firmware-on-a-kenwood-ddx9903s%2f&amp;title=Reverse%20Engineering%20the%20firmware%20on%20a%20Kenwood%20DDX9903S" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, 'Share on Reddit', 'width=832,height=624,toolbar=0,status=0'); return false">
 		<svg class="share__icon" aria-label="Reddit" role="img" width="32" height="32" viewBox="0 0 512 512"><path fill-rule="evenodd" d="M375 146a32 32 0 1 0-29-46l-65-13c-5-1-9 2-10 6l-22 97c-45 1-85 15-113 36a42 42 0 1 0-45 69l-1 12c0 65 74 117 166 117s166-52 166-117l-1-11a42 42 0 1 0-44-69c-28-21-67-35-111-37l19-86 58 13a32 32 0 0 0 32 29zM190 353c2-1 4 0 5 1 15 11 38 18 61 18s46-6 61-18a7 7 0 0 1 8 10c-18 14-44 21-69 21-25-1-51-7-69-21a6 6 0 0 1 3-11zm23-44a31 31 0 1 1-44-44 31 31 0 0 1 44 44zm130 0a31 31 0 1 0-44-44 31 31 0 0 0 44 44z"/></svg>
 	</a>
 </div>

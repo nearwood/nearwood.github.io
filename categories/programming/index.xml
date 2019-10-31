@@ -1,82 +1,82 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Programming on Nick</title>
-    <link>https://blog.nearwood.net/categories/programming/</link>
+    <link>https://nearwood.dev/categories/programming/</link>
     <description>Recent content in Programming on Nick</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2019 Nicholas Earwood</copyright>
     <lastBuildDate>Fri, 12 Jan 2018 02:13:38 +0000</lastBuildDate>
     
-	<atom:link href="https://blog.nearwood.net/categories/programming/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://nearwood.dev/categories/programming/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Education in Futility: WarpWallet Brute Forcing</title>
-      <link>https://blog.nearwood.net/education-in-futility-warpwallet-brute-forcing/</link>
+      <link>https://nearwood.dev/education-in-futility-warpwallet-brute-forcing/</link>
       <pubDate>Fri, 12 Jan 2018 02:13:38 +0000</pubDate>
       
-      <guid>https://blog.nearwood.net/education-in-futility-warpwallet-brute-forcing/</guid>
+      <guid>https://nearwood.dev/education-in-futility-warpwallet-brute-forcing/</guid>
       <description>So, WarpWallet is a so-called brain wallet for Bitcoin. That is, you only have to remember a relatively short password and it generates the corresponding private key for use. It uses a memory and CPU hard set of cryptographic algorithms to ensure that brute-forcing is slowed way down. That is, when generating the private key, it takes considerable time. Their Javascript implementation takes over 10 seconds on my machine.
 So the makers of it had challenges setup.</description>
     </item>
     
     <item>
       <title>Sync login/lock screen wallpaper to current desktop background</title>
-      <link>https://blog.nearwood.net/sync-loginlock-screen-wallpaper-to-current-desktop-background/</link>
+      <link>https://nearwood.dev/sync-loginlock-screen-wallpaper-to-current-desktop-background/</link>
       <pubDate>Sun, 04 Jun 2017 15:20:43 +0000</pubDate>
       
-      <guid>https://blog.nearwood.net/sync-loginlock-screen-wallpaper-to-current-desktop-background/</guid>
-      <description>For Windows 7, this turned out to be pretty easy to do via PowerShell. I just had to look for a native image resizing library since the lock screen for some odd reason, only supports JPEGs up to 256KB in size. Probably one of those legacy items left over from NT, like the file system permissions dialogs, and the built-in environment variables editor&amp;#8230;
-I ended up using WIA&amp;#8217;s ImageProcess COM library which worked surprisingly well.</description>
+      <guid>https://nearwood.dev/sync-loginlock-screen-wallpaper-to-current-desktop-background/</guid>
+      <description>For Windows 7, this turned out to be pretty easy to do via PowerShell. I just had to look for a native image resizing library since the lock screen for some odd reason, only supports JPEGs up to 256KB in size. Probably one of those legacy items left over from NT, like the file system permissions dialogs, and the built-in environment variables editor&amp;hellip;
+I ended up using WIA&amp;rsquo;s ImageProcess COM library which worked surprisingly well.</description>
     </item>
     
     <item>
       <title>Windmill – Windows Window unclobberer</title>
-      <link>https://blog.nearwood.net/windmill-windows-window-unclobberer/</link>
+      <link>https://nearwood.dev/windmill-windows-window-unclobberer/</link>
       <pubDate>Wed, 15 Mar 2017 17:30:13 +0000</pubDate>
       
-      <guid>https://blog.nearwood.net/windmill-windows-window-unclobberer/</guid>
-      <description>I noticed during the (many) meetings I attend that disconnecting and reconnecting my laptop from the dock reorganizes all my windows to the laptop&amp;#8217;s display. This got annoying to have to drag and resize everything when returning to my desk, which has a 3 monitor setup. So, I wrote this small Win32 application to allow you to save the positioning and size of all windows and then restore them at a later time.</description>
+      <guid>https://nearwood.dev/windmill-windows-window-unclobberer/</guid>
+      <description>I noticed during the (many) meetings I attend that disconnecting and reconnecting my laptop from the dock reorganizes all my windows to the laptop&amp;rsquo;s display. This got annoying to have to drag and resize everything when returning to my desk, which has a 3 monitor setup. So, I wrote this small Win32 application to allow you to save the positioning and size of all windows and then restore them at a later time.</description>
     </item>
     
     <item>
       <title>Raspberry Pi Robot – Assembly Part 2</title>
-      <link>https://blog.nearwood.net/raspberry-pi-robot-assembly-part-2/</link>
+      <link>https://nearwood.dev/raspberry-pi-robot-assembly-part-2/</link>
       <pubDate>Tue, 08 Mar 2016 01:47:20 +0000</pubDate>
       
-      <guid>https://blog.nearwood.net/raspberry-pi-robot-assembly-part-2/</guid>
-      <description>&lt;p&gt;This was the hardest part. If you wire the wrong things together you can brick your Pi. I took some time to decide on which pins to use, and after assembly and testing everything worked. I&amp;#8217;ll explain which pins I picked, but note that this information will not work with other hardware configurations.&lt;a href=&#34;http://www.nearwood.net/wp-content/uploads/IMG_20141227_115202.jpg&#34;&gt;&lt;img class=&#34;aligncenter size-medium wp-image-583&#34; src=&#34;http://www.nearwood.net/wp-content/uploads/IMG_20141227_115202-300x225.jpg&#34; alt=&#34;IMG_20141227_115202&#34; width=&#34;300&#34; height=&#34;225&#34; srcset=&#34;https://www.nearwood.net/wp-content/uploads/IMG_20141227_115202-300x225.jpg 300w, https://www.nearwood.net/wp-content/uploads/IMG_20141227_115202.jpg 800w&#34; sizes=&#34;(max-width: 300px) 100vw, 300px&#34; /&gt;&lt;/a&gt;&lt;/p&gt;</description>
+      <guid>https://nearwood.dev/raspberry-pi-robot-assembly-part-2/</guid>
+      <description>This was the hardest part. If you wire the wrong things together you can brick your Pi. I took some time to decide on which pins to use, and after assembly and testing everything worked. I&amp;rsquo;ll explain which pins I picked, but note that this information will not work with other hardware configurations.[I originally had a Model B Pi, but due to needing the second hardware PWM (which is hidden on the B), switched to the B+.</description>
     </item>
     
     <item>
       <title>Msqur 1.0 update</title>
-      <link>https://blog.nearwood.net/msqur-1-0-update/</link>
+      <link>https://nearwood.dev/msqur-1-0-update/</link>
       <pubDate>Wed, 30 Sep 2015 00:31:51 +0000</pubDate>
       
-      <guid>https://blog.nearwood.net/msqur-1-0-update/</guid>
+      <guid>https://nearwood.dev/msqur-1-0-update/</guid>
       <description>I added an update to msqur today. Just a small update to the landing page since it was kind of blank. Moved the settings icon to the view page instead of every page. Also fixed the readme and license files for formatting.
 I get a lot of hits from Russia on that site. Actually, I get a lot of hits from Russia on all my sites. I imagine most of them are bots probing for weaknesses.</description>
     </item>
     
     <item>
       <title>Find videos by FPS</title>
-      <link>https://blog.nearwood.net/find-videos-by-fps/</link>
+      <link>https://nearwood.dev/find-videos-by-fps/</link>
       <pubDate>Sun, 02 Aug 2015 23:25:29 +0000</pubDate>
       
-      <guid>https://blog.nearwood.net/find-videos-by-fps/</guid>
-      <description>I produced some videos in 60 FPS, but couldn&amp;#8217;t remember which ones. Since, of course, I didn&amp;#8217;t label their FPS at the time, I needed to find them in vast sea of 30 FPS videos. Rather than just use a simple grep with ffmpeg to find which ones, I thought it might be more useful to find all videos that have a certain FPS threshold.
+      <guid>https://nearwood.dev/find-videos-by-fps/</guid>
+      <description>I produced some videos in 60 FPS, but couldn&amp;rsquo;t remember which ones. Since, of course, I didn&amp;rsquo;t label their FPS at the time, I needed to find them in vast sea of 30 FPS videos. Rather than just use a simple grep with ffmpeg to find which ones, I thought it might be more useful to find all videos that have a certain FPS threshold.
 Usage: ./60fps.sh [directory]
 #!/bin/bash SAVEIFS=$IFS IFS=$&#39;\n&#39; function fpscheck { FPS=$(ffmpeg -i &#34;</description>
     </item>
     
     <item>
       <title>Msqur 1.0 released</title>
-      <link>https://blog.nearwood.net/msqur-1-0-released/</link>
+      <link>https://nearwood.dev/msqur-1-0-released/</link>
       <pubDate>Fri, 26 Jun 2015 03:34:02 +0000</pubDate>
       
-      <guid>https://blog.nearwood.net/msqur-1-0-released/</guid>
+      <guid>https://nearwood.dev/msqur-1-0-released/</guid>
       <description>As mentioned previously, I wanted to open the source to msqur up and put development on the backburner. I have added an appropriate license for it (although I do need to add library licenses/notices in there as well). It is now GPL licensed, and I have made the repository public.
 Some things I added:
  Added basic charts for the 2D tables Added table header text to tables Added reingest script to allow for easier MSQ cache updates Fixed some of the documentation up  Known issues, mostly the same as before:</description>
@@ -84,10 +84,10 @@ Some things I added:
     
     <item>
       <title>Msqur Update v0.72b</title>
-      <link>https://blog.nearwood.net/msqur-update-v0-72b/</link>
+      <link>https://nearwood.dev/msqur-update-v0-72b/</link>
       <pubDate>Thu, 21 May 2015 02:20:33 +0000</pubDate>
       
-      <guid>https://blog.nearwood.net/msqur-update-v0-72b/</guid>
+      <guid>https://nearwood.dev/msqur-update-v0-72b/</guid>
       <description>I dug in this past weekend and updated a few things:
  INI Parsing revamp. Support for more tables and curves. UI Update so that all this new information is somewhat organized A few minor bug fixes and enhancements  Known issues:
  MS3 file support is poor Constants are just blurted out without any organization INI Parsing of formulas and directives not implemented yet  I plan on opening the source code up under some kind of OSS license, after fixing a few more issues and updating the documentation.</description>
@@ -95,52 +95,52 @@ Some things I added:
     
     <item>
       <title>Msqur Update v0.60b</title>
-      <link>https://blog.nearwood.net/msqur-update-v0-60b/</link>
+      <link>https://nearwood.dev/msqur-update-v0-60b/</link>
       <pubDate>Mon, 23 Mar 2015 00:34:40 +0000</pubDate>
       
-      <guid>https://blog.nearwood.net/msqur-update-v0-60b/</guid>
+      <guid>https://nearwood.dev/msqur-update-v0-60b/</guid>
       <description>A little while ago I updated msqur.com to 0.60b. Changes include:
  Added engine make/code fields for uploads Added view count and increment  And less visibly:
- Finished OO refactor Update API documentation (not public yet) Added deployment scripts  I still haven&amp;#8217;t finished INI file parsing 100%. There&amp;#8217;s a bit more to do, but I&amp;#8217;ve been busy with work and other projects. I&amp;#8217;m thinking of releasing the project under an appropriate open-source license once I finish that, so hopefully others can join in on the fun.</description>
+ Finished OO refactor Update API documentation (not public yet) Added deployment scripts  I still haven&amp;rsquo;t finished INI file parsing 100%. There&amp;rsquo;s a bit more to do, but I&amp;rsquo;ve been busy with work and other projects. I&amp;rsquo;m thinking of releasing the project under an appropriate open-source license once I finish that, so hopefully others can join in on the fun.</description>
     </item>
     
     <item>
       <title>Msqur Update v0.53b</title>
-      <link>https://blog.nearwood.net/msqur-update-v0-53b/</link>
+      <link>https://nearwood.dev/msqur-update-v0-53b/</link>
       <pubDate>Mon, 16 Feb 2015 21:27:29 +0000</pubDate>
       
-      <guid>https://blog.nearwood.net/msqur-update-v0-53b/</guid>
-      <description>I&amp;#8217;ve rolled out the update 0.53b to msqur.com. This includes:
+      <guid>https://nearwood.dev/msqur-update-v0-53b/</guid>
+      <description>I&amp;rsquo;ve rolled out the update 0.53b to msqur.com. This includes:
  INI Parsing (i.e. better MSQ support) Bug fixes and better error handling  So now it is a bit more usable. The INI Parsing turns out to be a bit more complex than I anticipated, but I rolled out a decent intermediate update in the meantime.
-Before completing the INI parsing (or anything else for that matter), I&amp;#8217;ve decided to overhaul the entire codebase.</description>
+Before completing the INI parsing (or anything else for that matter), I&amp;rsquo;ve decided to overhaul the entire codebase.</description>
     </item>
     
     <item>
       <title>Msqur Update</title>
-      <link>https://blog.nearwood.net/msqur-update/</link>
+      <link>https://nearwood.dev/msqur-update/</link>
       <pubDate>Mon, 02 Feb 2015 01:06:46 +0000</pubDate>
       
-      <guid>https://blog.nearwood.net/msqur-update/</guid>
-      <description>Well, the holidays are long over and I haven&amp;#8217;t updated msqur.com in a while. I&amp;#8217;m adding some configuration management to it, so nothing visible will happen for a while. What&amp;#8217;s planned, however, is .ini file parsing so that .msq files can be parsed according to the INI file version they use. That is, I will parse the INI file for the schema to a .msq file instead of hardcoding it. This way showing a .</description>
+      <guid>https://nearwood.dev/msqur-update/</guid>
+      <description>Well, the holidays are long over and I haven&amp;rsquo;t updated msqur.com in a while. I&amp;rsquo;m adding some configuration management to it, so nothing visible will happen for a while. What&amp;rsquo;s planned, however, is .ini file parsing so that .msq files can be parsed according to the INI file version they use. That is, I will parse the INI file for the schema to a .msq file instead of hardcoding it. This way showing a .</description>
     </item>
     
     <item>
       <title>msqur.com – MSQ file sharing site</title>
-      <link>https://blog.nearwood.net/msqur-com-msq-file-sharing-site/</link>
+      <link>https://nearwood.dev/msqur-com-msq-file-sharing-site/</link>
       <pubDate>Wed, 31 Dec 2014 01:39:42 +0000</pubDate>
       
-      <guid>https://blog.nearwood.net/msqur-com-msq-file-sharing-site/</guid>
-      <description>Well, I&amp;#8217;ve only been working on it a little so far, but I suppose it&amp;#8217;s good enough to post about at this point.
-The site is msqur.com, and it&amp;#8217;s for Megasquirt ECU users to share their tunes (from the TunerStudio MS software). You can upload (multiple) .msq files, assign some engine information to them at upload, and share them with other people for troubleshooting or tuning help. The goal is to make something easier than attaching a file to a forum post that others have to download and fire up the full tuning software suite to just view it.</description>
+      <guid>https://nearwood.dev/msqur-com-msq-file-sharing-site/</guid>
+      <description>Well, I&amp;rsquo;ve only been working on it a little so far, but I suppose it&amp;rsquo;s good enough to post about at this point.
+The site is msqur.com, and it&amp;rsquo;s for Megasquirt ECU users to share their tunes (from the TunerStudio MS software). You can upload (multiple) .msq files, assign some engine information to them at upload, and share them with other people for troubleshooting or tuning help. The goal is to make something easier than attaching a file to a forum post that others have to download and fire up the full tuning software suite to just view it.</description>
     </item>
     
     <item>
       <title>Raspberry Pi – Cross-compiling</title>
-      <link>https://blog.nearwood.net/raspberry-pi-robot-cross-compiling/</link>
+      <link>https://nearwood.dev/raspberry-pi-robot-cross-compiling/</link>
       <pubDate>Mon, 01 Dec 2014 02:26:47 +0000</pubDate>
       
-      <guid>https://blog.nearwood.net/raspberry-pi-robot-cross-compiling/</guid>
-      <description>&lt;p&gt;Now that you have the hardware built and tested (although that&amp;#8217;s not necessary), you can either use the code I&amp;#8217;ve written&amp;#8211;which is specific to the hardware and environment I have, or compile your own version. If you want to compile your own there are two options:&lt;/p&gt;
+      <guid>https://nearwood.dev/raspberry-pi-robot-cross-compiling/</guid>
+      <description>&lt;p&gt;Now that you have the hardware built and tested (although that&amp;rsquo;s not necessary), you can either use the code I&amp;rsquo;ve written-which is specific to the hardware and environment I have, or compile your own version. If you want to compile your own there are two options:&lt;/p&gt;
 
 &lt;ol&gt;
 &lt;li&gt;Compile on the Pi itself&lt;/li&gt;
@@ -148,11 +148,11 @@ The site is msqur.com, and it&amp;#8217;s for Megasquirt ECU users to share thei
 &lt;li&gt;Cross-compile on a faster machine&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;The trade off? Compiling on the Pi is slow (very slow). The virtual machine is a marked improvement for compiling speed, but is complicated to setup. Cross-compiling is about the same difficulty as setting up a virtual machine but a bit faster and less &amp;#8220;bulky&amp;#8221;. So it depends. The virtual machine is nice if you have a lot of libraries you want to use, since you&amp;#8217;ll have to compile all of them to be available for linking. If any of them have poor autoconfig support, it might be a pain to fix if you weren&amp;#8217;t already on the target machine. But, since I just needed one or two popular libraries, I decided to setup cross-compiling from my host (x86_64) machine.&lt;/p&gt;
+&lt;p&gt;The trade off? Compiling on the Pi is slow (very slow). The virtual machine is a marked improvement for compiling speed, but is complicated to setup. Cross-compiling is about the same difficulty as setting up a virtual machine but a bit faster and less &amp;ldquo;bulky&amp;rdquo;. So it depends. The virtual machine is nice if you have a lot of libraries you want to use, since you&amp;rsquo;ll have to compile all of them to be available for linking. If any of them have poor autoconfig support, it might be a pain to fix if you weren&amp;rsquo;t already on the target machine. But, since I just needed one or two popular libraries, I decided to setup cross-compiling from my host (x86_64) machine.&lt;/p&gt;
 
-&lt;p&gt;The last time I setup cross-compiling it was on Gentoo, and it wasn&amp;#8217;t pleasant. However, after a little bit of research it looks like the &lt;a href=&#34;http://crosstool-ng.org/&#34; target=&#34;_blank&#34;&gt;crosstool-ng project&lt;/a&gt; is pretty popular and useful. I only had to patch one tiny thing.&lt;/p&gt;
+&lt;p&gt;The last time I setup cross-compiling it was on Gentoo, and it wasn&amp;rsquo;t pleasant. However, after a little bit of research it looks like the &lt;a href=&#34;https://crosstool-ng.org/&#34; target=&#34;_blank&#34;&gt;crosstool-ng project&lt;/a&gt; is pretty popular and useful. I only had to patch one tiny thing.&lt;/p&gt;
 
-&lt;p&gt;Here&amp;#8217;s the overall process:&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s the overall process:&lt;/p&gt;
 
 &lt;ol&gt;
 &lt;li&gt;Install crosstool-ng&lt;/li&gt;
@@ -164,46 +164,46 @@ The site is msqur.com, and it&amp;#8217;s for Megasquirt ECU users to share thei
     
     <item>
       <title>Raspberry Pi Robot</title>
-      <link>https://blog.nearwood.net/raspberry-pi-robot/</link>
+      <link>https://nearwood.dev/raspberry-pi-robot/</link>
       <pubDate>Wed, 26 Nov 2014 04:01:23 +0000</pubDate>
       
-      <guid>https://blog.nearwood.net/raspberry-pi-robot/</guid>
-      <description>&lt;p&gt;So, a while back I gave my wife a &lt;a href=&#34;http://goldenarmor.com/farscape-drd/&#34; target=&#34;_blank&#34;&gt;Farscape DRD kit&lt;/a&gt;. I promised to make it in to a robot. How hard could it be? Well, not too bad. A little more expensive than planned, though&amp;#8230;&lt;/p&gt;
+      <guid>https://nearwood.dev/raspberry-pi-robot/</guid>
+      <description>&lt;p&gt;So, a while back I gave my wife a &lt;a href=&#34;https://goldenarmor.com/farscape-drd/&#34; target=&#34;_blank&#34;&gt;Farscape DRD kit&lt;/a&gt;. I promised to make it in to a robot. How hard could it be? Well, not too bad. A little more expensive than planned, though&amp;hellip;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://www.nearwood.net/wp-content/uploads/IMG_20141122_142828.jpg&#34;&gt;&lt;img class=&#34;aligncenter size-medium wp-image-472&#34; src=&#34;http://www.nearwood.net/wp-content/uploads/IMG_20141122_142828-300x225.jpg&#34; alt=&#34;IMG_20141122_142828&#34; width=&#34;300&#34; height=&#34;225&#34; srcset=&#34;https://www.nearwood.net/wp-content/uploads/IMG_20141122_142828-300x225.jpg 300w, https://www.nearwood.net/wp-content/uploads/IMG_20141122_142828.jpg 800w&#34; sizes=&#34;(max-width: 300px) 100vw, 300px&#34; /&gt;&lt;/a&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;img class=&#34;lostImage&#34; src=&#34;&#34; alt=&#34;Image no longer available :(&#34;/&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Carduino 2.0 – Intel Galileo Setup</title>
-      <link>https://blog.nearwood.net/carduino-2-0-intel-galileo-setup/</link>
+      <link>https://nearwood.dev/carduino-2-0-intel-galileo-setup/</link>
       <pubDate>Wed, 12 Nov 2014 02:04:43 +0000</pubDate>
       
-      <guid>https://blog.nearwood.net/carduino-2-0-intel-galileo-setup/</guid>
-      <description>&lt;p&gt;Out of the box the Galileo is setup to run sketches uploaded from volatile memory, which is really lame. I didn&amp;#8217;t spend much time with it using the stock SPI kernel. So, an SD card is pretty much required to do any serious development with this board. This is not a bad thing (although you aren&amp;#8217;t running in real-time anymore), since having a full OS to use has lots of advantages. Plus, this way I can automate the build process in a way I&amp;#8217;m more familiar with.&lt;/p&gt;</description>
+      <guid>https://nearwood.dev/carduino-2-0-intel-galileo-setup/</guid>
+      <description>&lt;p&gt;Out of the box the Galileo is setup to run sketches uploaded from volatile memory, which is really lame. I didn&amp;rsquo;t spend much time with it using the stock SPI kernel. So, an SD card is pretty much required to do any serious development with this board. This is not a bad thing (although you aren&amp;rsquo;t running in real-time anymore), since having a full OS to use has lots of advantages. Plus, this way I can automate the build process in a way I&amp;rsquo;m more familiar with.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Carduino 2.0</title>
-      <link>https://blog.nearwood.net/carduino-2-0/</link>
+      <link>https://nearwood.dev/carduino-2-0/</link>
       <pubDate>Sun, 09 Nov 2014 18:19:24 +0000</pubDate>
       
-      <guid>https://blog.nearwood.net/carduino-2-0/</guid>
-      <description>Over a year ago I got an Arduino Uno and a CAN-BUS Shield to try and make some kind of datalogger for my car. I was also interested in using the OpenXC library with it (which might need a port if there isn&amp;#8217;t one already, since it uses the Digilent chipKIT Max32 development board). While OpenXC allows interfacing with Android stuff for phones, I&amp;#8217;m more interested in a self-contained datalogging type deal.</description>
+      <guid>https://nearwood.dev/carduino-2-0/</guid>
+      <description>Over a year ago I got an Arduino Uno and a CAN-BUS Shield to try and make some kind of datalogger for my car. I was also interested in using the OpenXC library with it (which might need a port if there isn&amp;rsquo;t one already, since it uses the Digilent chipKIT Max32 development board). While OpenXC allows interfacing with Android stuff for phones, I&amp;rsquo;m more interested in a self-contained datalogging type deal.</description>
     </item>
     
     <item>
       <title>Updating WordPress on nearlyfreespeech.net hosts</title>
-      <link>https://blog.nearwood.net/updating-wordpress-on-nearlyfreespeech-net-hosts/</link>
+      <link>https://nearwood.dev/updating-wordpress-on-nearlyfreespeech-net-hosts/</link>
       <pubDate>Thu, 11 Sep 2014 00:37:52 +0000</pubDate>
       
-      <guid>https://blog.nearwood.net/updating-wordpress-on-nearlyfreespeech-net-hosts/</guid>
+      <guid>https://nearwood.dev/updating-wordpress-on-nearlyfreespeech-net-hosts/</guid>
       <description>&lt;h3 id=&#34;update-dec-13-2014&#34;&gt;Update Dec. 13, 2014:&lt;/h3&gt;
 
-&lt;p&gt;These scripts are out of date. NFS has the &lt;a href=&#34;http://wp-cli.org/&#34; target=&#34;_blank&#34;&gt;WP-CLI&lt;/a&gt; installed allowing for much, much easier upgrades, backups, etc. See the &lt;a href=&#34;https://github.com/nearwood/nfs-scripts&#34; target=&#34;_blank&#34;&gt;repository&lt;/a&gt; for information.&lt;/p&gt;
+&lt;p&gt;These scripts are out of date. NFS has the &lt;a href=&#34;https://wp-cli.org/&#34; target=&#34;_blank&#34;&gt;WP-CLI&lt;/a&gt; installed allowing for much, much easier upgrades, backups, etc. See the &lt;a href=&#34;https://github.com/nearwood/nfs-scripts&#34; target=&#34;_blank&#34;&gt;repository&lt;/a&gt; for information.&lt;/p&gt;
 
 &lt;h3 id=&#34;originally-posted-on-sept-10th-2014&#34;&gt;Originally posted on Sept. 10th, 2014:&lt;/h3&gt;
 
-&lt;p&gt;If you use NearlyFreeSpeech.net as your web host, you may have found it difficult to automate WordPress updates. I&amp;#8217;ve made a script that does this for you. It also calls my backup and permissions fixing scripts, which I include here as well.&lt;/p&gt;
+&lt;p&gt;If you use NearlyFreeSpeech.net as your web host, you may have found it difficult to automate WordPress updates. I&amp;rsquo;ve made a script that does this for you. It also calls my backup and permissions fixing scripts, which I include here as well.&lt;/p&gt;
 
 &lt;p&gt;Beware of some notes and assumptions though:&lt;/p&gt;
 
@@ -216,31 +216,31 @@ The site is msqur.com, and it&amp;#8217;s for Megasquirt ECU users to share thei
     
     <item>
       <title>Custom Speed app update</title>
-      <link>https://blog.nearwood.net/custom-speed-app-update/</link>
+      <link>https://nearwood.dev/custom-speed-app-update/</link>
       <pubDate>Fri, 21 Feb 2014 02:15:30 +0000</pubDate>
       
-      <guid>https://blog.nearwood.net/custom-speed-app-update/</guid>
+      <guid>https://nearwood.dev/custom-speed-app-update/</guid>
       <description>I update Custom Speed to 1.1. Changes include:
- An actual theme (consistent colors) More units New icon  2.0 will include an actual settings page that will allow the units to be selected from an easier control, a setting for keeping the display on, and other minor UI improvements. There&amp;#8217;s no ETA currently for 2.0.</description>
+ An actual theme (consistent colors) More units New icon  2.0 will include an actual settings page that will allow the units to be selected from an easier control, a setting for keeping the display on, and other minor UI improvements. There&amp;rsquo;s no ETA currently for 2.0.</description>
     </item>
     
     <item>
       <title>Exporting Drupal Pages/Posts to WordPress</title>
-      <link>https://blog.nearwood.net/exporting-drupal-pagesposts-to-wordpress/</link>
+      <link>https://nearwood.dev/exporting-drupal-pagesposts-to-wordpress/</link>
       <pubDate>Tue, 31 Dec 2013 03:45:18 +0000</pubDate>
       
-      <guid>https://blog.nearwood.net/exporting-drupal-pagesposts-to-wordpress/</guid>
-      <description>I&amp;#8217;ve decided to consolidate some of my web presence. My car&amp;#8217;s website will be merged into this one. Going from WordPress to Drupal is easy, but the other way is not. I found a couple links for SQL scripts to import lots of posts automatically, but these were and are easily outdated by Drupal and to a lesser extent WordPress.
+      <guid>https://nearwood.dev/exporting-drupal-pagesposts-to-wordpress/</guid>
+      <description>I&amp;rsquo;ve decided to consolidate some of my web presence. My car&amp;rsquo;s website will be merged into this one. Going from WordPress to Drupal is easy, but the other way is not. I found a couple links for SQL scripts to import lots of posts automatically, but these were and are easily outdated by Drupal and to a lesser extent WordPress.
 It was easier just to create my own SQL JOIN statement and export the resulting list.</description>
     </item>
     
     <item>
       <title>Python script to write a word using the word</title>
-      <link>https://blog.nearwood.net/python-script-to-write-a-word-using-the-word/</link>
+      <link>https://nearwood.dev/python-script-to-write-a-word-using-the-word/</link>
       <pubDate>Wed, 11 Dec 2013 01:52:16 +0000</pubDate>
       
-      <guid>https://blog.nearwood.net/python-script-to-write-a-word-using-the-word/</guid>
-      <description>&lt;p&gt;That&amp;#8217;s the best title I can come up with. The idea is to do this:&lt;/p&gt;
+      <guid>https://nearwood.dev/python-script-to-write-a-word-using-the-word/</guid>
+      <description>&lt;p&gt;That&amp;rsquo;s the best title I can come up with. The idea is to do this:&lt;/p&gt;
 
 &lt;pre&gt;THISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHIS
     THISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHIS
@@ -263,43 +263,42 @@ It was easier just to create my own SQL JOIN statement and export the resulting 
     
     <item>
       <title>Released my first Android app</title>
-      <link>https://blog.nearwood.net/released-my-first-android-app/</link>
+      <link>https://nearwood.dev/released-my-first-android-app/</link>
       <pubDate>Thu, 05 Dec 2013 01:00:13 +0000</pubDate>
       
-      <guid>https://blog.nearwood.net/released-my-first-android-app/</guid>
+      <guid>https://nearwood.dev/released-my-first-android-app/</guid>
       <description>After searching for a simple GPS Speedometer app that provided a speed readout in more than just 2 units (a free one, of course), I thought it would be the perfect project for my first Android app. It took only a few hours to make it, the Eclipse ADT makes this pretty easy.
 Google Play link
-I&amp;#8217;m glad I&amp;#8217;ve gotten more familiar with the publishing process. It&amp;#8217;ll help when I release a game I&amp;#8217;ve been tinkering with for a few years.</description>
+I&amp;rsquo;m glad I&amp;rsquo;ve gotten more familiar with the publishing process. It&amp;rsquo;ll help when I release a game I&amp;rsquo;ve been tinkering with for a few years.</description>
     </item>
     
     <item>
       <title>LibGDX</title>
-      <link>https://blog.nearwood.net/libgdx/</link>
+      <link>https://nearwood.dev/libgdx/</link>
       <pubDate>Sat, 27 Apr 2013 02:37:32 +0000</pubDate>
       
-      <guid>https://blog.nearwood.net/libgdx/</guid>
-      <description>I&amp;#8217;ve been busy these past few weeks trying to get my 280Z autocross ready, and porting my C++/DirectX windows game to Java with LibGDX.
-Overall I am very impressed with LibGDX. The GUI API isn&amp;#8217;t very good though. I&amp;#8217;ve decided to roll my own (again!) for this game. At least the first release. I see that the LibGDX one supports nice fonts and textures and whatnot. It shouldn&amp;#8217;t be too difficult to reimplement the base class with it and refactor when it matures.</description>
+      <guid>https://nearwood.dev/libgdx/</guid>
+      <description>I&amp;rsquo;ve been busy these past few weeks trying to get my 280Z autocross ready, and porting my C++/DirectX windows game to Java with LibGDX.
+Overall I am very impressed with LibGDX. The GUI API isn&amp;rsquo;t very good though. I&amp;rsquo;ve decided to roll my own (again!) for this game. At least the first release. I see that the LibGDX one supports nice fonts and textures and whatnot. It shouldn&amp;rsquo;t be too difficult to reimplement the base class with it and refactor when it matures.</description>
     </item>
     
     <item>
       <title>Carduino</title>
-      <link>https://blog.nearwood.net/carduino/</link>
+      <link>https://nearwood.dev/carduino/</link>
       <pubDate>Thu, 31 Jan 2013 02:36:47 +0000</pubDate>
       
-      <guid>https://blog.nearwood.net/carduino/</guid>
-      <description>I&amp;#8217;ve been working on a small Arduino project to datalog my commute. I&amp;#8217;m using an Arduino Uno with SK Pang&amp;#8217;s CAN Bus Shield. I also have added the optional GPS and LCD to the mix. There is an micro-SD card slot for storage.
-
+      <guid>https://nearwood.dev/carduino/</guid>
+      <description>I&amp;rsquo;ve been working on a small Arduino project to datalog my commute. I&amp;rsquo;m using an Arduino Uno with SK Pang&amp;rsquo;s CAN Bus Shield. I also have added the optional GPS and LCD to the mix. There is an micro-SD card slot for storage.
 The aim of the project is just to collect data. As much as I can put into the SD card. I plan on calculating driving efficiency using somewhat arbitrary measures like throttle modulation, temperature, etc.</description>
     </item>
     
     <item>
       <title>Refactoring with regular expressions</title>
-      <link>https://blog.nearwood.net/refactoring-with-regular-expressions/</link>
+      <link>https://nearwood.dev/refactoring-with-regular-expressions/</link>
       <pubDate>Fri, 30 Nov 2012 01:25:45 +0000</pubDate>
       
-      <guid>https://blog.nearwood.net/refactoring-with-regular-expressions/</guid>
-      <description>I&amp;#8217;m re-learning JavaScript, and I noticed I was refactoring functions a lot on some old code. I&amp;#8217;m putting some useful stuff here for reference:
+      <guid>https://nearwood.dev/refactoring-with-regular-expressions/</guid>
+      <description>I&amp;rsquo;m re-learning JavaScript, and I noticed I was refactoring functions a lot on some old code. I&amp;rsquo;m putting some useful stuff here for reference:
 aFunc(blah) → this.aFunc = function(blah)
 Find: function (\w+)(
 Replace with: this.\1 = function(
@@ -315,13 +314,12 @@ Replace with: \tSOME.qualifier.\1</description>
     
     <item>
       <title>The Other End of UXD</title>
-      <link>https://blog.nearwood.net/the-other-end-of-uxd/</link>
+      <link>https://nearwood.dev/the-other-end-of-uxd/</link>
       <pubDate>Sun, 08 Jul 2012 22:48:23 +0000</pubDate>
       
-      <guid>https://blog.nearwood.net/the-other-end-of-uxd/</guid>
+      <guid>https://nearwood.dev/the-other-end-of-uxd/</guid>
       <description>What do you do, as a software maker, to discourage someone from uninstalling your software? Make it take a lot of clicking:
-
-Excellent job, WildTangent. Now, I thought I would be clever and just focus onto the listbox and press the space bar and down arrow key multiple&amp;#8230; multiple times. Well, it would seem they thought of that scenario and made the Cancel button the object that receives focus right after the listbox.</description>
+Excellent job, WildTangent. Now, I thought I would be clever and just focus onto the listbox and press the space bar and down arrow key multiple&amp;hellip; multiple times. Well, it would seem they thought of that scenario and made the Cancel button the object that receives focus right after the listbox.</description>
     </item>
     
   </channel>

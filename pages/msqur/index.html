@@ -9,15 +9,15 @@
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
 		<meta property="og:title" content="MSQur" />
-<meta property="og:description" content="So, years ago I made a C# Application to view .msq tune files from Megasquirt (the DIY car ECU). Specifically the VE and Spark tables. I ported it to Java since using .NET limits my audience to virtually just Windows users. It was okay. It allowed you to export images which you could then post, but it didn&#8217;t really save much time over taking screenshots of the tuning software itself and posting those." />
+<meta property="og:description" content="So, years ago I made a C# Application to view .msq tune files from Megasquirt (the DIY car ECU). Specifically the VE and Spark tables. I ported it to Java since using .NET limits my audience to virtually just Windows users. It was okay. It allowed you to export images which you could then post, but it didn&rsquo;t really save much time over taking screenshots of the tuning software itself and posting those." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://blog.nearwood.net/pages/msqur/" />
+<meta property="og:url" content="https://nearwood.dev/pages/msqur/" />
 <meta property="article:published_time" content="2014-12-11T03:10:39+00:00" />
-<meta property="article:modified_time" content="2019-02-03T12:15:22-05:00" />
+<meta property="article:modified_time" content="2019-10-30T12:13:38-05:00" />
 
 		<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="MSQur"/>
-<meta name="twitter:description" content="So, years ago I made a C# Application to view .msq tune files from Megasquirt (the DIY car ECU). Specifically the VE and Spark tables. I ported it to Java since using .NET limits my audience to virtually just Windows users. It was okay. It allowed you to export images which you could then post, but it didn&#8217;t really save much time over taking screenshots of the tuning software itself and posting those."/>
+<meta name="twitter:description" content="So, years ago I made a C# Application to view .msq tune files from Megasquirt (the DIY car ECU). Specifically the VE and Spark tables. I ported it to Java since using .NET limits my audience to virtually just Windows users. It was okay. It allowed you to export images which you could then post, but it didn&rsquo;t really save much time over taking screenshots of the tuning software itself and posting those."/>
 
 	<link rel="stylesheet" href="/css/main.css">
 	<link rel="stylesheet" href="/css/themes/dark-green.css">
@@ -39,7 +39,6 @@
 		</div>
 	</button>
 	<ul id="menu" class="main-nav__list">
-		<li class="main-nav__item"><a class="main-nav__link" href="/">Home</a></li>
 		<li class="main-nav__item"><a class="main-nav__link" href="/pages/about/">About</a></li>
 		<li class="main-nav__item"><a class="main-nav__link" href="/pages/contact/">Contact</a></li>
 	</ul>
@@ -51,27 +50,29 @@
 		<div class="single block">
 			<article class="post">
 				<h1 class="post__title">MSQur</h1>
-				<div class="post__content"><p>So, years ago I made a C# Application to view .msq tune files from Megasquirt (the DIY car ECU). Specifically the VE and Spark tables. I ported it to Java since using .NET limits my audience to virtually just Windows users. It was okay. It allowed you to export images which you could then post, but it didn&#8217;t really save much time over taking screenshots of the tuning software itself and posting those. What I really should have done was a web application to view uploaded tune files.</p>
+				<div class="post__content"><p>So, years ago I made a C# Application to view .msq tune files from Megasquirt (the DIY car ECU). Specifically the VE and Spark tables. I ported it to Java since using .NET limits my audience to virtually just Windows users. It was okay. It allowed you to export images which you could then post, but it didn&rsquo;t really save much time over taking screenshots of the tuning software itself and posting those. What I really should have done was a web application to view uploaded tune files.</p>
 
-<p>After shelving the idea for a couple years I got bored one day and decided to try out AngularJS. The tune viewing webapp idea was the perfect opportunity&#8211;and people might even use it! So, &#8220;msqur&#8221; was born. The name is basically a rip-off of `imgur`, but with msq in it, since that&#8217;s the extension of uploaded ECU tune files. Clever, eh? I thought so&#8230;</p>
+<p>After shelving the idea for a couple years I got bored one day and decided to try out AngularJS. The tune viewing webapp idea was the perfect opportunity-and people might even use it! So, &ldquo;msqur&rdquo; was born. The name is basically a rip-off of `imgur`, but with msq in it, since that&rsquo;s the extension of uploaded ECU tune files. Clever, eh? I thought so&hellip;</p>
 
-<p>It uses PHP and MariaDB (MySQL fork) on the backend, and the usual gang with AngularJS on the front. I kind of like Angular, it&#8217;s going to take a while to get used to but I like letting the front end do a lot of the work. Especially since I&#8217;m paying for the servers.</p>
+<p>It uses PHP and MariaDB (MySQL fork) on the backend, and the usual gang with AngularJS on the front. I kind of like Angular, it&rsquo;s going to take a while to get used to but I like letting the front end do a lot of the work. Especially since I&rsquo;m paying for the servers.</p>
 
-<p>So after a couple days I got something sort-of usable up. It needs a lot of work, but I have basically everything that was in the standalone version already. You can check it out at: <a href="http://msqur.com/index.php?msq=14">http://msqur.com/</a>. Keep in mind you&#8217;ll need a valid MSQ file to upload. And it&#8217;s a work in progress, something I do on my own time, so updates are large, but far in between.<a href="http://www.nearwood.net/wp-content/uploads/msqur-screenshot.png"><img class="aligncenter size-medium wp-image-544" src="http://www.nearwood.net/wp-content/uploads/msqur-screenshot-300x211.png" alt="msqur-screenshot" width="300" height="211" srcset="https://www.nearwood.net/wp-content/uploads/msqur-screenshot-300x211.png 300w, https://www.nearwood.net/wp-content/uploads/msqur-screenshot-1024x721.png 1024w, https://www.nearwood.net/wp-content/uploads/msqur-screenshot.png 1043w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+<p>So after a couple days I got something sort-of usable up. It needs a lot of work, but I have basically everything that was in the standalone version already. You can check it out at: <a href="https://msqur.com/index.php?msq=14">https://msqur.com/</a>. Keep in mind you&rsquo;ll need a valid MSQ file to upload. And it&rsquo;s a work in progress, something I do on my own time, so updates are large, but far in between.</p>
+
+<p><img class="lostImage" src="" alt="Image no longer available :("/></p>
 
 <p>&nbsp;</p>
 
-<p>For the latest updates and detailed development details, see the <a href="http://www.nearwood.net/tag/msqur/">msqur tag</a>.</p>
+<p>For the latest updates and detailed development details, see the <a href="https://nearwood.dev/tags/msqur/">msqur tag</a>.</p>
 </div>
 				
 				<footer class="post__footer">
 					
 					
 <div class="post__share share">
-	<a class="share__link btn" title="Share on Twitter" href="https://twitter.com/intent/tweet/?url=https%3a%2f%2fblog.nearwood.net%2fpages%2fmsqur%2f&amp;text=MSQur" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, 'Share on Twitter', 'width=800,height=450,resizable=yes,toolbar=0,status=0'); return false">
+	<a class="share__link btn" title="Share on Twitter" href="https://twitter.com/intent/tweet/?url=https%3a%2f%2fnearwood.dev%2fpages%2fmsqur%2f&amp;text=MSQur" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, 'Share on Twitter', 'width=800,height=450,resizable=yes,toolbar=0,status=0'); return false">
 		<svg class="share__icon" aria-label="Twitter" role="img" width="32" height="32" viewBox="0 0 512 512"><path d="M437 152a72 72 0 0 1-40 12 72 72 0 0 0 32-40 72 72 0 0 1-45 17 72 72 0 0 0-122 65 200 200 0 0 1-145-74 72 72 0 0 0 22 94 72 72 0 0 1-32-7 72 72 0 0 0 56 69 72 72 0 0 1-32 1 72 72 0 0 0 67 50 200 200 0 0 1-105 29 200 200 0 0 0 309-179 200 200 0 0 0 35-37"/></svg>
 	</a>
-	<a class="share__link btn" title="Share on Reddit" href="https://www.reddit.com/submit?url=https%3a%2f%2fblog.nearwood.net%2fpages%2fmsqur%2f&amp;title=MSQur" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, 'Share on Reddit', 'width=832,height=624,toolbar=0,status=0'); return false">
+	<a class="share__link btn" title="Share on Reddit" href="https://www.reddit.com/submit?url=https%3a%2f%2fnearwood.dev%2fpages%2fmsqur%2f&amp;title=MSQur" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, 'Share on Reddit', 'width=832,height=624,toolbar=0,status=0'); return false">
 		<svg class="share__icon" aria-label="Reddit" role="img" width="32" height="32" viewBox="0 0 512 512"><path fill-rule="evenodd" d="M375 146a32 32 0 1 0-29-46l-65-13c-5-1-9 2-10 6l-22 97c-45 1-85 15-113 36a42 42 0 1 0-45 69l-1 12c0 65 74 117 166 117s166-52 166-117l-1-11a42 42 0 1 0-44-69c-28-21-67-35-111-37l19-86 58 13a32 32 0 0 0 32 29zM190 353c2-1 4 0 5 1 15 11 38 18 61 18s46-6 61-18a7 7 0 0 1 8 10c-18 14-44 21-69 21-25-1-51-7-69-21a6 6 0 0 1 3-11zm23-44a31 31 0 1 1-44-44 31 31 0 0 1 44 44zm130 0a31 31 0 1 0-44-44 31 31 0 0 0 44 44z"/></svg>
 	</a>
 </div>

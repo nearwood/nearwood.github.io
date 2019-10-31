@@ -9,15 +9,15 @@
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
 		<meta property="og:title" content="Msqur Update" />
-<meta property="og:description" content="Well, the holidays are long over and I haven&#8217;t updated msqur.com in a while. I&#8217;m adding some configuration management to it, so nothing visible will happen for a while. What&#8217;s planned, however, is .ini file parsing so that .msq files can be parsed according to the INI file version they use. That is, I will parse the INI file for the schema to a .msq file instead of hardcoding it. This way showing a ." />
+<meta property="og:description" content="Well, the holidays are long over and I haven&rsquo;t updated msqur.com in a while. I&rsquo;m adding some configuration management to it, so nothing visible will happen for a while. What&rsquo;s planned, however, is .ini file parsing so that .msq files can be parsed according to the INI file version they use. That is, I will parse the INI file for the schema to a .msq file instead of hardcoding it. This way showing a ." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://blog.nearwood.net/msqur-update/" />
+<meta property="og:url" content="https://nearwood.dev/msqur-update/" />
 <meta property="article:published_time" content="2015-02-02T01:06:46+00:00" />
-<meta property="article:modified_time" content="2019-02-03T12:15:22-05:00" />
+<meta property="article:modified_time" content="2019-10-30T11:51:39-05:00" />
 
 		<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Msqur Update"/>
-<meta name="twitter:description" content="Well, the holidays are long over and I haven&#8217;t updated msqur.com in a while. I&#8217;m adding some configuration management to it, so nothing visible will happen for a while. What&#8217;s planned, however, is .ini file parsing so that .msq files can be parsed according to the INI file version they use. That is, I will parse the INI file for the schema to a .msq file instead of hardcoding it. This way showing a ."/>
+<meta name="twitter:description" content="Well, the holidays are long over and I haven&rsquo;t updated msqur.com in a while. I&rsquo;m adding some configuration management to it, so nothing visible will happen for a while. What&rsquo;s planned, however, is .ini file parsing so that .msq files can be parsed according to the INI file version they use. That is, I will parse the INI file for the schema to a .msq file instead of hardcoding it. This way showing a ."/>
 
 	<link rel="stylesheet" href="/css/main.css">
 	<link rel="stylesheet" href="/css/themes/dark-green.css">
@@ -39,7 +39,6 @@
 		</div>
 	</button>
 	<ul id="menu" class="main-nav__list">
-		<li class="main-nav__item"><a class="main-nav__link" href="/">Home</a></li>
 		<li class="main-nav__item"><a class="main-nav__link" href="/pages/about/">About</a></li>
 		<li class="main-nav__item"><a class="main-nav__link" href="/pages/contact/">Contact</a></li>
 	</ul>
@@ -51,9 +50,9 @@
 		<div class="single block">
 			<article class="post">
 				<h1 class="post__title">Msqur Update</h1>
-				<div class="post__content"><p>Well, the holidays are long over and I haven&#8217;t updated msqur.com in a while. I&#8217;m adding some configuration management to it, so nothing visible will happen for a while. What&#8217;s planned, however, is .ini file parsing so that .msq files can be parsed according to the INI file version they use. That is, I will parse the INI file for the schema to a .msq file instead of hardcoding it. This way showing a .msq from a new code version is just a .ini file upload away.</p>
+				<div class="post__content"><p>Well, the holidays are long over and I haven&rsquo;t updated msqur.com in a while. I&rsquo;m adding some configuration management to it, so nothing visible will happen for a while. What&rsquo;s planned, however, is .ini file parsing so that .msq files can be parsed according to the INI file version they use. That is, I will parse the INI file for the schema to a .msq file instead of hardcoding it. This way showing a .msq from a new code version is just a .ini file upload away.</p>
 
-<p>INI file parsing shouldn&#8217;t take long. PHP has exactly what I need (literally: <code>parse_ini_file()</code>), but I&#8217;ll have to bake my own slightly modified version since the MS format isn&#8217;t standard&#8211;if there even is a standard for INI files.</p>
+<p>INI file parsing shouldn&rsquo;t take long. PHP has exactly what I need (literally: <code>parse_ini_file()</code>), but I&rsquo;ll have to bake my own slightly modified version since the MS format isn&rsquo;t standard-if there even is a standard for INI files.</p>
 </div>
 				
 				<footer class="post__footer">
@@ -67,10 +66,10 @@
 
 					
 <div class="post__share share">
-	<a class="share__link btn" title="Share on Twitter" href="https://twitter.com/intent/tweet/?url=https%3a%2f%2fblog.nearwood.net%2fmsqur-update%2f&amp;text=Msqur%20Update" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, 'Share on Twitter', 'width=800,height=450,resizable=yes,toolbar=0,status=0'); return false">
+	<a class="share__link btn" title="Share on Twitter" href="https://twitter.com/intent/tweet/?url=https%3a%2f%2fnearwood.dev%2fmsqur-update%2f&amp;text=Msqur%20Update" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, 'Share on Twitter', 'width=800,height=450,resizable=yes,toolbar=0,status=0'); return false">
 		<svg class="share__icon" aria-label="Twitter" role="img" width="32" height="32" viewBox="0 0 512 512"><path d="M437 152a72 72 0 0 1-40 12 72 72 0 0 0 32-40 72 72 0 0 1-45 17 72 72 0 0 0-122 65 200 200 0 0 1-145-74 72 72 0 0 0 22 94 72 72 0 0 1-32-7 72 72 0 0 0 56 69 72 72 0 0 1-32 1 72 72 0 0 0 67 50 200 200 0 0 1-105 29 200 200 0 0 0 309-179 200 200 0 0 0 35-37"/></svg>
 	</a>
-	<a class="share__link btn" title="Share on Reddit" href="https://www.reddit.com/submit?url=https%3a%2f%2fblog.nearwood.net%2fmsqur-update%2f&amp;title=Msqur%20Update" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, 'Share on Reddit', 'width=832,height=624,toolbar=0,status=0'); return false">
+	<a class="share__link btn" title="Share on Reddit" href="https://www.reddit.com/submit?url=https%3a%2f%2fnearwood.dev%2fmsqur-update%2f&amp;title=Msqur%20Update" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, 'Share on Reddit', 'width=832,height=624,toolbar=0,status=0'); return false">
 		<svg class="share__icon" aria-label="Reddit" role="img" width="32" height="32" viewBox="0 0 512 512"><path fill-rule="evenodd" d="M375 146a32 32 0 1 0-29-46l-65-13c-5-1-9 2-10 6l-22 97c-45 1-85 15-113 36a42 42 0 1 0-45 69l-1 12c0 65 74 117 166 117s166-52 166-117l-1-11a42 42 0 1 0-44-69c-28-21-67-35-111-37l19-86 58 13a32 32 0 0 0 32 29zM190 353c2-1 4 0 5 1 15 11 38 18 61 18s46-6 61-18a7 7 0 0 1 8 10c-18 14-44 21-69 21-25-1-51-7-69-21a6 6 0 0 1 3-11zm23-44a31 31 0 1 1-44-44 31 31 0 0 1 44 44zm130 0a31 31 0 1 0-44-44 31 31 0 0 0 44 44z"/></svg>
 	</a>
 </div>

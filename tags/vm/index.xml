@@ -1,23 +1,23 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>VM on Nick</title>
-    <link>https://blog.nearwood.net/tags/vm/</link>
+    <link>https://nearwood.dev/tags/vm/</link>
     <description>Recent content in VM on Nick</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2019 Nicholas Earwood</copyright>
     <lastBuildDate>Fri, 06 Jul 2012 01:29:31 +0000</lastBuildDate>
     
-	<atom:link href="https://blog.nearwood.net/tags/vm/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://nearwood.dev/tags/vm/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>QEMU on Windows</title>
-      <link>https://blog.nearwood.net/posts/2012-07-05-qemu-on-windows/</link>
+      <link>https://nearwood.dev/posts/2012-07-05-qemu-on-windows/</link>
       <pubDate>Fri, 06 Jul 2012 01:29:31 +0000</pubDate>
       
-      <guid>https://blog.nearwood.net/posts/2012-07-05-qemu-on-windows/</guid>
+      <guid>https://nearwood.dev/posts/2012-07-05-qemu-on-windows/</guid>
       <description>After fumbling around with various downloads and patches, I was able to find a working QEMU build for windows. I am running Windows 7 64-bit, and I wanted to run an ARM system (specifically, to develop for a Stratus plug computer). Before this, I was running a virtualized Ubuntu using VirtualBox and then running QEMU within that. Performance was not noticeably bad.
 However, I had problems bridging the QEMU to the Ubuntu host, which was bridged itself.</description>
     </item>

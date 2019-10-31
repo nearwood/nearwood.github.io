@@ -1,28 +1,28 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>dm-crypt on Nick</title>
-    <link>https://blog.nearwood.net/tags/dm-crypt/</link>
+    <link>https://nearwood.dev/tags/dm-crypt/</link>
     <description>Recent content in dm-crypt on Nick</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2019 Nicholas Earwood</copyright>
     <lastBuildDate>Sat, 06 Dec 2014 03:00:22 +0000</lastBuildDate>
     
-	<atom:link href="https://blog.nearwood.net/tags/dm-crypt/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://nearwood.dev/tags/dm-crypt/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Installing Arch Linux with an encrypted root</title>
-      <link>https://blog.nearwood.net/installing-arch-linux-with-an-encrypted-root/</link>
+      <link>https://nearwood.dev/installing-arch-linux-with-an-encrypted-root/</link>
       <pubDate>Sat, 06 Dec 2014 03:00:22 +0000</pubDate>
       
-      <guid>https://blog.nearwood.net/installing-arch-linux-with-an-encrypted-root/</guid>
-      <description>&lt;p&gt;I&amp;#8217;ve got a ThinkPad T410. I got it off craigslist in what was a somewhat shady transaction. Regardless, it came with a 300GB spinner. Not interested in finding out how much life was left on it I got a solid state replacement from NewEgg for &amp;#8220;Cyber Monday&amp;#8221;. A 240GB Intel one for $110, that&amp;#8217;s less than 50 cents per GB!&lt;/p&gt;
+      <guid>https://nearwood.dev/installing-arch-linux-with-an-encrypted-root/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve got a ThinkPad T410. I got it off craigslist in what was a somewhat shady transaction. Regardless, it came with a 300GB spinner. Not interested in finding out how much life was left on it I got a solid state replacement from NewEgg for &amp;ldquo;Cyber Monday&amp;rdquo;. A 240GB Intel one for $110, that&amp;rsquo;s less than 50 cents per GB!&lt;/p&gt;
 
-&lt;p&gt;The spinner has a single unencrypted partition with Arch Linux running on it. I wanted to run Arch on an encrypted partition. The main reason: If it&amp;#8217;s ever stolen I don&amp;#8217;t want to have to worry about any of the data on it. Bonus reason: Geek/spy points.&lt;/p&gt;
+&lt;p&gt;The spinner has a single unencrypted partition with Arch Linux running on it. I wanted to run Arch on an encrypted partition. The main reason: If it&amp;rsquo;s ever stolen I don&amp;rsquo;t want to have to worry about any of the data on it. Bonus reason: Geek/spy points.&lt;/p&gt;
 
-&lt;p&gt;So, while there are excellent guides for installing Arch, and setting up encryption, and optimizing an SSD, there don&amp;#8217;t seem to be any combining the three. In reality it&amp;#8217;s not that much more difficult, and if you are motivated to setup encryption on Linux in the first place you probably know what you&amp;#8217;re doing. Still, I was disheartened a bit at the lack of information so I decided to note how I went about it in general.&lt;/p&gt;</description>
+&lt;p&gt;So, while there are excellent guides for installing Arch, and setting up encryption, and optimizing an SSD, there don&amp;rsquo;t seem to be any combining the three. In reality it&amp;rsquo;s not that much more difficult, and if you are motivated to setup encryption on Linux in the first place you probably know what you&amp;rsquo;re doing. Still, I was disheartened a bit at the lack of information so I decided to note how I went about it in general.&lt;/p&gt;</description>
     </item>
     
   </channel>

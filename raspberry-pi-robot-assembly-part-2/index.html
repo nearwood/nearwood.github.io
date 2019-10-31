@@ -9,15 +9,15 @@
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
 		<meta property="og:title" content="Raspberry Pi Robot – Assembly Part 2" />
-<meta property="og:description" content="This was the hardest part. If you wire the wrong things together you can brick your Pi. I took some time to decide on which pins to use, and after assembly and testing everything worked. I&#8217;ll explain which pins I picked, but note that this information will not work with other hardware configurations." />
+<meta property="og:description" content="This was the hardest part. If you wire the wrong things together you can brick your Pi. I took some time to decide on which pins to use, and after assembly and testing everything worked. I&rsquo;ll explain which pins I picked, but note that this information will not work with other hardware configurations.[I originally had a Model B Pi, but due to needing the second hardware PWM (which is hidden on the B), switched to the B&#43;." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://blog.nearwood.net/raspberry-pi-robot-assembly-part-2/" />
+<meta property="og:url" content="https://nearwood.dev/raspberry-pi-robot-assembly-part-2/" />
 <meta property="article:published_time" content="2016-03-08T01:47:20+00:00" />
-<meta property="article:modified_time" content="2019-10-11T21:32:11-05:00" />
+<meta property="article:modified_time" content="2019-10-30T12:13:38-05:00" />
 
 		<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Raspberry Pi Robot – Assembly Part 2"/>
-<meta name="twitter:description" content="This was the hardest part. If you wire the wrong things together you can brick your Pi. I took some time to decide on which pins to use, and after assembly and testing everything worked. I&#8217;ll explain which pins I picked, but note that this information will not work with other hardware configurations."/>
+<meta name="twitter:description" content="This was the hardest part. If you wire the wrong things together you can brick your Pi. I took some time to decide on which pins to use, and after assembly and testing everything worked. I&rsquo;ll explain which pins I picked, but note that this information will not work with other hardware configurations.[I originally had a Model B Pi, but due to needing the second hardware PWM (which is hidden on the B), switched to the B&#43;."/>
 
 	<link rel="stylesheet" href="/css/main.css">
 	<link rel="stylesheet" href="/css/themes/dark-green.css">
@@ -39,7 +39,6 @@
 		</div>
 	</button>
 	<ul id="menu" class="main-nav__list">
-		<li class="main-nav__item"><a class="main-nav__link" href="/">Home</a></li>
 		<li class="main-nav__item"><a class="main-nav__link" href="/pages/about/">About</a></li>
 		<li class="main-nav__item"><a class="main-nav__link" href="/pages/contact/">Contact</a></li>
 	</ul>
@@ -51,19 +50,19 @@
 		<div class="single block">
 			<article class="post">
 				<h1 class="post__title">Raspberry Pi Robot – Assembly Part 2</h1>
-				<div class="post__content"><p>This was the hardest part. If you wire the wrong things together you can brick your Pi. I took some time to decide on which pins to use, and after assembly and testing everything worked. I&#8217;ll explain which pins I picked, but note that this information will not work with other hardware configurations.<a href="http://www.nearwood.net/wp-content/uploads/IMG_20141227_115202.jpg"><img class="aligncenter size-medium wp-image-583" src="http://www.nearwood.net/wp-content/uploads/IMG_20141227_115202-300x225.jpg" alt="IMG_20141227_115202" width="300" height="225" srcset="https://www.nearwood.net/wp-content/uploads/IMG_20141227_115202-300x225.jpg 300w, https://www.nearwood.net/wp-content/uploads/IMG_20141227_115202.jpg 800w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+				<div class="post__content"><p>This was the hardest part. If you wire the wrong things together you can brick your Pi. I took some time to decide on which pins to use, and after assembly and testing everything worked. I&rsquo;ll explain which pins I picked, but note that this information will not work with other hardware configurations.[<img class="lostImage" src="" alt="Image no longer available :("/></p>
 
 <p>I originally had a Model B Pi, but due to needing the second hardware PWM (which is hidden on the B), switched to the B+. The B+ is largely the same, save for the 40 pin expansion headers instead of 26. On one of these pins, #35, the second PWM channel is connected. I got a complete kit for $60 or so, that came with a case, wireless USB, power supply, USB cable, heat sinks, etc.</p>
 
-<p>There&#8217;s a slight problem though. I have a parallel cable for a Model B, which is 26 pins. It didn&#8217;t fit on the 40 pin B+ so I had to gently modify the 26 pin parallel cable with a grinder:</p>
+<p>There&rsquo;s a slight problem though. I have a parallel cable for a Model B, which is 26 pins. It didn&rsquo;t fit on the 40 pin B+ so I had to gently modify the 26 pin parallel cable with a grinder:</p>
 
-<p><a href="http://www.nearwood.net/wp-content/uploads/IMG_20141227_111413.jpg"><img class="aligncenter size-medium wp-image-579" src="http://www.nearwood.net/wp-content/uploads/IMG_20141227_111413-300x225.jpg" alt="IMG_20141227_111413" width="300" height="225" srcset="https://www.nearwood.net/wp-content/uploads/IMG_20141227_111413-300x225.jpg 300w, https://www.nearwood.net/wp-content/uploads/IMG_20141227_111413.jpg 800w" sizes="(max-width: 300px) 100vw, 300px" /></a>Technically I&#8217;ve probably comprimised the integrity of the plug&#8217;s locking mechanism but if it doesn&#8217;t work there are other options. You could use jumper wires, as you only really need 15 or so of them. The lonely blue jumper wire there is the sole reason I got the B+.</p>
+<p><img class="lostImage" src="" alt="Image no longer available :("/>Technically I&rsquo;ve probably comprimised the integrity of the plug&rsquo;s locking mechanism but if it doesn&rsquo;t work there are other options. You could use jumper wires, as you only really need 15 or so of them. The lonely blue jumper wire there is the sole reason I got the B+.</p>
 
 <p>Anyway, now that the Pi is sorted, the real assembly comes in wiring up the prototype board.</p>
 
-<p><a href="http://www.nearwood.net/wp-content/uploads/IMG_20141227_111738.jpg"><img class="aligncenter size-medium wp-image-581" src="http://www.nearwood.net/wp-content/uploads/IMG_20141227_111738-225x300.jpg" alt="IMG_20141227_111738" width="225" height="300" srcset="https://www.nearwood.net/wp-content/uploads/IMG_20141227_111738-225x300.jpg 225w, https://www.nearwood.net/wp-content/uploads/IMG_20141227_111738-768x1024.jpg 768w, https://www.nearwood.net/wp-content/uploads/IMG_20141227_111738.jpg 800w" sizes="(max-width: 225px) 100vw, 225px" /></a>That there is the version I have working as of this posting date. I moved the motor B&#8217;s PWM input from pin 17 to a separate header, as I will get to next.</p>
+<p><img class="lostImage" src="" alt="Image no longer available :("/>That there is the version I have working as of this posting date. I moved the motor B&rsquo;s PWM input from pin 17 to a separate header, as I will get to next.</p>
 
-<p>So here&#8217;s the goal. We have a motor controller board that controls two motors, and two encoders. We need to connect up everything from the Pi to these two. That involves power:</p>
+<p>So here&rsquo;s the goal. We have a motor controller board that controls two motors, and two encoders. We need to connect up everything from the Pi to these two. That involves power:</p>
 
 <ul>
 <li>12v for the motors</li>
@@ -73,7 +72,7 @@
 
 <p>The rest of the pins go to digital inputs on either the Pi or the controller. Now, I tried to be clever and hooked it up in a way I thought was logical, but besides the PWM connections, you can swap most everything else around.</p>
 
-<p><a href="http://www.nearwood.net/wp-content/uploads/IMG_20141130_164523.jpg"><img class="aligncenter size-medium wp-image-511" src="http://www.nearwood.net/wp-content/uploads/IMG_20141130_164523-224x300.jpg" alt="IMG_20141130_164523" width="224" height="300" srcset="https://www.nearwood.net/wp-content/uploads/IMG_20141130_164523-224x300.jpg 224w, https://www.nearwood.net/wp-content/uploads/IMG_20141130_164523-767x1024.jpg 767w, https://www.nearwood.net/wp-content/uploads/IMG_20141130_164523.jpg 800w" sizes="(max-width: 224px) 100vw, 224px" /></a></p>
+<p><img class="lostImage" src="" alt="Image no longer available :("/></p>
 
 <table>
 <thead>
@@ -116,9 +115,9 @@
 </tbody>
 </table>
 
-<p>GPIO 2 (SDA) = Encoder 1 (to encoder&#8217;s white wire)</p>
+<p>GPIO 2 (SDA) = Encoder 1 (to encoder&rsquo;s white wire)</p>
 
-<p>GPIO 3 (SCL) = Encoder 2 (to encoder&#8217;s white wire)</p>
+<p>GPIO 3 (SCL) = Encoder 2 (to encoder&rsquo;s white wire)</p>
 
 <p>GPIO 4 = STBY (Yellow wire)</p>
 
@@ -137,23 +136,24 @@
 <p>A few notes:</p>
 
 <ul>
-<li>The encoders need a pullup to work. GPIO 2 and GPIO 3 have a 1.3kOhm pull up to 3.3v enabled by default. We just need to connect the red power wire for the encoders up to 3.3v as well. If you use another pin, you&#8217;ll need to enable the pull-up in software.</li>
-<li>GPIO 18 and GPIO 35 (B+ only) have hardware PWM capabilities as an &#8220;alt function&#8221;, specifically &#8220;ALT_FUNC_5&#8221; for each of them.</li>
+<li>The encoders need a pullup to work. GPIO 2 and GPIO 3 have a 1.3kOhm pull up to 3.3v enabled by default. We just need to connect the red power wire for the encoders up to 3.3v as well. If you use another pin, you&rsquo;ll need to enable the pull-up in software.</li>
+<li>GPIO 18 and GPIO 35 (B+ only) have hardware PWM capabilities as an &ldquo;alt function&rdquo;, specifically &ldquo;ALT_FUNC_5&rdquo; for each of them.</li>
 </ul>
 
-<p>Here&#8217;s the bototm of the board. You can see the routing of the 5v and GND lines clearly.</p>
+<p>Here&rsquo;s the bototm of the board. You can see the routing of the 5v and GND lines clearly.</p>
 
-<p><a href="http://www.nearwood.net/wp-content/uploads/IMG_20141130_164544.jpg"><img class="aligncenter size-medium wp-image-512" src="http://www.nearwood.net/wp-content/uploads/IMG_20141130_164544-224x300.jpg" alt="IMG_20141130_164544" width="224" height="300" srcset="https://www.nearwood.net/wp-content/uploads/IMG_20141130_164544-224x300.jpg 224w, https://www.nearwood.net/wp-content/uploads/IMG_20141130_164544-767x1024.jpg 767w, https://www.nearwood.net/wp-content/uploads/IMG_20141130_164544.jpg 800w" sizes="(max-width: 224px) 100vw, 224px" /></a></p>
+<p><img class="lostImage" src="" alt="Image no longer available :("/></p>
 
 <p>The following is a photo of the voltage regulator that I have a 12v battery pack attached to. And here is the VM (motor voltage) wire hooked up straight to the batter source (so, +12v). This is a soldered jumper wire, so do not, under any circumstance, connect this to your Pi or motor controller except for the VM pin. It will destroy anything else.</p>
 
-<p><a href="http://www.nearwood.net/wp-content/uploads/IMG_20141130_164627.jpg"><img class="size-medium wp-image-514 alignleft" src="http://www.nearwood.net/wp-content/uploads/IMG_20141130_164627-300x225.jpg" alt="IMG_20141130_164627" width="300" height="225" srcset="https://www.nearwood.net/wp-content/uploads/IMG_20141130_164627-300x225.jpg 300w, https://www.nearwood.net/wp-content/uploads/IMG_20141130_164627.jpg 800w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+<p><img class="lostImage" src="" alt="Image no longer available :("/></p>
 
-<p><a href="http://www.nearwood.net/wp-content/uploads/IMG_20141130_164615.jpg"><img class="aligncenter size-medium wp-image-513" src="http://www.nearwood.net/wp-content/uploads/IMG_20141130_164615-300x225.jpg" alt="IMG_20141130_164615" width="300" height="225" srcset="https://www.nearwood.net/wp-content/uploads/IMG_20141130_164615-300x225.jpg 300w, https://www.nearwood.net/wp-content/uploads/IMG_20141130_164615.jpg 800w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+<p><img class="lostImage" src="" alt="Image no longer available :("/></p>
 
 <p>&nbsp;</p>
 
-<p>And in Part 3, I will go over the finished construction.</p></div>
+<p>And in Part 3, I will go over the finished construction.</p>
+</div>
 				
 				<footer class="post__footer">
 					
@@ -166,10 +166,10 @@
 
 					
 <div class="post__share share">
-	<a class="share__link btn" title="Share on Twitter" href="https://twitter.com/intent/tweet/?url=https%3a%2f%2fblog.nearwood.net%2fraspberry-pi-robot-assembly-part-2%2f&amp;text=Raspberry%20Pi%20Robot%20%e2%80%93%20Assembly%20Part%202" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, 'Share on Twitter', 'width=800,height=450,resizable=yes,toolbar=0,status=0'); return false">
+	<a class="share__link btn" title="Share on Twitter" href="https://twitter.com/intent/tweet/?url=https%3a%2f%2fnearwood.dev%2fraspberry-pi-robot-assembly-part-2%2f&amp;text=Raspberry%20Pi%20Robot%20%e2%80%93%20Assembly%20Part%202" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, 'Share on Twitter', 'width=800,height=450,resizable=yes,toolbar=0,status=0'); return false">
 		<svg class="share__icon" aria-label="Twitter" role="img" width="32" height="32" viewBox="0 0 512 512"><path d="M437 152a72 72 0 0 1-40 12 72 72 0 0 0 32-40 72 72 0 0 1-45 17 72 72 0 0 0-122 65 200 200 0 0 1-145-74 72 72 0 0 0 22 94 72 72 0 0 1-32-7 72 72 0 0 0 56 69 72 72 0 0 1-32 1 72 72 0 0 0 67 50 200 200 0 0 1-105 29 200 200 0 0 0 309-179 200 200 0 0 0 35-37"/></svg>
 	</a>
-	<a class="share__link btn" title="Share on Reddit" href="https://www.reddit.com/submit?url=https%3a%2f%2fblog.nearwood.net%2fraspberry-pi-robot-assembly-part-2%2f&amp;title=Raspberry%20Pi%20Robot%20%e2%80%93%20Assembly%20Part%202" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, 'Share on Reddit', 'width=832,height=624,toolbar=0,status=0'); return false">
+	<a class="share__link btn" title="Share on Reddit" href="https://www.reddit.com/submit?url=https%3a%2f%2fnearwood.dev%2fraspberry-pi-robot-assembly-part-2%2f&amp;title=Raspberry%20Pi%20Robot%20%e2%80%93%20Assembly%20Part%202" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, 'Share on Reddit', 'width=832,height=624,toolbar=0,status=0'); return false">
 		<svg class="share__icon" aria-label="Reddit" role="img" width="32" height="32" viewBox="0 0 512 512"><path fill-rule="evenodd" d="M375 146a32 32 0 1 0-29-46l-65-13c-5-1-9 2-10 6l-22 97c-45 1-85 15-113 36a42 42 0 1 0-45 69l-1 12c0 65 74 117 166 117s166-52 166-117l-1-11a42 42 0 1 0-44-69c-28-21-67-35-111-37l19-86 58 13a32 32 0 0 0 32 29zM190 353c2-1 4 0 5 1 15 11 38 18 61 18s46-6 61-18a7 7 0 0 1 8 10c-18 14-44 21-69 21-25-1-51-7-69-21a6 6 0 0 1 3-11zm23-44a31 31 0 1 1-44-44 31 31 0 0 1 44 44zm130 0a31 31 0 1 0-44-44 31 31 0 0 0 44 44z"/></svg>
 	</a>
 </div>

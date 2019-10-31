@@ -1,23 +1,23 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Android on Nick</title>
-    <link>https://blog.nearwood.net/categories/android/</link>
+    <link>https://nearwood.dev/categories/android/</link>
     <description>Recent content in Android on Nick</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2019 Nicholas Earwood</copyright>
     <lastBuildDate>Sat, 28 Oct 2017 03:06:49 +0000</lastBuildDate>
     
-	<atom:link href="https://blog.nearwood.net/categories/android/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://nearwood.dev/categories/android/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Reverse Engineering the firmware on a Kenwood DDX9903S</title>
-      <link>https://blog.nearwood.net/reverse-engineering-the-firmware-on-a-kenwood-ddx9903s/</link>
+      <link>https://nearwood.dev/reverse-engineering-the-firmware-on-a-kenwood-ddx9903s/</link>
       <pubDate>Sat, 28 Oct 2017 03:06:49 +0000</pubDate>
       
-      <guid>https://blog.nearwood.net/reverse-engineering-the-firmware-on-a-kenwood-ddx9903s/</guid>
+      <guid>https://nearwood.dev/reverse-engineering-the-firmware-on-a-kenwood-ddx9903s/</guid>
       <description>&lt;p&gt;I bought and really like my Kenwood Excelon DDX9903S headunit. I had it in my WRX, and moved it to my LS430. It supports Android Auto and CarPlay, which I find really useful when driving.&lt;/p&gt;
 
 &lt;p&gt;However, it has a nag screen every time it boots up. This got me curious as to how it worked, and see if it could be patched to skip this disclaimer. I figured it probably ran Linux on a SoC, as pretty much everything does nowadays. So I grabbed the latest firmware for it (mine was already updated to it), and started probing.&lt;/p&gt;
@@ -31,7 +31,7 @@ MAIN_V1_0_2758_0400/
 SOC_V2_7_0008_0600/
 &lt;/pre&gt;
 
-&lt;p&gt;In each there&amp;#8217;s a .nfu file, which I&amp;#8217;ve never encountered before. I ran binwalk on each:&lt;/p&gt;
+&lt;p&gt;In each there&amp;rsquo;s a .nfu file, which I&amp;rsquo;ve never encountered before. I ran binwalk on each:&lt;/p&gt;
 
 &lt;pre class=&#34;brush: plain; light: true; title: ; notranslate&#34; title=&#34;&#34;&gt;[BOOT_V2_7_0008_0600_release]$ binwalk Boot_2.7.0008.0600.nfu
 DECIMAL HEXADECIMAL DESCRIPTION
@@ -42,17 +42,17 @@ DECIMAL HEXADECIMAL DESCRIPTION
 3209992 0x30FB08 ELF, 64-bit LSB shared object, AMD x86-64, version 1 (SYSV)
 &lt;/pre&gt;
 
-&lt;p&gt;Surprise, surprise, it runs Android. But, I&amp;#8217;m thinking this image is possibly just the firmware updater, and not what I am looking for.&lt;/p&gt;</description>
+&lt;p&gt;Surprise, surprise, it runs Android. But, I&amp;rsquo;m thinking this image is possibly just the firmware updater, and not what I am looking for.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Custom Speed app update</title>
-      <link>https://blog.nearwood.net/custom-speed-app-update/</link>
+      <link>https://nearwood.dev/custom-speed-app-update/</link>
       <pubDate>Fri, 21 Feb 2014 02:15:30 +0000</pubDate>
       
-      <guid>https://blog.nearwood.net/custom-speed-app-update/</guid>
+      <guid>https://nearwood.dev/custom-speed-app-update/</guid>
       <description>I update Custom Speed to 1.1. Changes include:
- An actual theme (consistent colors) More units New icon  2.0 will include an actual settings page that will allow the units to be selected from an easier control, a setting for keeping the display on, and other minor UI improvements. There&amp;#8217;s no ETA currently for 2.0.</description>
+ An actual theme (consistent colors) More units New icon  2.0 will include an actual settings page that will allow the units to be selected from an easier control, a setting for keeping the display on, and other minor UI improvements. There&amp;rsquo;s no ETA currently for 2.0.</description>
     </item>
     
   </channel>

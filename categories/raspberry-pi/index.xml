@@ -1,57 +1,54 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Raspberry Pi on Nick</title>
-    <link>https://blog.nearwood.net/categories/raspberry-pi/</link>
+    <link>https://nearwood.dev/categories/raspberry-pi/</link>
     <description>Recent content in Raspberry Pi on Nick</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2019 Nicholas Earwood</copyright>
     <lastBuildDate>Sat, 21 May 2016 22:06:00 +0000</lastBuildDate>
     
-	<atom:link href="https://blog.nearwood.net/categories/raspberry-pi/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://nearwood.dev/categories/raspberry-pi/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Fixing mirrorlist on Arch Linux Arm (Raspberry Pi)</title>
-      <link>https://blog.nearwood.net/fixing-mirrorlist-on-arch-linux-arm-raspberry-pi/</link>
+      <link>https://nearwood.dev/fixing-mirrorlist-on-arch-linux-arm-raspberry-pi/</link>
       <pubDate>Sat, 21 May 2016 22:06:00 +0000</pubDate>
       
-      <guid>https://blog.nearwood.net/fixing-mirrorlist-on-arch-linux-arm-raspberry-pi/</guid>
-      <description>I hadn&amp;#8217;t updated my Raspberry Pi (a B+ model for my rpi-drd project) in about a year. Pacman -Syu kept complaining about being unable to find files on any of the mirrors.
-So I, without thinking, ran reflector on an x86 host and copied it over. Oops. Now it definitely can&amp;#8217;t find packages.
+      <guid>https://nearwood.dev/fixing-mirrorlist-on-arch-linux-arm-raspberry-pi/</guid>
+      <description>I hadn&amp;rsquo;t updated my Raspberry Pi (a B+ model for my rpi-drd project) in about a year. Pacman -Syu kept complaining about being unable to find files on any of the mirrors.
+So I, without thinking, ran reflector on an x86 host and copied it over. Oops. Now it definitely can&amp;rsquo;t find packages.
 The archlinuxarm.org website gave me the hostname I needed, but not the entire URL. Put this in your mirrorlist (as the sole entry) to restore functionality:</description>
     </item>
     
     <item>
       <title>Raspberry Pi Robot – Assembly Part 2</title>
-      <link>https://blog.nearwood.net/raspberry-pi-robot-assembly-part-2/</link>
+      <link>https://nearwood.dev/raspberry-pi-robot-assembly-part-2/</link>
       <pubDate>Tue, 08 Mar 2016 01:47:20 +0000</pubDate>
       
-      <guid>https://blog.nearwood.net/raspberry-pi-robot-assembly-part-2/</guid>
-      <description>&lt;p&gt;This was the hardest part. If you wire the wrong things together you can brick your Pi. I took some time to decide on which pins to use, and after assembly and testing everything worked. I&amp;#8217;ll explain which pins I picked, but note that this information will not work with other hardware configurations.&lt;a href=&#34;http://www.nearwood.net/wp-content/uploads/IMG_20141227_115202.jpg&#34;&gt;&lt;img class=&#34;aligncenter size-medium wp-image-583&#34; src=&#34;http://www.nearwood.net/wp-content/uploads/IMG_20141227_115202-300x225.jpg&#34; alt=&#34;IMG_20141227_115202&#34; width=&#34;300&#34; height=&#34;225&#34; srcset=&#34;https://www.nearwood.net/wp-content/uploads/IMG_20141227_115202-300x225.jpg 300w, https://www.nearwood.net/wp-content/uploads/IMG_20141227_115202.jpg 800w&#34; sizes=&#34;(max-width: 300px) 100vw, 300px&#34; /&gt;&lt;/a&gt;&lt;/p&gt;</description>
+      <guid>https://nearwood.dev/raspberry-pi-robot-assembly-part-2/</guid>
+      <description>This was the hardest part. If you wire the wrong things together you can brick your Pi. I took some time to decide on which pins to use, and after assembly and testing everything worked. I&amp;rsquo;ll explain which pins I picked, but note that this information will not work with other hardware configurations.[I originally had a Model B Pi, but due to needing the second hardware PWM (which is hidden on the B), switched to the B+.</description>
     </item>
     
     <item>
       <title>Raspberry Pi Robot – Assembly Part 1</title>
-      <link>https://blog.nearwood.net/raspberry-pi-robot-assembly-part-1/</link>
+      <link>https://nearwood.dev/raspberry-pi-robot-assembly-part-1/</link>
       <pubDate>Fri, 26 Dec 2014 15:43:15 +0000</pubDate>
       
-      <guid>https://blog.nearwood.net/raspberry-pi-robot-assembly-part-1/</guid>
-      <description>&lt;p&gt;So you&amp;#8217;ve got a bunch of parts, assembly is pretty easy. I&amp;#8217;m going to skip over most of the chassis assembly since it came with instructions, but I have a couple pointers and I&amp;#8217;ll go over how I attached the encoders. Then I&amp;#8217;ll talk about soldering the motor controller and wiring the encoders up, and which pins to pick from the GPIO of the Pi.&lt;/p&gt;
-
-&lt;p&gt;So this is what the chassis looks like fully assembled:&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.nearwood.net/wp-content/uploads/IMG_20141122_141839.jpg&#34;&gt;&lt;img class=&#34;aligncenter size-medium wp-image-508&#34; src=&#34;http://www.nearwood.net/wp-content/uploads/IMG_20141122_141839-300x225.jpg&#34; alt=&#34;IMG_20141122_141839&#34; width=&#34;300&#34; height=&#34;225&#34; srcset=&#34;https://www.nearwood.net/wp-content/uploads/IMG_20141122_141839-300x225.jpg 300w, https://www.nearwood.net/wp-content/uploads/IMG_20141122_141839.jpg 800w&#34; sizes=&#34;(max-width: 300px) 100vw, 300px&#34; /&gt;&lt;/a&gt;&lt;/p&gt;</description>
+      <guid>https://nearwood.dev/raspberry-pi-robot-assembly-part-1/</guid>
+      <description>So you&amp;rsquo;ve got a bunch of parts, assembly is pretty easy. I&amp;rsquo;m going to skip over most of the chassis assembly since it came with instructions, but I have a couple pointers and I&amp;rsquo;ll go over how I attached the encoders. Then I&amp;rsquo;ll talk about soldering the motor controller and wiring the encoders up, and which pins to pick from the GPIO of the Pi.
+So this is what the chassis looks like fully assembled:</description>
     </item>
     
     <item>
       <title>Raspberry Pi – Cross-compiling</title>
-      <link>https://blog.nearwood.net/raspberry-pi-robot-cross-compiling/</link>
+      <link>https://nearwood.dev/raspberry-pi-robot-cross-compiling/</link>
       <pubDate>Mon, 01 Dec 2014 02:26:47 +0000</pubDate>
       
-      <guid>https://blog.nearwood.net/raspberry-pi-robot-cross-compiling/</guid>
-      <description>&lt;p&gt;Now that you have the hardware built and tested (although that&amp;#8217;s not necessary), you can either use the code I&amp;#8217;ve written&amp;#8211;which is specific to the hardware and environment I have, or compile your own version. If you want to compile your own there are two options:&lt;/p&gt;
+      <guid>https://nearwood.dev/raspberry-pi-robot-cross-compiling/</guid>
+      <description>&lt;p&gt;Now that you have the hardware built and tested (although that&amp;rsquo;s not necessary), you can either use the code I&amp;rsquo;ve written-which is specific to the hardware and environment I have, or compile your own version. If you want to compile your own there are two options:&lt;/p&gt;
 
 &lt;ol&gt;
 &lt;li&gt;Compile on the Pi itself&lt;/li&gt;
@@ -59,11 +56,11 @@ The archlinuxarm.org website gave me the hostname I needed, but not the entire U
 &lt;li&gt;Cross-compile on a faster machine&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;The trade off? Compiling on the Pi is slow (very slow). The virtual machine is a marked improvement for compiling speed, but is complicated to setup. Cross-compiling is about the same difficulty as setting up a virtual machine but a bit faster and less &amp;#8220;bulky&amp;#8221;. So it depends. The virtual machine is nice if you have a lot of libraries you want to use, since you&amp;#8217;ll have to compile all of them to be available for linking. If any of them have poor autoconfig support, it might be a pain to fix if you weren&amp;#8217;t already on the target machine. But, since I just needed one or two popular libraries, I decided to setup cross-compiling from my host (x86_64) machine.&lt;/p&gt;
+&lt;p&gt;The trade off? Compiling on the Pi is slow (very slow). The virtual machine is a marked improvement for compiling speed, but is complicated to setup. Cross-compiling is about the same difficulty as setting up a virtual machine but a bit faster and less &amp;ldquo;bulky&amp;rdquo;. So it depends. The virtual machine is nice if you have a lot of libraries you want to use, since you&amp;rsquo;ll have to compile all of them to be available for linking. If any of them have poor autoconfig support, it might be a pain to fix if you weren&amp;rsquo;t already on the target machine. But, since I just needed one or two popular libraries, I decided to setup cross-compiling from my host (x86_64) machine.&lt;/p&gt;
 
-&lt;p&gt;The last time I setup cross-compiling it was on Gentoo, and it wasn&amp;#8217;t pleasant. However, after a little bit of research it looks like the &lt;a href=&#34;http://crosstool-ng.org/&#34; target=&#34;_blank&#34;&gt;crosstool-ng project&lt;/a&gt; is pretty popular and useful. I only had to patch one tiny thing.&lt;/p&gt;
+&lt;p&gt;The last time I setup cross-compiling it was on Gentoo, and it wasn&amp;rsquo;t pleasant. However, after a little bit of research it looks like the &lt;a href=&#34;https://crosstool-ng.org/&#34; target=&#34;_blank&#34;&gt;crosstool-ng project&lt;/a&gt; is pretty popular and useful. I only had to patch one tiny thing.&lt;/p&gt;
 
-&lt;p&gt;Here&amp;#8217;s the overall process:&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s the overall process:&lt;/p&gt;
 
 &lt;ol&gt;
 &lt;li&gt;Install crosstool-ng&lt;/li&gt;
@@ -75,13 +72,13 @@ The archlinuxarm.org website gave me the hostname I needed, but not the entire U
     
     <item>
       <title>Raspberry Pi Robot</title>
-      <link>https://blog.nearwood.net/raspberry-pi-robot/</link>
+      <link>https://nearwood.dev/raspberry-pi-robot/</link>
       <pubDate>Wed, 26 Nov 2014 04:01:23 +0000</pubDate>
       
-      <guid>https://blog.nearwood.net/raspberry-pi-robot/</guid>
-      <description>&lt;p&gt;So, a while back I gave my wife a &lt;a href=&#34;http://goldenarmor.com/farscape-drd/&#34; target=&#34;_blank&#34;&gt;Farscape DRD kit&lt;/a&gt;. I promised to make it in to a robot. How hard could it be? Well, not too bad. A little more expensive than planned, though&amp;#8230;&lt;/p&gt;
+      <guid>https://nearwood.dev/raspberry-pi-robot/</guid>
+      <description>&lt;p&gt;So, a while back I gave my wife a &lt;a href=&#34;https://goldenarmor.com/farscape-drd/&#34; target=&#34;_blank&#34;&gt;Farscape DRD kit&lt;/a&gt;. I promised to make it in to a robot. How hard could it be? Well, not too bad. A little more expensive than planned, though&amp;hellip;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://www.nearwood.net/wp-content/uploads/IMG_20141122_142828.jpg&#34;&gt;&lt;img class=&#34;aligncenter size-medium wp-image-472&#34; src=&#34;http://www.nearwood.net/wp-content/uploads/IMG_20141122_142828-300x225.jpg&#34; alt=&#34;IMG_20141122_142828&#34; width=&#34;300&#34; height=&#34;225&#34; srcset=&#34;https://www.nearwood.net/wp-content/uploads/IMG_20141122_142828-300x225.jpg 300w, https://www.nearwood.net/wp-content/uploads/IMG_20141122_142828.jpg 800w&#34; sizes=&#34;(max-width: 300px) 100vw, 300px&#34; /&gt;&lt;/a&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;img class=&#34;lostImage&#34; src=&#34;&#34; alt=&#34;Image no longer available :(&#34;/&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

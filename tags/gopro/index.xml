@@ -1,25 +1,25 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>gopro on Nick</title>
-    <link>https://blog.nearwood.net/tags/gopro/</link>
+    <link>https://nearwood.dev/tags/gopro/</link>
     <description>Recent content in gopro on Nick</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2019 Nicholas Earwood</copyright>
     <lastBuildDate>Fri, 10 Apr 2015 02:51:49 +0000</lastBuildDate>
     
-	<atom:link href="https://blog.nearwood.net/tags/gopro/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://nearwood.dev/tags/gopro/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Action Camera Review: Garmin Virb Elite</title>
-      <link>https://blog.nearwood.net/action-camera-review-garmin-virb-elite/</link>
+      <link>https://nearwood.dev/action-camera-review-garmin-virb-elite/</link>
       <pubDate>Fri, 10 Apr 2015 02:51:49 +0000</pubDate>
       
-      <guid>https://blog.nearwood.net/action-camera-review-garmin-virb-elite/</guid>
-      <description>After seeing a fellow MSNE autocrosser post a video with nice data overlays, I asked what datalogger and software he used. It turns out it wasn&amp;#8217;t just a data logger, it was a camera that gathered his speed, acceleration, and so on for him. It was the Garmin Virb Elite. The &amp;#8216;Elite&amp;#8217; part signifying the difference between the non-sensor, data-less variant.
-I&amp;#8217;d never heard of it, and I thought I kept at least a cursory eye on the action camera market.</description>
+      <guid>https://nearwood.dev/action-camera-review-garmin-virb-elite/</guid>
+      <description>After seeing a fellow MSNE autocrosser post a video with nice data overlays, I asked what datalogger and software he used. It turns out it wasn&amp;rsquo;t just a data logger, it was a camera that gathered his speed, acceleration, and so on for him. It was the Garmin Virb Elite. The &amp;lsquo;Elite&amp;rsquo; part signifying the difference between the non-sensor, data-less variant.
+I&amp;rsquo;d never heard of it, and I thought I kept at least a cursory eye on the action camera market.</description>
     </item>
     
   </channel>

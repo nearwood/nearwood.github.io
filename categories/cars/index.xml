@@ -1,23 +1,23 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Cars on Nick</title>
-    <link>https://blog.nearwood.net/categories/cars/</link>
+    <link>https://nearwood.dev/categories/cars/</link>
     <description>Recent content in Cars on Nick</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2019 Nicholas Earwood</copyright>
     <lastBuildDate>Sat, 28 Oct 2017 03:06:49 +0000</lastBuildDate>
     
-	<atom:link href="https://blog.nearwood.net/categories/cars/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://nearwood.dev/categories/cars/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Reverse Engineering the firmware on a Kenwood DDX9903S</title>
-      <link>https://blog.nearwood.net/reverse-engineering-the-firmware-on-a-kenwood-ddx9903s/</link>
+      <link>https://nearwood.dev/reverse-engineering-the-firmware-on-a-kenwood-ddx9903s/</link>
       <pubDate>Sat, 28 Oct 2017 03:06:49 +0000</pubDate>
       
-      <guid>https://blog.nearwood.net/reverse-engineering-the-firmware-on-a-kenwood-ddx9903s/</guid>
+      <guid>https://nearwood.dev/reverse-engineering-the-firmware-on-a-kenwood-ddx9903s/</guid>
       <description>&lt;p&gt;I bought and really like my Kenwood Excelon DDX9903S headunit. I had it in my WRX, and moved it to my LS430. It supports Android Auto and CarPlay, which I find really useful when driving.&lt;/p&gt;
 
 &lt;p&gt;However, it has a nag screen every time it boots up. This got me curious as to how it worked, and see if it could be patched to skip this disclaimer. I figured it probably ran Linux on a SoC, as pretty much everything does nowadays. So I grabbed the latest firmware for it (mine was already updated to it), and started probing.&lt;/p&gt;
@@ -31,7 +31,7 @@ MAIN_V1_0_2758_0400/
 SOC_V2_7_0008_0600/
 &lt;/pre&gt;
 
-&lt;p&gt;In each there&amp;#8217;s a .nfu file, which I&amp;#8217;ve never encountered before. I ran binwalk on each:&lt;/p&gt;
+&lt;p&gt;In each there&amp;rsquo;s a .nfu file, which I&amp;rsquo;ve never encountered before. I ran binwalk on each:&lt;/p&gt;
 
 &lt;pre class=&#34;brush: plain; light: true; title: ; notranslate&#34; title=&#34;&#34;&gt;[BOOT_V2_7_0008_0600_release]$ binwalk Boot_2.7.0008.0600.nfu
 DECIMAL HEXADECIMAL DESCRIPTION
@@ -42,229 +42,229 @@ DECIMAL HEXADECIMAL DESCRIPTION
 3209992 0x30FB08 ELF, 64-bit LSB shared object, AMD x86-64, version 1 (SYSV)
 &lt;/pre&gt;
 
-&lt;p&gt;Surprise, surprise, it runs Android. But, I&amp;#8217;m thinking this image is possibly just the firmware updater, and not what I am looking for.&lt;/p&gt;</description>
+&lt;p&gt;Surprise, surprise, it runs Android. But, I&amp;rsquo;m thinking this image is possibly just the firmware updater, and not what I am looking for.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>405HP 280Z</title>
-      <link>https://blog.nearwood.net/405hp-280z/</link>
+      <link>https://nearwood.dev/405hp-280z/</link>
       <pubDate>Wed, 12 Oct 2016 17:21:44 +0000</pubDate>
       
-      <guid>https://blog.nearwood.net/405hp-280z/</guid>
-      <description>A somewhat local place had a surprise dyno day so I went to try and tune my car a bit. Was somewhat successful, reaching 405 HP and 420 Ft-lbs. before giving up. I was hoping for 450 HP, as my turbo and injectors should be able to support it easily, but oh well. I couldn&amp;#8217;t get past ~14psi or so.
+      <guid>https://nearwood.dev/405hp-280z/</guid>
+      <description>A somewhat local place had a surprise dyno day so I went to try and tune my car a bit. Was somewhat successful, reaching 405 HP and 420 Ft-lbs. before giving up. I was hoping for 450 HP, as my turbo and injectors should be able to support it easily, but oh well. I couldn&amp;rsquo;t get past ~14psi or so.
   But I kept experiencing some spark blow-out and had a rear main leak, so I decided to cut it short.</description>
     </item>
     
     <item>
       <title>Gentoo Linux Tesla – It was only a matter of time…</title>
-      <link>https://blog.nearwood.net/gentoo-linux-tesla-it-was-only-a-matter-of-time/</link>
+      <link>https://nearwood.dev/gentoo-linux-tesla-it-was-only-a-matter-of-time/</link>
       <pubDate>Thu, 21 Apr 2016 22:07:09 +0000</pubDate>
       
-      <guid>https://blog.nearwood.net/gentoo-linux-tesla-it-was-only-a-matter-of-time/</guid>
-      <description>Surprise, surprise, my old favorite Gentoo Linux is now running on a Tesla Model S. Hope he doesn&amp;#8217;t emerge world while driving.</description>
+      <guid>https://nearwood.dev/gentoo-linux-tesla-it-was-only-a-matter-of-time/</guid>
+      <description>Surprise, surprise, my old favorite Gentoo Linux is now running on a Tesla Model S. Hope he doesn&amp;rsquo;t emerge world while driving.</description>
     </item>
     
     <item>
       <title>October Autocross</title>
-      <link>https://blog.nearwood.net/october-autocross/</link>
+      <link>https://nearwood.dev/october-autocross/</link>
       <pubDate>Wed, 21 Oct 2015 02:59:35 +0000</pubDate>
       
-      <guid>https://blog.nearwood.net/october-autocross/</guid>
+      <guid>https://nearwood.dev/october-autocross/</guid>
       <description>Got a new oxygen sensor installed, tuned it a bit, and went to an autocross in my 280Z a couple weeks ago. I was third in my class! Out of three, though. So last. Still, the real victory is that my car made it there, ran, started and restarted fine, and then made it back home.
 I also got to try my slicks out for the first time, and man, they make the car much more predictable.</description>
     </item>
     
     <item>
       <title>280Z Update</title>
-      <link>https://blog.nearwood.net/280z-update/</link>
+      <link>https://nearwood.dev/280z-update/</link>
       <pubDate>Sun, 06 Sep 2015 00:24:12 +0000</pubDate>
       
-      <guid>https://blog.nearwood.net/280z-update/</guid>
-      <description>It&amp;#8217;s been a while since I&amp;#8217;ve worked on my Z. I&amp;#8217;ve been working on rebuilding my wife&amp;#8217;s 300ZX, which is progressing slowly. My Z had a dead oxygen sensor and was not tuned correctly. It also had a fuel leak. But last week I fixed both of those issues and now it runs like a champ.
+      <guid>https://nearwood.dev/280z-update/</guid>
+      <description>It&amp;rsquo;s been a while since I&amp;rsquo;ve worked on my Z. I&amp;rsquo;ve been working on rebuilding my wife&amp;rsquo;s 300ZX, which is progressing slowly. My Z had a dead oxygen sensor and was not tuned correctly. It also had a fuel leak. But last week I fixed both of those issues and now it runs like a champ.
 I then leaned out the fuel table by about 25% (I had richened it up when the sensor died to be safe).</description>
     </item>
     
     <item>
       <title>3rd pump’s the charm</title>
-      <link>https://blog.nearwood.net/3rd-pumps-the-charm/</link>
+      <link>https://nearwood.dev/3rd-pumps-the-charm/</link>
       <pubDate>Sun, 16 Aug 2015 04:02:50 +0000</pubDate>
       
-      <guid>https://blog.nearwood.net/3rd-pumps-the-charm/</guid>
-      <description>So I picked up a Bosch 044 fuel pump for a song, and decided to get rid of my Fuelab Prodigy pump. I almost wrote about the Fuelab install, but since I intended on replacing it, it wasn&amp;#8217;t worth it. It was just too much for my vehicle, even at my target boost levels.
+      <guid>https://nearwood.dev/3rd-pumps-the-charm/</guid>
+      <description>So I picked up a Bosch 044 fuel pump for a song, and decided to get rid of my Fuelab Prodigy pump. I almost wrote about the Fuelab install, but since I intended on replacing it, it wasn&amp;rsquo;t worth it. It was just too much for my vehicle, even at my target boost levels.
 The Fuelab pump was brushless, and so was very picky about voltage. It was unusable during cranking due to a large voltage drop because of my small battery.</description>
     </item>
     
     <item>
       <title>Harbor Freight Trailer Build – Part 3</title>
-      <link>https://blog.nearwood.net/harbor-freight-trailer-build-part-3/</link>
+      <link>https://nearwood.dev/harbor-freight-trailer-build-part-3/</link>
       <pubDate>Sat, 02 May 2015 16:00:58 +0000</pubDate>
       
-      <guid>https://blog.nearwood.net/harbor-freight-trailer-build-part-3/</guid>
-      <description>&lt;p&gt;It&amp;#8217;s been a while from the &lt;a href=&#34;http://www.nearwood.net/harbor-freight-trailer-build-part-2/&#34;&gt;last update&lt;/a&gt;, but the build is winding down. That&amp;#8217;s good, because I&amp;#8217;ve put entirely too much effort into this.&lt;/p&gt;
+      <guid>https://nearwood.dev/harbor-freight-trailer-build-part-3/</guid>
+      <description>&lt;p&gt;It&amp;rsquo;s been a while from the &lt;a href=&#34;https://nearwood.dev/harbor-freight-trailer-build-part-2/&#34;&gt;last update&lt;/a&gt;, but the build is winding down. That&amp;rsquo;s good, because I&amp;rsquo;ve put entirely too much effort into this.&lt;/p&gt;
 
-&lt;p&gt;I figured out how to secure the tires. Using some &lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;8&lt;/sub&gt;&amp;#8243; steel angle ($30), I made some mounts.&lt;/p&gt;
+&lt;p&gt;I figured out how to secure the tires. Using some &lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;8&lt;/sub&gt;&amp;rdquo; steel angle ($30), I made some mounts.&lt;/p&gt;
 
-&lt;p&gt;&lt;img class=&#34;size-auto alignnone&#34; src=&#34;http://i1351.photobucket.com/albums/p789/nearwood/Trailer%20Build/20150328_130919_zps9dzar1ck.jpg&#34; alt=&#34;&#34; width=&#34;1024&#34; height=&#34;576&#34; /&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;img class=&#34;lostImage&#34; src=&#34;&#34; alt=&#34;Image no longer available :(&#34;/&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>On Properly Setting Your Cooling Fan Temperature Threshold</title>
-      <link>https://blog.nearwood.net/on-properly-setting-your-cooling-fan-temperature-threshold/</link>
+      <link>https://nearwood.dev/on-properly-setting-your-cooling-fan-temperature-threshold/</link>
       <pubDate>Sun, 08 Mar 2015 17:31:21 +0000</pubDate>
       
-      <guid>https://blog.nearwood.net/on-properly-setting-your-cooling-fan-temperature-threshold/</guid>
+      <guid>https://nearwood.dev/on-properly-setting-your-cooling-fan-temperature-threshold/</guid>
       <description>&lt;p&gt;When I first installed an aftermarket ECU (Megasquirt I) in my 1984 300ZX, years ago (almost 10 as of this writing!), I used the recommended GM sensor for coolant temperature. It required a bit of machining to fit the sensor, nothing major.&lt;/p&gt;
 
-&lt;p&gt;With my latest engine (and the two cars it was in), I decided to use the OEM Cylinder Head Temperature Sensor, since hey, why not? It was already there, in an optimal spot. All I had to do was make software changes to calibrate MS-II to it&amp;#8217;s temperature/resistance curve. I had the data in the Factory Service Manual, all was well.&lt;/p&gt;</description>
+&lt;p&gt;With my latest engine (and the two cars it was in), I decided to use the OEM Cylinder Head Temperature Sensor, since hey, why not? It was already there, in an optimal spot. All I had to do was make software changes to calibrate MS-II to it&amp;rsquo;s temperature/resistance curve. I had the data in the Factory Service Manual, all was well.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Harbor Freight Trailer Build – Part 2</title>
-      <link>https://blog.nearwood.net/harbor-freight-trailer-build-part-2/</link>
+      <link>https://nearwood.dev/harbor-freight-trailer-build-part-2/</link>
       <pubDate>Fri, 27 Feb 2015 01:09:39 +0000</pubDate>
       
-      <guid>https://blog.nearwood.net/harbor-freight-trailer-build-part-2/</guid>
-      <description>&lt;p&gt;I finished up the tail light and signal wiring. I still have 4 LED clearance lights to place somewhere, but I&amp;#8217;ll wait until I figure out what else is going on the trailer before placing them, in the hopes I can place them higher up.&lt;/p&gt;
+      <guid>https://nearwood.dev/harbor-freight-trailer-build-part-2/</guid>
+      <description>&lt;p&gt;I finished up the tail light and signal wiring. I still have 4 LED clearance lights to place somewhere, but I&amp;rsquo;ll wait until I figure out what else is going on the trailer before placing them, in the hopes I can place them higher up.&lt;/p&gt;
 
-&lt;p&gt;&lt;img class=&#34;aligncenter wp-image-622 size-large&#34; src=&#34;http://www.nearwood.net/wp-content/uploads/20150222_164759_zpsvbyi5ftu-1024x576.jpg&#34; alt=&#34;20150222_164759_zpsvbyi5ftu&#34; width=&#34;640&#34; height=&#34;360&#34; srcset=&#34;https://www.nearwood.net/wp-content/uploads/20150222_164759_zpsvbyi5ftu.jpg 1024w, https://www.nearwood.net/wp-content/uploads/20150222_164759_zpsvbyi5ftu-300x169.jpg 300w&#34; sizes=&#34;(max-width: 640px) 100vw, 640px&#34; /&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;img class=&#34;lostImage&#34; src=&#34;&#34; alt=&#34;Image no longer available :(&#34;/&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Harbor Freight Trailer Build</title>
-      <link>https://blog.nearwood.net/harbor-freight-trailer-build/</link>
+      <link>https://nearwood.dev/harbor-freight-trailer-build/</link>
       <pubDate>Mon, 19 Jan 2015 17:01:39 +0000</pubDate>
       
-      <guid>https://blog.nearwood.net/harbor-freight-trailer-build/</guid>
-      <description>&lt;p&gt;So I&amp;#8217;ve got this autocross bug, despite being a terrible driver. After about 5 seconds of thought, I came to the conclusion that I must get an autocross trailer in order to improve my skills.&lt;/p&gt;
+      <guid>https://nearwood.dev/harbor-freight-trailer-build/</guid>
+      <description>&lt;p&gt;So I&amp;rsquo;ve got this autocross bug, despite being a terrible driver. After about 5 seconds of thought, I came to the conclusion that I must get an autocross trailer in order to improve my skills.&lt;/p&gt;
 
-&lt;p&gt;So, after a bit of research it looked like item #90153 was the thing to get. The key is it has 12&amp;#8243; wheels, whereas the cheaper one (#42708) has 8&amp;#8243; ones. The larger the wheel the less RPM the wheel bearings see, which is good. The increased payload capacity and trailer height were just bonuses. Since I plan on hauling some wheels and tires and some tools, I don&amp;#8217;t see coming near the 1000+ lb. payload capacity. And if you wanted to carry more, all you&amp;#8217;d really need is some better tires, since that&amp;#8217;s the actual limiting factor. However, I don&amp;#8217;t recommend carrying anything near the payload capacity.&lt;/p&gt;
+&lt;p&gt;So, after a bit of research it looked like item #90153 was the thing to get. The key is it has 12&amp;rdquo; wheels, whereas the cheaper one (#42708) has 8&amp;rdquo; ones. The larger the wheel the less RPM the wheel bearings see, which is good. The increased payload capacity and trailer height were just bonuses. Since I plan on hauling some wheels and tires and some tools, I don&amp;rsquo;t see coming near the 1000+ lb. payload capacity. And if you wanted to carry more, all you&amp;rsquo;d really need is some better tires, since that&amp;rsquo;s the actual limiting factor. However, I don&amp;rsquo;t recommend carrying anything near the payload capacity.&lt;/p&gt;
 
 &lt;p&gt;Note that this is one of the few big-ticket items you can use the 20% coupon on, so if you want to save $46 or so off the price, use one! I got it and built it:&lt;/p&gt;
 
-&lt;p&gt;&lt;img class=&#34;size-auto alignnone&#34; src=&#34;http://i.imgur.com/2yDVaX2l.jpg&#34; alt=&#34;&#34; width=&#34;640&#34; height=&#34;387&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img class=&#34;size-auto alignnone&#34; src=&#34;https://i.imgur.com/2yDVaX2l.jpg&#34; alt=&#34;&#34; width=&#34;640&#34; height=&#34;387&#34; /&gt;&lt;/p&gt;
 
-&lt;p&gt;I also picked up a trailer jack, LED lighting kit, 1-&lt;sup&gt;7&lt;/sup&gt;&amp;frasl;&lt;sub&gt;8&lt;/sub&gt;&amp;#8243; ball, and ratcheting straps from HF. From elsewhere I got a backup alarm, more LED lights, battery tray, some wire and a voltage gauge.&lt;/p&gt;
+&lt;p&gt;I also picked up a trailer jack, LED lighting kit, 1-&lt;sup&gt;7&lt;/sup&gt;&amp;frasl;&lt;sub&gt;8&lt;/sub&gt;&amp;rdquo; ball, and ratcheting straps from HF. From elsewhere I got a backup alarm, more LED lights, battery tray, some wire and a voltage gauge.&lt;/p&gt;
 
 &lt;p&gt;I then painted the frame and wheels to match my 280Z:&lt;/p&gt;
 
-&lt;p&gt;&lt;img class=&#34;size-auto alignnone&#34; src=&#34;http://i.imgur.com/8PgwmRvl.jpg&#34; alt=&#34;&#34; width=&#34;480&#34; height=&#34;640&#34; /&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;img class=&#34;size-auto alignnone&#34; src=&#34;https://i.imgur.com/8PgwmRvl.jpg&#34; alt=&#34;&#34; width=&#34;480&#34; height=&#34;640&#34; /&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>msqur.com – MSQ file sharing site</title>
-      <link>https://blog.nearwood.net/msqur-com-msq-file-sharing-site/</link>
+      <link>https://nearwood.dev/msqur-com-msq-file-sharing-site/</link>
       <pubDate>Wed, 31 Dec 2014 01:39:42 +0000</pubDate>
       
-      <guid>https://blog.nearwood.net/msqur-com-msq-file-sharing-site/</guid>
-      <description>Well, I&amp;#8217;ve only been working on it a little so far, but I suppose it&amp;#8217;s good enough to post about at this point.
-The site is msqur.com, and it&amp;#8217;s for Megasquirt ECU users to share their tunes (from the TunerStudio MS software). You can upload (multiple) .msq files, assign some engine information to them at upload, and share them with other people for troubleshooting or tuning help. The goal is to make something easier than attaching a file to a forum post that others have to download and fire up the full tuning software suite to just view it.</description>
+      <guid>https://nearwood.dev/msqur-com-msq-file-sharing-site/</guid>
+      <description>Well, I&amp;rsquo;ve only been working on it a little so far, but I suppose it&amp;rsquo;s good enough to post about at this point.
+The site is msqur.com, and it&amp;rsquo;s for Megasquirt ECU users to share their tunes (from the TunerStudio MS software). You can upload (multiple) .msq files, assign some engine information to them at upload, and share them with other people for troubleshooting or tuning help. The goal is to make something easier than attaching a file to a forum post that others have to download and fire up the full tuning software suite to just view it.</description>
     </item>
     
     <item>
       <title>Carduino 2.0</title>
-      <link>https://blog.nearwood.net/carduino-2-0/</link>
+      <link>https://nearwood.dev/carduino-2-0/</link>
       <pubDate>Sun, 09 Nov 2014 18:19:24 +0000</pubDate>
       
-      <guid>https://blog.nearwood.net/carduino-2-0/</guid>
-      <description>Over a year ago I got an Arduino Uno and a CAN-BUS Shield to try and make some kind of datalogger for my car. I was also interested in using the OpenXC library with it (which might need a port if there isn&amp;#8217;t one already, since it uses the Digilent chipKIT Max32 development board). While OpenXC allows interfacing with Android stuff for phones, I&amp;#8217;m more interested in a self-contained datalogging type deal.</description>
+      <guid>https://nearwood.dev/carduino-2-0/</guid>
+      <description>Over a year ago I got an Arduino Uno and a CAN-BUS Shield to try and make some kind of datalogger for my car. I was also interested in using the OpenXC library with it (which might need a port if there isn&amp;rsquo;t one already, since it uses the Digilent chipKIT Max32 development board). While OpenXC allows interfacing with Android stuff for phones, I&amp;rsquo;m more interested in a self-contained datalogging type deal.</description>
     </item>
     
     <item>
       <title>First autocross with a VG33</title>
-      <link>https://blog.nearwood.net/first-autocross-with-a-vg33/</link>
+      <link>https://nearwood.dev/first-autocross-with-a-vg33/</link>
       <pubDate>Mon, 27 Oct 2014 02:01:31 +0000</pubDate>
       
-      <guid>https://blog.nearwood.net/first-autocross-with-a-vg33/</guid>
-      <description>Well, with less than a couple hundred miles on the rebuilt engine, it was time to really break-in the new VG33. I took it to an autocross. Things were going well until I shut it off after my second run. It didn&amp;#8217;t want to restart after that. It appears that the culprit was low battery voltage, as the ECU was resetting and the fuel pump never even came on during cranking.</description>
+      <guid>https://nearwood.dev/first-autocross-with-a-vg33/</guid>
+      <description>Well, with less than a couple hundred miles on the rebuilt engine, it was time to really break-in the new VG33. I took it to an autocross. Things were going well until I shut it off after my second run. It didn&amp;rsquo;t want to restart after that. It appears that the culprit was low battery voltage, as the ECU was resetting and the fuel pump never even came on during cranking.</description>
     </item>
     
     <item>
       <title>280Z LED Conversion Part 2</title>
-      <link>https://blog.nearwood.net/280z-led-conversion-part-2/</link>
+      <link>https://nearwood.dev/280z-led-conversion-part-2/</link>
       <pubDate>Tue, 21 Oct 2014 23:08:25 +0000</pubDate>
       
-      <guid>https://blog.nearwood.net/280z-led-conversion-part-2/</guid>
-      <description>Continuing from part 1, this is the start of installation and results of the LED conversion. I ordered a small bunch of LEDs to get a feel for what brightness I&amp;#8217;m looking at since the website I ordered from has somewhat confusing &amp;#8216;relative intensity&amp;#8217;, &amp;#8216;brightness&amp;#8217;, and &amp;#8216;lumens&amp;#8217; listed for each bulb. Not to mention the prices seemed to fluctuate independently of any of those values so it wasn&amp;#8217;t as simple as &amp;#8216;find the most expensive ones&amp;#8217;.</description>
+      <guid>https://nearwood.dev/280z-led-conversion-part-2/</guid>
+      <description>Continuing from part 1, this is the start of installation and results of the LED conversion. I ordered a small bunch of LEDs to get a feel for what brightness I&amp;rsquo;m looking at since the website I ordered from has somewhat confusing &amp;lsquo;relative intensity&amp;rsquo;, &amp;lsquo;brightness&amp;rsquo;, and &amp;lsquo;lumens&amp;rsquo; listed for each bulb. Not to mention the prices seemed to fluctuate independently of any of those values so it wasn&amp;rsquo;t as simple as &amp;lsquo;find the most expensive ones&amp;rsquo;.</description>
     </item>
     
     <item>
       <title>280Z LED Conversion Part 1</title>
-      <link>https://blog.nearwood.net/280z-led-conversion-part-1/</link>
+      <link>https://nearwood.dev/280z-led-conversion-part-1/</link>
       <pubDate>Tue, 23 Sep 2014 00:38:25 +0000</pubDate>
       
-      <guid>https://blog.nearwood.net/280z-led-conversion-part-1/</guid>
-      <description>My 280Z isn&amp;#8217;t what you could call &amp;#8220;modern&amp;#8221; in the electrical department. Originally, it came with an externally regulated alternator, fusible links, incandescent bulbs, and very few relays. The design inhereted a few things from Lucas eletronics, which is not a good thing. Regardless, it was fairly normal for the time. I&amp;#8217;m glad there are no vacuum operated things, like some makes. The most electrically obtuse part of the design is the lack of relays.</description>
+      <guid>https://nearwood.dev/280z-led-conversion-part-1/</guid>
+      <description>My 280Z isn&amp;rsquo;t what you could call &amp;ldquo;modern&amp;rdquo; in the electrical department. Originally, it came with an externally regulated alternator, fusible links, incandescent bulbs, and very few relays. The design inhereted a few things from Lucas eletronics, which is not a good thing. Regardless, it was fairly normal for the time. I&amp;rsquo;m glad there are no vacuum operated things, like some makes. The most electrically obtuse part of the design is the lack of relays.</description>
     </item>
     
     <item>
       <title>3.3L 280Z Runs</title>
-      <link>https://blog.nearwood.net/3-3l-280z-runs/</link>
+      <link>https://nearwood.dev/3-3l-280z-runs/</link>
       <pubDate>Tue, 29 Jul 2014 00:10:14 +0000</pubDate>
       
-      <guid>https://blog.nearwood.net/3-3l-280z-runs/</guid>
-      <description>So, am I the first? The first to put a VG33 in an S30? I have doubts but I&amp;#8217;ve never heard of it before. After a bit of late night work and an unplanned oil event and a small unplanned fuel dump after removing and replacing the engine to fix the oil leak, it&amp;#8217;s back in, running, and more importantly: not leaking.
-Here&amp;#8217;s a late night in-progress shot:
+      <guid>https://nearwood.dev/3-3l-280z-runs/</guid>
+      <description>So, am I the first? The first to put a VG33 in an S30? I have doubts but I&amp;rsquo;ve never heard of it before. After a bit of late night work and an unplanned oil event and a small unplanned fuel dump after removing and replacing the engine to fix the oil leak, it&amp;rsquo;s back in, running, and more importantly: not leaking.
+Here&amp;rsquo;s a late night in-progress shot:
 &amp;nbsp;
 All the work was worth it, I had to get it running for a scheduled photoshoot:</description>
     </item>
     
     <item>
       <title>280Z SpeedHut gauge conversion</title>
-      <link>https://blog.nearwood.net/280z-speedhut-gauge-conversion/</link>
+      <link>https://nearwood.dev/280z-speedhut-gauge-conversion/</link>
       <pubDate>Sat, 24 May 2014 01:11:23 +0000</pubDate>
       
-      <guid>https://blog.nearwood.net/280z-speedhut-gauge-conversion/</guid>
+      <guid>https://nearwood.dev/280z-speedhut-gauge-conversion/</guid>
       <description>&lt;p&gt;I acquired some Speedhut gauges a while back for a deal, and I just got a free 240Z wheel, so I decided to do all three. In this part I just remove and fit the Speedhut gauges in the old speedo and tachometer housings. In the next part I wire them up. A few people did this on HybridZ various different ways. I was too cheap to go out and get any other supplies, so I made it work with what I had.&lt;/p&gt;
 
 &lt;p&gt;The gauges I got are:&lt;/p&gt;
 
-&lt;p&gt;Speedometer: 4&amp;#8243; Revolution GPS Speedo with integrated fuel gauge, turn signal LEDs, and high-beam LED&lt;/p&gt;
+&lt;p&gt;Speedometer: 4&amp;rdquo; Revolution GPS Speedo with integrated fuel gauge, turn signal LEDs, and high-beam LED&lt;/p&gt;
 
-&lt;p&gt;Tachometer: 4&amp;#8243; Revolution 8,000RPM with programmable shift LEDs.&lt;/p&gt;
+&lt;p&gt;Tachometer: 4&amp;rdquo; Revolution 8,000RPM with programmable shift LEDs.&lt;/p&gt;
 
-&lt;p&gt;Both have red dials, and red illumination. The fuel gauge is there since I&amp;#8217;ll be replacing the one in the 3 small dash gauges eventually, but don&amp;#8217;t want to lose having a gas gauge.&lt;/p&gt;
+&lt;p&gt;Both have red dials, and red illumination. The fuel gauge is there since I&amp;rsquo;ll be replacing the one in the 3 small dash gauges eventually, but don&amp;rsquo;t want to lose having a gas gauge.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&amp;#8221;http://razzi.me/p/634975&amp;#8243;&gt;&lt;img alt=&amp;#8221;Uploaded on Razzi.me&amp;#8221; height=&amp;#8221;235&amp;#8243; src=&amp;#8221;http://just.razzi.me/photos/634975/692e6df.jpg&amp;#8221; width=&amp;#8221;235&amp;#8243;&gt;&lt;/a&gt; &lt;a href=&amp;#8221;http://razzi.me/p/634976&amp;#8243;&gt;&lt;img alt=&amp;#8221;Uploaded on Razzi.me&amp;#8221; height=&amp;#8221;235&amp;#8243; src=&amp;#8221;http://just.razzi.me/photos/634976/5951aee.jpg&amp;#8221; width=&amp;#8221;235&amp;#8243;&gt;&lt;/a&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;img class=&#34;lostImage&#34; src=&#34;&#34; alt=&#34;Image no longer available :(&#34;/&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Arch Linux on Lenovo ThinkPad T410</title>
-      <link>https://blog.nearwood.net/arch-linux-on-lenovo-thinkpad-t410/</link>
+      <link>https://nearwood.dev/arch-linux-on-lenovo-thinkpad-t410/</link>
       <pubDate>Sun, 09 Mar 2014 00:42:37 +0000</pubDate>
       
-      <guid>https://blog.nearwood.net/arch-linux-on-lenovo-thinkpad-t410/</guid>
-      <description>I picked up a really cheap ThinkPad T410 from Craigslist. First-gen mobile Core i5, 4GB, 320GB drive and most importantly: 1440&amp;#215;900. A 40% increase in horizontal space (and 17% vertical). Finally I can tune without trying to get TunerStudio to fit.
-Installing Arch was quick, as usual. The laptop has a fingerprint reader, which works really well in Linux. Now I can log in with a finger swipe&amp;#8211;although you have to press enter after swiping.</description>
+      <guid>https://nearwood.dev/arch-linux-on-lenovo-thinkpad-t410/</guid>
+      <description>I picked up a really cheap ThinkPad T410 from Craigslist. First-gen mobile Core i5, 4GB, 320GB drive and most importantly: 1440×900. A 40% increase in horizontal space (and 17% vertical). Finally I can tune without trying to get TunerStudio to fit.
+Installing Arch was quick, as usual. The laptop has a fingerprint reader, which works really well in Linux. Now I can log in with a finger swipe-although you have to press enter after swiping.</description>
     </item>
     
     <item>
       <title>Released my first Android app</title>
-      <link>https://blog.nearwood.net/released-my-first-android-app/</link>
+      <link>https://nearwood.dev/released-my-first-android-app/</link>
       <pubDate>Thu, 05 Dec 2013 01:00:13 +0000</pubDate>
       
-      <guid>https://blog.nearwood.net/released-my-first-android-app/</guid>
+      <guid>https://nearwood.dev/released-my-first-android-app/</guid>
       <description>After searching for a simple GPS Speedometer app that provided a speed readout in more than just 2 units (a free one, of course), I thought it would be the perfect project for my first Android app. It took only a few hours to make it, the Eclipse ADT makes this pretty easy.
 Google Play link
-I&amp;#8217;m glad I&amp;#8217;ve gotten more familiar with the publishing process. It&amp;#8217;ll help when I release a game I&amp;#8217;ve been tinkering with for a few years.</description>
+I&amp;rsquo;m glad I&amp;rsquo;ve gotten more familiar with the publishing process. It&amp;rsquo;ll help when I release a game I&amp;rsquo;ve been tinkering with for a few years.</description>
     </item>
     
     <item>
       <title>Second 280Z autocross</title>
-      <link>https://blog.nearwood.net/second-280z-autocross/</link>
+      <link>https://nearwood.dev/second-280z-autocross/</link>
       <pubDate>Tue, 01 Oct 2013 02:17:26 +0000</pubDate>
       
-      <guid>https://blog.nearwood.net/second-280z-autocross/</guid>
-      <description>Second autocross. This course was a bit more technical, and my car was definitely not setup for it. I was out of the power band most of the time, which was somewhat aggravating. At least I plumbed my wastegate back in, so it&amp;#8217;s quiet at full throttle.
-Here&amp;#8217;s my best run:
+      <guid>https://nearwood.dev/second-280z-autocross/</guid>
+      <description>Second autocross. This course was a bit more technical, and my car was definitely not setup for it. I was out of the power band most of the time, which was somewhat aggravating. At least I plumbed my wastegate back in, so it&amp;rsquo;s quiet at full throttle.
+Here&amp;rsquo;s my best run:
   </description>
     </item>
     
     <item>
       <title>First autocross in the 280Z</title>
-      <link>https://blog.nearwood.net/first-autocross-in-the-280z/</link>
+      <link>https://nearwood.dev/first-autocross-in-the-280z/</link>
       <pubDate>Wed, 07 Aug 2013 00:02:41 +0000</pubDate>
       
-      <guid>https://blog.nearwood.net/first-autocross-in-the-280z/</guid>
+      <guid>https://nearwood.dev/first-autocross-in-the-280z/</guid>
       <description>&lt;p&gt;Well I hammered out a few problems with the car and decided to try it out at an autocross. There was slight rain during the first half of the event, but it cleared up completely in the afternoon. To put it blunt: The car is very hard to control. Old suspension, too peaky of a powerband, and a short wheelbase spell trouble. It was fun though.&lt;/p&gt;
 
 &lt;p&gt;Best spin out:&lt;/p&gt;
@@ -280,43 +280,42 @@ Here&amp;#8217;s my best run:
     
     <item>
       <title>The 280Z’s first time at a 1/4 mile drag strip</title>
-      <link>https://blog.nearwood.net/the-280zs-first-time-at-a-14-mile-drag-strip/</link>
+      <link>https://nearwood.dev/the-280zs-first-time-at-a-14-mile-drag-strip/</link>
       <pubDate>Sun, 04 Aug 2013 01:49:45 +0000</pubDate>
       
-      <guid>https://blog.nearwood.net/the-280zs-first-time-at-a-14-mile-drag-strip/</guid>
-      <description>If there&amp;#8217;s one thing nice about our new place, it&amp;#8217;s that there&amp;#8217;s a full quarter mile drag strip nearby.
-  I had my car shipped here, and this is pretty much the first thing I did. The track is really nice, although it&amp;#8217;s more expensive (surprise, surprise), and very crowded. The problem seems to be that they have street car night at the same time they have the non-street car night.</description>
+      <guid>https://nearwood.dev/the-280zs-first-time-at-a-14-mile-drag-strip/</guid>
+      <description>If there&amp;rsquo;s one thing nice about our new place, it&amp;rsquo;s that there&amp;rsquo;s a full quarter mile drag strip nearby.
+  I had my car shipped here, and this is pretty much the first thing I did. The track is really nice, although it&amp;rsquo;s more expensive (surprise, surprise), and very crowded. The problem seems to be that they have street car night at the same time they have the non-street car night.</description>
     </item>
     
     <item>
       <title>Autocross complete</title>
-      <link>https://blog.nearwood.net/autocross-complete/</link>
+      <link>https://nearwood.dev/autocross-complete/</link>
       <pubDate>Tue, 05 Mar 2013 01:34:30 +0000</pubDate>
       
-      <guid>https://blog.nearwood.net/autocross-complete/</guid>
-      <description>Let&amp;#8217;s take my new Focus to the Autocross.
+      <guid>https://nearwood.dev/autocross-complete/</guid>
+      <description>Let&amp;rsquo;s take my new Focus to the Autocross.
   </description>
     </item>
     
     <item>
       <title>Carduino</title>
-      <link>https://blog.nearwood.net/carduino/</link>
+      <link>https://nearwood.dev/carduino/</link>
       <pubDate>Thu, 31 Jan 2013 02:36:47 +0000</pubDate>
       
-      <guid>https://blog.nearwood.net/carduino/</guid>
-      <description>I&amp;#8217;ve been working on a small Arduino project to datalog my commute. I&amp;#8217;m using an Arduino Uno with SK Pang&amp;#8217;s CAN Bus Shield. I also have added the optional GPS and LCD to the mix. There is an micro-SD card slot for storage.
-
+      <guid>https://nearwood.dev/carduino/</guid>
+      <description>I&amp;rsquo;ve been working on a small Arduino project to datalog my commute. I&amp;rsquo;m using an Arduino Uno with SK Pang&amp;rsquo;s CAN Bus Shield. I also have added the optional GPS and LCD to the mix. There is an micro-SD card slot for storage.
 The aim of the project is just to collect data. As much as I can put into the SD card. I plan on calculating driving efficiency using somewhat arbitrary measures like throttle modulation, temperature, etc.</description>
     </item>
     
     <item>
       <title>BBC’s Top Gear &gt; Top Gear USA</title>
-      <link>https://blog.nearwood.net/bbcs-top-gear-top-gear-usa/</link>
+      <link>https://nearwood.dev/bbcs-top-gear-top-gear-usa/</link>
       <pubDate>Sun, 27 Jan 2013 18:54:17 +0000</pubDate>
       
-      <guid>https://blog.nearwood.net/bbcs-top-gear-top-gear-usa/</guid>
-      <description>BBC&amp;#8217;s Top Gear resumes today! I can&amp;#8217;t wait to watch it. It&amp;#8217;s been a while since they left off, and I&amp;#8217;ve been watchin TG:USA in the meantime during my lunch breaks.
-TG:USA, will it really work? It just feels so scripted. I know, BBC&amp;#8217;s Top Gear had a rough start too, like many shows. But, I&amp;#8217;m watching season 2 right now, and the chemistry just hasn&amp;#8217;t happened.
+      <guid>https://nearwood.dev/bbcs-top-gear-top-gear-usa/</guid>
+      <description>BBC&amp;rsquo;s Top Gear resumes today! I can&amp;rsquo;t wait to watch it. It&amp;rsquo;s been a while since they left off, and I&amp;rsquo;ve been watchin TG:USA in the meantime during my lunch breaks.
+TG:USA, will it really work? It just feels so scripted. I know, BBC&amp;rsquo;s Top Gear had a rough start too, like many shows. But, I&amp;rsquo;m watching season 2 right now, and the chemistry just hasn&amp;rsquo;t happened.
 I like Tanner, he actually has lines that seem natural.</description>
     </item>
     

@@ -12,9 +12,9 @@
 <meta property="og:description" content="So, WarpWallet is a so-called brain wallet for Bitcoin. That is, you only have to remember a relatively short password and it generates the corresponding private key for use. It uses a memory and CPU hard set of cryptographic algorithms to ensure that brute-forcing is slowed way down. That is, when generating the private key, it takes considerable time. Their Javascript implementation takes over 10 seconds on my machine.
 So the makers of it had challenges setup." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://blog.nearwood.net/education-in-futility-warpwallet-brute-forcing/" />
+<meta property="og:url" content="https://nearwood.dev/education-in-futility-warpwallet-brute-forcing/" />
 <meta property="article:published_time" content="2018-01-12T02:13:38+00:00" />
-<meta property="article:modified_time" content="2019-02-03T12:15:22-05:00" />
+<meta property="article:modified_time" content="2019-10-30T21:03:46-05:00" />
 
 		<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Education in Futility: WarpWallet Brute Forcing"/>
@@ -41,7 +41,6 @@ So the makers of it had challenges setup."/>
 		</div>
 	</button>
 	<ul id="menu" class="main-nav__list">
-		<li class="main-nav__item"><a class="main-nav__link" href="/">Home</a></li>
 		<li class="main-nav__item"><a class="main-nav__link" href="/pages/about/">About</a></li>
 		<li class="main-nav__item"><a class="main-nav__link" href="/pages/contact/">Contact</a></li>
 	</ul>
@@ -57,7 +56,7 @@ So the makers of it had challenges setup."/>
 
 <p>So the makers of it had challenges setup. By the time I stumbled on it, only the last challenge was left, with 6 months remaining. For that challenge, the reward for cracking an 8-character alphanumeric password was 20 BTC (and BCH and BTG!), which was worth over $100,000 USD at the time of the challenge end date.</p>
 
-<p>Since their Javascript implementation is terribly slow I wondered if anyone had ported it to any other language, and found a Go version&#8211;but it was outdated and would not compile. So, as my first exercise in Go, <a href="https://github.com/nearwood/warpwallet">I updated it and got it compiling</a>. Instead of 10+ seconds per keypair generated, it took about 1 second. But, it took input from the command line, so I decided to make a brute forcer that used this newly updated generator. It would feed it the passphrase and salt and store the result (the private key and public key) and then I could parse these results later.</p>
+<p>Since their Javascript implementation is terribly slow I wondered if anyone had ported it to any other language, and found a Go version-but it was outdated and would not compile. So, as my first exercise in Go, <a href="https://github.com/nearwood/warpwallet">I updated it and got it compiling</a>. Instead of 10+ seconds per keypair generated, it took about 1 second. But, it took input from the command line, so I decided to make a brute forcer that used this newly updated generator. It would feed it the passphrase and salt and store the result (the private key and public key) and then I could parse these results later.</p>
 
 <p>So the basic design was this:</p>
 
@@ -69,11 +68,11 @@ So the makers of it had challenges setup."/>
 
 <p>Another misstep was having the Go pipeline switch sleep. First it slept 100 ms if no channel had data or their buffers were full, then I increased it to 250 ms inexplicably, then realized it waits by default. So this was leaving processing power on the table. Removing the sleep command on my main desktop gave a ~20% improvement in performance (from 5.12 to 6.14 keypairs/s on an i7). Below are the contributions from various machines. The IPs at the end are AWS servers, the largest chunk of which was from a c4.xlarge machine over a single day!</p>
 
-<p><img class="aligncenter size-full wp-image-824" src="http://www.nearwood.net/wp-content/uploads/warpwallet-chart.png" alt="" width="473" height="342" srcset="https://www.nearwood.net/wp-content/uploads/warpwallet-chart.png 473w, https://www.nearwood.net/wp-content/uploads/warpwallet-chart-300x217.png 300w" sizes="(max-width: 473px) 100vw, 473px" /></p>
+<p><img src="/images/warpwallet-chart.png" alt="Pie chart of computation proportions" /></p>
 
 <p>&nbsp;</p>
 
-<p>And then on January 1st, 2018 the challenge expired. There&#8217;re just over 24 million rows, 4.5GB data. It takes a few seconds to test any result. I investigated testing each public address to see if they had a balance but on my local Bitcoin node it takes minutes to scan the blockchain for transactions for newly added addresses. And web APIs rate limit you to where it would take a year or so to test each one. Less if I spread requests out across API providers. So, in the end, I just deleted all the results. It was fun, I learned a lot about Go, cryptocurrency nodes, and I&#8217;m ready for the next, hopefully more fruitful, project.</p>
+<p>And then on January 1st, 2018 the challenge expired. There&rsquo;re just over 24 million rows, 4.5GB data. It takes a few seconds to test any result. I investigated testing each public address to see if they had a balance but on my local Bitcoin node it takes minutes to scan the blockchain for transactions for newly added addresses. And web APIs rate limit you to where it would take a year or so to test each one. Less if I spread requests out across API providers. So, in the end, I just deleted all the results. It was fun, I learned a lot about Go, cryptocurrency nodes, and I&rsquo;m ready for the next, hopefully more fruitful, project.</p>
 
 <p>&nbsp;</p>
 </div>
@@ -89,10 +88,10 @@ So the makers of it had challenges setup."/>
 
 					
 <div class="post__share share">
-	<a class="share__link btn" title="Share on Twitter" href="https://twitter.com/intent/tweet/?url=https%3a%2f%2fblog.nearwood.net%2feducation-in-futility-warpwallet-brute-forcing%2f&amp;text=Education%20in%20Futility%3a%20WarpWallet%20Brute%20Forcing" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, 'Share on Twitter', 'width=800,height=450,resizable=yes,toolbar=0,status=0'); return false">
+	<a class="share__link btn" title="Share on Twitter" href="https://twitter.com/intent/tweet/?url=https%3a%2f%2fnearwood.dev%2feducation-in-futility-warpwallet-brute-forcing%2f&amp;text=Education%20in%20Futility%3a%20WarpWallet%20Brute%20Forcing" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, 'Share on Twitter', 'width=800,height=450,resizable=yes,toolbar=0,status=0'); return false">
 		<svg class="share__icon" aria-label="Twitter" role="img" width="32" height="32" viewBox="0 0 512 512"><path d="M437 152a72 72 0 0 1-40 12 72 72 0 0 0 32-40 72 72 0 0 1-45 17 72 72 0 0 0-122 65 200 200 0 0 1-145-74 72 72 0 0 0 22 94 72 72 0 0 1-32-7 72 72 0 0 0 56 69 72 72 0 0 1-32 1 72 72 0 0 0 67 50 200 200 0 0 1-105 29 200 200 0 0 0 309-179 200 200 0 0 0 35-37"/></svg>
 	</a>
-	<a class="share__link btn" title="Share on Reddit" href="https://www.reddit.com/submit?url=https%3a%2f%2fblog.nearwood.net%2feducation-in-futility-warpwallet-brute-forcing%2f&amp;title=Education%20in%20Futility%3a%20WarpWallet%20Brute%20Forcing" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, 'Share on Reddit', 'width=832,height=624,toolbar=0,status=0'); return false">
+	<a class="share__link btn" title="Share on Reddit" href="https://www.reddit.com/submit?url=https%3a%2f%2fnearwood.dev%2feducation-in-futility-warpwallet-brute-forcing%2f&amp;title=Education%20in%20Futility%3a%20WarpWallet%20Brute%20Forcing" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, 'Share on Reddit', 'width=832,height=624,toolbar=0,status=0'); return false">
 		<svg class="share__icon" aria-label="Reddit" role="img" width="32" height="32" viewBox="0 0 512 512"><path fill-rule="evenodd" d="M375 146a32 32 0 1 0-29-46l-65-13c-5-1-9 2-10 6l-22 97c-45 1-85 15-113 36a42 42 0 1 0-45 69l-1 12c0 65 74 117 166 117s166-52 166-117l-1-11a42 42 0 1 0-44-69c-28-21-67-35-111-37l19-86 58 13a32 32 0 0 0 32 29zM190 353c2-1 4 0 5 1 15 11 38 18 61 18s46-6 61-18a7 7 0 0 1 8 10c-18 14-44 21-69 21-25-1-51-7-69-21a6 6 0 0 1 3-11zm23-44a31 31 0 1 1-44-44 31 31 0 0 1 44 44zm130 0a31 31 0 1 0-44-44 31 31 0 0 0 44 44z"/></svg>
 	</a>
 </div>

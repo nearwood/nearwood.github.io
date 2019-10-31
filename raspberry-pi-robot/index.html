@@ -9,17 +9,17 @@
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
 		<meta property="og:title" content="Raspberry Pi Robot" />
-<meta property="og:description" content="So, a while back I gave my wife a Farscape DRD kit. I promised to make it in to a robot. How hard could it be? Well, not too bad. A little more expensive than planned, though&#8230;
+<meta property="og:description" content="So, a while back I gave my wife a Farscape DRD kit. I promised to make it in to a robot. How hard could it be? Well, not too bad. A little more expensive than planned, though&hellip;
 
 " />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://blog.nearwood.net/raspberry-pi-robot/" />
+<meta property="og:url" content="https://nearwood.dev/raspberry-pi-robot/" />
 <meta property="article:published_time" content="2014-11-26T04:01:23+00:00" />
-<meta property="article:modified_time" content="2019-02-03T12:15:22-05:00" />
+<meta property="article:modified_time" content="2019-10-30T12:13:38-05:00" />
 
 		<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Raspberry Pi Robot"/>
-<meta name="twitter:description" content="So, a while back I gave my wife a Farscape DRD kit. I promised to make it in to a robot. How hard could it be? Well, not too bad. A little more expensive than planned, though&#8230;
+<meta name="twitter:description" content="So, a while back I gave my wife a Farscape DRD kit. I promised to make it in to a robot. How hard could it be? Well, not too bad. A little more expensive than planned, though&hellip;
 
 "/>
 
@@ -43,7 +43,6 @@
 		</div>
 	</button>
 	<ul id="menu" class="main-nav__list">
-		<li class="main-nav__item"><a class="main-nav__link" href="/">Home</a></li>
 		<li class="main-nav__item"><a class="main-nav__link" href="/pages/about/">About</a></li>
 		<li class="main-nav__item"><a class="main-nav__link" href="/pages/contact/">Contact</a></li>
 	</ul>
@@ -55,11 +54,11 @@
 		<div class="single block">
 			<article class="post">
 				<h1 class="post__title">Raspberry Pi Robot</h1>
-				<div class="post__content"><p>So, a while back I gave my wife a <a href="http://goldenarmor.com/farscape-drd/" target="_blank">Farscape DRD kit</a>. I promised to make it in to a robot. How hard could it be? Well, not too bad. A little more expensive than planned, though&#8230;</p>
+				<div class="post__content"><p>So, a while back I gave my wife a <a href="https://goldenarmor.com/farscape-drd/" target="_blank">Farscape DRD kit</a>. I promised to make it in to a robot. How hard could it be? Well, not too bad. A little more expensive than planned, though&hellip;</p>
 
-<p><a href="http://www.nearwood.net/wp-content/uploads/IMG_20141122_142828.jpg"><img class="aligncenter size-medium wp-image-472" src="http://www.nearwood.net/wp-content/uploads/IMG_20141122_142828-300x225.jpg" alt="IMG_20141122_142828" width="300" height="225" srcset="https://www.nearwood.net/wp-content/uploads/IMG_20141122_142828-300x225.jpg 300w, https://www.nearwood.net/wp-content/uploads/IMG_20141122_142828.jpg 800w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+<p><img class="lostImage" src="" alt="Image no longer available :("/></p>
 
-<p>The hardest part was finding a wheel and chassis setup that could hold the weight and fit underneath. Under the DRD shell, after some cleaning up, I&#8217;ve got about 27x20x12cm of space. After checking up on <a href="https://www.sparkfun.com/categories/181" target="_blank">SparkFun</a> every now and then I came across this kit, the <a href="https://www.sparkfun.com/products/12091" target="_blank">DAGU Multi-Chassis in Tank configuration</a>:</p>
+<p>The hardest part was finding a wheel and chassis setup that could hold the weight and fit underneath. Under the DRD shell, after some cleaning up, I&rsquo;ve got about 27x20x12cm of space. After checking up on <a href="https://www.sparkfun.com/categories/181" target="_blank">SparkFun</a> every now and then I came across this kit, the <a href="https://www.sparkfun.com/products/12091" target="_blank">DAGU Multi-Chassis in Tank configuration</a>:</p>
 
 <p><img class="alignnone" src="https://cdn.sparkfun.com//assets/parts/8/7/2/3/Chasis-Angle.jpg" alt="" width="600" height="600" /></p>
 
@@ -69,43 +68,43 @@
 
 <p><img class="alignnone" src="https://cdn.sparkfun.com//assets/parts/4/7/4/5/10336-01.jpg" alt="" width="600" height="600" /></p>
 
-<p>A nice chassis with motors At 25x23x8 it was tad too big, although you can adjust the wheelbase, you can&#8217;t adjust the track width, so the wheels would have to stick out a bit. It also has really nice encoders built it (unlike the If the current one</p>
+<p>A nice chassis with motors At 25x23x8 it was tad too big, although you can adjust the wheelbase, you can&rsquo;t adjust the track width, so the wheels would have to stick out a bit. It also has really nice encoders built it (unlike the If the current one</p>
 
-<p>The one I really wanted to use was this $250 chassis, the <a href="https://www.sparkfun.com/products/12719" target="_blank">T&#8217;Rex Tank</a>:</p>
+<p>The one I really wanted to use was this $250 chassis, the <a href="https://www.sparkfun.com/products/12719" target="_blank">T&rsquo;Rex Tank</a>:</p>
 
 <p><img class="alignnone" src="https://cdn.sparkfun.com//assets/parts/9/4/6/8/12719-01.jpg" alt="" width="600" height="600" /></p>
 
-<p>But it&#8217;s 36x18x13, so the shell would sit on top and it would be kind of obvious I wasn&#8217;t even trying to make the DRD look realistic.</p>
+<p>But it&rsquo;s 36x18x13, so the shell would sit on top and it would be kind of obvious I wasn&rsquo;t even trying to make the DRD look realistic.</p>
 
 <p>Oh, well, DAGU Chassis it is. So, that chosen I needed the hardware to control it. I already had an unused Raspberry Pi from my Litecoin mining days, I just needed something to control the motors. So, altogether, this is what I have so far:</p>
 
 <p>&nbsp;</p>
 
 <ul>
-<li>DAGU Multi-Chassis &#8211; $50</li>
-<li>Raspberry Pi (Model B, Rev. 2), with 4GB SD Card &#8211; Free! (Not counting initial Litecoin mining expenditure.)</li>
-<li><a href="https://www.sparkfun.com/products/9457" target="_blank">TB6612FNG Dual 1A Motor Driver</a> &#8211; $10</li>
-<li><a href="http://www.adafruit.com/products/1148" target="_blank">Adafruit Half-size PermaProto Board</a> and <a href="http://www.adafruit.com/products/862" target="_blank">Ribbon Cable</a> &#8211; $10</li>
-<li><a href="https://learn.adafruit.com/adafruit-powerboost-1000-basic/overview" target="_blank">Adafruit Powerboost 1000</a> &#8211; $15</li>
-<li><a href="https://www.sparkfun.com/products/114" target="_blank">SparkFun Breadboard <sup>5</sup>&frasl;<sub>3</sub>.3v Power Supply</a> &#8211; $10</li>
-<li><a href="https://www.sparkfun.com/products/12629" target="_blank">SparkFun Hall Effect Motor Encoder Kit</a> &#8211; $11 (Ordered two when I only needed one)</li>
-<li><a href="http://www.amazon.com/Edimax-EW-7811Un-150Mbps-Raspberry-Supports/dp/B003MTTJOY" target="_blank">USB Wireless Dongle</a> &#8211; Free!</li>
-<li>Lots of AA Batteries &#8211; $10</li>
-<li><a href="https://www.adafruit.com/products/875" target="_blank">Additional 8 AA battery case</a> with switch and 2.1mm plug &#8211; $10</li>
-<li><a href="https://www.sparkfun.com/products/11623" target="_blank">RPi Case</a> &#8211; $8 (I opted for yellow since it was cheaper and matched the DRD shell)</li>
-<li><a href="https://www.sparkfun.com/products/10462" target="_blank">10 Standoffs</a> &#8211; $2</li>
-<li>20 <a href="https://www.sparkfun.com/products/10453" target="_blank">Screws</a> &#8211; $4</li>
-<li><a href="https://www.sparkfun.com/products/11375" target="_blank">Wire</a> &#8211; $16</li>
-<li><a href="https://www.sparkfun.com/products/9194" target="_blank">Jumpers</a> &#8211; $25 (!)</li>
+<li>DAGU Multi-Chassis - $50</li>
+<li>Raspberry Pi (Model B, Rev. 2), with 4GB SD Card - Free! (Not counting initial Litecoin mining expenditure.)</li>
+<li><a href="https://www.sparkfun.com/products/9457" target="_blank">TB6612FNG Dual 1A Motor Driver</a> - $10</li>
+<li><a href="https://www.adafruit.com/products/1148" target="_blank">Adafruit Half-size PermaProto Board</a> and <a href="https://www.adafruit.com/products/862" target="_blank">Ribbon Cable</a> - $10</li>
+<li><a href="https://learn.adafruit.com/adafruit-powerboost-1000-basic/overview" target="_blank">Adafruit Powerboost 1000</a> - $15</li>
+<li><a href="https://www.sparkfun.com/products/114" target="_blank">SparkFun Breadboard <sup>5</sup>&frasl;<sub>3</sub>.3v Power Supply</a> - $10</li>
+<li><a href="https://www.sparkfun.com/products/12629" target="_blank">SparkFun Hall Effect Motor Encoder Kit</a> - $11 (Ordered two when I only needed one)</li>
+<li><a href="https://www.amazon.com/Edimax-EW-7811Un-150Mbps-Raspberry-Supports/dp/B003MTTJOY" target="_blank">USB Wireless Dongle</a> - Free!</li>
+<li>Lots of AA Batteries - $10</li>
+<li><a href="https://www.adafruit.com/products/875" target="_blank">Additional 8 AA battery case</a> with switch and 2.1mm plug - $10</li>
+<li><a href="https://www.sparkfun.com/products/11623" target="_blank">RPi Case</a> - $8 (I opted for yellow since it was cheaper and matched the DRD shell)</li>
+<li><a href="https://www.sparkfun.com/products/10462" target="_blank">10 Standoffs</a> - $2</li>
+<li>20 <a href="https://www.sparkfun.com/products/10453" target="_blank">Screws</a> - $4</li>
+<li><a href="https://www.sparkfun.com/products/11375" target="_blank">Wire</a> - $16</li>
+<li><a href="https://www.sparkfun.com/products/9194" target="_blank">Jumpers</a> - $25 (!)</li>
 </ul>
 
-<p>Total cost: Over $200 including shipping, tax and whatnot. I had to get some items from Adafruit, and some from SparkFun, and then others were laying around. Add in the cost of the Litecoin ASIC mining hardware and &#8230; well why would you do that? What&#8217;s done is done.</p>
+<p>Total cost: Over $200 including shipping, tax and whatnot. I had to get some items from Adafruit, and some from SparkFun, and then others were laying around. Add in the cost of the Litecoin ASIC mining hardware and &hellip; well why would you do that? What&rsquo;s done is done.</p>
 
 <p>The TB6612FNG board supports 2A peak, 1A continuous current for each motor circuit which is plenty to drive the DAGU motors. I have one power supply for the Pi itself using the 5 AA battery case that came with the chassis, and an 8 AA battery case from ADAFruit, for 15V to drive the motors and the 3.3/5V power supply for the motor controller.</p>
 
 <p>So, now you have a bunch of parts.</p>
 
-<p><a href="http://www.nearwood.net/wp-content/uploads/IMG_20141122_114803.jpg"><img class="aligncenter size-medium wp-image-497" src="http://www.nearwood.net/wp-content/uploads/IMG_20141122_114803-300x225.jpg" alt="IMG_20141122_114803" width="300" height="225" srcset="https://www.nearwood.net/wp-content/uploads/IMG_20141122_114803-300x225.jpg 300w, https://www.nearwood.net/wp-content/uploads/IMG_20141122_114803.jpg 800w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+<p><img class="lostImage" src="" alt="Image no longer available :("/></p>
 
 <p>The next post will be about assembly and testing the hardware.</p></div>
 				
@@ -120,10 +119,10 @@
 
 					
 <div class="post__share share">
-	<a class="share__link btn" title="Share on Twitter" href="https://twitter.com/intent/tweet/?url=https%3a%2f%2fblog.nearwood.net%2fraspberry-pi-robot%2f&amp;text=Raspberry%20Pi%20Robot" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, 'Share on Twitter', 'width=800,height=450,resizable=yes,toolbar=0,status=0'); return false">
+	<a class="share__link btn" title="Share on Twitter" href="https://twitter.com/intent/tweet/?url=https%3a%2f%2fnearwood.dev%2fraspberry-pi-robot%2f&amp;text=Raspberry%20Pi%20Robot" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, 'Share on Twitter', 'width=800,height=450,resizable=yes,toolbar=0,status=0'); return false">
 		<svg class="share__icon" aria-label="Twitter" role="img" width="32" height="32" viewBox="0 0 512 512"><path d="M437 152a72 72 0 0 1-40 12 72 72 0 0 0 32-40 72 72 0 0 1-45 17 72 72 0 0 0-122 65 200 200 0 0 1-145-74 72 72 0 0 0 22 94 72 72 0 0 1-32-7 72 72 0 0 0 56 69 72 72 0 0 1-32 1 72 72 0 0 0 67 50 200 200 0 0 1-105 29 200 200 0 0 0 309-179 200 200 0 0 0 35-37"/></svg>
 	</a>
-	<a class="share__link btn" title="Share on Reddit" href="https://www.reddit.com/submit?url=https%3a%2f%2fblog.nearwood.net%2fraspberry-pi-robot%2f&amp;title=Raspberry%20Pi%20Robot" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, 'Share on Reddit', 'width=832,height=624,toolbar=0,status=0'); return false">
+	<a class="share__link btn" title="Share on Reddit" href="https://www.reddit.com/submit?url=https%3a%2f%2fnearwood.dev%2fraspberry-pi-robot%2f&amp;title=Raspberry%20Pi%20Robot" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, 'Share on Reddit', 'width=832,height=624,toolbar=0,status=0'); return false">
 		<svg class="share__icon" aria-label="Reddit" role="img" width="32" height="32" viewBox="0 0 512 512"><path fill-rule="evenodd" d="M375 146a32 32 0 1 0-29-46l-65-13c-5-1-9 2-10 6l-22 97c-45 1-85 15-113 36a42 42 0 1 0-45 69l-1 12c0 65 74 117 166 117s166-52 166-117l-1-11a42 42 0 1 0-44-69c-28-21-67-35-111-37l19-86 58 13a32 32 0 0 0 32 29zM190 353c2-1 4 0 5 1 15 11 38 18 61 18s46-6 61-18a7 7 0 0 1 8 10c-18 14-44 21-69 21-25-1-51-7-69-21a6 6 0 0 1 3-11zm23-44a31 31 0 1 1-44-44 31 31 0 0 1 44 44zm130 0a31 31 0 1 0-44-44 31 31 0 0 0 44 44z"/></svg>
 	</a>
 </div>

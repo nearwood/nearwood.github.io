@@ -1,26 +1,26 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>laptop on Nick</title>
-    <link>https://blog.nearwood.net/tags/laptop/</link>
+    <link>https://nearwood.dev/tags/laptop/</link>
     <description>Recent content in laptop on Nick</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2019 Nicholas Earwood</copyright>
     <lastBuildDate>Sun, 07 Apr 2013 12:56:52 +0000</lastBuildDate>
     
-	<atom:link href="https://blog.nearwood.net/tags/laptop/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://nearwood.dev/tags/laptop/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Switched to Arch Linux from Gentoo</title>
-      <link>https://blog.nearwood.net/switched-to-arch-linux-from-gentoo/</link>
+      <link>https://nearwood.dev/switched-to-arch-linux-from-gentoo/</link>
       <pubDate>Sun, 07 Apr 2013 12:56:52 +0000</pubDate>
       
-      <guid>https://blog.nearwood.net/switched-to-arch-linux-from-gentoo/</guid>
+      <guid>https://nearwood.dev/switched-to-arch-linux-from-gentoo/</guid>
       <description>Time installing Gentoo: days
 Time installing Archlinux: 30 mins.
-I have an old Intel based Dell laptop with 1.8GHz single-core processor. I&amp;#8217;ve had Windows XP on it for a couple years, then I switched to Gentoo for the past 5 or 6 years. Well, it&amp;#8217;s really not the kind of laptop that you should be compiling everything from source on. I&amp;#8217;m tired of going through the &amp;#8220;everything&amp;#8217;s broken, hook it the ethernet cable and start fixing it&amp;#8221; routine after I&amp;#8217;ve left it alone for months at a time.</description>
+I have an old Intel based Dell laptop with 1.8GHz single-core processor. I&amp;rsquo;ve had Windows XP on it for a couple years, then I switched to Gentoo for the past 5 or 6 years. Well, it&amp;rsquo;s really not the kind of laptop that you should be compiling everything from source on. I&amp;rsquo;m tired of going through the &amp;ldquo;everything&amp;rsquo;s broken, hook it the ethernet cable and start fixing it&amp;rdquo; routine after I&amp;rsquo;ve left it alone for months at a time.</description>
     </item>
     
   </channel>

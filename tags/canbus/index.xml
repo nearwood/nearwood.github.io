@@ -1,24 +1,24 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>canbus on Nick</title>
-    <link>https://blog.nearwood.net/tags/canbus/</link>
+    <link>https://nearwood.dev/tags/canbus/</link>
     <description>Recent content in canbus on Nick</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2019 Nicholas Earwood</copyright>
     <lastBuildDate>Sun, 09 Nov 2014 18:19:24 +0000</lastBuildDate>
     
-	<atom:link href="https://blog.nearwood.net/tags/canbus/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://nearwood.dev/tags/canbus/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Carduino 2.0</title>
-      <link>https://blog.nearwood.net/carduino-2-0/</link>
+      <link>https://nearwood.dev/carduino-2-0/</link>
       <pubDate>Sun, 09 Nov 2014 18:19:24 +0000</pubDate>
       
-      <guid>https://blog.nearwood.net/carduino-2-0/</guid>
-      <description>Over a year ago I got an Arduino Uno and a CAN-BUS Shield to try and make some kind of datalogger for my car. I was also interested in using the OpenXC library with it (which might need a port if there isn&amp;#8217;t one already, since it uses the Digilent chipKIT Max32 development board). While OpenXC allows interfacing with Android stuff for phones, I&amp;#8217;m more interested in a self-contained datalogging type deal.</description>
+      <guid>https://nearwood.dev/carduino-2-0/</guid>
+      <description>Over a year ago I got an Arduino Uno and a CAN-BUS Shield to try and make some kind of datalogger for my car. I was also interested in using the OpenXC library with it (which might need a port if there isn&amp;rsquo;t one already, since it uses the Digilent chipKIT Max32 development board). While OpenXC allows interfacing with Android stuff for phones, I&amp;rsquo;m more interested in a self-contained datalogging type deal.</description>
     </item>
     
   </channel>

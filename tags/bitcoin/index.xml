@@ -1,23 +1,23 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>bitcoin on Nick</title>
-    <link>https://blog.nearwood.net/tags/bitcoin/</link>
+    <link>https://nearwood.dev/tags/bitcoin/</link>
     <description>Recent content in bitcoin on Nick</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2019 Nicholas Earwood</copyright>
     <lastBuildDate>Fri, 12 Jan 2018 02:13:38 +0000</lastBuildDate>
     
-	<atom:link href="https://blog.nearwood.net/tags/bitcoin/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://nearwood.dev/tags/bitcoin/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Education in Futility: WarpWallet Brute Forcing</title>
-      <link>https://blog.nearwood.net/education-in-futility-warpwallet-brute-forcing/</link>
+      <link>https://nearwood.dev/education-in-futility-warpwallet-brute-forcing/</link>
       <pubDate>Fri, 12 Jan 2018 02:13:38 +0000</pubDate>
       
-      <guid>https://blog.nearwood.net/education-in-futility-warpwallet-brute-forcing/</guid>
+      <guid>https://nearwood.dev/education-in-futility-warpwallet-brute-forcing/</guid>
       <description>So, WarpWallet is a so-called brain wallet for Bitcoin. That is, you only have to remember a relatively short password and it generates the corresponding private key for use. It uses a memory and CPU hard set of cryptographic algorithms to ensure that brute-forcing is slowed way down. That is, when generating the private key, it takes considerable time. Their Javascript implementation takes over 10 seconds on my machine.
 So the makers of it had challenges setup.</description>
     </item>

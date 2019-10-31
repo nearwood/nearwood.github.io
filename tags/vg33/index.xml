@@ -1,24 +1,24 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>VG33 on Nick</title>
-    <link>https://blog.nearwood.net/tags/vg33/</link>
+    <link>https://nearwood.dev/tags/vg33/</link>
     <description>Recent content in VG33 on Nick</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2019 Nicholas Earwood</copyright>
     <lastBuildDate>Mon, 27 Oct 2014 02:01:31 +0000</lastBuildDate>
     
-	<atom:link href="https://blog.nearwood.net/tags/vg33/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://nearwood.dev/tags/vg33/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>First autocross with a VG33</title>
-      <link>https://blog.nearwood.net/first-autocross-with-a-vg33/</link>
+      <link>https://nearwood.dev/first-autocross-with-a-vg33/</link>
       <pubDate>Mon, 27 Oct 2014 02:01:31 +0000</pubDate>
       
-      <guid>https://blog.nearwood.net/first-autocross-with-a-vg33/</guid>
-      <description>Well, with less than a couple hundred miles on the rebuilt engine, it was time to really break-in the new VG33. I took it to an autocross. Things were going well until I shut it off after my second run. It didn&amp;#8217;t want to restart after that. It appears that the culprit was low battery voltage, as the ECU was resetting and the fuel pump never even came on during cranking.</description>
+      <guid>https://nearwood.dev/first-autocross-with-a-vg33/</guid>
+      <description>Well, with less than a couple hundred miles on the rebuilt engine, it was time to really break-in the new VG33. I took it to an autocross. Things were going well until I shut it off after my second run. It didn&amp;rsquo;t want to restart after that. It appears that the culprit was low battery voltage, as the ECU was resetting and the fuel pump never even came on during cranking.</description>
     </item>
     
   </channel>

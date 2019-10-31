@@ -1,33 +1,33 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>LED on Nick</title>
-    <link>https://blog.nearwood.net/tags/led/</link>
+    <link>https://nearwood.dev/tags/led/</link>
     <description>Recent content in LED on Nick</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2019 Nicholas Earwood</copyright>
     <lastBuildDate>Tue, 21 Oct 2014 23:08:25 +0000</lastBuildDate>
     
-	<atom:link href="https://blog.nearwood.net/tags/led/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://nearwood.dev/tags/led/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>280Z LED Conversion Part 2</title>
-      <link>https://blog.nearwood.net/280z-led-conversion-part-2/</link>
+      <link>https://nearwood.dev/280z-led-conversion-part-2/</link>
       <pubDate>Tue, 21 Oct 2014 23:08:25 +0000</pubDate>
       
-      <guid>https://blog.nearwood.net/280z-led-conversion-part-2/</guid>
-      <description>Continuing from part 1, this is the start of installation and results of the LED conversion. I ordered a small bunch of LEDs to get a feel for what brightness I&amp;#8217;m looking at since the website I ordered from has somewhat confusing &amp;#8216;relative intensity&amp;#8217;, &amp;#8216;brightness&amp;#8217;, and &amp;#8216;lumens&amp;#8217; listed for each bulb. Not to mention the prices seemed to fluctuate independently of any of those values so it wasn&amp;#8217;t as simple as &amp;#8216;find the most expensive ones&amp;#8217;.</description>
+      <guid>https://nearwood.dev/280z-led-conversion-part-2/</guid>
+      <description>Continuing from part 1, this is the start of installation and results of the LED conversion. I ordered a small bunch of LEDs to get a feel for what brightness I&amp;rsquo;m looking at since the website I ordered from has somewhat confusing &amp;lsquo;relative intensity&amp;rsquo;, &amp;lsquo;brightness&amp;rsquo;, and &amp;lsquo;lumens&amp;rsquo; listed for each bulb. Not to mention the prices seemed to fluctuate independently of any of those values so it wasn&amp;rsquo;t as simple as &amp;lsquo;find the most expensive ones&amp;rsquo;.</description>
     </item>
     
     <item>
       <title>280Z LED Conversion Part 1</title>
-      <link>https://blog.nearwood.net/280z-led-conversion-part-1/</link>
+      <link>https://nearwood.dev/280z-led-conversion-part-1/</link>
       <pubDate>Tue, 23 Sep 2014 00:38:25 +0000</pubDate>
       
-      <guid>https://blog.nearwood.net/280z-led-conversion-part-1/</guid>
-      <description>My 280Z isn&amp;#8217;t what you could call &amp;#8220;modern&amp;#8221; in the electrical department. Originally, it came with an externally regulated alternator, fusible links, incandescent bulbs, and very few relays. The design inhereted a few things from Lucas eletronics, which is not a good thing. Regardless, it was fairly normal for the time. I&amp;#8217;m glad there are no vacuum operated things, like some makes. The most electrically obtuse part of the design is the lack of relays.</description>
+      <guid>https://nearwood.dev/280z-led-conversion-part-1/</guid>
+      <description>My 280Z isn&amp;rsquo;t what you could call &amp;ldquo;modern&amp;rdquo; in the electrical department. Originally, it came with an externally regulated alternator, fusible links, incandescent bulbs, and very few relays. The design inhereted a few things from Lucas eletronics, which is not a good thing. Regardless, it was fairly normal for the time. I&amp;rsquo;m glad there are no vacuum operated things, like some makes. The most electrically obtuse part of the design is the lack of relays.</description>
     </item>
     
   </channel>

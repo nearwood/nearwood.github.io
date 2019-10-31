@@ -1,28 +1,28 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Linux on Nick</title>
-    <link>https://blog.nearwood.net/categories/linux/</link>
+    <link>https://nearwood.dev/categories/linux/</link>
     <description>Recent content in Linux on Nick</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2019 Nicholas Earwood</copyright>
     <lastBuildDate>Mon, 25 Sep 2017 00:27:40 +0000</lastBuildDate>
     
-	<atom:link href="https://blog.nearwood.net/categories/linux/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://nearwood.dev/categories/linux/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Adding a disk to an encrypted mdadm array</title>
-      <link>https://blog.nearwood.net/adding-a-disk-to-an-encrypted-mdadm-array/</link>
+      <link>https://nearwood.dev/adding-a-disk-to-an-encrypted-mdadm-array/</link>
       <pubDate>Mon, 25 Sep 2017 00:27:40 +0000</pubDate>
       
-      <guid>https://blog.nearwood.net/adding-a-disk-to-an-encrypted-mdadm-array/</guid>
-      <description>&lt;p&gt;My RAID6 was originally planned with 6 drives, but only had 5 for a while due to space concerns with the case. However, I found as a file, media, and multiple cryptocurrency node it filled up the 2.7TB pretty quickly. So, I got a new case (and some more RAM), which has proper space for 6 3.5&amp;#8243; drives (and 2 5.25&amp;#8243;). When migrating to this I decided to add the extra 1TB WD Red NAS drive I bought but have not been able to use.&lt;/p&gt;
+      <guid>https://nearwood.dev/adding-a-disk-to-an-encrypted-mdadm-array/</guid>
+      <description>&lt;p&gt;My RAID6 was originally planned with 6 drives, but only had 5 for a while due to space concerns with the case. However, I found as a file, media, and multiple cryptocurrency node it filled up the 2.7TB pretty quickly. So, I got a new case (and some more RAM), which has proper space for 6 3.5&amp;rdquo; drives (and 2 5.25&amp;rdquo;). When migrating to this I decided to add the extra 1TB WD Red NAS drive I bought but have not been able to use.&lt;/p&gt;
 
-&lt;p&gt;The case is a Fractal Design Define Mini, and I am thoroughly impressed. Six 3.5&amp;#8243; slots, two 5.25&amp;#8243; external slots, and lots of sound padding on the doors and sides.&lt;/p&gt;
+&lt;p&gt;The case is a Fractal Design Define Mini, and I am thoroughly impressed. Six 3.5&amp;rdquo; slots, two 5.25&amp;rdquo; external slots, and lots of sound padding on the doors and sides.&lt;/p&gt;
 
-&lt;p&gt;&lt;img class=&#34;aligncenter size-large wp-image-773&#34; src=&#34;http://www.nearwood.net/wp-content/uploads/IMG_20170924_120224-1024x768.jpg&#34; alt=&#34;&#34; width=&#34;640&#34; height=&#34;480&#34; srcset=&#34;https://www.nearwood.net/wp-content/uploads/IMG_20170924_120224-1024x768.jpg 1024w, https://www.nearwood.net/wp-content/uploads/IMG_20170924_120224-300x225.jpg 300w, https://www.nearwood.net/wp-content/uploads/IMG_20170924_120224-768x576.jpg 768w&#34; sizes=&#34;(max-width: 640px) 100vw, 640px&#34; /&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;img src=&#34;https://nearwood.dev/images/server.jpg&#34; alt=&#34;My SuperMicro server in the Fractal Design case&#34; /&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

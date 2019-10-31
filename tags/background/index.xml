@@ -1,25 +1,25 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Background on Nick</title>
-    <link>https://blog.nearwood.net/tags/background/</link>
+    <link>https://nearwood.dev/tags/background/</link>
     <description>Recent content in Background on Nick</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2019 Nicholas Earwood</copyright>
     <lastBuildDate>Sun, 04 Jun 2017 15:20:43 +0000</lastBuildDate>
     
-	<atom:link href="https://blog.nearwood.net/tags/background/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://nearwood.dev/tags/background/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Sync login/lock screen wallpaper to current desktop background</title>
-      <link>https://blog.nearwood.net/sync-loginlock-screen-wallpaper-to-current-desktop-background/</link>
+      <link>https://nearwood.dev/sync-loginlock-screen-wallpaper-to-current-desktop-background/</link>
       <pubDate>Sun, 04 Jun 2017 15:20:43 +0000</pubDate>
       
-      <guid>https://blog.nearwood.net/sync-loginlock-screen-wallpaper-to-current-desktop-background/</guid>
-      <description>For Windows 7, this turned out to be pretty easy to do via PowerShell. I just had to look for a native image resizing library since the lock screen for some odd reason, only supports JPEGs up to 256KB in size. Probably one of those legacy items left over from NT, like the file system permissions dialogs, and the built-in environment variables editor&amp;#8230;
-I ended up using WIA&amp;#8217;s ImageProcess COM library which worked surprisingly well.</description>
+      <guid>https://nearwood.dev/sync-loginlock-screen-wallpaper-to-current-desktop-background/</guid>
+      <description>For Windows 7, this turned out to be pretty easy to do via PowerShell. I just had to look for a native image resizing library since the lock screen for some odd reason, only supports JPEGs up to 256KB in size. Probably one of those legacy items left over from NT, like the file system permissions dialogs, and the built-in environment variables editor&amp;hellip;
+I ended up using WIA&amp;rsquo;s ImageProcess COM library which worked surprisingly well.</description>
     </item>
     
   </channel>

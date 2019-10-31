@@ -9,23 +9,17 @@
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
 		<meta property="og:title" content="Raspberry Pi Robot – Assembly Part 1" />
-<meta property="og:description" content="So you&#8217;ve got a bunch of parts, assembly is pretty easy. I&#8217;m going to skip over most of the chassis assembly since it came with instructions, but I have a couple pointers and I&#8217;ll go over how I attached the encoders. Then I&#8217;ll talk about soldering the motor controller and wiring the encoders up, and which pins to pick from the GPIO of the Pi.
-
-So this is what the chassis looks like fully assembled:
-
-" />
+<meta property="og:description" content="So you&rsquo;ve got a bunch of parts, assembly is pretty easy. I&rsquo;m going to skip over most of the chassis assembly since it came with instructions, but I have a couple pointers and I&rsquo;ll go over how I attached the encoders. Then I&rsquo;ll talk about soldering the motor controller and wiring the encoders up, and which pins to pick from the GPIO of the Pi.
+So this is what the chassis looks like fully assembled:" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://blog.nearwood.net/raspberry-pi-robot-assembly-part-1/" />
+<meta property="og:url" content="https://nearwood.dev/raspberry-pi-robot-assembly-part-1/" />
 <meta property="article:published_time" content="2014-12-26T15:43:15+00:00" />
-<meta property="article:modified_time" content="2019-02-03T12:15:22-05:00" />
+<meta property="article:modified_time" content="2019-10-30T12:13:38-05:00" />
 
 		<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Raspberry Pi Robot – Assembly Part 1"/>
-<meta name="twitter:description" content="So you&#8217;ve got a bunch of parts, assembly is pretty easy. I&#8217;m going to skip over most of the chassis assembly since it came with instructions, but I have a couple pointers and I&#8217;ll go over how I attached the encoders. Then I&#8217;ll talk about soldering the motor controller and wiring the encoders up, and which pins to pick from the GPIO of the Pi.
-
-So this is what the chassis looks like fully assembled:
-
-"/>
+<meta name="twitter:description" content="So you&rsquo;ve got a bunch of parts, assembly is pretty easy. I&rsquo;m going to skip over most of the chassis assembly since it came with instructions, but I have a couple pointers and I&rsquo;ll go over how I attached the encoders. Then I&rsquo;ll talk about soldering the motor controller and wiring the encoders up, and which pins to pick from the GPIO of the Pi.
+So this is what the chassis looks like fully assembled:"/>
 
 	<link rel="stylesheet" href="/css/main.css">
 	<link rel="stylesheet" href="/css/themes/dark-green.css">
@@ -47,7 +41,6 @@ So this is what the chassis looks like fully assembled:
 		</div>
 	</button>
 	<ul id="menu" class="main-nav__list">
-		<li class="main-nav__item"><a class="main-nav__link" href="/">Home</a></li>
 		<li class="main-nav__item"><a class="main-nav__link" href="/pages/about/">About</a></li>
 		<li class="main-nav__item"><a class="main-nav__link" href="/pages/contact/">Contact</a></li>
 	</ul>
@@ -59,41 +52,40 @@ So this is what the chassis looks like fully assembled:
 		<div class="single block">
 			<article class="post">
 				<h1 class="post__title">Raspberry Pi Robot – Assembly Part 1</h1>
-				<div class="post__content"><p>So you&#8217;ve got a bunch of parts, assembly is pretty easy. I&#8217;m going to skip over most of the chassis assembly since it came with instructions, but I have a couple pointers and I&#8217;ll go over how I attached the encoders. Then I&#8217;ll talk about soldering the motor controller and wiring the encoders up, and which pins to pick from the GPIO of the Pi.</p>
+				<div class="post__content"><p>So you&rsquo;ve got a bunch of parts, assembly is pretty easy. I&rsquo;m going to skip over most of the chassis assembly since it came with instructions, but I have a couple pointers and I&rsquo;ll go over how I attached the encoders. Then I&rsquo;ll talk about soldering the motor controller and wiring the encoders up, and which pins to pick from the GPIO of the Pi.</p>
 
 <p>So this is what the chassis looks like fully assembled:</p>
 
-<p><a href="http://www.nearwood.net/wp-content/uploads/IMG_20141122_141839.jpg"><img class="aligncenter size-medium wp-image-508" src="http://www.nearwood.net/wp-content/uploads/IMG_20141122_141839-300x225.jpg" alt="IMG_20141122_141839" width="300" height="225" srcset="https://www.nearwood.net/wp-content/uploads/IMG_20141122_141839-300x225.jpg 300w, https://www.nearwood.net/wp-content/uploads/IMG_20141122_141839.jpg 800w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+<p>[<img class="lostImage" src="" alt="Image no longer available :("/>Follow the DAGU instructions, keeping in mind the following:</p>
 
-<p>Follow the DAGU instructions, keeping in mind the following:</p>
+<p>After installing the motors, you&rsquo;ll press in the wheel bearings. I was surprised to learn that it even had real bearings. They were difficult to install without tools. I laid the bearings in the cutout with one side fully in and the other sticking up a bit. On the latter side, I used the included wrench allow me to get better force on the bearing and from two of my thumbs instead of one. After it goes in, repeat for the other side and possible back to the first side until it&rsquo;s flush. Repeat for each bearing.</p>
 
-<p>After installing the motors, you&#8217;ll press in the wheel bearings. I was surprised to learn that it even had real bearings. They were difficult to install without tools. I laid the bearings in the cutout with one side fully in and the other sticking up a bit. On the latter side, I used the included wrench allow me to get better force on the bearing and from two of my thumbs instead of one. After it goes in, repeat for the other side and possible back to the first side until it&#8217;s flush. Repeat for each bearing.</p>
+<p><img class="lostImage" src="" alt="Image no longer available :("/></p>
 
-<p><a href="http://www.nearwood.net/wp-content/uploads/IMG_20141122_122203.jpg"><img class="aligncenter size-medium wp-image-502" src="http://www.nearwood.net/wp-content/uploads/IMG_20141122_122203-300x225.jpg" alt="IMG_20141122_122203" width="300" height="225" srcset="https://www.nearwood.net/wp-content/uploads/IMG_20141122_122203-300x225.jpg 300w, https://www.nearwood.net/wp-content/uploads/IMG_20141122_122203.jpg 800w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+<p>It seemed the best way to install the SparkFun encoders was to attach them to the output shaft itself (as opposed to the front wheels). The included encoder screws will allow you to attach them to the shaft. Note that the thread sizes are different, so you&rsquo;re ruining the original threads on the inner shaft. Be careful not to separate the glued-on rubber backing of the magnetic disc. It comes off pretty easily in some spots. I had to use the parts from my second kit (that I bought by mistake) after I separated the ones from the first kit.</p>
 
-<p>It seemed the best way to install the SparkFun encoders was to attach them to the output shaft itself (as opposed to the front wheels). The included encoder screws will allow you to attach them to the shaft. Note that the thread sizes are different, so you&#8217;re ruining the original threads on the inner shaft. Be careful not to separate the glued-on rubber backing of the magnetic disc. It comes off pretty easily in some spots. I had to use the parts from my second kit (that I bought by mistake) after I separated the ones from the first kit.</p>
+<p><img class="lostImage" src="" alt="Image no longer available :("/></p>
 
-<p><a href="http://www.nearwood.net/wp-content/uploads/IMG_20141122_123719.jpg"><img class="aligncenter size-medium wp-image-504" src="http://www.nearwood.net/wp-content/uploads/IMG_20141122_123719-224x300.jpg" alt="IMG_20141122_123719" width="224" height="300" srcset="https://www.nearwood.net/wp-content/uploads/IMG_20141122_123719-224x300.jpg 224w, https://www.nearwood.net/wp-content/uploads/IMG_20141122_123719-767x1024.jpg 767w, https://www.nearwood.net/wp-content/uploads/IMG_20141122_123719.jpg 800w" sizes="(max-width: 224px) 100vw, 224px" /></a></p>
+<p>Now, with some spare small zip-ties (I can&rsquo;t remember if the kit comes with any), you need to attach the hall effect sensors some how. One for each motor, obviously. They need to be within 3mm or so of the magnetic disc. I attached mine like so:</p>
 
-<p>Now, with some spare small zip-ties (I can&#8217;t remember if the kit comes with any), you need to attach the hall effect sensors some how. One for each motor, obviously. They need to be within 3mm or so of the magnetic disc. I attached mine like so:</p>
-
-<p><a href="http://www.nearwood.net/wp-content/uploads/IMG_20141122_140917.jpg"><img class="aligncenter size-medium wp-image-505" src="http://www.nearwood.net/wp-content/uploads/IMG_20141122_140917-224x300.jpg" alt="IMG_20141122_140917" width="224" height="300" srcset="https://www.nearwood.net/wp-content/uploads/IMG_20141122_140917-224x300.jpg 224w, https://www.nearwood.net/wp-content/uploads/IMG_20141122_140917-767x1024.jpg 767w, https://www.nearwood.net/wp-content/uploads/IMG_20141122_140917.jpg 800w" sizes="(max-width: 224px) 100vw, 224px" /></a></p>
+<p><img class="lostImage" src="" alt="Image no longer available :("/></p>
 
 <p>&nbsp;</p>
 
-<p>If I had to do it over again, I&#8217;d put the zip ties closer to the motor. That is, under one side of the white plastic motor retention piece. I&#8217;d also face the encoders with the small side facing the disc! But it turns out it works fine reversed. Rotate the motor somehow to ensure that if the disc is out-of-round as mine were slightly, it doesn&#8217;t hit the encoder. Also, the metal stand-offs were moved since taking this photo, so they weren&#8217;t so close to the disc.</p>
+<p>If I had to do it over again, I&rsquo;d put the zip ties closer to the motor. That is, under one side of the white plastic motor retention piece. I&rsquo;d also face the encoders with the small side facing the disc! But it turns out it works fine reversed. Rotate the motor somehow to ensure that if the disc is out-of-round as mine were slightly, it doesn&rsquo;t hit the encoder. Also, the metal stand-offs were moved since taking this photo, so they weren&rsquo;t so close to the disc.</p>
 
-<p><a href="http://www.nearwood.net/wp-content/uploads/IMG_20141122_140933.jpg"><img class="aligncenter size-medium wp-image-506" src="http://www.nearwood.net/wp-content/uploads/IMG_20141122_140933-224x300.jpg" alt="IMG_20141122_140933" width="224" height="300" srcset="https://www.nearwood.net/wp-content/uploads/IMG_20141122_140933-224x300.jpg 224w, https://www.nearwood.net/wp-content/uploads/IMG_20141122_140933-767x1024.jpg 767w, https://www.nearwood.net/wp-content/uploads/IMG_20141122_140933.jpg 800w" sizes="(max-width: 224px) 100vw, 224px" /></a></p>
+<p><img class="lostImage" src="" alt="Image no longer available :("/></p>
 
 <p>Once done, it should look like this:</p>
 
-<p><a href="http://www.nearwood.net/wp-content/uploads/IMG_20141122_141839.jpg"><img class="aligncenter  wp-image-508" src="http://www.nearwood.net/wp-content/uploads/IMG_20141122_141839-300x225.jpg" alt="IMG_20141122_141839" width="308" height="231" srcset="https://www.nearwood.net/wp-content/uploads/IMG_20141122_141839-300x225.jpg 300w, https://www.nearwood.net/wp-content/uploads/IMG_20141122_141839.jpg 800w" sizes="(max-width: 308px) 100vw, 308px" /></a></p>
+<p><img class="lostImage" src="" alt="Image no longer available :("/></p>
 
-<p>Don&#8217;t tighten the case together too much, you&#8217;ll be reopening it a few times to adjust things. Depending on your electronic hardware, you might even fit some of that inside. I wasn&#8217;t able to, though.</p>
+<p>Don&rsquo;t tighten the case together too much, you&rsquo;ll be reopening it a few times to adjust things. Depending on your electronic hardware, you might even fit some of that inside. I wasn&rsquo;t able to, though.</p>
 
 <p>Next is soldering and assembling the boards.</p>
 
-<p>&nbsp;</p></div>
+<p>&nbsp;</p>
+</div>
 				
 				<footer class="post__footer">
 					
@@ -106,10 +98,10 @@ So this is what the chassis looks like fully assembled:
 
 					
 <div class="post__share share">
-	<a class="share__link btn" title="Share on Twitter" href="https://twitter.com/intent/tweet/?url=https%3a%2f%2fblog.nearwood.net%2fraspberry-pi-robot-assembly-part-1%2f&amp;text=Raspberry%20Pi%20Robot%20%e2%80%93%20Assembly%20Part%201" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, 'Share on Twitter', 'width=800,height=450,resizable=yes,toolbar=0,status=0'); return false">
+	<a class="share__link btn" title="Share on Twitter" href="https://twitter.com/intent/tweet/?url=https%3a%2f%2fnearwood.dev%2fraspberry-pi-robot-assembly-part-1%2f&amp;text=Raspberry%20Pi%20Robot%20%e2%80%93%20Assembly%20Part%201" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, 'Share on Twitter', 'width=800,height=450,resizable=yes,toolbar=0,status=0'); return false">
 		<svg class="share__icon" aria-label="Twitter" role="img" width="32" height="32" viewBox="0 0 512 512"><path d="M437 152a72 72 0 0 1-40 12 72 72 0 0 0 32-40 72 72 0 0 1-45 17 72 72 0 0 0-122 65 200 200 0 0 1-145-74 72 72 0 0 0 22 94 72 72 0 0 1-32-7 72 72 0 0 0 56 69 72 72 0 0 1-32 1 72 72 0 0 0 67 50 200 200 0 0 1-105 29 200 200 0 0 0 309-179 200 200 0 0 0 35-37"/></svg>
 	</a>
-	<a class="share__link btn" title="Share on Reddit" href="https://www.reddit.com/submit?url=https%3a%2f%2fblog.nearwood.net%2fraspberry-pi-robot-assembly-part-1%2f&amp;title=Raspberry%20Pi%20Robot%20%e2%80%93%20Assembly%20Part%201" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, 'Share on Reddit', 'width=832,height=624,toolbar=0,status=0'); return false">
+	<a class="share__link btn" title="Share on Reddit" href="https://www.reddit.com/submit?url=https%3a%2f%2fnearwood.dev%2fraspberry-pi-robot-assembly-part-1%2f&amp;title=Raspberry%20Pi%20Robot%20%e2%80%93%20Assembly%20Part%201" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, 'Share on Reddit', 'width=832,height=624,toolbar=0,status=0'); return false">
 		<svg class="share__icon" aria-label="Reddit" role="img" width="32" height="32" viewBox="0 0 512 512"><path fill-rule="evenodd" d="M375 146a32 32 0 1 0-29-46l-65-13c-5-1-9 2-10 6l-22 97c-45 1-85 15-113 36a42 42 0 1 0-45 69l-1 12c0 65 74 117 166 117s166-52 166-117l-1-11a42 42 0 1 0-44-69c-28-21-67-35-111-37l19-86 58 13a32 32 0 0 0 32 29zM190 353c2-1 4 0 5 1 15 11 38 18 61 18s46-6 61-18a7 7 0 0 1 8 10c-18 14-44 21-69 21-25-1-51-7-69-21a6 6 0 0 1 3-11zm23-44a31 31 0 1 1-44-44 31 31 0 0 1 44 44zm130 0a31 31 0 1 0-44-44 31 31 0 0 0 44 44z"/></svg>
 	</a>
 </div>
