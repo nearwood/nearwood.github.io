@@ -18,8 +18,10 @@
       <pubDate>Mon, 09 Dec 2019 22:17:43 -0600</pubDate>
       
       <guid>https://nearwood.dev/posts/2019/master-boot-record/</guid>
-      <description>I like listening to instrumental music while I code, it helps keep me focused. On Bandcamp there&#39;s an artist I like called Master Boot Record. Their albums routinely contain &amp;ldquo;secrets&amp;rdquo; as the album description text. They are small easter egg like puzzles. In this post I&#39;ll go over how I solved or attempted to solve each one I found. The albums are ordered by release date, oldest first.
- C​:​\​&amp;gt;FIXMBR Secret 010010000110010101100001011101100111100100100000010011010110010101110100011000010110110000100000011010010111001100100000011011100110111101110100001000000110010001100101011000010110010000101110000011010000101001001001011101000010000001110111011000010111001100100000011010100111010101110011011101000010000001101110011011110111010000100000011001010111011001100101011011100110110001111001001000000111001101111001011011100111010001101000011001010111001101101001011110100110010101100100 Analysis Looks like binary.</description>
+      <description>&lt;p&gt;I like listening to instrumental music while I code, it helps keep me focused.
+On &lt;a href=&#34;https://bandcamp.com/&#34;&gt;Bandcamp&lt;/a&gt; there&#39;s an artist I like called &lt;a href=&#34;https://masterbootrecord.bandcamp.com/&#34;&gt;Master Boot Record&lt;/a&gt;.
+Their albums routinely contain &amp;ldquo;secrets&amp;rdquo; as the album description text. They are small easter egg like puzzles.
+In this post I&#39;ll go over how I solved or attempted to solve each one I found.&lt;/p&gt;</description>
     </item>
     
     <item>
