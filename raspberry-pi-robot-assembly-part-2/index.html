@@ -9,15 +9,15 @@
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
 		<meta property="og:title" content="Raspberry Pi Robot – Assembly Part 2" />
-<meta property="og:description" content="This was the hardest part. If you wire the wrong things together you can brick your Pi. I took some time to decide on which pins to use, and after assembly and testing everything worked. I&rsquo;ll explain which pins I picked, but note that this information will not work with other hardware configurations.[I originally had a Model B Pi, but due to needing the second hardware PWM (which is hidden on the B), switched to the B&#43;." />
+<meta property="og:description" content="This was the hardest part. If you wire the wrong things together you can brick your Pi. I took some time to decide on which pins to use, and after assembly and testing everything worked. I&#39;ll explain which pins I picked, but note that this information will not work with other hardware configurations.[I originally had a Model B Pi, but due to needing the second hardware PWM (which is hidden on the B), switched to the B&#43;." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://nearwood.dev/raspberry-pi-robot-assembly-part-2/" />
 <meta property="article:published_time" content="2016-03-08T01:47:20+00:00" />
-<meta property="article:modified_time" content="2019-10-30T12:13:38-05:00" />
+<meta property="article:modified_time" content="2019-12-10T10:57:45-06:00" />
 
 		<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Raspberry Pi Robot – Assembly Part 2"/>
-<meta name="twitter:description" content="This was the hardest part. If you wire the wrong things together you can brick your Pi. I took some time to decide on which pins to use, and after assembly and testing everything worked. I&rsquo;ll explain which pins I picked, but note that this information will not work with other hardware configurations.[I originally had a Model B Pi, but due to needing the second hardware PWM (which is hidden on the B), switched to the B&#43;."/>
+<meta name="twitter:description" content="This was the hardest part. If you wire the wrong things together you can brick your Pi. I took some time to decide on which pins to use, and after assembly and testing everything worked. I&#39;ll explain which pins I picked, but note that this information will not work with other hardware configurations.[I originally had a Model B Pi, but due to needing the second hardware PWM (which is hidden on the B), switched to the B&#43;."/>
 
 	<link rel="stylesheet" href="/css/main.css">
 	<link rel="stylesheet" href="/css/themes/dark-green.css">
@@ -44,36 +44,27 @@
 	</ul>
 </nav>
 </header>
+
 	<div class="primary">
 	
 	<main class="main">
 		<div class="single block">
 			<article class="post">
 				<h1 class="post__title">Raspberry Pi Robot – Assembly Part 2</h1>
-				<div class="post__content"><p>This was the hardest part. If you wire the wrong things together you can brick your Pi. I took some time to decide on which pins to use, and after assembly and testing everything worked. I&rsquo;ll explain which pins I picked, but note that this information will not work with other hardware configurations.[<img class="lostImage" src="" alt="Image no longer available :("/></p>
-
+				<div class="post__content"><p>This was the hardest part. If you wire the wrong things together you can brick your Pi. I took some time to decide on which pins to use, and after assembly and testing everything worked. I'll explain which pins I picked, but note that this information will not work with other hardware configurations.[<img class="lostImage" src="" alt="Image no longer available :("/></p>
 <p>I originally had a Model B Pi, but due to needing the second hardware PWM (which is hidden on the B), switched to the B+. The B+ is largely the same, save for the 40 pin expansion headers instead of 26. On one of these pins, #35, the second PWM channel is connected. I got a complete kit for $60 or so, that came with a case, wireless USB, power supply, USB cable, heat sinks, etc.</p>
-
-<p>There&rsquo;s a slight problem though. I have a parallel cable for a Model B, which is 26 pins. It didn&rsquo;t fit on the 40 pin B+ so I had to gently modify the 26 pin parallel cable with a grinder:</p>
-
-<p><img class="lostImage" src="" alt="Image no longer available :("/>Technically I&rsquo;ve probably comprimised the integrity of the plug&rsquo;s locking mechanism but if it doesn&rsquo;t work there are other options. You could use jumper wires, as you only really need 15 or so of them. The lonely blue jumper wire there is the sole reason I got the B+.</p>
-
+<p>There's a slight problem though. I have a parallel cable for a Model B, which is 26 pins. It didn't fit on the 40 pin B+ so I had to gently modify the 26 pin parallel cable with a grinder:</p>
+<p><img class="lostImage" src="" alt="Image no longer available :("/>Technically I've probably comprimised the integrity of the plug's locking mechanism but if it doesn't work there are other options. You could use jumper wires, as you only really need 15 or so of them. The lonely blue jumper wire there is the sole reason I got the B+.</p>
 <p>Anyway, now that the Pi is sorted, the real assembly comes in wiring up the prototype board.</p>
-
-<p><img class="lostImage" src="" alt="Image no longer available :("/>That there is the version I have working as of this posting date. I moved the motor B&rsquo;s PWM input from pin 17 to a separate header, as I will get to next.</p>
-
-<p>So here&rsquo;s the goal. We have a motor controller board that controls two motors, and two encoders. We need to connect up everything from the Pi to these two. That involves power:</p>
-
+<p><img class="lostImage" src="" alt="Image no longer available :("/>That there is the version I have working as of this posting date. I moved the motor B's PWM input from pin 17 to a separate header, as I will get to next.</p>
+<p>So here's the goal. We have a motor controller board that controls two motors, and two encoders. We need to connect up everything from the Pi to these two. That involves power:</p>
 <ul>
 <li>12v for the motors</li>
 <li>5v for the controller</li>
 <li>3.3v for the encoders</li>
 </ul>
-
 <p>The rest of the pins go to digital inputs on either the Pi or the controller. Now, I tried to be clever and hooked it up in a way I thought was logical, but besides the PWM connections, you can swap most everything else around.</p>
-
-<p><img class="lostImage" src="" alt="Image no longer available :("/></p>
-
+<img class="lostImage" src="" alt="Image no longer available :("/>
 <table>
 <thead>
 <tr>
@@ -83,7 +74,6 @@
 <th>Wire</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td>3</td>
@@ -91,21 +81,18 @@
 <td>ENC1</td>
 <td>A Encoder White</td>
 </tr>
-
 <tr>
 <td>5</td>
 <td>3</td>
 <td>ENC2</td>
 <td>B Encoder White</td>
 </tr>
-
 <tr>
 <td>12</td>
 <td>18</td>
 <td>PWM</td>
 <td>A PWM</td>
 </tr>
-
 <tr>
 <td>35</td>
 <td>19</td>
@@ -114,44 +101,26 @@
 </tr>
 </tbody>
 </table>
-
-<p>GPIO 2 (SDA) = Encoder 1 (to encoder&rsquo;s white wire)</p>
-
-<p>GPIO 3 (SCL) = Encoder 2 (to encoder&rsquo;s white wire)</p>
-
+<p>GPIO 2 (SDA) = Encoder 1 (to encoder's white wire)</p>
+<p>GPIO 3 (SCL) = Encoder 2 (to encoder's white wire)</p>
 <p>GPIO 4 = STBY (Yellow wire)</p>
-
 <p>GPIO 18 (PWM) = PWMA (blue wire)</p>
-
 <p>GPIO 19 (PWM) = PWMB (blue wire) <strong>(New connection, modification not pictured!)</strong></p>
-
-<p>GPIO <sup>21</sup>&frasl;<sub>27</sub> = BIN1</p>
-
+<p>GPIO 21/27 = BIN1</p>
 <p>GPIO 22 = BIN2</p>
-
 <p>GPIO 23 = AIN1</p>
-
 <p>GPIO 24 = AIN2</p>
-
 <p>A few notes:</p>
-
 <ul>
-<li>The encoders need a pullup to work. GPIO 2 and GPIO 3 have a 1.3kOhm pull up to 3.3v enabled by default. We just need to connect the red power wire for the encoders up to 3.3v as well. If you use another pin, you&rsquo;ll need to enable the pull-up in software.</li>
+<li>The encoders need a pullup to work. GPIO 2 and GPIO 3 have a 1.3kOhm pull up to 3.3v enabled by default. We just need to connect the red power wire for the encoders up to 3.3v as well. If you use another pin, you'll need to enable the pull-up in software.</li>
 <li>GPIO 18 and GPIO 35 (B+ only) have hardware PWM capabilities as an &ldquo;alt function&rdquo;, specifically &ldquo;ALT_FUNC_5&rdquo; for each of them.</li>
 </ul>
-
-<p>Here&rsquo;s the bototm of the board. You can see the routing of the 5v and GND lines clearly.</p>
-
-<p><img class="lostImage" src="" alt="Image no longer available :("/></p>
-
+<p>Here's the bototm of the board. You can see the routing of the 5v and GND lines clearly.</p>
+<img class="lostImage" src="" alt="Image no longer available :("/>
 <p>The following is a photo of the voltage regulator that I have a 12v battery pack attached to. And here is the VM (motor voltage) wire hooked up straight to the batter source (so, +12v). This is a soldered jumper wire, so do not, under any circumstance, connect this to your Pi or motor controller except for the VM pin. It will destroy anything else.</p>
-
-<p><img class="lostImage" src="" alt="Image no longer available :("/></p>
-
-<p><img class="lostImage" src="" alt="Image no longer available :("/></p>
-
-<p>&nbsp;</p>
-
+<img class="lostImage" src="" alt="Image no longer available :("/>
+<img class="lostImage" src="" alt="Image no longer available :("/>
+<p> </p>
 <p>And in Part 3, I will go over the finished construction.</p>
 </div>
 				

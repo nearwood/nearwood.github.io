@@ -770,7 +770,7 @@ button:not(:-moz-focusring):focus > .main-nav__btn-box {
 	padding: .5rem;
 	margin-bottom: 1rem;
 	color: #f8ae00;
-	list-style: none;
+	/*list-style: none;*/
 	background-color: #111;
 }
 
@@ -788,9 +788,9 @@ button:not(:-moz-focusring):focus > .main-nav__btn-box {
 }
 
 .toc ul {
-	padding: 0;
+/*	padding: 0;*/
 	margin: 0;
-	list-style: none;
+/*	list-style: none;*/
 }
 
 .toc ul ul ul a {

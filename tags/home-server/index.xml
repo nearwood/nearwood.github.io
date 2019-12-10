@@ -18,7 +18,7 @@
       <pubDate>Sun, 27 Jan 2013 01:24:24 +0000</pubDate>
       
       <guid>https://nearwood.dev/home-server-is-back-online/</guid>
-      <description>I&amp;rsquo;ve pulled power and cable from the attic and just powered up the home server again. It&amp;rsquo;s been asleep for 5 months until now. I&amp;rsquo;ve just done an emerge -sync, and it took about 10 minutes to complete.
+      <description>I&#39;ve pulled power and cable from the attic and just powered up the home server again. It&#39;s been asleep for 5 months until now. I&#39;ve just done an emerge -sync, and it took about 10 minutes to complete.
 However, it went up without any problems, which is good. Considering I turned it off in a working state. I was tempted to backup all my config files and start fresh with, say, Arch Linux, but that would take all weekend.</description>
     </item>
     

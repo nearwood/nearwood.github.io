@@ -10,16 +10,16 @@
 	<meta name="description" content="">
 		<meta property="og:title" content="Sync login/lock screen wallpaper to current desktop background" />
 <meta property="og:description" content="For Windows 7, this turned out to be pretty easy to do via PowerShell. I just had to look for a native image resizing library since the lock screen for some odd reason, only supports JPEGs up to 256KB in size. Probably one of those legacy items left over from NT, like the file system permissions dialogs, and the built-in environment variables editor&hellip;
-I ended up using WIA&rsquo;s ImageProcess COM library which worked surprisingly well." />
+I ended up using WIA&#39;s ImageProcess COM library which worked surprisingly well." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://nearwood.dev/sync-loginlock-screen-wallpaper-to-current-desktop-background/" />
 <meta property="article:published_time" content="2017-06-04T15:20:43+00:00" />
-<meta property="article:modified_time" content="2019-10-30T11:52:57-05:00" />
+<meta property="article:modified_time" content="2019-12-10T10:57:45-06:00" />
 
 		<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Sync login/lock screen wallpaper to current desktop background"/>
 <meta name="twitter:description" content="For Windows 7, this turned out to be pretty easy to do via PowerShell. I just had to look for a native image resizing library since the lock screen for some odd reason, only supports JPEGs up to 256KB in size. Probably one of those legacy items left over from NT, like the file system permissions dialogs, and the built-in environment variables editor&hellip;
-I ended up using WIA&rsquo;s ImageProcess COM library which worked surprisingly well."/>
+I ended up using WIA&#39;s ImageProcess COM library which worked surprisingly well."/>
 
 	<link rel="stylesheet" href="/css/main.css">
 	<link rel="stylesheet" href="/css/themes/dark-green.css">
@@ -46,6 +46,7 @@ I ended up using WIA&rsquo;s ImageProcess COM library which worked surprisingly 
 	</ul>
 </nav>
 </header>
+
 	<div class="primary">
 	
 	<main class="main">
@@ -53,9 +54,7 @@ I ended up using WIA&rsquo;s ImageProcess COM library which worked surprisingly 
 			<article class="post">
 				<h1 class="post__title">Sync login/lock screen wallpaper to current desktop background</h1>
 				<div class="post__content"><p>For Windows 7, this turned out to be pretty easy to do via PowerShell. I just had to look for a native image resizing library since the lock screen for some odd reason, only supports JPEGs up to 256KB in size. Probably one of those legacy items left over from NT, like the file system permissions dialogs, and the built-in environment variables editor&hellip;</p>
-
-<p>I ended up using WIA&rsquo;s ImageProcess COM library which worked surprisingly well. It just resizes whatever you give it to the primary desktop resolution, so that&rsquo;s not guaranteed to be less than 256KB, but it works more often than not so it was good enough for my purposes.</p>
-
+<p>I ended up using WIA's ImageProcess COM library which worked surprisingly well. It just resizes whatever you give it to the primary desktop resolution, so that's not guaranteed to be less than 256KB, but it works more often than not so it was good enough for my purposes.</p>
 <p><a href="https://github.com/nearwood/wallsync">https://github.com/nearwood/wallsync</a></p>
 </div>
 				

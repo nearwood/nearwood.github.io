@@ -9,16 +9,16 @@
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
 		<meta property="og:title" content="udev broke, server broke, router broke" />
-<meta property="og:description" content="I attempted to get a webcam going on our home server. So, I plug it in, and since I&rsquo;ve done this before I ran a script I made to grab an image from the webcam. Which didn&rsquo;t work. So, after checking out why (/dev/video0 node was missing), I noticed that the kernel no longer had support built in.
+<meta property="og:description" content="I attempted to get a webcam going on our home server. So, I plug it in, and since I&#39;ve done this before I ran a script I made to grab an image from the webcam. Which didn&#39;t work. So, after checking out why (/dev/video0 node was missing), I noticed that the kernel no longer had support built in.
 After going through the kernel options, I realized they changed the v4l and webcam support options around and since I just upgrade using &ldquo;-silentoldconfig&rdquo; (the bad way to do upgrades), it broke whenever I upgraded to 3." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://nearwood.dev/udev-broke-server-broke-router-broke/" />
 <meta property="article:published_time" content="2013-02-18T02:30:09+00:00" />
-<meta property="article:modified_time" content="2019-10-30T11:51:39-05:00" />
+<meta property="article:modified_time" content="2019-12-10T10:57:45-06:00" />
 
 		<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="udev broke, server broke, router broke"/>
-<meta name="twitter:description" content="I attempted to get a webcam going on our home server. So, I plug it in, and since I&rsquo;ve done this before I ran a script I made to grab an image from the webcam. Which didn&rsquo;t work. So, after checking out why (/dev/video0 node was missing), I noticed that the kernel no longer had support built in.
+<meta name="twitter:description" content="I attempted to get a webcam going on our home server. So, I plug it in, and since I&#39;ve done this before I ran a script I made to grab an image from the webcam. Which didn&#39;t work. So, after checking out why (/dev/video0 node was missing), I noticed that the kernel no longer had support built in.
 After going through the kernel options, I realized they changed the v4l and webcam support options around and since I just upgrade using &ldquo;-silentoldconfig&rdquo; (the bad way to do upgrades), it broke whenever I upgraded to 3."/>
 
 	<link rel="stylesheet" href="/css/main.css">
@@ -46,23 +46,19 @@ After going through the kernel options, I realized they changed the v4l and webc
 	</ul>
 </nav>
 </header>
+
 	<div class="primary">
 	
 	<main class="main">
 		<div class="single block">
 			<article class="post">
 				<h1 class="post__title">udev broke, server broke, router broke</h1>
-				<div class="post__content"><p>I attempted to get a webcam going on our home server. So, I plug it in, and since I&rsquo;ve done this before I ran a script I made to grab an image from the webcam. Which didn&rsquo;t work. So, after checking out why (/dev/video0 node was missing), I noticed that the kernel no longer had support built in.</p>
-
-<p>After going through the kernel options, I realized they changed the v4l and webcam support options around and since I just upgrade using &ldquo;-silentoldconfig&rdquo; (the bad way to do upgrades), it broke whenever I upgraded to 3.2.12. And 3.2.12 wasn&rsquo;t in portage&rsquo;s tree anymore, and I didn&rsquo;t have the sources for it installed (mistake number 2), so I was pretty much SOL.</p>
-
+				<div class="post__content"><p>I attempted to get a webcam going on our home server. So, I plug it in, and since I've done this before I ran a script I made to grab an image from the webcam. Which didn't work. So, after checking out why (/dev/video0 node was missing), I noticed that the kernel no longer had support built in.</p>
+<p>After going through the kernel options, I realized they changed the v4l and webcam support options around and since I just upgrade using &ldquo;-silentoldconfig&rdquo; (the bad way to do upgrades), it broke whenever I upgraded to 3.2.12. And 3.2.12 wasn't in portage's tree anymore, and I didn't have the sources for it installed (mistake number 2), so I was pretty much SOL.</p>
 <p>So I decided to upgrade. Remotely. 1500 miles remotely. Long story short, a udev upgrade swapped my network device names around and broke the internet on the reboot, and I had to wait until I was home to fix it. I kind of knew this was going to happen, but meh, I like to gamble.</p>
-
-<p>It&rsquo;s amazing how many config files have references to eth0/1 in them.</p>
-
+<p>It's amazing how many config files have references to eth0/1 in them.</p>
 <p>Now everything started to work normally again, except after purchasing a game on Steam, my router appeared to drop the connection during the download. As it turns out, the router was at 100% CPU and 99% memory, and I guess was just running out of memory and rebooting due to the download (2-3 MB/s). So, it looks like my internet is faster than my wireless router can handle.</p>
-
-<p>It&rsquo;s a WRT54G running DD-WRT, and I don&rsquo;t see any firmware upgrades for it. But DD-WRT&rsquo;s website is pretty whack, so who knows. I think I&rsquo;m going to upgrade it in the future, if it keeps crapping out on me.</p>
+<p>It's a WRT54G running DD-WRT, and I don't see any firmware upgrades for it. But DD-WRT's website is pretty whack, so who knows. I think I'm going to upgrade it in the future, if it keeps crapping out on me.</p>
 </div>
 				
 				<footer class="post__footer">
@@ -101,7 +97,7 @@ After going through the kernel options, I realized they changed the v4l and webc
 		
 		<li class="related__item"><a class="related__link" href="/gentoo-on-a-mid-2012-macbook-pro/">Gentoo on a mid-2012 MacBook Pro</a></li>
 		
-		<li class="related__item"><a class="related__link" href="/posts/2012-07-05-qemu-on-windows/">QEMU on Windows</a></li>
+		<li class="related__item"><a class="related__link" href="/posts/2012/qemu-on-windows/">QEMU on Windows</a></li>
 		
 	</ul>
 </div>

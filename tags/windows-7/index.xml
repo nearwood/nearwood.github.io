@@ -18,7 +18,7 @@
       <pubDate>Sat, 15 Mar 2014 13:01:13 +0000</pubDate>
       
       <guid>https://nearwood.dev/windows-bugs/</guid>
-      <description>Over the years I&amp;rsquo;ve noticed a couple bugs that are present in in some or all of NT/Vista/7. I experience these on a daily basis, across dozens of computers. So it can&amp;rsquo;t just be me, right?
+      <description>Over the years I&#39;ve noticed a couple bugs that are present in in some or all of NT/Vista/7. I experience these on a daily basis, across dozens of computers. So it can&#39;t just be me, right?
  Focus bug. If the timing is right, some windows remain on top despite clicking on a background window. The background window obtains focus, but does not move to the front. This is typically when the foreground window does some focus changing action (Showing a dialog, opening a new tab, etc.</description>
     </item>
     

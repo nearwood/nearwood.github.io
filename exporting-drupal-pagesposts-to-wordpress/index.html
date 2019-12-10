@@ -9,16 +9,16 @@
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
 		<meta property="og:title" content="Exporting Drupal Pages/Posts to WordPress" />
-<meta property="og:description" content="I&rsquo;ve decided to consolidate some of my web presence. My car&rsquo;s website will be merged into this one. Going from WordPress to Drupal is easy, but the other way is not. I found a couple links for SQL scripts to import lots of posts automatically, but these were and are easily outdated by Drupal and to a lesser extent WordPress.
+<meta property="og:description" content="I&#39;ve decided to consolidate some of my web presence. My car&#39;s website will be merged into this one. Going from WordPress to Drupal is easy, but the other way is not. I found a couple links for SQL scripts to import lots of posts automatically, but these were and are easily outdated by Drupal and to a lesser extent WordPress.
 It was easier just to create my own SQL JOIN statement and export the resulting list." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://nearwood.dev/exporting-drupal-pagesposts-to-wordpress/" />
 <meta property="article:published_time" content="2013-12-31T03:45:18+00:00" />
-<meta property="article:modified_time" content="2019-10-30T11:45:54-05:00" />
+<meta property="article:modified_time" content="2019-12-10T10:57:45-06:00" />
 
 		<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Exporting Drupal Pages/Posts to WordPress"/>
-<meta name="twitter:description" content="I&rsquo;ve decided to consolidate some of my web presence. My car&rsquo;s website will be merged into this one. Going from WordPress to Drupal is easy, but the other way is not. I found a couple links for SQL scripts to import lots of posts automatically, but these were and are easily outdated by Drupal and to a lesser extent WordPress.
+<meta name="twitter:description" content="I&#39;ve decided to consolidate some of my web presence. My car&#39;s website will be merged into this one. Going from WordPress to Drupal is easy, but the other way is not. I found a couple links for SQL scripts to import lots of posts automatically, but these were and are easily outdated by Drupal and to a lesser extent WordPress.
 It was easier just to create my own SQL JOIN statement and export the resulting list."/>
 
 	<link rel="stylesheet" href="/css/main.css">
@@ -46,24 +46,18 @@ It was easier just to create my own SQL JOIN statement and export the resulting 
 	</ul>
 </nav>
 </header>
+
 	<div class="primary">
 	
 	<main class="main">
 		<div class="single block">
 			<article class="post">
 				<h1 class="post__title">Exporting Drupal Pages/Posts to WordPress</h1>
-				<div class="post__content"><p>I&rsquo;ve decided to consolidate some of my web presence. My car&rsquo;s website will be merged into this one. Going from WordPress to Drupal is easy, but the other way is not. I found a couple links for SQL scripts to import lots of posts automatically, but these were and are easily outdated by Drupal and to a lesser extent WordPress.</p>
-
-<p>It was easier just to create my own SQL JOIN statement and export the resulting list. Since I have so few posts (images are hosted elsewhere), it won&rsquo;t be difficult to import each of them manually. With a little more SQL work, you could import the resulting list into WordPress.</p>
-
+				<div class="post__content"><p>I've decided to consolidate some of my web presence. My car's website will be merged into this one. Going from WordPress to Drupal is easy, but the other way is not. I found a couple links for SQL scripts to import lots of posts automatically, but these were and are easily outdated by Drupal and to a lesser extent WordPress.</p>
+<p>It was easier just to create my own SQL JOIN statement and export the resulting list. Since I have so few posts (images are hosted elsewhere), it won't be difficult to import each of them manually. With a little more SQL work, you could import the resulting list into WordPress.</p>
 <p>At the time of writing, my WordPress is version 3.8, and Drupal is a bit older at version 7.14. Below is the SQL I used to gather complete posts from Drupal:</p>
-
-<p><code>SELECT nid, type, created, title, body_value&lt;br /&gt;
-FROM field_data_body&lt;br /&gt;
-INNER JOIN node ON field_data_body.entity_id = node.nid&lt;br /&gt;
-</code></p>
-
-<p>And that&rsquo;s all I needed.</p>
+<p><code>SELECT nid, type, created, title, body_value&lt;br /&gt; FROM field_data_body&lt;br /&gt; INNER JOIN node ON field_data_body.entity_id = node.nid&lt;br /&gt;</code></p>
+<p>And that's all I needed.</p>
 </div>
 				
 				<footer class="post__footer">

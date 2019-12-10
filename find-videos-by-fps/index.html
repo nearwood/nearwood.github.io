@@ -9,19 +9,19 @@
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
 		<meta property="og:title" content="Find videos by FPS" />
-<meta property="og:description" content="I produced some videos in 60 FPS, but couldn&rsquo;t remember which ones. Since, of course, I didn&rsquo;t label their FPS at the time, I needed to find them in vast sea of 30 FPS videos. Rather than just use a simple grep with ffmpeg to find which ones, I thought it might be more useful to find all videos that have a certain FPS threshold.
+<meta property="og:description" content="I produced some videos in 60 FPS, but couldn&#39;t remember which ones. Since, of course, I didn&#39;t label their FPS at the time, I needed to find them in vast sea of 30 FPS videos. Rather than just use a simple grep with ffmpeg to find which ones, I thought it might be more useful to find all videos that have a certain FPS threshold.
 Usage: ./60fps.sh [directory]
-#!/bin/bash SAVEIFS=$IFS IFS=$&#39;\n&#39; function fpscheck { FPS=$(ffmpeg -i &#34;" />
+#!/bin/bashSAVEIFS=$IFSIFS=$&#39;\n&#39;function fpscheck{FPS=$(ffmpeg -i &#34;" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://nearwood.dev/find-videos-by-fps/" />
 <meta property="article:published_time" content="2015-08-02T23:25:29+00:00" />
-<meta property="article:modified_time" content="2019-10-30T11:45:54-05:00" />
+<meta property="article:modified_time" content="2019-12-10T10:57:45-06:00" />
 
 		<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Find videos by FPS"/>
-<meta name="twitter:description" content="I produced some videos in 60 FPS, but couldn&rsquo;t remember which ones. Since, of course, I didn&rsquo;t label their FPS at the time, I needed to find them in vast sea of 30 FPS videos. Rather than just use a simple grep with ffmpeg to find which ones, I thought it might be more useful to find all videos that have a certain FPS threshold.
+<meta name="twitter:description" content="I produced some videos in 60 FPS, but couldn&#39;t remember which ones. Since, of course, I didn&#39;t label their FPS at the time, I needed to find them in vast sea of 30 FPS videos. Rather than just use a simple grep with ffmpeg to find which ones, I thought it might be more useful to find all videos that have a certain FPS threshold.
 Usage: ./60fps.sh [directory]
-#!/bin/bash SAVEIFS=$IFS IFS=$&#39;\n&#39; function fpscheck { FPS=$(ffmpeg -i &#34;"/>
+#!/bin/bashSAVEIFS=$IFSIFS=$&#39;\n&#39;function fpscheck{FPS=$(ffmpeg -i &#34;"/>
 
 	<link rel="stylesheet" href="/css/main.css">
 	<link rel="stylesheet" href="/css/themes/dark-green.css">
@@ -48,16 +48,15 @@ Usage: ./60fps.sh [directory]
 	</ul>
 </nav>
 </header>
+
 	<div class="primary">
 	
 	<main class="main">
 		<div class="single block">
 			<article class="post">
 				<h1 class="post__title">Find videos by FPS</h1>
-				<div class="post__content"><p>I produced some videos in 60 FPS, but couldn&rsquo;t remember which ones. Since, of course, I didn&rsquo;t label their FPS at the time, I needed to find them in vast sea of 30 FPS videos. Rather than just use a simple grep with ffmpeg to find which ones, I thought it might be more useful to find all videos that have a certain FPS threshold.</p>
-
+				<div class="post__content"><p>I produced some videos in 60 FPS, but couldn't remember which ones. Since, of course, I didn't label their FPS at the time, I needed to find them in vast sea of 30 FPS videos. Rather than just use a simple grep with ffmpeg to find which ones, I thought it might be more useful to find all videos that have a certain FPS threshold.</p>
 <p>Usage: <code>./60fps.sh [directory]</code></p>
-
 <pre class="brush: bash; title: ; notranslate" title="">#!/bin/bash
 
 SAVEIFS=$IFS
@@ -89,8 +88,7 @@ done
 
 IFS=$SAVEIFS
 </pre>
-
-<p>If I thought I&rsquo;d use it more, I&rsquo;d move the hardcoded FPS test value to an optional argument for the script. Instead, I&rsquo;ll leave that as an exercise for the reader.</p>
+<p>If I thought I'd use it more, I'd move the hardcoded FPS test value to an optional argument for the script. Instead, I'll leave that as an exercise for the reader.</p>
 </div>
 				
 				<footer class="post__footer">

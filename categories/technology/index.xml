@@ -29,20 +29,14 @@ So the makers of it had challenges setup.</description>
       
       <guid>https://nearwood.dev/reverse-engineering-the-firmware-on-a-kenwood-ddx9903s/</guid>
       <description>&lt;p&gt;I bought and really like my Kenwood Excelon DDX9903S headunit. I had it in my WRX, and moved it to my LS430. It supports Android Auto and CarPlay, which I find really useful when driving.&lt;/p&gt;
-
 &lt;p&gt;However, it has a nag screen every time it boots up. This got me curious as to how it worked, and see if it could be patched to skip this disclaimer. I figured it probably ran Linux on a SoC, as pretty much everything does nowadays. So I grabbed the latest firmware for it (mine was already updated to it), and started probing.&lt;/p&gt;
-
 &lt;p&gt;&lt;code&gt;S_V2_7_0008_0600_AT1.zip&lt;/code&gt;&lt;/p&gt;
-
 &lt;p&gt;Extract that and you get 3 folders under S_V2_7_0008_0600/:&lt;/p&gt;
-
 &lt;pre class=&#34;brush: plain; light: true; title: ; notranslate&#34; title=&#34;&#34;&gt;BOOT_V2_7_0008_0600_release/
 MAIN_V1_0_2758_0400/
 SOC_V2_7_0008_0600/
 &lt;/pre&gt;
-
-&lt;p&gt;In each there&amp;rsquo;s a .nfu file, which I&amp;rsquo;ve never encountered before. I ran binwalk on each:&lt;/p&gt;
-
+&lt;p&gt;In each there&#39;s a .nfu file, which I&#39;ve never encountered before. I ran binwalk on each:&lt;/p&gt;
 &lt;pre class=&#34;brush: plain; light: true; title: ; notranslate&#34; title=&#34;&#34;&gt;[BOOT_V2_7_0008_0600_release]$ binwalk Boot_2.7.0008.0600.nfu
 DECIMAL HEXADECIMAL DESCRIPTION
 --------------------------------------------------------------------------------
@@ -51,8 +45,7 @@ DECIMAL HEXADECIMAL DESCRIPTION
 2358024 0x23FB08 ELF, 64-bit LSB shared object, AMD x86-64, version 1 (SYSV)
 3209992 0x30FB08 ELF, 64-bit LSB shared object, AMD x86-64, version 1 (SYSV)
 &lt;/pre&gt;
-
-&lt;p&gt;Surprise, surprise, it runs Android. But, I&amp;rsquo;m thinking this image is possibly just the firmware updater, and not what I am looking for.&lt;/p&gt;</description>
+&lt;p&gt;Surprise, surprise, it runs Android. But, I&#39;m thinking this image is possibly just the firmware updater, and not what I am looking for.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -61,7 +54,7 @@ DECIMAL HEXADECIMAL DESCRIPTION
       <pubDate>Thu, 21 Apr 2016 22:07:09 +0000</pubDate>
       
       <guid>https://nearwood.dev/gentoo-linux-tesla-it-was-only-a-matter-of-time/</guid>
-      <description>Surprise, surprise, my old favorite Gentoo Linux is now running on a Tesla Model S. Hope he doesn&amp;rsquo;t emerge world while driving.</description>
+      <description>Surprise, surprise, my old favorite Gentoo Linux is now running on a Tesla Model S. Hope he doesn&#39;t emerge world while driving.</description>
     </item>
     
     <item>
@@ -70,7 +63,7 @@ DECIMAL HEXADECIMAL DESCRIPTION
       <pubDate>Tue, 08 Mar 2016 01:47:20 +0000</pubDate>
       
       <guid>https://nearwood.dev/raspberry-pi-robot-assembly-part-2/</guid>
-      <description>This was the hardest part. If you wire the wrong things together you can brick your Pi. I took some time to decide on which pins to use, and after assembly and testing everything worked. I&amp;rsquo;ll explain which pins I picked, but note that this information will not work with other hardware configurations.[I originally had a Model B Pi, but due to needing the second hardware PWM (which is hidden on the B), switched to the B+.</description>
+      <description>This was the hardest part. If you wire the wrong things together you can brick your Pi. I took some time to decide on which pins to use, and after assembly and testing everything worked. I&#39;ll explain which pins I picked, but note that this information will not work with other hardware configurations.[I originally had a Model B Pi, but due to needing the second hardware PWM (which is hidden on the B), switched to the B+.</description>
     </item>
     
     <item>
@@ -79,8 +72,8 @@ DECIMAL HEXADECIMAL DESCRIPTION
       <pubDate>Fri, 12 Jun 2015 00:59:51 +0000</pubDate>
       
       <guid>https://nearwood.dev/oculus-rift-and-touch/</guid>
-      <description>I&amp;rsquo;m super excited for the imminent onslaught of consumer grade VR equipment and game support. I think it will change how games are played from now on. Not all games, mind you, it takes a certain level of involvement to strap on a head-mounted display and get into the experience. The military already uses similar technology extensively for training. It&amp;rsquo;s just a matter of months before equipment hits shelves.
-That said, there&amp;rsquo;s a serious problem with it already.</description>
+      <description>I&#39;m super excited for the imminent onslaught of consumer grade VR equipment and game support. I think it will change how games are played from now on. Not all games, mind you, it takes a certain level of involvement to strap on a head-mounted display and get into the experience. The military already uses similar technology extensively for training. It&#39;s just a matter of months before equipment hits shelves.
+That said, there&#39;s a serious problem with it already.</description>
     </item>
     
     <item>
@@ -89,8 +82,8 @@ That said, there&amp;rsquo;s a serious problem with it already.</description>
       <pubDate>Fri, 10 Apr 2015 02:51:49 +0000</pubDate>
       
       <guid>https://nearwood.dev/action-camera-review-garmin-virb-elite/</guid>
-      <description>After seeing a fellow MSNE autocrosser post a video with nice data overlays, I asked what datalogger and software he used. It turns out it wasn&amp;rsquo;t just a data logger, it was a camera that gathered his speed, acceleration, and so on for him. It was the Garmin Virb Elite. The &amp;lsquo;Elite&amp;rsquo; part signifying the difference between the non-sensor, data-less variant.
-I&amp;rsquo;d never heard of it, and I thought I kept at least a cursory eye on the action camera market.</description>
+      <description>After seeing a fellow MSNE autocrosser post a video with nice data overlays, I asked what datalogger and software he used. It turns out it wasn&#39;t just a data logger, it was a camera that gathered his speed, acceleration, and so on for him. It was the Garmin Virb Elite. The &amp;lsquo;Elite&amp;rsquo; part signifying the difference between the non-sensor, data-less variant.
+I&#39;d never heard of it, and I thought I kept at least a cursory eye on the action camera market.</description>
     </item>
     
   </channel>

@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2019 Nicholas Earwood</copyright>
-    <lastBuildDate>Mon, 14 Oct 2019 16:22:05 -0500</lastBuildDate>
+    <lastBuildDate>Mon, 09 Dec 2019 22:17:43 -0600</lastBuildDate>
     
 	<atom:link href="https://nearwood.dev/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Master Boot Record</title>
+      <link>https://nearwood.dev/posts/2019/master-boot-record/</link>
+      <pubDate>Mon, 09 Dec 2019 22:17:43 -0600</pubDate>
+      
+      <guid>https://nearwood.dev/posts/2019/master-boot-record/</guid>
+      <description>I like listening to instrumental music while I code, it helps keep me focused. On Bandcamp there&#39;s an artist I like called Master Boot Record. Their albums routinely contain &amp;ldquo;secrets&amp;rdquo; as the album description text. They are small easter egg like puzzles. In this post I&#39;ll go over how I solved or attempted to solve each one I found. The albums are ordered by release date, oldest first.
+ C​:​\​&amp;gt;FIXMBR Secret 010010000110010101100001011101100111100100100000010011010110010101110100011000010110110000100000011010010111001100100000011011100110111101110100001000000110010001100101011000010110010000101110000011010000101001001001011101000010000001110111011000010111001100100000011010100111010101110011011101000010000001101110011011110111010000100000011001010111011001100101011011100110110001111001001000000111001101111001011011100111010001101000011001010111001101101001011110100110010101100100 Analysis Looks like binary.</description>
+    </item>
     
     <item>
       <title>Now a static site</title>
@@ -18,7 +28,7 @@
       <pubDate>Mon, 14 Oct 2019 16:22:05 -0500</pubDate>
       
       <guid>https://nearwood.dev/posts/new-static-site/</guid>
-      <description>&lt;p&gt;I&amp;rsquo;ve moved everything over to a static site. I did a few &amp;ldquo;while I&amp;rsquo;m at it&amp;rdquo; things as well:&lt;/p&gt;</description>
+      <description>&lt;p&gt;I&#39;ve moved everything over to a static site. I did a few &amp;ldquo;while I&#39;m at it&amp;rdquo; things as well:&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -27,8 +37,8 @@
       <pubDate>Sat, 02 Feb 2019 19:43:39 +0000</pubDate>
       
       <guid>https://nearwood.dev/migrating-to-a-static-site/</guid>
-      <description>I&amp;rsquo;m testing out various static site generators and will be migrating this site to one in the next month or two.
-I will retain existing post comments, as there are so few but they are useful. The new static site will not allow new comments to be posted. I&amp;rsquo;m not sure I want to go with something like Disqus.</description>
+      <description>I&#39;m testing out various static site generators and will be migrating this site to one in the next month or two.
+I will retain existing post comments, as there are so few but they are useful. The new static site will not allow new comments to be posted. I&#39;m not sure I want to go with something like Disqus.</description>
     </item>
     
     <item>
@@ -58,20 +68,14 @@ So the makers of it had challenges setup.</description>
       
       <guid>https://nearwood.dev/reverse-engineering-the-firmware-on-a-kenwood-ddx9903s/</guid>
       <description>&lt;p&gt;I bought and really like my Kenwood Excelon DDX9903S headunit. I had it in my WRX, and moved it to my LS430. It supports Android Auto and CarPlay, which I find really useful when driving.&lt;/p&gt;
-
 &lt;p&gt;However, it has a nag screen every time it boots up. This got me curious as to how it worked, and see if it could be patched to skip this disclaimer. I figured it probably ran Linux on a SoC, as pretty much everything does nowadays. So I grabbed the latest firmware for it (mine was already updated to it), and started probing.&lt;/p&gt;
-
 &lt;p&gt;&lt;code&gt;S_V2_7_0008_0600_AT1.zip&lt;/code&gt;&lt;/p&gt;
-
 &lt;p&gt;Extract that and you get 3 folders under S_V2_7_0008_0600/:&lt;/p&gt;
-
 &lt;pre class=&#34;brush: plain; light: true; title: ; notranslate&#34; title=&#34;&#34;&gt;BOOT_V2_7_0008_0600_release/
 MAIN_V1_0_2758_0400/
 SOC_V2_7_0008_0600/
 &lt;/pre&gt;
-
-&lt;p&gt;In each there&amp;rsquo;s a .nfu file, which I&amp;rsquo;ve never encountered before. I ran binwalk on each:&lt;/p&gt;
-
+&lt;p&gt;In each there&#39;s a .nfu file, which I&#39;ve never encountered before. I ran binwalk on each:&lt;/p&gt;
 &lt;pre class=&#34;brush: plain; light: true; title: ; notranslate&#34; title=&#34;&#34;&gt;[BOOT_V2_7_0008_0600_release]$ binwalk Boot_2.7.0008.0600.nfu
 DECIMAL HEXADECIMAL DESCRIPTION
 --------------------------------------------------------------------------------
@@ -80,8 +84,7 @@ DECIMAL HEXADECIMAL DESCRIPTION
 2358024 0x23FB08 ELF, 64-bit LSB shared object, AMD x86-64, version 1 (SYSV)
 3209992 0x30FB08 ELF, 64-bit LSB shared object, AMD x86-64, version 1 (SYSV)
 &lt;/pre&gt;
-
-&lt;p&gt;Surprise, surprise, it runs Android. But, I&amp;rsquo;m thinking this image is possibly just the firmware updater, and not what I am looking for.&lt;/p&gt;</description>
+&lt;p&gt;Surprise, surprise, it runs Android. But, I&#39;m thinking this image is possibly just the firmware updater, and not what I am looking for.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -91,10 +94,8 @@ DECIMAL HEXADECIMAL DESCRIPTION
       
       <guid>https://nearwood.dev/adding-a-disk-to-an-encrypted-mdadm-array/</guid>
       <description>&lt;p&gt;My RAID6 was originally planned with 6 drives, but only had 5 for a while due to space concerns with the case. However, I found as a file, media, and multiple cryptocurrency node it filled up the 2.7TB pretty quickly. So, I got a new case (and some more RAM), which has proper space for 6 3.5&amp;rdquo; drives (and 2 5.25&amp;rdquo;). When migrating to this I decided to add the extra 1TB WD Red NAS drive I bought but have not been able to use.&lt;/p&gt;
-
 &lt;p&gt;The case is a Fractal Design Define Mini, and I am thoroughly impressed. Six 3.5&amp;rdquo; slots, two 5.25&amp;rdquo; external slots, and lots of sound padding on the doors and sides.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://nearwood.dev/images/server.jpg&#34; alt=&#34;My SuperMicro server in the Fractal Design case&#34; /&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;img src=&#34;https://nearwood.dev/images/server.jpg&#34; alt=&#34;My SuperMicro server in the Fractal Design case&#34;&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -104,7 +105,7 @@ DECIMAL HEXADECIMAL DESCRIPTION
       
       <guid>https://nearwood.dev/sync-loginlock-screen-wallpaper-to-current-desktop-background/</guid>
       <description>For Windows 7, this turned out to be pretty easy to do via PowerShell. I just had to look for a native image resizing library since the lock screen for some odd reason, only supports JPEGs up to 256KB in size. Probably one of those legacy items left over from NT, like the file system permissions dialogs, and the built-in environment variables editor&amp;hellip;
-I ended up using WIA&amp;rsquo;s ImageProcess COM library which worked surprisingly well.</description>
+I ended up using WIA&#39;s ImageProcess COM library which worked surprisingly well.</description>
     </item>
     
     <item>
@@ -113,7 +114,7 @@ I ended up using WIA&amp;rsquo;s ImageProcess COM library which worked surprisin
       <pubDate>Wed, 15 Mar 2017 17:30:13 +0000</pubDate>
       
       <guid>https://nearwood.dev/windmill-windows-window-unclobberer/</guid>
-      <description>I noticed during the (many) meetings I attend that disconnecting and reconnecting my laptop from the dock reorganizes all my windows to the laptop&amp;rsquo;s display. This got annoying to have to drag and resize everything when returning to my desk, which has a 3 monitor setup. So, I wrote this small Win32 application to allow you to save the positioning and size of all windows and then restore them at a later time.</description>
+      <description>I noticed during the (many) meetings I attend that disconnecting and reconnecting my laptop from the dock reorganizes all my windows to the laptop&#39;s display. This got annoying to have to drag and resize everything when returning to my desk, which has a 3 monitor setup. So, I wrote this small Win32 application to allow you to save the positioning and size of all windows and then restore them at a later time.</description>
     </item>
     
     <item>
@@ -122,7 +123,7 @@ I ended up using WIA&amp;rsquo;s ImageProcess COM library which worked surprisin
       <pubDate>Wed, 12 Oct 2016 17:21:44 +0000</pubDate>
       
       <guid>https://nearwood.dev/405hp-280z/</guid>
-      <description>A somewhat local place had a surprise dyno day so I went to try and tune my car a bit. Was somewhat successful, reaching 405 HP and 420 Ft-lbs. before giving up. I was hoping for 450 HP, as my turbo and injectors should be able to support it easily, but oh well. I couldn&amp;rsquo;t get past ~14psi or so.
+      <description>A somewhat local place had a surprise dyno day so I went to try and tune my car a bit. Was somewhat successful, reaching 405 HP and 420 Ft-lbs. before giving up. I was hoping for 450 HP, as my turbo and injectors should be able to support it easily, but oh well. I couldn&#39;t get past ~14psi or so.
   But I kept experiencing some spark blow-out and had a rear main leak, so I decided to cut it short.</description>
     </item>
     
@@ -132,8 +133,8 @@ I ended up using WIA&amp;rsquo;s ImageProcess COM library which worked surprisin
       <pubDate>Sat, 21 May 2016 22:06:00 +0000</pubDate>
       
       <guid>https://nearwood.dev/fixing-mirrorlist-on-arch-linux-arm-raspberry-pi/</guid>
-      <description>I hadn&amp;rsquo;t updated my Raspberry Pi (a B+ model for my rpi-drd project) in about a year. Pacman -Syu kept complaining about being unable to find files on any of the mirrors.
-So I, without thinking, ran reflector on an x86 host and copied it over. Oops. Now it definitely can&amp;rsquo;t find packages.
+      <description>I hadn&#39;t updated my Raspberry Pi (a B+ model for my rpi-drd project) in about a year. Pacman -Syu kept complaining about being unable to find files on any of the mirrors.
+So I, without thinking, ran reflector on an x86 host and copied it over. Oops. Now it definitely can&#39;t find packages.
 The archlinuxarm.org website gave me the hostname I needed, but not the entire URL. Put this in your mirrorlist (as the sole entry) to restore functionality:</description>
     </item>
     
@@ -143,7 +144,7 @@ The archlinuxarm.org website gave me the hostname I needed, but not the entire U
       <pubDate>Thu, 21 Apr 2016 22:07:09 +0000</pubDate>
       
       <guid>https://nearwood.dev/gentoo-linux-tesla-it-was-only-a-matter-of-time/</guid>
-      <description>Surprise, surprise, my old favorite Gentoo Linux is now running on a Tesla Model S. Hope he doesn&amp;rsquo;t emerge world while driving.</description>
+      <description>Surprise, surprise, my old favorite Gentoo Linux is now running on a Tesla Model S. Hope he doesn&#39;t emerge world while driving.</description>
     </item>
     
     <item>
@@ -152,7 +153,7 @@ The archlinuxarm.org website gave me the hostname I needed, but not the entire U
       <pubDate>Tue, 08 Mar 2016 01:47:20 +0000</pubDate>
       
       <guid>https://nearwood.dev/raspberry-pi-robot-assembly-part-2/</guid>
-      <description>This was the hardest part. If you wire the wrong things together you can brick your Pi. I took some time to decide on which pins to use, and after assembly and testing everything worked. I&amp;rsquo;ll explain which pins I picked, but note that this information will not work with other hardware configurations.[I originally had a Model B Pi, but due to needing the second hardware PWM (which is hidden on the B), switched to the B+.</description>
+      <description>This was the hardest part. If you wire the wrong things together you can brick your Pi. I took some time to decide on which pins to use, and after assembly and testing everything worked. I&#39;ll explain which pins I picked, but note that this information will not work with other hardware configurations.[I originally had a Model B Pi, but due to needing the second hardware PWM (which is hidden on the B), switched to the B+.</description>
     </item>
     
     <item>
@@ -161,7 +162,7 @@ The archlinuxarm.org website gave me the hostname I needed, but not the entire U
       <pubDate>Sat, 16 Jan 2016 03:44:07 +0000</pubDate>
       
       <guid>https://nearwood.dev/dcs-mig-21-first-flight/</guid>
-      <description>I have DCS World, and whenever I get a new module I like to try and &amp;ldquo;just fly the thing&amp;rdquo; with minimal cockpit familiarity. I always expect hilarity to ensue but it&amp;rsquo;s really not that exciting. Like with the Ka-50 I just crashed with in-air starts, and could never get it off the ground with a cold start (until I read the operating manual). But helicopters are hard, so that&amp;rsquo;s not a surprise.</description>
+      <description>I have DCS World, and whenever I get a new module I like to try and &amp;ldquo;just fly the thing&amp;rdquo; with minimal cockpit familiarity. I always expect hilarity to ensue but it&#39;s really not that exciting. Like with the Ka-50 I just crashed with in-air starts, and could never get it off the ground with a cold start (until I read the operating manual). But helicopters are hard, so that&#39;s not a surprise.</description>
     </item>
     
     <item>
@@ -190,7 +191,7 @@ I get a lot of hits from Russia on that site. Actually, I get a lot of hits from
       <pubDate>Sun, 06 Sep 2015 00:24:12 +0000</pubDate>
       
       <guid>https://nearwood.dev/280z-update/</guid>
-      <description>It&amp;rsquo;s been a while since I&amp;rsquo;ve worked on my Z. I&amp;rsquo;ve been working on rebuilding my wife&amp;rsquo;s 300ZX, which is progressing slowly. My Z had a dead oxygen sensor and was not tuned correctly. It also had a fuel leak. But last week I fixed both of those issues and now it runs like a champ.
+      <description>It&#39;s been a while since I&#39;ve worked on my Z. I&#39;ve been working on rebuilding my wife&#39;s 300ZX, which is progressing slowly. My Z had a dead oxygen sensor and was not tuned correctly. It also had a fuel leak. But last week I fixed both of those issues and now it runs like a champ.
 I then leaned out the fuel table by about 25% (I had richened it up when the sensor died to be safe).</description>
     </item>
     
@@ -200,7 +201,7 @@ I then leaned out the fuel table by about 25% (I had richened it up when the sen
       <pubDate>Sun, 16 Aug 2015 04:02:50 +0000</pubDate>
       
       <guid>https://nearwood.dev/3rd-pumps-the-charm/</guid>
-      <description>So I picked up a Bosch 044 fuel pump for a song, and decided to get rid of my Fuelab Prodigy pump. I almost wrote about the Fuelab install, but since I intended on replacing it, it wasn&amp;rsquo;t worth it. It was just too much for my vehicle, even at my target boost levels.
+      <description>So I picked up a Bosch 044 fuel pump for a song, and decided to get rid of my Fuelab Prodigy pump. I almost wrote about the Fuelab install, but since I intended on replacing it, it wasn&#39;t worth it. It was just too much for my vehicle, even at my target boost levels.
 The Fuelab pump was brushless, and so was very picky about voltage. It was unusable during cranking due to a large voltage drop because of my small battery.</description>
     </item>
     
@@ -210,9 +211,9 @@ The Fuelab pump was brushless, and so was very picky about voltage. It was unusa
       <pubDate>Sun, 02 Aug 2015 23:25:29 +0000</pubDate>
       
       <guid>https://nearwood.dev/find-videos-by-fps/</guid>
-      <description>I produced some videos in 60 FPS, but couldn&amp;rsquo;t remember which ones. Since, of course, I didn&amp;rsquo;t label their FPS at the time, I needed to find them in vast sea of 30 FPS videos. Rather than just use a simple grep with ffmpeg to find which ones, I thought it might be more useful to find all videos that have a certain FPS threshold.
+      <description>I produced some videos in 60 FPS, but couldn&#39;t remember which ones. Since, of course, I didn&#39;t label their FPS at the time, I needed to find them in vast sea of 30 FPS videos. Rather than just use a simple grep with ffmpeg to find which ones, I thought it might be more useful to find all videos that have a certain FPS threshold.
 Usage: ./60fps.sh [directory]
-#!/bin/bash SAVEIFS=$IFS IFS=$&#39;\n&#39; function fpscheck { FPS=$(ffmpeg -i &#34;</description>
+#!/bin/bashSAVEIFS=$IFSIFS=$&#39;\n&#39;function fpscheck{FPS=$(ffmpeg -i &#34;</description>
     </item>
     
     <item>
@@ -232,8 +233,8 @@ Some things I added:
       <pubDate>Fri, 12 Jun 2015 00:59:51 +0000</pubDate>
       
       <guid>https://nearwood.dev/oculus-rift-and-touch/</guid>
-      <description>I&amp;rsquo;m super excited for the imminent onslaught of consumer grade VR equipment and game support. I think it will change how games are played from now on. Not all games, mind you, it takes a certain level of involvement to strap on a head-mounted display and get into the experience. The military already uses similar technology extensively for training. It&amp;rsquo;s just a matter of months before equipment hits shelves.
-That said, there&amp;rsquo;s a serious problem with it already.</description>
+      <description>I&#39;m super excited for the imminent onslaught of consumer grade VR equipment and game support. I think it will change how games are played from now on. Not all games, mind you, it takes a certain level of involvement to strap on a head-mounted display and get into the experience. The military already uses similar technology extensively for training. It&#39;s just a matter of months before equipment hits shelves.
+That said, there&#39;s a serious problem with it already.</description>
     </item>
     
     <item>
@@ -253,11 +254,9 @@ That said, there&amp;rsquo;s a serious problem with it already.</description>
       <pubDate>Sat, 02 May 2015 16:00:58 +0000</pubDate>
       
       <guid>https://nearwood.dev/harbor-freight-trailer-build-part-3/</guid>
-      <description>&lt;p&gt;It&amp;rsquo;s been a while from the &lt;a href=&#34;https://nearwood.dev/harbor-freight-trailer-build-part-2/&#34;&gt;last update&lt;/a&gt;, but the build is winding down. That&amp;rsquo;s good, because I&amp;rsquo;ve put entirely too much effort into this.&lt;/p&gt;
-
-&lt;p&gt;I figured out how to secure the tires. Using some &lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;8&lt;/sub&gt;&amp;rdquo; steel angle ($30), I made some mounts.&lt;/p&gt;
-
-&lt;p&gt;&lt;img class=&#34;lostImage&#34; src=&#34;&#34; alt=&#34;Image no longer available :(&#34;/&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;It&#39;s been a while from the &lt;a href=&#34;https://nearwood.dev/harbor-freight-trailer-build-part-2/&#34;&gt;last update&lt;/a&gt;, but the build is winding down. That&#39;s good, because I&#39;ve put entirely too much effort into this.&lt;/p&gt;
+&lt;p&gt;I figured out how to secure the tires. Using some 1/8&amp;rdquo; steel angle ($30), I made some mounts.&lt;/p&gt;
+&lt;img class=&#34;lostImage&#34; src=&#34;&#34; alt=&#34;Image no longer available :(&#34;/&gt;</description>
     </item>
     
     <item>
@@ -266,8 +265,8 @@ That said, there&amp;rsquo;s a serious problem with it already.</description>
       <pubDate>Fri, 10 Apr 2015 02:51:49 +0000</pubDate>
       
       <guid>https://nearwood.dev/action-camera-review-garmin-virb-elite/</guid>
-      <description>After seeing a fellow MSNE autocrosser post a video with nice data overlays, I asked what datalogger and software he used. It turns out it wasn&amp;rsquo;t just a data logger, it was a camera that gathered his speed, acceleration, and so on for him. It was the Garmin Virb Elite. The &amp;lsquo;Elite&amp;rsquo; part signifying the difference between the non-sensor, data-less variant.
-I&amp;rsquo;d never heard of it, and I thought I kept at least a cursory eye on the action camera market.</description>
+      <description>After seeing a fellow MSNE autocrosser post a video with nice data overlays, I asked what datalogger and software he used. It turns out it wasn&#39;t just a data logger, it was a camera that gathered his speed, acceleration, and so on for him. It was the Garmin Virb Elite. The &amp;lsquo;Elite&amp;rsquo; part signifying the difference between the non-sensor, data-less variant.
+I&#39;d never heard of it, and I thought I kept at least a cursory eye on the action camera market.</description>
     </item>
     
     <item>
@@ -278,7 +277,7 @@ I&amp;rsquo;d never heard of it, and I thought I kept at least a cursory eye on 
       <guid>https://nearwood.dev/msqur-update-v0-60b/</guid>
       <description>A little while ago I updated msqur.com to 0.60b. Changes include:
  Added engine make/code fields for uploads Added view count and increment  And less visibly:
- Finished OO refactor Update API documentation (not public yet) Added deployment scripts  I still haven&amp;rsquo;t finished INI file parsing 100%. There&amp;rsquo;s a bit more to do, but I&amp;rsquo;ve been busy with work and other projects. I&amp;rsquo;m thinking of releasing the project under an appropriate open-source license once I finish that, so hopefully others can join in on the fun.</description>
+ Finished OO refactor Update API documentation (not public yet) Added deployment scripts  I still haven&#39;t finished INI file parsing 100%. There&#39;s a bit more to do, but I&#39;ve been busy with work and other projects. I&#39;m thinking of releasing the project under an appropriate open-source license once I finish that, so hopefully others can join in on the fun.</description>
     </item>
     
     <item>
@@ -288,8 +287,7 @@ I&amp;rsquo;d never heard of it, and I thought I kept at least a cursory eye on 
       
       <guid>https://nearwood.dev/on-properly-setting-your-cooling-fan-temperature-threshold/</guid>
       <description>&lt;p&gt;When I first installed an aftermarket ECU (Megasquirt I) in my 1984 300ZX, years ago (almost 10 as of this writing!), I used the recommended GM sensor for coolant temperature. It required a bit of machining to fit the sensor, nothing major.&lt;/p&gt;
-
-&lt;p&gt;With my latest engine (and the two cars it was in), I decided to use the OEM Cylinder Head Temperature Sensor, since hey, why not? It was already there, in an optimal spot. All I had to do was make software changes to calibrate MS-II to it&amp;rsquo;s temperature/resistance curve. I had the data in the Factory Service Manual, all was well.&lt;/p&gt;</description>
+&lt;p&gt;With my latest engine (and the two cars it was in), I decided to use the OEM Cylinder Head Temperature Sensor, since hey, why not? It was already there, in an optimal spot. All I had to do was make software changes to calibrate MS-II to it&#39;s temperature/resistance curve. I had the data in the Factory Service Manual, all was well.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -298,9 +296,8 @@ I&amp;rsquo;d never heard of it, and I thought I kept at least a cursory eye on 
       <pubDate>Fri, 27 Feb 2015 01:09:39 +0000</pubDate>
       
       <guid>https://nearwood.dev/harbor-freight-trailer-build-part-2/</guid>
-      <description>&lt;p&gt;I finished up the tail light and signal wiring. I still have 4 LED clearance lights to place somewhere, but I&amp;rsquo;ll wait until I figure out what else is going on the trailer before placing them, in the hopes I can place them higher up.&lt;/p&gt;
-
-&lt;p&gt;&lt;img class=&#34;lostImage&#34; src=&#34;&#34; alt=&#34;Image no longer available :(&#34;/&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;I finished up the tail light and signal wiring. I still have 4 LED clearance lights to place somewhere, but I&#39;ll wait until I figure out what else is going on the trailer before placing them, in the hopes I can place them higher up.&lt;/p&gt;
+&lt;img class=&#34;lostImage&#34; src=&#34;&#34; alt=&#34;Image no longer available :(&#34;/&gt;</description>
     </item>
     
     <item>
@@ -309,9 +306,9 @@ I&amp;rsquo;d never heard of it, and I thought I kept at least a cursory eye on 
       <pubDate>Mon, 16 Feb 2015 21:27:29 +0000</pubDate>
       
       <guid>https://nearwood.dev/msqur-update-v0-53b/</guid>
-      <description>I&amp;rsquo;ve rolled out the update 0.53b to msqur.com. This includes:
+      <description>I&#39;ve rolled out the update 0.53b to msqur.com. This includes:
  INI Parsing (i.e. better MSQ support) Bug fixes and better error handling  So now it is a bit more usable. The INI Parsing turns out to be a bit more complex than I anticipated, but I rolled out a decent intermediate update in the meantime.
-Before completing the INI parsing (or anything else for that matter), I&amp;rsquo;ve decided to overhaul the entire codebase.</description>
+Before completing the INI parsing (or anything else for that matter), I&#39;ve decided to overhaul the entire codebase.</description>
     </item>
     
     <item>
@@ -320,7 +317,7 @@ Before completing the INI parsing (or anything else for that matter), I&amp;rsqu
       <pubDate>Mon, 02 Feb 2015 01:06:46 +0000</pubDate>
       
       <guid>https://nearwood.dev/msqur-update/</guid>
-      <description>Well, the holidays are long over and I haven&amp;rsquo;t updated msqur.com in a while. I&amp;rsquo;m adding some configuration management to it, so nothing visible will happen for a while. What&amp;rsquo;s planned, however, is .ini file parsing so that .msq files can be parsed according to the INI file version they use. That is, I will parse the INI file for the schema to a .msq file instead of hardcoding it. This way showing a .</description>
+      <description>Well, the holidays are long over and I haven&#39;t updated msqur.com in a while. I&#39;m adding some configuration management to it, so nothing visible will happen for a while. What&#39;s planned, however, is .ini file parsing so that .msq files can be parsed according to the INI file version they use. That is, I will parse the INI file for the schema to a .msq file instead of hardcoding it. This way showing a .</description>
     </item>
     
     <item>
@@ -329,18 +326,12 @@ Before completing the INI parsing (or anything else for that matter), I&amp;rsqu
       <pubDate>Mon, 19 Jan 2015 17:01:39 +0000</pubDate>
       
       <guid>https://nearwood.dev/harbor-freight-trailer-build/</guid>
-      <description>&lt;p&gt;So I&amp;rsquo;ve got this autocross bug, despite being a terrible driver. After about 5 seconds of thought, I came to the conclusion that I must get an autocross trailer in order to improve my skills.&lt;/p&gt;
-
-&lt;p&gt;So, after a bit of research it looked like item #90153 was the thing to get. The key is it has 12&amp;rdquo; wheels, whereas the cheaper one (#42708) has 8&amp;rdquo; ones. The larger the wheel the less RPM the wheel bearings see, which is good. The increased payload capacity and trailer height were just bonuses. Since I plan on hauling some wheels and tires and some tools, I don&amp;rsquo;t see coming near the 1000+ lb. payload capacity. And if you wanted to carry more, all you&amp;rsquo;d really need is some better tires, since that&amp;rsquo;s the actual limiting factor. However, I don&amp;rsquo;t recommend carrying anything near the payload capacity.&lt;/p&gt;
-
+      <description>&lt;p&gt;So I&#39;ve got this autocross bug, despite being a terrible driver. After about 5 seconds of thought, I came to the conclusion that I must get an autocross trailer in order to improve my skills.&lt;/p&gt;
+&lt;p&gt;So, after a bit of research it looked like item #90153 was the thing to get. The key is it has 12&amp;rdquo; wheels, whereas the cheaper one (#42708) has 8&amp;rdquo; ones. The larger the wheel the less RPM the wheel bearings see, which is good. The increased payload capacity and trailer height were just bonuses. Since I plan on hauling some wheels and tires and some tools, I don&#39;t see coming near the 1000+ lb. payload capacity. And if you wanted to carry more, all you&#39;d really need is some better tires, since that&#39;s the actual limiting factor. However, I don&#39;t recommend carrying anything near the payload capacity.&lt;/p&gt;
 &lt;p&gt;Note that this is one of the few big-ticket items you can use the 20% coupon on, so if you want to save $46 or so off the price, use one! I got it and built it:&lt;/p&gt;
-
 &lt;p&gt;&lt;img class=&#34;size-auto alignnone&#34; src=&#34;https://i.imgur.com/2yDVaX2l.jpg&#34; alt=&#34;&#34; width=&#34;640&#34; height=&#34;387&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;I also picked up a trailer jack, LED lighting kit, 1-&lt;sup&gt;7&lt;/sup&gt;&amp;frasl;&lt;sub&gt;8&lt;/sub&gt;&amp;rdquo; ball, and ratcheting straps from HF. From elsewhere I got a backup alarm, more LED lights, battery tray, some wire and a voltage gauge.&lt;/p&gt;
-
+&lt;p&gt;I also picked up a trailer jack, LED lighting kit, 1-7/8&amp;rdquo; ball, and ratcheting straps from HF. From elsewhere I got a backup alarm, more LED lights, battery tray, some wire and a voltage gauge.&lt;/p&gt;
 &lt;p&gt;I then painted the frame and wheels to match my 280Z:&lt;/p&gt;
-
 &lt;p&gt;&lt;img class=&#34;size-auto alignnone&#34; src=&#34;https://i.imgur.com/8PgwmRvl.jpg&#34; alt=&#34;&#34; width=&#34;480&#34; height=&#34;640&#34; /&gt;&lt;/p&gt;</description>
     </item>
     
@@ -350,8 +341,8 @@ Before completing the INI parsing (or anything else for that matter), I&amp;rsqu
       <pubDate>Wed, 31 Dec 2014 01:39:42 +0000</pubDate>
       
       <guid>https://nearwood.dev/msqur-com-msq-file-sharing-site/</guid>
-      <description>Well, I&amp;rsquo;ve only been working on it a little so far, but I suppose it&amp;rsquo;s good enough to post about at this point.
-The site is msqur.com, and it&amp;rsquo;s for Megasquirt ECU users to share their tunes (from the TunerStudio MS software). You can upload (multiple) .msq files, assign some engine information to them at upload, and share them with other people for troubleshooting or tuning help. The goal is to make something easier than attaching a file to a forum post that others have to download and fire up the full tuning software suite to just view it.</description>
+      <description>Well, I&#39;ve only been working on it a little so far, but I suppose it&#39;s good enough to post about at this point.
+The site is msqur.com, and it&#39;s for Megasquirt ECU users to share their tunes (from the TunerStudio MS software). You can upload (multiple) .msq files, assign some engine information to them at upload, and share them with other people for troubleshooting or tuning help. The goal is to make something easier than attaching a file to a forum post that others have to download and fire up the full tuning software suite to just view it.</description>
     </item>
     
     <item>
@@ -360,7 +351,7 @@ The site is msqur.com, and it&amp;rsquo;s for Megasquirt ECU users to share thei
       <pubDate>Fri, 26 Dec 2014 15:43:15 +0000</pubDate>
       
       <guid>https://nearwood.dev/raspberry-pi-robot-assembly-part-1/</guid>
-      <description>So you&amp;rsquo;ve got a bunch of parts, assembly is pretty easy. I&amp;rsquo;m going to skip over most of the chassis assembly since it came with instructions, but I have a couple pointers and I&amp;rsquo;ll go over how I attached the encoders. Then I&amp;rsquo;ll talk about soldering the motor controller and wiring the encoders up, and which pins to pick from the GPIO of the Pi.
+      <description>So you&#39;ve got a bunch of parts, assembly is pretty easy. I&#39;m going to skip over most of the chassis assembly since it came with instructions, but I have a couple pointers and I&#39;ll go over how I attached the encoders. Then I&#39;ll talk about soldering the motor controller and wiring the encoders up, and which pins to pick from the GPIO of the Pi.
 So this is what the chassis looks like fully assembled:</description>
     </item>
     
@@ -370,7 +361,7 @@ So this is what the chassis looks like fully assembled:</description>
       <pubDate>Thu, 11 Dec 2014 03:10:39 +0000</pubDate>
       
       <guid>https://nearwood.dev/pages/msqur/</guid>
-      <description>So, years ago I made a C# Application to view .msq tune files from Megasquirt (the DIY car ECU). Specifically the VE and Spark tables. I ported it to Java since using .NET limits my audience to virtually just Windows users. It was okay. It allowed you to export images which you could then post, but it didn&amp;rsquo;t really save much time over taking screenshots of the tuning software itself and posting those.</description>
+      <description>So, years ago I made a C# Application to view .msq tune files from Megasquirt (the DIY car ECU). Specifically the VE and Spark tables. I ported it to Java since using .NET limits my audience to virtually just Windows users. It was okay. It allowed you to export images which you could then post, but it didn&#39;t really save much time over taking screenshots of the tuning software itself and posting those.</description>
     </item>
     
     <item>
@@ -379,11 +370,9 @@ So this is what the chassis looks like fully assembled:</description>
       <pubDate>Sat, 06 Dec 2014 03:00:22 +0000</pubDate>
       
       <guid>https://nearwood.dev/installing-arch-linux-with-an-encrypted-root/</guid>
-      <description>&lt;p&gt;I&amp;rsquo;ve got a ThinkPad T410. I got it off craigslist in what was a somewhat shady transaction. Regardless, it came with a 300GB spinner. Not interested in finding out how much life was left on it I got a solid state replacement from NewEgg for &amp;ldquo;Cyber Monday&amp;rdquo;. A 240GB Intel one for $110, that&amp;rsquo;s less than 50 cents per GB!&lt;/p&gt;
-
-&lt;p&gt;The spinner has a single unencrypted partition with Arch Linux running on it. I wanted to run Arch on an encrypted partition. The main reason: If it&amp;rsquo;s ever stolen I don&amp;rsquo;t want to have to worry about any of the data on it. Bonus reason: Geek/spy points.&lt;/p&gt;
-
-&lt;p&gt;So, while there are excellent guides for installing Arch, and setting up encryption, and optimizing an SSD, there don&amp;rsquo;t seem to be any combining the three. In reality it&amp;rsquo;s not that much more difficult, and if you are motivated to setup encryption on Linux in the first place you probably know what you&amp;rsquo;re doing. Still, I was disheartened a bit at the lack of information so I decided to note how I went about it in general.&lt;/p&gt;</description>
+      <description>&lt;p&gt;I&#39;ve got a ThinkPad T410. I got it off craigslist in what was a somewhat shady transaction. Regardless, it came with a 300GB spinner. Not interested in finding out how much life was left on it I got a solid state replacement from NewEgg for &amp;ldquo;Cyber Monday&amp;rdquo;. A 240GB Intel one for $110, that&#39;s less than 50 cents per GB!&lt;/p&gt;
+&lt;p&gt;The spinner has a single unencrypted partition with Arch Linux running on it. I wanted to run Arch on an encrypted partition. The main reason: If it&#39;s ever stolen I don&#39;t want to have to worry about any of the data on it. Bonus reason: Geek/spy points.&lt;/p&gt;
+&lt;p&gt;So, while there are excellent guides for installing Arch, and setting up encryption, and optimizing an SSD, there don&#39;t seem to be any combining the three. In reality it&#39;s not that much more difficult, and if you are motivated to setup encryption on Linux in the first place you probably know what you&#39;re doing. Still, I was disheartened a bit at the lack of information so I decided to note how I went about it in general.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -392,20 +381,15 @@ So this is what the chassis looks like fully assembled:</description>
       <pubDate>Mon, 01 Dec 2014 02:26:47 +0000</pubDate>
       
       <guid>https://nearwood.dev/raspberry-pi-robot-cross-compiling/</guid>
-      <description>&lt;p&gt;Now that you have the hardware built and tested (although that&amp;rsquo;s not necessary), you can either use the code I&amp;rsquo;ve written-which is specific to the hardware and environment I have, or compile your own version. If you want to compile your own there are two options:&lt;/p&gt;
-
+      <description>&lt;p&gt;Now that you have the hardware built and tested (although that&#39;s not necessary), you can either use the code I&#39;ve written-which is specific to the hardware and environment I have, or compile your own version. If you want to compile your own there are two options:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Compile on the Pi itself&lt;/li&gt;
 &lt;li&gt;Compile on an ARM virtual machine&lt;/li&gt;
 &lt;li&gt;Cross-compile on a faster machine&lt;/li&gt;
 &lt;/ol&gt;
-
-&lt;p&gt;The trade off? Compiling on the Pi is slow (very slow). The virtual machine is a marked improvement for compiling speed, but is complicated to setup. Cross-compiling is about the same difficulty as setting up a virtual machine but a bit faster and less &amp;ldquo;bulky&amp;rdquo;. So it depends. The virtual machine is nice if you have a lot of libraries you want to use, since you&amp;rsquo;ll have to compile all of them to be available for linking. If any of them have poor autoconfig support, it might be a pain to fix if you weren&amp;rsquo;t already on the target machine. But, since I just needed one or two popular libraries, I decided to setup cross-compiling from my host (x86_64) machine.&lt;/p&gt;
-
-&lt;p&gt;The last time I setup cross-compiling it was on Gentoo, and it wasn&amp;rsquo;t pleasant. However, after a little bit of research it looks like the &lt;a href=&#34;https://crosstool-ng.org/&#34; target=&#34;_blank&#34;&gt;crosstool-ng project&lt;/a&gt; is pretty popular and useful. I only had to patch one tiny thing.&lt;/p&gt;
-
-&lt;p&gt;Here&amp;rsquo;s the overall process:&lt;/p&gt;
-
+&lt;p&gt;The trade off? Compiling on the Pi is slow (very slow). The virtual machine is a marked improvement for compiling speed, but is complicated to setup. Cross-compiling is about the same difficulty as setting up a virtual machine but a bit faster and less &amp;ldquo;bulky&amp;rdquo;. So it depends. The virtual machine is nice if you have a lot of libraries you want to use, since you&#39;ll have to compile all of them to be available for linking. If any of them have poor autoconfig support, it might be a pain to fix if you weren&#39;t already on the target machine. But, since I just needed one or two popular libraries, I decided to setup cross-compiling from my host (x86_64) machine.&lt;/p&gt;
+&lt;p&gt;The last time I setup cross-compiling it was on Gentoo, and it wasn&#39;t pleasant. However, after a little bit of research it looks like the &lt;a href=&#34;https://crosstool-ng.org/&#34; target=&#34;_blank&#34;&gt;crosstool-ng project&lt;/a&gt; is pretty popular and useful. I only had to patch one tiny thing.&lt;/p&gt;
+&lt;p&gt;Here&#39;s the overall process:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Install crosstool-ng&lt;/li&gt;
 &lt;li&gt;Configure a cross toolchain with it&lt;/li&gt;
@@ -421,8 +405,7 @@ So this is what the chassis looks like fully assembled:</description>
       
       <guid>https://nearwood.dev/raspberry-pi-robot/</guid>
       <description>&lt;p&gt;So, a while back I gave my wife a &lt;a href=&#34;https://goldenarmor.com/farscape-drd/&#34; target=&#34;_blank&#34;&gt;Farscape DRD kit&lt;/a&gt;. I promised to make it in to a robot. How hard could it be? Well, not too bad. A little more expensive than planned, though&amp;hellip;&lt;/p&gt;
-
-&lt;p&gt;&lt;img class=&#34;lostImage&#34; src=&#34;&#34; alt=&#34;Image no longer available :(&#34;/&gt;&lt;/p&gt;</description>
+&lt;img class=&#34;lostImage&#34; src=&#34;&#34; alt=&#34;Image no longer available :(&#34;/&gt;</description>
     </item>
     
     <item>
@@ -431,11 +414,11 @@ So this is what the chassis looks like fully assembled:</description>
       <pubDate>Thu, 20 Nov 2014 18:22:33 +0000</pubDate>
       
       <guid>https://nearwood.dev/interesting-spam/</guid>
-      <description>Akismet is really good at preventing spam, but I&amp;rsquo;ve noticed that spammers don&amp;rsquo;t even seem to be trying sometimes. This is what&amp;rsquo;s in my spam queue:
+      <description>Akismet is really good at preventing spam, but I&#39;ve noticed that spammers don&#39;t even seem to be trying sometimes. This is what&#39;s in my spam queue:
  {I have|I’ve} been {surfing|browsing} online
-more than {three|3|2|4} hours today, yet I never found any interesting article like yours.
-{It’s|It is} pretty worth enough for me. {In my opinion|Personally|In my view}, if all {webmasters|site owners|website owners|web owners}
-and bloggers made good content as you did, the {internet|net|web} will be {much more|a lot more} useful than ever</description>
+  more than {three|3|2|4} hours today, yet I never found any interesting article like yours.
+  {It’s|It is} pretty worth enough for me. {In my opinion|Personally|In my view}, if all {webmasters|site owners|website owners|web owners}
+  and bloggers made good content as you did, the {internet|net|web} will be {much more|a lot more} useful than ever</description>
     </item>
     
     <item>
@@ -444,7 +427,7 @@ and bloggers made good content as you did, the {internet|net|web} will be {much 
       <pubDate>Wed, 12 Nov 2014 02:04:43 +0000</pubDate>
       
       <guid>https://nearwood.dev/carduino-2-0-intel-galileo-setup/</guid>
-      <description>&lt;p&gt;Out of the box the Galileo is setup to run sketches uploaded from volatile memory, which is really lame. I didn&amp;rsquo;t spend much time with it using the stock SPI kernel. So, an SD card is pretty much required to do any serious development with this board. This is not a bad thing (although you aren&amp;rsquo;t running in real-time anymore), since having a full OS to use has lots of advantages. Plus, this way I can automate the build process in a way I&amp;rsquo;m more familiar with.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Out of the box the Galileo is setup to run sketches uploaded from volatile memory, which is really lame. I didn&#39;t spend much time with it using the stock SPI kernel. So, an SD card is pretty much required to do any serious development with this board. This is not a bad thing (although you aren&#39;t running in real-time anymore), since having a full OS to use has lots of advantages. Plus, this way I can automate the build process in a way I&#39;m more familiar with.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -453,7 +436,7 @@ and bloggers made good content as you did, the {internet|net|web} will be {much 
       <pubDate>Sun, 09 Nov 2014 18:19:24 +0000</pubDate>
       
       <guid>https://nearwood.dev/carduino-2-0/</guid>
-      <description>Over a year ago I got an Arduino Uno and a CAN-BUS Shield to try and make some kind of datalogger for my car. I was also interested in using the OpenXC library with it (which might need a port if there isn&amp;rsquo;t one already, since it uses the Digilent chipKIT Max32 development board). While OpenXC allows interfacing with Android stuff for phones, I&amp;rsquo;m more interested in a self-contained datalogging type deal.</description>
+      <description>Over a year ago I got an Arduino Uno and a CAN-BUS Shield to try and make some kind of datalogger for my car. I was also interested in using the OpenXC library with it (which might need a port if there isn&#39;t one already, since it uses the Digilent chipKIT Max32 development board). While OpenXC allows interfacing with Android stuff for phones, I&#39;m more interested in a self-contained datalogging type deal.</description>
     </item>
     
     <item>
@@ -462,7 +445,7 @@ and bloggers made good content as you did, the {internet|net|web} will be {much 
       <pubDate>Mon, 27 Oct 2014 02:01:31 +0000</pubDate>
       
       <guid>https://nearwood.dev/first-autocross-with-a-vg33/</guid>
-      <description>Well, with less than a couple hundred miles on the rebuilt engine, it was time to really break-in the new VG33. I took it to an autocross. Things were going well until I shut it off after my second run. It didn&amp;rsquo;t want to restart after that. It appears that the culprit was low battery voltage, as the ECU was resetting and the fuel pump never even came on during cranking.</description>
+      <description>Well, with less than a couple hundred miles on the rebuilt engine, it was time to really break-in the new VG33. I took it to an autocross. Things were going well until I shut it off after my second run. It didn&#39;t want to restart after that. It appears that the culprit was low battery voltage, as the ECU was resetting and the fuel pump never even came on during cranking.</description>
     </item>
     
     <item>
@@ -471,7 +454,7 @@ and bloggers made good content as you did, the {internet|net|web} will be {much 
       <pubDate>Tue, 21 Oct 2014 23:08:25 +0000</pubDate>
       
       <guid>https://nearwood.dev/280z-led-conversion-part-2/</guid>
-      <description>Continuing from part 1, this is the start of installation and results of the LED conversion. I ordered a small bunch of LEDs to get a feel for what brightness I&amp;rsquo;m looking at since the website I ordered from has somewhat confusing &amp;lsquo;relative intensity&amp;rsquo;, &amp;lsquo;brightness&amp;rsquo;, and &amp;lsquo;lumens&amp;rsquo; listed for each bulb. Not to mention the prices seemed to fluctuate independently of any of those values so it wasn&amp;rsquo;t as simple as &amp;lsquo;find the most expensive ones&amp;rsquo;.</description>
+      <description>Continuing from part 1, this is the start of installation and results of the LED conversion. I ordered a small bunch of LEDs to get a feel for what brightness I&#39;m looking at since the website I ordered from has somewhat confusing &amp;lsquo;relative intensity&amp;rsquo;, &amp;lsquo;brightness&amp;rsquo;, and &amp;lsquo;lumens&amp;rsquo; listed for each bulb. Not to mention the prices seemed to fluctuate independently of any of those values so it wasn&#39;t as simple as &amp;lsquo;find the most expensive ones&amp;rsquo;.</description>
     </item>
     
     <item>
@@ -480,7 +463,7 @@ and bloggers made good content as you did, the {internet|net|web} will be {much 
       <pubDate>Tue, 23 Sep 2014 00:38:25 +0000</pubDate>
       
       <guid>https://nearwood.dev/280z-led-conversion-part-1/</guid>
-      <description>My 280Z isn&amp;rsquo;t what you could call &amp;ldquo;modern&amp;rdquo; in the electrical department. Originally, it came with an externally regulated alternator, fusible links, incandescent bulbs, and very few relays. The design inhereted a few things from Lucas eletronics, which is not a good thing. Regardless, it was fairly normal for the time. I&amp;rsquo;m glad there are no vacuum operated things, like some makes. The most electrically obtuse part of the design is the lack of relays.</description>
+      <description>My 280Z isn&#39;t what you could call &amp;ldquo;modern&amp;rdquo; in the electrical department. Originally, it came with an externally regulated alternator, fusible links, incandescent bulbs, and very few relays. The design inhereted a few things from Lucas eletronics, which is not a good thing. Regardless, it was fairly normal for the time. I&#39;m glad there are no vacuum operated things, like some makes. The most electrically obtuse part of the design is the lack of relays.</description>
     </item>
     
     <item>
@@ -490,15 +473,10 @@ and bloggers made good content as you did, the {internet|net|web} will be {much 
       
       <guid>https://nearwood.dev/updating-wordpress-on-nearlyfreespeech-net-hosts/</guid>
       <description>&lt;h3 id=&#34;update-dec-13-2014&#34;&gt;Update Dec. 13, 2014:&lt;/h3&gt;
-
 &lt;p&gt;These scripts are out of date. NFS has the &lt;a href=&#34;https://wp-cli.org/&#34; target=&#34;_blank&#34;&gt;WP-CLI&lt;/a&gt; installed allowing for much, much easier upgrades, backups, etc. See the &lt;a href=&#34;https://github.com/nearwood/nfs-scripts&#34; target=&#34;_blank&#34;&gt;repository&lt;/a&gt; for information.&lt;/p&gt;
-
 &lt;h3 id=&#34;originally-posted-on-sept-10th-2014&#34;&gt;Originally posted on Sept. 10th, 2014:&lt;/h3&gt;
-
-&lt;p&gt;If you use NearlyFreeSpeech.net as your web host, you may have found it difficult to automate WordPress updates. I&amp;rsquo;ve made a script that does this for you. It also calls my backup and permissions fixing scripts, which I include here as well.&lt;/p&gt;
-
+&lt;p&gt;If you use NearlyFreeSpeech.net as your web host, you may have found it difficult to automate WordPress updates. I&#39;ve made a script that does this for you. It also calls my backup and permissions fixing scripts, which I include here as well.&lt;/p&gt;
 &lt;p&gt;Beware of some notes and assumptions though:&lt;/p&gt;
-
 &lt;ul&gt;
 &lt;li&gt;Assumes WordPress is installed in /home/public/ (not a subdir of it)&lt;/li&gt;
 &lt;li&gt;Scripts are assumed to be in /home/private/&lt;/li&gt;
@@ -513,7 +491,7 @@ and bloggers made good content as you did, the {internet|net|web} will be {much 
       
       <guid>https://nearwood.dev/windows-backup/</guid>
       <description>After installing Windows 7 in place of OS X on my MacBook Pro for work, there are only a few things I miss. But man, they were really nice.
- Unix shell Time Machine  The first one I&amp;rsquo;ll just say if you haven&amp;rsquo;t used a Unix-like shell of some type (Bash, zsh, whatever) then it&amp;rsquo;s hard to explain. Just that you can do everything a GUI can do (save for graphics work), but much, much faster.</description>
+ Unix shell Time Machine  The first one I&#39;ll just say if you haven&#39;t used a Unix-like shell of some type (Bash, zsh, whatever) then it&#39;s hard to explain. Just that you can do everything a GUI can do (save for graphics work), but much, much faster.</description>
     </item>
     
     <item>
@@ -522,10 +500,9 @@ and bloggers made good content as you did, the {internet|net|web} will be {much 
       <pubDate>Tue, 29 Jul 2014 00:10:14 +0000</pubDate>
       
       <guid>https://nearwood.dev/3-3l-280z-runs/</guid>
-      <description>So, am I the first? The first to put a VG33 in an S30? I have doubts but I&amp;rsquo;ve never heard of it before. After a bit of late night work and an unplanned oil event and a small unplanned fuel dump after removing and replacing the engine to fix the oil leak, it&amp;rsquo;s back in, running, and more importantly: not leaking.
-Here&amp;rsquo;s a late night in-progress shot:
-&amp;nbsp;
-All the work was worth it, I had to get it running for a scheduled photoshoot:</description>
+      <description>So, am I the first? The first to put a VG33 in an S30? I have doubts but I&#39;ve never heard of it before. After a bit of late night work and an unplanned oil event and a small unplanned fuel dump after removing and replacing the engine to fix the oil leak, it&#39;s back in, running, and more importantly: not leaking.
+Here&#39;s a late night in-progress shot:
+ All the work was worth it, I had to get it running for a scheduled photoshoot:</description>
     </item>
     
     <item>
@@ -534,7 +511,7 @@ All the work was worth it, I had to get it running for a scheduled photoshoot:</
       <pubDate>Thu, 19 Jun 2014 02:09:16 +0000</pubDate>
       
       <guid>https://nearwood.dev/d-link-dir-860l-woes/</guid>
-      <description>For the past week our internet service has been slowed to a crawl. Like, dial-up speeds: 0.8&amp;frasl;0,1 Mbps (so 100 kB/s down, 12 kB/s up). I tried restarting our 8 year old modem, our brand new router. I eventually gave up and called Comcast and had a cable guy come out and check the signal level. He says it&amp;rsquo;s fine, but our modem is the culprit. So, I figure he&amp;rsquo;s right and besides, it&amp;rsquo;s an ancient modem anyway.</description>
+      <description>For the past week our internet service has been slowed to a crawl. Like, dial-up speeds: 0.8/0,1 Mbps (so 100 kB/s down, 12 kB/s up). I tried restarting our 8 year old modem, our brand new router. I eventually gave up and called Comcast and had a cable guy come out and check the signal level. He says it&#39;s fine, but our modem is the culprit. So, I figure he&#39;s right and besides, it&#39;s an ancient modem anyway.</description>
     </item>
     
     <item>
@@ -543,17 +520,14 @@ All the work was worth it, I had to get it running for a scheduled photoshoot:</
       <pubDate>Tue, 17 Jun 2014 00:08:03 +0000</pubDate>
       
       <guid>https://nearwood.dev/gawminer-fury/</guid>
-      <description>&lt;p&gt;So I&amp;rsquo;m attempting to jump on the Scrypt based ASIC coin mining bandwagon. I got a GAWMiner Fury to try out. It came with a free ZenMiner, which is a Raspberry Pi with a custom image that runs mining software automatically, and connects to a 3rd party website to allow remote control and monitoring.&lt;/p&gt;
-
+      <description>&lt;p&gt;So I&#39;m attempting to jump on the Scrypt based ASIC coin mining bandwagon. I got a GAWMiner Fury to try out. It came with a free ZenMiner, which is a Raspberry Pi with a custom image that runs mining software automatically, and connects to a 3rd party website to allow remote control and monitoring.&lt;/p&gt;
 &lt;div id=&#34;attachment_354&#34; style=&#34;width: 310px&#34; class=&#34;wp-caption alignnone&#34;&gt;
   &lt;img class=&#34;lostImage&#34; src=&#34;&#34; alt=&#34;Image no longer available :(&#34;/&gt;
-  
   &lt;p class=&#34;wp-caption-text&#34;&gt;
     GAWMiner Fury and ZenMiner
   &lt;/p&gt;
 &lt;/div&gt;
-
-&lt;p&gt;It came with everything needed to power up and get started. The included instructions just mention how to get started using the ZenMiner, so it&amp;rsquo;s pretty skimpy compared to most other packaged products. Being an ASIC cryptocurrency miner, it&amp;rsquo;s already a specialty device so you likely know what you are doing. Still, the ZenMiner is geared to newcomers so they can easily start mining. In that respect I think it still needs work as the ZenOS web interface is pretty but limited.&lt;/p&gt;</description>
+&lt;p&gt;It came with everything needed to power up and get started. The included instructions just mention how to get started using the ZenMiner, so it&#39;s pretty skimpy compared to most other packaged products. Being an ASIC cryptocurrency miner, it&#39;s already a specialty device so you likely know what you are doing. Still, the ZenMiner is geared to newcomers so they can easily start mining. In that respect I think it still needs work as the ZenOS web interface is pretty but limited.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -563,16 +537,11 @@ All the work was worth it, I had to get it running for a scheduled photoshoot:</
       
       <guid>https://nearwood.dev/280z-speedhut-gauge-conversion/</guid>
       <description>&lt;p&gt;I acquired some Speedhut gauges a while back for a deal, and I just got a free 240Z wheel, so I decided to do all three. In this part I just remove and fit the Speedhut gauges in the old speedo and tachometer housings. In the next part I wire them up. A few people did this on HybridZ various different ways. I was too cheap to go out and get any other supplies, so I made it work with what I had.&lt;/p&gt;
-
 &lt;p&gt;The gauges I got are:&lt;/p&gt;
-
 &lt;p&gt;Speedometer: 4&amp;rdquo; Revolution GPS Speedo with integrated fuel gauge, turn signal LEDs, and high-beam LED&lt;/p&gt;
-
 &lt;p&gt;Tachometer: 4&amp;rdquo; Revolution 8,000RPM with programmable shift LEDs.&lt;/p&gt;
-
-&lt;p&gt;Both have red dials, and red illumination. The fuel gauge is there since I&amp;rsquo;ll be replacing the one in the 3 small dash gauges eventually, but don&amp;rsquo;t want to lose having a gas gauge.&lt;/p&gt;
-
-&lt;p&gt;&lt;img class=&#34;lostImage&#34; src=&#34;&#34; alt=&#34;Image no longer available :(&#34;/&gt;&lt;/p&gt;</description>
+&lt;p&gt;Both have red dials, and red illumination. The fuel gauge is there since I&#39;ll be replacing the one in the 3 small dash gauges eventually, but don&#39;t want to lose having a gas gauge.&lt;/p&gt;
+&lt;img class=&#34;lostImage&#34; src=&#34;&#34; alt=&#34;Image no longer available :(&#34;/&gt;</description>
     </item>
     
     <item>
@@ -581,7 +550,7 @@ All the work was worth it, I had to get it running for a scheduled photoshoot:</
       <pubDate>Sat, 15 Mar 2014 13:01:13 +0000</pubDate>
       
       <guid>https://nearwood.dev/windows-bugs/</guid>
-      <description>Over the years I&amp;rsquo;ve noticed a couple bugs that are present in in some or all of NT/Vista/7. I experience these on a daily basis, across dozens of computers. So it can&amp;rsquo;t just be me, right?
+      <description>Over the years I&#39;ve noticed a couple bugs that are present in in some or all of NT/Vista/7. I experience these on a daily basis, across dozens of computers. So it can&#39;t just be me, right?
  Focus bug. If the timing is right, some windows remain on top despite clicking on a background window. The background window obtains focus, but does not move to the front. This is typically when the foreground window does some focus changing action (Showing a dialog, opening a new tab, etc.</description>
     </item>
     
@@ -602,7 +571,7 @@ Installing Arch was quick, as usual. The laptop has a fingerprint reader, which 
       
       <guid>https://nearwood.dev/custom-speed-app-update/</guid>
       <description>I update Custom Speed to 1.1. Changes include:
- An actual theme (consistent colors) More units New icon  2.0 will include an actual settings page that will allow the units to be selected from an easier control, a setting for keeping the display on, and other minor UI improvements. There&amp;rsquo;s no ETA currently for 2.0.</description>
+ An actual theme (consistent colors) More units New icon  2.0 will include an actual settings page that will allow the units to be selected from an easier control, a setting for keeping the display on, and other minor UI improvements. There&#39;s no ETA currently for 2.0.</description>
     </item>
     
     <item>
@@ -611,7 +580,7 @@ Installing Arch was quick, as usual. The laptop has a fingerprint reader, which 
       <pubDate>Tue, 31 Dec 2013 03:45:18 +0000</pubDate>
       
       <guid>https://nearwood.dev/exporting-drupal-pagesposts-to-wordpress/</guid>
-      <description>I&amp;rsquo;ve decided to consolidate some of my web presence. My car&amp;rsquo;s website will be merged into this one. Going from WordPress to Drupal is easy, but the other way is not. I found a couple links for SQL scripts to import lots of posts automatically, but these were and are easily outdated by Drupal and to a lesser extent WordPress.
+      <description>I&#39;ve decided to consolidate some of my web presence. My car&#39;s website will be merged into this one. Going from WordPress to Drupal is easy, but the other way is not. I found a couple links for SQL scripts to import lots of posts automatically, but these were and are easily outdated by Drupal and to a lesser extent WordPress.
 It was easier just to create my own SQL JOIN statement and export the resulting list.</description>
     </item>
     
@@ -621,25 +590,7 @@ It was easier just to create my own SQL JOIN statement and export the resulting 
       <pubDate>Wed, 11 Dec 2013 01:52:16 +0000</pubDate>
       
       <guid>https://nearwood.dev/python-script-to-write-a-word-using-the-word/</guid>
-      <description>&lt;p&gt;That&amp;rsquo;s the best title I can come up with. The idea is to do this:&lt;/p&gt;
-
-&lt;pre&gt;THISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHIS
-    THISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHIS
-    THIS            THIS    THIS    THIS            THIS            THIS
-    THIS            THIS    THIS    THIS            THIS            THIS
-    THISTHIS    THISTHIS    THIS    THISTHIS    THISTHIS    THISTHISTHIS
-    THISTHIS    THISTHIS    THIS    THISTHIS    THISTHIS    THISTHISTHIS
-    THISTHIS    THISTHIS            THISTHIS    THISTHIS            THIS
-    THISTHIS    THISTHIS            THISTHIS    THISTHIS            THIS
-    THISTHIS    THISTHIS    THIS    THISTHIS    THISTHIS            THIS
-    THISTHIS    THISTHIS    THIS    THISTHIS    THISTHISTHISTHIS    THIS
-    THISTHIS    THISTHIS    THIS    THISTHIS    THISTHISTHISTHIS    THIS
-    THISTHIS    THISTHIS    THIS    THIS            THIS            THIS
-    THISTHIS    THISTHIS    THIS    THIS            THIS            THIS
-    THISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHIS
-    THISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHIS&lt;/pre&gt;
-
-&lt;p&gt;With any number of alphanumeric characters. The idea comes from a reddit user posting something similar, and then my mind wandered.&lt;/p&gt;</description>
+      <description>&lt;p&gt;That&#39;s the best title I can come up with. The idea is to do this:&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -650,7 +601,7 @@ It was easier just to create my own SQL JOIN statement and export the resulting 
       <guid>https://nearwood.dev/released-my-first-android-app/</guid>
       <description>After searching for a simple GPS Speedometer app that provided a speed readout in more than just 2 units (a free one, of course), I thought it would be the perfect project for my first Android app. It took only a few hours to make it, the Eclipse ADT makes this pretty easy.
 Google Play link
-I&amp;rsquo;m glad I&amp;rsquo;ve gotten more familiar with the publishing process. It&amp;rsquo;ll help when I release a game I&amp;rsquo;ve been tinkering with for a few years.</description>
+I&#39;m glad I&#39;ve gotten more familiar with the publishing process. It&#39;ll help when I release a game I&#39;ve been tinkering with for a few years.</description>
     </item>
     
     <item>
@@ -659,8 +610,8 @@ I&amp;rsquo;m glad I&amp;rsquo;ve gotten more familiar with the publishing proce
       <pubDate>Tue, 01 Oct 2013 02:17:26 +0000</pubDate>
       
       <guid>https://nearwood.dev/second-280z-autocross/</guid>
-      <description>Second autocross. This course was a bit more technical, and my car was definitely not setup for it. I was out of the power band most of the time, which was somewhat aggravating. At least I plumbed my wastegate back in, so it&amp;rsquo;s quiet at full throttle.
-Here&amp;rsquo;s my best run:
+      <description>Second autocross. This course was a bit more technical, and my car was definitely not setup for it. I was out of the power band most of the time, which was somewhat aggravating. At least I plumbed my wastegate back in, so it&#39;s quiet at full throttle.
+Here&#39;s my best run:
   </description>
     </item>
     
@@ -671,7 +622,7 @@ Here&amp;rsquo;s my best run:
       
       <guid>https://nearwood.dev/delete-all-your-reddit-comments/</guid>
       <description>I noticed that my reddit account had a few posts that were too revealing. So, I decided to remove them. I stumbled upon a couple greasemonkey scripts to delete all posts, which got my interested in seeing if I could write up a quick script to do the same that could run in the Developer Tools of any browser, rather than relying on an extension.
-The catch is that you, apparently, should edit each comment&amp;rsquo;s content to remove it before deleting it, otherwise it&amp;rsquo;s still cached in other users&amp;rsquo; inboxes or something.</description>
+The catch is that you, apparently, should edit each comment&#39;s content to remove it before deleting it, otherwise it&#39;s still cached in other users&amp;rsquo; inboxes or something.</description>
     </item>
     
     <item>
@@ -681,14 +632,11 @@ The catch is that you, apparently, should edit each comment&amp;rsquo;s content 
       
       <guid>https://nearwood.dev/first-autocross-in-the-280z/</guid>
       <description>&lt;p&gt;Well I hammered out a few problems with the car and decided to try it out at an autocross. There was slight rain during the first half of the event, but it cleared up completely in the afternoon. To put it blunt: The car is very hard to control. Old suspension, too peaky of a powerband, and a short wheelbase spell trouble. It was fun though.&lt;/p&gt;
-
 &lt;p&gt;Best spin out:&lt;/p&gt;
-
 
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
   &lt;iframe src=&#34;https://www.youtube.com/embed/dN374r9-mUA&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
-
 
 &lt;p&gt;My best runs after the jump.&lt;/p&gt;</description>
     </item>
@@ -699,8 +647,8 @@ The catch is that you, apparently, should edit each comment&amp;rsquo;s content 
       <pubDate>Sun, 04 Aug 2013 01:49:45 +0000</pubDate>
       
       <guid>https://nearwood.dev/the-280zs-first-time-at-a-14-mile-drag-strip/</guid>
-      <description>If there&amp;rsquo;s one thing nice about our new place, it&amp;rsquo;s that there&amp;rsquo;s a full quarter mile drag strip nearby.
-  I had my car shipped here, and this is pretty much the first thing I did. The track is really nice, although it&amp;rsquo;s more expensive (surprise, surprise), and very crowded. The problem seems to be that they have street car night at the same time they have the non-street car night.</description>
+      <description>If there&#39;s one thing nice about our new place, it&#39;s that there&#39;s a full quarter mile drag strip nearby.
+  I had my car shipped here, and this is pretty much the first thing I did. The track is really nice, although it&#39;s more expensive (surprise, surprise), and very crowded. The problem seems to be that they have street car night at the same time they have the non-street car night.</description>
     </item>
     
     <item>
@@ -709,8 +657,8 @@ The catch is that you, apparently, should edit each comment&amp;rsquo;s content 
       <pubDate>Sat, 27 Apr 2013 02:37:32 +0000</pubDate>
       
       <guid>https://nearwood.dev/libgdx/</guid>
-      <description>I&amp;rsquo;ve been busy these past few weeks trying to get my 280Z autocross ready, and porting my C++/DirectX windows game to Java with LibGDX.
-Overall I am very impressed with LibGDX. The GUI API isn&amp;rsquo;t very good though. I&amp;rsquo;ve decided to roll my own (again!) for this game. At least the first release. I see that the LibGDX one supports nice fonts and textures and whatnot. It shouldn&amp;rsquo;t be too difficult to reimplement the base class with it and refactor when it matures.</description>
+      <description>I&#39;ve been busy these past few weeks trying to get my 280Z autocross ready, and porting my C++/DirectX windows game to Java with LibGDX.
+Overall I am very impressed with LibGDX. The GUI API isn&#39;t very good though. I&#39;ve decided to roll my own (again!) for this game. At least the first release. I see that the LibGDX one supports nice fonts and textures and whatnot. It shouldn&#39;t be too difficult to reimplement the base class with it and refactor when it matures.</description>
     </item>
     
     <item>
@@ -719,8 +667,8 @@ Overall I am very impressed with LibGDX. The GUI API isn&amp;rsquo;t very good t
       <pubDate>Fri, 26 Apr 2013 23:13:52 +0000</pubDate>
       
       <guid>https://nearwood.dev/moving-home-server-to-arch/</guid>
-      <description>I&amp;rsquo;ve ordered a 2 terabyte hard drive to appropriately serve as a backup drive for my home server. This would normally just require swapping the old backup drive out for it, and then performing a backup. But I figure since I&amp;rsquo;ll have it down anyway, I&amp;rsquo;ll have enough drives to swap to Arch Linux and get things going again with the old drive as a &amp;hellip; backup.
-I&amp;rsquo;ve got quite a few services setup on it, and I&amp;rsquo;m not looking forward to moving all the config files over</description>
+      <description>I&#39;ve ordered a 2 terabyte hard drive to appropriately serve as a backup drive for my home server. This would normally just require swapping the old backup drive out for it, and then performing a backup. But I figure since I&#39;ll have it down anyway, I&#39;ll have enough drives to swap to Arch Linux and get things going again with the old drive as a &amp;hellip; backup.
+I&#39;ve got quite a few services setup on it, and I&#39;m not looking forward to moving all the config files over</description>
     </item>
     
     <item>
@@ -731,7 +679,7 @@ I&amp;rsquo;ve got quite a few services setup on it, and I&amp;rsquo;m not looki
       <guid>https://nearwood.dev/switched-to-arch-linux-from-gentoo/</guid>
       <description>Time installing Gentoo: days
 Time installing Archlinux: 30 mins.
-I have an old Intel based Dell laptop with 1.8GHz single-core processor. I&amp;rsquo;ve had Windows XP on it for a couple years, then I switched to Gentoo for the past 5 or 6 years. Well, it&amp;rsquo;s really not the kind of laptop that you should be compiling everything from source on. I&amp;rsquo;m tired of going through the &amp;ldquo;everything&amp;rsquo;s broken, hook it the ethernet cable and start fixing it&amp;rdquo; routine after I&amp;rsquo;ve left it alone for months at a time.</description>
+I have an old Intel based Dell laptop with 1.8GHz single-core processor. I&#39;ve had Windows XP on it for a couple years, then I switched to Gentoo for the past 5 or 6 years. Well, it&#39;s really not the kind of laptop that you should be compiling everything from source on. I&#39;m tired of going through the &amp;ldquo;everything&#39;s broken, hook it the ethernet cable and start fixing it&amp;rdquo; routine after I&#39;ve left it alone for months at a time.</description>
     </item>
     
     <item>
@@ -740,7 +688,7 @@ I have an old Intel based Dell laptop with 1.8GHz single-core processor. I&amp;r
       <pubDate>Tue, 05 Mar 2013 01:34:30 +0000</pubDate>
       
       <guid>https://nearwood.dev/autocross-complete/</guid>
-      <description>Let&amp;rsquo;s take my new Focus to the Autocross.
+      <description>Let&#39;s take my new Focus to the Autocross.
   </description>
     </item>
     
@@ -750,7 +698,7 @@ I have an old Intel based Dell laptop with 1.8GHz single-core processor. I&amp;r
       <pubDate>Mon, 18 Feb 2013 02:30:09 +0000</pubDate>
       
       <guid>https://nearwood.dev/udev-broke-server-broke-router-broke/</guid>
-      <description>I attempted to get a webcam going on our home server. So, I plug it in, and since I&amp;rsquo;ve done this before I ran a script I made to grab an image from the webcam. Which didn&amp;rsquo;t work. So, after checking out why (/dev/video0 node was missing), I noticed that the kernel no longer had support built in.
+      <description>I attempted to get a webcam going on our home server. So, I plug it in, and since I&#39;ve done this before I ran a script I made to grab an image from the webcam. Which didn&#39;t work. So, after checking out why (/dev/video0 node was missing), I noticed that the kernel no longer had support built in.
 After going through the kernel options, I realized they changed the v4l and webcam support options around and since I just upgrade using &amp;ldquo;-silentoldconfig&amp;rdquo; (the bad way to do upgrades), it broke whenever I upgraded to 3.</description>
     </item>
     
@@ -760,7 +708,7 @@ After going through the kernel options, I realized they changed the v4l and webc
       <pubDate>Mon, 04 Feb 2013 01:05:39 +0000</pubDate>
       
       <guid>https://nearwood.dev/os-x-unimpressive/</guid>
-      <description>I&amp;rsquo;ve been working with a MacBook Pro and OS X 10.8.2, and I have to say I&amp;rsquo;m not impressed. Coming from a background that consisted almost entirely of Windows and Linux, it isn&amp;rsquo;t all it&amp;rsquo;s cracked up to be. It&amp;rsquo;s still another OS with it&amp;rsquo;s own set of problems.
+      <description>I&#39;ve been working with a MacBook Pro and OS X 10.8.2, and I have to say I&#39;m not impressed. Coming from a background that consisted almost entirely of Windows and Linux, it isn&#39;t all it&#39;s cracked up to be. It&#39;s still another OS with it&#39;s own set of problems.
 That said, the user interface is more consistent and usable, in a lot of cases, than Windows and especially Linux desktop environments.</description>
     </item>
     
@@ -770,7 +718,7 @@ That said, the user interface is more consistent and usable, in a lot of cases, 
       <pubDate>Thu, 31 Jan 2013 02:36:47 +0000</pubDate>
       
       <guid>https://nearwood.dev/carduino/</guid>
-      <description>I&amp;rsquo;ve been working on a small Arduino project to datalog my commute. I&amp;rsquo;m using an Arduino Uno with SK Pang&amp;rsquo;s CAN Bus Shield. I also have added the optional GPS and LCD to the mix. There is an micro-SD card slot for storage.
+      <description>I&#39;ve been working on a small Arduino project to datalog my commute. I&#39;m using an Arduino Uno with SK Pang&#39;s CAN Bus Shield. I also have added the optional GPS and LCD to the mix. There is an micro-SD card slot for storage.
 The aim of the project is just to collect data. As much as I can put into the SD card. I plan on calculating driving efficiency using somewhat arbitrary measures like throttle modulation, temperature, etc.</description>
     </item>
     
@@ -780,8 +728,8 @@ The aim of the project is just to collect data. As much as I can put into the SD
       <pubDate>Sun, 27 Jan 2013 18:54:17 +0000</pubDate>
       
       <guid>https://nearwood.dev/bbcs-top-gear-top-gear-usa/</guid>
-      <description>BBC&amp;rsquo;s Top Gear resumes today! I can&amp;rsquo;t wait to watch it. It&amp;rsquo;s been a while since they left off, and I&amp;rsquo;ve been watchin TG:USA in the meantime during my lunch breaks.
-TG:USA, will it really work? It just feels so scripted. I know, BBC&amp;rsquo;s Top Gear had a rough start too, like many shows. But, I&amp;rsquo;m watching season 2 right now, and the chemistry just hasn&amp;rsquo;t happened.
+      <description>BBC&#39;s Top Gear resumes today! I can&#39;t wait to watch it. It&#39;s been a while since they left off, and I&#39;ve been watchin TG:USA in the meantime during my lunch breaks.
+TG:USA, will it really work? It just feels so scripted. I know, BBC&#39;s Top Gear had a rough start too, like many shows. But, I&#39;m watching season 2 right now, and the chemistry just hasn&#39;t happened.
 I like Tanner, he actually has lines that seem natural.</description>
     </item>
     
@@ -791,7 +739,7 @@ I like Tanner, he actually has lines that seem natural.</description>
       <pubDate>Sun, 27 Jan 2013 01:24:24 +0000</pubDate>
       
       <guid>https://nearwood.dev/home-server-is-back-online/</guid>
-      <description>I&amp;rsquo;ve pulled power and cable from the attic and just powered up the home server again. It&amp;rsquo;s been asleep for 5 months until now. I&amp;rsquo;ve just done an emerge -sync, and it took about 10 minutes to complete.
+      <description>I&#39;ve pulled power and cable from the attic and just powered up the home server again. It&#39;s been asleep for 5 months until now. I&#39;ve just done an emerge -sync, and it took about 10 minutes to complete.
 However, it went up without any problems, which is good. Considering I turned it off in a working state. I was tempted to backup all my config files and start fresh with, say, Arch Linux, but that would take all weekend.</description>
     </item>
     
@@ -801,18 +749,16 @@ However, it went up without any problems, which is good. Considering I turned it
       <pubDate>Fri, 30 Nov 2012 01:25:45 +0000</pubDate>
       
       <guid>https://nearwood.dev/refactoring-with-regular-expressions/</guid>
-      <description>I&amp;rsquo;m re-learning JavaScript, and I noticed I was refactoring functions a lot on some old code. I&amp;rsquo;m putting some useful stuff here for reference:
+      <description>I&#39;m re-learning JavaScript, and I noticed I was refactoring functions a lot on some old code. I&#39;m putting some useful stuff here for reference:
 aFunc(blah) → this.aFunc = function(blah)
 Find: function (\w+)(
 Replace with: this.\1 = function(
-&amp;nbsp;
-To go the other way:
+ To go the other way:
 Find: \t(\w+)\s=\sfunction(
 Replace with: \tfunction \1(
-&amp;nbsp;
-Change aFunc(blah) to SOME.qualifier.aFunc(blah)
-Find: \t(\w+()
-Replace with: \tSOME.qualifier.\1</description>
+ Change aFunc(blah) to SOME.qualifier.aFunc(blah)
+**Find: **\t(\w+()
+**Replace with: **\tSOME.qualifier.\1</description>
     </item>
     
     <item>
@@ -821,7 +767,7 @@ Replace with: \tSOME.qualifier.\1</description>
       <pubDate>Mon, 19 Nov 2012 05:50:42 +0000</pubDate>
       
       <guid>https://nearwood.dev/gentoo-on-a-mid-2012-macbook-pro/</guid>
-      <description>If your sick of your brand new MacBook just working (more or less), and you just feel like modifying your kernel&amp;rsquo;s source to get your computer to work right, you&amp;rsquo;ve come to the right place. I (finally) managed to get Gentoo booting on a new MacBook Pro (15&amp;rdquo;, Core i7, mid-2012) alongside OS X 10.8.2. I suppose it actually wasn&amp;rsquo;t that bad, it could have been much worse. I only had to reinstall OS X once after a wonky partition editor&amp;hellip;.</description>
+      <description>If your sick of your brand new MacBook just working (more or less), and you just feel like modifying your kernel&#39;s source to get your computer to work right, you&#39;ve come to the right place. I (finally) managed to get Gentoo booting on a new MacBook Pro (15&amp;rdquo;, Core i7, mid-2012) alongside OS X 10.8.2. I suppose it actually wasn&#39;t that bad, it could have been much worse. I only had to reinstall OS X once after a wonky partition editor&amp;hellip;.</description>
     </item>
     
     <item>
@@ -831,8 +777,8 @@ Replace with: \tSOME.qualifier.\1</description>
       
       <guid>https://nearwood.dev/this-pc-loves-adobe/</guid>
       <description>So much, that it installed multiple copies of the same Flash updates:
-Actually, it appears to be a registry glitch rather than multiple copies. As much as I don&amp;rsquo;t like Adobe&amp;rsquo;s updating/installation practices (opted-in toolbars, programs), they do have a relatively easy to find and use Flash removal application.
-&amp;nbsp;</description>
+Actually, it appears to be a registry glitch rather than multiple copies. As much as I don&#39;t like Adobe&#39;s updating/installation practices (opted-in toolbars, programs), they do have a relatively easy to find and use Flash removal application.
+ </description>
     </item>
     
     <item>
@@ -860,15 +806,15 @@ Excellent job, WildTangent. Now, I thought I would be clever and just focus onto
       <pubDate>Fri, 06 Jul 2012 02:38:51 +0000</pubDate>
       
       <guid>https://nearwood.dev/pages/about/</guid>
-      <description>I develop software for work and play.</description>
+      <description>I write code and drive things.</description>
     </item>
     
     <item>
       <title>QEMU on Windows</title>
-      <link>https://nearwood.dev/posts/2012-07-05-qemu-on-windows/</link>
+      <link>https://nearwood.dev/posts/2012/qemu-on-windows/</link>
       <pubDate>Fri, 06 Jul 2012 01:29:31 +0000</pubDate>
       
-      <guid>https://nearwood.dev/posts/2012-07-05-qemu-on-windows/</guid>
+      <guid>https://nearwood.dev/posts/2012/qemu-on-windows/</guid>
       <description>After fumbling around with various downloads and patches, I was able to find a working QEMU build for windows. I am running Windows 7 64-bit, and I wanted to run an ARM system (specifically, to develop for a Stratus plug computer). Before this, I was running a virtualized Ubuntu using VirtualBox and then running QEMU within that. Performance was not noticeably bad.
 However, I had problems bridging the QEMU to the Ubuntu host, which was bridged itself.</description>
     </item>

@@ -10,16 +10,16 @@
 	<meta name="description" content="">
 		<meta property="og:title" content="Delete all your reddit comments" />
 <meta property="og:description" content="I noticed that my reddit account had a few posts that were too revealing. So, I decided to remove them. I stumbled upon a couple greasemonkey scripts to delete all posts, which got my interested in seeing if I could write up a quick script to do the same that could run in the Developer Tools of any browser, rather than relying on an extension.
-The catch is that you, apparently, should edit each comment&rsquo;s content to remove it before deleting it, otherwise it&rsquo;s still cached in other users&rsquo; inboxes or something." />
+The catch is that you, apparently, should edit each comment&#39;s content to remove it before deleting it, otherwise it&#39;s still cached in other users&rsquo; inboxes or something." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://nearwood.dev/delete-all-your-reddit-comments/" />
 <meta property="article:published_time" content="2013-08-07T00:29:51+00:00" />
-<meta property="article:modified_time" content="2019-10-30T11:49:09-05:00" />
+<meta property="article:modified_time" content="2019-12-10T10:57:45-06:00" />
 
 		<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Delete all your reddit comments"/>
 <meta name="twitter:description" content="I noticed that my reddit account had a few posts that were too revealing. So, I decided to remove them. I stumbled upon a couple greasemonkey scripts to delete all posts, which got my interested in seeing if I could write up a quick script to do the same that could run in the Developer Tools of any browser, rather than relying on an extension.
-The catch is that you, apparently, should edit each comment&rsquo;s content to remove it before deleting it, otherwise it&rsquo;s still cached in other users&rsquo; inboxes or something."/>
+The catch is that you, apparently, should edit each comment&#39;s content to remove it before deleting it, otherwise it&#39;s still cached in other users&rsquo; inboxes or something."/>
 
 	<link rel="stylesheet" href="/css/main.css">
 	<link rel="stylesheet" href="/css/themes/dark-green.css">
@@ -46,20 +46,16 @@ The catch is that you, apparently, should edit each comment&rsquo;s content to r
 	</ul>
 </nav>
 </header>
+
 	<div class="primary">
 	
 	<main class="main">
 		<div class="single block">
 			<article class="post">
 				<h1 class="post__title">Delete all your reddit comments</h1>
-				<div class="post__content">
-
-<p>I noticed that my reddit account had a few posts that were too revealing. So, I decided to remove them. I stumbled upon a couple greasemonkey scripts to delete <em>all</em> posts, which got my interested in seeing if I could write up a quick script to do the same that could run in the Developer Tools of any browser, rather than relying on an extension.</p>
-
-<p>The catch is that you, apparently, should edit each comment&rsquo;s content to remove it before deleting it, otherwise it&rsquo;s still cached in other users&rsquo; inboxes or something. Another catch is that reddit&rsquo;s servers don&rsquo;t like lots of simultaneous requests.</p>
-
+				<div class="post__content"><p>I noticed that my reddit account had a few posts that were too revealing. So, I decided to remove them. I stumbled upon a couple greasemonkey scripts to delete <em>all</em> posts, which got my interested in seeing if I could write up a quick script to do the same that could run in the Developer Tools of any browser, rather than relying on an extension.</p>
+<p>The catch is that you, apparently, should edit each comment's content to remove it before deleting it, otherwise it's still cached in other users&rsquo; inboxes or something. Another catch is that reddit's servers don't like lots of simultaneous requests.</p>
 <p>Still, it turned out easier than I expected:</p>
-
 <pre class="brush: jscript; title: ; notranslate" title="">var total = $('div#siteTable div.comment:not(.hidden)').length;
 $('div#siteTable div.comment:not(.hidden)').each(function (i) {
   var that = this;
@@ -75,22 +71,15 @@ $('div#siteTable div.comment:not(.hidden)').each(function (i) {
   }, i * 1100);
 });
 </pre>
-
-<p>It runs from the user&rsquo;s comments page. First it gathers all comment divs that aren&rsquo;t hidden. Hidden means we&rsquo;ve probably already deleted it. Then, for each one of those, we do a few things after a delay:</p>
-
+<p>It runs from the user's comments page. First it gathers all comment divs that aren't hidden. Hidden means we've probably already deleted it. Then, for each one of those, we do a few things after a delay:</p>
 <ol>
-<li>If the text isn&rsquo;t already a &ldquo;.&rdquo;, edit it and save it.</li>
-<li>After another delay, click delete&rsquo;s &ldquo;yes&rdquo; link.</li>
+<li>If the text isn't already a &ldquo;.&quot;, edit it and save it.</li>
+<li>After another delay, click delete's &ldquo;yes&rdquo; link.</li>
 </ol>
-
-<p>Unlike the other scripts, It doesn&rsquo;t bother clicking the edit or delete links since those just toggle visiblity of other components. The delays are multiplied by the index of each comment, to spread the server requests out over time. If you have 300 comments, this will take around 600 seconds. Note that the delay is slightly larger than a second to help ensure requests are always at least a second apart. I had some issues with rejected requests leaving it at exactly 1000 ms, due to the actual delay being slightly less I&rsquo;m sure.</p>
-
-<p>Without the RES extension and &ldquo;Never ending reddit&rdquo; enabled this will take a while. With it, you need to hold down the &ldquo;End&rdquo; key until all your comments are loaded at once. Or you can do it in increments. So, there&rsquo;s still some manual labor involved, but considerably less. It worked well enough for my few comments.</p>
-
+<p>Unlike the other scripts, It doesn't bother clicking the edit or delete links since those just toggle visiblity of other components. The delays are multiplied by the index of each comment, to spread the server requests out over time. If you have 300 comments, this will take around 600 seconds. Note that the delay is slightly larger than a second to help ensure requests are always at least a second apart. I had some issues with rejected requests leaving it at exactly 1000 ms, due to the actual delay being slightly less I'm sure.</p>
+<p>Without the RES extension and &ldquo;Never ending reddit&rdquo; enabled this will take a while. With it, you need to hold down the &ldquo;End&rdquo; key until all your comments are loaded at once. Or you can do it in increments. So, there's still some manual labor involved, but considerably less. It worked well enough for my few comments.</p>
 <h3 id="update">Update:</h3>
-
-<p>Apparently this is a popular thing. As per request, a slightly fancier updated version that doesn&rsquo;t have such a naive delay, and outputs progress:</p>
-
+<p>Apparently this is a popular thing. As per request, a slightly fancier updated version that doesn't have such a naive delay, and outputs progress:</p>
 <pre class="brush: jscript; title: ; notranslate" title="">var total = $('div#siteTable div.comment:not(.hidden)').length;
 $('div#siteTable div.comment:not(.hidden)').each(function (i) {
   var that = this;
@@ -111,7 +100,8 @@ $('div#siteTable div.comment:not(.hidden)').each(function (i) {
     else del();
   }, i * 1100);
 });
-</pre>
+</pre><blockquote>
+</blockquote>
 </div>
 				
 				<footer class="post__footer">

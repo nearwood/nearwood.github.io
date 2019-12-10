@@ -12,7 +12,6 @@
 <meta property="og:description" content="Responsive card-based &amp; code-light Hugo theme" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://nearwood.dev/categories/programming/" />
-
 <meta property="og:updated_time" content="2018-01-12T02:13:38+00:00" />
 
 		<meta name="twitter:card" content="summary"/>
@@ -45,6 +44,7 @@
 	</ul>
 </nav>
 </header>
+
 	<div class="primary">
 	
 	<main class="main">
@@ -59,22 +59,22 @@
 	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/released-my-first-android-app/">Released my first Android app</a></h1>
 	<div class="post__content">After searching for a simple GPS Speedometer app that provided a speed readout in more than just 2 units (a free one, of course), I thought it would be the perfect project for my first Android app. It took only a few hours to make it, the Eclipse ADT makes this pretty easy.
 Google Play link
-I&rsquo;m glad I&rsquo;ve gotten more familiar with the publishing process. It&rsquo;ll help when I release a game I&rsquo;ve been tinkering with for a few years.</div>
+I'm glad I've gotten more familiar with the publishing process. It'll help when I release a game I've been tinkering with for a few years.</div>
 </article>
 				</div>
 			
 				<div class="card card--2col">
 					<article class="post card__box block">
 	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/libgdx/">LibGDX</a></h1>
-	<div class="post__content">I&rsquo;ve been busy these past few weeks trying to get my 280Z autocross ready, and porting my C++/DirectX windows game to Java with LibGDX.
-Overall I am very impressed with LibGDX. The GUI API isn&rsquo;t very good though. I&rsquo;ve decided to roll my own (again!) for this game. At least the first release. I see that the LibGDX one supports nice fonts and textures and whatnot. It shouldn&rsquo;t be too difficult to reimplement the base class with it and refactor when it matures.</div>
+	<div class="post__content">I've been busy these past few weeks trying to get my 280Z autocross ready, and porting my C++/DirectX windows game to Java with LibGDX.
+Overall I am very impressed with LibGDX. The GUI API isn't very good though. I've decided to roll my own (again!) for this game. At least the first release. I see that the LibGDX one supports nice fonts and textures and whatnot. It shouldn't be too difficult to reimplement the base class with it and refactor when it matures.</div>
 </article>
 				</div>
 			
 				<div class="card card--2col">
 					<article class="post card__box block">
 	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/carduino/">Carduino</a></h1>
-	<div class="post__content">I&rsquo;ve been working on a small Arduino project to datalog my commute. I&rsquo;m using an Arduino Uno with SK Pang&rsquo;s CAN Bus Shield. I also have added the optional GPS and LCD to the mix. There is an micro-SD card slot for storage.
+	<div class="post__content">I've been working on a small Arduino project to datalog my commute. I'm using an Arduino Uno with SK Pang's CAN Bus Shield. I also have added the optional GPS and LCD to the mix. There is an micro-SD card slot for storage.
 The aim of the project is just to collect data. As much as I can put into the SD card. I plan on calculating driving efficiency using somewhat arbitrary measures like throttle modulation, temperature, etc.</div>
 </article>
 				</div>
@@ -82,18 +82,16 @@ The aim of the project is just to collect data. As much as I can put into the SD
 				<div class="card card--2col">
 					<article class="post card__box block">
 	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/refactoring-with-regular-expressions/">Refactoring with regular expressions</a></h1>
-	<div class="post__content">I&rsquo;m re-learning JavaScript, and I noticed I was refactoring functions a lot on some old code. I&rsquo;m putting some useful stuff here for reference:
+	<div class="post__content">I'm re-learning JavaScript, and I noticed I was refactoring functions a lot on some old code. I'm putting some useful stuff here for reference:
 aFunc(blah) → this.aFunc = function(blah)
 Find: function (\w+)(
 Replace with: this.\1 = function(
-&nbsp;
-To go the other way:
+ To go the other way:
 Find: \t(\w+)\s=\sfunction(
 Replace with: \tfunction \1(
-&nbsp;
-Change aFunc(blah) to SOME.qualifier.aFunc(blah)
-Find: \t(\w+()
-Replace with: \tSOME.qualifier.\1</div>
+ Change aFunc(blah) to SOME.qualifier.aFunc(blah)
+**Find: **\t(\w+()
+**Replace with: **\tSOME.qualifier.\1</div>
 </article>
 				</div>
 			

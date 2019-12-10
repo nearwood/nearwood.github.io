@@ -10,18 +10,16 @@
 	<meta name="description" content="">
 		<meta property="og:title" content="On Properly Setting Your Cooling Fan Temperature Threshold" />
 <meta property="og:description" content="When I first installed an aftermarket ECU (Megasquirt I) in my 1984 300ZX, years ago (almost 10 as of this writing!), I used the recommended GM sensor for coolant temperature. It required a bit of machining to fit the sensor, nothing major.
-
-With my latest engine (and the two cars it was in), I decided to use the OEM Cylinder Head Temperature Sensor, since hey, why not? It was already there, in an optimal spot. All I had to do was make software changes to calibrate MS-II to it&rsquo;s temperature/resistance curve. I had the data in the Factory Service Manual, all was well." />
+With my latest engine (and the two cars it was in), I decided to use the OEM Cylinder Head Temperature Sensor, since hey, why not? It was already there, in an optimal spot. All I had to do was make software changes to calibrate MS-II to it&#39;s temperature/resistance curve. I had the data in the Factory Service Manual, all was well." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://nearwood.dev/on-properly-setting-your-cooling-fan-temperature-threshold/" />
 <meta property="article:published_time" content="2015-03-08T17:31:21+00:00" />
-<meta property="article:modified_time" content="2019-10-30T12:04:02-05:00" />
+<meta property="article:modified_time" content="2019-12-10T10:57:45-06:00" />
 
 		<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="On Properly Setting Your Cooling Fan Temperature Threshold"/>
 <meta name="twitter:description" content="When I first installed an aftermarket ECU (Megasquirt I) in my 1984 300ZX, years ago (almost 10 as of this writing!), I used the recommended GM sensor for coolant temperature. It required a bit of machining to fit the sensor, nothing major.
-
-With my latest engine (and the two cars it was in), I decided to use the OEM Cylinder Head Temperature Sensor, since hey, why not? It was already there, in an optimal spot. All I had to do was make software changes to calibrate MS-II to it&rsquo;s temperature/resistance curve. I had the data in the Factory Service Manual, all was well."/>
+With my latest engine (and the two cars it was in), I decided to use the OEM Cylinder Head Temperature Sensor, since hey, why not? It was already there, in an optimal spot. All I had to do was make software changes to calibrate MS-II to it&#39;s temperature/resistance curve. I had the data in the Factory Service Manual, all was well."/>
 
 	<link rel="stylesheet" href="/css/main.css">
 	<link rel="stylesheet" href="/css/themes/dark-green.css">
@@ -48,6 +46,7 @@ With my latest engine (and the two cars it was in), I decided to use the OEM Cyl
 	</ul>
 </nav>
 </header>
+
 	<div class="primary">
 	
 	<main class="main">
@@ -55,29 +54,17 @@ With my latest engine (and the two cars it was in), I decided to use the OEM Cyl
 			<article class="post">
 				<h1 class="post__title">On Properly Setting Your Cooling Fan Temperature Threshold</h1>
 				<div class="post__content"><p>When I first installed an aftermarket ECU (Megasquirt I) in my 1984 300ZX, years ago (almost 10 as of this writing!), I used the recommended GM sensor for coolant temperature. It required a bit of machining to fit the sensor, nothing major.</p>
-
-<p>With my latest engine (and the two cars it was in), I decided to use the OEM Cylinder Head Temperature Sensor, since hey, why not? It was already there, in an optimal spot. All I had to do was make software changes to calibrate MS-II to it&rsquo;s temperature/resistance curve. I had the data in the Factory Service Manual, all was well.</p>
-
+<p>With my latest engine (and the two cars it was in), I decided to use the OEM Cylinder Head Temperature Sensor, since hey, why not? It was already there, in an optimal spot. All I had to do was make software changes to calibrate MS-II to it's temperature/resistance curve. I had the data in the Factory Service Manual, all was well.</p>
 <p>Sort of. The thought occurred to me that while Megasquirt would be fine with the cylinder head temperature for fuel calculations, I would need to find out exactly what cylinder head temperature corresponded to what coolant temperature. That is, I would need to know at what coolant temperature the car was fully warmed up at, and what temperature the CHTS reported at that point. For the former, pretty much any water-cooled engine sits around 212 degrees (boiling under normal circumstances, but this is coolant, not just water).</p>
-
 <p>The cylinder head temperature was a mystery though. What cylinder heat temperature corresponds to to 212 degree coolant temperature? I would need this to know when to turn on the electric fans to cool the car off.</p>
-
-<p>Well, it was a very good question. Lazily, I set up the cooling fan temperature threshold to 85<span class="Unicode">°</span> C. I knew it was low, but I wanted to be safe. I would figure it out later. The problem is it took me about 5 years to get around to it. It was in the back of my mind and was kind of one of those things that you say you&rsquo;ll get around to but never do. It turned out to be quite a bit low. And really, what was I thinking? Of course that&rsquo;s way too low&hellip;</p>
-
+<p>Well, it was a very good question. Lazily, I set up the cooling fan temperature threshold to 85<span class="Unicode">°</span> C. I knew it was low, but I wanted to be safe. I would figure it out later. The problem is it took me about 5 years to get around to it. It was in the back of my mind and was kind of one of those things that you say you'll get around to but never do. It turned out to be quite a bit low. And really, what was I thinking? Of course that's way too low&hellip;</p>
 <p>After my engine timing fiasco that I managed to luckily walk away without any damage (so far) on my new engine, I decided to catch up on that &ldquo;TO DO&rdquo; list, and take care of these small things.</p>
-
-<p>I turned the car on after some winter slumber and plotted the coolant temperature and cylinder heat temperature over time. I measured coolant temperature by an average of a silicone coupler at the water outlet of the engine and the radiator itself (the aluminum was hard to get an accurate IR reading off of). Cylinder head temperature was measured by the ECU&rsquo;s sensor reading.</p>
-
+<p>I turned the car on after some winter slumber and plotted the coolant temperature and cylinder heat temperature over time. I measured coolant temperature by an average of a silicone coupler at the water outlet of the engine and the radiator itself (the aluminum was hard to get an accurate IR reading off of). Cylinder head temperature was measured by the ECU's sensor reading.</p>
 <p>I gathered the data starting from a few minutes of running time to about 40 minutes total. It is graphed below:</p>
-
-<p><img class="lostImage" src="" alt="Image no longer available :("/></p>
-
+<img class="lostImage" src="" alt="Image no longer available :("/>
 <p>No surprises here. At the start the temperature varies by quite a lot, due to the thermostat being closed. It slowly opens over time and the temperature differential settles very firmly on 10 degrees Celsius. At the 15 minute mark in the graph, you can see where the fan turns on at 85<span class="Unicode">°. Note that it takes about 3 minutes to cool the car off about 5 degrees.</span></p>
-
 <p>After that I disabled the fans altogether and waited until the coolant temperature was 212<span class="Unicode">°</span> C. It took longer than expected, about 20 minutes. All the while CHTS stayed at almost exactly 10<span class="Unicode">°</span> higher than coolant temperature. Once I had about 212<span class="Unicode">°</span> coolant temperature, I enabled the fans again. I set them to come on at 108<span class="Unicode">°</span> C from the CHTS. This is just below 212<span class="Unicode">° coolant temperature. They stay on until 206°, so just a couple degrees down. And it takes only 15 seconds or so to drop these two degrees. Which makes sense, the temperature differential the radiator sees is drastically larger when the fans come on, and in general the system is much more ready to exchange heat than at 85° C.</span></p>
-
-<p>So, the results? The engine is running much more efficiently. My idle injector pulsewidths dropped by 30%. The entire fuel table will likely see similar changes, but I haven&rsquo;t had a chance to tune it. My timing also needed to be adjusted. The engine seems to like quite a bit more idle advance than stock. The exhaust note even changed (for the better!).</p>
-
+<p>So, the results? The engine is running much more efficiently. My idle injector pulsewidths dropped by 30%. The entire fuel table will likely see similar changes, but I haven't had a chance to tune it. My timing also needed to be adjusted. The engine seems to like quite a bit more idle advance than stock. The exhaust note even changed (for the better!).</p>
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
   <iframe src="https://www.youtube.com/embed/GXuR-Z6Gejc" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>

@@ -10,20 +10,14 @@
 	<meta name="description" content="">
 		<meta property="og:title" content="Reverse Engineering the firmware on a Kenwood DDX9903S" />
 <meta property="og:description" content="I bought and really like my Kenwood Excelon DDX9903S headunit. I had it in my WRX, and moved it to my LS430. It supports Android Auto and CarPlay, which I find really useful when driving.
-
 However, it has a nag screen every time it boots up. This got me curious as to how it worked, and see if it could be patched to skip this disclaimer. I figured it probably ran Linux on a SoC, as pretty much everything does nowadays. So I grabbed the latest firmware for it (mine was already updated to it), and started probing.
-
 S_V2_7_0008_0600_AT1.zip
-
 Extract that and you get 3 folders under S_V2_7_0008_0600/:
-
 BOOT_V2_7_0008_0600_release/
 MAIN_V1_0_2758_0400/
 SOC_V2_7_0008_0600/
 
-
-In each there&rsquo;s a .nfu file, which I&rsquo;ve never encountered before. I ran binwalk on each:
-
+In each there&#39;s a .nfu file, which I&#39;ve never encountered before. I ran binwalk on each:
 [BOOT_V2_7_0008_0600_release]$ binwalk Boot_2.7.0008.0600.nfu
 DECIMAL HEXADECIMAL DESCRIPTION
 --------------------------------------------------------------------------------
@@ -32,30 +26,23 @@ DECIMAL HEXADECIMAL DESCRIPTION
 2358024 0x23FB08 ELF, 64-bit LSB shared object, AMD x86-64, version 1 (SYSV)
 3209992 0x30FB08 ELF, 64-bit LSB shared object, AMD x86-64, version 1 (SYSV)
 
-
-Surprise, surprise, it runs Android. But, I&rsquo;m thinking this image is possibly just the firmware updater, and not what I am looking for." />
+Surprise, surprise, it runs Android. But, I&#39;m thinking this image is possibly just the firmware updater, and not what I am looking for." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://nearwood.dev/reverse-engineering-the-firmware-on-a-kenwood-ddx9903s/" />
 <meta property="article:published_time" content="2017-10-28T03:06:49+00:00" />
-<meta property="article:modified_time" content="2019-10-30T11:52:57-05:00" />
+<meta property="article:modified_time" content="2019-12-10T10:57:45-06:00" />
 
 		<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Reverse Engineering the firmware on a Kenwood DDX9903S"/>
 <meta name="twitter:description" content="I bought and really like my Kenwood Excelon DDX9903S headunit. I had it in my WRX, and moved it to my LS430. It supports Android Auto and CarPlay, which I find really useful when driving.
-
 However, it has a nag screen every time it boots up. This got me curious as to how it worked, and see if it could be patched to skip this disclaimer. I figured it probably ran Linux on a SoC, as pretty much everything does nowadays. So I grabbed the latest firmware for it (mine was already updated to it), and started probing.
-
 S_V2_7_0008_0600_AT1.zip
-
 Extract that and you get 3 folders under S_V2_7_0008_0600/:
-
 BOOT_V2_7_0008_0600_release/
 MAIN_V1_0_2758_0400/
 SOC_V2_7_0008_0600/
 
-
-In each there&rsquo;s a .nfu file, which I&rsquo;ve never encountered before. I ran binwalk on each:
-
+In each there&#39;s a .nfu file, which I&#39;ve never encountered before. I ran binwalk on each:
 [BOOT_V2_7_0008_0600_release]$ binwalk Boot_2.7.0008.0600.nfu
 DECIMAL HEXADECIMAL DESCRIPTION
 --------------------------------------------------------------------------------
@@ -64,8 +51,7 @@ DECIMAL HEXADECIMAL DESCRIPTION
 2358024 0x23FB08 ELF, 64-bit LSB shared object, AMD x86-64, version 1 (SYSV)
 3209992 0x30FB08 ELF, 64-bit LSB shared object, AMD x86-64, version 1 (SYSV)
 
-
-Surprise, surprise, it runs Android. But, I&rsquo;m thinking this image is possibly just the firmware updater, and not what I am looking for."/>
+Surprise, surprise, it runs Android. But, I&#39;m thinking this image is possibly just the firmware updater, and not what I am looking for."/>
 
 	<link rel="stylesheet" href="/css/main.css">
 	<link rel="stylesheet" href="/css/themes/dark-green.css">
@@ -92,6 +78,7 @@ Surprise, surprise, it runs Android. But, I&rsquo;m thinking this image is possi
 	</ul>
 </nav>
 </header>
+
 	<div class="primary">
 	
 	<main class="main">
@@ -99,20 +86,14 @@ Surprise, surprise, it runs Android. But, I&rsquo;m thinking this image is possi
 			<article class="post">
 				<h1 class="post__title">Reverse Engineering the firmware on a Kenwood DDX9903S</h1>
 				<div class="post__content"><p>I bought and really like my Kenwood Excelon DDX9903S headunit. I had it in my WRX, and moved it to my LS430. It supports Android Auto and CarPlay, which I find really useful when driving.</p>
-
 <p>However, it has a nag screen every time it boots up. This got me curious as to how it worked, and see if it could be patched to skip this disclaimer. I figured it probably ran Linux on a SoC, as pretty much everything does nowadays. So I grabbed the latest firmware for it (mine was already updated to it), and started probing.</p>
-
 <p><code>S_V2_7_0008_0600_AT1.zip</code></p>
-
 <p>Extract that and you get 3 folders under S_V2_7_0008_0600/:</p>
-
 <pre class="brush: plain; light: true; title: ; notranslate" title="">BOOT_V2_7_0008_0600_release/
 MAIN_V1_0_2758_0400/
 SOC_V2_7_0008_0600/
 </pre>
-
-<p>In each there&rsquo;s a .nfu file, which I&rsquo;ve never encountered before. I ran binwalk on each:</p>
-
+<p>In each there's a .nfu file, which I've never encountered before. I ran binwalk on each:</p>
 <pre class="brush: plain; light: true; title: ; notranslate" title="">[BOOT_V2_7_0008_0600_release]$ binwalk Boot_2.7.0008.0600.nfu
 DECIMAL HEXADECIMAL DESCRIPTION
 --------------------------------------------------------------------------------
@@ -121,9 +102,7 @@ DECIMAL HEXADECIMAL DESCRIPTION
 2358024 0x23FB08 ELF, 64-bit LSB shared object, AMD x86-64, version 1 (SYSV)
 3209992 0x30FB08 ELF, 64-bit LSB shared object, AMD x86-64, version 1 (SYSV)
 </pre>
-
-<p>Surprise, surprise, it runs Android. But, I&rsquo;m thinking this image is possibly just the firmware updater, and not what I am looking for.</p>
-
+<p>Surprise, surprise, it runs Android. But, I'm thinking this image is possibly just the firmware updater, and not what I am looking for.</p>
 <pre class="brush: plain; light: true; title: ; notranslate" title="">[SOC_V2_7_0008_0600]$ binwalk Soc_V2_7_0008_0600.nfu
 DECIMAL HEXADECIMAL DESCRIPTION
 --------------------------------------------------------------------------------
@@ -139,13 +118,9 @@ DECIMAL HEXADECIMAL DESCRIPTION
 314263106 0x12BB4642 Zip archive data, at least v2.0 to extract, compressed size: 33193, uncompressed size: 5242880, name: sbios_dual.bin
 314296995 0x12BBCAA3 End of Zip archive, footer length: 22
 </pre>
-
 <p>Here we go. A kernel with a sane size and name string, some recovery images, and what looks like a filesystem image! qboot_ddx.bin must be part of Ubiquitous&rsquo; <a href="https://www.ubiquitous.co.jp/en/products/qb/md/quickboot/" rel="noopener" target="_blank">QuickBoot</a> software. It does boot awfully fast, so that explains that. Would be interesting to see full kernel and init output on a stereo headunit. Well, once anyway.</p>
-
-<p>Running binwalk on MAIN_V1_0_2758_0400/MainFw_1.0.2758.0400.mfu didn&rsquo;t output anything. Not sure what that is.</p>
-
+<p>Running binwalk on MAIN_V1_0_2758_0400/MainFw_1.0.2758.0400.mfu didn't output anything. Not sure what that is.</p>
 <p>I tried unzip to extract Soc_V2_7_0008_0600.nfu. Seemed to work, though it complained about a 41MB extra bytes at the beginning. I was really just interested in the filesystem image for the moment:</p>
-
 <pre class="brush: plain; light: true; title: ; notranslate" title="">[SOC_V2_7_0008_0600]$ unzip Soc_V2_7_0008_0600.nfu
 Archive: Soc_V2_7_0008_0600.nfu
 warning [Soc_V2_7_0008_0600.nfu]: 41943040 extra bytes at beginning or within zipfile
@@ -158,11 +133,8 @@ inflating: filelist.txt
 inflating: qboot_ddx.bin
 inflating: sbios_dual.bin
 </pre>
-
 <p>Running binwalk on the .ext4 verifies it is an ext4 filesystem image. I ran binwalk on the others and nothing was notable except the presumed QuickBoot file, qboot_ddx.bin which had images, and what looks like Qt library .qml files for some type of GUI. Also a Pandora image and other images. Hmm&hellip;</p>
-
 <p>I decided to mount the ext4 image to take a look.</p>
-
 <pre class="brush: plain; light: true; title: ; notranslate" title="">[SOC_V2_7_0008_0600]$ sudo mount -o loop automotive-linux-16DDX-image.ext4 /mnt/temp
 [SOC_V2_7_0008_0600]$ cd /mnt/temp/
 [temp]$ ls
@@ -170,13 +142,10 @@ bin dev home lost+found Music proc sbin sys temp usr
 boot etc IMG_DEC_WORK media nand1 RAMDISK sdcard Syslog Temp var
 DB filesave lib mnt opt run share system tmp
 </pre>
-
 <p>Interesting things appear to be in: /opt/jkpf:</p>
-
 <pre class="brush: plain; light: true; title: ; notranslate" title="">bin dbg_daemon_starter.sh etc kill_applications.sh lib rsc script system_init.sh
 </pre>
-
-<p>That appears to be where lots of magic happens. Whenever I&rsquo;m done disassembling the rest of the car for a particularly annoying remote start installation, I&rsquo;ll come back to it.</p></div>
+<p>That appears to be where lots of magic happens. Whenever I'm done disassembling the rest of the car for a particularly annoying remote start installation, I'll come back to it.</p></div>
 				
 				<footer class="post__footer">
 					

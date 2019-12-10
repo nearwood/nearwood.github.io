@@ -19,7 +19,7 @@
       
       <guid>https://nearwood.dev/sync-loginlock-screen-wallpaper-to-current-desktop-background/</guid>
       <description>For Windows 7, this turned out to be pretty easy to do via PowerShell. I just had to look for a native image resizing library since the lock screen for some odd reason, only supports JPEGs up to 256KB in size. Probably one of those legacy items left over from NT, like the file system permissions dialogs, and the built-in environment variables editor&amp;hellip;
-I ended up using WIA&amp;rsquo;s ImageProcess COM library which worked surprisingly well.</description>
+I ended up using WIA&#39;s ImageProcess COM library which worked surprisingly well.</description>
     </item>
     
   </channel>

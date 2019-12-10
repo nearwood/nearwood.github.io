@@ -9,15 +9,15 @@
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
 		<meta property="og:title" content="Carduino 2.0 – Intel Galileo Setup" />
-<meta property="og:description" content="Out of the box the Galileo is setup to run sketches uploaded from volatile memory, which is really lame. I didn&rsquo;t spend much time with it using the stock SPI kernel. So, an SD card is pretty much required to do any serious development with this board. This is not a bad thing (although you aren&rsquo;t running in real-time anymore), since having a full OS to use has lots of advantages. Plus, this way I can automate the build process in a way I&rsquo;m more familiar with." />
+<meta property="og:description" content="Out of the box the Galileo is setup to run sketches uploaded from volatile memory, which is really lame. I didn&#39;t spend much time with it using the stock SPI kernel. So, an SD card is pretty much required to do any serious development with this board. This is not a bad thing (although you aren&#39;t running in real-time anymore), since having a full OS to use has lots of advantages. Plus, this way I can automate the build process in a way I&#39;m more familiar with." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://nearwood.dev/carduino-2-0-intel-galileo-setup/" />
 <meta property="article:published_time" content="2014-11-12T02:04:43+00:00" />
-<meta property="article:modified_time" content="2019-10-30T12:06:10-05:00" />
+<meta property="article:modified_time" content="2019-12-10T10:57:45-06:00" />
 
 		<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Carduino 2.0 – Intel Galileo Setup"/>
-<meta name="twitter:description" content="Out of the box the Galileo is setup to run sketches uploaded from volatile memory, which is really lame. I didn&rsquo;t spend much time with it using the stock SPI kernel. So, an SD card is pretty much required to do any serious development with this board. This is not a bad thing (although you aren&rsquo;t running in real-time anymore), since having a full OS to use has lots of advantages. Plus, this way I can automate the build process in a way I&rsquo;m more familiar with."/>
+<meta name="twitter:description" content="Out of the box the Galileo is setup to run sketches uploaded from volatile memory, which is really lame. I didn&#39;t spend much time with it using the stock SPI kernel. So, an SD card is pretty much required to do any serious development with this board. This is not a bad thing (although you aren&#39;t running in real-time anymore), since having a full OS to use has lots of advantages. Plus, this way I can automate the build process in a way I&#39;m more familiar with."/>
 
 	<link rel="stylesheet" href="/css/main.css">
 	<link rel="stylesheet" href="/css/themes/dark-green.css">
@@ -44,22 +44,18 @@
 	</ul>
 </nav>
 </header>
+
 	<div class="primary">
 	
 	<main class="main">
 		<div class="single block">
 			<article class="post">
 				<h1 class="post__title">Carduino 2.0 – Intel Galileo Setup</h1>
-				<div class="post__content"><p>Out of the box the Galileo is setup to run sketches uploaded from volatile memory, which is really lame. I didn&rsquo;t spend much time with it using the stock SPI kernel. So, an SD card is pretty much required to do any serious development with this board. This is not a bad thing (although you aren&rsquo;t running in real-time anymore), since having a full OS to use has lots of advantages. Plus, this way I can automate the build process in a way I&rsquo;m more familiar with.</p>
-
+				<div class="post__content"><p>Out of the box the Galileo is setup to run sketches uploaded from volatile memory, which is really lame. I didn't spend much time with it using the stock SPI kernel. So, an SD card is pretty much required to do any serious development with this board. This is not a bad thing (although you aren't running in real-time anymore), since having a full OS to use has lots of advantages. Plus, this way I can automate the build process in a way I'm more familiar with.</p>
 <p>Anyway, so after unboxing and testing (and updating firmware while your at it), you can load an SD card up with the larger image. The SD card should be formatting as FAT16 (&lt;= 4GB), or FAT32 (&gt; 4GB). I tried formatting in Linux via mkfs (mkdosfs), but I was getting data errors from the SD card in my kernel messages. I ended up downloading the SD Formatter 4.0 software that <a href="https://www.hofrock.com/sd-card-issues">others recommend</a>, and it worked. This required a Windows (or Mac) computer. I still used Linux to copy the files without issue as I did not have 7zip on Windows (and Windows Updates were installing, preventing the MSI from allowing me to install it!). The tar command will spit out some errors about not being able to set permissions (because of the FAT FS), and exit with a failure code but it works.</p>
-
 <p>The SD Card image expands to about 330MB (kernel, boot files, and file system image). I used a 1GB microSD card. The SD card tarball has a directory in it, but you need to extract the files within that folder to the root of the SD card:</p>
-
 <pre class="brush: plain; gutter: false; title: ; notranslate" title="">tar xf ~/Downloads/SD_image.tar.bz2 --strip-components=1</pre>
-
 <p>You should have these files in the root of the SD card:</p>
-
 <ol id="yui_3_17_2_1_1415742428966_275">
   <li>
     boot (directory)
@@ -74,13 +70,9 @@
     image-full-clanton.ext3
   </li>
 </ol>
-
-<p>Next, slide the SD card in, power up the board and connect the USB and wait. You&rsquo;ll see the SD LED light up a lot (it lights up for only ~10 seconds if formatted incorrectly, ~30-60s if not). Also, your ttyACM device should show up eventually if it boots successfully, allowing you to communicate with it if you don&rsquo;t have the stereo-serial cable (<a href="https://learn.sparkfun.com/tutorials/galileo-getting-started-guide/using-the-terminal">Arduino-&gt;Terminal sketch</a>). Otherwise, if you have a LAN and an ethernet cable the SD image is configured with DHCP, so just plug it in and power the board. Now you can use SSH like a civilized person. You&rsquo;ll need to grab the IP address from either your router interface or the device itself (using the serial port/serial port sketch). Then you can really start messing around.</p>
-
-<p>The Arduino sketches are run as a user (root, specifically), and they are started via some init scripts. Check out <code>/etc/init.d/</code>, <code>/opt/cln/galileo</code>, and <code>/sketch/</code> for all the relevant files. You can disable the init scripts if you are feeling confident. You&rsquo;ll need a stereo-serial cable if you screw up and don&rsquo;t have SSH access.</p>
-
-<p>You&rsquo;ll see the board has some space left on the file system image.</p>
-
+<p>Next, slide the SD card in, power up the board and connect the USB and wait. You'll see the SD LED light up a lot (it lights up for only ~10 seconds if formatted incorrectly, ~30-60s if not). Also, your ttyACM device should show up eventually if it boots successfully, allowing you to communicate with it if you don't have the stereo-serial cable (<a href="https://learn.sparkfun.com/tutorials/galileo-getting-started-guide/using-the-terminal">Arduino-&gt;Terminal sketch</a>). Otherwise, if you have a LAN and an ethernet cable the SD image is configured with DHCP, so just plug it in and power the board. Now you can use SSH like a civilized person. You'll need to grab the IP address from either your router interface or the device itself (using the serial port/serial port sketch). Then you can really start messing around.</p>
+<p>The Arduino sketches are run as a user (root, specifically), and they are started via some init scripts. Check out <code>/etc/init.d/</code>, <code>/opt/cln/galileo</code>, and <code>/sketch/</code> for all the relevant files. You can disable the init scripts if you are feeling confident. You'll need a stereo-serial cable if you screw up and don't have SSH access.</p>
+<p>You'll see the board has some space left on the file system image.</p>
 <pre class="brush: plain; gutter: false; title: ; notranslate" title="">root@clanton:/# df -h
 Filesystem                Size      Used Available Use% Mounted on
 rootfs                  295.1M    140.3M    139.8M  50% /
@@ -91,9 +83,7 @@ none                    115.3M      4.0K    115.3M   0% /dev
 tmpfs                   116.2M    132.0K    116.1M   0% /var/volatile
 tmpfs                   116.2M         0    116.2M   0% /media/ram
 </pre>
-
 <p>You can use extra space on the SD card as well. Or, build a new image altogether (which is <a href="https://www.yoctoproject.org/">a bit more work</a>).</p>
-
 <p>Next will be developing native applications for the board so we can use the Arduino hardware.</p></div>
 				
 				<footer class="post__footer">

@@ -19,10 +19,8 @@
       
       <guid>https://nearwood.dev/adding-a-disk-to-an-encrypted-mdadm-array/</guid>
       <description>&lt;p&gt;My RAID6 was originally planned with 6 drives, but only had 5 for a while due to space concerns with the case. However, I found as a file, media, and multiple cryptocurrency node it filled up the 2.7TB pretty quickly. So, I got a new case (and some more RAM), which has proper space for 6 3.5&amp;rdquo; drives (and 2 5.25&amp;rdquo;). When migrating to this I decided to add the extra 1TB WD Red NAS drive I bought but have not been able to use.&lt;/p&gt;
-
 &lt;p&gt;The case is a Fractal Design Define Mini, and I am thoroughly impressed. Six 3.5&amp;rdquo; slots, two 5.25&amp;rdquo; external slots, and lots of sound padding on the doors and sides.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://nearwood.dev/images/server.jpg&#34; alt=&#34;My SuperMicro server in the Fractal Design case&#34; /&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;img src=&#34;https://nearwood.dev/images/server.jpg&#34; alt=&#34;My SuperMicro server in the Fractal Design case&#34;&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -31,8 +29,8 @@
       <pubDate>Sat, 21 May 2016 22:06:00 +0000</pubDate>
       
       <guid>https://nearwood.dev/fixing-mirrorlist-on-arch-linux-arm-raspberry-pi/</guid>
-      <description>I hadn&amp;rsquo;t updated my Raspberry Pi (a B+ model for my rpi-drd project) in about a year. Pacman -Syu kept complaining about being unable to find files on any of the mirrors.
-So I, without thinking, ran reflector on an x86 host and copied it over. Oops. Now it definitely can&amp;rsquo;t find packages.
+      <description>I hadn&#39;t updated my Raspberry Pi (a B+ model for my rpi-drd project) in about a year. Pacman -Syu kept complaining about being unable to find files on any of the mirrors.
+So I, without thinking, ran reflector on an x86 host and copied it over. Oops. Now it definitely can&#39;t find packages.
 The archlinuxarm.org website gave me the hostname I needed, but not the entire URL. Put this in your mirrorlist (as the sole entry) to restore functionality:</description>
     </item>
     
@@ -42,7 +40,7 @@ The archlinuxarm.org website gave me the hostname I needed, but not the entire U
       <pubDate>Thu, 21 Apr 2016 22:07:09 +0000</pubDate>
       
       <guid>https://nearwood.dev/gentoo-linux-tesla-it-was-only-a-matter-of-time/</guid>
-      <description>Surprise, surprise, my old favorite Gentoo Linux is now running on a Tesla Model S. Hope he doesn&amp;rsquo;t emerge world while driving.</description>
+      <description>Surprise, surprise, my old favorite Gentoo Linux is now running on a Tesla Model S. Hope he doesn&#39;t emerge world while driving.</description>
     </item>
     
     <item>
@@ -51,11 +49,9 @@ The archlinuxarm.org website gave me the hostname I needed, but not the entire U
       <pubDate>Sat, 06 Dec 2014 03:00:22 +0000</pubDate>
       
       <guid>https://nearwood.dev/installing-arch-linux-with-an-encrypted-root/</guid>
-      <description>&lt;p&gt;I&amp;rsquo;ve got a ThinkPad T410. I got it off craigslist in what was a somewhat shady transaction. Regardless, it came with a 300GB spinner. Not interested in finding out how much life was left on it I got a solid state replacement from NewEgg for &amp;ldquo;Cyber Monday&amp;rdquo;. A 240GB Intel one for $110, that&amp;rsquo;s less than 50 cents per GB!&lt;/p&gt;
-
-&lt;p&gt;The spinner has a single unencrypted partition with Arch Linux running on it. I wanted to run Arch on an encrypted partition. The main reason: If it&amp;rsquo;s ever stolen I don&amp;rsquo;t want to have to worry about any of the data on it. Bonus reason: Geek/spy points.&lt;/p&gt;
-
-&lt;p&gt;So, while there are excellent guides for installing Arch, and setting up encryption, and optimizing an SSD, there don&amp;rsquo;t seem to be any combining the three. In reality it&amp;rsquo;s not that much more difficult, and if you are motivated to setup encryption on Linux in the first place you probably know what you&amp;rsquo;re doing. Still, I was disheartened a bit at the lack of information so I decided to note how I went about it in general.&lt;/p&gt;</description>
+      <description>&lt;p&gt;I&#39;ve got a ThinkPad T410. I got it off craigslist in what was a somewhat shady transaction. Regardless, it came with a 300GB spinner. Not interested in finding out how much life was left on it I got a solid state replacement from NewEgg for &amp;ldquo;Cyber Monday&amp;rdquo;. A 240GB Intel one for $110, that&#39;s less than 50 cents per GB!&lt;/p&gt;
+&lt;p&gt;The spinner has a single unencrypted partition with Arch Linux running on it. I wanted to run Arch on an encrypted partition. The main reason: If it&#39;s ever stolen I don&#39;t want to have to worry about any of the data on it. Bonus reason: Geek/spy points.&lt;/p&gt;
+&lt;p&gt;So, while there are excellent guides for installing Arch, and setting up encryption, and optimizing an SSD, there don&#39;t seem to be any combining the three. In reality it&#39;s not that much more difficult, and if you are motivated to setup encryption on Linux in the first place you probably know what you&#39;re doing. Still, I was disheartened a bit at the lack of information so I decided to note how I went about it in general.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -64,7 +60,7 @@ The archlinuxarm.org website gave me the hostname I needed, but not the entire U
       <pubDate>Wed, 12 Nov 2014 02:04:43 +0000</pubDate>
       
       <guid>https://nearwood.dev/carduino-2-0-intel-galileo-setup/</guid>
-      <description>&lt;p&gt;Out of the box the Galileo is setup to run sketches uploaded from volatile memory, which is really lame. I didn&amp;rsquo;t spend much time with it using the stock SPI kernel. So, an SD card is pretty much required to do any serious development with this board. This is not a bad thing (although you aren&amp;rsquo;t running in real-time anymore), since having a full OS to use has lots of advantages. Plus, this way I can automate the build process in a way I&amp;rsquo;m more familiar with.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Out of the box the Galileo is setup to run sketches uploaded from volatile memory, which is really lame. I didn&#39;t spend much time with it using the stock SPI kernel. So, an SD card is pretty much required to do any serious development with this board. This is not a bad thing (although you aren&#39;t running in real-time anymore), since having a full OS to use has lots of advantages. Plus, this way I can automate the build process in a way I&#39;m more familiar with.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -83,8 +79,8 @@ Installing Arch was quick, as usual. The laptop has a fingerprint reader, which 
       <pubDate>Fri, 26 Apr 2013 23:13:52 +0000</pubDate>
       
       <guid>https://nearwood.dev/moving-home-server-to-arch/</guid>
-      <description>I&amp;rsquo;ve ordered a 2 terabyte hard drive to appropriately serve as a backup drive for my home server. This would normally just require swapping the old backup drive out for it, and then performing a backup. But I figure since I&amp;rsquo;ll have it down anyway, I&amp;rsquo;ll have enough drives to swap to Arch Linux and get things going again with the old drive as a &amp;hellip; backup.
-I&amp;rsquo;ve got quite a few services setup on it, and I&amp;rsquo;m not looking forward to moving all the config files over</description>
+      <description>I&#39;ve ordered a 2 terabyte hard drive to appropriately serve as a backup drive for my home server. This would normally just require swapping the old backup drive out for it, and then performing a backup. But I figure since I&#39;ll have it down anyway, I&#39;ll have enough drives to swap to Arch Linux and get things going again with the old drive as a &amp;hellip; backup.
+I&#39;ve got quite a few services setup on it, and I&#39;m not looking forward to moving all the config files over</description>
     </item>
     
     <item>
@@ -93,7 +89,7 @@ I&amp;rsquo;ve got quite a few services setup on it, and I&amp;rsquo;m not looki
       <pubDate>Mon, 18 Feb 2013 02:30:09 +0000</pubDate>
       
       <guid>https://nearwood.dev/udev-broke-server-broke-router-broke/</guid>
-      <description>I attempted to get a webcam going on our home server. So, I plug it in, and since I&amp;rsquo;ve done this before I ran a script I made to grab an image from the webcam. Which didn&amp;rsquo;t work. So, after checking out why (/dev/video0 node was missing), I noticed that the kernel no longer had support built in.
+      <description>I attempted to get a webcam going on our home server. So, I plug it in, and since I&#39;ve done this before I ran a script I made to grab an image from the webcam. Which didn&#39;t work. So, after checking out why (/dev/video0 node was missing), I noticed that the kernel no longer had support built in.
 After going through the kernel options, I realized they changed the v4l and webcam support options around and since I just upgrade using &amp;ldquo;-silentoldconfig&amp;rdquo; (the bad way to do upgrades), it broke whenever I upgraded to 3.</description>
     </item>
     
@@ -103,7 +99,7 @@ After going through the kernel options, I realized they changed the v4l and webc
       <pubDate>Sun, 27 Jan 2013 01:24:24 +0000</pubDate>
       
       <guid>https://nearwood.dev/home-server-is-back-online/</guid>
-      <description>I&amp;rsquo;ve pulled power and cable from the attic and just powered up the home server again. It&amp;rsquo;s been asleep for 5 months until now. I&amp;rsquo;ve just done an emerge -sync, and it took about 10 minutes to complete.
+      <description>I&#39;ve pulled power and cable from the attic and just powered up the home server again. It&#39;s been asleep for 5 months until now. I&#39;ve just done an emerge -sync, and it took about 10 minutes to complete.
 However, it went up without any problems, which is good. Considering I turned it off in a working state. I was tempted to backup all my config files and start fresh with, say, Arch Linux, but that would take all weekend.</description>
     </item>
     
@@ -113,15 +109,15 @@ However, it went up without any problems, which is good. Considering I turned it
       <pubDate>Mon, 19 Nov 2012 05:50:42 +0000</pubDate>
       
       <guid>https://nearwood.dev/gentoo-on-a-mid-2012-macbook-pro/</guid>
-      <description>If your sick of your brand new MacBook just working (more or less), and you just feel like modifying your kernel&amp;rsquo;s source to get your computer to work right, you&amp;rsquo;ve come to the right place. I (finally) managed to get Gentoo booting on a new MacBook Pro (15&amp;rdquo;, Core i7, mid-2012) alongside OS X 10.8.2. I suppose it actually wasn&amp;rsquo;t that bad, it could have been much worse. I only had to reinstall OS X once after a wonky partition editor&amp;hellip;.</description>
+      <description>If your sick of your brand new MacBook just working (more or less), and you just feel like modifying your kernel&#39;s source to get your computer to work right, you&#39;ve come to the right place. I (finally) managed to get Gentoo booting on a new MacBook Pro (15&amp;rdquo;, Core i7, mid-2012) alongside OS X 10.8.2. I suppose it actually wasn&#39;t that bad, it could have been much worse. I only had to reinstall OS X once after a wonky partition editor&amp;hellip;.</description>
     </item>
     
     <item>
       <title>QEMU on Windows</title>
-      <link>https://nearwood.dev/posts/2012-07-05-qemu-on-windows/</link>
+      <link>https://nearwood.dev/posts/2012/qemu-on-windows/</link>
       <pubDate>Fri, 06 Jul 2012 01:29:31 +0000</pubDate>
       
-      <guid>https://nearwood.dev/posts/2012-07-05-qemu-on-windows/</guid>
+      <guid>https://nearwood.dev/posts/2012/qemu-on-windows/</guid>
       <description>After fumbling around with various downloads and patches, I was able to find a working QEMU build for windows. I am running Windows 7 64-bit, and I wanted to run an ARM system (specifically, to develop for a Stratus plug computer). Before this, I was running a virtualized Ubuntu using VirtualBox and then running QEMU within that. Performance was not noticeably bad.
 However, I had problems bridging the QEMU to the Ubuntu host, which was bridged itself.</description>
     </item>

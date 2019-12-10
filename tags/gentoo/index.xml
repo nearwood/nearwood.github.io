@@ -18,7 +18,7 @@
       <pubDate>Thu, 21 Apr 2016 22:07:09 +0000</pubDate>
       
       <guid>https://nearwood.dev/gentoo-linux-tesla-it-was-only-a-matter-of-time/</guid>
-      <description>Surprise, surprise, my old favorite Gentoo Linux is now running on a Tesla Model S. Hope he doesn&amp;rsquo;t emerge world while driving.</description>
+      <description>Surprise, surprise, my old favorite Gentoo Linux is now running on a Tesla Model S. Hope he doesn&#39;t emerge world while driving.</description>
     </item>
     
     <item>
@@ -29,7 +29,7 @@
       <guid>https://nearwood.dev/switched-to-arch-linux-from-gentoo/</guid>
       <description>Time installing Gentoo: days
 Time installing Archlinux: 30 mins.
-I have an old Intel based Dell laptop with 1.8GHz single-core processor. I&amp;rsquo;ve had Windows XP on it for a couple years, then I switched to Gentoo for the past 5 or 6 years. Well, it&amp;rsquo;s really not the kind of laptop that you should be compiling everything from source on. I&amp;rsquo;m tired of going through the &amp;ldquo;everything&amp;rsquo;s broken, hook it the ethernet cable and start fixing it&amp;rdquo; routine after I&amp;rsquo;ve left it alone for months at a time.</description>
+I have an old Intel based Dell laptop with 1.8GHz single-core processor. I&#39;ve had Windows XP on it for a couple years, then I switched to Gentoo for the past 5 or 6 years. Well, it&#39;s really not the kind of laptop that you should be compiling everything from source on. I&#39;m tired of going through the &amp;ldquo;everything&#39;s broken, hook it the ethernet cable and start fixing it&amp;rdquo; routine after I&#39;ve left it alone for months at a time.</description>
     </item>
     
     <item>
@@ -38,7 +38,7 @@ I have an old Intel based Dell laptop with 1.8GHz single-core processor. I&amp;r
       <pubDate>Mon, 18 Feb 2013 02:30:09 +0000</pubDate>
       
       <guid>https://nearwood.dev/udev-broke-server-broke-router-broke/</guid>
-      <description>I attempted to get a webcam going on our home server. So, I plug it in, and since I&amp;rsquo;ve done this before I ran a script I made to grab an image from the webcam. Which didn&amp;rsquo;t work. So, after checking out why (/dev/video0 node was missing), I noticed that the kernel no longer had support built in.
+      <description>I attempted to get a webcam going on our home server. So, I plug it in, and since I&#39;ve done this before I ran a script I made to grab an image from the webcam. Which didn&#39;t work. So, after checking out why (/dev/video0 node was missing), I noticed that the kernel no longer had support built in.
 After going through the kernel options, I realized they changed the v4l and webcam support options around and since I just upgrade using &amp;ldquo;-silentoldconfig&amp;rdquo; (the bad way to do upgrades), it broke whenever I upgraded to 3.</description>
     </item>
     
@@ -48,7 +48,7 @@ After going through the kernel options, I realized they changed the v4l and webc
       <pubDate>Sun, 27 Jan 2013 01:24:24 +0000</pubDate>
       
       <guid>https://nearwood.dev/home-server-is-back-online/</guid>
-      <description>I&amp;rsquo;ve pulled power and cable from the attic and just powered up the home server again. It&amp;rsquo;s been asleep for 5 months until now. I&amp;rsquo;ve just done an emerge -sync, and it took about 10 minutes to complete.
+      <description>I&#39;ve pulled power and cable from the attic and just powered up the home server again. It&#39;s been asleep for 5 months until now. I&#39;ve just done an emerge -sync, and it took about 10 minutes to complete.
 However, it went up without any problems, which is good. Considering I turned it off in a working state. I was tempted to backup all my config files and start fresh with, say, Arch Linux, but that would take all weekend.</description>
     </item>
     
@@ -58,7 +58,7 @@ However, it went up without any problems, which is good. Considering I turned it
       <pubDate>Mon, 19 Nov 2012 05:50:42 +0000</pubDate>
       
       <guid>https://nearwood.dev/gentoo-on-a-mid-2012-macbook-pro/</guid>
-      <description>If your sick of your brand new MacBook just working (more or less), and you just feel like modifying your kernel&amp;rsquo;s source to get your computer to work right, you&amp;rsquo;ve come to the right place. I (finally) managed to get Gentoo booting on a new MacBook Pro (15&amp;rdquo;, Core i7, mid-2012) alongside OS X 10.8.2. I suppose it actually wasn&amp;rsquo;t that bad, it could have been much worse. I only had to reinstall OS X once after a wonky partition editor&amp;hellip;.</description>
+      <description>If your sick of your brand new MacBook just working (more or less), and you just feel like modifying your kernel&#39;s source to get your computer to work right, you&#39;ve come to the right place. I (finally) managed to get Gentoo booting on a new MacBook Pro (15&amp;rdquo;, Core i7, mid-2012) alongside OS X 10.8.2. I suppose it actually wasn&#39;t that bad, it could have been much worse. I only had to reinstall OS X once after a wonky partition editor&amp;hellip;.</description>
     </item>
     
   </channel>

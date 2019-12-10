@@ -12,7 +12,6 @@
 <meta property="og:description" content="Responsive card-based &amp; code-light Hugo theme" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://nearwood.dev/categories/raspberry-pi/" />
-
 <meta property="og:updated_time" content="2016-05-21T22:06:00+00:00" />
 
 		<meta name="twitter:card" content="summary"/>
@@ -45,6 +44,7 @@
 	</ul>
 </nav>
 </header>
+
 	<div class="primary">
 	
 	<main class="main">
@@ -57,8 +57,8 @@
 				<div class="card card--2col">
 					<article class="post card__box block">
 	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/fixing-mirrorlist-on-arch-linux-arm-raspberry-pi/">Fixing mirrorlist on Arch Linux Arm (Raspberry Pi)</a></h1>
-	<div class="post__content">I hadn&rsquo;t updated my Raspberry Pi (a B+ model for my rpi-drd project) in about a year. Pacman -Syu kept complaining about being unable to find files on any of the mirrors.
-So I, without thinking, ran reflector on an x86 host and copied it over. Oops. Now it definitely can&rsquo;t find packages.
+	<div class="post__content">I hadn't updated my Raspberry Pi (a B+ model for my rpi-drd project) in about a year. Pacman -Syu kept complaining about being unable to find files on any of the mirrors.
+So I, without thinking, ran reflector on an x86 host and copied it over. Oops. Now it definitely can't find packages.
 The archlinuxarm.org website gave me the hostname I needed, but not the entire URL. Put this in your mirrorlist (as the sole entry) to restore functionality:</div>
 </article>
 				</div>
@@ -66,14 +66,14 @@ The archlinuxarm.org website gave me the hostname I needed, but not the entire U
 				<div class="card card--2col">
 					<article class="post card__box block">
 	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/raspberry-pi-robot-assembly-part-2/">Raspberry Pi Robot – Assembly Part 2</a></h1>
-	<div class="post__content">This was the hardest part. If you wire the wrong things together you can brick your Pi. I took some time to decide on which pins to use, and after assembly and testing everything worked. I&rsquo;ll explain which pins I picked, but note that this information will not work with other hardware configurations.[I originally had a Model B Pi, but due to needing the second hardware PWM (which is hidden on the B), switched to the B+.</div>
+	<div class="post__content">This was the hardest part. If you wire the wrong things together you can brick your Pi. I took some time to decide on which pins to use, and after assembly and testing everything worked. I'll explain which pins I picked, but note that this information will not work with other hardware configurations.[I originally had a Model B Pi, but due to needing the second hardware PWM (which is hidden on the B), switched to the B+.</div>
 </article>
 				</div>
 			
 				<div class="card card--2col">
 					<article class="post card__box block">
 	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/raspberry-pi-robot-assembly-part-1/">Raspberry Pi Robot – Assembly Part 1</a></h1>
-	<div class="post__content">So you&rsquo;ve got a bunch of parts, assembly is pretty easy. I&rsquo;m going to skip over most of the chassis assembly since it came with instructions, but I have a couple pointers and I&rsquo;ll go over how I attached the encoders. Then I&rsquo;ll talk about soldering the motor controller and wiring the encoders up, and which pins to pick from the GPIO of the Pi.
+	<div class="post__content">So you've got a bunch of parts, assembly is pretty easy. I'm going to skip over most of the chassis assembly since it came with instructions, but I have a couple pointers and I'll go over how I attached the encoders. Then I'll talk about soldering the motor controller and wiring the encoders up, and which pins to pick from the GPIO of the Pi.
 So this is what the chassis looks like fully assembled:</div>
 </article>
 				</div>
@@ -81,20 +81,15 @@ So this is what the chassis looks like fully assembled:</div>
 				<div class="card card--2col">
 					<article class="post card__box block">
 	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/raspberry-pi-robot-cross-compiling/">Raspberry Pi – Cross-compiling</a></h1>
-	<div class="post__content"><p>Now that you have the hardware built and tested (although that&rsquo;s not necessary), you can either use the code I&rsquo;ve written-which is specific to the hardware and environment I have, or compile your own version. If you want to compile your own there are two options:</p>
-
+	<div class="post__content"><p>Now that you have the hardware built and tested (although that's not necessary), you can either use the code I've written-which is specific to the hardware and environment I have, or compile your own version. If you want to compile your own there are two options:</p>
 <ol>
 <li>Compile on the Pi itself</li>
 <li>Compile on an ARM virtual machine</li>
 <li>Cross-compile on a faster machine</li>
 </ol>
-
-<p>The trade off? Compiling on the Pi is slow (very slow). The virtual machine is a marked improvement for compiling speed, but is complicated to setup. Cross-compiling is about the same difficulty as setting up a virtual machine but a bit faster and less &ldquo;bulky&rdquo;. So it depends. The virtual machine is nice if you have a lot of libraries you want to use, since you&rsquo;ll have to compile all of them to be available for linking. If any of them have poor autoconfig support, it might be a pain to fix if you weren&rsquo;t already on the target machine. But, since I just needed one or two popular libraries, I decided to setup cross-compiling from my host (x86_64) machine.</p>
-
-<p>The last time I setup cross-compiling it was on Gentoo, and it wasn&rsquo;t pleasant. However, after a little bit of research it looks like the <a href="https://crosstool-ng.org/" target="_blank">crosstool-ng project</a> is pretty popular and useful. I only had to patch one tiny thing.</p>
-
-<p>Here&rsquo;s the overall process:</p>
-
+<p>The trade off? Compiling on the Pi is slow (very slow). The virtual machine is a marked improvement for compiling speed, but is complicated to setup. Cross-compiling is about the same difficulty as setting up a virtual machine but a bit faster and less &ldquo;bulky&rdquo;. So it depends. The virtual machine is nice if you have a lot of libraries you want to use, since you'll have to compile all of them to be available for linking. If any of them have poor autoconfig support, it might be a pain to fix if you weren't already on the target machine. But, since I just needed one or two popular libraries, I decided to setup cross-compiling from my host (x86_64) machine.</p>
+<p>The last time I setup cross-compiling it was on Gentoo, and it wasn't pleasant. However, after a little bit of research it looks like the <a href="https://crosstool-ng.org/" target="_blank">crosstool-ng project</a> is pretty popular and useful. I only had to patch one tiny thing.</p>
+<p>Here's the overall process:</p>
 <ol>
 <li>Install crosstool-ng</li>
 <li>Configure a cross toolchain with it</li>
@@ -108,8 +103,7 @@ So this is what the chassis looks like fully assembled:</div>
 					<article class="post card__box block">
 	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/raspberry-pi-robot/">Raspberry Pi Robot</a></h1>
 	<div class="post__content"><p>So, a while back I gave my wife a <a href="https://goldenarmor.com/farscape-drd/" target="_blank">Farscape DRD kit</a>. I promised to make it in to a robot. How hard could it be? Well, not too bad. A little more expensive than planned, though&hellip;</p>
-
-<p><img class="lostImage" src="" alt="Image no longer available :("/></p></div>
+<img class="lostImage" src="" alt="Image no longer available :("/></div>
 </article>
 				</div>
 			

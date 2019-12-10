@@ -9,51 +9,15 @@
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
 		<meta property="og:title" content="Python script to write a word using the word" />
-<meta property="og:description" content="That&rsquo;s the best title I can come up with. The idea is to do this:
-
-THISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHIS
-    THISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHIS
-    THIS            THIS    THIS    THIS            THIS            THIS
-    THIS            THIS    THIS    THIS            THIS            THIS
-    THISTHIS    THISTHIS    THIS    THISTHIS    THISTHIS    THISTHISTHIS
-    THISTHIS    THISTHIS    THIS    THISTHIS    THISTHIS    THISTHISTHIS
-    THISTHIS    THISTHIS            THISTHIS    THISTHIS            THIS
-    THISTHIS    THISTHIS            THISTHIS    THISTHIS            THIS
-    THISTHIS    THISTHIS    THIS    THISTHIS    THISTHIS            THIS
-    THISTHIS    THISTHIS    THIS    THISTHIS    THISTHISTHISTHIS    THIS
-    THISTHIS    THISTHIS    THIS    THISTHIS    THISTHISTHISTHIS    THIS
-    THISTHIS    THISTHIS    THIS    THIS            THIS            THIS
-    THISTHIS    THISTHIS    THIS    THIS            THIS            THIS
-    THISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHIS
-    THISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHIS
-
-With any number of alphanumeric characters. The idea comes from a reddit user posting something similar, and then my mind wandered." />
+<meta property="og:description" content="That&#39;s the best title I can come up with. The idea is to do this:" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://nearwood.dev/python-script-to-write-a-word-using-the-word/" />
 <meta property="article:published_time" content="2013-12-11T01:52:16+00:00" />
-<meta property="article:modified_time" content="2019-10-30T11:53:44-05:00" />
+<meta property="article:modified_time" content="2019-12-10T10:57:45-06:00" />
 
 		<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Python script to write a word using the word"/>
-<meta name="twitter:description" content="That&rsquo;s the best title I can come up with. The idea is to do this:
-
-THISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHIS
-    THISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHIS
-    THIS            THIS    THIS    THIS            THIS            THIS
-    THIS            THIS    THIS    THIS            THIS            THIS
-    THISTHIS    THISTHIS    THIS    THISTHIS    THISTHIS    THISTHISTHIS
-    THISTHIS    THISTHIS    THIS    THISTHIS    THISTHIS    THISTHISTHIS
-    THISTHIS    THISTHIS            THISTHIS    THISTHIS            THIS
-    THISTHIS    THISTHIS            THISTHIS    THISTHIS            THIS
-    THISTHIS    THISTHIS    THIS    THISTHIS    THISTHIS            THIS
-    THISTHIS    THISTHIS    THIS    THISTHIS    THISTHISTHISTHIS    THIS
-    THISTHIS    THISTHIS    THIS    THISTHIS    THISTHISTHISTHIS    THIS
-    THISTHIS    THISTHIS    THIS    THIS            THIS            THIS
-    THISTHIS    THISTHIS    THIS    THIS            THIS            THIS
-    THISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHIS
-    THISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHIS
-
-With any number of alphanumeric characters. The idea comes from a reddit user posting something similar, and then my mind wandered."/>
+<meta name="twitter:description" content="That&#39;s the best title I can come up with. The idea is to do this:"/>
 
 	<link rel="stylesheet" href="/css/main.css">
 	<link rel="stylesheet" href="/css/themes/dark-green.css">
@@ -80,77 +44,16 @@ With any number of alphanumeric characters. The idea comes from a reddit user po
 	</ul>
 </nav>
 </header>
+
 	<div class="primary">
 	
 	<main class="main">
 		<div class="single block">
 			<article class="post">
 				<h1 class="post__title">Python script to write a word using the word</h1>
-				<div class="post__content"><p>That&rsquo;s the best title I can come up with. The idea is to do this:</p>
-
-<pre>THISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHIS
-    THISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHIS
-    THIS            THIS    THIS    THIS            THIS            THIS
-    THIS            THIS    THIS    THIS            THIS            THIS
-    THISTHIS    THISTHIS    THIS    THISTHIS    THISTHIS    THISTHISTHIS
-    THISTHIS    THISTHIS    THIS    THISTHIS    THISTHIS    THISTHISTHIS
-    THISTHIS    THISTHIS            THISTHIS    THISTHIS            THIS
-    THISTHIS    THISTHIS            THISTHIS    THISTHIS            THIS
-    THISTHIS    THISTHIS    THIS    THISTHIS    THISTHIS            THIS
-    THISTHIS    THISTHIS    THIS    THISTHIS    THISTHISTHISTHIS    THIS
-    THISTHIS    THISTHIS    THIS    THISTHIS    THISTHISTHISTHIS    THIS
-    THISTHIS    THISTHIS    THIS    THIS            THIS            THIS
-    THISTHIS    THISTHIS    THIS    THIS            THIS            THIS
-    THISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHIS
-    THISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHIS</pre>
-
-<p>With any number of alphanumeric characters. The idea comes from a reddit user posting something similar, and then my mind wandered.</p>
-
-<p>Well, in a couple of hours the following python script was all I could come up with:</p>
-
-<pre class="brush: python; title: ; notranslate" title="">word = input("Give me a word: ")
-
-# 2 line padding top,bottom
-# 1 'word' padding left and right of entire word
-# letters 3 words wide, 11 lines tall
-
-result = ""
-charlist = {
-    " ": "000000000000000000000000000000000",
-    "A": "010101101111111101101101101101101",
-    "B": "111101101101101111101101101101111",
-    "C": "111100100100100100100100100100111",
-    "D": "110111101101101101101101101111110",
-    "H": "101101101101111111101101101101101",
-    "I": "111111010010010010010010010111111",
-    "S": "111111100100111111111001001111111",
-    "T": "111111010010010010010010010010010"}
-
-def letter(word, index, row, col):
-    l = charlist[word[index]]
-    i = ((row - 1) * 3 + (col - 1))
-    ret = l[i]
-    if (ret == "1"):
-        return " " * len(word)
-    else:
-        return word
-    #return str(index) * len(word)
-
-for y in range(1,16):
-    result += "    " + word
-    for i, c in enumerate(word):
-        for x in range(1,4):
-            if (y &lt; 3 or y &gt; 13):
-                result += word
-            else:
-                result += letter(word, i, y - 2, x)
-        if (i &lt; len(word) - 1):
-            result += word
-    result += word + "\n"
-print(result)
-</pre>
-
-<p>And it&rsquo;s good enough for this exercise. I didn&rsquo;t even finish encoding the full alphabet. A non-trivial exercise for the motivated might be to incorporate spaces correctly (ie - don&rsquo;t use spaces in each individual &lsquo;block&rsquo; but use it in the final word). An even more difficult task would be to procedurally generate each character.</p></div>
+				<div class="post__content"><p>That's the best title I can come up with. The idea is to do this:</p>
+e>
+<p>And it's good enough for this exercise. I didn't even finish encoding the full alphabet. A non-trivial exercise for the motivated might be to incorporate spaces correctly (ie - don't use spaces in each individual &lsquo;block&rsquo; but use it in the final word). An even more difficult task would be to procedurally generate each character.</p></div>
 				
 				<footer class="post__footer">
 					

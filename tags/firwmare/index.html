@@ -12,7 +12,6 @@
 <meta property="og:description" content="Responsive card-based &amp; code-light Hugo theme" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://nearwood.dev/tags/firwmare/" />
-
 <meta property="og:updated_time" content="2017-10-28T03:06:49+00:00" />
 
 		<meta name="twitter:card" content="summary"/>
@@ -45,6 +44,7 @@
 	</ul>
 </nav>
 </header>
+
 	<div class="primary">
 	
 	<main class="main">
@@ -58,20 +58,14 @@
 					<article class="post card__box block">
 	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/reverse-engineering-the-firmware-on-a-kenwood-ddx9903s/">Reverse Engineering the firmware on a Kenwood DDX9903S</a></h1>
 	<div class="post__content"><p>I bought and really like my Kenwood Excelon DDX9903S headunit. I had it in my WRX, and moved it to my LS430. It supports Android Auto and CarPlay, which I find really useful when driving.</p>
-
 <p>However, it has a nag screen every time it boots up. This got me curious as to how it worked, and see if it could be patched to skip this disclaimer. I figured it probably ran Linux on a SoC, as pretty much everything does nowadays. So I grabbed the latest firmware for it (mine was already updated to it), and started probing.</p>
-
 <p><code>S_V2_7_0008_0600_AT1.zip</code></p>
-
 <p>Extract that and you get 3 folders under S_V2_7_0008_0600/:</p>
-
 <pre class="brush: plain; light: true; title: ; notranslate" title="">BOOT_V2_7_0008_0600_release/
 MAIN_V1_0_2758_0400/
 SOC_V2_7_0008_0600/
 </pre>
-
-<p>In each there&rsquo;s a .nfu file, which I&rsquo;ve never encountered before. I ran binwalk on each:</p>
-
+<p>In each there's a .nfu file, which I've never encountered before. I ran binwalk on each:</p>
 <pre class="brush: plain; light: true; title: ; notranslate" title="">[BOOT_V2_7_0008_0600_release]$ binwalk Boot_2.7.0008.0600.nfu
 DECIMAL HEXADECIMAL DESCRIPTION
 --------------------------------------------------------------------------------
@@ -80,8 +74,7 @@ DECIMAL HEXADECIMAL DESCRIPTION
 2358024 0x23FB08 ELF, 64-bit LSB shared object, AMD x86-64, version 1 (SYSV)
 3209992 0x30FB08 ELF, 64-bit LSB shared object, AMD x86-64, version 1 (SYSV)
 </pre>
-
-<p>Surprise, surprise, it runs Android. But, I&rsquo;m thinking this image is possibly just the firmware updater, and not what I am looking for.</p></div>
+<p>Surprise, surprise, it runs Android. But, I'm thinking this image is possibly just the firmware updater, and not what I am looking for.</p></div>
 </article>
 				</div>
 			

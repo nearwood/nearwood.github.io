@@ -12,7 +12,6 @@
 <meta property="og:description" content="Responsive card-based &amp; code-light Hugo theme" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://nearwood.dev/categories/computing/" />
-
 <meta property="og:updated_time" content="2019-02-02T19:43:39+00:00" />
 
 		<meta name="twitter:card" content="summary"/>
@@ -45,6 +44,7 @@
 	</ul>
 </nav>
 </header>
+
 	<div class="primary">
 	
 	<main class="main">
@@ -57,8 +57,8 @@
 				<div class="card card--2col">
 					<article class="post card__box block">
 	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/migrating-to-a-static-site/">Migrating to a static site</a></h1>
-	<div class="post__content">I&rsquo;m testing out various static site generators and will be migrating this site to one in the next month or two.
-I will retain existing post comments, as there are so few but they are useful. The new static site will not allow new comments to be posted. I&rsquo;m not sure I want to go with something like Disqus.</div>
+	<div class="post__content">I'm testing out various static site generators and will be migrating this site to one in the next month or two.
+I will retain existing post comments, as there are so few but they are useful. The new static site will not allow new comments to be posted. I'm not sure I want to go with something like Disqus.</div>
 </article>
 				</div>
 			
@@ -82,20 +82,14 @@ So the makers of it had challenges setup.</div>
 					<article class="post card__box block">
 	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/reverse-engineering-the-firmware-on-a-kenwood-ddx9903s/">Reverse Engineering the firmware on a Kenwood DDX9903S</a></h1>
 	<div class="post__content"><p>I bought and really like my Kenwood Excelon DDX9903S headunit. I had it in my WRX, and moved it to my LS430. It supports Android Auto and CarPlay, which I find really useful when driving.</p>
-
 <p>However, it has a nag screen every time it boots up. This got me curious as to how it worked, and see if it could be patched to skip this disclaimer. I figured it probably ran Linux on a SoC, as pretty much everything does nowadays. So I grabbed the latest firmware for it (mine was already updated to it), and started probing.</p>
-
 <p><code>S_V2_7_0008_0600_AT1.zip</code></p>
-
 <p>Extract that and you get 3 folders under S_V2_7_0008_0600/:</p>
-
 <pre class="brush: plain; light: true; title: ; notranslate" title="">BOOT_V2_7_0008_0600_release/
 MAIN_V1_0_2758_0400/
 SOC_V2_7_0008_0600/
 </pre>
-
-<p>In each there&rsquo;s a .nfu file, which I&rsquo;ve never encountered before. I ran binwalk on each:</p>
-
+<p>In each there's a .nfu file, which I've never encountered before. I ran binwalk on each:</p>
 <pre class="brush: plain; light: true; title: ; notranslate" title="">[BOOT_V2_7_0008_0600_release]$ binwalk Boot_2.7.0008.0600.nfu
 DECIMAL HEXADECIMAL DESCRIPTION
 --------------------------------------------------------------------------------
@@ -104,8 +98,7 @@ DECIMAL HEXADECIMAL DESCRIPTION
 2358024 0x23FB08 ELF, 64-bit LSB shared object, AMD x86-64, version 1 (SYSV)
 3209992 0x30FB08 ELF, 64-bit LSB shared object, AMD x86-64, version 1 (SYSV)
 </pre>
-
-<p>Surprise, surprise, it runs Android. But, I&rsquo;m thinking this image is possibly just the firmware updater, and not what I am looking for.</p></div>
+<p>Surprise, surprise, it runs Android. But, I'm thinking this image is possibly just the firmware updater, and not what I am looking for.</p></div>
 </article>
 				</div>
 			
@@ -113,10 +106,8 @@ DECIMAL HEXADECIMAL DESCRIPTION
 					<article class="post card__box block">
 	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/adding-a-disk-to-an-encrypted-mdadm-array/">Adding a disk to an encrypted mdadm array</a></h1>
 	<div class="post__content"><p>My RAID6 was originally planned with 6 drives, but only had 5 for a while due to space concerns with the case. However, I found as a file, media, and multiple cryptocurrency node it filled up the 2.7TB pretty quickly. So, I got a new case (and some more RAM), which has proper space for 6 3.5&rdquo; drives (and 2 5.25&rdquo;). When migrating to this I decided to add the extra 1TB WD Red NAS drive I bought but have not been able to use.</p>
-
 <p>The case is a Fractal Design Define Mini, and I am thoroughly impressed. Six 3.5&rdquo; slots, two 5.25&rdquo; external slots, and lots of sound padding on the doors and sides.</p>
-
-<p><img src="/images/server.jpg" alt="My SuperMicro server in the Fractal Design case" /></p></div>
+<p><img src="/images/server.jpg" alt="My SuperMicro server in the Fractal Design case"></p></div>
 </article>
 				</div>
 			
@@ -124,22 +115,22 @@ DECIMAL HEXADECIMAL DESCRIPTION
 					<article class="post card__box block">
 	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/sync-loginlock-screen-wallpaper-to-current-desktop-background/">Sync login/lock screen wallpaper to current desktop background</a></h1>
 	<div class="post__content">For Windows 7, this turned out to be pretty easy to do via PowerShell. I just had to look for a native image resizing library since the lock screen for some odd reason, only supports JPEGs up to 256KB in size. Probably one of those legacy items left over from NT, like the file system permissions dialogs, and the built-in environment variables editor&hellip;
-I ended up using WIA&rsquo;s ImageProcess COM library which worked surprisingly well.</div>
+I ended up using WIA's ImageProcess COM library which worked surprisingly well.</div>
 </article>
 				</div>
 			
 				<div class="card card--2col">
 					<article class="post card__box block">
 	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/windmill-windows-window-unclobberer/">Windmill – Windows Window unclobberer</a></h1>
-	<div class="post__content">I noticed during the (many) meetings I attend that disconnecting and reconnecting my laptop from the dock reorganizes all my windows to the laptop&rsquo;s display. This got annoying to have to drag and resize everything when returning to my desk, which has a 3 monitor setup. So, I wrote this small Win32 application to allow you to save the positioning and size of all windows and then restore them at a later time.</div>
+	<div class="post__content">I noticed during the (many) meetings I attend that disconnecting and reconnecting my laptop from the dock reorganizes all my windows to the laptop's display. This got annoying to have to drag and resize everything when returning to my desk, which has a 3 monitor setup. So, I wrote this small Win32 application to allow you to save the positioning and size of all windows and then restore them at a later time.</div>
 </article>
 				</div>
 			
 				<div class="card card--2col">
 					<article class="post card__box block">
 	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/fixing-mirrorlist-on-arch-linux-arm-raspberry-pi/">Fixing mirrorlist on Arch Linux Arm (Raspberry Pi)</a></h1>
-	<div class="post__content">I hadn&rsquo;t updated my Raspberry Pi (a B+ model for my rpi-drd project) in about a year. Pacman -Syu kept complaining about being unable to find files on any of the mirrors.
-So I, without thinking, ran reflector on an x86 host and copied it over. Oops. Now it definitely can&rsquo;t find packages.
+	<div class="post__content">I hadn't updated my Raspberry Pi (a B+ model for my rpi-drd project) in about a year. Pacman -Syu kept complaining about being unable to find files on any of the mirrors.
+So I, without thinking, ran reflector on an x86 host and copied it over. Oops. Now it definitely can't find packages.
 The archlinuxarm.org website gave me the hostname I needed, but not the entire URL. Put this in your mirrorlist (as the sole entry) to restore functionality:</div>
 </article>
 				</div>
@@ -147,15 +138,15 @@ The archlinuxarm.org website gave me the hostname I needed, but not the entire U
 				<div class="card card--2col">
 					<article class="post card__box block">
 	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/gentoo-linux-tesla-it-was-only-a-matter-of-time/">Gentoo Linux Tesla – It was only a matter of time…</a></h1>
-	<div class="post__content">Surprise, surprise, my old favorite Gentoo Linux is now running on a Tesla Model S. Hope he doesn&rsquo;t emerge world while driving.</div>
+	<div class="post__content">Surprise, surprise, my old favorite Gentoo Linux is now running on a Tesla Model S. Hope he doesn't emerge world while driving.</div>
 </article>
 				</div>
 			
 				<div class="card card--2col">
 					<article class="post card__box block">
 	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/oculus-rift-and-touch/">Oculus Rift and Touch</a></h1>
-	<div class="post__content">I&rsquo;m super excited for the imminent onslaught of consumer grade VR equipment and game support. I think it will change how games are played from now on. Not all games, mind you, it takes a certain level of involvement to strap on a head-mounted display and get into the experience. The military already uses similar technology extensively for training. It&rsquo;s just a matter of months before equipment hits shelves.
-That said, there&rsquo;s a serious problem with it already.</div>
+	<div class="post__content">I'm super excited for the imminent onslaught of consumer grade VR equipment and game support. I think it will change how games are played from now on. Not all games, mind you, it takes a certain level of involvement to strap on a head-mounted display and get into the experience. The military already uses similar technology extensively for training. It's just a matter of months before equipment hits shelves.
+That said, there's a serious problem with it already.</div>
 </article>
 				</div>
 			

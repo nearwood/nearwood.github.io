@@ -12,7 +12,6 @@
 <meta property="og:description" content="Responsive card-based &amp; code-light Hugo theme" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://nearwood.dev/categories/programming/" />
-
 <meta property="og:updated_time" content="2018-01-12T02:13:38+00:00" />
 
 		<meta name="twitter:card" content="summary"/>
@@ -45,6 +44,7 @@
 	</ul>
 </nav>
 </header>
+
 	<div class="primary">
 	
 	<main class="main">
@@ -57,35 +57,30 @@
 				<div class="card card--2col">
 					<article class="post card__box block">
 	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/msqur-update/">Msqur Update</a></h1>
-	<div class="post__content">Well, the holidays are long over and I haven&rsquo;t updated msqur.com in a while. I&rsquo;m adding some configuration management to it, so nothing visible will happen for a while. What&rsquo;s planned, however, is .ini file parsing so that .msq files can be parsed according to the INI file version they use. That is, I will parse the INI file for the schema to a .msq file instead of hardcoding it. This way showing a .</div>
+	<div class="post__content">Well, the holidays are long over and I haven't updated msqur.com in a while. I'm adding some configuration management to it, so nothing visible will happen for a while. What's planned, however, is .ini file parsing so that .msq files can be parsed according to the INI file version they use. That is, I will parse the INI file for the schema to a .msq file instead of hardcoding it. This way showing a .</div>
 </article>
 				</div>
 			
 				<div class="card card--2col">
 					<article class="post card__box block">
 	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/msqur-com-msq-file-sharing-site/">msqur.com – MSQ file sharing site</a></h1>
-	<div class="post__content">Well, I&rsquo;ve only been working on it a little so far, but I suppose it&rsquo;s good enough to post about at this point.
-The site is msqur.com, and it&rsquo;s for Megasquirt ECU users to share their tunes (from the TunerStudio MS software). You can upload (multiple) .msq files, assign some engine information to them at upload, and share them with other people for troubleshooting or tuning help. The goal is to make something easier than attaching a file to a forum post that others have to download and fire up the full tuning software suite to just view it.</div>
+	<div class="post__content">Well, I've only been working on it a little so far, but I suppose it's good enough to post about at this point.
+The site is msqur.com, and it's for Megasquirt ECU users to share their tunes (from the TunerStudio MS software). You can upload (multiple) .msq files, assign some engine information to them at upload, and share them with other people for troubleshooting or tuning help. The goal is to make something easier than attaching a file to a forum post that others have to download and fire up the full tuning software suite to just view it.</div>
 </article>
 				</div>
 			
 				<div class="card card--2col">
 					<article class="post card__box block">
 	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/raspberry-pi-robot-cross-compiling/">Raspberry Pi – Cross-compiling</a></h1>
-	<div class="post__content"><p>Now that you have the hardware built and tested (although that&rsquo;s not necessary), you can either use the code I&rsquo;ve written-which is specific to the hardware and environment I have, or compile your own version. If you want to compile your own there are two options:</p>
-
+	<div class="post__content"><p>Now that you have the hardware built and tested (although that's not necessary), you can either use the code I've written-which is specific to the hardware and environment I have, or compile your own version. If you want to compile your own there are two options:</p>
 <ol>
 <li>Compile on the Pi itself</li>
 <li>Compile on an ARM virtual machine</li>
 <li>Cross-compile on a faster machine</li>
 </ol>
-
-<p>The trade off? Compiling on the Pi is slow (very slow). The virtual machine is a marked improvement for compiling speed, but is complicated to setup. Cross-compiling is about the same difficulty as setting up a virtual machine but a bit faster and less &ldquo;bulky&rdquo;. So it depends. The virtual machine is nice if you have a lot of libraries you want to use, since you&rsquo;ll have to compile all of them to be available for linking. If any of them have poor autoconfig support, it might be a pain to fix if you weren&rsquo;t already on the target machine. But, since I just needed one or two popular libraries, I decided to setup cross-compiling from my host (x86_64) machine.</p>
-
-<p>The last time I setup cross-compiling it was on Gentoo, and it wasn&rsquo;t pleasant. However, after a little bit of research it looks like the <a href="https://crosstool-ng.org/" target="_blank">crosstool-ng project</a> is pretty popular and useful. I only had to patch one tiny thing.</p>
-
-<p>Here&rsquo;s the overall process:</p>
-
+<p>The trade off? Compiling on the Pi is slow (very slow). The virtual machine is a marked improvement for compiling speed, but is complicated to setup. Cross-compiling is about the same difficulty as setting up a virtual machine but a bit faster and less &ldquo;bulky&rdquo;. So it depends. The virtual machine is nice if you have a lot of libraries you want to use, since you'll have to compile all of them to be available for linking. If any of them have poor autoconfig support, it might be a pain to fix if you weren't already on the target machine. But, since I just needed one or two popular libraries, I decided to setup cross-compiling from my host (x86_64) machine.</p>
+<p>The last time I setup cross-compiling it was on Gentoo, and it wasn't pleasant. However, after a little bit of research it looks like the <a href="https://crosstool-ng.org/" target="_blank">crosstool-ng project</a> is pretty popular and useful. I only had to patch one tiny thing.</p>
+<p>Here's the overall process:</p>
 <ol>
 <li>Install crosstool-ng</li>
 <li>Configure a cross toolchain with it</li>
@@ -99,22 +94,21 @@ The site is msqur.com, and it&rsquo;s for Megasquirt ECU users to share their tu
 					<article class="post card__box block">
 	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/raspberry-pi-robot/">Raspberry Pi Robot</a></h1>
 	<div class="post__content"><p>So, a while back I gave my wife a <a href="https://goldenarmor.com/farscape-drd/" target="_blank">Farscape DRD kit</a>. I promised to make it in to a robot. How hard could it be? Well, not too bad. A little more expensive than planned, though&hellip;</p>
-
-<p><img class="lostImage" src="" alt="Image no longer available :("/></p></div>
+<img class="lostImage" src="" alt="Image no longer available :("/></div>
 </article>
 				</div>
 			
 				<div class="card card--2col">
 					<article class="post card__box block">
 	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/carduino-2-0-intel-galileo-setup/">Carduino 2.0 – Intel Galileo Setup</a></h1>
-	<div class="post__content"><p>Out of the box the Galileo is setup to run sketches uploaded from volatile memory, which is really lame. I didn&rsquo;t spend much time with it using the stock SPI kernel. So, an SD card is pretty much required to do any serious development with this board. This is not a bad thing (although you aren&rsquo;t running in real-time anymore), since having a full OS to use has lots of advantages. Plus, this way I can automate the build process in a way I&rsquo;m more familiar with.</p></div>
+	<div class="post__content"><p>Out of the box the Galileo is setup to run sketches uploaded from volatile memory, which is really lame. I didn't spend much time with it using the stock SPI kernel. So, an SD card is pretty much required to do any serious development with this board. This is not a bad thing (although you aren't running in real-time anymore), since having a full OS to use has lots of advantages. Plus, this way I can automate the build process in a way I'm more familiar with.</p></div>
 </article>
 				</div>
 			
 				<div class="card card--2col">
 					<article class="post card__box block">
 	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/carduino-2-0/">Carduino 2.0</a></h1>
-	<div class="post__content">Over a year ago I got an Arduino Uno and a CAN-BUS Shield to try and make some kind of datalogger for my car. I was also interested in using the OpenXC library with it (which might need a port if there isn&rsquo;t one already, since it uses the Digilent chipKIT Max32 development board). While OpenXC allows interfacing with Android stuff for phones, I&rsquo;m more interested in a self-contained datalogging type deal.</div>
+	<div class="post__content">Over a year ago I got an Arduino Uno and a CAN-BUS Shield to try and make some kind of datalogger for my car. I was also interested in using the OpenXC library with it (which might need a port if there isn't one already, since it uses the Digilent chipKIT Max32 development board). While OpenXC allows interfacing with Android stuff for phones, I'm more interested in a self-contained datalogging type deal.</div>
 </article>
 				</div>
 			
@@ -122,15 +116,10 @@ The site is msqur.com, and it&rsquo;s for Megasquirt ECU users to share their tu
 					<article class="post card__box block">
 	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/updating-wordpress-on-nearlyfreespeech-net-hosts/">Updating WordPress on nearlyfreespeech.net hosts</a></h1>
 	<div class="post__content"><h3 id="update-dec-13-2014">Update Dec. 13, 2014:</h3>
-
 <p>These scripts are out of date. NFS has the <a href="https://wp-cli.org/" target="_blank">WP-CLI</a> installed allowing for much, much easier upgrades, backups, etc. See the <a href="https://github.com/nearwood/nfs-scripts" target="_blank">repository</a> for information.</p>
-
 <h3 id="originally-posted-on-sept-10th-2014">Originally posted on Sept. 10th, 2014:</h3>
-
-<p>If you use NearlyFreeSpeech.net as your web host, you may have found it difficult to automate WordPress updates. I&rsquo;ve made a script that does this for you. It also calls my backup and permissions fixing scripts, which I include here as well.</p>
-
+<p>If you use NearlyFreeSpeech.net as your web host, you may have found it difficult to automate WordPress updates. I've made a script that does this for you. It also calls my backup and permissions fixing scripts, which I include here as well.</p>
 <p>Beware of some notes and assumptions though:</p>
-
 <ul>
 <li>Assumes WordPress is installed in /home/public/ (not a subdir of it)</li>
 <li>Scripts are assumed to be in /home/private/</li>
@@ -143,14 +132,14 @@ The site is msqur.com, and it&rsquo;s for Megasquirt ECU users to share their tu
 					<article class="post card__box block">
 	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/custom-speed-app-update/">Custom Speed app update</a></h1>
 	<div class="post__content">I update Custom Speed to 1.1. Changes include:
- An actual theme (consistent colors) More units New icon  2.0 will include an actual settings page that will allow the units to be selected from an easier control, a setting for keeping the display on, and other minor UI improvements. There&rsquo;s no ETA currently for 2.0.</div>
+ An actual theme (consistent colors) More units New icon  2.0 will include an actual settings page that will allow the units to be selected from an easier control, a setting for keeping the display on, and other minor UI improvements. There's no ETA currently for 2.0.</div>
 </article>
 				</div>
 			
 				<div class="card card--2col">
 					<article class="post card__box block">
 	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/exporting-drupal-pagesposts-to-wordpress/">Exporting Drupal Pages/Posts to WordPress</a></h1>
-	<div class="post__content">I&rsquo;ve decided to consolidate some of my web presence. My car&rsquo;s website will be merged into this one. Going from WordPress to Drupal is easy, but the other way is not. I found a couple links for SQL scripts to import lots of posts automatically, but these were and are easily outdated by Drupal and to a lesser extent WordPress.
+	<div class="post__content">I've decided to consolidate some of my web presence. My car's website will be merged into this one. Going from WordPress to Drupal is easy, but the other way is not. I found a couple links for SQL scripts to import lots of posts automatically, but these were and are easily outdated by Drupal and to a lesser extent WordPress.
 It was easier just to create my own SQL JOIN statement and export the resulting list.</div>
 </article>
 				</div>
@@ -158,25 +147,7 @@ It was easier just to create my own SQL JOIN statement and export the resulting 
 				<div class="card card--2col">
 					<article class="post card__box block">
 	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/python-script-to-write-a-word-using-the-word/">Python script to write a word using the word</a></h1>
-	<div class="post__content"><p>That&rsquo;s the best title I can come up with. The idea is to do this:</p>
-
-<pre>THISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHIS
-    THISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHIS
-    THIS            THIS    THIS    THIS            THIS            THIS
-    THIS            THIS    THIS    THIS            THIS            THIS
-    THISTHIS    THISTHIS    THIS    THISTHIS    THISTHIS    THISTHISTHIS
-    THISTHIS    THISTHIS    THIS    THISTHIS    THISTHIS    THISTHISTHIS
-    THISTHIS    THISTHIS            THISTHIS    THISTHIS            THIS
-    THISTHIS    THISTHIS            THISTHIS    THISTHIS            THIS
-    THISTHIS    THISTHIS    THIS    THISTHIS    THISTHIS            THIS
-    THISTHIS    THISTHIS    THIS    THISTHIS    THISTHISTHISTHIS    THIS
-    THISTHIS    THISTHIS    THIS    THISTHIS    THISTHISTHISTHIS    THIS
-    THISTHIS    THISTHIS    THIS    THIS            THIS            THIS
-    THISTHIS    THISTHIS    THIS    THIS            THIS            THIS
-    THISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHIS
-    THISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHIS</pre>
-
-<p>With any number of alphanumeric characters. The idea comes from a reddit user posting something similar, and then my mind wandered.</p></div>
+	<div class="post__content"><p>That's the best title I can come up with. The idea is to do this:</p></div>
 </article>
 				</div>
 			

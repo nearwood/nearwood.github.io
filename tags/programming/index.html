@@ -12,7 +12,6 @@
 <meta property="og:description" content="Responsive card-based &amp; code-light Hugo theme" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://nearwood.dev/tags/programming/" />
-
 <meta property="og:updated_time" content="2015-02-16T21:27:29+00:00" />
 
 		<meta name="twitter:card" content="summary"/>
@@ -45,6 +44,7 @@
 	</ul>
 </nav>
 </header>
+
 	<div class="primary">
 	
 	<main class="main">
@@ -57,23 +57,23 @@
 				<div class="card card--2col">
 					<article class="post card__box block">
 	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/msqur-update-v0-53b/">Msqur Update v0.53b</a></h1>
-	<div class="post__content">I&rsquo;ve rolled out the update 0.53b to msqur.com. This includes:
+	<div class="post__content">I've rolled out the update 0.53b to msqur.com. This includes:
  INI Parsing (i.e. better MSQ support) Bug fixes and better error handling  So now it is a bit more usable. The INI Parsing turns out to be a bit more complex than I anticipated, but I rolled out a decent intermediate update in the meantime.
-Before completing the INI parsing (or anything else for that matter), I&rsquo;ve decided to overhaul the entire codebase.</div>
+Before completing the INI parsing (or anything else for that matter), I've decided to overhaul the entire codebase.</div>
 </article>
 				</div>
 			
 				<div class="card card--2col">
 					<article class="post card__box block">
 	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/carduino-2-0-intel-galileo-setup/">Carduino 2.0 – Intel Galileo Setup</a></h1>
-	<div class="post__content"><p>Out of the box the Galileo is setup to run sketches uploaded from volatile memory, which is really lame. I didn&rsquo;t spend much time with it using the stock SPI kernel. So, an SD card is pretty much required to do any serious development with this board. This is not a bad thing (although you aren&rsquo;t running in real-time anymore), since having a full OS to use has lots of advantages. Plus, this way I can automate the build process in a way I&rsquo;m more familiar with.</p></div>
+	<div class="post__content"><p>Out of the box the Galileo is setup to run sketches uploaded from volatile memory, which is really lame. I didn't spend much time with it using the stock SPI kernel. So, an SD card is pretty much required to do any serious development with this board. This is not a bad thing (although you aren't running in real-time anymore), since having a full OS to use has lots of advantages. Plus, this way I can automate the build process in a way I'm more familiar with.</p></div>
 </article>
 				</div>
 			
 				<div class="card card--2col">
 					<article class="post card__box block">
 	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/carduino-2-0/">Carduino 2.0</a></h1>
-	<div class="post__content">Over a year ago I got an Arduino Uno and a CAN-BUS Shield to try and make some kind of datalogger for my car. I was also interested in using the OpenXC library with it (which might need a port if there isn&rsquo;t one already, since it uses the Digilent chipKIT Max32 development board). While OpenXC allows interfacing with Android stuff for phones, I&rsquo;m more interested in a self-contained datalogging type deal.</div>
+	<div class="post__content">Over a year ago I got an Arduino Uno and a CAN-BUS Shield to try and make some kind of datalogger for my car. I was also interested in using the OpenXC library with it (which might need a port if there isn't one already, since it uses the Digilent chipKIT Max32 development board). While OpenXC allows interfacing with Android stuff for phones, I'm more interested in a self-contained datalogging type deal.</div>
 </article>
 				</div>
 			
@@ -81,25 +81,23 @@ Before completing the INI parsing (or anything else for that matter), I&rsquo;ve
 					<article class="post card__box block">
 	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/custom-speed-app-update/">Custom Speed app update</a></h1>
 	<div class="post__content">I update Custom Speed to 1.1. Changes include:
- An actual theme (consistent colors) More units New icon  2.0 will include an actual settings page that will allow the units to be selected from an easier control, a setting for keeping the display on, and other minor UI improvements. There&rsquo;s no ETA currently for 2.0.</div>
+ An actual theme (consistent colors) More units New icon  2.0 will include an actual settings page that will allow the units to be selected from an easier control, a setting for keeping the display on, and other minor UI improvements. There's no ETA currently for 2.0.</div>
 </article>
 				</div>
 			
 				<div class="card card--2col">
 					<article class="post card__box block">
 	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/refactoring-with-regular-expressions/">Refactoring with regular expressions</a></h1>
-	<div class="post__content">I&rsquo;m re-learning JavaScript, and I noticed I was refactoring functions a lot on some old code. I&rsquo;m putting some useful stuff here for reference:
+	<div class="post__content">I'm re-learning JavaScript, and I noticed I was refactoring functions a lot on some old code. I'm putting some useful stuff here for reference:
 aFunc(blah) → this.aFunc = function(blah)
 Find: function (\w+)(
 Replace with: this.\1 = function(
-&nbsp;
-To go the other way:
+ To go the other way:
 Find: \t(\w+)\s=\sfunction(
 Replace with: \tfunction \1(
-&nbsp;
-Change aFunc(blah) to SOME.qualifier.aFunc(blah)
-Find: \t(\w+()
-Replace with: \tSOME.qualifier.\1</div>
+ Change aFunc(blah) to SOME.qualifier.aFunc(blah)
+**Find: **\t(\w+()
+**Replace with: **\tSOME.qualifier.\1</div>
 </article>
 				</div>
 			

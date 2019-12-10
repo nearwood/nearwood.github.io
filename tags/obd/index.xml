@@ -18,7 +18,7 @@
       <pubDate>Thu, 31 Jan 2013 02:36:47 +0000</pubDate>
       
       <guid>https://nearwood.dev/carduino/</guid>
-      <description>I&amp;rsquo;ve been working on a small Arduino project to datalog my commute. I&amp;rsquo;m using an Arduino Uno with SK Pang&amp;rsquo;s CAN Bus Shield. I also have added the optional GPS and LCD to the mix. There is an micro-SD card slot for storage.
+      <description>I&#39;ve been working on a small Arduino project to datalog my commute. I&#39;m using an Arduino Uno with SK Pang&#39;s CAN Bus Shield. I also have added the optional GPS and LCD to the mix. There is an micro-SD card slot for storage.
 The aim of the project is just to collect data. As much as I can put into the SD card. I plan on calculating driving efficiency using somewhat arbitrary measures like throttle modulation, temperature, etc.</description>
     </item>
     

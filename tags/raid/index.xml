@@ -19,10 +19,8 @@
       
       <guid>https://nearwood.dev/adding-a-disk-to-an-encrypted-mdadm-array/</guid>
       <description>&lt;p&gt;My RAID6 was originally planned with 6 drives, but only had 5 for a while due to space concerns with the case. However, I found as a file, media, and multiple cryptocurrency node it filled up the 2.7TB pretty quickly. So, I got a new case (and some more RAM), which has proper space for 6 3.5&amp;rdquo; drives (and 2 5.25&amp;rdquo;). When migrating to this I decided to add the extra 1TB WD Red NAS drive I bought but have not been able to use.&lt;/p&gt;
-
 &lt;p&gt;The case is a Fractal Design Define Mini, and I am thoroughly impressed. Six 3.5&amp;rdquo; slots, two 5.25&amp;rdquo; external slots, and lots of sound padding on the doors and sides.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://nearwood.dev/images/server.jpg&#34; alt=&#34;My SuperMicro server in the Fractal Design case&#34; /&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;img src=&#34;https://nearwood.dev/images/server.jpg&#34; alt=&#34;My SuperMicro server in the Fractal Design case&#34;&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>
