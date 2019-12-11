@@ -50,6 +50,14 @@
 	<main class="main">
 		<div class="single block">
 			<article class="post">
+	<div class="post__meta meta mb">
+<time class="post__meta-published meta-published" datetime="2014-11-12T02:04:43">November 12, 2014</time>
+<time class="post__meta-lastmod meta-lastmod" datetime="2019-12-10T10:57:45">Updated: December 10, 2019</time>
+<span class="post__meta-categories meta-categories">
+	<span class="meta-categories__list">Categories: <a class="meta-categories__link" href="/categories/arduino" rel="category">Arduino</a>, <a class="meta-categories__link" href="/categories/programming" rel="category">Programming</a></span>
+</span>
+	</div>
+
 				<h1 class="post__title">Carduino 2.0 – Intel Galileo Setup</h1>
 				<div class="post__content"><p>Out of the box the Galileo is setup to run sketches uploaded from volatile memory, which is really lame. I didn't spend much time with it using the stock SPI kernel. So, an SD card is pretty much required to do any serious development with this board. This is not a bad thing (although you aren't running in real-time anymore), since having a full OS to use has lots of advantages. Plus, this way I can automate the build process in a way I'm more familiar with.</p>
 <p>Anyway, so after unboxing and testing (and updating firmware while your at it), you can load an SD card up with the larger image. The SD card should be formatting as FAT16 (&lt;= 4GB), or FAT32 (&gt; 4GB). I tried formatting in Linux via mkfs (mkdosfs), but I was getting data errors from the SD card in my kernel messages. I ended up downloading the SD Formatter 4.0 software that <a href="https://www.hofrock.com/sd-card-issues">others recommend</a>, and it worked. This required a Windows (or Mac) computer. I still used Linux to copy the files without issue as I did not have 7zip on Windows (and Windows Updates were installing, preventing the MSI from allowing me to install it!). The tar command will spit out some errors about not being able to set permissions (because of the FAT FS), and exit with a failure code but it works.</p>

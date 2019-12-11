@@ -54,6 +54,14 @@ The archlinuxarm.org website gave me the hostname I needed, but not the entire U
 	<main class="main">
 		<div class="single block">
 			<article class="post">
+	<div class="post__meta meta mb">
+<time class="post__meta-published meta-published" datetime="2016-05-21T22:06:00">May 21, 2016</time>
+<time class="post__meta-lastmod meta-lastmod" datetime="2019-12-10T10:57:45">Updated: December 10, 2019</time>
+<span class="post__meta-categories meta-categories">
+	<span class="meta-categories__list">Categories: <a class="meta-categories__link" href="/categories/computing" rel="category">Computing</a>, <a class="meta-categories__link" href="/categories/raspberry-pi" rel="category">Raspberry Pi</a></span>
+</span>
+	</div>
+
 				<h1 class="post__title">Fixing mirrorlist on Arch Linux Arm (Raspberry Pi)</h1>
 				<div class="post__content"><p>I hadn't updated my Raspberry Pi (a B+ model for my <a href="https://nearwood.dev/tags/drd/">rpi-drd project</a>) in about a year. <code>Pacman -Syu</code> kept complaining about being unable to find files on any of the mirrors.</p>
 <p>So I, without thinking, ran <code>reflector</code> on an x86 host and copied it over. Oops. Now it definitely can't find packages.</p>

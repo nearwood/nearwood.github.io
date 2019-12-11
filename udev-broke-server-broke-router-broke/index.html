@@ -52,6 +52,14 @@ After going through the kernel options, I realized they changed the v4l and webc
 	<main class="main">
 		<div class="single block">
 			<article class="post">
+	<div class="post__meta meta mb">
+<time class="post__meta-published meta-published" datetime="2013-02-18T02:30:09">February 18, 2013</time>
+<time class="post__meta-lastmod meta-lastmod" datetime="2019-12-10T10:57:45">Updated: December 10, 2019</time>
+<span class="post__meta-categories meta-categories">
+	<span class="meta-categories__list">Categories: <a class="meta-categories__link" href="/categories/computing" rel="category">Computing</a></span>
+</span>
+	</div>
+
 				<h1 class="post__title">udev broke, server broke, router broke</h1>
 				<div class="post__content"><p>I attempted to get a webcam going on our home server. So, I plug it in, and since I've done this before I ran a script I made to grab an image from the webcam. Which didn't work. So, after checking out why (/dev/video0 node was missing), I noticed that the kernel no longer had support built in.</p>
 <p>After going through the kernel options, I realized they changed the v4l and webcam support options around and since I just upgrade using &ldquo;-silentoldconfig&rdquo; (the bad way to do upgrades), it broke whenever I upgraded to 3.2.12. And 3.2.12 wasn't in portage's tree anymore, and I didn't have the sources for it installed (mistake number 2), so I was pretty much SOL.</p>

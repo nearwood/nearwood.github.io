@@ -50,6 +50,14 @@
 	<main class="main">
 		<div class="single block">
 			<article class="post">
+	<div class="post__meta meta mb">
+<time class="post__meta-published meta-published" datetime="2015-02-02T01:06:46">February 02, 2015</time>
+<time class="post__meta-lastmod meta-lastmod" datetime="2019-12-10T10:57:45">Updated: December 10, 2019</time>
+<span class="post__meta-categories meta-categories">
+	<span class="meta-categories__list">Categories: <a class="meta-categories__link" href="/categories/programming" rel="category">Programming</a></span>
+</span>
+	</div>
+
 				<h1 class="post__title">Msqur Update</h1>
 				<div class="post__content"><p>Well, the holidays are long over and I haven't updated msqur.com in a while. I'm adding some configuration management to it, so nothing visible will happen for a while. What's planned, however, is .ini file parsing so that .msq files can be parsed according to the INI file version they use. That is, I will parse the INI file for the schema to a .msq file instead of hardcoding it. This way showing a .msq from a new code version is just a .ini file upload away.</p>
 <p>INI file parsing shouldn't take long. PHP has exactly what I need (literally: <code>parse_ini_file()</code>), but I'll have to bake my own slightly modified version since the MS format isn't standard-if there even is a standard for INI files.</p>
