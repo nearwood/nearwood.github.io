@@ -52,6 +52,15 @@ Use the toolchain to build your Pi code
 	<link rel="icon" href="/icons/16.png" sizes="16x16" type="image/png">
 	<link rel="icon" href="/icons/32.png" sizes="32x32" type="image/png">
 		
+	
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-5743113-11"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-5743113-11');
+	</script>
 </head>
 <body>
 	<header class="header">
@@ -174,7 +183,7 @@ ac_prog_version="$ac_prog_version, ok"; ac_verc_fail=no;;
 <p>`-prefix=/home/nick/dev/rpi` - Where to install the resulting files when doing a make install. It installs into lib/ and include/, which aren't used by crosstool-ng so it works for me. This way my ~/dev/rpi can be used as the lib and include folder for other pi projects later on as well.</p>
 <p>After configure runs, just `make &amp;&amp; make install`. No `sudo` needed since your installing under your home.</p>
 <h3 id="building-ncurses">Building ncurses</h3>
-<p>Acquire the latest version: <a href="https://ftp.gnu.org/pub/gnu/ncurses/" target="_blank"><a href="https://ftp.gnu.org/pub/gnu/ncurses/">https://ftp.gnu.org/pub/gnu/ncurses/</a></a> and extract it. Again I extracted and installed it in my `~/dev/rpi` directory. Run configure:</p>
+<p>Acquire the latest version: <a href="https://ftp.gnu.org/pub/gnu/ncurses/" target="_blank"><a href="https://ftp.gnu.org/pub/gnu/ncurses/%3C/a%3E">https://ftp.gnu.org/pub/gnu/ncurses/&lt;/a&gt;</a> and extract it. Again I extracted and installed it in my `~/dev/rpi` directory. Run configure:</p>
 <pre class="brush: bash; gutter: false; title: ; notranslate" title="">./configure arm-linux --host=arm-rpi-linux-gnueabi --prefix=/home/nick/dev/rpi --disable-big-core --enable-termcap --with-shared --without-manpages
 </pre>
 <p>The additional switches here enable low-memory usage, terminal capability detection, skips the manpages, and I'm not sure why `-with-shared` is there, since this should not, ideally, be a shared library. Then again my Pi already has ncurses installed so it might not be so bad after all.</p>
@@ -229,7 +238,7 @@ ac_prog_version="$ac_prog_version, ok"; ac_verc_fail=no;;
 			<svg class="social__icon" aria-label="Github" role="img" width="32" height="32" viewBox="0 0 512 512"><path d="M335 499c14 0 12 17 12 17H165s-2-17 12-17c13 0 16-6 16-12l-1-50c-71 16-86-28-86-28-12-30-28-37-28-37-24-16 1-16 1-16 26 2 40 26 40 26 22 39 59 28 74 22 2-17 9-28 16-35-57-6-116-28-116-126 0-28 10-51 26-69-3-6-11-32 3-67 0 0 21-7 70 26 42-12 86-12 128 0 49-33 70-26 70-26 14 35 6 61 3 67 16 18 26 41 26 69 0 98-60 120-117 126 10 8 18 24 18 48l-1 70c0 6 3 12 16 12z"/></svg>
 		</a>
 </div>
-	<div class="footer__copyright">© 2019 Nick Earwood. <span class="footer__copyright-credits">Powered by <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/vimux/binario" rel="nofollow noopener" target="_blank">Binario</a> theme.</span></div>
+	<div class="footer__copyright">© 2020 Nick Earwood. <span class="footer__copyright-credits">Powered by <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/vimux/binario" rel="nofollow noopener" target="_blank">Binario</a> theme.</span></div>
 </footer>
 <script src="/js/menu.js"></script>
 </body>

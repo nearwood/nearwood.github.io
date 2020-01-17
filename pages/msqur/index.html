@@ -24,6 +24,15 @@
 	<link rel="icon" href="/icons/16.png" sizes="16x16" type="image/png">
 	<link rel="icon" href="/icons/32.png" sizes="32x32" type="image/png">
 		
+	
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-5743113-11"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-5743113-11');
+	</script>
 </head>
 <body>
 	<header class="header">
@@ -59,7 +68,7 @@
 				<div class="post__content"><p>So, years ago I made a C# Application to view .msq tune files from Megasquirt (the DIY car ECU). Specifically the VE and Spark tables. I ported it to Java since using .NET limits my audience to virtually just Windows users. It was okay. It allowed you to export images which you could then post, but it didn't really save much time over taking screenshots of the tuning software itself and posting those. What I really should have done was a web application to view uploaded tune files.</p>
 <p>After shelving the idea for a couple years I got bored one day and decided to try out AngularJS. The tune viewing webapp idea was the perfect opportunity-and people might even use it! So, &ldquo;msqur&rdquo; was born. The name is basically a rip-off of `imgur`, but with msq in it, since that's the extension of uploaded ECU tune files. Clever, eh? I thought so&hellip;</p>
 <p>It uses PHP and MariaDB (MySQL fork) on the backend, and the usual gang with AngularJS on the front. I kind of like Angular, it's going to take a while to get used to but I like letting the front end do a lot of the work. Especially since I'm paying for the servers.</p>
-<p>So after a couple days I got something sort-of usable up. It needs a lot of work, but I have basically everything that was in the standalone version already. You can check it out at: <a href="https://msqur.com/index.php?msq=14"><a href="https://msqur.com/">https://msqur.com/</a></a>. Keep in mind you'll need a valid MSQ file to upload. And it's a work in progress, something I do on my own time, so updates are large, but far in between.</p>
+<p>So after a couple days I got something sort-of usable up. It needs a lot of work, but I have basically everything that was in the standalone version already. You can check it out at: <a href="https://msqur.com/index.php?msq=14">https://msqur.com/</a>. Keep in mind you'll need a valid MSQ file to upload. And it's a work in progress, something I do on my own time, so updates are large, but far in between.</p>
 <img class="lostImage" src="" alt="Image no longer available :("/>
 <p> </p>
 <p>For the latest updates and detailed development details, see the <a href="https://nearwood.dev/tags/msqur/">msqur tag</a>.</p>
@@ -98,7 +107,7 @@
 			<svg class="social__icon" aria-label="Github" role="img" width="32" height="32" viewBox="0 0 512 512"><path d="M335 499c14 0 12 17 12 17H165s-2-17 12-17c13 0 16-6 16-12l-1-50c-71 16-86-28-86-28-12-30-28-37-28-37-24-16 1-16 1-16 26 2 40 26 40 26 22 39 59 28 74 22 2-17 9-28 16-35-57-6-116-28-116-126 0-28 10-51 26-69-3-6-11-32 3-67 0 0 21-7 70 26 42-12 86-12 128 0 49-33 70-26 70-26 14 35 6 61 3 67 16 18 26 41 26 69 0 98-60 120-117 126 10 8 18 24 18 48l-1 70c0 6 3 12 16 12z"/></svg>
 		</a>
 </div>
-	<div class="footer__copyright">© 2019 Nick Earwood. <span class="footer__copyright-credits">Powered by <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/vimux/binario" rel="nofollow noopener" target="_blank">Binario</a> theme.</span></div>
+	<div class="footer__copyright">© 2020 Nick Earwood. <span class="footer__copyright-credits">Powered by <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/vimux/binario" rel="nofollow noopener" target="_blank">Binario</a> theme.</span></div>
 </footer>
 <script src="/js/menu.js"></script>
 </body>

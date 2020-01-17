@@ -28,6 +28,15 @@ The case is a Fractal Design Define Mini, and I am thoroughly impressed. Six 3.5
 	<link rel="icon" href="/icons/16.png" sizes="16x16" type="image/png">
 	<link rel="icon" href="/icons/32.png" sizes="32x32" type="image/png">
 		
+	
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-5743113-11"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-5743113-11');
+	</script>
 </head>
 <body>
 	<header class="header">
@@ -66,7 +75,7 @@ The case is a Fractal Design Define Mini, and I am thoroughly impressed. Six 3.5
 				<div class="post__content"><p>My RAID6 was originally planned with 6 drives, but only had 5 for a while due to space concerns with the case. However, I found as a file, media, and multiple cryptocurrency node it filled up the 2.7TB pretty quickly. So, I got a new case (and some more RAM), which has proper space for 6 3.5&rdquo; drives (and 2 5.25&rdquo;). When migrating to this I decided to add the extra 1TB WD Red NAS drive I bought but have not been able to use.</p>
 <p>The case is a Fractal Design Define Mini, and I am thoroughly impressed. Six 3.5&rdquo; slots, two 5.25&rdquo; external slots, and lots of sound padding on the doors and sides.</p>
 <p><img src="/images/server.jpg" alt="My SuperMicro server in the Fractal Design case"></p>
-<p>So, at first I was worried it would be a huge PITA to add another drive, since I have a fake RAID under a encrypted volume. But, Linux. It was easy. Keep in mind in this instance,  the new device node is <code>/dev/sdf</code>, yours will likely be different. After connecting the disk and powering up, partition the disk. I have set it up identical to all other disks, 128MiB EFI partition on <code>sdf1</code>, 931.4GiB <code>sdf2</code> (you can use <code>fdisk`/</code>gdisk<code>to partition manually or</code>sfdisk` to copy the partition structure of another drive). Having the EFI partition on each disk allows me to boot if any drive fails, since the mdraid is setup only across the second partitions on each drive. That is, my boot partition is not part of the array. Note that you have to synchronize any updated kernel or boot files across these boot partitions. This can be automated with a kernel build time hook.</p>
+<p>So, at first I was worried it would be a huge PITA to add another drive, since I have a fake RAID under a encrypted volume. But, Linux. It was easy. Keep in mind in this instance,  the new device node is <code>/dev/sdf</code>, yours will likely be different. After connecting the disk and powering up, partition the disk. I have set it up identical to all other disks, 128MiB EFI partition on <code>sdf1</code>, 931.4GiB <code>sdf2</code> (you can use <code>fdisk</code>/<code>gdisk</code> to partition manually or <code>sfdisk</code> to copy the partition structure of another drive). Having the EFI partition on each disk allows me to boot if any drive fails, since the mdraid is setup only across the second partitions on each drive. That is, my boot partition is not part of the array. Note that you have to synchronize any updated kernel or boot files across these boot partitions. This can be automated with a kernel build time hook.</p>
 <p>Now you can add the disk (more accurately, the partition) as a spare:</p>
 <p><code class="bash">mdadm &ndash;add /dev/md0 /dev/sdf2</code></p>
 <p>If you cat <code>/proc/mdstat</code>, you will see it's been added as a spare:</p>
@@ -143,7 +152,7 @@ The case is a Fractal Design Define Mini, and I am thoroughly impressed. Six 3.5
 			<svg class="social__icon" aria-label="Github" role="img" width="32" height="32" viewBox="0 0 512 512"><path d="M335 499c14 0 12 17 12 17H165s-2-17 12-17c13 0 16-6 16-12l-1-50c-71 16-86-28-86-28-12-30-28-37-28-37-24-16 1-16 1-16 26 2 40 26 40 26 22 39 59 28 74 22 2-17 9-28 16-35-57-6-116-28-116-126 0-28 10-51 26-69-3-6-11-32 3-67 0 0 21-7 70 26 42-12 86-12 128 0 49-33 70-26 70-26 14 35 6 61 3 67 16 18 26 41 26 69 0 98-60 120-117 126 10 8 18 24 18 48l-1 70c0 6 3 12 16 12z"/></svg>
 		</a>
 </div>
-	<div class="footer__copyright">© 2019 Nick Earwood. <span class="footer__copyright-credits">Powered by <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/vimux/binario" rel="nofollow noopener" target="_blank">Binario</a> theme.</span></div>
+	<div class="footer__copyright">© 2020 Nick Earwood. <span class="footer__copyright-credits">Powered by <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/vimux/binario" rel="nofollow noopener" target="_blank">Binario</a> theme.</span></div>
 </footer>
 <script src="/js/menu.js"></script>
 </body>
