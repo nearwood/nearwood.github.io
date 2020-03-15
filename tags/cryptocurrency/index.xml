@@ -28,14 +28,14 @@ So the makers of it had challenges setup.</description>
       <pubDate>Tue, 17 Jun 2014 00:08:03 +0000</pubDate>
       
       <guid>https://nearwood.dev/gawminer-fury/</guid>
-      <description>&lt;p&gt;So I&#39;m attempting to jump on the Scrypt based ASIC coin mining bandwagon. I got a GAWMiner Fury to try out. It came with a free ZenMiner, which is a Raspberry Pi with a custom image that runs mining software automatically, and connects to a 3rd party website to allow remote control and monitoring.&lt;/p&gt;
+      <description>&lt;p&gt;So I&amp;rsquo;m attempting to jump on the Scrypt based ASIC coin mining bandwagon. I got a GAWMiner Fury to try out. It came with a free ZenMiner, which is a Raspberry Pi with a custom image that runs mining software automatically, and connects to a 3rd party website to allow remote control and monitoring.&lt;/p&gt;
 &lt;div id=&#34;attachment_354&#34; style=&#34;width: 310px&#34; class=&#34;wp-caption alignnone&#34;&gt;
   &lt;img class=&#34;lostImage&#34; src=&#34;&#34; alt=&#34;Image no longer available :(&#34;/&gt;
   &lt;p class=&#34;wp-caption-text&#34;&gt;
     GAWMiner Fury and ZenMiner
   &lt;/p&gt;
 &lt;/div&gt;
-&lt;p&gt;It came with everything needed to power up and get started. The included instructions just mention how to get started using the ZenMiner, so it&#39;s pretty skimpy compared to most other packaged products. Being an ASIC cryptocurrency miner, it&#39;s already a specialty device so you likely know what you are doing. Still, the ZenMiner is geared to newcomers so they can easily start mining. In that respect I think it still needs work as the ZenOS web interface is pretty but limited.&lt;/p&gt;</description>
+&lt;p&gt;It came with everything needed to power up and get started. The included instructions just mention how to get started using the ZenMiner, so it&amp;rsquo;s pretty skimpy compared to most other packaged products. Being an ASIC cryptocurrency miner, it&amp;rsquo;s already a specialty device so you likely know what you are doing. Still, the ZenMiner is geared to newcomers so they can easily start mining. In that respect I think it still needs work as the ZenOS web interface is pretty but limited.&lt;/p&gt;</description>
     </item>
     
   </channel>

@@ -18,7 +18,7 @@
       <pubDate>Wed, 12 Oct 2016 17:21:44 +0000</pubDate>
       
       <guid>https://nearwood.dev/405hp-280z/</guid>
-      <description>A somewhat local place had a surprise dyno day so I went to try and tune my car a bit. Was somewhat successful, reaching 405 HP and 420 Ft-lbs. before giving up. I was hoping for 450 HP, as my turbo and injectors should be able to support it easily, but oh well. I couldn&#39;t get past ~14psi or so.
+      <description>A somewhat local place had a surprise dyno day so I went to try and tune my car a bit. Was somewhat successful, reaching 405 HP and 420 Ft-lbs. before giving up. I was hoping for 450 HP, as my turbo and injectors should be able to support it easily, but oh well. I couldn&amp;rsquo;t get past ~14psi or so.
   But I kept experiencing some spark blow-out and had a rear main leak, so I decided to cut it short.</description>
     </item>
     
@@ -38,7 +38,7 @@ I also got to try my slicks out for the first time, and man, they make the car m
       <pubDate>Sun, 06 Sep 2015 00:24:12 +0000</pubDate>
       
       <guid>https://nearwood.dev/280z-update/</guid>
-      <description>It&#39;s been a while since I&#39;ve worked on my Z. I&#39;ve been working on rebuilding my wife&#39;s 300ZX, which is progressing slowly. My Z had a dead oxygen sensor and was not tuned correctly. It also had a fuel leak. But last week I fixed both of those issues and now it runs like a champ.
+      <description>It&amp;rsquo;s been a while since I&amp;rsquo;ve worked on my Z. I&amp;rsquo;ve been working on rebuilding my wife&amp;rsquo;s 300ZX, which is progressing slowly. My Z had a dead oxygen sensor and was not tuned correctly. It also had a fuel leak. But last week I fixed both of those issues and now it runs like a champ.
 I then leaned out the fuel table by about 25% (I had richened it up when the sensor died to be safe).</description>
     </item>
     
@@ -48,7 +48,7 @@ I then leaned out the fuel table by about 25% (I had richened it up when the sen
       <pubDate>Sun, 16 Aug 2015 04:02:50 +0000</pubDate>
       
       <guid>https://nearwood.dev/3rd-pumps-the-charm/</guid>
-      <description>So I picked up a Bosch 044 fuel pump for a song, and decided to get rid of my Fuelab Prodigy pump. I almost wrote about the Fuelab install, but since I intended on replacing it, it wasn&#39;t worth it. It was just too much for my vehicle, even at my target boost levels.
+      <description>So I picked up a Bosch 044 fuel pump for a song, and decided to get rid of my Fuelab Prodigy pump. I almost wrote about the Fuelab install, but since I intended on replacing it, it wasn&amp;rsquo;t worth it. It was just too much for my vehicle, even at my target boost levels.
 The Fuelab pump was brushless, and so was very picky about voltage. It was unusable during cranking due to a large voltage drop because of my small battery.</description>
     </item>
     
@@ -58,7 +58,7 @@ The Fuelab pump was brushless, and so was very picky about voltage. It was unusa
       <pubDate>Sat, 02 May 2015 16:00:58 +0000</pubDate>
       
       <guid>https://nearwood.dev/harbor-freight-trailer-build-part-3/</guid>
-      <description>&lt;p&gt;It&#39;s been a while from the &lt;a href=&#34;https://nearwood.dev/harbor-freight-trailer-build-part-2/&#34;&gt;last update&lt;/a&gt;, but the build is winding down. That&#39;s good, because I&#39;ve put entirely too much effort into this.&lt;/p&gt;
+      <description>&lt;p&gt;It&amp;rsquo;s been a while from the &lt;a href=&#34;https://nearwood.dev/harbor-freight-trailer-build-part-2/&#34;&gt;last update&lt;/a&gt;, but the build is winding down. That&amp;rsquo;s good, because I&amp;rsquo;ve put entirely too much effort into this.&lt;/p&gt;
 &lt;p&gt;I figured out how to secure the tires. Using some 1/8&amp;rdquo; steel angle ($30), I made some mounts.&lt;/p&gt;
 &lt;img class=&#34;lostImage&#34; src=&#34;&#34; alt=&#34;Image no longer available :(&#34;/&gt;</description>
     </item>
@@ -70,7 +70,7 @@ The Fuelab pump was brushless, and so was very picky about voltage. It was unusa
       
       <guid>https://nearwood.dev/on-properly-setting-your-cooling-fan-temperature-threshold/</guid>
       <description>&lt;p&gt;When I first installed an aftermarket ECU (Megasquirt I) in my 1984 300ZX, years ago (almost 10 as of this writing!), I used the recommended GM sensor for coolant temperature. It required a bit of machining to fit the sensor, nothing major.&lt;/p&gt;
-&lt;p&gt;With my latest engine (and the two cars it was in), I decided to use the OEM Cylinder Head Temperature Sensor, since hey, why not? It was already there, in an optimal spot. All I had to do was make software changes to calibrate MS-II to it&#39;s temperature/resistance curve. I had the data in the Factory Service Manual, all was well.&lt;/p&gt;</description>
+&lt;p&gt;With my latest engine (and the two cars it was in), I decided to use the OEM Cylinder Head Temperature Sensor, since hey, why not? It was already there, in an optimal spot. All I had to do was make software changes to calibrate MS-II to it&amp;rsquo;s temperature/resistance curve. I had the data in the Factory Service Manual, all was well.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -79,7 +79,7 @@ The Fuelab pump was brushless, and so was very picky about voltage. It was unusa
       <pubDate>Mon, 27 Oct 2014 02:01:31 +0000</pubDate>
       
       <guid>https://nearwood.dev/first-autocross-with-a-vg33/</guid>
-      <description>Well, with less than a couple hundred miles on the rebuilt engine, it was time to really break-in the new VG33. I took it to an autocross. Things were going well until I shut it off after my second run. It didn&#39;t want to restart after that. It appears that the culprit was low battery voltage, as the ECU was resetting and the fuel pump never even came on during cranking.</description>
+      <description>Well, with less than a couple hundred miles on the rebuilt engine, it was time to really break-in the new VG33. I took it to an autocross. Things were going well until I shut it off after my second run. It didn&amp;rsquo;t want to restart after that. It appears that the culprit was low battery voltage, as the ECU was resetting and the fuel pump never even came on during cranking.</description>
     </item>
     
     <item>
@@ -88,7 +88,7 @@ The Fuelab pump was brushless, and so was very picky about voltage. It was unusa
       <pubDate>Tue, 21 Oct 2014 23:08:25 +0000</pubDate>
       
       <guid>https://nearwood.dev/280z-led-conversion-part-2/</guid>
-      <description>Continuing from part 1, this is the start of installation and results of the LED conversion. I ordered a small bunch of LEDs to get a feel for what brightness I&#39;m looking at since the website I ordered from has somewhat confusing &amp;lsquo;relative intensity&amp;rsquo;, &amp;lsquo;brightness&amp;rsquo;, and &amp;lsquo;lumens&amp;rsquo; listed for each bulb. Not to mention the prices seemed to fluctuate independently of any of those values so it wasn&#39;t as simple as &amp;lsquo;find the most expensive ones&amp;rsquo;.</description>
+      <description>Continuing from part 1, this is the start of installation and results of the LED conversion. I ordered a small bunch of LEDs to get a feel for what brightness I&amp;rsquo;m looking at since the website I ordered from has somewhat confusing &amp;lsquo;relative intensity&amp;rsquo;, &amp;lsquo;brightness&amp;rsquo;, and &amp;lsquo;lumens&amp;rsquo; listed for each bulb. Not to mention the prices seemed to fluctuate independently of any of those values so it wasn&amp;rsquo;t as simple as &amp;lsquo;find the most expensive ones&amp;rsquo;.</description>
     </item>
     
     <item>
@@ -97,7 +97,7 @@ The Fuelab pump was brushless, and so was very picky about voltage. It was unusa
       <pubDate>Tue, 23 Sep 2014 00:38:25 +0000</pubDate>
       
       <guid>https://nearwood.dev/280z-led-conversion-part-1/</guid>
-      <description>My 280Z isn&#39;t what you could call &amp;ldquo;modern&amp;rdquo; in the electrical department. Originally, it came with an externally regulated alternator, fusible links, incandescent bulbs, and very few relays. The design inhereted a few things from Lucas eletronics, which is not a good thing. Regardless, it was fairly normal for the time. I&#39;m glad there are no vacuum operated things, like some makes. The most electrically obtuse part of the design is the lack of relays.</description>
+      <description>My 280Z isn&amp;rsquo;t what you could call &amp;ldquo;modern&amp;rdquo; in the electrical department. Originally, it came with an externally regulated alternator, fusible links, incandescent bulbs, and very few relays. The design inhereted a few things from Lucas eletronics, which is not a good thing. Regardless, it was fairly normal for the time. I&amp;rsquo;m glad there are no vacuum operated things, like some makes. The most electrically obtuse part of the design is the lack of relays.</description>
     </item>
     
     <item>
@@ -106,8 +106,8 @@ The Fuelab pump was brushless, and so was very picky about voltage. It was unusa
       <pubDate>Tue, 29 Jul 2014 00:10:14 +0000</pubDate>
       
       <guid>https://nearwood.dev/3-3l-280z-runs/</guid>
-      <description>So, am I the first? The first to put a VG33 in an S30? I have doubts but I&#39;ve never heard of it before. After a bit of late night work and an unplanned oil event and a small unplanned fuel dump after removing and replacing the engine to fix the oil leak, it&#39;s back in, running, and more importantly: not leaking.
-Here&#39;s a late night in-progress shot:
+      <description>So, am I the first? The first to put a VG33 in an S30? I have doubts but I&amp;rsquo;ve never heard of it before. After a bit of late night work and an unplanned oil event and a small unplanned fuel dump after removing and replacing the engine to fix the oil leak, it&amp;rsquo;s back in, running, and more importantly: not leaking.
+Here&amp;rsquo;s a late night in-progress shot:
  All the work was worth it, I had to get it running for a scheduled photoshoot:</description>
     </item>
     
@@ -121,7 +121,7 @@ Here&#39;s a late night in-progress shot:
 &lt;p&gt;The gauges I got are:&lt;/p&gt;
 &lt;p&gt;Speedometer: 4&amp;rdquo; Revolution GPS Speedo with integrated fuel gauge, turn signal LEDs, and high-beam LED&lt;/p&gt;
 &lt;p&gt;Tachometer: 4&amp;rdquo; Revolution 8,000RPM with programmable shift LEDs.&lt;/p&gt;
-&lt;p&gt;Both have red dials, and red illumination. The fuel gauge is there since I&#39;ll be replacing the one in the 3 small dash gauges eventually, but don&#39;t want to lose having a gas gauge.&lt;/p&gt;
+&lt;p&gt;Both have red dials, and red illumination. The fuel gauge is there since I&amp;rsquo;ll be replacing the one in the 3 small dash gauges eventually, but don&amp;rsquo;t want to lose having a gas gauge.&lt;/p&gt;
 &lt;img class=&#34;lostImage&#34; src=&#34;&#34; alt=&#34;Image no longer available :(&#34;/&gt;</description>
     </item>
     

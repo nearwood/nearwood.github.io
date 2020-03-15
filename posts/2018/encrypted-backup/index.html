@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#1b1b1b">
+	<title>Building asuswrt-merglin on Arch | Nick</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		<meta property="og:title" content="Building asuswrt-merglin on Arch" />
+<meta property="og:description" content="All my computers at home are encrypted-except for the backup drive of our home server. It&rsquo;s plugged in to the router and shared via NFS. This is one task I&rsquo;ve been meaning to do and it&rsquo;s finally &ldquo;possible&rdquo; with my fancy ASUS router (in a three-dumb-router setup, if you&rsquo;re really curious).
+I say &ldquo;possible&rdquo; with scare quotes because not only do you have to run the 3rd part ASUSWRT-Merlin project on the router (though it does support loading 3rd part firmware), you have to build a custom kernel for it to load the dm-crypt modules." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://nearwood.dev/posts/2018/encrypted-backup/" />
+<meta property="article:modified_time" content="2019-12-10T10:57:45-06:00" />
+
+		<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Building asuswrt-merglin on Arch"/>
+<meta name="twitter:description" content="All my computers at home are encrypted-except for the backup drive of our home server. It&rsquo;s plugged in to the router and shared via NFS. This is one task I&rsquo;ve been meaning to do and it&rsquo;s finally &ldquo;possible&rdquo; with my fancy ASUS router (in a three-dumb-router setup, if you&rsquo;re really curious).
+I say &ldquo;possible&rdquo; with scare quotes because not only do you have to run the 3rd part ASUSWRT-Merlin project on the router (though it does support loading 3rd part firmware), you have to build a custom kernel for it to load the dm-crypt modules."/>
+
+	<link rel="stylesheet" href="/css/main.css">
+	<link rel="stylesheet" href="/css/themes/dark-green.css">
+	<link rel="icon" href="/icons/16.png" sizes="16x16" type="image/png">
+	<link rel="icon" href="/icons/32.png" sizes="32x32" type="image/png">
+		
+	
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-5743113-11"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-5743113-11');
+	</script>
+</head>
+<body>
+	<header class="header">
+	<a class="logo" href="/">Nick</a>
+	
+<nav class="main-nav" role="navigation">
+	<button id="toggle" class="main-nav__btn" aria-label="Menu toggle" aria-expanded="false" tabindex="0">
+		<div class="main-nav__btn-box" tabindex="-1">
+			<svg class="main-nav__icon icon-menu" width="18" height="18" viewBox="0 0 18 18">
+				<path class="icon-menu__burger" d="M18 0v3.6H0V0h18zM0 10.8h18V7.2H0v3.6zM0 18h18v-3.6H0V18z"/>
+				<path class="icon-menu__x" d="M11.55 9L18 15.45 15.45 18 9 11.55 2.55 18 0 15.45 6.45 9 0 2.55 2.55 0 9 6.45 15.45 0 18 2.55 11.55 9z"/>
+			</svg>
+		</div>
+	</button>
+	<ul id="menu" class="main-nav__list">
+		<li class="main-nav__item"><a class="main-nav__link" href="/pages/about/">About</a></li>
+		<li class="main-nav__item"><a class="main-nav__link" href="/pages/contact/">Contact</a></li>
+	</ul>
+</nav>
+</header>
+
+	<div class="primary">
+	
+	<main class="main">
+		<div class="single block">
+			<article class="post">
+	<div class="post__meta meta mb">
+<time class="post__meta-lastmod meta-lastmod" datetime="2019-12-10T10:57:45">Updated: December 10, 2019</time>
+<span class="post__meta-categories meta-categories">
+	<span class="meta-categories__list">Categories: <a class="meta-categories__link" href="/categories/computing" rel="category">Computing</a>, <a class="meta-categories__link" href="/categories/technology" rel="category">Technology</a></span>
+</span>
+	</div>
+
+				<h1 class="post__title">Building asuswrt-merglin on Arch</h1>
+				<div class="post__content"><p>All my computers at home are encrypted-except for the backup drive of our home server. It&rsquo;s plugged in to the router and shared via NFS. This is one task I&rsquo;ve been meaning to do and it&rsquo;s finally &ldquo;possible&rdquo; with my fancy ASUS router (in a <a href="https://www.pcper.com/reviews/General-Tech/Steve-Gibsons-Three-Router-Solution-IOT-Insecurity" target="_blank" rel="noopener">three-dumb-router</a> setup, if you&rsquo;re really curious).</p>
+<p>I say &ldquo;possible&rdquo; with scare quotes because not only do you have to run the 3rd part ASUSWRT-Merlin project on the router (though it does support loading 3rd part firmware), you have to build a custom kernel for it to load the dm-crypt modules. So that&rsquo;s what this is going to detail.</p>
+<p>You can&rsquo;t (easily) install developer tools on the router itself, so the next option is to cross-compile.</p>
+<ol>
+<li>Setup cross-compiler toolchain (RPC, IPv6, gcc 4, tuple name)</li>
+<li>Build cross-compiler toolchain</li>
+<li>Configure target kernel</li>
+<li>Build kernel</li>
+<li>Install kernel</li>
+<li>Setup encrypted drive (this is all I wanted in the first place</li>
+</ol>
+<p>firmware compile fail:</p>
+<p>libbb/update_passwd.c: In function &lsquo;update_passwd&rsquo;:</p>
+<p>libbb/update_passwd.c:175:26: warning: null argument where non-null required (argument 1) [-Wnonnull]</p>
+<p>unsigned member_len = strlen(member);</p>
+<p>/home/nick/dev/extra/asuswrt-merlin.ng/release/src/router/busybox/libbb/update_passwd.c</p>
+<p>/home/nick/dev/extra/asuswrt-merlin.ng/release/src/router/busybox-1.24.1/busybox-1.24.1/libbb/update_passwd.c</p>
+<p>unsigned member_len = strlen(member ? member : &ldquo;&quot;);</p>
+<p>gcc bug: <a href="https://github.com/qca/open-ath9k-htc-firmware/issues/135">https://github.com/qca/open-ath9k-htc-firmware/issues/135</a></p>
+<p>Old instructions vs new repo</p>
+<p><a href="https://github.com/RMerl/asuswrt-merlin.ng">https://github.com/RMerl/asuswrt-merlin.ng</a></p>
+<p>lzma_4k stuff</p>
+<p>file lzma_4k.old</p>
+<p>lzma_4k.old: ELF 32-bit LSB executable, Intel 80386, version 1 (SYSV), dynamically linked, interpreter /lib/ld-linux.so.2, for GNU/Linux 2.6.9, not stripped</p>
+<p>[nick@daed ctools]$ ls</p>
+<p>addhdr lzma_4k.old lzma.old Makefile mksquashfs nvserial objcopy prebuild swap trx</p>
+<p>[nick@daed ctools]$ whereis lzma</p>
+<p>lzma: /usr/bin/lzma /usr/include/lzma.h /usr/include/lzma /usr/share/man/man1/lzma.1.gz</p>
+<p>[nick@daed ctools]$ whereis lzma_4k</p>
+<p>lzma_4k:</p>
+<p>[nick@daed ctools]$ pacman -Ss lzma</p>
+<p>core/xz 5.2.4-1 [installed]</p>
+<p>Library and command line tools for XZ and LZMA compressed files</p>
+<p>community/lrzip 0.631-2</p>
+<p>Multi-threaded compression with rzip/lzma, lzo, and zpaq</p>
+<p>community/lzip 1.20-1</p>
+<p>A lossless file compressor based on the LZMA algorithm</p>
+<p>community/python2-backports.lzma 0.0.11-1</p>
+<p>Backport of Python 3.3&rsquo;s &lsquo;lzma&rsquo; module for XZ/LZMA compressed files.</p>
+<p>[nick@daed ctools]$ md5</p>
+<p>md5pass md5sum</p>
+<p>[nick@daed ctools]$ md5sum lzma.old</p>
+<p>4f1f015a515150152c5fe04c5699d015 lzma.old</p>
+<p>[nick@daed ctools]$ md5sum lzma_4k.old</p>
+<p>4f1f015a515150152c5fe04c5699d015 lzma_4k.old</p>
+<p>[nick@daed ctools]$</p>
+<p>then had to %s/lzma_4k e/lzma_4k -e in the Makefile</p>
+<p>../../release/src-rt/Makefile: ctools/lzma_4k -e (wrong file)</p>
+<p>../../release/src-rt-6.x.4708/cfe/build/broadcom/bcm947xx/compressed/Makefile:COMPRESS := lzma_4k e</p>
+<p> </p>
+</div>
+				
+				<footer class="post__footer">
+					
+					
+<div class="post__share share">
+	<a class="share__link btn" title="Share on Twitter" href="https://twitter.com/intent/tweet/?url=https%3a%2f%2fnearwood.dev%2fposts%2f2018%2fencrypted-backup%2f&amp;text=Building%20asuswrt-merglin%20on%20Arch" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, 'Share on Twitter', 'width=800,height=450,resizable=yes,toolbar=0,status=0'); return false">
+		<svg class="share__icon" aria-label="Twitter" role="img" width="32" height="32" viewBox="0 0 512 512"><path d="M437 152a72 72 0 0 1-40 12 72 72 0 0 0 32-40 72 72 0 0 1-45 17 72 72 0 0 0-122 65 200 200 0 0 1-145-74 72 72 0 0 0 22 94 72 72 0 0 1-32-7 72 72 0 0 0 56 69 72 72 0 0 1-32 1 72 72 0 0 0 67 50 200 200 0 0 1-105 29 200 200 0 0 0 309-179 200 200 0 0 0 35-37"/></svg>
+	</a>
+	<a class="share__link btn" title="Share on Reddit" href="https://www.reddit.com/submit?url=https%3a%2f%2fnearwood.dev%2fposts%2f2018%2fencrypted-backup%2f&amp;title=Building%20asuswrt-merglin%20on%20Arch" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, 'Share on Reddit', 'width=832,height=624,toolbar=0,status=0'); return false">
+		<svg class="share__icon" aria-label="Reddit" role="img" width="32" height="32" viewBox="0 0 512 512"><path fill-rule="evenodd" d="M375 146a32 32 0 1 0-29-46l-65-13c-5-1-9 2-10 6l-22 97c-45 1-85 15-113 36a42 42 0 1 0-45 69l-1 12c0 65 74 117 166 117s166-52 166-117l-1-11a42 42 0 1 0-44-69c-28-21-67-35-111-37l19-86 58 13a32 32 0 0 0 32 29zM190 353c2-1 4 0 5 1 15 11 38 18 61 18s46-6 61-18a7 7 0 0 1 8 10c-18 14-44 21-69 21-25-1-51-7-69-21a6 6 0 0 1 3-11zm23-44a31 31 0 1 1-44-44 31 31 0 0 1 44 44zm130 0a31 31 0 1 0-44-44 31 31 0 0 0 44 44z"/></svg>
+	</a>
+</div>
+				</footer>
+				
+			</article>
+		</div>
+	</main>
+	
+	
+
+
+
+	
+
+	</div>
+	<footer class="footer">
+<div class="footer__social social">
+		<a class="social__link" target="_blank" rel="noopener noreferrer" href="https://twitter.com/nearwood">
+			<svg class="social__icon" aria-label="Twitter" role="img" width="32" height="32" viewBox="0 0 512 512"><path d="M437 152a72 72 0 0 1-40 12 72 72 0 0 0 32-40 72 72 0 0 1-45 17 72 72 0 0 0-122 65 200 200 0 0 1-145-74 72 72 0 0 0 22 94 72 72 0 0 1-32-7 72 72 0 0 0 56 69 72 72 0 0 1-32 1 72 72 0 0 0 67 50 200 200 0 0 1-105 29 200 200 0 0 0 309-179 200 200 0 0 0 35-37"/></svg>
+		</a>
+		<a class="social__link" target="_blank" rel="noopener noreferrer" href="https://github.com/nearwood">
+			<svg class="social__icon" aria-label="Github" role="img" width="32" height="32" viewBox="0 0 512 512"><path d="M335 499c14 0 12 17 12 17H165s-2-17 12-17c13 0 16-6 16-12l-1-50c-71 16-86-28-86-28-12-30-28-37-28-37-24-16 1-16 1-16 26 2 40 26 40 26 22 39 59 28 74 22 2-17 9-28 16-35-57-6-116-28-116-126 0-28 10-51 26-69-3-6-11-32 3-67 0 0 21-7 70 26 42-12 86-12 128 0 49-33 70-26 70-26 14 35 6 61 3 67 16 18 26 41 26 69 0 98-60 120-117 126 10 8 18 24 18 48l-1 70c0 6 3 12 16 12z"/></svg>
+		</a>
+</div>
+	<div class="footer__copyright">© 2020 Nick Earwood. <span class="footer__copyright-credits">Powered by <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/vimux/binario" rel="nofollow noopener" target="_blank">Binario</a> theme.</span></div>
+</footer>
+<script src="/js/menu.js"></script>
+</body>
+</html>

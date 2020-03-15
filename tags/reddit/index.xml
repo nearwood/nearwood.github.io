@@ -19,7 +19,7 @@
       
       <guid>https://nearwood.dev/delete-all-your-reddit-comments/</guid>
       <description>I noticed that my reddit account had a few posts that were too revealing. So, I decided to remove them. I stumbled upon a couple greasemonkey scripts to delete all posts, which got my interested in seeing if I could write up a quick script to do the same that could run in the Developer Tools of any browser, rather than relying on an extension.
-The catch is that you, apparently, should edit each comment&#39;s content to remove it before deleting it, otherwise it&#39;s still cached in other users&amp;rsquo; inboxes or something.</description>
+The catch is that you, apparently, should edit each comment&amp;rsquo;s content to remove it before deleting it, otherwise it&amp;rsquo;s still cached in other users&amp;rsquo; inboxes or something.</description>
     </item>
     
   </channel>

@@ -12,7 +12,7 @@
 <meta property="og:description" content="Update Dec. 13, 2014:
 These scripts are out of date. NFS has the WP-CLI installed allowing for much, much easier upgrades, backups, etc. See the repository for information.
 Originally posted on Sept. 10th, 2014:
-If you use NearlyFreeSpeech.net as your web host, you may have found it difficult to automate WordPress updates. I&#39;ve made a script that does this for you. It also calls my backup and permissions fixing scripts, which I include here as well.
+If you use NearlyFreeSpeech.net as your web host, you may have found it difficult to automate WordPress updates. I&rsquo;ve made a script that does this for you. It also calls my backup and permissions fixing scripts, which I include here as well.
 Beware of some notes and assumptions though:
 
 Assumes WordPress is installed in /home/public/ (not a subdir of it)
@@ -29,7 +29,7 @@ Does not check or recover from errors
 <meta name="twitter:description" content="Update Dec. 13, 2014:
 These scripts are out of date. NFS has the WP-CLI installed allowing for much, much easier upgrades, backups, etc. See the repository for information.
 Originally posted on Sept. 10th, 2014:
-If you use NearlyFreeSpeech.net as your web host, you may have found it difficult to automate WordPress updates. I&#39;ve made a script that does this for you. It also calls my backup and permissions fixing scripts, which I include here as well.
+If you use NearlyFreeSpeech.net as your web host, you may have found it difficult to automate WordPress updates. I&rsquo;ve made a script that does this for you. It also calls my backup and permissions fixing scripts, which I include here as well.
 Beware of some notes and assumptions though:
 
 Assumes WordPress is installed in /home/public/ (not a subdir of it)
@@ -89,7 +89,7 @@ Does not check or recover from errors
 				<div class="post__content"><h3 id="update-dec-13-2014">Update Dec. 13, 2014:</h3>
 <p>These scripts are out of date. NFS has the <a href="https://wp-cli.org/" target="_blank">WP-CLI</a> installed allowing for much, much easier upgrades, backups, etc. See the <a href="https://github.com/nearwood/nfs-scripts" target="_blank">repository</a> for information.</p>
 <h3 id="originally-posted-on-sept-10th-2014">Originally posted on Sept. 10th, 2014:</h3>
-<p>If you use NearlyFreeSpeech.net as your web host, you may have found it difficult to automate WordPress updates. I've made a script that does this for you. It also calls my backup and permissions fixing scripts, which I include here as well.</p>
+<p>If you use NearlyFreeSpeech.net as your web host, you may have found it difficult to automate WordPress updates. I&rsquo;ve made a script that does this for you. It also calls my backup and permissions fixing scripts, which I include here as well.</p>
 <p>Beware of some notes and assumptions though:</p>
 <ul>
 <li>Assumes WordPress is installed in /home/public/ (not a subdir of it)</li>
@@ -117,7 +117,7 @@ echo "Fixing perms..."
 echo "Complete.";
 fi
 </pre>
-<p>Here's my backup script. It's super simple. Tar everything in <code>/home/public</code> up with a datetime as the filename. Database backups are a separate script I'm working on.</p>
+<p>Here&rsquo;s my backup script. It&rsquo;s super simple. Tar everything in <code>/home/public</code> up with a datetime as the filename. Database backups are a separate script I&rsquo;m working on.</p>
 <pre class="brush: bash; title: backup.sh; notranslate" title="backup.sh">theDate=`date "+%Y-%m-%d"`
 fileName=backup-$theDate.tar.bz2
 if [ -f $fileName ]
@@ -128,7 +128,7 @@ tar -cjvf $fileName /home/public
 echo "Backup complete."
 fi
 </pre>
-<p>And here's my permissions fixing script. The WordPress tarball has the wrong group on all the files, since NFS uses the &lsquo;web&rsquo; group. There's probably a way to do this with tar when it extracts but this is simple enough:</p>
+<p>And here&rsquo;s my permissions fixing script. The WordPress tarball has the wrong group on all the files, since NFS uses the &lsquo;web&rsquo; group. There&rsquo;s probably a way to do this with tar when it extracts but this is simple enough:</p>
 <pre class="brush: bash; title: fixgrp.sh; notranslate" title="fixgrp.sh">chgrp -R web /home/public/*
 </pre><blockquote>
 </blockquote></div>

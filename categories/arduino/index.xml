@@ -18,7 +18,7 @@
       <pubDate>Wed, 12 Nov 2014 02:04:43 +0000</pubDate>
       
       <guid>https://nearwood.dev/carduino-2-0-intel-galileo-setup/</guid>
-      <description>&lt;p&gt;Out of the box the Galileo is setup to run sketches uploaded from volatile memory, which is really lame. I didn&#39;t spend much time with it using the stock SPI kernel. So, an SD card is pretty much required to do any serious development with this board. This is not a bad thing (although you aren&#39;t running in real-time anymore), since having a full OS to use has lots of advantages. Plus, this way I can automate the build process in a way I&#39;m more familiar with.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Out of the box the Galileo is setup to run sketches uploaded from volatile memory, which is really lame. I didn&amp;rsquo;t spend much time with it using the stock SPI kernel. So, an SD card is pretty much required to do any serious development with this board. This is not a bad thing (although you aren&amp;rsquo;t running in real-time anymore), since having a full OS to use has lots of advantages. Plus, this way I can automate the build process in a way I&amp;rsquo;m more familiar with.&lt;/p&gt;</description>
     </item>
     
   </channel>

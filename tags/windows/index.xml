@@ -19,7 +19,7 @@
       
       <guid>https://nearwood.dev/windows-backup/</guid>
       <description>After installing Windows 7 in place of OS X on my MacBook Pro for work, there are only a few things I miss. But man, they were really nice.
- Unix shell Time Machine  The first one I&#39;ll just say if you haven&#39;t used a Unix-like shell of some type (Bash, zsh, whatever) then it&#39;s hard to explain. Just that you can do everything a GUI can do (save for graphics work), but much, much faster.</description>
+ Unix shell Time Machine  The first one I&amp;rsquo;ll just say if you haven&amp;rsquo;t used a Unix-like shell of some type (Bash, zsh, whatever) then it&amp;rsquo;s hard to explain. Just that you can do everything a GUI can do (save for graphics work), but much, much faster.</description>
     </item>
     
     <item>
@@ -28,19 +28,8 @@
       <pubDate>Sat, 15 Mar 2014 13:01:13 +0000</pubDate>
       
       <guid>https://nearwood.dev/windows-bugs/</guid>
-      <description>Over the years I&#39;ve noticed a couple bugs that are present in in some or all of NT/Vista/7. I experience these on a daily basis, across dozens of computers. So it can&#39;t just be me, right?
+      <description>Over the years I&amp;rsquo;ve noticed a couple bugs that are present in in some or all of NT/Vista/7. I experience these on a daily basis, across dozens of computers. So it can&amp;rsquo;t just be me, right?
  Focus bug. If the timing is right, some windows remain on top despite clicking on a background window. The background window obtains focus, but does not move to the front. This is typically when the foreground window does some focus changing action (Showing a dialog, opening a new tab, etc.</description>
-    </item>
-    
-    <item>
-      <title>This PC loves Adobe</title>
-      <link>https://nearwood.dev/this-pc-loves-adobe/</link>
-      <pubDate>Wed, 25 Jul 2012 00:10:02 +0000</pubDate>
-      
-      <guid>https://nearwood.dev/this-pc-loves-adobe/</guid>
-      <description>So much, that it installed multiple copies of the same Flash updates:
-Actually, it appears to be a registry glitch rather than multiple copies. As much as I don&#39;t like Adobe&#39;s updating/installation practices (opted-in toolbars, programs), they do have a relatively easy to find and use Flash removal application.
- </description>
     </item>
     
     <item>

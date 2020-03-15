@@ -18,8 +18,8 @@
       <pubDate>Sat, 21 May 2016 22:06:00 +0000</pubDate>
       
       <guid>https://nearwood.dev/fixing-mirrorlist-on-arch-linux-arm-raspberry-pi/</guid>
-      <description>I hadn&#39;t updated my Raspberry Pi (a B+ model for my rpi-drd project) in about a year. Pacman -Syu kept complaining about being unable to find files on any of the mirrors.
-So I, without thinking, ran reflector on an x86 host and copied it over. Oops. Now it definitely can&#39;t find packages.
+      <description>I hadn&amp;rsquo;t updated my Raspberry Pi (a B+ model for my rpi-drd project) in about a year. Pacman -Syu kept complaining about being unable to find files on any of the mirrors.
+So I, without thinking, ran reflector on an x86 host and copied it over. Oops. Now it definitely can&amp;rsquo;t find packages.
 The archlinuxarm.org website gave me the hostname I needed, but not the entire URL. Put this in your mirrorlist (as the sole entry) to restore functionality:</description>
     </item>
     
@@ -29,9 +29,9 @@ The archlinuxarm.org website gave me the hostname I needed, but not the entire U
       <pubDate>Sat, 06 Dec 2014 03:00:22 +0000</pubDate>
       
       <guid>https://nearwood.dev/installing-arch-linux-with-an-encrypted-root/</guid>
-      <description>&lt;p&gt;I&#39;ve got a ThinkPad T410. I got it off craigslist in what was a somewhat shady transaction. Regardless, it came with a 300GB spinner. Not interested in finding out how much life was left on it I got a solid state replacement from NewEgg for &amp;ldquo;Cyber Monday&amp;rdquo;. A 240GB Intel one for $110, that&#39;s less than 50 cents per GB!&lt;/p&gt;
-&lt;p&gt;The spinner has a single unencrypted partition with Arch Linux running on it. I wanted to run Arch on an encrypted partition. The main reason: If it&#39;s ever stolen I don&#39;t want to have to worry about any of the data on it. Bonus reason: Geek/spy points.&lt;/p&gt;
-&lt;p&gt;So, while there are excellent guides for installing Arch, and setting up encryption, and optimizing an SSD, there don&#39;t seem to be any combining the three. In reality it&#39;s not that much more difficult, and if you are motivated to setup encryption on Linux in the first place you probably know what you&#39;re doing. Still, I was disheartened a bit at the lack of information so I decided to note how I went about it in general.&lt;/p&gt;</description>
+      <description>&lt;p&gt;I&amp;rsquo;ve got a ThinkPad T410. I got it off craigslist in what was a somewhat shady transaction. Regardless, it came with a 300GB spinner. Not interested in finding out how much life was left on it I got a solid state replacement from NewEgg for &amp;ldquo;Cyber Monday&amp;rdquo;. A 240GB Intel one for $110, that&amp;rsquo;s less than 50 cents per GB!&lt;/p&gt;
+&lt;p&gt;The spinner has a single unencrypted partition with Arch Linux running on it. I wanted to run Arch on an encrypted partition. The main reason: If it&amp;rsquo;s ever stolen I don&amp;rsquo;t want to have to worry about any of the data on it. Bonus reason: Geek/spy points.&lt;/p&gt;
+&lt;p&gt;So, while there are excellent guides for installing Arch, and setting up encryption, and optimizing an SSD, there don&amp;rsquo;t seem to be any combining the three. In reality it&amp;rsquo;s not that much more difficult, and if you are motivated to setup encryption on Linux in the first place you probably know what you&amp;rsquo;re doing. Still, I was disheartened a bit at the lack of information so I decided to note how I went about it in general.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -50,8 +50,8 @@ Installing Arch was quick, as usual. The laptop has a fingerprint reader, which 
       <pubDate>Fri, 26 Apr 2013 23:13:52 +0000</pubDate>
       
       <guid>https://nearwood.dev/moving-home-server-to-arch/</guid>
-      <description>I&#39;ve ordered a 2 terabyte hard drive to appropriately serve as a backup drive for my home server. This would normally just require swapping the old backup drive out for it, and then performing a backup. But I figure since I&#39;ll have it down anyway, I&#39;ll have enough drives to swap to Arch Linux and get things going again with the old drive as a &amp;hellip; backup.
-I&#39;ve got quite a few services setup on it, and I&#39;m not looking forward to moving all the config files over</description>
+      <description>I&amp;rsquo;ve ordered a 2 terabyte hard drive to appropriately serve as a backup drive for my home server. This would normally just require swapping the old backup drive out for it, and then performing a backup. But I figure since I&amp;rsquo;ll have it down anyway, I&amp;rsquo;ll have enough drives to swap to Arch Linux and get things going again with the old drive as a &amp;hellip; backup.
+I&amp;rsquo;ve got quite a few services setup on it, and I&amp;rsquo;m not looking forward to moving all the config files over</description>
     </item>
     
     <item>
@@ -62,7 +62,7 @@ I&#39;ve got quite a few services setup on it, and I&#39;m not looking forward t
       <guid>https://nearwood.dev/switched-to-arch-linux-from-gentoo/</guid>
       <description>Time installing Gentoo: days
 Time installing Archlinux: 30 mins.
-I have an old Intel based Dell laptop with 1.8GHz single-core processor. I&#39;ve had Windows XP on it for a couple years, then I switched to Gentoo for the past 5 or 6 years. Well, it&#39;s really not the kind of laptop that you should be compiling everything from source on. I&#39;m tired of going through the &amp;ldquo;everything&#39;s broken, hook it the ethernet cable and start fixing it&amp;rdquo; routine after I&#39;ve left it alone for months at a time.</description>
+I have an old Intel based Dell laptop with 1.8GHz single-core processor. I&amp;rsquo;ve had Windows XP on it for a couple years, then I switched to Gentoo for the past 5 or 6 years. Well, it&amp;rsquo;s really not the kind of laptop that you should be compiling everything from source on. I&amp;rsquo;m tired of going through the &amp;ldquo;everything&amp;rsquo;s broken, hook it the ethernet cable and start fixing it&amp;rdquo; routine after I&amp;rsquo;ve left it alone for months at a time.</description>
     </item>
     
   </channel>

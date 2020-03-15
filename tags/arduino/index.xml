@@ -18,7 +18,7 @@
       <pubDate>Wed, 12 Nov 2014 02:04:43 +0000</pubDate>
       
       <guid>https://nearwood.dev/carduino-2-0-intel-galileo-setup/</guid>
-      <description>&lt;p&gt;Out of the box the Galileo is setup to run sketches uploaded from volatile memory, which is really lame. I didn&#39;t spend much time with it using the stock SPI kernel. So, an SD card is pretty much required to do any serious development with this board. This is not a bad thing (although you aren&#39;t running in real-time anymore), since having a full OS to use has lots of advantages. Plus, this way I can automate the build process in a way I&#39;m more familiar with.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Out of the box the Galileo is setup to run sketches uploaded from volatile memory, which is really lame. I didn&amp;rsquo;t spend much time with it using the stock SPI kernel. So, an SD card is pretty much required to do any serious development with this board. This is not a bad thing (although you aren&amp;rsquo;t running in real-time anymore), since having a full OS to use has lots of advantages. Plus, this way I can automate the build process in a way I&amp;rsquo;m more familiar with.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -27,7 +27,7 @@
       <pubDate>Sun, 09 Nov 2014 18:19:24 +0000</pubDate>
       
       <guid>https://nearwood.dev/carduino-2-0/</guid>
-      <description>Over a year ago I got an Arduino Uno and a CAN-BUS Shield to try and make some kind of datalogger for my car. I was also interested in using the OpenXC library with it (which might need a port if there isn&#39;t one already, since it uses the Digilent chipKIT Max32 development board). While OpenXC allows interfacing with Android stuff for phones, I&#39;m more interested in a self-contained datalogging type deal.</description>
+      <description>Over a year ago I got an Arduino Uno and a CAN-BUS Shield to try and make some kind of datalogger for my car. I was also interested in using the OpenXC library with it (which might need a port if there isn&amp;rsquo;t one already, since it uses the Digilent chipKIT Max32 development board). While OpenXC allows interfacing with Android stuff for phones, I&amp;rsquo;m more interested in a self-contained datalogging type deal.</description>
     </item>
     
     <item>
@@ -36,7 +36,7 @@
       <pubDate>Thu, 31 Jan 2013 02:36:47 +0000</pubDate>
       
       <guid>https://nearwood.dev/carduino/</guid>
-      <description>I&#39;ve been working on a small Arduino project to datalog my commute. I&#39;m using an Arduino Uno with SK Pang&#39;s CAN Bus Shield. I also have added the optional GPS and LCD to the mix. There is an micro-SD card slot for storage.
+      <description>I&amp;rsquo;ve been working on a small Arduino project to datalog my commute. I&amp;rsquo;m using an Arduino Uno with SK Pang&amp;rsquo;s CAN Bus Shield. I also have added the optional GPS and LCD to the mix. There is an micro-SD card slot for storage.
 The aim of the project is just to collect data. As much as I can put into the SD card. I plan on calculating driving efficiency using somewhat arbitrary measures like throttle modulation, temperature, etc.</description>
     </item>
     

@@ -9,7 +9,7 @@
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
 		<meta property="og:title" content="Raspberry Pi Robot – Assembly Part 1" />
-<meta property="og:description" content="So you&#39;ve got a bunch of parts, assembly is pretty easy. I&#39;m going to skip over most of the chassis assembly since it came with instructions, but I have a couple pointers and I&#39;ll go over how I attached the encoders. Then I&#39;ll talk about soldering the motor controller and wiring the encoders up, and which pins to pick from the GPIO of the Pi.
+<meta property="og:description" content="So you&rsquo;ve got a bunch of parts, assembly is pretty easy. I&rsquo;m going to skip over most of the chassis assembly since it came with instructions, but I have a couple pointers and I&rsquo;ll go over how I attached the encoders. Then I&rsquo;ll talk about soldering the motor controller and wiring the encoders up, and which pins to pick from the GPIO of the Pi.
 So this is what the chassis looks like fully assembled:" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://nearwood.dev/raspberry-pi-robot-assembly-part-1/" />
@@ -18,7 +18,7 @@ So this is what the chassis looks like fully assembled:" />
 
 		<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Raspberry Pi Robot – Assembly Part 1"/>
-<meta name="twitter:description" content="So you&#39;ve got a bunch of parts, assembly is pretty easy. I&#39;m going to skip over most of the chassis assembly since it came with instructions, but I have a couple pointers and I&#39;ll go over how I attached the encoders. Then I&#39;ll talk about soldering the motor controller and wiring the encoders up, and which pins to pick from the GPIO of the Pi.
+<meta name="twitter:description" content="So you&rsquo;ve got a bunch of parts, assembly is pretty easy. I&rsquo;m going to skip over most of the chassis assembly since it came with instructions, but I have a couple pointers and I&rsquo;ll go over how I attached the encoders. Then I&rsquo;ll talk about soldering the motor controller and wiring the encoders up, and which pins to pick from the GPIO of the Pi.
 So this is what the chassis looks like fully assembled:"/>
 
 	<link rel="stylesheet" href="/css/main.css">
@@ -70,21 +70,21 @@ So this is what the chassis looks like fully assembled:"/>
 	</div>
 
 				<h1 class="post__title">Raspberry Pi Robot – Assembly Part 1</h1>
-				<div class="post__content"><p>So you've got a bunch of parts, assembly is pretty easy. I'm going to skip over most of the chassis assembly since it came with instructions, but I have a couple pointers and I'll go over how I attached the encoders. Then I'll talk about soldering the motor controller and wiring the encoders up, and which pins to pick from the GPIO of the Pi.</p>
+				<div class="post__content"><p>So you&rsquo;ve got a bunch of parts, assembly is pretty easy. I&rsquo;m going to skip over most of the chassis assembly since it came with instructions, but I have a couple pointers and I&rsquo;ll go over how I attached the encoders. Then I&rsquo;ll talk about soldering the motor controller and wiring the encoders up, and which pins to pick from the GPIO of the Pi.</p>
 <p>So this is what the chassis looks like fully assembled:</p>
 <p>[<img class="lostImage" src="" alt="Image no longer available :("/>Follow the DAGU instructions, keeping in mind the following:</p>
-<p>After installing the motors, you'll press in the wheel bearings. I was surprised to learn that it even had real bearings. They were difficult to install without tools. I laid the bearings in the cutout with one side fully in and the other sticking up a bit. On the latter side, I used the included wrench allow me to get better force on the bearing and from two of my thumbs instead of one. After it goes in, repeat for the other side and possible back to the first side until it's flush. Repeat for each bearing.</p>
+<p>After installing the motors, you&rsquo;ll press in the wheel bearings. I was surprised to learn that it even had real bearings. They were difficult to install without tools. I laid the bearings in the cutout with one side fully in and the other sticking up a bit. On the latter side, I used the included wrench allow me to get better force on the bearing and from two of my thumbs instead of one. After it goes in, repeat for the other side and possible back to the first side until it&rsquo;s flush. Repeat for each bearing.</p>
 <img class="lostImage" src="" alt="Image no longer available :("/>
-<p>It seemed the best way to install the SparkFun encoders was to attach them to the output shaft itself (as opposed to the front wheels). The included encoder screws will allow you to attach them to the shaft. Note that the thread sizes are different, so you're ruining the original threads on the inner shaft. Be careful not to separate the glued-on rubber backing of the magnetic disc. It comes off pretty easily in some spots. I had to use the parts from my second kit (that I bought by mistake) after I separated the ones from the first kit.</p>
+<p>It seemed the best way to install the SparkFun encoders was to attach them to the output shaft itself (as opposed to the front wheels). The included encoder screws will allow you to attach them to the shaft. Note that the thread sizes are different, so you&rsquo;re ruining the original threads on the inner shaft. Be careful not to separate the glued-on rubber backing of the magnetic disc. It comes off pretty easily in some spots. I had to use the parts from my second kit (that I bought by mistake) after I separated the ones from the first kit.</p>
 <img class="lostImage" src="" alt="Image no longer available :("/>
-<p>Now, with some spare small zip-ties (I can't remember if the kit comes with any), you need to attach the hall effect sensors some how. One for each motor, obviously. They need to be within 3mm or so of the magnetic disc. I attached mine like so:</p>
+<p>Now, with some spare small zip-ties (I can&rsquo;t remember if the kit comes with any), you need to attach the hall effect sensors some how. One for each motor, obviously. They need to be within 3mm or so of the magnetic disc. I attached mine like so:</p>
 <img class="lostImage" src="" alt="Image no longer available :("/>
 <p> </p>
-<p>If I had to do it over again, I'd put the zip ties closer to the motor. That is, under one side of the white plastic motor retention piece. I'd also face the encoders with the small side facing the disc! But it turns out it works fine reversed. Rotate the motor somehow to ensure that if the disc is out-of-round as mine were slightly, it doesn't hit the encoder. Also, the metal stand-offs were moved since taking this photo, so they weren't so close to the disc.</p>
+<p>If I had to do it over again, I&rsquo;d put the zip ties closer to the motor. That is, under one side of the white plastic motor retention piece. I&rsquo;d also face the encoders with the small side facing the disc! But it turns out it works fine reversed. Rotate the motor somehow to ensure that if the disc is out-of-round as mine were slightly, it doesn&rsquo;t hit the encoder. Also, the metal stand-offs were moved since taking this photo, so they weren&rsquo;t so close to the disc.</p>
 <img class="lostImage" src="" alt="Image no longer available :("/>
 <p>Once done, it should look like this:</p>
 <img class="lostImage" src="" alt="Image no longer available :("/>
-<p>Don't tighten the case together too much, you'll be reopening it a few times to adjust things. Depending on your electronic hardware, you might even fit some of that inside. I wasn't able to, though.</p>
+<p>Don&rsquo;t tighten the case together too much, you&rsquo;ll be reopening it a few times to adjust things. Depending on your electronic hardware, you might even fit some of that inside. I wasn&rsquo;t able to, though.</p>
 <p>Next is soldering and assembling the boards.</p>
 <p> </p>
 </div>

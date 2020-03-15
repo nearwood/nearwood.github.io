@@ -9,12 +9,12 @@
   
   <url>
     <loc>https://nearwood.dev/</loc>
-    <lastmod>2019-12-11T11:30:54-06:00</lastmod>
+    <lastmod>2020-03-14T20:06:00-05:00</lastmod>
   </url>
   
   <url>
     <loc>https://nearwood.dev/posts/</loc>
-    <lastmod>2019-12-11T11:30:54-06:00</lastmod>
+    <lastmod>2020-03-14T20:06:00-05:00</lastmod>
   </url>
   
   <url>
@@ -24,12 +24,12 @@
   
   <url>
     <loc>https://nearwood.dev/categories/</loc>
-    <lastmod>2019-12-10T10:57:45-06:00</lastmod>
+    <lastmod>2020-03-14T20:06:00-05:00</lastmod>
   </url>
   
   <url>
     <loc>https://nearwood.dev/categories/computing/</loc>
-    <lastmod>2019-12-10T10:57:45-06:00</lastmod>
+    <lastmod>2020-03-14T20:06:00-05:00</lastmod>
   </url>
   
   <url>
@@ -39,6 +39,11 @@
   
   <url>
     <loc>https://nearwood.dev/tags/browser/</loc>
+    <lastmod>2019-12-10T10:57:45-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nearwood.dev/tags/c/</loc>
     <lastmod>2019-12-10T10:57:45-06:00</lastmod>
   </url>
   
@@ -59,7 +64,7 @@
   
   <url>
     <loc>https://nearwood.dev/tags/</loc>
-    <lastmod>2019-12-10T10:57:45-06:00</lastmod>
+    <lastmod>2020-03-14T20:06:00-05:00</lastmod>
   </url>
   
   <url>
@@ -89,37 +94,37 @@
   
   <url>
     <loc>https://nearwood.dev/categories/technology/</loc>
-    <lastmod>2019-12-10T10:57:45-06:00</lastmod>
+    <lastmod>2020-03-14T20:06:00-05:00</lastmod>
   </url>
   
   <url>
     <loc>https://nearwood.dev/categories/android/</loc>
-    <lastmod>2019-12-10T10:57:45-06:00</lastmod>
+    <lastmod>2020-03-14T20:06:00-05:00</lastmod>
   </url>
   
   <url>
     <loc>https://nearwood.dev/tags/android/</loc>
-    <lastmod>2019-12-10T10:57:45-06:00</lastmod>
+    <lastmod>2020-03-14T20:06:00-05:00</lastmod>
   </url>
   
   <url>
     <loc>https://nearwood.dev/categories/cars/</loc>
-    <lastmod>2019-12-10T10:57:45-06:00</lastmod>
+    <lastmod>2020-03-14T20:06:00-05:00</lastmod>
   </url>
   
   <url>
     <loc>https://nearwood.dev/tags/firwmare/</loc>
-    <lastmod>2019-12-10T10:57:45-06:00</lastmod>
+    <lastmod>2020-03-14T20:06:00-05:00</lastmod>
   </url>
   
   <url>
     <loc>https://nearwood.dev/tags/reverse-engineering/</loc>
-    <lastmod>2019-12-10T10:57:45-06:00</lastmod>
+    <lastmod>2020-03-14T20:06:00-05:00</lastmod>
   </url>
   
   <url>
     <loc>https://nearwood.dev/reverse-engineering-the-firmware-on-a-kenwood-ddx9903s/</loc>
-    <lastmod>2019-12-10T10:57:45-06:00</lastmod>
+    <lastmod>2020-03-14T20:06:00-05:00</lastmod>
   </url>
   
   <url>
@@ -133,12 +138,12 @@
   </url>
   
   <url>
-    <loc>https://nearwood.dev/categories/linux/</loc>
+    <loc>https://nearwood.dev/tags/linux/</loc>
     <lastmod>2019-12-10T10:57:45-06:00</lastmod>
   </url>
   
   <url>
-    <loc>https://nearwood.dev/tags/linux/</loc>
+    <loc>https://nearwood.dev/categories/linux/</loc>
     <lastmod>2019-12-10T10:57:45-06:00</lastmod>
   </url>
   
@@ -169,11 +174,6 @@
   
   <url>
     <loc>https://nearwood.dev/sync-loginlock-screen-wallpaper-to-current-desktop-background/</loc>
-    <lastmod>2019-12-10T10:57:45-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nearwood.dev/tags/c/</loc>
     <lastmod>2019-12-10T10:57:45-06:00</lastmod>
   </url>
   
@@ -269,6 +269,11 @@
   
   <url>
     <loc>https://nearwood.dev/october-autocross/</loc>
+    <lastmod>2019-12-10T10:57:45-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nearwood.dev/tags/msq/</loc>
     <lastmod>2019-12-10T10:57:45-06:00</lastmod>
   </url>
   
@@ -419,11 +424,6 @@
   
   <url>
     <loc>https://nearwood.dev/tags/ecu/</loc>
-    <lastmod>2019-12-10T10:57:45-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nearwood.dev/tags/msq/</loc>
     <lastmod>2019-12-10T10:57:45-06:00</lastmod>
   </url>
   
@@ -763,11 +763,6 @@
   </url>
   
   <url>
-    <loc>https://nearwood.dev/tags/c/c&#43;&#43;/</loc>
-    <lastmod>2019-12-10T10:57:45-06:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://nearwood.dev/carduino/</loc>
     <lastmod>2019-12-10T10:57:45-06:00</lastmod>
   </url>
@@ -818,33 +813,8 @@
   </url>
   
   <url>
-    <loc>https://nearwood.dev/tags/adobe/</loc>
-    <lastmod>2019-12-10T10:57:45-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nearwood.dev/this-pc-loves-adobe/</loc>
-    <lastmod>2019-12-10T10:57:45-06:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://nearwood.dev/pages/contact/</loc>
     <lastmod>2019-02-10T13:57:17-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nearwood.dev/the-other-end-of-uxd/</loc>
-    <lastmod>2019-12-10T10:57:45-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nearwood.dev/categories/user-experience/</loc>
-    <lastmod>2019-12-10T10:57:45-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nearwood.dev/tags/uxd/</loc>
-    <lastmod>2019-12-10T10:57:45-06:00</lastmod>
   </url>
   
   <url>
@@ -865,6 +835,10 @@
   <url>
     <loc>https://nearwood.dev/tags/vm/</loc>
     <lastmod>2019-12-10T10:57:45-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nearwood.dev/tags/c/c&#43;&#43;/</loc>
   </url>
   
 </urlset>

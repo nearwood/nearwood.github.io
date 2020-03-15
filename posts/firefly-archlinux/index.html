@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#1b1b1b">
+	<title>Firefly Archlinux | Nick</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		<meta property="og:title" content="Firefly Archlinux" />
+<meta property="og:description" content="Background Recently I&rsquo;ve been migrating from &ldquo;free&rdquo; services to self-managed/paid services. One of the &ldquo;free&rdquo; services I used to use was Intuit&rsquo;s Mint.com. I deleted my account over a year ago but have not been able to find a suitable replacement for it. It was super convenient, I will give them that. But I am not a huge fan of the company or the security of the whole thing. I&rsquo;m big on self-hosting what I can, and so I discovered firefly-iii." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://nearwood.dev/posts/firefly-archlinux/" />
+<meta property="article:published_time" content="2019-02-21T10:56:35-05:00" />
+<meta property="article:modified_time" content="2019-03-01T14:56:08-05:00" />
+
+		<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Firefly Archlinux"/>
+<meta name="twitter:description" content="Background Recently I&rsquo;ve been migrating from &ldquo;free&rdquo; services to self-managed/paid services. One of the &ldquo;free&rdquo; services I used to use was Intuit&rsquo;s Mint.com. I deleted my account over a year ago but have not been able to find a suitable replacement for it. It was super convenient, I will give them that. But I am not a huge fan of the company or the security of the whole thing. I&rsquo;m big on self-hosting what I can, and so I discovered firefly-iii."/>
+
+	<link rel="stylesheet" href="/css/main.css">
+	<link rel="stylesheet" href="/css/themes/dark-green.css">
+	<link rel="icon" href="/icons/16.png" sizes="16x16" type="image/png">
+	<link rel="icon" href="/icons/32.png" sizes="32x32" type="image/png">
+		
+	
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-5743113-11"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-5743113-11');
+	</script>
+</head>
+<body>
+	<header class="header">
+	<a class="logo" href="/">Nick</a>
+	
+<nav class="main-nav" role="navigation">
+	<button id="toggle" class="main-nav__btn" aria-label="Menu toggle" aria-expanded="false" tabindex="0">
+		<div class="main-nav__btn-box" tabindex="-1">
+			<svg class="main-nav__icon icon-menu" width="18" height="18" viewBox="0 0 18 18">
+				<path class="icon-menu__burger" d="M18 0v3.6H0V0h18zM0 10.8h18V7.2H0v3.6zM0 18h18v-3.6H0V18z"/>
+				<path class="icon-menu__x" d="M11.55 9L18 15.45 15.45 18 9 11.55 2.55 18 0 15.45 6.45 9 0 2.55 2.55 0 9 6.45 15.45 0 18 2.55 11.55 9z"/>
+			</svg>
+		</div>
+	</button>
+	<ul id="menu" class="main-nav__list">
+		<li class="main-nav__item"><a class="main-nav__link" href="/pages/about/">About</a></li>
+		<li class="main-nav__item"><a class="main-nav__link" href="/pages/contact/">Contact</a></li>
+	</ul>
+</nav>
+</header>
+
+	<div class="primary">
+	
+	<main class="main">
+		<div class="single block">
+			<article class="post">
+	<div class="post__meta meta mb">
+<time class="post__meta-published meta-published" datetime="2019-02-21T10:56:35">February 21, 2019</time>
+<time class="post__meta-lastmod meta-lastmod" datetime="2019-03-01T14:56:08">Updated: March 01, 2019</time>
+	</div>
+
+				<h1 class="post__title">Firefly Archlinux</h1>
+				<div class="post__content"><h2 id="background">Background</h2>
+<p>Recently I&rsquo;ve been migrating from &ldquo;free&rdquo; services to self-managed/paid services. One of the &ldquo;free&rdquo; services I used to use was Intuit&rsquo;s Mint.com. I deleted my account over a year ago but have not been able to find a suitable replacement for it. It was super convenient, I will give them that. But I am not a huge fan of the company or the security of the whole thing. I&rsquo;m big on self-hosting what I can, and so I discovered firefly-iii.</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<ul>
+<li>Decide type of installation: <strong>Docker</strong> or <strong>Normal</strong></li>
+<li>If you choose <strong>Docker</strong>: (not covered in these instructions)
+<ul>
+<li>Docker</li>
+<li>Database container/connection</li>
+</ul>
+</li>
+<li>If you choose a <strong>Normal</strong> installation:
+<ul>
+<li>LAMP Stack</li>
+<li>Composer</li>
+<li>Configure Apache (VHost or whatnot)</li>
+</ul>
+</li>
+</ul>
+<h3 id="installation-types">Installation Types</h3>
+<p>I went with a normal installation since I already have Apache and MySQL running locally. If I were to try Docker, I&rsquo;d have to get the container to talk to the SQL instance already running on the host, which would require some finagling, or spinup a MySQL docker container, which would be kind of redundant.</p>
+<h3 id="lamp-stack">LAMP Stack</h3>
+<p>The instructions are not 100% clear for my Arch machine with Apache HTTP server. You will need to get a LAMP stack running. This was already the case for me, and there are instructions available for Arch so I&rsquo;m skipping over that.</p>
+<h3 id="php-modules">PHP Modules</h3>
+<p>With PHP 7.2, a lot of the modules are included in the PHP package for Arch (if not PHP itself). So you only need to install the <code>intl</code> module:</p>
+<p><code>pacman -S php-intl</code></p>
+<p>Then, enable it and other other extensions in your PHP configuration, <code>/etc/php/php.ini</code>. Here&rsquo;s mine, for example</p>
+<pre><code>$ grep -e ^extension= /etc/php/php.ini
+extension=bcmath.so
+extension=bz2.so
+extension=curl.so
+extension=gd.so
+extension=gettext.so
+extension=iconv.so
+extension=intl.so
+extension=ldap.so
+extension=mysqli.so
+extension=pdo_mysql.so
+extension=zip.so
+</code></pre><p>Note that there are a few extras enabled that are not necessary for this install.</p>
+<p>Then reload or restart Apache: <code>sudo systemctl reload httpd</code></p>
+<p>If you receive this message:</p>
+<pre><code>Your requirements could not be resolved to an installable set of packages.
+
+  Problem 1
+    - The requested PHP extension ext-bcmath * is missing from your system. Install or enable PHP's bcmath extension.
+  Problem 2
+    - The requested PHP extension ext-intl * is missing from your system. Install or enable PHP's intl extension.
+  Problem 3
+    - The requested PHP extension ext-ldap * is missing from your system. Install or enable PHP's ldap extension.
+  Problem 4
+    - Installation request for adldap2/adldap2 v9.1.4 -&gt; satisfiable by adldap2/adldap2[v9.1.4].
+    - adldap2/adldap2 v9.1.4 requires ext-ldap * -&gt; the requested PHP extension ldap is missing from your system.
+  Problem 5
+    - adldap2/adldap2 v9.1.4 requires ext-ldap * -&gt; the requested PHP extension ldap is missing from your system.
+    - adldap2/adldap2-laravel v5.1.1 requires adldap2/adldap2 ^9.0 -&gt; satisfiable by adldap2/adldap2[v9.1.4].
+    - Installation request for adldap2/adldap2-laravel v5.1.1 -&gt; satisfiable by adldap2/adldap2-laravel[v5.1.1].
+
+  To enable extensions, verify that they are enabled in your .ini files:
+    - /etc/php/php.ini
+    - /etc/php/conf.d/memcache.ini
+  You can also run `php --ini` inside terminal to see which files are used by PHP in CLI mode.
+</code></pre><p>You haven&rsquo;t installed or enabled the proper modules, and/or you haven&rsquo;t reloaded Apache. You can use the suggested <code>php --ini</code> to see what PHP has been configured with.</p>
+<h3 id="composer">Composer</h3>
+<p>Composer is a dependency/package manager for PHP. Similar to pacman or NPM. On Arch, it&rsquo;s available in the extra repo:</p>
+<p><code>pacman -S composer</code></p>
+<p>Now, we can actually start installing Firefly, using composer. If you are trying to install Firefly as a subdomain (firefly.example.com) or subdirectory (<a href="http://www.example.com/firefly),">www.example.com/firefly),</a> the process is similar.</p>
+<ol>
+<li>Determine the right folder to serve the files from.</li>
+<li>Using composer, copy the project files to that folder.</li>
+<li>Create an Apache virtal host definition to enable the site.</li>
+</ol>
+<p>In my setup, Apache serves <code>/srv/http/</code> by default, but I have Ampache running under <code>/srv/ampache</code> so I kept it consistent and decided on <code>/srv/firefly</code>. You do not need to create the directory, Composer will do that for you.</p>
+<p>To install you run the command:
+<code>composer create-project grumpydictator/firefly-iii --no-dev --prefer-dist firefly-iii &lt;version&gt;</code></p>
+<p>Where <code>&lt;version&gt;</code> is replaced by whatever version you wish to install (ie. the latest). At the time of writing, I installed <code>4.7.12</code>.</p>
+<p>Depending on the user you are running as, and the permissions of the <code>/srv</code> folder, you may have to prepend the Composer command with <code>sudo</code>. I did and I recieved many, many warnings from Composer about it. So, &ldquo;caveat utilitor&rdquo;.</p>
+<p><code>sudo composer</code> vs <code>composer</code></p>
+<p>Have to o+w storage, logs for passport init, migrations</p>
+</div>
+				
+				<footer class="post__footer">
+					
+					
+<div class="post__share share">
+	<a class="share__link btn" title="Share on Twitter" href="https://twitter.com/intent/tweet/?url=https%3a%2f%2fnearwood.dev%2fposts%2ffirefly-archlinux%2f&amp;text=Firefly%20Archlinux" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, 'Share on Twitter', 'width=800,height=450,resizable=yes,toolbar=0,status=0'); return false">
+		<svg class="share__icon" aria-label="Twitter" role="img" width="32" height="32" viewBox="0 0 512 512"><path d="M437 152a72 72 0 0 1-40 12 72 72 0 0 0 32-40 72 72 0 0 1-45 17 72 72 0 0 0-122 65 200 200 0 0 1-145-74 72 72 0 0 0 22 94 72 72 0 0 1-32-7 72 72 0 0 0 56 69 72 72 0 0 1-32 1 72 72 0 0 0 67 50 200 200 0 0 1-105 29 200 200 0 0 0 309-179 200 200 0 0 0 35-37"/></svg>
+	</a>
+	<a class="share__link btn" title="Share on Reddit" href="https://www.reddit.com/submit?url=https%3a%2f%2fnearwood.dev%2fposts%2ffirefly-archlinux%2f&amp;title=Firefly%20Archlinux" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, 'Share on Reddit', 'width=832,height=624,toolbar=0,status=0'); return false">
+		<svg class="share__icon" aria-label="Reddit" role="img" width="32" height="32" viewBox="0 0 512 512"><path fill-rule="evenodd" d="M375 146a32 32 0 1 0-29-46l-65-13c-5-1-9 2-10 6l-22 97c-45 1-85 15-113 36a42 42 0 1 0-45 69l-1 12c0 65 74 117 166 117s166-52 166-117l-1-11a42 42 0 1 0-44-69c-28-21-67-35-111-37l19-86 58 13a32 32 0 0 0 32 29zM190 353c2-1 4 0 5 1 15 11 38 18 61 18s46-6 61-18a7 7 0 0 1 8 10c-18 14-44 21-69 21-25-1-51-7-69-21a6 6 0 0 1 3-11zm23-44a31 31 0 1 1-44-44 31 31 0 0 1 44 44zm130 0a31 31 0 1 0-44-44 31 31 0 0 0 44 44z"/></svg>
+	</a>
+</div>
+				</footer>
+				
+			</article>
+		</div>
+	</main>
+	
+	
+
+
+
+	
+
+	</div>
+	<footer class="footer">
+<div class="footer__social social">
+		<a class="social__link" target="_blank" rel="noopener noreferrer" href="https://twitter.com/nearwood">
+			<svg class="social__icon" aria-label="Twitter" role="img" width="32" height="32" viewBox="0 0 512 512"><path d="M437 152a72 72 0 0 1-40 12 72 72 0 0 0 32-40 72 72 0 0 1-45 17 72 72 0 0 0-122 65 200 200 0 0 1-145-74 72 72 0 0 0 22 94 72 72 0 0 1-32-7 72 72 0 0 0 56 69 72 72 0 0 1-32 1 72 72 0 0 0 67 50 200 200 0 0 1-105 29 200 200 0 0 0 309-179 200 200 0 0 0 35-37"/></svg>
+		</a>
+		<a class="social__link" target="_blank" rel="noopener noreferrer" href="https://github.com/nearwood">
+			<svg class="social__icon" aria-label="Github" role="img" width="32" height="32" viewBox="0 0 512 512"><path d="M335 499c14 0 12 17 12 17H165s-2-17 12-17c13 0 16-6 16-12l-1-50c-71 16-86-28-86-28-12-30-28-37-28-37-24-16 1-16 1-16 26 2 40 26 40 26 22 39 59 28 74 22 2-17 9-28 16-35-57-6-116-28-116-126 0-28 10-51 26-69-3-6-11-32 3-67 0 0 21-7 70 26 42-12 86-12 128 0 49-33 70-26 70-26 14 35 6 61 3 67 16 18 26 41 26 69 0 98-60 120-117 126 10 8 18 24 18 48l-1 70c0 6 3 12 16 12z"/></svg>
+		</a>
+</div>
+	<div class="footer__copyright">© 2020 Nick Earwood. <span class="footer__copyright-credits">Powered by <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/vimux/binario" rel="nofollow noopener" target="_blank">Binario</a> theme.</span></div>
+</footer>
+<script src="/js/menu.js"></script>
+</body>
+</html>

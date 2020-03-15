@@ -29,7 +29,7 @@ So the makers of it had challenges setup.</description>
       
       <guid>https://nearwood.dev/sync-loginlock-screen-wallpaper-to-current-desktop-background/</guid>
       <description>For Windows 7, this turned out to be pretty easy to do via PowerShell. I just had to look for a native image resizing library since the lock screen for some odd reason, only supports JPEGs up to 256KB in size. Probably one of those legacy items left over from NT, like the file system permissions dialogs, and the built-in environment variables editor&amp;hellip;
-I ended up using WIA&#39;s ImageProcess COM library which worked surprisingly well.</description>
+I ended up using WIA&amp;rsquo;s ImageProcess COM library which worked surprisingly well.</description>
     </item>
     
     <item>
@@ -38,7 +38,7 @@ I ended up using WIA&#39;s ImageProcess COM library which worked surprisingly we
       <pubDate>Wed, 15 Mar 2017 17:30:13 +0000</pubDate>
       
       <guid>https://nearwood.dev/windmill-windows-window-unclobberer/</guid>
-      <description>I noticed during the (many) meetings I attend that disconnecting and reconnecting my laptop from the dock reorganizes all my windows to the laptop&#39;s display. This got annoying to have to drag and resize everything when returning to my desk, which has a 3 monitor setup. So, I wrote this small Win32 application to allow you to save the positioning and size of all windows and then restore them at a later time.</description>
+      <description>I noticed during the (many) meetings I attend that disconnecting and reconnecting my laptop from the dock reorganizes all my windows to the laptop&amp;rsquo;s display. This got annoying to have to drag and resize everything when returning to my desk, which has a 3 monitor setup. So, I wrote this small Win32 application to allow you to save the positioning and size of all windows and then restore them at a later time.</description>
     </item>
     
     <item>
@@ -47,7 +47,7 @@ I ended up using WIA&#39;s ImageProcess COM library which worked surprisingly we
       <pubDate>Tue, 08 Mar 2016 01:47:20 +0000</pubDate>
       
       <guid>https://nearwood.dev/raspberry-pi-robot-assembly-part-2/</guid>
-      <description>This was the hardest part. If you wire the wrong things together you can brick your Pi. I took some time to decide on which pins to use, and after assembly and testing everything worked. I&#39;ll explain which pins I picked, but note that this information will not work with other hardware configurations.[I originally had a Model B Pi, but due to needing the second hardware PWM (which is hidden on the B), switched to the B+.</description>
+      <description>This was the hardest part. If you wire the wrong things together you can brick your Pi. I took some time to decide on which pins to use, and after assembly and testing everything worked. I&amp;rsquo;ll explain which pins I picked, but note that this information will not work with other hardware configurations.[I originally had a Model B Pi, but due to needing the second hardware PWM (which is hidden on the B), switched to the B+.</description>
     </item>
     
     <item>
@@ -66,7 +66,7 @@ I get a lot of hits from Russia on that site. Actually, I get a lot of hits from
       <pubDate>Sun, 02 Aug 2015 23:25:29 +0000</pubDate>
       
       <guid>https://nearwood.dev/find-videos-by-fps/</guid>
-      <description>I produced some videos in 60 FPS, but couldn&#39;t remember which ones. Since, of course, I didn&#39;t label their FPS at the time, I needed to find them in vast sea of 30 FPS videos. Rather than just use a simple grep with ffmpeg to find which ones, I thought it might be more useful to find all videos that have a certain FPS threshold.
+      <description>I produced some videos in 60 FPS, but couldn&amp;rsquo;t remember which ones. Since, of course, I didn&amp;rsquo;t label their FPS at the time, I needed to find them in vast sea of 30 FPS videos. Rather than just use a simple grep with ffmpeg to find which ones, I thought it might be more useful to find all videos that have a certain FPS threshold.
 Usage: ./60fps.sh [directory]
 #!/bin/bashSAVEIFS=$IFSIFS=$&#39;\n&#39;function fpscheck{FPS=$(ffmpeg -i &#34;</description>
     </item>
@@ -101,7 +101,7 @@ Some things I added:
       <guid>https://nearwood.dev/msqur-update-v0-60b/</guid>
       <description>A little while ago I updated msqur.com to 0.60b. Changes include:
  Added engine make/code fields for uploads Added view count and increment  And less visibly:
- Finished OO refactor Update API documentation (not public yet) Added deployment scripts  I still haven&#39;t finished INI file parsing 100%. There&#39;s a bit more to do, but I&#39;ve been busy with work and other projects. I&#39;m thinking of releasing the project under an appropriate open-source license once I finish that, so hopefully others can join in on the fun.</description>
+ Finished OO refactor Update API documentation (not public yet) Added deployment scripts  I still haven&amp;rsquo;t finished INI file parsing 100%. There&amp;rsquo;s a bit more to do, but I&amp;rsquo;ve been busy with work and other projects. I&amp;rsquo;m thinking of releasing the project under an appropriate open-source license once I finish that, so hopefully others can join in on the fun.</description>
     </item>
     
     <item>
@@ -110,9 +110,9 @@ Some things I added:
       <pubDate>Mon, 16 Feb 2015 21:27:29 +0000</pubDate>
       
       <guid>https://nearwood.dev/msqur-update-v0-53b/</guid>
-      <description>I&#39;ve rolled out the update 0.53b to msqur.com. This includes:
+      <description>I&amp;rsquo;ve rolled out the update 0.53b to msqur.com. This includes:
  INI Parsing (i.e. better MSQ support) Bug fixes and better error handling  So now it is a bit more usable. The INI Parsing turns out to be a bit more complex than I anticipated, but I rolled out a decent intermediate update in the meantime.
-Before completing the INI parsing (or anything else for that matter), I&#39;ve decided to overhaul the entire codebase.</description>
+Before completing the INI parsing (or anything else for that matter), I&amp;rsquo;ve decided to overhaul the entire codebase.</description>
     </item>
     
     <item>
@@ -121,7 +121,7 @@ Before completing the INI parsing (or anything else for that matter), I&#39;ve d
       <pubDate>Mon, 02 Feb 2015 01:06:46 +0000</pubDate>
       
       <guid>https://nearwood.dev/msqur-update/</guid>
-      <description>Well, the holidays are long over and I haven&#39;t updated msqur.com in a while. I&#39;m adding some configuration management to it, so nothing visible will happen for a while. What&#39;s planned, however, is .ini file parsing so that .msq files can be parsed according to the INI file version they use. That is, I will parse the INI file for the schema to a .msq file instead of hardcoding it. This way showing a .</description>
+      <description>Well, the holidays are long over and I haven&amp;rsquo;t updated msqur.com in a while. I&amp;rsquo;m adding some configuration management to it, so nothing visible will happen for a while. What&amp;rsquo;s planned, however, is .ini file parsing so that .msq files can be parsed according to the INI file version they use. That is, I will parse the INI file for the schema to a .msq file instead of hardcoding it. This way showing a .</description>
     </item>
     
     <item>
@@ -130,8 +130,8 @@ Before completing the INI parsing (or anything else for that matter), I&#39;ve d
       <pubDate>Wed, 31 Dec 2014 01:39:42 +0000</pubDate>
       
       <guid>https://nearwood.dev/msqur-com-msq-file-sharing-site/</guid>
-      <description>Well, I&#39;ve only been working on it a little so far, but I suppose it&#39;s good enough to post about at this point.
-The site is msqur.com, and it&#39;s for Megasquirt ECU users to share their tunes (from the TunerStudio MS software). You can upload (multiple) .msq files, assign some engine information to them at upload, and share them with other people for troubleshooting or tuning help. The goal is to make something easier than attaching a file to a forum post that others have to download and fire up the full tuning software suite to just view it.</description>
+      <description>Well, I&amp;rsquo;ve only been working on it a little so far, but I suppose it&amp;rsquo;s good enough to post about at this point.
+The site is msqur.com, and it&amp;rsquo;s for Megasquirt ECU users to share their tunes (from the TunerStudio MS software). You can upload (multiple) .msq files, assign some engine information to them at upload, and share them with other people for troubleshooting or tuning help. The goal is to make something easier than attaching a file to a forum post that others have to download and fire up the full tuning software suite to just view it.</description>
     </item>
     
     <item>
@@ -140,15 +140,15 @@ The site is msqur.com, and it&#39;s for Megasquirt ECU users to share their tune
       <pubDate>Mon, 01 Dec 2014 02:26:47 +0000</pubDate>
       
       <guid>https://nearwood.dev/raspberry-pi-robot-cross-compiling/</guid>
-      <description>&lt;p&gt;Now that you have the hardware built and tested (although that&#39;s not necessary), you can either use the code I&#39;ve written-which is specific to the hardware and environment I have, or compile your own version. If you want to compile your own there are two options:&lt;/p&gt;
+      <description>&lt;p&gt;Now that you have the hardware built and tested (although that&amp;rsquo;s not necessary), you can either use the code I&amp;rsquo;ve written-which is specific to the hardware and environment I have, or compile your own version. If you want to compile your own there are two options:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Compile on the Pi itself&lt;/li&gt;
 &lt;li&gt;Compile on an ARM virtual machine&lt;/li&gt;
 &lt;li&gt;Cross-compile on a faster machine&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;The trade off? Compiling on the Pi is slow (very slow). The virtual machine is a marked improvement for compiling speed, but is complicated to setup. Cross-compiling is about the same difficulty as setting up a virtual machine but a bit faster and less &amp;ldquo;bulky&amp;rdquo;. So it depends. The virtual machine is nice if you have a lot of libraries you want to use, since you&#39;ll have to compile all of them to be available for linking. If any of them have poor autoconfig support, it might be a pain to fix if you weren&#39;t already on the target machine. But, since I just needed one or two popular libraries, I decided to setup cross-compiling from my host (x86_64) machine.&lt;/p&gt;
-&lt;p&gt;The last time I setup cross-compiling it was on Gentoo, and it wasn&#39;t pleasant. However, after a little bit of research it looks like the &lt;a href=&#34;https://crosstool-ng.org/&#34; target=&#34;_blank&#34;&gt;crosstool-ng project&lt;/a&gt; is pretty popular and useful. I only had to patch one tiny thing.&lt;/p&gt;
-&lt;p&gt;Here&#39;s the overall process:&lt;/p&gt;
+&lt;p&gt;The trade off? Compiling on the Pi is slow (very slow). The virtual machine is a marked improvement for compiling speed, but is complicated to setup. Cross-compiling is about the same difficulty as setting up a virtual machine but a bit faster and less &amp;ldquo;bulky&amp;rdquo;. So it depends. The virtual machine is nice if you have a lot of libraries you want to use, since you&amp;rsquo;ll have to compile all of them to be available for linking. If any of them have poor autoconfig support, it might be a pain to fix if you weren&amp;rsquo;t already on the target machine. But, since I just needed one or two popular libraries, I decided to setup cross-compiling from my host (x86_64) machine.&lt;/p&gt;
+&lt;p&gt;The last time I setup cross-compiling it was on Gentoo, and it wasn&amp;rsquo;t pleasant. However, after a little bit of research it looks like the &lt;a href=&#34;https://crosstool-ng.org/&#34; target=&#34;_blank&#34;&gt;crosstool-ng project&lt;/a&gt; is pretty popular and useful. I only had to patch one tiny thing.&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s the overall process:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Install crosstool-ng&lt;/li&gt;
 &lt;li&gt;Configure a cross toolchain with it&lt;/li&gt;
@@ -173,7 +173,7 @@ The site is msqur.com, and it&#39;s for Megasquirt ECU users to share their tune
       <pubDate>Wed, 12 Nov 2014 02:04:43 +0000</pubDate>
       
       <guid>https://nearwood.dev/carduino-2-0-intel-galileo-setup/</guid>
-      <description>&lt;p&gt;Out of the box the Galileo is setup to run sketches uploaded from volatile memory, which is really lame. I didn&#39;t spend much time with it using the stock SPI kernel. So, an SD card is pretty much required to do any serious development with this board. This is not a bad thing (although you aren&#39;t running in real-time anymore), since having a full OS to use has lots of advantages. Plus, this way I can automate the build process in a way I&#39;m more familiar with.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Out of the box the Galileo is setup to run sketches uploaded from volatile memory, which is really lame. I didn&amp;rsquo;t spend much time with it using the stock SPI kernel. So, an SD card is pretty much required to do any serious development with this board. This is not a bad thing (although you aren&amp;rsquo;t running in real-time anymore), since having a full OS to use has lots of advantages. Plus, this way I can automate the build process in a way I&amp;rsquo;m more familiar with.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -182,7 +182,7 @@ The site is msqur.com, and it&#39;s for Megasquirt ECU users to share their tune
       <pubDate>Sun, 09 Nov 2014 18:19:24 +0000</pubDate>
       
       <guid>https://nearwood.dev/carduino-2-0/</guid>
-      <description>Over a year ago I got an Arduino Uno and a CAN-BUS Shield to try and make some kind of datalogger for my car. I was also interested in using the OpenXC library with it (which might need a port if there isn&#39;t one already, since it uses the Digilent chipKIT Max32 development board). While OpenXC allows interfacing with Android stuff for phones, I&#39;m more interested in a self-contained datalogging type deal.</description>
+      <description>Over a year ago I got an Arduino Uno and a CAN-BUS Shield to try and make some kind of datalogger for my car. I was also interested in using the OpenXC library with it (which might need a port if there isn&amp;rsquo;t one already, since it uses the Digilent chipKIT Max32 development board). While OpenXC allows interfacing with Android stuff for phones, I&amp;rsquo;m more interested in a self-contained datalogging type deal.</description>
     </item>
     
     <item>
@@ -194,7 +194,7 @@ The site is msqur.com, and it&#39;s for Megasquirt ECU users to share their tune
       <description>&lt;h3 id=&#34;update-dec-13-2014&#34;&gt;Update Dec. 13, 2014:&lt;/h3&gt;
 &lt;p&gt;These scripts are out of date. NFS has the &lt;a href=&#34;https://wp-cli.org/&#34; target=&#34;_blank&#34;&gt;WP-CLI&lt;/a&gt; installed allowing for much, much easier upgrades, backups, etc. See the &lt;a href=&#34;https://github.com/nearwood/nfs-scripts&#34; target=&#34;_blank&#34;&gt;repository&lt;/a&gt; for information.&lt;/p&gt;
 &lt;h3 id=&#34;originally-posted-on-sept-10th-2014&#34;&gt;Originally posted on Sept. 10th, 2014:&lt;/h3&gt;
-&lt;p&gt;If you use NearlyFreeSpeech.net as your web host, you may have found it difficult to automate WordPress updates. I&#39;ve made a script that does this for you. It also calls my backup and permissions fixing scripts, which I include here as well.&lt;/p&gt;
+&lt;p&gt;If you use NearlyFreeSpeech.net as your web host, you may have found it difficult to automate WordPress updates. I&amp;rsquo;ve made a script that does this for you. It also calls my backup and permissions fixing scripts, which I include here as well.&lt;/p&gt;
 &lt;p&gt;Beware of some notes and assumptions though:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Assumes WordPress is installed in /home/public/ (not a subdir of it)&lt;/li&gt;
@@ -210,7 +210,7 @@ The site is msqur.com, and it&#39;s for Megasquirt ECU users to share their tune
       
       <guid>https://nearwood.dev/custom-speed-app-update/</guid>
       <description>I update Custom Speed to 1.1. Changes include:
- An actual theme (consistent colors) More units New icon  2.0 will include an actual settings page that will allow the units to be selected from an easier control, a setting for keeping the display on, and other minor UI improvements. There&#39;s no ETA currently for 2.0.</description>
+ An actual theme (consistent colors) More units New icon  2.0 will include an actual settings page that will allow the units to be selected from an easier control, a setting for keeping the display on, and other minor UI improvements. There&amp;rsquo;s no ETA currently for 2.0.</description>
     </item>
     
     <item>
@@ -219,7 +219,7 @@ The site is msqur.com, and it&#39;s for Megasquirt ECU users to share their tune
       <pubDate>Tue, 31 Dec 2013 03:45:18 +0000</pubDate>
       
       <guid>https://nearwood.dev/exporting-drupal-pagesposts-to-wordpress/</guid>
-      <description>I&#39;ve decided to consolidate some of my web presence. My car&#39;s website will be merged into this one. Going from WordPress to Drupal is easy, but the other way is not. I found a couple links for SQL scripts to import lots of posts automatically, but these were and are easily outdated by Drupal and to a lesser extent WordPress.
+      <description>I&amp;rsquo;ve decided to consolidate some of my web presence. My car&amp;rsquo;s website will be merged into this one. Going from WordPress to Drupal is easy, but the other way is not. I found a couple links for SQL scripts to import lots of posts automatically, but these were and are easily outdated by Drupal and to a lesser extent WordPress.
 It was easier just to create my own SQL JOIN statement and export the resulting list.</description>
     </item>
     
@@ -229,7 +229,23 @@ It was easier just to create my own SQL JOIN statement and export the resulting 
       <pubDate>Wed, 11 Dec 2013 01:52:16 +0000</pubDate>
       
       <guid>https://nearwood.dev/python-script-to-write-a-word-using-the-word/</guid>
-      <description>&lt;p&gt;That&#39;s the best title I can come up with. The idea is to do this:&lt;/p&gt;</description>
+      <description>&lt;p&gt;That&amp;rsquo;s the best title I can come up with. The idea is to do this:&lt;/p&gt;
+&lt;pre&gt;THISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHIS
+    THISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHIS
+    THIS            THIS    THIS    THIS            THIS            THIS
+    THIS            THIS    THIS    THIS            THIS            THIS
+    THISTHIS    THISTHIS    THIS    THISTHIS    THISTHIS    THISTHISTHIS
+    THISTHIS    THISTHIS    THIS    THISTHIS    THISTHIS    THISTHISTHIS
+    THISTHIS    THISTHIS            THISTHIS    THISTHIS            THIS
+    THISTHIS    THISTHIS            THISTHIS    THISTHIS            THIS
+    THISTHIS    THISTHIS    THIS    THISTHIS    THISTHIS            THIS
+    THISTHIS    THISTHIS    THIS    THISTHIS    THISTHISTHISTHIS    THIS
+    THISTHIS    THISTHIS    THIS    THISTHIS    THISTHISTHISTHIS    THIS
+    THISTHIS    THISTHIS    THIS    THIS            THIS            THIS
+    THISTHIS    THISTHIS    THIS    THIS            THIS            THIS
+    THISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHIS
+    THISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHISTHIS&lt;/pre&gt;
+&lt;p&gt;With any number of alphanumeric characters. The idea comes from a reddit user posting something similar, and then my mind wandered.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -240,7 +256,7 @@ It was easier just to create my own SQL JOIN statement and export the resulting 
       <guid>https://nearwood.dev/released-my-first-android-app/</guid>
       <description>After searching for a simple GPS Speedometer app that provided a speed readout in more than just 2 units (a free one, of course), I thought it would be the perfect project for my first Android app. It took only a few hours to make it, the Eclipse ADT makes this pretty easy.
 Google Play link
-I&#39;m glad I&#39;ve gotten more familiar with the publishing process. It&#39;ll help when I release a game I&#39;ve been tinkering with for a few years.</description>
+I&amp;rsquo;m glad I&amp;rsquo;ve gotten more familiar with the publishing process. It&amp;rsquo;ll help when I release a game I&amp;rsquo;ve been tinkering with for a few years.</description>
     </item>
     
     <item>
@@ -249,8 +265,8 @@ I&#39;m glad I&#39;ve gotten more familiar with the publishing process. It&#39;l
       <pubDate>Sat, 27 Apr 2013 02:37:32 +0000</pubDate>
       
       <guid>https://nearwood.dev/libgdx/</guid>
-      <description>I&#39;ve been busy these past few weeks trying to get my 280Z autocross ready, and porting my C++/DirectX windows game to Java with LibGDX.
-Overall I am very impressed with LibGDX. The GUI API isn&#39;t very good though. I&#39;ve decided to roll my own (again!) for this game. At least the first release. I see that the LibGDX one supports nice fonts and textures and whatnot. It shouldn&#39;t be too difficult to reimplement the base class with it and refactor when it matures.</description>
+      <description>I&amp;rsquo;ve been busy these past few weeks trying to get my 280Z autocross ready, and porting my C++/DirectX windows game to Java with LibGDX.
+Overall I am very impressed with LibGDX. The GUI API isn&amp;rsquo;t very good though. I&amp;rsquo;ve decided to roll my own (again!) for this game. At least the first release. I see that the LibGDX one supports nice fonts and textures and whatnot. It shouldn&amp;rsquo;t be too difficult to reimplement the base class with it and refactor when it matures.</description>
     </item>
     
     <item>
@@ -259,7 +275,7 @@ Overall I am very impressed with LibGDX. The GUI API isn&#39;t very good though.
       <pubDate>Thu, 31 Jan 2013 02:36:47 +0000</pubDate>
       
       <guid>https://nearwood.dev/carduino/</guid>
-      <description>I&#39;ve been working on a small Arduino project to datalog my commute. I&#39;m using an Arduino Uno with SK Pang&#39;s CAN Bus Shield. I also have added the optional GPS and LCD to the mix. There is an micro-SD card slot for storage.
+      <description>I&amp;rsquo;ve been working on a small Arduino project to datalog my commute. I&amp;rsquo;m using an Arduino Uno with SK Pang&amp;rsquo;s CAN Bus Shield. I also have added the optional GPS and LCD to the mix. There is an micro-SD card slot for storage.
 The aim of the project is just to collect data. As much as I can put into the SD card. I plan on calculating driving efficiency using somewhat arbitrary measures like throttle modulation, temperature, etc.</description>
     </item>
     
@@ -269,7 +285,7 @@ The aim of the project is just to collect data. As much as I can put into the SD
       <pubDate>Fri, 30 Nov 2012 01:25:45 +0000</pubDate>
       
       <guid>https://nearwood.dev/refactoring-with-regular-expressions/</guid>
-      <description>I&#39;m re-learning JavaScript, and I noticed I was refactoring functions a lot on some old code. I&#39;m putting some useful stuff here for reference:
+      <description>I&amp;rsquo;m re-learning JavaScript, and I noticed I was refactoring functions a lot on some old code. I&amp;rsquo;m putting some useful stuff here for reference:
 aFunc(blah) → this.aFunc = function(blah)
 Find: function (\w+)(
 Replace with: this.\1 = function(
@@ -279,16 +295,6 @@ Replace with: \tfunction \1(
  Change aFunc(blah) to SOME.qualifier.aFunc(blah)
 **Find: **\t(\w+()
 **Replace with: **\tSOME.qualifier.\1</description>
-    </item>
-    
-    <item>
-      <title>The Other End of UXD</title>
-      <link>https://nearwood.dev/the-other-end-of-uxd/</link>
-      <pubDate>Sun, 08 Jul 2012 22:48:23 +0000</pubDate>
-      
-      <guid>https://nearwood.dev/the-other-end-of-uxd/</guid>
-      <description>What do you do, as a software maker, to discourage someone from uninstalling your software? Make it take a lot of clicking:
-Excellent job, WildTangent. Now, I thought I would be clever and just focus onto the listbox and press the space bar and down arrow key multiple&amp;hellip; multiple times. Well, it would seem they thought of that scenario and made the Cancel button the object that receives focus right after the listbox.</description>
     </item>
     
   </channel>

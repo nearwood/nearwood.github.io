@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Uncategorized on Nick</title>
+    <link>https://nearwood.dev/categories/uncategorized/</link>
+    <description>Recent content in Uncategorized on Nick</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© 2019 Nicholas Earwood</copyright>
+    
+	<atom:link href="https://nearwood.dev/categories/uncategorized/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>HTPC v3 – Software RAID, Encryption, Backup</title>
+      <link>https://nearwood.dev/posts/2017/htpc-3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://nearwood.dev/posts/2017/htpc-3/</guid>
+      <description>Create (virtual) block device.
+Create GPT tables rather than on RAW disk.
+gdisk /dev/sdX
+new partion, accept default starting sector, -100MB end sector, FD00 type
+ Create encrypted virtual block device.</description>
+    </item>
+    
+    <item>
+      <title>Migrating to Firefox Part 2</title>
+      <link>https://nearwood.dev/posts/2018/using-firefox/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://nearwood.dev/posts/2018/using-firefox/</guid>
+      <description>https://mobile.nytimes.com/2018/06/20/technology/personaltech/firefox-chrome-browser-privacy.html
+And notes from notepad++</description>
+    </item>
+    
+    <item>
+      <title>Windows 7 Setup</title>
+      <link>https://nearwood.dev/posts/2017/windows-base/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://nearwood.dev/posts/2017/windows-base/</guid>
+      <description>Install skinny network drivers
+Install Chrome, Firefox
+Install skinny graphics drivers
+Install Truecrypt Veracrypt, encrypt system drive
+Install Microsoft Security Essentials
+Taskbar buttons: Combine when taskbar is full
+Recycle bin: 1024MB max instead of percentage
+Disable System Restore
+Disable Aero Shake
+Show all file extensions
+Disable automatic restarts on updates</description>
+    </item>
+    
+  </channel>
+</rss>

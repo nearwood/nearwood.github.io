@@ -72,15 +72,15 @@
 				<h1 class="post__title">Raspberry Pi Robot</h1>
 				<div class="post__content"><p>So, a while back I gave my wife a <a href="https://goldenarmor.com/farscape-drd/" target="_blank">Farscape DRD kit</a>. I promised to make it in to a robot. How hard could it be? Well, not too bad. A little more expensive than planned, though&hellip;</p>
 <img class="lostImage" src="" alt="Image no longer available :("/>
-<p>The hardest part was finding a wheel and chassis setup that could hold the weight and fit underneath. Under the DRD shell, after some cleaning up, I've got about 27x20x12cm of space. After checking up on <a href="https://www.sparkfun.com/categories/181" target="_blank">SparkFun</a> every now and then I came across this kit, the <a href="https://www.sparkfun.com/products/12091" target="_blank">DAGU Multi-Chassis in Tank configuration</a>:</p>
+<p>The hardest part was finding a wheel and chassis setup that could hold the weight and fit underneath. Under the DRD shell, after some cleaning up, I&rsquo;ve got about 27x20x12cm of space. After checking up on <a href="https://www.sparkfun.com/categories/181" target="_blank">SparkFun</a> every now and then I came across this kit, the <a href="https://www.sparkfun.com/products/12091" target="_blank">DAGU Multi-Chassis in Tank configuration</a>:</p>
 <p><img class="alignnone" src="https://cdn.sparkfun.com//assets/parts/8/7/2/3/Chasis-Angle.jpg" alt="" width="600" height="600" /></p>
 <p>At 16x15x6cm, it appeared to be the largest kit that would fit entirely inside the DRD shell. It came with two gearboxed motors, but no encoders.</p>
 <p>Another option was the <a href="https://www.sparkfun.com/products/10336" target="_blank">Rover 5</a>:</p>
 <p><img class="alignnone" src="https://cdn.sparkfun.com//assets/parts/4/7/4/5/10336-01.jpg" alt="" width="600" height="600" /></p>
-<p>A nice chassis with motors At 25x23x8 it was tad too big, although you can adjust the wheelbase, you can't adjust the track width, so the wheels would have to stick out a bit. It also has really nice encoders built it (unlike the If the current one</p>
-<p>The one I really wanted to use was this $250 chassis, the <a href="https://www.sparkfun.com/products/12719" target="_blank">T'Rex Tank</a>:</p>
+<p>A nice chassis with motors At 25x23x8 it was tad too big, although you can adjust the wheelbase, you can&rsquo;t adjust the track width, so the wheels would have to stick out a bit. It also has really nice encoders built it (unlike the If the current one</p>
+<p>The one I really wanted to use was this $250 chassis, the <a href="https://www.sparkfun.com/products/12719" target="_blank">T&rsquo;Rex Tank</a>:</p>
 <p><img class="alignnone" src="https://cdn.sparkfun.com//assets/parts/9/4/6/8/12719-01.jpg" alt="" width="600" height="600" /></p>
-<p>But it's 36x18x13, so the shell would sit on top and it would be kind of obvious I wasn't even trying to make the DRD look realistic.</p>
+<p>But it&rsquo;s 36x18x13, so the shell would sit on top and it would be kind of obvious I wasn&rsquo;t even trying to make the DRD look realistic.</p>
 <p>Oh, well, DAGU Chassis it is. So, that chosen I needed the hardware to control it. I already had an unused Raspberry Pi from my Litecoin mining days, I just needed something to control the motors. So, altogether, this is what I have so far:</p>
 <p> </p>
 <ul>
@@ -100,7 +100,7 @@
 <li><a href="https://www.sparkfun.com/products/11375" target="_blank">Wire</a> - $16</li>
 <li><a href="https://www.sparkfun.com/products/9194" target="_blank">Jumpers</a> - $25 (!)</li>
 </ul>
-<p>Total cost: Over $200 including shipping, tax and whatnot. I had to get some items from Adafruit, and some from SparkFun, and then others were laying around. Add in the cost of the Litecoin ASIC mining hardware and &hellip; well why would you do that? What's done is done.</p>
+<p>Total cost: Over $200 including shipping, tax and whatnot. I had to get some items from Adafruit, and some from SparkFun, and then others were laying around. Add in the cost of the Litecoin ASIC mining hardware and &hellip; well why would you do that? What&rsquo;s done is done.</p>
 <p>The TB6612FNG board supports 2A peak, 1A continuous current for each motor circuit which is plenty to drive the DAGU motors. I have one power supply for the Pi itself using the 5 AA battery case that came with the chassis, and an 8 AA battery case from ADAFruit, for 15V to drive the motors and the 3.3/5V power supply for the motor controller.</p>
 <p>So, now you have a bunch of parts.</p>
 <img class="lostImage" src="" alt="Image no longer available :("/>

@@ -18,15 +18,15 @@
       <pubDate>Mon, 01 Dec 2014 02:26:47 +0000</pubDate>
       
       <guid>https://nearwood.dev/raspberry-pi-robot-cross-compiling/</guid>
-      <description>&lt;p&gt;Now that you have the hardware built and tested (although that&#39;s not necessary), you can either use the code I&#39;ve written-which is specific to the hardware and environment I have, or compile your own version. If you want to compile your own there are two options:&lt;/p&gt;
+      <description>&lt;p&gt;Now that you have the hardware built and tested (although that&amp;rsquo;s not necessary), you can either use the code I&amp;rsquo;ve written-which is specific to the hardware and environment I have, or compile your own version. If you want to compile your own there are two options:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Compile on the Pi itself&lt;/li&gt;
 &lt;li&gt;Compile on an ARM virtual machine&lt;/li&gt;
 &lt;li&gt;Cross-compile on a faster machine&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;The trade off? Compiling on the Pi is slow (very slow). The virtual machine is a marked improvement for compiling speed, but is complicated to setup. Cross-compiling is about the same difficulty as setting up a virtual machine but a bit faster and less &amp;ldquo;bulky&amp;rdquo;. So it depends. The virtual machine is nice if you have a lot of libraries you want to use, since you&#39;ll have to compile all of them to be available for linking. If any of them have poor autoconfig support, it might be a pain to fix if you weren&#39;t already on the target machine. But, since I just needed one or two popular libraries, I decided to setup cross-compiling from my host (x86_64) machine.&lt;/p&gt;
-&lt;p&gt;The last time I setup cross-compiling it was on Gentoo, and it wasn&#39;t pleasant. However, after a little bit of research it looks like the &lt;a href=&#34;https://crosstool-ng.org/&#34; target=&#34;_blank&#34;&gt;crosstool-ng project&lt;/a&gt; is pretty popular and useful. I only had to patch one tiny thing.&lt;/p&gt;
-&lt;p&gt;Here&#39;s the overall process:&lt;/p&gt;
+&lt;p&gt;The trade off? Compiling on the Pi is slow (very slow). The virtual machine is a marked improvement for compiling speed, but is complicated to setup. Cross-compiling is about the same difficulty as setting up a virtual machine but a bit faster and less &amp;ldquo;bulky&amp;rdquo;. So it depends. The virtual machine is nice if you have a lot of libraries you want to use, since you&amp;rsquo;ll have to compile all of them to be available for linking. If any of them have poor autoconfig support, it might be a pain to fix if you weren&amp;rsquo;t already on the target machine. But, since I just needed one or two popular libraries, I decided to setup cross-compiling from my host (x86_64) machine.&lt;/p&gt;
+&lt;p&gt;The last time I setup cross-compiling it was on Gentoo, and it wasn&amp;rsquo;t pleasant. However, after a little bit of research it looks like the &lt;a href=&#34;https://crosstool-ng.org/&#34; target=&#34;_blank&#34;&gt;crosstool-ng project&lt;/a&gt; is pretty popular and useful. I only had to patch one tiny thing.&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s the overall process:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Install crosstool-ng&lt;/li&gt;
 &lt;li&gt;Configure a cross toolchain with it&lt;/li&gt;

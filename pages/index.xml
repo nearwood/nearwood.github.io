@@ -18,7 +18,7 @@
       <pubDate>Thu, 11 Dec 2014 03:10:39 +0000</pubDate>
       
       <guid>https://nearwood.dev/pages/msqur/</guid>
-      <description>So, years ago I made a C# Application to view .msq tune files from Megasquirt (the DIY car ECU). Specifically the VE and Spark tables. I ported it to Java since using .NET limits my audience to virtually just Windows users. It was okay. It allowed you to export images which you could then post, but it didn&#39;t really save much time over taking screenshots of the tuning software itself and posting those.</description>
+      <description>So, years ago I made a C# Application to view .msq tune files from Megasquirt (the DIY car ECU). Specifically the VE and Spark tables. I ported it to Java since using .NET limits my audience to virtually just Windows users. It was okay. It allowed you to export images which you could then post, but it didn&amp;rsquo;t really save much time over taking screenshots of the tuning software itself and posting those.</description>
     </item>
     
     <item>

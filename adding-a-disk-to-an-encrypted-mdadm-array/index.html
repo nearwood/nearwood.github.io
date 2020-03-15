@@ -78,22 +78,22 @@ The case is a Fractal Design Define Mini, and I am thoroughly impressed. Six 3.5
 <p>So, at first I was worried it would be a huge PITA to add another drive, since I have a fake RAID under a encrypted volume. But, Linux. It was easy. Keep in mind in this instance,  the new device node is <code>/dev/sdf</code>, yours will likely be different. After connecting the disk and powering up, partition the disk. I have set it up identical to all other disks, 128MiB EFI partition on <code>sdf1</code>, 931.4GiB <code>sdf2</code> (you can use <code>fdisk</code>/<code>gdisk</code> to partition manually or <code>sfdisk</code> to copy the partition structure of another drive). Having the EFI partition on each disk allows me to boot if any drive fails, since the mdraid is setup only across the second partitions on each drive. That is, my boot partition is not part of the array. Note that you have to synchronize any updated kernel or boot files across these boot partitions. This can be automated with a kernel build time hook.</p>
 <p>Now you can add the disk (more accurately, the partition) as a spare:</p>
 <p><code class="bash">mdadm &ndash;add /dev/md0 /dev/sdf2</code></p>
-<p>If you cat <code>/proc/mdstat</code>, you will see it's been added as a spare:</p>
+<p>If you cat <code>/proc/mdstat</code>, you will see it&rsquo;s been added as a spare:</p>
 <pre>md0 : active raid6 sdf2[5](S) sdc2[2] sdb2[1] sda2[0] sde2[4] sdd2[3]</pre>
 <p>mdadm will now resync the array, which will take a while (about 4 hours, in my case). Be sure to adjust your mdadm speed limits in /proc/sys/dev/raid/speed_limit_max to speed things up considerably.</p>
-<p>Once that's done, you can grow the array. You can technically grow an array while it's still syncing but when sensitive data is in play I tend to get a little superstitious:</p>
+<p>Once that&rsquo;s done, you can grow the array. You can technically grow an array while it&rsquo;s still syncing but when sensitive data is in play I tend to get a little superstitious:</p>
 <p><code class="bash">mdadm &ndash;grow /dev/md0 &ndash;raid-devices=6</code></p>
 <p>This will, again, take hours and since I have all of our digital lives on here (and backed up, but still), I am still too nervous to continue until after the reshape is done. Though you can without issue, I think&hellip;</p>
 <pre>md0 : active raid6 sdf2[5] sdc2[2] sdb2[1] sda2[0] sde2[4] sdd2[3]
  2929501200 blocks super 1.2 level 6, 16k chunk, algorithm 2 [6/6] [UUUUUU]
  [&gt;....................] reshape = 0.1% (1146936/976500400) finish=585.9min speed=27744K/sec</pre>
-<p>Now normally this is where you'd extend the filesystem, but the next layer is the encryption, so we have to resize that first:</p>
+<p>Now normally this is where you&rsquo;d extend the filesystem, but the next layer is the encryption, so we have to resize that first:</p>
 <p><code class="bash">cryptsetup resize root</code></p>
 <p>That only takes a few seconds, since it just adds available free space. Now you can finally extend the filesystem itself:</p>
 <pre>/dev/mapper/root 2.7T 2.2T 540G 81% /</pre>
 <p><code class="bash">resize2fs /dev/mapper/root</code></p>
 <pre>/dev/mapper/root 3.6T 2.2T 1.5T 61% /</pre>
-<p>That's it. A dmcrypt layer really only adds one quick command to the procedure. Now hopefully it lasts this way for a while!</p></div>
+<p>That&rsquo;s it. A dmcrypt layer really only adds one quick command to the procedure. Now hopefully it lasts this way for a while!</p></div>
 				
 				<footer class="post__footer">
 					

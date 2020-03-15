@@ -73,12 +73,12 @@ However, I had problems bridging the QEMU to the Ubuntu host, which was bridged 
 				<div class="post__content"><p>After fumbling around with various downloads and patches, I was able to find a working QEMU build for windows. I am running Windows 7 64-bit, and I wanted to run an ARM system (specifically, to develop for a Stratus plug computer). Before this, I was running a virtualized Ubuntu using VirtualBox and then running QEMU within that. Performance was not noticeably bad.</p>
 <p>However, I had problems bridging the QEMU to the Ubuntu host, which was bridged itself. I stumbled upon a page about <a href="https://www.smallbulb.net/2012/225-emulating-raspberry-pi" target="_blank">emulating a Rasberry Pi within QEMU on Windows</a>. The <a href="https://homepage3.nifty.com/takeda-toshiya/qemu/qemu-0.13.0-windows.zip" target="_blank">QEMU download link</a> there was the ticket.</p>
 <p>Ignore the rest of the post there, all you need is QEMU. Using the kernel and ramdisk <a href="https://people.debian.org/~aurel32/qemu/armel/" target="_blank">here</a> (and instructions from <a href="https://www.aurel32.net/info/debian_arm_qemu.php" target="_blank">here</a>), you can install Debian on your ARM system.</p>
-<p>To launch, first create or download a disk image. Then copy the qemu-system-arm.exe from the bin folder to QEMU's root folder (it was easier than specifying the paths manually). Then, you can modify the last line in the batch file provided (qemu-win.bat):</p>
+<p>To launch, first create or download a disk image. Then copy the qemu-system-arm.exe from the bin folder to QEMU&rsquo;s root folder (it was easier than specifying the paths manually). Then, you can modify the last line in the batch file provided (qemu-win.bat):</p>
 <blockquote>
 <pre>qemu-system-arm.exe -M versatilepb -L . -m 256 -hda arm.img.backup -kernel vmlinuz-2.6.32-5-versatile -initrd initrd.img-2.6.32-5-versatile -localtime -append "root=/dev/sda1"</pre>
 </blockquote>
-<p>That's assuming your image and kernels are named as such. The kernel will crash if you try to specify more than 256MB of RAM, however building a custom kernel is now possible.</p>
-<p>My next task will be to see if I can bridge the network interface. If not, I'll go back and try the virtual virtual machine approach again-since appears to be faster anyway&hellip;</p>
+<p>That&rsquo;s assuming your image and kernels are named as such. The kernel will crash if you try to specify more than 256MB of RAM, however building a custom kernel is now possible.</p>
+<p>My next task will be to see if I can bridge the network interface. If not, I&rsquo;ll go back and try the virtual virtual machine approach again-since appears to be faster anyway&hellip;</p>
 <img class="lostImage" src="" alt="Image no longer available :("/>
 </div>
 				

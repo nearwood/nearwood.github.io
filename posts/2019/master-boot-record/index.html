@@ -10,9 +10,9 @@
 	<meta name="description" content="">
 		<meta property="og:title" content="Master Boot Record" />
 <meta property="og:description" content="I like listening to instrumental music while I code, it helps keep me focused.
-On Bandcamp there&#39;s an artist I like called Master Boot Record.
+On Bandcamp there&rsquo;s an artist I like called Master Boot Record.
 Their albums routinely contain &ldquo;secrets&rdquo; as the album description text. They are small easter egg like puzzles.
-In this post I&#39;ll go over how I solved or attempted to solve each one I found." />
+In this post I&rsquo;ll go over how I solved or attempted to solve each one I found." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://nearwood.dev/posts/2019/master-boot-record/" />
 <meta property="article:published_time" content="2019-12-09T22:17:43-06:00" />
@@ -21,9 +21,9 @@ In this post I&#39;ll go over how I solved or attempted to solve each one I foun
 		<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Master Boot Record"/>
 <meta name="twitter:description" content="I like listening to instrumental music while I code, it helps keep me focused.
-On Bandcamp there&#39;s an artist I like called Master Boot Record.
+On Bandcamp there&rsquo;s an artist I like called Master Boot Record.
 Their albums routinely contain &ldquo;secrets&rdquo; as the album description text. They are small easter egg like puzzles.
-In this post I&#39;ll go over how I solved or attempted to solve each one I found."/>
+In this post I&rsquo;ll go over how I solved or attempted to solve each one I found."/>
 
 	<link rel="stylesheet" href="/css/main.css">
 	<link rel="stylesheet" href="/css/themes/dark-green.css">
@@ -75,20 +75,20 @@ In this post I&#39;ll go over how I solved or attempted to solve each one I foun
 	<summary class="toc__title">Table of Contents</summary>
 	<nav id="TableOfContents">
   <ul>
-    <li><a href="#cfixmbr">C​:​\​>FIXMBR</a>
+    <li><a href="#cfixmbr">C​:​\​&gt;FIXMBR</a>
       <ul>
         <li><a href="#secret">Secret</a></li>
         <li><a href="#analysis">Analysis</a></li>
         <li><a href="#solution">Solution</a></li>
       </ul>
     </li>
-    <li><a href="#cedit-configsys">C​:​\​>EDIT CONFIG​.​SYS</a>
+    <li><a href="#cedit-configsys">C​:​\​&gt;EDIT CONFIG​.​SYS</a>
       <ul>
         <li><a href="#secret-1">Secret</a></li>
         <li><a href="#analysis-1">Analysis</a></li>
       </ul>
     </li>
-    <li><a href="#cedit-autoexecbat">C​:​\​>EDIT AUTOEXEC​.​BAT</a>
+    <li><a href="#cedit-autoexecbat">C​:​\​&gt;EDIT AUTOEXEC​.​BAT</a>
       <ul>
         <li><a href="#secret-2">Secret</a></li>
         <li><a href="#analysis-2">Analysis</a></li>
@@ -101,13 +101,13 @@ In this post I&#39;ll go over how I solved or attempted to solve each one I foun
         <li><a href="#solution-1">Solution</a></li>
       </ul>
     </li>
-    <li><a href="#cchkdsk-f">C​:​\​>CHKDSK /F</a>
+    <li><a href="#cchkdsk-f">C​:​\​&gt;CHKDSK /F</a>
       <ul>
         <li><a href="#secret-4">Secret</a></li>
         <li><a href="#analysis-4">Analysis</a></li>
       </ul>
     </li>
-    <li><a href="#ccopy--a-v">C​:​\​>COPY ​.​ A: /V</a>
+    <li><a href="#ccopy--a-v">C​:​\​&gt;COPY <em>​.​</em> A: /V</a>
       <ul>
         <li><a href="#secret-5">Secret</a></li>
         <li><a href="#analysis-5">Analysis</a></li>
@@ -132,21 +132,21 @@ In this post I&#39;ll go over how I solved or attempted to solve each one I foun
 </details>
 
 				<div class="post__content"><p>I like listening to instrumental music while I code, it helps keep me focused.
-On <a href="https://bandcamp.com/">Bandcamp</a> there's an artist I like called <a href="https://masterbootrecord.bandcamp.com/">Master Boot Record</a>.
+On <a href="https://bandcamp.com/">Bandcamp</a> there&rsquo;s an artist I like called <a href="https://masterbootrecord.bandcamp.com/">Master Boot Record</a>.
 Their albums routinely contain &ldquo;secrets&rdquo; as the album description text. They are small easter egg like puzzles.
-In this post I'll go over how I solved or attempted to solve each one I found.</p>
+In this post I&rsquo;ll go over how I solved or attempted to solve each one I found.</p>
 <p>The albums are ordered by release date, oldest first.</p>
 <hr>
 <h2 id="cfixmbr">C​:​\​&gt;FIXMBR</h2>
 <h3 id="secret">Secret</h3>
 <pre><code class="language-code" data-lang="code">010010000110010101100001011101100111100100100000010011010110010101110100011000010110110000100000011010010111001100100000011011100110111101110100001000000110010001100101011000010110010000101110000011010000101001001001011101000010000001110111011000010111001100100000011010100111010101110011011101000010000001101110011011110111010000100000011001010111011001100101011011100110110001111001001000000111001101111001011011100111010001101000011001010111001101101001011110100110010101100100</code></pre>
 <h3 id="analysis">Analysis</h3>
-<p>Looks like binary. To start, we'll make a few assumptions:</p>
+<p>Looks like binary. To start, we&rsquo;ll make a few assumptions:</p>
 <ul>
-<li>It's formatted as 8-bit bytes (octets)</li>
-<li>It's big-endian</li>
+<li>It&rsquo;s formatted as 8-bit bytes (octets)</li>
+<li>It&rsquo;s big-endian</li>
 </ul>
-<p>It's safe to assume those and we can change them easily later if the data looks wonky.</p>
+<p>It&rsquo;s safe to assume those and we can change them easily later if the data looks wonky.</p>
 <p>After dividing the binary string to 8-bits, and parsing each of those octets as an integer, I get what looks like ASCII code points:</p>
 <script type="application/javascript" src="https://gist.github.com/nearwood/40f41c33f8e56e6f2af64d4a36fab0be.js"></script>
 
@@ -160,9 +160,9 @@ In this post I'll go over how I solved or attempted to solve each one I found.</
 <pre><code class="language-code" data-lang="code">30 30 31 30 31 31 31 30 20 30 30 31 30 31 31 30 31 20 30 30 31 30 30 30 30 30 20 30 30 31 30 31 31 31 30 20 30 30 31 30 31 31 30 31 20 30 30 31 30 31 31 31 30 20 30 30 31 30 31 31 31 30 20 30 30 31 30 30 30 30 30 20 30 30 31 30 31 31 31 30 20 30 30 31 30 31 31 30 31 20 30 30 31 30 31 31 31 30 20 30 30 31 30 31 31 31 30 20 30 30 31 30 30 30 30 30 20 30 30 31 30 30 30 30 30 20 30 30 31 30 30 30 30 30 20 30 30 31 30 30 30 30 30 20 30 30 31 30 30 30 30 30 20 30 30 31 30 31 31 31 30 20 30 30 31 30 31 31 31 30 20 30 30 31 30 30 30 30 30 20 30 30 31 30 30 30 30 30 20 30 30 31 30 30 30 30 30 20 30 30 31 30 30 30 30 30 20 30 30 31 30 30 30 30 30 20 30 30 31 30 31 31 31 30 20 30 30 31 30 31 31 31 30 20 30 30 31 30 31 31 31 30 20 30 30 31 30 31 31 31 30 20 30 30 31 30 30 30 30 30 20 30 30 31 30 31 31 31 30 20 30 30 31 30 31 31 30 31 20 30 30 31 30 30 30 30 30 20 30 30 31 30 31 31 31 30 20 30 30 31 30 31 31 31 30 20 30 30 31 30 31 31 31 30 20 30 30 31 30 31 31 30 31 20 30 30 31 30 30 30 30 30 20 30 30 31 30 31 31 31 30 20 30 30 31 30 30 30 30 30 20 30 30 31 30 30 30 30 30 20 30 30 31 30 30 30 30 30 20 30 30 31 30 30 30 30 30 20 30 30 31 30 30 30 30 30 20 30 30 31 30 31 31 31 30 20 30 30 31 30 31 31 31 30 20 30 30 31 30 30 30 30 30 20 30 30 31 30 31 31 31 30 20 30 30 31 30 31 31 31 30 20 30 30 31 30 31 31 31 30 20 30 30 31 30 30 30 30 30 20 30 30 31 30 30 30 30 30 20 30 30 31 30 30 30 30 30 20 30 30 31 30 30 30 30 30 20 30 30 31 30 30 30 30 30 20 30 30 31 30 31 31 30 31 20 30 30 31 30 31 31 30 31 20 30 30 31 30 30 30 30 30 20 30 30 31 30 31 31 30 31 20 30 30 31 30 31 31 31 30 20 30 30 31 30 31 31 30 31 20 30 30 31 30 31 31 30 31 20 30 30 31 30 30 30 30 30 20 30 30 31 30 30 30 30 30 20 30 30 31 30 30 30 30 30 20 30 30 31 30 30 30 30 30 20 30 30 31 30 30 30 30 30 20 30 30 31 30 31 31 30 31 20 30 30 31 30 31 31 31 30 20 30 30 31 30 31 31 30 31 20 30 30 31 30 31 31 31 30 20 30 30 31 30 30 30 30 30 20 30 30 31 30 31 31 30 31 20 30 30 31 30 31 31 30 31 20 30 30 31 30 31 31 30 31 20 30 30 31 30 30 30 30 30 20 30 30 31 30 31 31 30 31 20 30 30 31 30 31 31 30 31 20 30 30 31 30 30 30 30 30 20 30 30 31 30 31 31 31 30 20 30 30 31 30 31 31 30 31 20 30 30 31 30 31 31 30 31 20 30 30 31 30 31 31 31 30 20 30 30 31 30 30 30 30 30 20 30 30 31 30 31 31 31 30 20 30 30 31 30 31 31 31 30 20 30 30 31 30 31 31 30 31 20 30 30 31 30 30 30 30 30 20 30 30 31 30 31 31 30 31 20 30 30 31 30 30 30 30 30 20 30 30 31 30 31 31 31 30 20 30 30 31 30 30 30 30 30 20 30 30 31 30 31 31 31 30 20 30 30 31 30 31 31 30 31 20 30 30 31 30 31 31 31 30</code></pre>
 <h3 id="analysis-1">Analysis</h3>
 <p>At a glance, I only see 3 different numbers: <code>20</code>, <code>30</code>, and <code>31</code>.
-With just 3 bits of data, I'm not sure what this could represent. (<a href="https://en.wikipedia.org/wiki/Ternary_computer">Ternary</a>!?)
-It's possible they could be grouped in 2's or 4's.
-Or perhaps the first digit of each number is irrelevant and it's obfuscated binary.</p>
+With just 3 bits of data, I&rsquo;m not sure what this could represent. (<a href="https://en.wikipedia.org/wiki/Ternary_computer">Ternary</a>!?)
+It&rsquo;s possible they could be grouped in 2&rsquo;s or 4&rsquo;s.
+Or perhaps the first digit of each number is irrelevant and it&rsquo;s obfuscated binary.</p>
 <hr>
 <h2 id="cedit-autoexecbat">C​:​\​&gt;EDIT AUTOEXEC​.​BAT</h2>
 <h3 id="secret-2">Secret</h3>
@@ -177,17 +177,17 @@ Just using a lookup table to get a quick idea of what it looks like in ASCII:</p
 <li>183: <code>·</code> (unicode)</li>
 <li>194: <code>Â</code> (unicode)</li>
 </ul>
-<p>Well, perhaps it's Morse Code but there's some extra data there.
-Maybe it's ASCII Art aligned by the Unicode characters?</p>
+<p>Well, perhaps it&rsquo;s Morse Code but there&rsquo;s some extra data there.
+Maybe it&rsquo;s ASCII Art aligned by the Unicode characters?</p>
 <hr>
 <h2 id="486dx">486DX</h2>
 <h3 id="secret-3">Secret</h3>
 <pre><code class="language-code" data-lang="code">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</code></pre>
 <h3 id="analysis-3">Analysis</h3>
-<p>It's a Base64 encoded blob. Decoding it and looking at it with a hex editor I see a header with &ldquo;JFIF&rdquo;, indicating it is probably a JPEG.</p>
+<p>It&rsquo;s a Base64 encoded blob. Decoding it and looking at it with a hex editor I see a header with &ldquo;JFIF&rdquo;, indicating it is probably a JPEG.</p>
 <h3 id="solution-1">Solution</h3>
 <p><img src="data:image/png;base64,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" alt="test"></p>
-<p>But perhaps there's more to it? Some embedded data in the JPEG?</p>
+<p>But perhaps there&rsquo;s more to it? Some embedded data in the JPEG?</p>
 <hr>
 <h2 id="cchkdsk-f">C​:​\​&gt;CHKDSK /F</h2>
 <h3 id="secret-4">Secret</h3>
@@ -209,10 +209,10 @@ Zhl3qvVjg9eQcJjZHLKJdgPM=IwEmS</code></pre>
 <p>This appears to be 3 Base64 blobs. The first one decodes easily.
 It ends up being a 256-byte binary blob, with no discernable header.
 Perhaps the result of a block-cipher, and the other two blobs can decrypt it.</p>
-<p>For those remaining 2 blobs, usually <code>=</code> characters at the end indicate Base64 encoding (it's padding used to indicate the last 3-byte block had fewer than 3 bytes).
-But, they don't seem to decode. They look familiar: they begin with <code>EnCt</code> and end with <code>IwEmS</code>.
+<p>For those remaining 2 blobs, usually <code>=</code> characters at the end indicate Base64 encoding (it&rsquo;s padding used to indicate the last 3-byte block had fewer than 3 bytes).
+But, they don&rsquo;t seem to decode. They look familiar: they begin with <code>EnCt</code> and end with <code>IwEmS</code>.
 This pattern was seen in the <em>C​:​\​&gt;CHKDSK /F</em> album.</p>
-<p>Perhaps it's a Base64 string embedded in another format?
+<p>Perhaps it&rsquo;s a Base64 string embedded in another format?
 Perhaps it requires using parts of other album puzzles/solutions?</p>
 <hr>
 <h2 id="interrupt-request">Interrupt Request</h2>
@@ -220,7 +220,7 @@ Perhaps it requires using parts of other album puzzles/solutions?</p>
 <pre><code class="language-code" data-lang="code">087 104 101 110 032 116 104 101 032 077 111 111 110 032 119 105 108 108 032 115 104 101 100 032 110 111 032 108 105 103 104 116 013 010 087 105 116 104 032 116 104 101 032 069 113 117 105 110 111 120 032 099 108 111 115 101 032 098 121 013 010 073 110 032 116 104 101 032 100 097 114 107 032 097 032 115 112 101 108 108 119 097 114 101 032 114 105 115 101 013 010 082 105 100 105 110 103 032 111 110 032 097 032 108 105 103 104 116 110 105 110 103 032 115 116 114 105 107 101 013 010 013 010 077 097 100 101 032 111 102 032 099 105 114 099 117 105 116 032 098 111 097 114 100 115 032 097 110 100 032 098 121 116 101 115 013 010 070 111 114 103 101 100 032 116 111 032 099 114 111 115 115 032 111 117 114 032 115 112 097 099 101 032 097 110 100 032 116 105 109 101 013 010 084 104 114 117 032 116 104 101 032 115 116 111 114 109 032 109 121 032 115 111 117 108 032 119 105 108 108 032 103 117 105 100 101 013 010 084 111 032 116 104 101 032 112 097 116 104 032 102 111 114 032 103 108 111 114 121 032 097 110 100 032 109 105 103 104 116 013 010 013 010 078 111 119 032 106 117 115 116 032 116 097 107 101 032 115 111 109 101 032 111 102 032 121 111 117 114 032 116 105 109 101 013 010 087 104 105 108 101 032 119 101 032 115 104 097 114 101 032 116 104 105 115 032 114 105 116 117 097 108 032 110 105 103 104 116 013 010 084 104 101 114 101 039 115 032 097 032 115 101 099 114 101 116 032 103 105 102 116 032 116 104 097 116 032 104 105 100 101 115 013 010 066 117 116 032 119 111 110 039 116 032 099 111 109 101 032 119 105 116 104 111 117 116 032 097 032 102 105 103 104 116 013 010 013 010 070 105 114 115 116 032 121 111 117 032 110 101 101 100 032 116 111 032 103 101 116 032 116 104 101 032 114 104 121 109 101 013 010 087 104 101 110 032 104 101 114 101 032 099 111 109 101 115 032 116 104 101 032 100 097 114 107 101 115 116 032 110 105 103 104 116 013 010 084 104 101 110 032 121 111 117 032 116 097 107 101 032 116 104 101 032 102 105 114 115 116 032 056 032 098 121 116 101 115 013 010 067 111 117 110 116 032 116 104 101 032 112 105 110 115 032 097 110 100 032 110 111 114 109 097 108 105 122 101 013 010 013 010 079 110 099 101 032 121 111 117 032 103 111 116 032 116 104 101 032 110 117 109 098 101 114 115 032 114 105 103 104 116 013 010 074 117 115 116 032 098 101 119 097 114 101 032 116 104 101 032 111 100 100 115 032 097 114 101 032 108 105 101 115 013 010 076 105 110 101 032 116 104 101 109 032 105 110 032 097 032 114 111 119 032 097 110 100 032 119 114 105 116 101 013 010 084 104 097 116 032 119 105 108 108 032 112 117 116 032 116 104 101 032 099 111 100 101 032 105 110 032 115 105 103 104 116 013 010 013 010 078 111 119 032 100 111 110 039 116 032 115 116 114 101 115 115 032 097 110 100 032 116 097 107 101 032 121 111 117 114 032 116 105 109 101 013 010 083 111 109 101 116 105 109 101 115 032 119 111 114 100 115 032 099 097 110 032 116 114 105 099 107 032 121 111 117 114 032 109 105 110 100 013 010 070 111 114 032 105 110 032 065 083 067 073 073 032 099 111 100 101 032 121 111 117 039 108 108 032 102 105 110 100 013 010 084 104 101 032 115 111 108 117 116 105 111 110 032 116 111 032 116 104 101 115 101 032 114 104 121 109 101 115</code></pre>
 <h3 id="analysis-6">Analysis</h3>
 <p>Immediately I see <code>032</code> which is a space character in ASCII.
-At a glance, I also don't see any lower than <code>32</code> or higher than <code>127</code>.
+At a glance, I also don&rsquo;t see any lower than <code>32</code> or higher than <code>127</code>.
 This most likely ASCII code.
 Using a little Javascript to decode it:</p>
 <script type="application/javascript" src="https://gist.github.com/nearwood/de02d1c36192c9c4f3eec2b7d5810a1b.js"></script>
@@ -228,7 +228,7 @@ Using a little Javascript to decode it:</p>
 <p>Which results in:</p>
 <h3 id="solution-2">Solution</h3>
 <blockquote>
-<p>When the Moon will shed no light With the Equinox close by In the dark a spellware rise Riding on a lightning strike Made of circuit boards and bytes Forged to cross our space and time Thru the storm my soul will guide To the path for glory and might Now just take some of your time While we share this ritual night There's a secret gift that hides But won't come without a fight First you need to get the rhyme When here comes the darkest night Then you take the first 8 bytes Count the pins and normalize Once you got the numbers right Just beware the odds are lies Line them in a row and write That will put the code in sight Now don't stress and take your time Sometimes words can trick your mind For in ASCII code you'll find The solution to these rhymes</p>
+<p>When the Moon will shed no light With the Equinox close by In the dark a spellware rise Riding on a lightning strike Made of circuit boards and bytes Forged to cross our space and time Thru the storm my soul will guide To the path for glory and might Now just take some of your time While we share this ritual night There&rsquo;s a secret gift that hides But won&rsquo;t come without a fight First you need to get the rhyme When here comes the darkest night Then you take the first 8 bytes Count the pins and normalize Once you got the numbers right Just beware the odds are lies Line them in a row and write That will put the code in sight Now don&rsquo;t stress and take your time Sometimes words can trick your mind For in ASCII code you&rsquo;ll find The solution to these rhymes</p>
 </blockquote>
 <hr>
 <h2 id="internet-protocol">INTERNET PROTOCOL</h2>
@@ -238,7 +238,7 @@ Using a little Javascript to decode it:</p>
 <p>Looks like ASCII again, just pasted it in my simple decoder:</p>
 <h3 id="solution-3">Solution</h3>
 <blockquote>
-<p>Welcome back again where it all began Open are the ports. Services all started. Knock at every door and grab the missing strings Put them in a row and crack the code to win Scanning close the files may reveal some things Data you can't hear. Data you can't see. Scattered are the clues all around the disk Some are in plain sight some you need to think Check your mail for messages, log on IRC Feeling old already? Oh I bet you did. You will need some tools, look around for hacks Talk with all the daemons hiding in the dark Now don't be afraid. It's a simple game. All you need are memories buried in your brain For it's in the past where you need to start Surfing like a pirate. I wish you good luck.</p>
+<p>Welcome back again where it all began Open are the ports. Services all started. Knock at every door and grab the missing strings Put them in a row and crack the code to win Scanning close the files may reveal some things Data you can&rsquo;t hear. Data you can&rsquo;t see. Scattered are the clues all around the disk Some are in plain sight some you need to think Check your mail for messages, log on IRC Feeling old already? Oh I bet you did. You will need some tools, look around for hacks Talk with all the daemons hiding in the dark Now don&rsquo;t be afraid. It&rsquo;s a simple game. All you need are memories buried in your brain For it&rsquo;s in the past where you need to start Surfing like a pirate. I wish you good luck.</p>
 </blockquote></div>
 				
 				<footer class="post__footer">

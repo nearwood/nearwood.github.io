@@ -18,9 +18,9 @@
       <pubDate>Mon, 16 Feb 2015 21:27:29 +0000</pubDate>
       
       <guid>https://nearwood.dev/msqur-update-v0-53b/</guid>
-      <description>I&#39;ve rolled out the update 0.53b to msqur.com. This includes:
+      <description>I&amp;rsquo;ve rolled out the update 0.53b to msqur.com. This includes:
  INI Parsing (i.e. better MSQ support) Bug fixes and better error handling  So now it is a bit more usable. The INI Parsing turns out to be a bit more complex than I anticipated, but I rolled out a decent intermediate update in the meantime.
-Before completing the INI parsing (or anything else for that matter), I&#39;ve decided to overhaul the entire codebase.</description>
+Before completing the INI parsing (or anything else for that matter), I&amp;rsquo;ve decided to overhaul the entire codebase.</description>
     </item>
     
     <item>
@@ -29,7 +29,7 @@ Before completing the INI parsing (or anything else for that matter), I&#39;ve d
       <pubDate>Wed, 12 Nov 2014 02:04:43 +0000</pubDate>
       
       <guid>https://nearwood.dev/carduino-2-0-intel-galileo-setup/</guid>
-      <description>&lt;p&gt;Out of the box the Galileo is setup to run sketches uploaded from volatile memory, which is really lame. I didn&#39;t spend much time with it using the stock SPI kernel. So, an SD card is pretty much required to do any serious development with this board. This is not a bad thing (although you aren&#39;t running in real-time anymore), since having a full OS to use has lots of advantages. Plus, this way I can automate the build process in a way I&#39;m more familiar with.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Out of the box the Galileo is setup to run sketches uploaded from volatile memory, which is really lame. I didn&amp;rsquo;t spend much time with it using the stock SPI kernel. So, an SD card is pretty much required to do any serious development with this board. This is not a bad thing (although you aren&amp;rsquo;t running in real-time anymore), since having a full OS to use has lots of advantages. Plus, this way I can automate the build process in a way I&amp;rsquo;m more familiar with.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -38,7 +38,7 @@ Before completing the INI parsing (or anything else for that matter), I&#39;ve d
       <pubDate>Sun, 09 Nov 2014 18:19:24 +0000</pubDate>
       
       <guid>https://nearwood.dev/carduino-2-0/</guid>
-      <description>Over a year ago I got an Arduino Uno and a CAN-BUS Shield to try and make some kind of datalogger for my car. I was also interested in using the OpenXC library with it (which might need a port if there isn&#39;t one already, since it uses the Digilent chipKIT Max32 development board). While OpenXC allows interfacing with Android stuff for phones, I&#39;m more interested in a self-contained datalogging type deal.</description>
+      <description>Over a year ago I got an Arduino Uno and a CAN-BUS Shield to try and make some kind of datalogger for my car. I was also interested in using the OpenXC library with it (which might need a port if there isn&amp;rsquo;t one already, since it uses the Digilent chipKIT Max32 development board). While OpenXC allows interfacing with Android stuff for phones, I&amp;rsquo;m more interested in a self-contained datalogging type deal.</description>
     </item>
     
     <item>
@@ -48,7 +48,7 @@ Before completing the INI parsing (or anything else for that matter), I&#39;ve d
       
       <guid>https://nearwood.dev/custom-speed-app-update/</guid>
       <description>I update Custom Speed to 1.1. Changes include:
- An actual theme (consistent colors) More units New icon  2.0 will include an actual settings page that will allow the units to be selected from an easier control, a setting for keeping the display on, and other minor UI improvements. There&#39;s no ETA currently for 2.0.</description>
+ An actual theme (consistent colors) More units New icon  2.0 will include an actual settings page that will allow the units to be selected from an easier control, a setting for keeping the display on, and other minor UI improvements. There&amp;rsquo;s no ETA currently for 2.0.</description>
     </item>
     
     <item>
@@ -57,7 +57,7 @@ Before completing the INI parsing (or anything else for that matter), I&#39;ve d
       <pubDate>Fri, 30 Nov 2012 01:25:45 +0000</pubDate>
       
       <guid>https://nearwood.dev/refactoring-with-regular-expressions/</guid>
-      <description>I&#39;m re-learning JavaScript, and I noticed I was refactoring functions a lot on some old code. I&#39;m putting some useful stuff here for reference:
+      <description>I&amp;rsquo;m re-learning JavaScript, and I noticed I was refactoring functions a lot on some old code. I&amp;rsquo;m putting some useful stuff here for reference:
 aFunc(blah) → this.aFunc = function(blah)
 Find: function (\w+)(
 Replace with: this.\1 = function(
