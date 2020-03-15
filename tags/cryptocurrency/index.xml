@@ -18,8 +18,8 @@
       <pubDate>Fri, 12 Jan 2018 02:13:38 +0000</pubDate>
       
       <guid>https://nearwood.dev/education-in-futility-warpwallet-brute-forcing/</guid>
-      <description>So, WarpWallet is a so-called brain wallet for Bitcoin. That is, you only have to remember a relatively short password and it generates the corresponding private key for use. It uses a memory and CPU hard set of cryptographic algorithms to ensure that brute-forcing is slowed way down. That is, when generating the private key, it takes considerable time. Their Javascript implementation takes over 10 seconds on my machine.
-So the makers of it had challenges setup.</description>
+      <description>&lt;p&gt;So, &lt;a href=&#34;https://keybase.io/warp/warp_1.0.9_SHA256_a2067491ab582bde779f4505055807c2479354633a2216b22cf1e92d1a6e4a87.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;WarpWallet&lt;/a&gt; is a so-called brain wallet for Bitcoin. That is, you only have to remember a relatively short password and it generates the corresponding private key for use. It uses a memory and CPU hard set of cryptographic algorithms to ensure that brute-forcing is slowed way down. That is, when generating the private key, it takes considerable time. Their Javascript implementation takes over 10 seconds on my machine.&lt;/p&gt;
+&lt;p&gt;So the makers of it had challenges setup. By the time I stumbled on it, only the last challenge was left, with 6 months remaining. For that challenge, the reward for cracking an 8-character alphanumeric password was 20 BTC (and BCH and BTG!), which was worth over $100,000 USD at the time of the challenge end date.&lt;/p&gt;</description>
     </item>
     
     <item>

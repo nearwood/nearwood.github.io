@@ -10,16 +10,16 @@
 	<meta name="description" content="">
 		<meta property="og:title" content="Education in Futility: WarpWallet Brute Forcing" />
 <meta property="og:description" content="So, WarpWallet is a so-called brain wallet for Bitcoin. That is, you only have to remember a relatively short password and it generates the corresponding private key for use. It uses a memory and CPU hard set of cryptographic algorithms to ensure that brute-forcing is slowed way down. That is, when generating the private key, it takes considerable time. Their Javascript implementation takes over 10 seconds on my machine.
-So the makers of it had challenges setup." />
+So the makers of it had challenges setup. By the time I stumbled on it, only the last challenge was left, with 6 months remaining. For that challenge, the reward for cracking an 8-character alphanumeric password was 20 BTC (and BCH and BTG!), which was worth over $100,000 USD at the time of the challenge end date." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://nearwood.dev/education-in-futility-warpwallet-brute-forcing/" />
 <meta property="article:published_time" content="2018-01-12T02:13:38+00:00" />
-<meta property="article:modified_time" content="2019-12-10T10:57:45-06:00" />
+<meta property="article:modified_time" content="2020-03-14T20:45:53-05:00" />
 
 		<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Education in Futility: WarpWallet Brute Forcing"/>
 <meta name="twitter:description" content="So, WarpWallet is a so-called brain wallet for Bitcoin. That is, you only have to remember a relatively short password and it generates the corresponding private key for use. It uses a memory and CPU hard set of cryptographic algorithms to ensure that brute-forcing is slowed way down. That is, when generating the private key, it takes considerable time. Their Javascript implementation takes over 10 seconds on my machine.
-So the makers of it had challenges setup."/>
+So the makers of it had challenges setup. By the time I stumbled on it, only the last challenge was left, with 6 months remaining. For that challenge, the reward for cracking an 8-character alphanumeric password was 20 BTC (and BCH and BTG!), which was worth over $100,000 USD at the time of the challenge end date."/>
 
 	<link rel="stylesheet" href="/css/main.css">
 	<link rel="stylesheet" href="/css/themes/dark-green.css">
@@ -63,7 +63,7 @@ So the makers of it had challenges setup."/>
 			<article class="post">
 	<div class="post__meta meta mb">
 <time class="post__meta-published meta-published" datetime="2018-01-12T02:13:38">January 12, 2018</time>
-<time class="post__meta-lastmod meta-lastmod" datetime="2019-12-10T10:57:45">Updated: December 10, 2019</time>
+<time class="post__meta-lastmod meta-lastmod" datetime="2020-03-14T20:45:53">Updated: March 14, 2020</time>
 <span class="post__meta-categories meta-categories">
 	<span class="meta-categories__list">Categories: <a class="meta-categories__link" href="/categories/computing" rel="category">Computing</a>, <a class="meta-categories__link" href="/categories/cryptocurrency" rel="category">Cryptocurrency</a>, <a class="meta-categories__link" href="/categories/programming" rel="category">Programming</a>, <a class="meta-categories__link" href="/categories/technology" rel="category">Technology</a></span>
 </span>
@@ -81,8 +81,7 @@ So the makers of it had challenges setup."/>
 <p><img src="/images/warpwallet-chart.png" alt="Pie chart of computation proportions"></p>
 <p> </p>
 <p>And then on January 1st, 2018 the challenge expired. There&rsquo;re just over 24 million rows, 4.5GB data. It takes a few seconds to test any result. I investigated testing each public address to see if they had a balance but on my local Bitcoin node it takes minutes to scan the blockchain for transactions for newly added addresses. And web APIs rate limit you to where it would take a year or so to test each one. Less if I spread requests out across API providers. So, in the end, I just deleted all the results. It was fun, I learned a lot about Go, cryptocurrency nodes, and I&rsquo;m ready for the next, hopefully more fruitful, project.</p>
-<p> </p>
-</div>
+<p> </p></div>
 				
 				<footer class="post__footer">
 					

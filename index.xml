@@ -59,8 +59,8 @@ I will retain existing post comments, as there are so few but they are useful. T
       <pubDate>Fri, 12 Jan 2018 02:13:38 +0000</pubDate>
       
       <guid>https://nearwood.dev/education-in-futility-warpwallet-brute-forcing/</guid>
-      <description>So, WarpWallet is a so-called brain wallet for Bitcoin. That is, you only have to remember a relatively short password and it generates the corresponding private key for use. It uses a memory and CPU hard set of cryptographic algorithms to ensure that brute-forcing is slowed way down. That is, when generating the private key, it takes considerable time. Their Javascript implementation takes over 10 seconds on my machine.
-So the makers of it had challenges setup.</description>
+      <description>&lt;p&gt;So, &lt;a href=&#34;https://keybase.io/warp/warp_1.0.9_SHA256_a2067491ab582bde779f4505055807c2479354633a2216b22cf1e92d1a6e4a87.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;WarpWallet&lt;/a&gt; is a so-called brain wallet for Bitcoin. That is, you only have to remember a relatively short password and it generates the corresponding private key for use. It uses a memory and CPU hard set of cryptographic algorithms to ensure that brute-forcing is slowed way down. That is, when generating the private key, it takes considerable time. Their Javascript implementation takes over 10 seconds on my machine.&lt;/p&gt;
+&lt;p&gt;So the makers of it had challenges setup. By the time I stumbled on it, only the last challenge was left, with 6 months remaining. For that challenge, the reward for cracking an 8-character alphanumeric password was 20 BTC (and BCH and BTG!), which was worth over $100,000 USD at the time of the challenge end date.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -69,7 +69,8 @@ So the makers of it had challenges setup.</description>
       <pubDate>Sat, 28 Oct 2017 03:06:49 +0000</pubDate>
       
       <guid>https://nearwood.dev/reverse-engineering-the-firmware-on-a-kenwood-ddx9903s/</guid>
-      <description>&lt;p&gt;UPDATE: For discussion, see the &lt;a href=&#34;https://groups.google.com/forum/#!forum/kenwood-headunit-reverse-engineering&#34;&gt;Google group&lt;/a&gt;. Comments from the old WordPress site have been migrated there.&lt;/p&gt;
+      <description>&lt;p&gt;&lt;strong&gt;UPDATE 14 MAR 2020&lt;/strong&gt;: For discussion, see the &lt;a href=&#34;https://groups.google.com/forum/#!forum/kenwood-headunit-reverse-engineering&#34;&gt;Google group&lt;/a&gt;. Comments from the old WordPress site have been migrated there.&lt;/p&gt;
+&lt;hr&gt;
 &lt;p&gt;I bought and really like my Kenwood Excelon DDX9903S headunit. I had it in my WRX, and moved it to my LS430. It supports Android Auto and CarPlay, which I find really useful when driving.&lt;/p&gt;
 &lt;p&gt;However, it has a nag screen every time it boots up. This got me curious as to how it worked, and see if it could be patched to skip this disclaimer. I figured it probably ran Linux on a SoC, as pretty much everything does nowadays. So I grabbed the latest firmware for it (mine was already updated to it), and started probing.&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;S_V2_7_0008_0600_AT1.zip&lt;/code&gt;&lt;/p&gt;
@@ -77,18 +78,7 @@ So the makers of it had challenges setup.</description>
 &lt;pre class=&#34;brush: plain; light: true; title: ; notranslate&#34; title=&#34;&#34;&gt;BOOT_V2_7_0008_0600_release/
 MAIN_V1_0_2758_0400/
 SOC_V2_7_0008_0600/
-&lt;/pre&gt;
-&lt;!-- more --&gt;
-&lt;p&gt;In each there&amp;rsquo;s a .nfu file, which I&amp;rsquo;ve never encountered before. I ran binwalk on each:&lt;/p&gt;
-&lt;pre class=&#34;brush: plain; light: true; title: ; notranslate&#34; title=&#34;&#34;&gt;[BOOT_V2_7_0008_0600_release]$ binwalk Boot_2.7.0008.0600.nfu
-DECIMAL HEXADECIMAL DESCRIPTION
---------------------------------------------------------------------------------
-248776 0x3CBC8 Android bootimg, kernel size: 0 bytes, kernel addr: 0x4F525245, ramdisk size: 1226848850 bytes, ramdisk addr: 0x6C61766E, product name: &#34;ERROR: Cannot read kernel image&#34;
-1571592 0x17FB08 ELF, 64-bit LSB shared object, AMD x86-64, version 1 (SYSV)
-2358024 0x23FB08 ELF, 64-bit LSB shared object, AMD x86-64, version 1 (SYSV)
-3209992 0x30FB08 ELF, 64-bit LSB shared object, AMD x86-64, version 1 (SYSV)
-&lt;/pre&gt;
-&lt;p&gt;Surprise, surprise, it runs Android. But, I&amp;rsquo;m thinking this image is possibly just the firmware updater, and not what I am looking for.&lt;/p&gt;</description>
+&lt;/pre&gt;</description>
     </item>
     
     <item>
