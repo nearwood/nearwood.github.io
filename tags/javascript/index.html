@@ -18,8 +18,8 @@
 <meta name="twitter:title" content="javascript"/>
 <meta name="twitter:description" content="Responsive card-based &amp; code-light Hugo theme"/>
 
-	<link rel="stylesheet" href="/css/main.css">
-	<link rel="stylesheet" href="/css/themes/dark-green.css">
+	<link rel="stylesheet" href="/css/bundle.css">
+	<link rel="stylesheet" href="/css/themes/dark-orange.css">
 	<link rel="icon" href="/icons/16.png" sizes="16x16" type="image/png">
 	<link rel="icon" href="/icons/32.png" sizes="32x32" type="image/png">
 	<link rel="alternate" type="application/rss+xml" href="/tags/javascript/index.xml" title="Nick">
@@ -48,8 +48,20 @@
 		</div>
 	</button>
 	<ul id="menu" class="main-nav__list">
-		<li class="main-nav__item"><a class="main-nav__link" href="/pages/about/">About</a></li>
-		<li class="main-nav__item"><a class="main-nav__link" href="/pages/contact/">Contact</a></li>
+			<li class="main-nav__item">
+				<a class="main-nav__link" href="/pages/about/">
+					
+					<span class="main-nav__text">About</span>
+					
+				</a>
+			</li>
+			<li class="main-nav__item">
+				<a class="main-nav__link" href="/pages/contact/">
+					
+					<span class="main-nav__text">Contact</span>
+					
+				</a>
+			</li>
 	</ul>
 </nav>
 </header>
@@ -57,6 +69,7 @@
 	<div class="primary">
 	
 	<main class="main">
+		
 		<div class="page block">
 			<h1 class="page__title">javascript</h1>
 			
@@ -64,18 +77,19 @@
 		<div class="cards">
 			
 				<div class="card card--2col">
-					<article class="post card__box block">
-	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/delete-all-your-reddit-comments/">Delete all your reddit comments</a></h1>
-	<div class="post__content">I noticed that my reddit account had a few posts that were too revealing. So, I decided to remove them. I stumbled upon a couple greasemonkey scripts to delete all posts, which got my interested in seeing if I could write up a quick script to do the same that could run in the Developer Tools of any browser, rather than relying on an extension.
+					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/delete-all-your-reddit-comments/">Delete all your reddit comments</a></h1>
+	<div class="entry__content">I noticed that my reddit account had a few posts that were too revealing. So, I decided to remove them. I stumbled upon a couple greasemonkey scripts to delete all posts, which got my interested in seeing if I could write up a quick script to do the same that could run in the Developer Tools of any browser, rather than relying on an extension.
 The catch is that you, apparently, should edit each comment&rsquo;s content to remove it before deleting it, otherwise it&rsquo;s still cached in other users&rsquo; inboxes or something.</div>
-	<div class="post__meta meta mt tar">
-<time class="post__meta-published meta-published" datetime="2013-08-07T00:29:51">August 07, 2013</time>
-<time class="post__meta-lastmod meta-lastmod" datetime="2019-12-10T10:57:45">Updated: December 10, 2019</time>
-<span class="post__meta-categories meta-categories">
-	<span class="meta-categories__list">Categories: <a class="meta-categories__link" href="/categories/computing" rel="category">Computing</a></span>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2013-08-07T00:29:51Z">07 Aug 2013</time>
+	<time class="entry__meta-lastmod meta-lastmod" datetime="2019-12-10T10:57:45-06:00">Updated: 10 Dec 2019</time>
+<span class="entry__meta-categories meta-categories">
+	<span class="meta-categories__list">Categories:
+		<a class="meta-categories__link" href="/categories/computing" rel="category">Computing</a>
+	</span>
 </span>
 	</div>
-
 </article>
 				</div>
 			
@@ -91,6 +105,9 @@ The catch is that you, apparently, should edit each comment&rsquo;s content to r
 		</a>
 		<a class="social__link" target="_blank" rel="noopener noreferrer" href="https://github.com/nearwood">
 			<svg class="social__icon" aria-label="Github" role="img" width="32" height="32" viewBox="0 0 512 512"><path d="M335 499c14 0 12 17 12 17H165s-2-17 12-17c13 0 16-6 16-12l-1-50c-71 16-86-28-86-28-12-30-28-37-28-37-24-16 1-16 1-16 26 2 40 26 40 26 22 39 59 28 74 22 2-17 9-28 16-35-57-6-116-28-116-126 0-28 10-51 26-69-3-6-11-32 3-67 0 0 21-7 70 26 42-12 86-12 128 0 49-33 70-26 70-26 14 35 6 61 3 67 16 18 26 41 26 69 0 98-60 120-117 126 10 8 18 24 18 48l-1 70c0 6 3 12 16 12z"/></svg>
+		</a>
+		<a class="social__link" target="_blank" rel="noopener noreferrer" href="https://stackoverflow.com/users/numberid">
+			<svg class="social__icon" aria-label="Stack Overflow" role="img" width="32" height="32" viewBox="0 0 512 512"><g stroke-width="30"><path fill="none" d="M125 297v105h241V297"/><path d="M170 341h150m-144-68l148 31M199 204l136 64m-95-129l115 97M293 89l90 120"/></g></svg>
 		</a>
 </div>
 	<div class="footer__copyright">© 2020 Nick Earwood. <span class="footer__copyright-credits">Powered by <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/vimux/binario" rel="nofollow noopener" target="_blank">Binario</a> theme.</span></div>

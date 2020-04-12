@@ -21,8 +21,8 @@ After going through the kernel options, I realized they changed the v4l and webc
 <meta name="twitter:description" content="I attempted to get a webcam going on our home server. So, I plug it in, and since I&rsquo;ve done this before I ran a script I made to grab an image from the webcam. Which didn&rsquo;t work. So, after checking out why (/dev/video0 node was missing), I noticed that the kernel no longer had support built in.
 After going through the kernel options, I realized they changed the v4l and webcam support options around and since I just upgrade using &ldquo;-silentoldconfig&rdquo; (the bad way to do upgrades), it broke whenever I upgraded to 3."/>
 
-	<link rel="stylesheet" href="/css/main.css">
-	<link rel="stylesheet" href="/css/themes/dark-green.css">
+	<link rel="stylesheet" href="/css/bundle.css">
+	<link rel="stylesheet" href="/css/themes/dark-orange.css">
 	<link rel="icon" href="/icons/16.png" sizes="16x16" type="image/png">
 	<link rel="icon" href="/icons/32.png" sizes="32x32" type="image/png">
 		
@@ -50,8 +50,20 @@ After going through the kernel options, I realized they changed the v4l and webc
 		</div>
 	</button>
 	<ul id="menu" class="main-nav__list">
-		<li class="main-nav__item"><a class="main-nav__link" href="/pages/about/">About</a></li>
-		<li class="main-nav__item"><a class="main-nav__link" href="/pages/contact/">Contact</a></li>
+			<li class="main-nav__item">
+				<a class="main-nav__link" href="/pages/about/">
+					
+					<span class="main-nav__text">About</span>
+					
+				</a>
+			</li>
+			<li class="main-nav__item">
+				<a class="main-nav__link" href="/pages/contact/">
+					
+					<span class="main-nav__text">Contact</span>
+					
+				</a>
+			</li>
 	</ul>
 </nav>
 </header>
@@ -59,18 +71,20 @@ After going through the kernel options, I realized they changed the v4l and webc
 	<div class="primary">
 	
 	<main class="main">
+		
 		<div class="single block">
-			<article class="post">
-	<div class="post__meta meta mb">
-<time class="post__meta-published meta-published" datetime="2013-02-18T02:30:09">February 18, 2013</time>
-<time class="post__meta-lastmod meta-lastmod" datetime="2019-12-10T10:57:45">Updated: December 10, 2019</time>
-<span class="post__meta-categories meta-categories">
-	<span class="meta-categories__list">Categories: <a class="meta-categories__link" href="/categories/computing" rel="category">Computing</a></span>
+			<article class="entry">
+	<div class="entry__meta meta mb">
+	<time class="entry__meta-published meta-published" datetime="2013-02-18T02:30:09Z">18 Feb 2013</time>
+	<time class="entry__meta-lastmod meta-lastmod" datetime="2019-12-10T10:57:45-06:00">Updated: 10 Dec 2019</time>
+<span class="entry__meta-categories meta-categories">
+	<span class="meta-categories__list">Categories:
+		<a class="meta-categories__link" href="/categories/computing" rel="category">Computing</a>
+	</span>
 </span>
 	</div>
-
-				<h1 class="post__title">udev broke, server broke, router broke</h1>
-				<div class="post__content"><p>I attempted to get a webcam going on our home server. So, I plug it in, and since I&rsquo;ve done this before I ran a script I made to grab an image from the webcam. Which didn&rsquo;t work. So, after checking out why (/dev/video0 node was missing), I noticed that the kernel no longer had support built in.</p>
+				<h1 class="entry__title">udev broke, server broke, router broke</h1>
+				<div class="entry__content"><p>I attempted to get a webcam going on our home server. So, I plug it in, and since I&rsquo;ve done this before I ran a script I made to grab an image from the webcam. Which didn&rsquo;t work. So, after checking out why (/dev/video0 node was missing), I noticed that the kernel no longer had support built in.</p>
 <p>After going through the kernel options, I realized they changed the v4l and webcam support options around and since I just upgrade using &ldquo;-silentoldconfig&rdquo; (the bad way to do upgrades), it broke whenever I upgraded to 3.2.12. And 3.2.12 wasn&rsquo;t in portage&rsquo;s tree anymore, and I didn&rsquo;t have the sources for it installed (mistake number 2), so I was pretty much SOL.</p>
 <p>So I decided to upgrade. Remotely. 1500 miles remotely. Long story short, a udev upgrade swapped my network device names around and broke the internet on the reboot, and I had to wait until I was home to fix it. I kind of knew this was going to happen, but meh, I like to gamble.</p>
 <p>It&rsquo;s amazing how many config files have references to eth0/1 in them.</p>
@@ -78,17 +92,17 @@ After going through the kernel options, I realized they changed the v4l and webc
 <p>It&rsquo;s a WRT54G running DD-WRT, and I don&rsquo;t see any firmware upgrades for it. But DD-WRT&rsquo;s website is pretty whack, so who knows. I think I&rsquo;m going to upgrade it in the future, if it keeps crapping out on me.</p>
 </div>
 				
-				<footer class="post__footer">
+				<footer class="entry__footer">
 					
-
-
-<div class="post__tags">
-	<a class="post__tag btn" href="/tags/gentoo">Gentoo</a><a class="post__tag btn" href="/tags/linux">Linux</a><a class="post__tag btn" href="/tags/router">router</a><a class="post__tag btn" href="/tags/udev">udev</a><a class="post__tag btn" href="/tags/wifi">wifi</a>
+<div class="entry__tags">
+			<a class="entry__tag btn" href="/tags/gentoo/">Gentoo</a>
+			<a class="entry__tag btn" href="/tags/linux/">Linux</a>
+			<a class="entry__tag btn" href="/tags/router/">router</a>
+			<a class="entry__tag btn" href="/tags/udev/">udev</a>
+			<a class="entry__tag btn" href="/tags/wifi/">wifi</a>
 </div>
-
-
 					
-<div class="post__share share">
+<div class="entry__share share">
 	<a class="share__link btn" title="Share on Twitter" href="https://twitter.com/intent/tweet/?url=https%3a%2f%2fnearwood.dev%2fudev-broke-server-broke-router-broke%2f&amp;text=udev%20broke%2c%20server%20broke%2c%20router%20broke" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, 'Share on Twitter', 'width=800,height=450,resizable=yes,toolbar=0,status=0'); return false">
 		<svg class="share__icon" aria-label="Twitter" role="img" width="32" height="32" viewBox="0 0 512 512"><path d="M437 152a72 72 0 0 1-40 12 72 72 0 0 0 32-40 72 72 0 0 1-45 17 72 72 0 0 0-122 65 200 200 0 0 1-145-74 72 72 0 0 0 22 94 72 72 0 0 1-32-7 72 72 0 0 0 56 69 72 72 0 0 1-32 1 72 72 0 0 0 67 50 200 200 0 0 1-105 29 200 200 0 0 0 309-179 200 200 0 0 0 35-37"/></svg>
 	</a>
@@ -129,6 +143,9 @@ After going through the kernel options, I realized they changed the v4l and webc
 		</a>
 		<a class="social__link" target="_blank" rel="noopener noreferrer" href="https://github.com/nearwood">
 			<svg class="social__icon" aria-label="Github" role="img" width="32" height="32" viewBox="0 0 512 512"><path d="M335 499c14 0 12 17 12 17H165s-2-17 12-17c13 0 16-6 16-12l-1-50c-71 16-86-28-86-28-12-30-28-37-28-37-24-16 1-16 1-16 26 2 40 26 40 26 22 39 59 28 74 22 2-17 9-28 16-35-57-6-116-28-116-126 0-28 10-51 26-69-3-6-11-32 3-67 0 0 21-7 70 26 42-12 86-12 128 0 49-33 70-26 70-26 14 35 6 61 3 67 16 18 26 41 26 69 0 98-60 120-117 126 10 8 18 24 18 48l-1 70c0 6 3 12 16 12z"/></svg>
+		</a>
+		<a class="social__link" target="_blank" rel="noopener noreferrer" href="https://stackoverflow.com/users/numberid">
+			<svg class="social__icon" aria-label="Stack Overflow" role="img" width="32" height="32" viewBox="0 0 512 512"><g stroke-width="30"><path fill="none" d="M125 297v105h241V297"/><path d="M170 341h150m-144-68l148 31M199 204l136 64m-95-129l115 97M293 89l90 120"/></g></svg>
 		</a>
 </div>
 	<div class="footer__copyright">© 2020 Nick Earwood. <span class="footer__copyright-credits">Powered by <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/vimux/binario" rel="nofollow noopener" target="_blank">Binario</a> theme.</span></div>

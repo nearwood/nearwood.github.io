@@ -21,8 +21,8 @@ So the makers of it had challenges setup. By the time I stumbled on it, only the
 <meta name="twitter:description" content="So, WarpWallet is a so-called brain wallet for Bitcoin. That is, you only have to remember a relatively short password and it generates the corresponding private key for use. It uses a memory and CPU hard set of cryptographic algorithms to ensure that brute-forcing is slowed way down. That is, when generating the private key, it takes considerable time. Their Javascript implementation takes over 10 seconds on my machine.
 So the makers of it had challenges setup. By the time I stumbled on it, only the last challenge was left, with 6 months remaining. For that challenge, the reward for cracking an 8-character alphanumeric password was 20 BTC (and BCH and BTG!), which was worth over $100,000 USD at the time of the challenge end date."/>
 
-	<link rel="stylesheet" href="/css/main.css">
-	<link rel="stylesheet" href="/css/themes/dark-green.css">
+	<link rel="stylesheet" href="/css/bundle.css">
+	<link rel="stylesheet" href="/css/themes/dark-orange.css">
 	<link rel="icon" href="/icons/16.png" sizes="16x16" type="image/png">
 	<link rel="icon" href="/icons/32.png" sizes="32x32" type="image/png">
 		
@@ -50,8 +50,20 @@ So the makers of it had challenges setup. By the time I stumbled on it, only the
 		</div>
 	</button>
 	<ul id="menu" class="main-nav__list">
-		<li class="main-nav__item"><a class="main-nav__link" href="/pages/about/">About</a></li>
-		<li class="main-nav__item"><a class="main-nav__link" href="/pages/contact/">Contact</a></li>
+			<li class="main-nav__item">
+				<a class="main-nav__link" href="/pages/about/">
+					
+					<span class="main-nav__text">About</span>
+					
+				</a>
+			</li>
+			<li class="main-nav__item">
+				<a class="main-nav__link" href="/pages/contact/">
+					
+					<span class="main-nav__text">Contact</span>
+					
+				</a>
+			</li>
 	</ul>
 </nav>
 </header>
@@ -59,18 +71,23 @@ So the makers of it had challenges setup. By the time I stumbled on it, only the
 	<div class="primary">
 	
 	<main class="main">
+		
 		<div class="single block">
-			<article class="post">
-	<div class="post__meta meta mb">
-<time class="post__meta-published meta-published" datetime="2018-01-12T02:13:38">January 12, 2018</time>
-<time class="post__meta-lastmod meta-lastmod" datetime="2020-03-14T20:45:53">Updated: March 14, 2020</time>
-<span class="post__meta-categories meta-categories">
-	<span class="meta-categories__list">Categories: <a class="meta-categories__link" href="/categories/computing" rel="category">Computing</a>, <a class="meta-categories__link" href="/categories/cryptocurrency" rel="category">Cryptocurrency</a>, <a class="meta-categories__link" href="/categories/programming" rel="category">Programming</a>, <a class="meta-categories__link" href="/categories/technology" rel="category">Technology</a></span>
+			<article class="entry">
+	<div class="entry__meta meta mb">
+	<time class="entry__meta-published meta-published" datetime="2018-01-12T02:13:38Z">12 Jan 2018</time>
+	<time class="entry__meta-lastmod meta-lastmod" datetime="2020-03-14T20:45:53-05:00">Updated: 14 Mar 2020</time>
+<span class="entry__meta-categories meta-categories">
+	<span class="meta-categories__list">Categories:
+		<a class="meta-categories__link" href="/categories/computing" rel="category">Computing</a>, 
+		<a class="meta-categories__link" href="/categories/cryptocurrency" rel="category">Cryptocurrency</a>, 
+		<a class="meta-categories__link" href="/categories/programming" rel="category">Programming</a>, 
+		<a class="meta-categories__link" href="/categories/technology" rel="category">Technology</a>
+	</span>
 </span>
 	</div>
-
-				<h1 class="post__title">Education in Futility: WarpWallet Brute Forcing</h1>
-				<div class="post__content"><p>So, <a href="https://keybase.io/warp/warp_1.0.9_SHA256_a2067491ab582bde779f4505055807c2479354633a2216b22cf1e92d1a6e4a87.html" target="_blank" rel="noopener">WarpWallet</a> is a so-called brain wallet for Bitcoin. That is, you only have to remember a relatively short password and it generates the corresponding private key for use. It uses a memory and CPU hard set of cryptographic algorithms to ensure that brute-forcing is slowed way down. That is, when generating the private key, it takes considerable time. Their Javascript implementation takes over 10 seconds on my machine.</p>
+				<h1 class="entry__title">Education in Futility: WarpWallet Brute Forcing</h1>
+				<div class="entry__content"><p>So, <a href="https://keybase.io/warp/warp_1.0.9_SHA256_a2067491ab582bde779f4505055807c2479354633a2216b22cf1e92d1a6e4a87.html" target="_blank" rel="noopener">WarpWallet</a> is a so-called brain wallet for Bitcoin. That is, you only have to remember a relatively short password and it generates the corresponding private key for use. It uses a memory and CPU hard set of cryptographic algorithms to ensure that brute-forcing is slowed way down. That is, when generating the private key, it takes considerable time. Their Javascript implementation takes over 10 seconds on my machine.</p>
 <p>So the makers of it had challenges setup. By the time I stumbled on it, only the last challenge was left, with 6 months remaining. For that challenge, the reward for cracking an 8-character alphanumeric password was 20 BTC (and BCH and BTG!), which was worth over $100,000 USD at the time of the challenge end date.</p>
 <p>Since their Javascript implementation is terribly slow I wondered if anyone had ported it to any other language, and found a Go version-but it was outdated and would not compile. So, as my first exercise in Go, <a href="https://github.com/nearwood/warpwallet">I updated it and got it compiling</a>. Instead of 10+ seconds per keypair generated, it took about 1 second. But, it took input from the command line, so I decided to make a brute forcer that used this newly updated generator. It would feed it the passphrase and salt and store the result (the private key and public key) and then I could parse these results later.</p>
 <p>So the basic design was this:</p>
@@ -83,17 +100,14 @@ So the makers of it had challenges setup. By the time I stumbled on it, only the
 <p>And then on January 1st, 2018 the challenge expired. There&rsquo;re just over 24 million rows, 4.5GB data. It takes a few seconds to test any result. I investigated testing each public address to see if they had a balance but on my local Bitcoin node it takes minutes to scan the blockchain for transactions for newly added addresses. And web APIs rate limit you to where it would take a year or so to test each one. Less if I spread requests out across API providers. So, in the end, I just deleted all the results. It was fun, I learned a lot about Go, cryptocurrency nodes, and I&rsquo;m ready for the next, hopefully more fruitful, project.</p>
 <p> </p></div>
 				
-				<footer class="post__footer">
+				<footer class="entry__footer">
 					
-
-
-<div class="post__tags">
-	<a class="post__tag btn" href="/tags/bitcoin">bitcoin</a><a class="post__tag btn" href="/tags/cryptocurrency">cryptocurrency</a>
+<div class="entry__tags">
+			<a class="entry__tag btn" href="/tags/bitcoin/">bitcoin</a>
+			<a class="entry__tag btn" href="/tags/cryptocurrency/">cryptocurrency</a>
 </div>
-
-
 					
-<div class="post__share share">
+<div class="entry__share share">
 	<a class="share__link btn" title="Share on Twitter" href="https://twitter.com/intent/tweet/?url=https%3a%2f%2fnearwood.dev%2feducation-in-futility-warpwallet-brute-forcing%2f&amp;text=Education%20in%20Futility%3a%20WarpWallet%20Brute%20Forcing" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, 'Share on Twitter', 'width=800,height=450,resizable=yes,toolbar=0,status=0'); return false">
 		<svg class="share__icon" aria-label="Twitter" role="img" width="32" height="32" viewBox="0 0 512 512"><path d="M437 152a72 72 0 0 1-40 12 72 72 0 0 0 32-40 72 72 0 0 1-45 17 72 72 0 0 0-122 65 200 200 0 0 1-145-74 72 72 0 0 0 22 94 72 72 0 0 1-32-7 72 72 0 0 0 56 69 72 72 0 0 1-32 1 72 72 0 0 0 67 50 200 200 0 0 1-105 29 200 200 0 0 0 309-179 200 200 0 0 0 35-37"/></svg>
 	</a>
@@ -130,6 +144,9 @@ So the makers of it had challenges setup. By the time I stumbled on it, only the
 		</a>
 		<a class="social__link" target="_blank" rel="noopener noreferrer" href="https://github.com/nearwood">
 			<svg class="social__icon" aria-label="Github" role="img" width="32" height="32" viewBox="0 0 512 512"><path d="M335 499c14 0 12 17 12 17H165s-2-17 12-17c13 0 16-6 16-12l-1-50c-71 16-86-28-86-28-12-30-28-37-28-37-24-16 1-16 1-16 26 2 40 26 40 26 22 39 59 28 74 22 2-17 9-28 16-35-57-6-116-28-116-126 0-28 10-51 26-69-3-6-11-32 3-67 0 0 21-7 70 26 42-12 86-12 128 0 49-33 70-26 70-26 14 35 6 61 3 67 16 18 26 41 26 69 0 98-60 120-117 126 10 8 18 24 18 48l-1 70c0 6 3 12 16 12z"/></svg>
+		</a>
+		<a class="social__link" target="_blank" rel="noopener noreferrer" href="https://stackoverflow.com/users/numberid">
+			<svg class="social__icon" aria-label="Stack Overflow" role="img" width="32" height="32" viewBox="0 0 512 512"><g stroke-width="30"><path fill="none" d="M125 297v105h241V297"/><path d="M170 341h150m-144-68l148 31M199 204l136 64m-95-129l115 97M293 89l90 120"/></g></svg>
 		</a>
 </div>
 	<div class="footer__copyright">© 2020 Nick Earwood. <span class="footer__copyright-credits">Powered by <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/vimux/binario" rel="nofollow noopener" target="_blank">Binario</a> theme.</span></div>

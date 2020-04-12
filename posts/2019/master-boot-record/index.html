@@ -11,22 +11,22 @@
 		<meta property="og:title" content="Master Boot Record" />
 <meta property="og:description" content="I like listening to instrumental music while I code, it helps keep me focused.
 On Bandcamp there&rsquo;s an artist I like called Master Boot Record.
-Their albums routinely contain &ldquo;secrets&rdquo; as the album description text. They are small easter egg like puzzles.
-In this post I&rsquo;ll go over how I solved or attempted to solve each one I found." />
+The albums routinely contain &ldquo;secrets&rdquo; as the album description text. They are small easter egg like puzzles.
+Below is a list of links to a post about each album and whether or not it I solved it." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://nearwood.dev/posts/2019/master-boot-record/" />
 <meta property="article:published_time" content="2019-12-09T22:17:43-06:00" />
-<meta property="article:modified_time" content="2020-03-21T15:42:49-05:00" />
+<meta property="article:modified_time" content="2020-04-11T20:44:09-05:00" />
 
 		<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Master Boot Record"/>
 <meta name="twitter:description" content="I like listening to instrumental music while I code, it helps keep me focused.
 On Bandcamp there&rsquo;s an artist I like called Master Boot Record.
-Their albums routinely contain &ldquo;secrets&rdquo; as the album description text. They are small easter egg like puzzles.
-In this post I&rsquo;ll go over how I solved or attempted to solve each one I found."/>
+The albums routinely contain &ldquo;secrets&rdquo; as the album description text. They are small easter egg like puzzles.
+Below is a list of links to a post about each album and whether or not it I solved it."/>
 
-	<link rel="stylesheet" href="/css/main.css">
-	<link rel="stylesheet" href="/css/themes/dark-green.css">
+	<link rel="stylesheet" href="/css/bundle.css">
+	<link rel="stylesheet" href="/css/themes/dark-orange.css">
 	<link rel="icon" href="/icons/16.png" sizes="16x16" type="image/png">
 	<link rel="icon" href="/icons/32.png" sizes="32x32" type="image/png">
 		
@@ -54,8 +54,20 @@ In this post I&rsquo;ll go over how I solved or attempted to solve each one I fo
 		</div>
 	</button>
 	<ul id="menu" class="main-nav__list">
-		<li class="main-nav__item"><a class="main-nav__link" href="/pages/about/">About</a></li>
-		<li class="main-nav__item"><a class="main-nav__link" href="/pages/contact/">Contact</a></li>
+			<li class="main-nav__item">
+				<a class="main-nav__link" href="/pages/about/">
+					
+					<span class="main-nav__text">About</span>
+					
+				</a>
+			</li>
+			<li class="main-nav__item">
+				<a class="main-nav__link" href="/pages/contact/">
+					
+					<span class="main-nav__text">Contact</span>
+					
+				</a>
+			</li>
 	</ul>
 </nav>
 </header>
@@ -63,335 +75,91 @@ In this post I&rsquo;ll go over how I solved or attempted to solve each one I fo
 	<div class="primary">
 	
 	<main class="main">
+		
 		<div class="single block">
-			<article class="post">
-	<div class="post__meta meta mb">
-<time class="post__meta-published meta-published" datetime="2019-12-09T22:17:43">December 09, 2019</time>
-<time class="post__meta-lastmod meta-lastmod" datetime="2020-03-21T15:42:49">Updated: March 21, 2020</time>
+			<article class="entry">
+	<div class="entry__meta meta mb">
+	<time class="entry__meta-published meta-published" datetime="2019-12-09T22:17:43-06:00">09 Dec 2019</time>
+	<time class="entry__meta-lastmod meta-lastmod" datetime="2020-04-11T20:44:09-05:00">Updated: 11 Apr 2020</time>
 	</div>
-
-				<h1 class="post__title">Master Boot Record</h1>
-<details class="post__toc toc" >
-	<summary class="toc__title">Table of Contents</summary>
-	<nav id="TableOfContents">
-  <ul>
-    <li><a href="#cfixmbr">C​:​\​&gt;FIXMBR</a>
-      <ul>
-        <li><a href="#secret">Secret</a></li>
-        <li><a href="#analysis">Analysis</a></li>
-        <li><a href="#solution">Solution</a></li>
-      </ul>
-    </li>
-    <li><a href="#cedit-configsys">C​:​\​&gt;EDIT CONFIG​.​SYS</a>
-      <ul>
-        <li><a href="#secret-1">Secret</a></li>
-        <li><a href="#analysis-1">Analysis</a></li>
-      </ul>
-    </li>
-    <li><a href="#cedit-autoexecbat">C​:​\​&gt;EDIT AUTOEXEC​.​BAT</a>
-      <ul>
-        <li><a href="#secret-2">Secret</a></li>
-        <li><a href="#analysis-2">Analysis</a></li>
-      </ul>
-    </li>
-    <li><a href="#486dx">486DX</a>
-      <ul>
-        <li><a href="#secret-3">Secret</a></li>
-        <li><a href="#analysis-3">Analysis</a></li>
-        <li><a href="#solution-1">Solution</a></li>
-      </ul>
-    </li>
-    <li><a href="#cchkdsk-f">C​:​\​&gt;CHKDSK /F</a>
-      <ul>
-        <li><a href="#secret-4">Secret</a></li>
-        <li><a href="#analysis-4">Analysis</a></li>
-      </ul>
-    </li>
-    <li><a href="#ccopy--a-v">C​:​\​&gt;COPY <em>​.​</em> A: /V</a>
-      <ul>
-        <li><a href="#secret-5">Secret</a></li>
-        <li><a href="#analysis-5">Analysis</a></li>
-      </ul>
-    </li>
-    <li><a href="#interrupt-request">Interrupt Request</a>
-      <ul>
-        <li><a href="#secret-6">Secret</a></li>
-        <li><a href="#analysis-6">Analysis</a></li>
-      </ul>
-    </li>
-    <li><a href="#internet-protocol">INTERNET PROTOCOL</a>
-      <ul>
-        <li><a href="#secret-7">Secret</a></li>
-        <li><a href="#analysis-7">Analysis</a></li>
-      </ul>
-    </li>
-    <li><a href="#floppy-disk-overdrive">FLOPPY DISK OVERDRIVE</a>
-      <ul>
-        <li><a href="#secret-8">Secret</a></li>
-        <li><a href="#analysis-8">Analysis</a></li>
-        <li><a href="#solution-2">Solution</a></li>
-      </ul>
-    </li>
-  </ul>
-</nav>
-</details>
-
-				<div class="post__content"><p>I like listening to instrumental music while I code, it helps keep me focused.
+				<h1 class="entry__title">Master Boot Record</h1>
+				<div class="entry__content"><p>I like listening to instrumental music while I code, it helps keep me focused.
 On <a href="https://bandcamp.com/">Bandcamp</a> there&rsquo;s an artist I like called <a href="https://masterbootrecord.bandcamp.com/">Master Boot Record</a>.
-Their albums routinely contain &ldquo;secrets&rdquo; as the album description text. They are small easter egg like puzzles.
-In this post I&rsquo;ll go over how I solved or attempted to solve each one I found.</p>
-<p>The albums are ordered by release date, oldest first.</p>
+The albums routinely contain &ldquo;secrets&rdquo; as the album description text. They are small easter egg like puzzles.</p>
+<p>Below is a list of links to a post about each album and whether or not it I solved it.</p>
+<p>Here are the albums and whether I&rsquo;ve solved them ordered by release date:</p>
 <hr>
-<h2 id="cfixmbr">C​:​\​&gt;FIXMBR</h2>
-<h3 id="secret">Secret</h3>
-<pre><code class="language-code" data-lang="code">010010000110010101100001011101100111100100100000010011010110010101110100011000010110110000100000011010010111001100100000011011100110111101110100001000000110010001100101011000010110010000101110000011010000101001001001011101000010000001110111011000010111001100100000011010100111010101110011011101000010000001101110011011110111010000100000011001010111011001100101011011100110110001111001001000000111001101111001011011100111010001101000011001010111001101101001011110100110010101100100</code></pre>
-<h3 id="analysis">Analysis</h3>
-<p>Looks like binary. To start, we&rsquo;ll make a few assumptions:</p>
-<ul>
-<li>It&rsquo;s formatted as 8-bit bytes (octets)</li>
-<li>It&rsquo;s big-endian</li>
-</ul>
-<p>It&rsquo;s safe to assume those and we can change them easily later if the data looks wonky.</p>
-<p>After dividing the binary string to 8-bits, and parsing each of those octets as an integer, I get what looks like ASCII code points:</p>
-<script type="application/javascript" src="https://gist.github.com/nearwood/40f41c33f8e56e6f2af64d4a36fab0be.js"></script>
-
-<h3 id="solution">Solution</h3>
-<blockquote>
-<p>Heavy Metal is not dead. It was just not evenly synthesized</p>
-</blockquote>
-<hr>
-<h2 id="cedit-configsys">C​:​\​&gt;EDIT CONFIG​.​SYS</h2>
-<h3 id="secret-1">Secret</h3>
-<pre><code class="language-code" data-lang="code">30 30 31 30 31 31 31 30 20 30 30 31 30 31 31 30 31 20 30 30 31 30 30 30 30 30 20 30 30 31 30 31 31 31 30 20 30 30 31 30 31 31 30 31 20 30 30 31 30 31 31 31 30 20 30 30 31 30 31 31 31 30 20 30 30 31 30 30 30 30 30 20 30 30 31 30 31 31 31 30 20 30 30 31 30 31 31 30 31 20 30 30 31 30 31 31 31 30 20 30 30 31 30 31 31 31 30 20 30 30 31 30 30 30 30 30 20 30 30 31 30 30 30 30 30 20 30 30 31 30 30 30 30 30 20 30 30 31 30 30 30 30 30 20 30 30 31 30 30 30 30 30 20 30 30 31 30 31 31 31 30 20 30 30 31 30 31 31 31 30 20 30 30 31 30 30 30 30 30 20 30 30 31 30 30 30 30 30 20 30 30 31 30 30 30 30 30 20 30 30 31 30 30 30 30 30 20 30 30 31 30 30 30 30 30 20 30 30 31 30 31 31 31 30 20 30 30 31 30 31 31 31 30 20 30 30 31 30 31 31 31 30 20 30 30 31 30 31 31 31 30 20 30 30 31 30 30 30 30 30 20 30 30 31 30 31 31 31 30 20 30 30 31 30 31 31 30 31 20 30 30 31 30 30 30 30 30 20 30 30 31 30 31 31 31 30 20 30 30 31 30 31 31 31 30 20 30 30 31 30 31 31 31 30 20 30 30 31 30 31 31 30 31 20 30 30 31 30 30 30 30 30 20 30 30 31 30 31 31 31 30 20 30 30 31 30 30 30 30 30 20 30 30 31 30 30 30 30 30 20 30 30 31 30 30 30 30 30 20 30 30 31 30 30 30 30 30 20 30 30 31 30 30 30 30 30 20 30 30 31 30 31 31 31 30 20 30 30 31 30 31 31 31 30 20 30 30 31 30 30 30 30 30 20 30 30 31 30 31 31 31 30 20 30 30 31 30 31 31 31 30 20 30 30 31 30 31 31 31 30 20 30 30 31 30 30 30 30 30 20 30 30 31 30 30 30 30 30 20 30 30 31 30 30 30 30 30 20 30 30 31 30 30 30 30 30 20 30 30 31 30 30 30 30 30 20 30 30 31 30 31 31 30 31 20 30 30 31 30 31 31 30 31 20 30 30 31 30 30 30 30 30 20 30 30 31 30 31 31 30 31 20 30 30 31 30 31 31 31 30 20 30 30 31 30 31 31 30 31 20 30 30 31 30 31 31 30 31 20 30 30 31 30 30 30 30 30 20 30 30 31 30 30 30 30 30 20 30 30 31 30 30 30 30 30 20 30 30 31 30 30 30 30 30 20 30 30 31 30 30 30 30 30 20 30 30 31 30 31 31 30 31 20 30 30 31 30 31 31 31 30 20 30 30 31 30 31 31 30 31 20 30 30 31 30 31 31 31 30 20 30 30 31 30 30 30 30 30 20 30 30 31 30 31 31 30 31 20 30 30 31 30 31 31 30 31 20 30 30 31 30 31 31 30 31 20 30 30 31 30 30 30 30 30 20 30 30 31 30 31 31 30 31 20 30 30 31 30 31 31 30 31 20 30 30 31 30 30 30 30 30 20 30 30 31 30 31 31 31 30 20 30 30 31 30 31 31 30 31 20 30 30 31 30 31 31 30 31 20 30 30 31 30 31 31 31 30 20 30 30 31 30 30 30 30 30 20 30 30 31 30 31 31 31 30 20 30 30 31 30 31 31 31 30 20 30 30 31 30 31 31 30 31 20 30 30 31 30 30 30 30 30 20 30 30 31 30 31 31 30 31 20 30 30 31 30 30 30 30 30 20 30 30 31 30 31 31 31 30 20 30 30 31 30 30 30 30 30 20 30 30 31 30 31 31 31 30 20 30 30 31 30 31 31 30 31 20 30 30 31 30 31 31 31 30</code></pre>
-<h3 id="analysis-1">Analysis</h3>
-<p>At a glance, I only see 3 different numbers: <code>20</code>, <code>30</code>, and <code>31</code>.
-With just 3 bits of data, I&rsquo;m not sure what this could represent. (<a href="https://en.wikipedia.org/wiki/Ternary_computer">Ternary</a>!?)
-It&rsquo;s possible they could be grouped in 2&rsquo;s or 4&rsquo;s.
-Or perhaps the first digit of each number is irrelevant and it&rsquo;s obfuscated binary.</p>
-<hr>
-<h2 id="cedit-autoexecbat">C​:​\​&gt;EDIT AUTOEXEC​.​BAT</h2>
-<h3 id="secret-2">Secret</h3>
-<pre><code class="language-code" data-lang="code">045 032 046 046 046 046 032 046 046 032 046 046 046 032 032 032 032 032 046 046 032 046 046 046 032 032 032 032 032 045 032 046 046 046 046 032 046 032 032 032 032 032 046 046 046 032 045 045 045 032 046 046 045 032 045 046 032 045 046 046 032 032 032 032 032 045 045 045 032 046 046 045 046 032 032 032 032 032 045 032 046 046 046 046 032 045 045 045 032 046 046 046 032 046 032 032 032 032 032 046 045 045 032 046 046 046 046 032 045 045 045 032 032 032 032 032 046 046 046 046 032 046 045 032 046 046 046 045 032 046 032 032 032 032 032 046 045 046 046 032 045 045 045 032 046 046 046 032 045 032 032 032 032 032 046 032 046 046 046 045 032 046 032 046 045 046 032 045 046 045 045 032 045 032 046 046 046 046 032 046 046 032 045 046 032 045 045 046 032 032 032 032 032 045 032 046 046 046 046 032 046 032 045 046 045 045 032 032 032 032 032 046 046 046 046 032 046 045 032 045 046 046 032 045 045 194 183 194 183 045 045 032 032 032 032 032 045 032 046 046 046 046 032 046 032 046 046 032 046 045 046 032 032 032 032 032 046 046 045 046 032 046 045 032 045 045 032 046 046 032 046 045 046 046 032 045 046 045 045 032 045 045 194 183 194 183 045 045 032 032 032 032 032 045 032 046 046 046 046 032 046 032 046 046 032 046 045 046 032 032 032 032 032 046 045 046 046 032 045 045 045 032 046 046 046 045 032 046 032 045 045 194 183 194 183 045 045 032 032 032 032 032 045 032 046 046 046 046 032 046 032 046 046 032 046 045 046 032 032 032 032 032 045 046 046 032 046 045 046 032 046 032 046 045 032 045 045 032 046 046 046 032 032 032 032 032 046 045 032 045 046 032 045 046 046 032 032 032 032 032 045 032 046 046 046 046 032 046 032 045 046 032 032 032 032 032 046 046 045 032 046 045 046 046 032 045 032 046 046 032 045 045 032 046 045 032 045 032 046 032 046 045 046 046 032 045 046 045 045 032 032 032 032 032 045 032 046 046 046 046 032 046 032 045 045 032 046 046 046 032 046 032 046 045 046 046 032 046 046 046 045 032 046 032 046 046 046 032 032 032 032 032 046 045 045 032 046 045 032 045 046 032 045 046 046 032 046 032 046 045 046 032 046 046 032 045 046 032 045 045 046 032 032 032 032 032 046 046 032 045 046 032 045 032 045 045 045 032 032 032 032 032 045 032 046 046 046 046 032 046 032 032 032 032 032 046 045 046 046 032 046 045 032 045 046 032 045 046 046 032 032 032 032 032 045 045 045 032 046 046 045 046 032 032 032 032 032 046 046 032 045 046 032 046 046 046 032 046 045 032 045 046 032 046 046 032 045 032 045 046 045 045 032 194 183 045 194 183 045 194 183 045</code></pre>
-<h3 id="analysis-2">Analysis</h3>
-<p>This appears to be ASCII code again, but I do not see much variation.
-Just using a lookup table to get a quick idea of what it looks like in ASCII:</p>
-<ul>
-<li>032: <code> </code> (space)</li>
-<li>045: <code>-</code></li>
-<li>046: <code>.</code></li>
-<li>183: <code>·</code> (unicode)</li>
-<li>194: <code>Â</code> (unicode)</li>
-</ul>
-<p>Well, perhaps it&rsquo;s Morse Code but there&rsquo;s some extra data there.
-Maybe it&rsquo;s ASCII Art aligned by the Unicode characters?</p>
-<hr>
-<h2 id="486dx">486DX</h2>
-<h3 id="secret-3">Secret</h3>
-<pre><code class="language-code" data-lang="code">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</code></pre>
-<h3 id="analysis-3">Analysis</h3>
-<p>It&rsquo;s a Base64 encoded blob. Decoding it and looking at it with a hex editor I see a header with &ldquo;JFIF&rdquo;, indicating it is probably a JPEG.</p>
-<h3 id="solution-1">Solution</h3>
-<p><img src="data:image/png;base64,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" alt="test"></p>
-<p>But perhaps there&rsquo;s more to it? Some embedded data in the JPEG?</p>
-<hr>
-<h2 id="cchkdsk-f">C​:​\​&gt;CHKDSK /F</h2>
-<h3 id="secret-4">Secret</h3>
-<pre><code class="language-code" data-lang="code">EnCt22c62d8d00a89d36908e9015ae37997d3c7ad246a2c62d8d00a89d36908e9015a1oP6qx4YRwLsBuHI41cIJP4+e/69xyBAGJIxfloS/Oq7/cpvKOb9PVojA0iOlrIyWcdBRSqAnVpV2EnF75tADlbmgkOkgkJHPOgxwMmSVmjwXqutPdIFF5DXcsB8X/URs0qgEuxgK3N5pUuJorJED/O4Yg1xz1E=IwEmS</code></pre>
-<h3 id="analysis-4">Analysis</h3>
-<p>Looks like Base64, although I do see a rather low-entropy substring: <code>22c62d8d00a89d36908e9015ae37997d3c7ad246a2c62d8d00a89d36908e9015a1</code> that might be hexidecimal.
-It could also just be a coincidence as well.</p>
-<p>I receive errors trying to decode it. I tried removing the substring above as well, but no dice.
-It does output some binary though, but I do not see any headers I recognize, nor does the <code>file</code> command in Linux.</p>
-<hr>
-<h2 id="ccopy--a-v">C​:​\​&gt;COPY <em>​.​</em> A: /V</h2>
-<h3 id="secret-5">Secret</h3>
-<pre><code class="language-code" data-lang="code">+HVbtNTHntCsA5HtypmkB2Luk0ZWxzjqOCScRd/Zts+xU/TibjoNVjbgvXql4hyqJYtQT+S6y93dq39xLZNgKHw4qfYz+ZB0VZLP3BLvc87a6tR53kEoDEnoc01Wf2jVZFOmtqiRsovF44E8NplrWOhyGv8NmYc21Ni88U9dMCrxQzGRk45gTVkMrt44LzMNuhKSmS1tRYGFvG3na5thxMOqewuD9hLw4XWTYPxJtYlkIgAnrZ6qAYeaenrzJi+I9aOvT72oNVI8HtwbnrEw2GlyTjhL4/lpLRhX1/aaPbi7OBj4Auy7/GB9znZ0bmkvUSxElv0clTaS8AIYNOoz9A==</code></pre>
-<pre><code class="language-code" data-lang="code">EnCt2559258b58f45ad5c5871c693b3c5eccccebc4f53559258b58f45ad5c5871c693Rew1MuvDTgB
-YlR7qvVizRx37EFA2uik6LiDU9KjCCggTog==IwEmS</code></pre>
-<pre><code class="language-code" data-lang="code">EnCt212656377efe453fee57c2312c89896cc914da70812656377efe453fee57c2312A0dZfcchcAP
-Zhl3qvVjg9eQcJjZHLKJdgPM=IwEmS</code></pre>
-<h3 id="analysis-5">Analysis</h3>
-<p>This appears to be 3 Base64 blobs. The first one decodes easily.
-It ends up being a 256-byte binary blob, with no discernable header.
-Perhaps the result of a block-cipher, and the other two blobs can decrypt it.</p>
-<p>For those remaining 2 blobs, usually <code>=</code> characters at the end indicate Base64 encoding (it&rsquo;s padding used to indicate the last 3-byte block had fewer than 3 bytes).
-But, they don&rsquo;t seem to decode. They look familiar: they begin with <code>EnCt</code> and end with <code>IwEmS</code>.
-This pattern was seen in the <em>C​:​\​&gt;CHKDSK /F</em> album.</p>
-<p>Perhaps it&rsquo;s a Base64 string embedded in another format?
-Perhaps it requires using parts of other album puzzles/solutions?</p>
-<hr>
-<h2 id="interrupt-request">Interrupt Request</h2>
-<h3 id="secret-6">Secret</h3>
-<pre><code class="language-code" data-lang="code">087 104 101 110 032 116 104 101 032 077 111 111 110 032 119 105 108 108 032 115 104 101 100 032 110 111 032 108 105 103 104 116 013 010 087 105 116 104 032 116 104 101 032 069 113 117 105 110 111 120 032 099 108 111 115 101 032 098 121 013 010 073 110 032 116 104 101 032 100 097 114 107 032 097 032 115 112 101 108 108 119 097 114 101 032 114 105 115 101 013 010 082 105 100 105 110 103 032 111 110 032 097 032 108 105 103 104 116 110 105 110 103 032 115 116 114 105 107 101 013 010 013 010 077 097 100 101 032 111 102 032 099 105 114 099 117 105 116 032 098 111 097 114 100 115 032 097 110 100 032 098 121 116 101 115 013 010 070 111 114 103 101 100 032 116 111 032 099 114 111 115 115 032 111 117 114 032 115 112 097 099 101 032 097 110 100 032 116 105 109 101 013 010 084 104 114 117 032 116 104 101 032 115 116 111 114 109 032 109 121 032 115 111 117 108 032 119 105 108 108 032 103 117 105 100 101 013 010 084 111 032 116 104 101 032 112 097 116 104 032 102 111 114 032 103 108 111 114 121 032 097 110 100 032 109 105 103 104 116 013 010 013 010 078 111 119 032 106 117 115 116 032 116 097 107 101 032 115 111 109 101 032 111 102 032 121 111 117 114 032 116 105 109 101 013 010 087 104 105 108 101 032 119 101 032 115 104 097 114 101 032 116 104 105 115 032 114 105 116 117 097 108 032 110 105 103 104 116 013 010 084 104 101 114 101 039 115 032 097 032 115 101 099 114 101 116 032 103 105 102 116 032 116 104 097 116 032 104 105 100 101 115 013 010 066 117 116 032 119 111 110 039 116 032 099 111 109 101 032 119 105 116 104 111 117 116 032 097 032 102 105 103 104 116 013 010 013 010 070 105 114 115 116 032 121 111 117 032 110 101 101 100 032 116 111 032 103 101 116 032 116 104 101 032 114 104 121 109 101 013 010 087 104 101 110 032 104 101 114 101 032 099 111 109 101 115 032 116 104 101 032 100 097 114 107 101 115 116 032 110 105 103 104 116 013 010 084 104 101 110 032 121 111 117 032 116 097 107 101 032 116 104 101 032 102 105 114 115 116 032 056 032 098 121 116 101 115 013 010 067 111 117 110 116 032 116 104 101 032 112 105 110 115 032 097 110 100 032 110 111 114 109 097 108 105 122 101 013 010 013 010 079 110 099 101 032 121 111 117 032 103 111 116 032 116 104 101 032 110 117 109 098 101 114 115 032 114 105 103 104 116 013 010 074 117 115 116 032 098 101 119 097 114 101 032 116 104 101 032 111 100 100 115 032 097 114 101 032 108 105 101 115 013 010 076 105 110 101 032 116 104 101 109 032 105 110 032 097 032 114 111 119 032 097 110 100 032 119 114 105 116 101 013 010 084 104 097 116 032 119 105 108 108 032 112 117 116 032 116 104 101 032 099 111 100 101 032 105 110 032 115 105 103 104 116 013 010 013 010 078 111 119 032 100 111 110 039 116 032 115 116 114 101 115 115 032 097 110 100 032 116 097 107 101 032 121 111 117 114 032 116 105 109 101 013 010 083 111 109 101 116 105 109 101 115 032 119 111 114 100 115 032 099 097 110 032 116 114 105 099 107 032 121 111 117 114 032 109 105 110 100 013 010 070 111 114 032 105 110 032 065 083 067 073 073 032 099 111 100 101 032 121 111 117 039 108 108 032 102 105 110 100 013 010 084 104 101 032 115 111 108 117 116 105 111 110 032 116 111 032 116 104 101 115 101 032 114 104 121 109 101 115</code></pre>
-<h3 id="analysis-6">Analysis</h3>
-<p>Immediately I see <code>032</code> which is a space character in ASCII.
-At a glance, I also don&rsquo;t see any lower than <code>32</code> or higher than <code>127</code>.
-This most likely ASCII code.
-Using a little Javascript to decode it:</p>
-<script type="application/javascript" src="https://gist.github.com/nearwood/de02d1c36192c9c4f3eec2b7d5810a1b.js"></script>
-
-<p>Which results in:</p>
-<pre><code>When the Moon will shed no light
-With the Equinox close by
-In the dark a spellware rise
-Riding on a lightning strike
-
-Made of circuit boards and bytes
-Forged to cross our space and time
-Thru the storm my soul will guide
-To the path for glory and might
-
-Now just take some of your time
-While we share this ritual night
-There's a secret gift that hides
-But won't come without a fight
-
-First you need to get the rhyme
-When here comes the darkest night
-Then you take the first 8 bytes
-Count the pins and normalize
-
-Once you got the numbers right
-Just beware the odds are lies
-Line them in a row and write
-That will put the code in sight
-
-Now don't stress and take your time
-Sometimes words can trick your mind
-For in ASCII code you'll find
-The solution to these rhymes
-</code></pre><p>I have not tried to solve the riddle. But it seems to involve finding a number and removing the odds. This has been done before in other MBR riddles.</p>
-<hr>
-<h2 id="internet-protocol">INTERNET PROTOCOL</h2>
-<blockquote>
-<p>Note: This is the same challenge that&rsquo;s currently (20 Mar 2020) on the <a href="http://mbrserver.com">http://mbrserver.com</a> landing page.</p>
-</blockquote>
-<h3 id="secret-7">Secret</h3>
-<pre><code class="language-code" data-lang="code">087 101 108 099 111 109 101 032 098 097 099 107 032 097 103 097 105 110 032 119 104 101 114 101 032 105 116 032 097 108 108 032 098 101 103 097 110 013 010 079 112 101 110 032 097 114 101 032 116 104 101 032 112 111 114 116 115 046 032 083 101 114 118 105 099 101 115 032 097 108 108 032 115 116 097 114 116 101 100 046 013 010 075 110 111 099 107 032 097 116 032 101 118 101 114 121 032 100 111 111 114 032 097 110 100 032 103 114 097 098 032 116 104 101 032 109 105 115 115 105 110 103 032 115 116 114 105 110 103 115 013 010 080 117 116 032 116 104 101 109 032 105 110 032 097 032 114 111 119 032 097 110 100 032 099 114 097 099 107 032 116 104 101 032 099 111 100 101 032 116 111 032 119 105 110 013 010 013 010 083 099 097 110 110 105 110 103 032 099 108 111 115 101 032 116 104 101 032 102 105 108 101 115 032 109 097 121 032 114 101 118 101 097 108 032 115 111 109 101 032 116 104 105 110 103 115 013 010 068 097 116 097 032 121 111 117 032 099 097 110 039 116 032 104 101 097 114 046 032 068 097 116 097 032 121 111 117 032 099 097 110 039 116 032 115 101 101 046 013 010 083 099 097 116 116 101 114 101 100 032 097 114 101 032 116 104 101 032 099 108 117 101 115 032 097 108 108 032 097 114 111 117 110 100 032 116 104 101 032 100 105 115 107 013 010 083 111 109 101 032 097 114 101 032 105 110 032 112 108 097 105 110 032 115 105 103 104 116 032 115 111 109 101 032 121 111 117 032 110 101 101 100 032 116 111 032 116 104 105 110 107 013 010 013 010 067 104 101 099 107 032 121 111 117 114 032 109 097 105 108 032 102 111 114 032 109 101 115 115 097 103 101 115 044 032 108 111 103 032 111 110 032 073 082 067 013 010 070 101 101 108 105 110 103 032 111 108 100 032 097 108 114 101 097 100 121 063 032 079 104 032 073 032 098 101 116 032 121 111 117 032 100 105 100 046 013 010 089 111 117 032 119 105 108 108 032 110 101 101 100 032 115 111 109 101 032 116 111 111 108 115 044 032 108 111 111 107 032 097 114 111 117 110 100 032 102 111 114 032 104 097 099 107 115 013 010 084 097 108 107 032 119 105 116 104 032 097 108 108 032 116 104 101 032 100 097 101 109 111 110 115 032 104 105 100 105 110 103 032 105 110 032 116 104 101 032 100 097 114 107 013 010 013 010 078 111 119 032 100 111 110 039 116 032 098 101 032 097 102 114 097 105 100 046 032 073 116 039 115 032 097 032 115 105 109 112 108 101 032 103 097 109 101 046 013 010 065 108 108 032 121 111 117 032 110 101 101 100 032 097 114 101 032 109 101 109 111 114 105 101 115 032 098 117 114 105 101 100 032 105 110 032 121 111 117 114 032 098 114 097 105 110 013 010 070 111 114 032 105 116 039 115 032 105 110 032 116 104 101 032 112 097 115 116 032 119 104 101 114 101 032 121 111 117 032 110 101 101 100 032 116 111 032 115 116 097 114 116 013 010 083 117 114 102 105 110 103 032 108 105 107 101 032 097 032 112 105 114 097 116 101 046 032 073 032 119 105 115 104 032 121 111 117 032 103 111 111 100 032 108 117 099 107 046</code></pre>
-<h3 id="analysis-7">Analysis</h3>
-<p>Looks like ASCII again, just pasted it in my simple decoder:</p>
-<pre><code>Welcome back again where it all began
-Open are the ports. Services all started.
-Knock at every door and grab the missing strings
-Put them in a row and crack the code to win
-
-Scanning close the files may reveal some things
-Data you can't hear. Data you can't see.
-Scattered are the clues all around the disk
-Some are in plain sight some you need to think
-
-Check your mail for messages, log on IRC
-Feeling old already? Oh I bet you did.
-You will need some tools, look around for hacks
-Talk with all the daemons hiding in the dark
-
-Now don't be afraid. It's a simple game.
-All you need are memories buried in your brain
-For it's in the past where you need to start
-Surfing like a pirate. I wish you good luck.
-</code></pre><p>An port scan of mbrserver.com shows:</p>
-<pre><code>&gt; nmap -vA mbrserver.com
-Scanning mbrserver.com (80.211.167.123) [1000 ports]
-Discovered open port 21/tcp on 80.211.167.123
-Discovered open port 110/tcp on 80.211.167.123
-Discovered open port 80/tcp on 80.211.167.123
-Discovered open port 23/tcp on 80.211.167.123
-Discovered open port 6667/tcp on 80.211.167.123
-Discovered open port 70/tcp on 80.211.167.123
-</code></pre><p>First, I tried gopher since I could use a <a href="http://gopher.floodgap.com/gopher/gw">web-based client</a> rather than installing one on my machine.</p>
-<p>There&rsquo;re two files: <code>welcome.txt</code> and <code>gw.png</code>. The text file has a 71kB Base64 string.</p>
-<blockquote>
-<p><code>welcome.txt</code></p>
-</blockquote>
-<pre><code>WELCOME BACK TO THE EARLY 90'S! HERE'S YOUR E-MAIL PASSWORD:
-
-iVBORw0KGgoAAAANSUh...
-</code></pre><p>The PNG has an MBR logo and rows of binary octets. I tried a few attempts at OCR, but could not get
-it to parse the 0s and 1s reliably. So I started hammering it out manually:</p>
-<blockquote>
-<p><strong>Note:</strong> Incomplete</p>
-</blockquote>
-<pre><code>00110011 00110001 00100000 00110011 00110000 00100000 00110011
-00110111 00100000 00110010 00110000 00100000 00110011 00110000
-00100000 00110011 00111000 00100000 00110011 00110000 00100000
-00110010 00110000 00100000 00110011 00110001 00100000 00110011
-00110001 00000000 00000000 00000000 00000000 00000000 00000000
-00100000 00000000 00000000 00000000 00000000 00000000 00000000
-00110011 00000000 00000000 00000000 00000000 00000000 00000000
-00110000 00000000 00000000 00000000 00000000 00000000 00000000
-00100000 00000000 00000000 00000000 00000000 00000000 00000000
-00110011 00000000 00000000 00000000 00000000 00000000 00000000
-00110000 00000000 00000000 00000000 00000000 00000000 00000000
-00100000 00000000 00000000 00000000 00000000 00000000 00000000
-00110011 00000000 00000000 00000000 00000000 00000000 00000000
-00110110 00000000 00000000 00000000 00000000 00000000 00000000
-00100000 00000000 00000000 00000000 00000000 00000000 00000000
-00110010 00000000 00000000 00000000 00000000 00000000 00000000
-00110110 00000000 00000000 00000000 00000000 00000000 00000000
-00100000 00000000 00000000 00000000 00000000 00000000 00000000
-00110011 00000000 00000000 00000000 00000000 00000000 00000000
-00110000 00000000 00000000 00000000 00000000 00000000 00000000
-00100000 00000000 00000000 00000000 00000000 00000000 00000000
-00110011 00000000 00000000 00000000 00000000 00000000 00000000
-00110000 00000000 00000000 00000000 00000000 00000000 00000000
-00100000 00000000 00000000 00000000 00000000 00000000 00000000
-00110011 00000000 00000000 00000000 00000000 00000000 00000000
-00110001 00000000 00000000 00000000 00000000 00000000 00000000
-00100000 00000000 00000000 00000000 00000000 00000000 00000000
-</code></pre><p>The first 4 rows (28 octets) give: <code>31 30 37 20 30 38 30 20 31 3</code></p>
-<p>Which could be anything. I don&rsquo;t see any bits above the 2^5 place, so <code>63</code> decimal max.</p>
-<hr>
-<h2 id="floppy-disk-overdrive">FLOPPY DISK OVERDRIVE</h2>
-<h3 id="secret-8">Secret</h3>
-<pre><code class="language-code" data-lang="code">065 115 032 116 104 101 032 119 111 114 108 100 032 105 115 032 115 101 116 032 111 110 032 102 105 114 101 013 010 119 104 105 108 101 032 112 114 101 112 097 114 105 110 103 032 102 111 114 032 116 104 105 115 032 102 105 103 104 116 013 010 073 110 032 116 104 101 032 100 097 114 107 032 097 032 115 112 101 108 108 119 097 114 101 032 114 105 115 101 013 010 077 097 100 101 032 111 102 032 049 046 052 052 032 109 101 103 097 098 121 116 101 115 013 010 013 010 073 110 032 097 032 102 108 111 112 112 121 032 100 105 115 107 032 102 105 116 115 032 116 105 103 104 116 013 010 087 105 116 104 032 097 032 099 114 097 099 107 116 114 111 032 112 097 099 107 101 100 032 105 110 115 105 100 101 013 010 077 101 103 097 116 114 097 105 110 101 114 115 032 116 111 032 098 111 111 115 116 032 121 111 117 114 032 109 105 103 104 116 013 010 071 111 116 116 097 032 116 114 121 032 098 101 102 111 114 101 032 121 111 117 032 102 105 103 104 116 013 010 013 010 078 111 119 032 097 103 097 105 110 032 097 110 111 116 104 101 114 032 116 105 109 101 013 010 070 111 108 108 111 119 032 109 101 032 097 108 111 110 103 032 116 104 101 115 101 032 114 104 121 109 101 115 013 010 073 102 032 121 111 117 032 119 097 110 116 032 116 111 032 103 101 116 032 116 104 105 115 032 112 114 105 122 101 013 010 072 105 100 100 101 110 032 105 110 032 098 101 116 119 101 101 110 032 116 104 101 115 101 032 108 105 110 101 115 013 010 013 010 077 097 107 101 032 097 032 115 117 109 032 111 102 032 097 108 108 032 116 104 111 115 101 032 098 121 116 101 115 013 010 084 114 097 115 104 032 116 104 101 032 111 100 100 115 032 097 110 100 032 109 097 107 101 032 105 116 032 116 105 103 104 116 013 010 084 117 114 110 032 116 111 032 065 083 067 073 073 032 099 111 100 101 032 097 110 100 032 119 114 105 116 101 013 010 065 108 108 032 116 104 111 115 101 032 110 117 109 098 101 114 115 032 111 118 101 114 032 097 032 108 105 110 101 013 010 013 010 078 111 119 032 106 117 115 116 032 107 101 101 112 032 116 104 097 116 032 105 110 032 121 111 117 114 032 109 105 110 100 013 010 067 114 097 099 107 032 116 104 101 032 099 111 100 101 032 098 101 108 111 119 032 116 104 101 115 101 032 108 105 110 101 115 013 010 085 115 101 032 116 104 101 032 099 111 100 101 119 111 114 100 032 121 111 117 032 119 105 108 108 032 102 105 110 100 013 010 084 111 032 114 101 100 101 101 109 032 116 104 101 032 098 111 110 117 115 032 112 114 105 122 101 013 010 013 010 069 110 106 111 121 032 070 108 111 112 112 121 032 068 105 115 107 032 079 118 101 114 100 114 105 118 101 033</code></pre>
-<pre><code class="language-code" data-lang="code">iw1r5jgulOG4rRexIP3ijS0kmijNa+1gt1AoA62QYO0K7O41xDiDRuox8A1rf92wLGm7jaJi3BS+rdixt1NldocsJiEuV8NSaFzfFYe658lrFMRxv029EzK6M6kxSLRPYwpjuHY4qJQRyFHhWhyUdKd0WzU+6YcppmWR/uORMmvDWHw4HRmE574h50CiDuswpf3rUa/5dkpwmswyspnlHJODXnSRPFIg9de8KOjOL0Tdg+UKjB/7w2nQE1AEe/JkvNguJ7BqAWN7BqdKOFyN/zGoJo6T/lw0sBe+AJ1geUGUbkUkQtlQmMbY2k0IiarjhMXssQ3wutAqfmPkic87jW16q7K1oBoP4o9Gs9KeAnxp14MhruZ1NGSF30bURr5NxPk3gNu4esNYN8leoVIZ7swZMWiNnFquh1kEEOPXH6gvMiY/FE92DSbYyFM19iCokhaPOpmvldiInvd4wXvq+jKqZyAxYuv3lpEyd3/7UyjfpzVH2q8PS3fxnYeTDzXG8lzH+VrXilsEqJjpeMpt6A==</code></pre>
-<h3 id="analysis-8">Analysis</h3>
-<p>The usual ASCII codes in integer format, but also with what looks like a Base64 string.</p>
-<p>The first one decoded gives hints. There problem I could not figure out was what the riddle was referring to to sum all the bytes. The bytes on disc of each track? No, because there are multiple version available (FLAC, MP3, etc.). The riddle refers to a floppy disk, and there are two floppy disk images include. The secret is in the directory listing PNG file, and it was not too difficult to try different interpretations of the riddle to figure it out.</p>
-<p>ASCII:</p>
-<pre><code>As the world is set on fire
-while preparing for this fight
-In the dark a spellware rise
-Made of 1.44 megabytes
-
-In a floppy disk fits tight
-With a cracktro packed inside
-Megatrainers to boost your might
-Gotta try before you fight
-
-Now again another time
-Follow me along these rhymes
-If you want to get this prize
-Hidden in between these lines
-
-Make a sum of all those bytes
-Trash the odds and make it tight
-Turn to ASCII code and write
-All those numbers over a line
-
-Now just keep that in your mind
-Crack the code below these lines
-Use the codeword you will find
-To redeem the bonus prize
-
-Enjoy Floppy Disk Overdrive!
-</code></pre><h3 id="solution-2">Solution</h3>
-<p>I won&rsquo;t reveal what the key is but the decrypted AES payload (email address and subject removed) is:</p>
-<pre><code>Congratulation for solving the puzzle!
-
-Send a mail to ██████████ including the codeword ████████ in the object. You will get a reply including the link to download the bonus track.
-
-If you liked this puzzle and want something more challenging come and visit the CTF on my server at mbrserver.com
-
-Stay safe and don't stop enjoying the music!
-
-MASTER BOOT RECORD
-</code></pre><p>Plus a bonus track in the email response.</p></div>
+<table>
+<thead>
+<tr>
+<th>Release Date</th>
+<th>Album</th>
+<th>Solved</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>01 Sep 2016</td>
+<td><a href="/posts/2019/ctf-mbr-fixmbr">FIXMBR</a></td>
+<td>✅ Dec 2019</td>
+</tr>
+<tr>
+<td>04 Sep 2016</td>
+<td><a href="/posts/2020/ctf-mbr-configsys">C:&gt;EDIT CONFIG.SYS</a></td>
+<td>✅ Jan 2020</td>
+</tr>
+<tr>
+<td>11 Sep 2016</td>
+<td><a href="/posts/2020/ctf-mbr-autoexec">C​:​\​&gt;EDIT AUTOEXEC​.​BAT</a></td>
+<td>✅ Jan 2020</td>
+</tr>
+<tr>
+<td>22 Sep 2016</td>
+<td><a href="/posts/2020/ctf-mbr-chkdsk">C:&gt;CHKDSK /F</a></td>
+<td>❌</td>
+</tr>
+<tr>
+<td>07 Mar 2017</td>
+<td><a href="/posts/2020/ctf-mbr-copy">C​:​\​&gt;COPY <em>​.​</em> A: /V</a></td>
+<td>❌</td>
+</tr>
+<tr>
+<td>15 May 2017</td>
+<td><a href="/posts/2019/ctf-mbr-486dx">486DX</a></td>
+<td>✅ Dec 2019</td>
+</tr>
+<tr>
+<td>20 Sep 2017</td>
+<td><a href="/posts/2020/ctf-mbr-irq">INTERRUPT REQUEST</a></td>
+<td>❌</td>
+</tr>
+<tr>
+<td>20 Apr 2018</td>
+<td><a href="/posts/2020/ctf-mbr-dma">Direct Memory Access</a></td>
+<td>✅ Mar 2020</td>
+</tr>
+<tr>
+<td>29 Aug 2018</td>
+<td><a href="/posts/2020/ctf-kgc-bullug">Bullug Gegbug Ibgabiug Gixcure Dagabciea Fuic</a></td>
+<td>❌</td>
+</tr>
+<tr>
+<td>20 Mar 2019</td>
+<td><a href="/posts/2020/ctf-mbr-ip">Internet Protocol</a></td>
+<td>❌</td>
+</tr>
+<tr>
+<td>20 Mar 2020</td>
+<td><a href="/posts/2020/ctf-mbr-fdo">Floppy Disk Overdrive</a></td>
+<td>✅ Mar 2020</td>
+</tr>
+</tbody>
+</table></div>
 				
-				<footer class="post__footer">
+				<footer class="entry__footer">
 					
 					
-<div class="post__share share">
+<div class="entry__share share">
 	<a class="share__link btn" title="Share on Twitter" href="https://twitter.com/intent/tweet/?url=https%3a%2f%2fnearwood.dev%2fposts%2f2019%2fmaster-boot-record%2f&amp;text=Master%20Boot%20Record" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, 'Share on Twitter', 'width=800,height=450,resizable=yes,toolbar=0,status=0'); return false">
 		<svg class="share__icon" aria-label="Twitter" role="img" width="32" height="32" viewBox="0 0 512 512"><path d="M437 152a72 72 0 0 1-40 12 72 72 0 0 0 32-40 72 72 0 0 1-45 17 72 72 0 0 0-122 65 200 200 0 0 1-145-74 72 72 0 0 0 22 94 72 72 0 0 1-32-7 72 72 0 0 0 56 69 72 72 0 0 1-32 1 72 72 0 0 0 67 50 200 200 0 0 1-105 29 200 200 0 0 0 309-179 200 200 0 0 0 35-37"/></svg>
 	</a>
@@ -419,6 +187,9 @@ MASTER BOOT RECORD
 		</a>
 		<a class="social__link" target="_blank" rel="noopener noreferrer" href="https://github.com/nearwood">
 			<svg class="social__icon" aria-label="Github" role="img" width="32" height="32" viewBox="0 0 512 512"><path d="M335 499c14 0 12 17 12 17H165s-2-17 12-17c13 0 16-6 16-12l-1-50c-71 16-86-28-86-28-12-30-28-37-28-37-24-16 1-16 1-16 26 2 40 26 40 26 22 39 59 28 74 22 2-17 9-28 16-35-57-6-116-28-116-126 0-28 10-51 26-69-3-6-11-32 3-67 0 0 21-7 70 26 42-12 86-12 128 0 49-33 70-26 70-26 14 35 6 61 3 67 16 18 26 41 26 69 0 98-60 120-117 126 10 8 18 24 18 48l-1 70c0 6 3 12 16 12z"/></svg>
+		</a>
+		<a class="social__link" target="_blank" rel="noopener noreferrer" href="https://stackoverflow.com/users/numberid">
+			<svg class="social__icon" aria-label="Stack Overflow" role="img" width="32" height="32" viewBox="0 0 512 512"><g stroke-width="30"><path fill="none" d="M125 297v105h241V297"/><path d="M170 341h150m-144-68l148 31M199 204l136 64m-95-129l115 97M293 89l90 120"/></g></svg>
 		</a>
 </div>
 	<div class="footer__copyright">© 2020 Nick Earwood. <span class="footer__copyright-credits">Powered by <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/vimux/binario" rel="nofollow noopener" target="_blank">Binario</a> theme.</span></div>

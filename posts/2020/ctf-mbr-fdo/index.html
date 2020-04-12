@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#1b1b1b">
+	<title>CTF: MBR - Floppy Disk Overdrive | Nick</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		<meta property="og:title" content="CTF: MBR - Floppy Disk Overdrive" />
+<meta property="og:description" content="MBR Capture the Flag Challenge
+Album released: 20 Mar 2020
+https://masterbootrecord.bandcamp.com/album/floppy-disk-overdrive" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://nearwood.dev/posts/2020/ctf-mbr-fdo/" />
+<meta property="article:published_time" content="2020-04-04T21:34:07-05:00" />
+<meta property="article:modified_time" content="2020-04-05T22:56:26-05:00" />
+
+		<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="CTF: MBR - Floppy Disk Overdrive"/>
+<meta name="twitter:description" content="MBR Capture the Flag Challenge
+Album released: 20 Mar 2020
+https://masterbootrecord.bandcamp.com/album/floppy-disk-overdrive"/>
+
+	<link rel="stylesheet" href="/css/bundle.css">
+	<link rel="stylesheet" href="/css/themes/dark-orange.css">
+	<link rel="icon" href="/icons/16.png" sizes="16x16" type="image/png">
+	<link rel="icon" href="/icons/32.png" sizes="32x32" type="image/png">
+		
+	
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-5743113-11"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-5743113-11');
+	</script>
+</head>
+<body>
+	<header class="header">
+	<a class="logo" href="/">Nick</a>
+	
+<nav class="main-nav" role="navigation">
+	<button id="toggle" class="main-nav__btn" aria-label="Menu toggle" aria-expanded="false" tabindex="0">
+		<div class="main-nav__btn-box" tabindex="-1">
+			<svg class="main-nav__icon icon-menu" width="18" height="18" viewBox="0 0 18 18">
+				<path class="icon-menu__burger" d="M18 0v3.6H0V0h18zM0 10.8h18V7.2H0v3.6zM0 18h18v-3.6H0V18z"/>
+				<path class="icon-menu__x" d="M11.55 9L18 15.45 15.45 18 9 11.55 2.55 18 0 15.45 6.45 9 0 2.55 2.55 0 9 6.45 15.45 0 18 2.55 11.55 9z"/>
+			</svg>
+		</div>
+	</button>
+	<ul id="menu" class="main-nav__list">
+			<li class="main-nav__item">
+				<a class="main-nav__link" href="/pages/about/">
+					
+					<span class="main-nav__text">About</span>
+					
+				</a>
+			</li>
+			<li class="main-nav__item">
+				<a class="main-nav__link" href="/pages/contact/">
+					
+					<span class="main-nav__text">Contact</span>
+					
+				</a>
+			</li>
+	</ul>
+</nav>
+</header>
+
+	<div class="primary">
+	
+	<main class="main">
+		
+		<div class="single block">
+			<article class="entry">
+	<div class="entry__meta meta mb">
+	<time class="entry__meta-published meta-published" datetime="2020-04-04T21:34:07-05:00">04 Apr 2020</time>
+	<time class="entry__meta-lastmod meta-lastmod" datetime="2020-04-05T22:56:26-05:00">Updated: 05 Apr 2020</time>
+<span class="entry__meta-categories meta-categories">
+	<span class="meta-categories__list">Categories:
+		<a class="meta-categories__link" href="/categories/computing" rel="category">Computing</a>, 
+		<a class="meta-categories__link" href="/categories/ctf" rel="category">CTF</a>, 
+		<a class="meta-categories__link" href="/categories/mbr" rel="category">MBR</a>
+	</span>
+</span>
+	</div>
+				<h1 class="entry__title">CTF: MBR - Floppy Disk Overdrive</h1>
+				<div class="entry__content"><p><a href="/posts/2019/master-boot-record/">MBR Capture the Flag Challenge</a></p>
+<p>Album released: 20 Mar 2020</p>
+<p><a href="https://masterbootrecord.bandcamp.com/album/floppy-disk-overdrive">https://masterbootrecord.bandcamp.com/album/floppy-disk-overdrive</a></p>
+<h3 id="secret">Secret</h3>
+<pre><code class="language-code" data-lang="code">065 115 032 116 104 101 032 119 111 114 108 100 032 105 115 032 115 101 116 032 111 110 032 102 105 114 101 013 010 119 104 105 108 101 032 112 114 101 112 097 114 105 110 103 032 102 111 114 032 116 104 105 115 032 102 105 103 104 116 013 010 073 110 032 116 104 101 032 100 097 114 107 032 097 032 115 112 101 108 108 119 097 114 101 032 114 105 115 101 013 010 077 097 100 101 032 111 102 032 049 046 052 052 032 109 101 103 097 098 121 116 101 115 013 010 013 010 073 110 032 097 032 102 108 111 112 112 121 032 100 105 115 107 032 102 105 116 115 032 116 105 103 104 116 013 010 087 105 116 104 032 097 032 099 114 097 099 107 116 114 111 032 112 097 099 107 101 100 032 105 110 115 105 100 101 013 010 077 101 103 097 116 114 097 105 110 101 114 115 032 116 111 032 098 111 111 115 116 032 121 111 117 114 032 109 105 103 104 116 013 010 071 111 116 116 097 032 116 114 121 032 098 101 102 111 114 101 032 121 111 117 032 102 105 103 104 116 013 010 013 010 078 111 119 032 097 103 097 105 110 032 097 110 111 116 104 101 114 032 116 105 109 101 013 010 070 111 108 108 111 119 032 109 101 032 097 108 111 110 103 032 116 104 101 115 101 032 114 104 121 109 101 115 013 010 073 102 032 121 111 117 032 119 097 110 116 032 116 111 032 103 101 116 032 116 104 105 115 032 112 114 105 122 101 013 010 072 105 100 100 101 110 032 105 110 032 098 101 116 119 101 101 110 032 116 104 101 115 101 032 108 105 110 101 115 013 010 013 010 077 097 107 101 032 097 032 115 117 109 032 111 102 032 097 108 108 032 116 104 111 115 101 032 098 121 116 101 115 013 010 084 114 097 115 104 032 116 104 101 032 111 100 100 115 032 097 110 100 032 109 097 107 101 032 105 116 032 116 105 103 104 116 013 010 084 117 114 110 032 116 111 032 065 083 067 073 073 032 099 111 100 101 032 097 110 100 032 119 114 105 116 101 013 010 065 108 108 032 116 104 111 115 101 032 110 117 109 098 101 114 115 032 111 118 101 114 032 097 032 108 105 110 101 013 010 013 010 078 111 119 032 106 117 115 116 032 107 101 101 112 032 116 104 097 116 032 105 110 032 121 111 117 114 032 109 105 110 100 013 010 067 114 097 099 107 032 116 104 101 032 099 111 100 101 032 098 101 108 111 119 032 116 104 101 115 101 032 108 105 110 101 115 013 010 085 115 101 032 116 104 101 032 099 111 100 101 119 111 114 100 032 121 111 117 032 119 105 108 108 032 102 105 110 100 013 010 084 111 032 114 101 100 101 101 109 032 116 104 101 032 098 111 110 117 115 032 112 114 105 122 101 013 010 013 010 069 110 106 111 121 032 070 108 111 112 112 121 032 068 105 115 107 032 079 118 101 114 100 114 105 118 101 033</code></pre>
+<pre><code class="language-code" data-lang="code">iw1r5jgulOG4rRexIP3ijS0kmijNa+1gt1AoA62QYO0K7O41xDiDRuox8A1rf92wLGm7jaJi3BS+rdixt1NldocsJiEuV8NSaFzfFYe658lrFMRxv029EzK6M6kxSLRPYwpjuHY4qJQRyFHhWhyUdKd0WzU+6YcppmWR/uORMmvDWHw4HRmE574h50CiDuswpf3rUa/5dkpwmswyspnlHJODXnSRPFIg9de8KOjOL0Tdg+UKjB/7w2nQE1AEe/JkvNguJ7BqAWN7BqdKOFyN/zGoJo6T/lw0sBe+AJ1geUGUbkUkQtlQmMbY2k0IiarjhMXssQ3wutAqfmPkic87jW16q7K1oBoP4o9Gs9KeAnxp14MhruZ1NGSF30bURr5NxPk3gNu4esNYN8leoVIZ7swZMWiNnFquh1kEEOPXH6gvMiY/FE92DSbYyFM19iCokhaPOpmvldiInvd4wXvq+jKqZyAxYuv3lpEyd3/7UyjfpzVH2q8PS3fxnYeTDzXG8lzH+VrXilsEqJjpeMpt6A==</code></pre>
+<h3 id="analysis">Analysis</h3>
+<p>The usual ASCII codes in integer format, but also with what looks like a Base64 string.</p>
+<p>The first one decoded gives hints. There problem I could not figure out was what the riddle was referring to to sum all the bytes. The bytes on disc of each track? No, because there are multiple version available (FLAC, MP3, etc.). The riddle refers to a floppy disk, and there are two floppy disk images include. The secret is in the directory listing PNG file, and it was not too difficult to try different interpretations of the riddle to figure it out.</p>
+<p>ASCII:</p>
+<pre><code>As the world is set on fire
+while preparing for this fight
+In the dark a spellware rise
+Made of 1.44 megabytes
+
+In a floppy disk fits tight
+With a cracktro packed inside
+Megatrainers to boost your might
+Gotta try before you fight
+
+Now again another time
+Follow me along these rhymes
+If you want to get this prize
+Hidden in between these lines
+
+Make a sum of all those bytes
+Trash the odds and make it tight
+Turn to ASCII code and write
+All those numbers over a line
+
+Now just keep that in your mind
+Crack the code below these lines
+Use the codeword you will find
+To redeem the bonus prize
+
+Enjoy Floppy Disk Overdrive!
+</code></pre><h3 id="solution">Solution</h3>
+<p>I won&rsquo;t reveal what the key is but the decrypted AES payload (email address and subject removed) is:</p>
+<pre><code>Congratulation for solving the puzzle!
+
+Send a mail to ██████████ including the codeword ████████ in the object. You will get a reply including the link to download the bonus track.
+
+If you liked this puzzle and want something more challenging come and visit the CTF on my server at mbrserver.com
+
+Stay safe and don't stop enjoying the music!
+
+MASTER BOOT RECORD
+</code></pre><p>Plus a bonus track in the email response.</p></div>
+				
+				<footer class="entry__footer">
+					
+					
+<div class="entry__share share">
+	<a class="share__link btn" title="Share on Twitter" href="https://twitter.com/intent/tweet/?url=https%3a%2f%2fnearwood.dev%2fposts%2f2020%2fctf-mbr-fdo%2f&amp;text=CTF%3a%20MBR%20-%20Floppy%20Disk%20Overdrive" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, 'Share on Twitter', 'width=800,height=450,resizable=yes,toolbar=0,status=0'); return false">
+		<svg class="share__icon" aria-label="Twitter" role="img" width="32" height="32" viewBox="0 0 512 512"><path d="M437 152a72 72 0 0 1-40 12 72 72 0 0 0 32-40 72 72 0 0 1-45 17 72 72 0 0 0-122 65 200 200 0 0 1-145-74 72 72 0 0 0 22 94 72 72 0 0 1-32-7 72 72 0 0 0 56 69 72 72 0 0 1-32 1 72 72 0 0 0 67 50 200 200 0 0 1-105 29 200 200 0 0 0 309-179 200 200 0 0 0 35-37"/></svg>
+	</a>
+	<a class="share__link btn" title="Share on Reddit" href="https://www.reddit.com/submit?url=https%3a%2f%2fnearwood.dev%2fposts%2f2020%2fctf-mbr-fdo%2f&amp;title=CTF%3a%20MBR%20-%20Floppy%20Disk%20Overdrive" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, 'Share on Reddit', 'width=832,height=624,toolbar=0,status=0'); return false">
+		<svg class="share__icon" aria-label="Reddit" role="img" width="32" height="32" viewBox="0 0 512 512"><path fill-rule="evenodd" d="M375 146a32 32 0 1 0-29-46l-65-13c-5-1-9 2-10 6l-22 97c-45 1-85 15-113 36a42 42 0 1 0-45 69l-1 12c0 65 74 117 166 117s166-52 166-117l-1-11a42 42 0 1 0-44-69c-28-21-67-35-111-37l19-86 58 13a32 32 0 0 0 32 29zM190 353c2-1 4 0 5 1 15 11 38 18 61 18s46-6 61-18a7 7 0 0 1 8 10c-18 14-44 21-69 21-25-1-51-7-69-21a6 6 0 0 1 3-11zm23-44a31 31 0 1 1-44-44 31 31 0 0 1 44 44zm130 0a31 31 0 1 0-44-44 31 31 0 0 0 44 44z"/></svg>
+	</a>
+</div>
+				</footer>
+				
+			</article>
+		</div>
+	</main>
+	
+	
+
+
+
+	
+
+	</div>
+	<footer class="footer">
+<div class="footer__social social">
+		<a class="social__link" target="_blank" rel="noopener noreferrer" href="https://twitter.com/nearwood">
+			<svg class="social__icon" aria-label="Twitter" role="img" width="32" height="32" viewBox="0 0 512 512"><path d="M437 152a72 72 0 0 1-40 12 72 72 0 0 0 32-40 72 72 0 0 1-45 17 72 72 0 0 0-122 65 200 200 0 0 1-145-74 72 72 0 0 0 22 94 72 72 0 0 1-32-7 72 72 0 0 0 56 69 72 72 0 0 1-32 1 72 72 0 0 0 67 50 200 200 0 0 1-105 29 200 200 0 0 0 309-179 200 200 0 0 0 35-37"/></svg>
+		</a>
+		<a class="social__link" target="_blank" rel="noopener noreferrer" href="https://github.com/nearwood">
+			<svg class="social__icon" aria-label="Github" role="img" width="32" height="32" viewBox="0 0 512 512"><path d="M335 499c14 0 12 17 12 17H165s-2-17 12-17c13 0 16-6 16-12l-1-50c-71 16-86-28-86-28-12-30-28-37-28-37-24-16 1-16 1-16 26 2 40 26 40 26 22 39 59 28 74 22 2-17 9-28 16-35-57-6-116-28-116-126 0-28 10-51 26-69-3-6-11-32 3-67 0 0 21-7 70 26 42-12 86-12 128 0 49-33 70-26 70-26 14 35 6 61 3 67 16 18 26 41 26 69 0 98-60 120-117 126 10 8 18 24 18 48l-1 70c0 6 3 12 16 12z"/></svg>
+		</a>
+		<a class="social__link" target="_blank" rel="noopener noreferrer" href="https://stackoverflow.com/users/numberid">
+			<svg class="social__icon" aria-label="Stack Overflow" role="img" width="32" height="32" viewBox="0 0 512 512"><g stroke-width="30"><path fill="none" d="M125 297v105h241V297"/><path d="M170 341h150m-144-68l148 31M199 204l136 64m-95-129l115 97M293 89l90 120"/></g></svg>
+		</a>
+</div>
+	<div class="footer__copyright">© 2020 Nick Earwood. <span class="footer__copyright-credits">Powered by <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/vimux/binario" rel="nofollow noopener" target="_blank">Binario</a> theme.</span></div>
+</footer>
+<script src="/js/menu.js"></script>
+</body>
+</html>

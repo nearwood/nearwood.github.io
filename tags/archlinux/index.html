@@ -18,8 +18,8 @@
 <meta name="twitter:title" content="archlinux"/>
 <meta name="twitter:description" content="Responsive card-based &amp; code-light Hugo theme"/>
 
-	<link rel="stylesheet" href="/css/main.css">
-	<link rel="stylesheet" href="/css/themes/dark-green.css">
+	<link rel="stylesheet" href="/css/bundle.css">
+	<link rel="stylesheet" href="/css/themes/dark-orange.css">
 	<link rel="icon" href="/icons/16.png" sizes="16x16" type="image/png">
 	<link rel="icon" href="/icons/32.png" sizes="32x32" type="image/png">
 	<link rel="alternate" type="application/rss+xml" href="/tags/archlinux/index.xml" title="Nick">
@@ -48,8 +48,20 @@
 		</div>
 	</button>
 	<ul id="menu" class="main-nav__list">
-		<li class="main-nav__item"><a class="main-nav__link" href="/pages/about/">About</a></li>
-		<li class="main-nav__item"><a class="main-nav__link" href="/pages/contact/">Contact</a></li>
+			<li class="main-nav__item">
+				<a class="main-nav__link" href="/pages/about/">
+					
+					<span class="main-nav__text">About</span>
+					
+				</a>
+			</li>
+			<li class="main-nav__item">
+				<a class="main-nav__link" href="/pages/contact/">
+					
+					<span class="main-nav__text">Contact</span>
+					
+				</a>
+			</li>
 	</ul>
 </nav>
 </header>
@@ -57,6 +69,7 @@
 	<div class="primary">
 	
 	<main class="main">
+		
 		<div class="page block">
 			<h1 class="page__title">archlinux</h1>
 			
@@ -64,85 +77,92 @@
 		<div class="cards">
 			
 				<div class="card card--2col">
-					<article class="post card__box block">
-	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/fixing-mirrorlist-on-arch-linux-arm-raspberry-pi/">Fixing mirrorlist on Arch Linux Arm (Raspberry Pi)</a></h1>
-	<div class="post__content">I hadn&rsquo;t updated my Raspberry Pi (a B+ model for my rpi-drd project) in about a year. Pacman -Syu kept complaining about being unable to find files on any of the mirrors.
+					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/fixing-mirrorlist-on-arch-linux-arm-raspberry-pi/">Fixing mirrorlist on Arch Linux Arm (Raspberry Pi)</a></h1>
+	<div class="entry__content">I hadn&rsquo;t updated my Raspberry Pi (a B+ model for my rpi-drd project) in about a year. Pacman -Syu kept complaining about being unable to find files on any of the mirrors.
 So I, without thinking, ran reflector on an x86 host and copied it over. Oops. Now it definitely can&rsquo;t find packages.
 The archlinuxarm.org website gave me the hostname I needed, but not the entire URL. Put this in your mirrorlist (as the sole entry) to restore functionality:</div>
-	<div class="post__meta meta mt tar">
-<time class="post__meta-published meta-published" datetime="2016-05-21T22:06:00">May 21, 2016</time>
-<time class="post__meta-lastmod meta-lastmod" datetime="2019-12-10T10:57:45">Updated: December 10, 2019</time>
-<span class="post__meta-categories meta-categories">
-	<span class="meta-categories__list">Categories: <a class="meta-categories__link" href="/categories/computing" rel="category">Computing</a>, <a class="meta-categories__link" href="/categories/raspberry-pi" rel="category">Raspberry Pi</a></span>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2016-05-21T22:06:00Z">21 May 2016</time>
+	<time class="entry__meta-lastmod meta-lastmod" datetime="2019-12-10T10:57:45-06:00">Updated: 10 Dec 2019</time>
+<span class="entry__meta-categories meta-categories">
+	<span class="meta-categories__list">Categories:
+		<a class="meta-categories__link" href="/categories/computing" rel="category">Computing</a>, 
+		<a class="meta-categories__link" href="/categories/raspberry-pi" rel="category">Raspberry Pi</a>
+	</span>
 </span>
 	</div>
-
 </article>
 				</div>
 			
 				<div class="card card--2col">
-					<article class="post card__box block">
-	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/installing-arch-linux-with-an-encrypted-root/">Installing Arch Linux with an encrypted root</a></h1>
-	<div class="post__content"><p>I&rsquo;ve got a ThinkPad T410. I got it off craigslist in what was a somewhat shady transaction. Regardless, it came with a 300GB spinner. Not interested in finding out how much life was left on it I got a solid state replacement from NewEgg for &ldquo;Cyber Monday&rdquo;. A 240GB Intel one for $110, that&rsquo;s less than 50 cents per GB!</p>
+					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/installing-arch-linux-with-an-encrypted-root/">Installing Arch Linux with an encrypted root</a></h1>
+	<div class="entry__content"><p>I&rsquo;ve got a ThinkPad T410. I got it off craigslist in what was a somewhat shady transaction. Regardless, it came with a 300GB spinner. Not interested in finding out how much life was left on it I got a solid state replacement from NewEgg for &ldquo;Cyber Monday&rdquo;. A 240GB Intel one for $110, that&rsquo;s less than 50 cents per GB!</p>
 <p>The spinner has a single unencrypted partition with Arch Linux running on it. I wanted to run Arch on an encrypted partition. The main reason: If it&rsquo;s ever stolen I don&rsquo;t want to have to worry about any of the data on it. Bonus reason: Geek/spy points.</p>
 <p>So, while there are excellent guides for installing Arch, and setting up encryption, and optimizing an SSD, there don&rsquo;t seem to be any combining the three. In reality it&rsquo;s not that much more difficult, and if you are motivated to setup encryption on Linux in the first place you probably know what you&rsquo;re doing. Still, I was disheartened a bit at the lack of information so I decided to note how I went about it in general.</p></div>
-	<div class="post__meta meta mt tar">
-<time class="post__meta-published meta-published" datetime="2014-12-06T03:00:22">December 06, 2014</time>
-<time class="post__meta-lastmod meta-lastmod" datetime="2019-12-10T10:57:45">Updated: December 10, 2019</time>
-<span class="post__meta-categories meta-categories">
-	<span class="meta-categories__list">Categories: <a class="meta-categories__link" href="/categories/computing" rel="category">Computing</a></span>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2014-12-06T03:00:22Z">06 Dec 2014</time>
+	<time class="entry__meta-lastmod meta-lastmod" datetime="2019-12-10T10:57:45-06:00">Updated: 10 Dec 2019</time>
+<span class="entry__meta-categories meta-categories">
+	<span class="meta-categories__list">Categories:
+		<a class="meta-categories__link" href="/categories/computing" rel="category">Computing</a>
+	</span>
 </span>
 	</div>
-
 </article>
 				</div>
 			
 				<div class="card card--2col">
-					<article class="post card__box block">
-	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/arch-linux-on-lenovo-thinkpad-t410/">Arch Linux on Lenovo ThinkPad T410</a></h1>
-	<div class="post__content">I picked up a really cheap ThinkPad T410 from Craigslist. First-gen mobile Core i5, 4GB, 320GB drive and most importantly: 1440×900. A 40% increase in horizontal space (and 17% vertical). Finally I can tune without trying to get TunerStudio to fit.
+					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/arch-linux-on-lenovo-thinkpad-t410/">Arch Linux on Lenovo ThinkPad T410</a></h1>
+	<div class="entry__content">I picked up a really cheap ThinkPad T410 from Craigslist. First-gen mobile Core i5, 4GB, 320GB drive and most importantly: 1440×900. A 40% increase in horizontal space (and 17% vertical). Finally I can tune without trying to get TunerStudio to fit.
 Installing Arch was quick, as usual. The laptop has a fingerprint reader, which works really well in Linux. Now I can log in with a finger swipe-although you have to press enter after swiping.</div>
-	<div class="post__meta meta mt tar">
-<time class="post__meta-published meta-published" datetime="2014-03-09T00:42:37">March 09, 2014</time>
-<time class="post__meta-lastmod meta-lastmod" datetime="2019-12-10T10:57:45">Updated: December 10, 2019</time>
-<span class="post__meta-categories meta-categories">
-	<span class="meta-categories__list">Categories: <a class="meta-categories__link" href="/categories/cars" rel="category">Cars</a>, <a class="meta-categories__link" href="/categories/computing" rel="category">Computing</a></span>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2014-03-09T00:42:37Z">09 Mar 2014</time>
+	<time class="entry__meta-lastmod meta-lastmod" datetime="2019-12-10T10:57:45-06:00">Updated: 10 Dec 2019</time>
+<span class="entry__meta-categories meta-categories">
+	<span class="meta-categories__list">Categories:
+		<a class="meta-categories__link" href="/categories/cars" rel="category">Cars</a>, 
+		<a class="meta-categories__link" href="/categories/computing" rel="category">Computing</a>
+	</span>
 </span>
 	</div>
-
 </article>
 				</div>
 			
 				<div class="card card--2col">
-					<article class="post card__box block">
-	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/moving-home-server-to-arch/">Moving home server to Arch</a></h1>
-	<div class="post__content">I&rsquo;ve ordered a 2 terabyte hard drive to appropriately serve as a backup drive for my home server. This would normally just require swapping the old backup drive out for it, and then performing a backup. But I figure since I&rsquo;ll have it down anyway, I&rsquo;ll have enough drives to swap to Arch Linux and get things going again with the old drive as a &hellip; backup.
+					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/moving-home-server-to-arch/">Moving home server to Arch</a></h1>
+	<div class="entry__content">I&rsquo;ve ordered a 2 terabyte hard drive to appropriately serve as a backup drive for my home server. This would normally just require swapping the old backup drive out for it, and then performing a backup. But I figure since I&rsquo;ll have it down anyway, I&rsquo;ll have enough drives to swap to Arch Linux and get things going again with the old drive as a &hellip; backup.
 I&rsquo;ve got quite a few services setup on it, and I&rsquo;m not looking forward to moving all the config files over</div>
-	<div class="post__meta meta mt tar">
-<time class="post__meta-published meta-published" datetime="2013-04-26T23:13:52">April 26, 2013</time>
-<time class="post__meta-lastmod meta-lastmod" datetime="2019-12-10T10:57:45">Updated: December 10, 2019</time>
-<span class="post__meta-categories meta-categories">
-	<span class="meta-categories__list">Categories: <a class="meta-categories__link" href="/categories/computing" rel="category">Computing</a></span>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2013-04-26T23:13:52Z">26 Apr 2013</time>
+	<time class="entry__meta-lastmod meta-lastmod" datetime="2019-12-10T10:57:45-06:00">Updated: 10 Dec 2019</time>
+<span class="entry__meta-categories meta-categories">
+	<span class="meta-categories__list">Categories:
+		<a class="meta-categories__link" href="/categories/computing" rel="category">Computing</a>
+	</span>
 </span>
 	</div>
-
 </article>
 				</div>
 			
 				<div class="card card--2col">
-					<article class="post card__box block">
-	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/switched-to-arch-linux-from-gentoo/">Switched to Arch Linux from Gentoo</a></h1>
-	<div class="post__content">Time installing Gentoo: days
+					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/switched-to-arch-linux-from-gentoo/">Switched to Arch Linux from Gentoo</a></h1>
+	<div class="entry__content">Time installing Gentoo: days
 Time installing Archlinux: 30 mins.
 I have an old Intel based Dell laptop with 1.8GHz single-core processor. I&rsquo;ve had Windows XP on it for a couple years, then I switched to Gentoo for the past 5 or 6 years. Well, it&rsquo;s really not the kind of laptop that you should be compiling everything from source on. I&rsquo;m tired of going through the &ldquo;everything&rsquo;s broken, hook it the ethernet cable and start fixing it&rdquo; routine after I&rsquo;ve left it alone for months at a time.</div>
-	<div class="post__meta meta mt tar">
-<time class="post__meta-published meta-published" datetime="2013-04-07T12:56:52">April 07, 2013</time>
-<time class="post__meta-lastmod meta-lastmod" datetime="2019-12-10T10:57:45">Updated: December 10, 2019</time>
-<span class="post__meta-categories meta-categories">
-	<span class="meta-categories__list">Categories: <a class="meta-categories__link" href="/categories/computing" rel="category">Computing</a></span>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2013-04-07T12:56:52Z">07 Apr 2013</time>
+	<time class="entry__meta-lastmod meta-lastmod" datetime="2019-12-10T10:57:45-06:00">Updated: 10 Dec 2019</time>
+<span class="entry__meta-categories meta-categories">
+	<span class="meta-categories__list">Categories:
+		<a class="meta-categories__link" href="/categories/computing" rel="category">Computing</a>
+	</span>
 </span>
 	</div>
-
 </article>
 				</div>
 			
@@ -158,6 +178,9 @@ I have an old Intel based Dell laptop with 1.8GHz single-core processor. I&rsquo
 		</a>
 		<a class="social__link" target="_blank" rel="noopener noreferrer" href="https://github.com/nearwood">
 			<svg class="social__icon" aria-label="Github" role="img" width="32" height="32" viewBox="0 0 512 512"><path d="M335 499c14 0 12 17 12 17H165s-2-17 12-17c13 0 16-6 16-12l-1-50c-71 16-86-28-86-28-12-30-28-37-28-37-24-16 1-16 1-16 26 2 40 26 40 26 22 39 59 28 74 22 2-17 9-28 16-35-57-6-116-28-116-126 0-28 10-51 26-69-3-6-11-32 3-67 0 0 21-7 70 26 42-12 86-12 128 0 49-33 70-26 70-26 14 35 6 61 3 67 16 18 26 41 26 69 0 98-60 120-117 126 10 8 18 24 18 48l-1 70c0 6 3 12 16 12z"/></svg>
+		</a>
+		<a class="social__link" target="_blank" rel="noopener noreferrer" href="https://stackoverflow.com/users/numberid">
+			<svg class="social__icon" aria-label="Stack Overflow" role="img" width="32" height="32" viewBox="0 0 512 512"><g stroke-width="30"><path fill="none" d="M125 297v105h241V297"/><path d="M170 341h150m-144-68l148 31M199 204l136 64m-95-129l115 97M293 89l90 120"/></g></svg>
 		</a>
 </div>
 	<div class="footer__copyright">© 2020 Nick Earwood. <span class="footer__copyright-credits">Powered by <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/vimux/binario" rel="nofollow noopener" target="_blank">Binario</a> theme.</span></div>

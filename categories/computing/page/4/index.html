@@ -12,14 +12,14 @@
 <meta property="og:description" content="Responsive card-based &amp; code-light Hugo theme" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://nearwood.dev/categories/computing/" />
-<meta property="og:updated_time" content="2019-02-02T19:43:39+00:00" />
+<meta property="og:updated_time" content="2020-04-05T22:09:30-05:00" />
 
 		<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Computing"/>
 <meta name="twitter:description" content="Responsive card-based &amp; code-light Hugo theme"/>
 
-	<link rel="stylesheet" href="/css/main.css">
-	<link rel="stylesheet" href="/css/themes/dark-green.css">
+	<link rel="stylesheet" href="/css/bundle.css">
+	<link rel="stylesheet" href="/css/themes/dark-orange.css">
 	<link rel="icon" href="/icons/16.png" sizes="16x16" type="image/png">
 	<link rel="icon" href="/icons/32.png" sizes="32x32" type="image/png">
 	<link rel="alternate" type="application/rss+xml" href="/categories/computing/index.xml" title="Nick">
@@ -48,8 +48,20 @@
 		</div>
 	</button>
 	<ul id="menu" class="main-nav__list">
-		<li class="main-nav__item"><a class="main-nav__link" href="/pages/about/">About</a></li>
-		<li class="main-nav__item"><a class="main-nav__link" href="/pages/contact/">Contact</a></li>
+			<li class="main-nav__item">
+				<a class="main-nav__link" href="/pages/about/">
+					
+					<span class="main-nav__text">About</span>
+					
+				</a>
+			</li>
+			<li class="main-nav__item">
+				<a class="main-nav__link" href="/pages/contact/">
+					
+					<span class="main-nav__text">Contact</span>
+					
+				</a>
+			</li>
 	</ul>
 </nav>
 </header>
@@ -57,6 +69,7 @@
 	<div class="primary">
 	
 	<main class="main">
+		
 		<div class="page block">
 			<h1 class="page__title">Computing</h1>
 			
@@ -64,48 +77,104 @@
 		<div class="cards">
 			
 				<div class="card card--2col">
-					<article class="post card__box block">
-	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/posts/2012/qemu-on-windows/">QEMU on Windows</a></h1>
-	<div class="post__content">After fumbling around with various downloads and patches, I was able to find a working QEMU build for windows. I am running Windows 7 64-bit, and I wanted to run an ARM system (specifically, to develop for a Stratus plug computer). Before this, I was running a virtualized Ubuntu using VirtualBox and then running QEMU within that. Performance was not noticeably bad.
+					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/switched-to-arch-linux-from-gentoo/">Switched to Arch Linux from Gentoo</a></h1>
+	<div class="entry__content">Time installing Gentoo: days
+Time installing Archlinux: 30 mins.
+I have an old Intel based Dell laptop with 1.8GHz single-core processor. I&rsquo;ve had Windows XP on it for a couple years, then I switched to Gentoo for the past 5 or 6 years. Well, it&rsquo;s really not the kind of laptop that you should be compiling everything from source on. I&rsquo;m tired of going through the &ldquo;everything&rsquo;s broken, hook it the ethernet cable and start fixing it&rdquo; routine after I&rsquo;ve left it alone for months at a time.</div>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2013-04-07T12:56:52Z">07 Apr 2013</time>
+	<time class="entry__meta-lastmod meta-lastmod" datetime="2019-12-10T10:57:45-06:00">Updated: 10 Dec 2019</time>
+<span class="entry__meta-categories meta-categories">
+	<span class="meta-categories__list">Categories:
+		<a class="meta-categories__link" href="/categories/computing" rel="category">Computing</a>
+	</span>
+</span>
+	</div>
+</article>
+				</div>
+			
+				<div class="card card--2col">
+					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/udev-broke-server-broke-router-broke/">udev broke, server broke, router broke</a></h1>
+	<div class="entry__content">I attempted to get a webcam going on our home server. So, I plug it in, and since I&rsquo;ve done this before I ran a script I made to grab an image from the webcam. Which didn&rsquo;t work. So, after checking out why (/dev/video0 node was missing), I noticed that the kernel no longer had support built in.
+After going through the kernel options, I realized they changed the v4l and webcam support options around and since I just upgrade using &ldquo;-silentoldconfig&rdquo; (the bad way to do upgrades), it broke whenever I upgraded to 3.</div>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2013-02-18T02:30:09Z">18 Feb 2013</time>
+	<time class="entry__meta-lastmod meta-lastmod" datetime="2019-12-10T10:57:45-06:00">Updated: 10 Dec 2019</time>
+<span class="entry__meta-categories meta-categories">
+	<span class="meta-categories__list">Categories:
+		<a class="meta-categories__link" href="/categories/computing" rel="category">Computing</a>
+	</span>
+</span>
+	</div>
+</article>
+				</div>
+			
+				<div class="card card--2col">
+					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/os-x-unimpressive/">OS X? Unimpressive.</a></h1>
+	<div class="entry__content">I&rsquo;ve been working with a MacBook Pro and OS X 10.8.2, and I have to say I&rsquo;m not impressed. Coming from a background that consisted almost entirely of Windows and Linux, it isn&rsquo;t all it&rsquo;s cracked up to be. It&rsquo;s still another OS with it&rsquo;s own set of problems.
+That said, the user interface is more consistent and usable, in a lot of cases, than Windows and especially Linux desktop environments.</div>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2013-02-04T01:05:39Z">04 Feb 2013</time>
+	<time class="entry__meta-lastmod meta-lastmod" datetime="2019-12-10T10:57:45-06:00">Updated: 10 Dec 2019</time>
+<span class="entry__meta-categories meta-categories">
+	<span class="meta-categories__list">Categories:
+		<a class="meta-categories__link" href="/categories/computing" rel="category">Computing</a>
+	</span>
+</span>
+	</div>
+</article>
+				</div>
+			
+				<div class="card card--2col">
+					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/home-server-is-back-online/">Home server is back online</a></h1>
+	<div class="entry__content">I&rsquo;ve pulled power and cable from the attic and just powered up the home server again. It&rsquo;s been asleep for 5 months until now. I&rsquo;ve just done an emerge -sync, and it took about 10 minutes to complete.
+However, it went up without any problems, which is good. Considering I turned it off in a working state. I was tempted to backup all my config files and start fresh with, say, Arch Linux, but that would take all weekend.</div>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2013-01-27T01:24:24Z">27 Jan 2013</time>
+	<time class="entry__meta-lastmod meta-lastmod" datetime="2019-12-10T10:57:45-06:00">Updated: 10 Dec 2019</time>
+<span class="entry__meta-categories meta-categories">
+	<span class="meta-categories__list">Categories:
+		<a class="meta-categories__link" href="/categories/computing" rel="category">Computing</a>
+	</span>
+</span>
+	</div>
+</article>
+				</div>
+			
+				<div class="card card--2col">
+					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/gentoo-on-a-mid-2012-macbook-pro/">Gentoo on a mid-2012 MacBook Pro</a></h1>
+	<div class="entry__content">If your sick of your brand new MacBook just working (more or less), and you just feel like modifying your kernel&rsquo;s source to get your computer to work right, you&rsquo;ve come to the right place. I (finally) managed to get Gentoo booting on a new MacBook Pro (15&rdquo;, Core i7, mid-2012) alongside OS X 10.8.2. I suppose it actually wasn&rsquo;t that bad, it could have been much worse. I only had to reinstall OS X once after a wonky partition editor&hellip;.</div>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2012-11-19T05:50:42Z">19 Nov 2012</time>
+	<time class="entry__meta-lastmod meta-lastmod" datetime="2019-12-10T10:57:45-06:00">Updated: 10 Dec 2019</time>
+<span class="entry__meta-categories meta-categories">
+	<span class="meta-categories__list">Categories:
+		<a class="meta-categories__link" href="/categories/computing" rel="category">Computing</a>
+	</span>
+</span>
+	</div>
+</article>
+				</div>
+			
+				<div class="card card--2col">
+					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/2012/qemu-on-windows/">QEMU on Windows</a></h1>
+	<div class="entry__content">After fumbling around with various downloads and patches, I was able to find a working QEMU build for windows. I am running Windows 7 64-bit, and I wanted to run an ARM system (specifically, to develop for a Stratus plug computer). Before this, I was running a virtualized Ubuntu using VirtualBox and then running QEMU within that. Performance was not noticeably bad.
 However, I had problems bridging the QEMU to the Ubuntu host, which was bridged itself.</div>
-	<div class="post__meta meta mt tar">
-<time class="post__meta-published meta-published" datetime="2012-07-06T01:29:31">July 06, 2012</time>
-<time class="post__meta-lastmod meta-lastmod" datetime="2019-12-10T10:57:45">Updated: December 10, 2019</time>
-<span class="post__meta-categories meta-categories">
-	<span class="meta-categories__list">Categories: <a class="meta-categories__link" href="/categories/computing" rel="category">Computing</a></span>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2012-07-06T01:29:31Z">06 Jul 2012</time>
+	<time class="entry__meta-lastmod meta-lastmod" datetime="2019-12-10T10:57:45-06:00">Updated: 10 Dec 2019</time>
+<span class="entry__meta-categories meta-categories">
+	<span class="meta-categories__list">Categories:
+		<a class="meta-categories__link" href="/categories/computing" rel="category">Computing</a>
+	</span>
 </span>
 	</div>
-
-</article>
-				</div>
-			
-				<div class="card card--2col">
-					<article class="post card__box block">
-	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/posts/2018/encrypted-backup/">Building asuswrt-merglin on Arch</a></h1>
-	<div class="post__content">All my computers at home are encrypted-except for the backup drive of our home server. It&rsquo;s plugged in to the router and shared via NFS. This is one task I&rsquo;ve been meaning to do and it&rsquo;s finally &ldquo;possible&rdquo; with my fancy ASUS router (in a three-dumb-router setup, if you&rsquo;re really curious).
-I say &ldquo;possible&rdquo; with scare quotes because not only do you have to run the 3rd part ASUSWRT-Merlin project on the router (though it does support loading 3rd part firmware), you have to build a custom kernel for it to load the dm-crypt modules.</div>
-	<div class="post__meta meta mt tar">
-<time class="post__meta-lastmod meta-lastmod" datetime="2019-12-10T10:57:45">Updated: December 10, 2019</time>
-<span class="post__meta-categories meta-categories">
-	<span class="meta-categories__list">Categories: <a class="meta-categories__link" href="/categories/computing" rel="category">Computing</a>, <a class="meta-categories__link" href="/categories/technology" rel="category">Technology</a></span>
-</span>
-	</div>
-
-</article>
-				</div>
-			
-				<div class="card card--2col">
-					<article class="post card__box block">
-	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/p298/">Ternary computing</a></h1>
-	<div class="post__content">I stumbled on an interesting page months ago, and have just gotten back into it. I originally wondered why chips couldn&rsquo;t be designed in ternary instead of binary logic. It turns out that there was some experimentation in Russia in the 1950s, but not much else. Luckily, someone else [LINK] had this idea and even made an emulator (simulator?) for a ternary chip.
-He based it off the 6502 8-bit chip (very similar to the one put in Nintendo&rsquo;s first system), which as it turns out is an excellent, simple design that I can jump into easily.</div>
-	<div class="post__meta meta mt tar">
-<time class="post__meta-lastmod meta-lastmod" datetime="2019-12-10T10:57:45">Updated: December 10, 2019</time>
-<span class="post__meta-categories meta-categories">
-	<span class="meta-categories__list">Categories: <a class="meta-categories__link" href="/categories/computing" rel="category">Computing</a>, <a class="meta-categories__link" href="/categories/programming" rel="category">Programming</a></span>
-</span>
-	</div>
-
 </article>
 				</div>
 			
@@ -113,14 +182,10 @@ He based it off the 6502 8-bit chip (very similar to the one put in Nintendo&rsq
 	</main>
 	
 <div class="pagination block">
-	<a class="pagination__item pagination__item--desktop" href="/categories/computing/">1</a>
-	
-	<a class="pagination__item pagination__item--desktop" href="/categories/computing/page/2/">2</a>
-	
-	<a class="pagination__item pagination__item--desktop" href="/categories/computing/page/3/">3</a>
-	
-	<span class="pagination__item pagination__item--active" data-total="4">4</span>
-	
+				<a class="pagination__item pagination__item--desktop" href="/categories/computing/">1</a>
+				<a class="pagination__item pagination__item--desktop" href="/categories/computing/page/2/">2</a>
+				<a class="pagination__item pagination__item--desktop" href="/categories/computing/page/3/">3</a>
+				<span class="pagination__item pagination__item--active" data-total="4">4</span>
 </div>
 
 	</div>
@@ -131,6 +196,9 @@ He based it off the 6502 8-bit chip (very similar to the one put in Nintendo&rsq
 		</a>
 		<a class="social__link" target="_blank" rel="noopener noreferrer" href="https://github.com/nearwood">
 			<svg class="social__icon" aria-label="Github" role="img" width="32" height="32" viewBox="0 0 512 512"><path d="M335 499c14 0 12 17 12 17H165s-2-17 12-17c13 0 16-6 16-12l-1-50c-71 16-86-28-86-28-12-30-28-37-28-37-24-16 1-16 1-16 26 2 40 26 40 26 22 39 59 28 74 22 2-17 9-28 16-35-57-6-116-28-116-126 0-28 10-51 26-69-3-6-11-32 3-67 0 0 21-7 70 26 42-12 86-12 128 0 49-33 70-26 70-26 14 35 6 61 3 67 16 18 26 41 26 69 0 98-60 120-117 126 10 8 18 24 18 48l-1 70c0 6 3 12 16 12z"/></svg>
+		</a>
+		<a class="social__link" target="_blank" rel="noopener noreferrer" href="https://stackoverflow.com/users/numberid">
+			<svg class="social__icon" aria-label="Stack Overflow" role="img" width="32" height="32" viewBox="0 0 512 512"><g stroke-width="30"><path fill="none" d="M125 297v105h241V297"/><path d="M170 341h150m-144-68l148 31M199 204l136 64m-95-129l115 97M293 89l90 120"/></g></svg>
 		</a>
 </div>
 	<div class="footer__copyright">© 2020 Nick Earwood. <span class="footer__copyright-credits">Powered by <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/vimux/binario" rel="nofollow noopener" target="_blank">Binario</a> theme.</span></div>

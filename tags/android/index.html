@@ -18,8 +18,8 @@
 <meta name="twitter:title" content="android"/>
 <meta name="twitter:description" content="Responsive card-based &amp; code-light Hugo theme"/>
 
-	<link rel="stylesheet" href="/css/main.css">
-	<link rel="stylesheet" href="/css/themes/dark-green.css">
+	<link rel="stylesheet" href="/css/bundle.css">
+	<link rel="stylesheet" href="/css/themes/dark-orange.css">
 	<link rel="icon" href="/icons/16.png" sizes="16x16" type="image/png">
 	<link rel="icon" href="/icons/32.png" sizes="32x32" type="image/png">
 	<link rel="alternate" type="application/rss+xml" href="/tags/android/index.xml" title="Nick">
@@ -48,8 +48,20 @@
 		</div>
 	</button>
 	<ul id="menu" class="main-nav__list">
-		<li class="main-nav__item"><a class="main-nav__link" href="/pages/about/">About</a></li>
-		<li class="main-nav__item"><a class="main-nav__link" href="/pages/contact/">Contact</a></li>
+			<li class="main-nav__item">
+				<a class="main-nav__link" href="/pages/about/">
+					
+					<span class="main-nav__text">About</span>
+					
+				</a>
+			</li>
+			<li class="main-nav__item">
+				<a class="main-nav__link" href="/pages/contact/">
+					
+					<span class="main-nav__text">Contact</span>
+					
+				</a>
+			</li>
 	</ul>
 </nav>
 </header>
@@ -57,6 +69,7 @@
 	<div class="primary">
 	
 	<main class="main">
+		
 		<div class="page block">
 			<h1 class="page__title">android</h1>
 			
@@ -64,9 +77,9 @@
 		<div class="cards">
 			
 				<div class="card card--2col">
-					<article class="post card__box block">
-	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/reverse-engineering-the-firmware-on-a-kenwood-ddx9903s/">Reverse Engineering the firmware on a Kenwood DDX9903S</a></h1>
-	<div class="post__content"><p><strong>UPDATE 14 MAR 2020</strong>: For discussion, see the <a href="https://groups.google.com/forum/#!forum/kenwood-headunit-reverse-engineering">Google group</a>. Comments from the old WordPress site have been migrated there.</p>
+					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/reverse-engineering-the-firmware-on-a-kenwood-ddx9903s/">Reverse Engineering the firmware on a Kenwood DDX9903S</a></h1>
+	<div class="entry__content"><p><strong>UPDATE 14 MAR 2020</strong>: For discussion, see the <a href="https://groups.google.com/forum/#!forum/kenwood-headunit-reverse-engineering">Google group</a>. Comments from the old WordPress site have been migrated there.</p>
 <hr>
 <p>I bought and really like my Kenwood Excelon DDX9903S headunit. I had it in my WRX, and moved it to my LS430. It supports Android Auto and CarPlay, which I find really useful when driving.</p>
 <p>However, it has a nag screen every time it boots up. This got me curious as to how it worked, and see if it could be patched to skip this disclaimer. I figured it probably ran Linux on a SoC, as pretty much everything does nowadays. So I grabbed the latest firmware for it (mine was already updated to it), and started probing.</p>
@@ -76,47 +89,56 @@
 MAIN_V1_0_2758_0400/
 SOC_V2_7_0008_0600/
 </pre></div>
-	<div class="post__meta meta mt tar">
-<time class="post__meta-published meta-published" datetime="2017-10-28T03:06:49">October 28, 2017</time>
-<time class="post__meta-lastmod meta-lastmod" datetime="2020-03-14T20:45:53">Updated: March 14, 2020</time>
-<span class="post__meta-categories meta-categories">
-	<span class="meta-categories__list">Categories: <a class="meta-categories__link" href="/categories/android" rel="category">Android</a>, <a class="meta-categories__link" href="/categories/cars" rel="category">Cars</a>, <a class="meta-categories__link" href="/categories/computing" rel="category">Computing</a>, <a class="meta-categories__link" href="/categories/technology" rel="category">Technology</a></span>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2017-10-28T03:06:49Z">28 Oct 2017</time>
+	<time class="entry__meta-lastmod meta-lastmod" datetime="2020-03-14T20:45:53-05:00">Updated: 14 Mar 2020</time>
+<span class="entry__meta-categories meta-categories">
+	<span class="meta-categories__list">Categories:
+		<a class="meta-categories__link" href="/categories/android" rel="category">Android</a>, 
+		<a class="meta-categories__link" href="/categories/cars" rel="category">Cars</a>, 
+		<a class="meta-categories__link" href="/categories/computing" rel="category">Computing</a>, 
+		<a class="meta-categories__link" href="/categories/technology" rel="category">Technology</a>
+	</span>
 </span>
 	</div>
-
 </article>
 				</div>
 			
 				<div class="card card--2col">
-					<article class="post card__box block">
-	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/custom-speed-app-update/">Custom Speed app update</a></h1>
-	<div class="post__content">I update Custom Speed to 1.1. Changes include:
+					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/custom-speed-app-update/">Custom Speed app update</a></h1>
+	<div class="entry__content">I update Custom Speed to 1.1. Changes include:
  An actual theme (consistent colors) More units New icon  2.0 will include an actual settings page that will allow the units to be selected from an easier control, a setting for keeping the display on, and other minor UI improvements. There&rsquo;s no ETA currently for 2.0.</div>
-	<div class="post__meta meta mt tar">
-<time class="post__meta-published meta-published" datetime="2014-02-21T02:15:30">February 21, 2014</time>
-<time class="post__meta-lastmod meta-lastmod" datetime="2019-12-10T10:57:45">Updated: December 10, 2019</time>
-<span class="post__meta-categories meta-categories">
-	<span class="meta-categories__list">Categories: <a class="meta-categories__link" href="/categories/android" rel="category">Android</a>, <a class="meta-categories__link" href="/categories/programming" rel="category">Programming</a></span>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2014-02-21T02:15:30Z">21 Feb 2014</time>
+	<time class="entry__meta-lastmod meta-lastmod" datetime="2019-12-10T10:57:45-06:00">Updated: 10 Dec 2019</time>
+<span class="entry__meta-categories meta-categories">
+	<span class="meta-categories__list">Categories:
+		<a class="meta-categories__link" href="/categories/android" rel="category">Android</a>, 
+		<a class="meta-categories__link" href="/categories/programming" rel="category">Programming</a>
+	</span>
 </span>
 	</div>
-
 </article>
 				</div>
 			
 				<div class="card card--2col">
-					<article class="post card__box block">
-	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/released-my-first-android-app/">Released my first Android app</a></h1>
-	<div class="post__content">After searching for a simple GPS Speedometer app that provided a speed readout in more than just 2 units (a free one, of course), I thought it would be the perfect project for my first Android app. It took only a few hours to make it, the Eclipse ADT makes this pretty easy.
+					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/released-my-first-android-app/">Released my first Android app</a></h1>
+	<div class="entry__content">After searching for a simple GPS Speedometer app that provided a speed readout in more than just 2 units (a free one, of course), I thought it would be the perfect project for my first Android app. It took only a few hours to make it, the Eclipse ADT makes this pretty easy.
 Google Play link
 I&rsquo;m glad I&rsquo;ve gotten more familiar with the publishing process. It&rsquo;ll help when I release a game I&rsquo;ve been tinkering with for a few years.</div>
-	<div class="post__meta meta mt tar">
-<time class="post__meta-published meta-published" datetime="2013-12-05T01:00:13">December 05, 2013</time>
-<time class="post__meta-lastmod meta-lastmod" datetime="2019-12-10T10:57:45">Updated: December 10, 2019</time>
-<span class="post__meta-categories meta-categories">
-	<span class="meta-categories__list">Categories: <a class="meta-categories__link" href="/categories/cars" rel="category">Cars</a>, <a class="meta-categories__link" href="/categories/computing" rel="category">Computing</a>, <a class="meta-categories__link" href="/categories/programming" rel="category">Programming</a></span>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2013-12-05T01:00:13Z">05 Dec 2013</time>
+	<time class="entry__meta-lastmod meta-lastmod" datetime="2019-12-10T10:57:45-06:00">Updated: 10 Dec 2019</time>
+<span class="entry__meta-categories meta-categories">
+	<span class="meta-categories__list">Categories:
+		<a class="meta-categories__link" href="/categories/cars" rel="category">Cars</a>, 
+		<a class="meta-categories__link" href="/categories/computing" rel="category">Computing</a>, 
+		<a class="meta-categories__link" href="/categories/programming" rel="category">Programming</a>
+	</span>
 </span>
 	</div>
-
 </article>
 				</div>
 			
@@ -132,6 +154,9 @@ I&rsquo;m glad I&rsquo;ve gotten more familiar with the publishing process. It&r
 		</a>
 		<a class="social__link" target="_blank" rel="noopener noreferrer" href="https://github.com/nearwood">
 			<svg class="social__icon" aria-label="Github" role="img" width="32" height="32" viewBox="0 0 512 512"><path d="M335 499c14 0 12 17 12 17H165s-2-17 12-17c13 0 16-6 16-12l-1-50c-71 16-86-28-86-28-12-30-28-37-28-37-24-16 1-16 1-16 26 2 40 26 40 26 22 39 59 28 74 22 2-17 9-28 16-35-57-6-116-28-116-126 0-28 10-51 26-69-3-6-11-32 3-67 0 0 21-7 70 26 42-12 86-12 128 0 49-33 70-26 70-26 14 35 6 61 3 67 16 18 26 41 26 69 0 98-60 120-117 126 10 8 18 24 18 48l-1 70c0 6 3 12 16 12z"/></svg>
+		</a>
+		<a class="social__link" target="_blank" rel="noopener noreferrer" href="https://stackoverflow.com/users/numberid">
+			<svg class="social__icon" aria-label="Stack Overflow" role="img" width="32" height="32" viewBox="0 0 512 512"><g stroke-width="30"><path fill="none" d="M125 297v105h241V297"/><path d="M170 341h150m-144-68l148 31M199 204l136 64m-95-129l115 97M293 89l90 120"/></g></svg>
 		</a>
 </div>
 	<div class="footer__copyright">© 2020 Nick Earwood. <span class="footer__copyright-credits">Powered by <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/vimux/binario" rel="nofollow noopener" target="_blank">Binario</a> theme.</span></div>

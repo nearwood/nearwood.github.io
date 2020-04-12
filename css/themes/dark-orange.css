@@ -1,0 +1,36 @@
+a {
+	color: #f15926;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #a48463;
+}
+
+blockquote {
+	border-color: #f15926;
+}
+
+pre, code, kbd, samp {
+  font-family: monospace;
+}
+
+mark {
+	background-color: #f15926;
+}
+
+.logo:hover {
+	color: #f15926;
+}
+
+.main-nav__btn {
+	fill: #f15926;
+}
+
+.toc {
+	color: #a48463;
+}
+
+.share__icon {
+	fill: #f15926;
+	stroke: #f15926;
+}

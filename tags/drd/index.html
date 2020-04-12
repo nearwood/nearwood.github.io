@@ -18,8 +18,8 @@
 <meta name="twitter:title" content="drd"/>
 <meta name="twitter:description" content="Responsive card-based &amp; code-light Hugo theme"/>
 
-	<link rel="stylesheet" href="/css/main.css">
-	<link rel="stylesheet" href="/css/themes/dark-green.css">
+	<link rel="stylesheet" href="/css/bundle.css">
+	<link rel="stylesheet" href="/css/themes/dark-orange.css">
 	<link rel="icon" href="/icons/16.png" sizes="16x16" type="image/png">
 	<link rel="icon" href="/icons/32.png" sizes="32x32" type="image/png">
 	<link rel="alternate" type="application/rss+xml" href="/tags/drd/index.xml" title="Nick">
@@ -48,8 +48,20 @@
 		</div>
 	</button>
 	<ul id="menu" class="main-nav__list">
-		<li class="main-nav__item"><a class="main-nav__link" href="/pages/about/">About</a></li>
-		<li class="main-nav__item"><a class="main-nav__link" href="/pages/contact/">Contact</a></li>
+			<li class="main-nav__item">
+				<a class="main-nav__link" href="/pages/about/">
+					
+					<span class="main-nav__text">About</span>
+					
+				</a>
+			</li>
+			<li class="main-nav__item">
+				<a class="main-nav__link" href="/pages/contact/">
+					
+					<span class="main-nav__text">Contact</span>
+					
+				</a>
+			</li>
 	</ul>
 </nav>
 </header>
@@ -57,6 +69,7 @@
 	<div class="primary">
 	
 	<main class="main">
+		
 		<div class="page block">
 			<h1 class="page__title">drd</h1>
 			
@@ -64,57 +77,63 @@
 		<div class="cards">
 			
 				<div class="card card--2col">
-					<article class="post card__box block">
-	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/fixing-mirrorlist-on-arch-linux-arm-raspberry-pi/">Fixing mirrorlist on Arch Linux Arm (Raspberry Pi)</a></h1>
-	<div class="post__content">I hadn&rsquo;t updated my Raspberry Pi (a B+ model for my rpi-drd project) in about a year. Pacman -Syu kept complaining about being unable to find files on any of the mirrors.
+					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/fixing-mirrorlist-on-arch-linux-arm-raspberry-pi/">Fixing mirrorlist on Arch Linux Arm (Raspberry Pi)</a></h1>
+	<div class="entry__content">I hadn&rsquo;t updated my Raspberry Pi (a B+ model for my rpi-drd project) in about a year. Pacman -Syu kept complaining about being unable to find files on any of the mirrors.
 So I, without thinking, ran reflector on an x86 host and copied it over. Oops. Now it definitely can&rsquo;t find packages.
 The archlinuxarm.org website gave me the hostname I needed, but not the entire URL. Put this in your mirrorlist (as the sole entry) to restore functionality:</div>
-	<div class="post__meta meta mt tar">
-<time class="post__meta-published meta-published" datetime="2016-05-21T22:06:00">May 21, 2016</time>
-<time class="post__meta-lastmod meta-lastmod" datetime="2019-12-10T10:57:45">Updated: December 10, 2019</time>
-<span class="post__meta-categories meta-categories">
-	<span class="meta-categories__list">Categories: <a class="meta-categories__link" href="/categories/computing" rel="category">Computing</a>, <a class="meta-categories__link" href="/categories/raspberry-pi" rel="category">Raspberry Pi</a></span>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2016-05-21T22:06:00Z">21 May 2016</time>
+	<time class="entry__meta-lastmod meta-lastmod" datetime="2019-12-10T10:57:45-06:00">Updated: 10 Dec 2019</time>
+<span class="entry__meta-categories meta-categories">
+	<span class="meta-categories__list">Categories:
+		<a class="meta-categories__link" href="/categories/computing" rel="category">Computing</a>, 
+		<a class="meta-categories__link" href="/categories/raspberry-pi" rel="category">Raspberry Pi</a>
+	</span>
 </span>
 	</div>
-
 </article>
 				</div>
 			
 				<div class="card card--2col">
-					<article class="post card__box block">
-	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/raspberry-pi-robot-assembly-part-2/">Raspberry Pi Robot – Assembly Part 2</a></h1>
-	<div class="post__content">This was the hardest part. If you wire the wrong things together you can brick your Pi. I took some time to decide on which pins to use, and after assembly and testing everything worked. I&rsquo;ll explain which pins I picked, but note that this information will not work with other hardware configurations.[I originally had a Model B Pi, but due to needing the second hardware PWM (which is hidden on the B), switched to the B+.</div>
-	<div class="post__meta meta mt tar">
-<time class="post__meta-published meta-published" datetime="2016-03-08T01:47:20">March 08, 2016</time>
-<time class="post__meta-lastmod meta-lastmod" datetime="2019-12-10T10:57:45">Updated: December 10, 2019</time>
-<span class="post__meta-categories meta-categories">
-	<span class="meta-categories__list">Categories: <a class="meta-categories__link" href="/categories/programming" rel="category">Programming</a>, <a class="meta-categories__link" href="/categories/raspberry-pi" rel="category">Raspberry Pi</a>, <a class="meta-categories__link" href="/categories/technology" rel="category">Technology</a></span>
+					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/raspberry-pi-robot-assembly-part-2/">Raspberry Pi Robot – Assembly Part 2</a></h1>
+	<div class="entry__content">This was the hardest part. If you wire the wrong things together you can brick your Pi. I took some time to decide on which pins to use, and after assembly and testing everything worked. I&rsquo;ll explain which pins I picked, but note that this information will not work with other hardware configurations.[I originally had a Model B Pi, but due to needing the second hardware PWM (which is hidden on the B), switched to the B+.</div>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2016-03-08T01:47:20Z">08 Mar 2016</time>
+	<time class="entry__meta-lastmod meta-lastmod" datetime="2019-12-10T10:57:45-06:00">Updated: 10 Dec 2019</time>
+<span class="entry__meta-categories meta-categories">
+	<span class="meta-categories__list">Categories:
+		<a class="meta-categories__link" href="/categories/programming" rel="category">Programming</a>, 
+		<a class="meta-categories__link" href="/categories/raspberry-pi" rel="category">Raspberry Pi</a>, 
+		<a class="meta-categories__link" href="/categories/technology" rel="category">Technology</a>
+	</span>
 </span>
 	</div>
-
 </article>
 				</div>
 			
 				<div class="card card--2col">
-					<article class="post card__box block">
-	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/raspberry-pi-robot-assembly-part-1/">Raspberry Pi Robot – Assembly Part 1</a></h1>
-	<div class="post__content">So you&rsquo;ve got a bunch of parts, assembly is pretty easy. I&rsquo;m going to skip over most of the chassis assembly since it came with instructions, but I have a couple pointers and I&rsquo;ll go over how I attached the encoders. Then I&rsquo;ll talk about soldering the motor controller and wiring the encoders up, and which pins to pick from the GPIO of the Pi.
+					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/raspberry-pi-robot-assembly-part-1/">Raspberry Pi Robot – Assembly Part 1</a></h1>
+	<div class="entry__content">So you&rsquo;ve got a bunch of parts, assembly is pretty easy. I&rsquo;m going to skip over most of the chassis assembly since it came with instructions, but I have a couple pointers and I&rsquo;ll go over how I attached the encoders. Then I&rsquo;ll talk about soldering the motor controller and wiring the encoders up, and which pins to pick from the GPIO of the Pi.
 So this is what the chassis looks like fully assembled:</div>
-	<div class="post__meta meta mt tar">
-<time class="post__meta-published meta-published" datetime="2014-12-26T15:43:15">December 26, 2014</time>
-<time class="post__meta-lastmod meta-lastmod" datetime="2019-12-10T10:57:45">Updated: December 10, 2019</time>
-<span class="post__meta-categories meta-categories">
-	<span class="meta-categories__list">Categories: <a class="meta-categories__link" href="/categories/raspberry-pi" rel="category">Raspberry Pi</a></span>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2014-12-26T15:43:15Z">26 Dec 2014</time>
+	<time class="entry__meta-lastmod meta-lastmod" datetime="2019-12-10T10:57:45-06:00">Updated: 10 Dec 2019</time>
+<span class="entry__meta-categories meta-categories">
+	<span class="meta-categories__list">Categories:
+		<a class="meta-categories__link" href="/categories/raspberry-pi" rel="category">Raspberry Pi</a>
+	</span>
 </span>
 	</div>
-
 </article>
 				</div>
 			
 				<div class="card card--2col">
-					<article class="post card__box block">
-	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/raspberry-pi-robot-cross-compiling/">Raspberry Pi – Cross-compiling</a></h1>
-	<div class="post__content"><p>Now that you have the hardware built and tested (although that&rsquo;s not necessary), you can either use the code I&rsquo;ve written-which is specific to the hardware and environment I have, or compile your own version. If you want to compile your own there are two options:</p>
+					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/raspberry-pi-robot-cross-compiling/">Raspberry Pi – Cross-compiling</a></h1>
+	<div class="entry__content"><p>Now that you have the hardware built and tested (although that&rsquo;s not necessary), you can either use the code I&rsquo;ve written-which is specific to the hardware and environment I have, or compile your own version. If you want to compile your own there are two options:</p>
 <ol>
 <li>Compile on the Pi itself</li>
 <li>Compile on an ARM virtual machine</li>
@@ -129,14 +148,16 @@ So this is what the chassis looks like fully assembled:</div>
 <li>Try and build the toolchain</li>
 <li>Use the toolchain to build your Pi code</li>
 </ol></div>
-	<div class="post__meta meta mt tar">
-<time class="post__meta-published meta-published" datetime="2014-12-01T02:26:47">December 01, 2014</time>
-<time class="post__meta-lastmod meta-lastmod" datetime="2019-12-10T10:57:45">Updated: December 10, 2019</time>
-<span class="post__meta-categories meta-categories">
-	<span class="meta-categories__list">Categories: <a class="meta-categories__link" href="/categories/programming" rel="category">Programming</a>, <a class="meta-categories__link" href="/categories/raspberry-pi" rel="category">Raspberry Pi</a></span>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2014-12-01T02:26:47Z">01 Dec 2014</time>
+	<time class="entry__meta-lastmod meta-lastmod" datetime="2019-12-10T10:57:45-06:00">Updated: 10 Dec 2019</time>
+<span class="entry__meta-categories meta-categories">
+	<span class="meta-categories__list">Categories:
+		<a class="meta-categories__link" href="/categories/programming" rel="category">Programming</a>, 
+		<a class="meta-categories__link" href="/categories/raspberry-pi" rel="category">Raspberry Pi</a>
+	</span>
 </span>
 	</div>
-
 </article>
 				</div>
 			
@@ -152,6 +173,9 @@ So this is what the chassis looks like fully assembled:</div>
 		</a>
 		<a class="social__link" target="_blank" rel="noopener noreferrer" href="https://github.com/nearwood">
 			<svg class="social__icon" aria-label="Github" role="img" width="32" height="32" viewBox="0 0 512 512"><path d="M335 499c14 0 12 17 12 17H165s-2-17 12-17c13 0 16-6 16-12l-1-50c-71 16-86-28-86-28-12-30-28-37-28-37-24-16 1-16 1-16 26 2 40 26 40 26 22 39 59 28 74 22 2-17 9-28 16-35-57-6-116-28-116-126 0-28 10-51 26-69-3-6-11-32 3-67 0 0 21-7 70 26 42-12 86-12 128 0 49-33 70-26 70-26 14 35 6 61 3 67 16 18 26 41 26 69 0 98-60 120-117 126 10 8 18 24 18 48l-1 70c0 6 3 12 16 12z"/></svg>
+		</a>
+		<a class="social__link" target="_blank" rel="noopener noreferrer" href="https://stackoverflow.com/users/numberid">
+			<svg class="social__icon" aria-label="Stack Overflow" role="img" width="32" height="32" viewBox="0 0 512 512"><g stroke-width="30"><path fill="none" d="M125 297v105h241V297"/><path d="M170 341h150m-144-68l148 31M199 204l136 64m-95-129l115 97M293 89l90 120"/></g></svg>
 		</a>
 </div>
 	<div class="footer__copyright">© 2020 Nick Earwood. <span class="footer__copyright-credits">Powered by <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/vimux/binario" rel="nofollow noopener" target="_blank">Binario</a> theme.</span></div>

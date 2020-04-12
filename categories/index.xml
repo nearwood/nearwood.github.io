@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2019 Nicholas Earwood</copyright>
-    <lastBuildDate>Sat, 02 Feb 2019 19:43:39 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 05 Apr 2020 22:09:30 -0500</lastBuildDate>
     
 	<atom:link href="https://nearwood.dev/categories/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,9 +15,27 @@
     <item>
       <title>Computing</title>
       <link>https://nearwood.dev/categories/computing/</link>
-      <pubDate>Sat, 02 Feb 2019 19:43:39 +0000</pubDate>
+      <pubDate>Sun, 05 Apr 2020 22:09:30 -0500</pubDate>
       
       <guid>https://nearwood.dev/categories/computing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CTF</title>
+      <link>https://nearwood.dev/categories/ctf/</link>
+      <pubDate>Sun, 05 Apr 2020 22:09:30 -0500</pubDate>
+      
+      <guid>https://nearwood.dev/categories/ctf/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>MBR</title>
+      <link>https://nearwood.dev/categories/mbr/</link>
+      <pubDate>Sun, 05 Apr 2020 22:09:30 -0500</pubDate>
+      
+      <guid>https://nearwood.dev/categories/mbr/</guid>
       <description></description>
     </item>
     

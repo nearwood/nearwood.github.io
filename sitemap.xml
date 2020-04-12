@@ -3,33 +3,78 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://nearwood.dev/posts/2019/master-boot-record/</loc>
-    <lastmod>2020-03-21T15:42:49-05:00</lastmod>
+    <loc>https://nearwood.dev/categories/</loc>
+    <lastmod>2020-04-11T20:44:09-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nearwood.dev/categories/computing/</loc>
+    <lastmod>2020-04-11T20:44:09-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nearwood.dev/categories/ctf/</loc>
+    <lastmod>2020-04-11T20:44:09-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nearwood.dev/posts/2020/ctf-kgc-bullug/</loc>
+    <lastmod>2020-04-11T20:44:09-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nearwood.dev/categories/mbr/</loc>
+    <lastmod>2020-04-11T20:44:09-05:00</lastmod>
   </url>
   
   <url>
     <loc>https://nearwood.dev/</loc>
-    <lastmod>2020-03-21T15:42:49-05:00</lastmod>
+    <lastmod>2020-04-11T20:44:09-05:00</lastmod>
   </url>
   
   <url>
     <loc>https://nearwood.dev/posts/</loc>
-    <lastmod>2020-03-21T15:42:49-05:00</lastmod>
+    <lastmod>2020-04-11T20:44:09-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nearwood.dev/posts/2020/ctf-mbr-copy/</loc>
+    <lastmod>2020-04-11T20:44:09-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nearwood.dev/posts/2020/ctf-mbr-chkdsk/</loc>
+    <lastmod>2020-04-11T20:44:09-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nearwood.dev/posts/2020/ctf-mbr-fdo/</loc>
+    <lastmod>2020-04-05T22:56:26-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nearwood.dev/posts/2020/ctf-mbr-dma/</loc>
+    <lastmod>2020-04-05T22:56:26-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nearwood.dev/posts/2020/ctf-mbr-autoexec/</loc>
+    <lastmod>2020-04-11T20:44:09-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nearwood.dev/posts/2020/ctf-mbr-configsys/</loc>
+    <lastmod>2020-04-11T20:44:09-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nearwood.dev/posts/2019/master-boot-record/</loc>
+    <lastmod>2020-04-11T20:44:09-05:00</lastmod>
   </url>
   
   <url>
     <loc>https://nearwood.dev/posts/new-static-site/</loc>
     <lastmod>2019-10-14T16:38:03-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nearwood.dev/categories/</loc>
-    <lastmod>2020-03-14T20:45:53-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nearwood.dev/categories/computing/</loc>
-    <lastmod>2020-03-14T20:45:53-05:00</lastmod>
   </url>
   
   <url>
