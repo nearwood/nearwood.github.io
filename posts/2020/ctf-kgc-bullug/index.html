@@ -15,7 +15,7 @@ https://keygenchurch.bandcamp.com/album/bullug-gegbug-ibgabiug-gixcure-dagabciea
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://nearwood.dev/posts/2020/ctf-kgc-bullug/" />
 <meta property="article:published_time" content="2020-04-05T22:09:30-05:00" />
-<meta property="article:modified_time" content="2020-04-11T20:44:09-05:00" />
+<meta property="article:modified_time" content="2020-04-12T22:12:10-05:00" />
 
 		<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="CTF: KGC - Bullug Gegbug Ibgabiug Gixcure Dagabciea Fuic"/>
@@ -78,7 +78,7 @@ https://keygenchurch.bandcamp.com/album/bullug-gegbug-ibgabiug-gixcure-dagabciea
 			<article class="entry">
 	<div class="entry__meta meta mb">
 	<time class="entry__meta-published meta-published" datetime="2020-04-05T22:09:30-05:00">05 Apr 2020</time>
-	<time class="entry__meta-lastmod meta-lastmod" datetime="2020-04-11T20:44:09-05:00">Updated: 11 Apr 2020</time>
+	<time class="entry__meta-lastmod meta-lastmod" datetime="2020-04-12T22:12:10-05:00">Updated: 12 Apr 2020</time>
 <span class="entry__meta-categories meta-categories">
 	<span class="meta-categories__list">Categories:
 		<a class="meta-categories__link" href="/categories/computing" rel="category">Computing</a>, 
@@ -91,6 +91,49 @@ https://keygenchurch.bandcamp.com/album/bullug-gegbug-ibgabiug-gixcure-dagabciea
 				<div class="entry__content"><p><a href="/posts/2019/master-boot-record/">KGC (MBR) Capture the Flag Challenge</a></p>
 <p>Album released: 09 Dec 2019</p>
 <p><a href="https://keygenchurch.bandcamp.com/album/bullug-gegbug-ibgabiug-gixcure-dagabciea-fuic">https://keygenchurch.bandcamp.com/album/bullug-gegbug-ibgabiug-gixcure-dagabciea-fuic</a></p>
+<!-- 
+ <displicit> Is serial sufficient for KGC AES? Since it's also related to song names
+[07:14:30] <MBR> the serial is to decode the title
+[07:14:45] <displicit> Done, but there is also b64
+[07:15:03] <displicit> Also it's not a strict code in case of the title
+[07:15:59] <MBR> mo there's no base64
+[07:16:08] <MBR> it's aes
+[07:16:32] <displicit> Well, it's aes in b64 medium
+[07:16:32] <MBR> the key is in the title
+[07:16:34] <MBR> or rather
+[07:16:38] <MBR> it's not in the title
+[07:16:52] <MBR> https://aesencryption.net/
+[07:16:57] <MBR> need to use this
+[07:17:00] <Z> well no
+[07:17:01] <MBR> has a specific init string
+[07:17:06] <Z> not if its kgc
+[07:17:10] <Z> the latest one
+[07:17:14] <MBR> ah
+[07:17:16] <MBR> RIGHT
+[07:17:18] <Z> LOL
+[07:17:19] <MBR> that was a different one
+[07:17:20] <MBR> lol
+[07:17:24] <MBR> yeah that is way more complex
+[07:17:28] <MBR> only Z solved it with hints
+[07:17:31] <Z> find the needle, in this haystack of needles
+[07:17:32] <MBR> I think?
+[07:17:34] <MBR> and Chelmi
+[07:17:39] <MBR> yeah
+[07:17:41] <Z> oh did chelmi do it?
+[07:17:44] <MBR> i think he did
+[07:17:49] <Z> :O
+[07:17:50] <MBR> that dude did every single one
+[07:17:51] <MBR> crazy
+[07:20:24] <displicit> Hmm. If I apply dictionary to the titles, it's not perfect to decode the exact latin phrases. Could it be clue?
+[07:20:52] <Z> displicit: is this the KGC album or the more recent single?
+[07:21:26] <displicit> No, FDO I've done, solving KGC seems kinda logical after it.
+[07:23:31] <ignaloidas> displicit, which kgc
+[07:23:38] <ignaloidas> is it the block chars
+[07:23:46] <ignaloidas> or the latin-ish phrase
+[07:24:06] <displicit> ignaloidas: lastest one, but they are both related with the same serial and only the lastest has AES
+[07:24:32] <ignaloidas> the latest one is a paiiin in the but
+[07:24:41] <ignaloidas> Z knows that
+-->
 <h3 id="secret">Secret</h3>
 <pre><code class="language-code" data-lang="code">E1A5-N2T3-S6M7-C4B8
 
