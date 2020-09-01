@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>saas-project on Nick</title>
+    <link>https://nearwood.dev/series/saas-project/</link>
+    <description>Recent content in saas-project on Nick</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© 2019 Nicholas Earwood</copyright>
+    <lastBuildDate>Mon, 31 Aug 2020 22:37:43 -0500</lastBuildDate>
+    
+	<atom:link href="https://nearwood.dev/series/saas-project/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>New SaaS Project</title>
+      <link>https://nearwood.dev/posts/2020/saas-project/</link>
+      <pubDate>Mon, 31 Aug 2020 22:37:43 -0500</pubDate>
+      
+      <guid>https://nearwood.dev/posts/2020/saas-project/</guid>
+      <description>&lt;p&gt;For the past 3 months, on my own time, I have been working on a new project.
+I&amp;rsquo;ve culled down many side-projects to focus on it (including updates to this site).
+It&amp;rsquo;s a browser-based SaaS (desktop only), using React, Ant Design, Firebase, Stripe, and others.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

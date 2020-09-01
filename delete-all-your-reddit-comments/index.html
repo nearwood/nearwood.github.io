@@ -26,15 +26,17 @@ The catch is that you, apparently, should edit each comment&rsquo;s content to r
 	<link rel="icon" href="/icons/16.png" sizes="16x16" type="image/png">
 	<link rel="icon" href="/icons/32.png" sizes="32x32" type="image/png">
 		
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-5743113-11', 'auto');
 	
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-5743113-11"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
 
-		gtag('config', 'UA-5743113-11');
-	</script>
 </head>
 <body>
 	<header class="header">
@@ -104,7 +106,7 @@ $('div#siteTable div.comment:not(.hidden)').each(function (i) {
 </pre>
 <p>It runs from the user&rsquo;s comments page. First it gathers all comment divs that aren&rsquo;t hidden. Hidden means we&rsquo;ve probably already deleted it. Then, for each one of those, we do a few things after a delay:</p>
 <ol>
-<li>If the text isn&rsquo;t already a &ldquo;.&quot;, edit it and save it.</li>
+<li>If the text isn&rsquo;t already a &ldquo;.&rdquo;, edit it and save it.</li>
 <li>After another delay, click delete&rsquo;s &ldquo;yes&rdquo; link.</li>
 </ol>
 <p>Unlike the other scripts, It doesn&rsquo;t bother clicking the edit or delete links since those just toggle visiblity of other components. The delays are multiplied by the index of each comment, to spread the server requests out over time. If you have 300 comments, this will take around 600 seconds. Note that the delay is slightly larger than a second to help ensure requests are always at least a second apart. I had some issues with rejected requests leaving it at exactly 1000 ms, due to the actual delay being slightly less I&rsquo;m sure.</p>
@@ -138,8 +140,6 @@ $('div#siteTable div.comment:not(.hidden)').each(function (i) {
 				<footer class="entry__footer">
 					
 <div class="entry__tags">
-			<a class="entry__tag btn" href="/tags/javascript/">javascript</a>
-			<a class="entry__tag btn" href="/tags/reddit/">reddit</a>
 </div>
 					
 <div class="entry__share share">

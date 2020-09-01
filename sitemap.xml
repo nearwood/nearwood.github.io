@@ -3,78 +3,38 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://nearwood.dev/categories/</loc>
-    <lastmod>2020-04-12T22:12:10-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nearwood.dev/categories/computing/</loc>
-    <lastmod>2020-04-12T22:12:10-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nearwood.dev/categories/ctf/</loc>
-    <lastmod>2020-04-12T22:12:10-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nearwood.dev/posts/2020/ctf-kgc-bullug/</loc>
-    <lastmod>2020-04-12T22:12:10-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nearwood.dev/categories/mbr/</loc>
-    <lastmod>2020-04-12T22:12:10-05:00</lastmod>
+    <loc>https://nearwood.dev/posts/2020/saas-project/</loc>
+    <lastmod>2020-08-31T22:50:49-05:00</lastmod>
   </url>
   
   <url>
     <loc>https://nearwood.dev/</loc>
-    <lastmod>2020-04-12T22:13:36-05:00</lastmod>
+    <lastmod>2020-08-31T22:50:49-05:00</lastmod>
   </url>
   
   <url>
     <loc>https://nearwood.dev/posts/</loc>
-    <lastmod>2020-04-12T22:13:36-05:00</lastmod>
+    <lastmod>2020-08-31T22:50:49-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://nearwood.dev/posts/2020/ctf-mbr-irq/</loc>
-    <lastmod>2020-04-12T22:12:10-05:00</lastmod>
+    <loc>https://nearwood.dev/series/saas-project/</loc>
+    <lastmod>2020-08-31T22:50:49-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://nearwood.dev/posts/2020/ctf-mbr-copy/</loc>
-    <lastmod>2020-04-11T20:44:09-05:00</lastmod>
+    <loc>https://nearwood.dev/series/</loc>
+    <lastmod>2020-08-31T22:50:49-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://nearwood.dev/posts/2020/ctf-mbr-chkdsk/</loc>
-    <lastmod>2020-04-11T20:44:09-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nearwood.dev/posts/2020/ctf-mbr-fdo/</loc>
-    <lastmod>2020-04-11T20:48:44-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nearwood.dev/posts/2020/ctf-mbr-dma/</loc>
-    <lastmod>2020-04-05T22:56:26-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nearwood.dev/posts/2020/ctf-mbr-autoexec/</loc>
-    <lastmod>2020-04-11T20:44:09-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nearwood.dev/posts/2020/ctf-mbr-configsys/</loc>
-    <lastmod>2020-04-11T20:44:09-05:00</lastmod>
+    <loc>https://nearwood.dev/series/mbr-ctf/</loc>
+    <lastmod>2020-08-31T22:50:37-05:00</lastmod>
   </url>
   
   <url>
     <loc>https://nearwood.dev/posts/2019/master-boot-record/</loc>
-    <lastmod>2020-04-12T22:13:36-05:00</lastmod>
+    <lastmod>2020-08-31T22:50:37-05:00</lastmod>
   </url>
   
   <url>
@@ -88,87 +48,12 @@
   </url>
   
   <url>
-    <loc>https://nearwood.dev/tags/browser/</loc>
-    <lastmod>2019-12-10T10:57:45-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nearwood.dev/tags/c/</loc>
-    <lastmod>2020-03-14T20:45:53-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nearwood.dev/tags/chrome/</loc>
-    <lastmod>2019-12-10T10:57:45-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nearwood.dev/tags/firefox/</loc>
-    <lastmod>2019-12-10T10:57:45-06:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://nearwood.dev/migrating-to-firefox-from-google-chrome/</loc>
     <lastmod>2019-12-10T10:57:45-06:00</lastmod>
   </url>
   
   <url>
-    <loc>https://nearwood.dev/tags/</loc>
-    <lastmod>2020-03-14T20:45:53-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nearwood.dev/tags/bitcoin/</loc>
-    <lastmod>2020-03-14T20:45:53-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nearwood.dev/categories/cryptocurrency/</loc>
-    <lastmod>2020-03-14T20:45:53-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nearwood.dev/tags/cryptocurrency/</loc>
-    <lastmod>2020-03-14T20:45:53-05:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://nearwood.dev/education-in-futility-warpwallet-brute-forcing/</loc>
-    <lastmod>2020-03-14T20:45:53-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nearwood.dev/categories/programming/</loc>
-    <lastmod>2020-03-14T20:45:53-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nearwood.dev/categories/technology/</loc>
-    <lastmod>2020-03-14T20:45:53-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nearwood.dev/categories/android/</loc>
-    <lastmod>2020-03-14T20:45:53-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nearwood.dev/tags/android/</loc>
-    <lastmod>2020-03-14T20:45:53-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nearwood.dev/categories/cars/</loc>
-    <lastmod>2020-03-14T20:45:53-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nearwood.dev/tags/firwmare/</loc>
-    <lastmod>2020-03-14T20:45:53-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nearwood.dev/tags/reverse-engineering/</loc>
     <lastmod>2020-03-14T20:45:53-05:00</lastmod>
   </url>
   
@@ -183,52 +68,7 @@
   </url>
   
   <url>
-    <loc>https://nearwood.dev/tags/dmcrypt/</loc>
-    <lastmod>2019-12-10T10:57:45-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nearwood.dev/tags/linux/</loc>
-    <lastmod>2019-12-10T10:57:45-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nearwood.dev/categories/linux/</loc>
-    <lastmod>2019-12-10T10:57:45-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nearwood.dev/tags/mdadm/</loc>
-    <lastmod>2019-12-10T10:57:45-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nearwood.dev/tags/raid/</loc>
-    <lastmod>2019-12-10T10:57:45-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nearwood.dev/tags/background/</loc>
-    <lastmod>2019-12-10T10:57:45-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nearwood.dev/tags/desktop/</loc>
-    <lastmod>2019-12-10T10:57:45-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nearwood.dev/tags/powershell/</loc>
-    <lastmod>2019-12-10T10:57:45-06:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://nearwood.dev/sync-loginlock-screen-wallpaper-to-current-desktop-background/</loc>
-    <lastmod>2019-12-10T10:57:45-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nearwood.dev/tags/win32/</loc>
     <lastmod>2019-12-10T10:57:45-06:00</lastmod>
   </url>
   
@@ -238,22 +78,7 @@
   </url>
   
   <url>
-    <loc>https://nearwood.dev/tags/280z/</loc>
-    <lastmod>2019-12-10T10:57:45-06:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://nearwood.dev/405hp-280z/</loc>
-    <lastmod>2019-12-10T10:57:45-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nearwood.dev/tags/archlinux/</loc>
-    <lastmod>2019-12-10T10:57:45-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nearwood.dev/tags/drd/</loc>
     <lastmod>2019-12-10T10:57:45-06:00</lastmod>
   </url>
   
@@ -263,27 +88,7 @@
   </url>
   
   <url>
-    <loc>https://nearwood.dev/categories/raspberry-pi/</loc>
-    <lastmod>2019-12-10T10:57:45-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nearwood.dev/tags/raspberry-pi/</loc>
-    <lastmod>2019-12-10T10:57:45-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nearwood.dev/tags/gentoo/</loc>
-    <lastmod>2019-12-10T10:57:45-06:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://nearwood.dev/gentoo-linux-tesla-it-was-only-a-matter-of-time/</loc>
-    <lastmod>2019-12-10T10:57:45-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nearwood.dev/tags/tesla/</loc>
     <lastmod>2019-12-10T10:57:45-06:00</lastmod>
   </url>
   
@@ -293,42 +98,12 @@
   </url>
   
   <url>
-    <loc>https://nearwood.dev/tags/dcs/</loc>
-    <lastmod>2019-12-10T10:57:45-06:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://nearwood.dev/dcs-mig-21-first-flight/</loc>
     <lastmod>2019-12-10T10:57:45-06:00</lastmod>
   </url>
   
   <url>
-    <loc>https://nearwood.dev/tags/flightsim/</loc>
-    <lastmod>2019-12-10T10:57:45-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nearwood.dev/categories/games/</loc>
-    <lastmod>2019-12-10T10:57:45-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nearwood.dev/tags/autocross/</loc>
-    <lastmod>2019-12-10T10:57:45-06:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://nearwood.dev/october-autocross/</loc>
-    <lastmod>2019-12-10T10:57:45-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nearwood.dev/tags/msq/</loc>
-    <lastmod>2019-12-10T10:57:45-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nearwood.dev/tags/msqur/</loc>
     <lastmod>2019-12-10T10:57:45-06:00</lastmod>
   </url>
   
@@ -353,32 +128,7 @@
   </url>
   
   <url>
-    <loc>https://nearwood.dev/tags/fps/</loc>
-    <lastmod>2019-12-10T10:57:45-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nearwood.dev/tags/video/</loc>
-    <lastmod>2019-12-10T10:57:45-06:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://nearwood.dev/msqur-1-0-released/</loc>
-    <lastmod>2019-12-10T10:57:45-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nearwood.dev/tags/gaming/</loc>
-    <lastmod>2019-12-10T10:57:45-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nearwood.dev/tags/hmd/</loc>
-    <lastmod>2019-12-10T10:57:45-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nearwood.dev/tags/oculus-rift/</loc>
     <lastmod>2019-12-10T10:57:45-06:00</lastmod>
   </url>
   
@@ -398,27 +148,7 @@
   </url>
   
   <url>
-    <loc>https://nearwood.dev/tags/trailer/</loc>
-    <lastmod>2019-12-10T10:57:45-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nearwood.dev/categories/welding/</loc>
-    <lastmod>2019-12-10T10:57:45-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nearwood.dev/tags/action-camera/</loc>
-    <lastmod>2019-12-10T10:57:45-06:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://nearwood.dev/action-camera-review-garmin-virb-elite/</loc>
-    <lastmod>2019-12-10T10:57:45-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nearwood.dev/tags/gopro/</loc>
     <lastmod>2019-12-10T10:57:45-06:00</lastmod>
   </url>
   
@@ -428,17 +158,7 @@
   </url>
   
   <url>
-    <loc>https://nearwood.dev/tags/megasquirt/</loc>
-    <lastmod>2019-12-10T10:57:45-06:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://nearwood.dev/on-properly-setting-your-cooling-fan-temperature-threshold/</loc>
-    <lastmod>2019-12-10T10:57:45-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nearwood.dev/tags/tuning/</loc>
     <lastmod>2019-12-10T10:57:45-06:00</lastmod>
   </url>
   
@@ -453,27 +173,12 @@
   </url>
   
   <url>
-    <loc>https://nearwood.dev/tags/programming/</loc>
-    <lastmod>2019-12-10T10:57:45-06:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://nearwood.dev/msqur-update/</loc>
     <lastmod>2019-12-10T10:57:45-06:00</lastmod>
   </url>
   
   <url>
     <loc>https://nearwood.dev/harbor-freight-trailer-build/</loc>
-    <lastmod>2019-12-10T10:57:45-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nearwood.dev/tags/welding/</loc>
-    <lastmod>2019-12-10T10:57:45-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nearwood.dev/tags/ecu/</loc>
     <lastmod>2019-12-10T10:57:45-06:00</lastmod>
   </url>
   
@@ -498,27 +203,7 @@
   </url>
   
   <url>
-    <loc>https://nearwood.dev/tags/dm-crypt/</loc>
-    <lastmod>2019-12-10T10:57:45-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nearwood.dev/tags/encryption/</loc>
-    <lastmod>2019-12-10T10:57:45-06:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://nearwood.dev/installing-arch-linux-with-an-encrypted-root/</loc>
-    <lastmod>2019-12-10T10:57:45-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nearwood.dev/tags/bcm2835/</loc>
-    <lastmod>2019-12-10T10:57:45-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nearwood.dev/tags/cross-compiling/</loc>
     <lastmod>2019-12-10T10:57:45-06:00</lastmod>
   </url>
   
@@ -533,27 +218,7 @@
   </url>
   
   <url>
-    <loc>https://nearwood.dev/tags/robot/</loc>
-    <lastmod>2019-12-10T10:57:45-06:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://nearwood.dev/interesting-spam/</loc>
-    <lastmod>2019-12-10T10:57:45-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nearwood.dev/tags/spam/</loc>
-    <lastmod>2019-12-10T10:57:45-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nearwood.dev/categories/arduino/</loc>
-    <lastmod>2019-12-10T10:57:45-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nearwood.dev/tags/arduino/</loc>
     <lastmod>2019-12-10T10:57:45-06:00</lastmod>
   </url>
   
@@ -563,22 +228,7 @@
   </url>
   
   <url>
-    <loc>https://nearwood.dev/tags/galileo/</loc>
-    <lastmod>2019-12-10T10:57:45-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nearwood.dev/tags/canbus/</loc>
-    <lastmod>2019-12-10T10:57:45-06:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://nearwood.dev/carduino-2-0/</loc>
-    <lastmod>2019-12-10T10:57:45-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nearwood.dev/tags/cars/</loc>
     <lastmod>2019-12-10T10:57:45-06:00</lastmod>
   </url>
   
@@ -588,17 +238,7 @@
   </url>
   
   <url>
-    <loc>https://nearwood.dev/tags/vg33/</loc>
-    <lastmod>2019-12-10T10:57:45-06:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://nearwood.dev/280z-led-conversion-part-2/</loc>
-    <lastmod>2019-12-10T10:57:45-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nearwood.dev/tags/led/</loc>
     <lastmod>2019-12-10T10:57:45-06:00</lastmod>
   </url>
   
@@ -613,31 +253,6 @@
   </url>
   
   <url>
-    <loc>https://nearwood.dev/tags/backup/</loc>
-    <lastmod>2019-12-10T10:57:45-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nearwood.dev/tags/mac/</loc>
-    <lastmod>2019-12-10T10:57:45-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nearwood.dev/tags/macbook/</loc>
-    <lastmod>2019-12-10T10:57:45-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nearwood.dev/tags/os-x/</loc>
-    <lastmod>2019-12-10T10:57:45-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nearwood.dev/tags/windows/</loc>
-    <lastmod>2019-12-10T10:57:45-06:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://nearwood.dev/windows-backup/</loc>
     <lastmod>2019-12-10T10:57:45-06:00</lastmod>
   </url>
@@ -648,32 +263,7 @@
   </url>
   
   <url>
-    <loc>https://nearwood.dev/tags/automotive/</loc>
-    <lastmod>2019-12-10T10:57:45-06:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://nearwood.dev/d-link-dir-860l-woes/</loc>
-    <lastmod>2019-12-10T10:57:45-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nearwood.dev/tags/router/</loc>
-    <lastmod>2019-12-10T10:57:45-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nearwood.dev/tags/wifi/</loc>
-    <lastmod>2019-12-10T10:57:45-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nearwood.dev/tags/wireless/</loc>
-    <lastmod>2019-12-10T10:57:45-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nearwood.dev/tags/doge/</loc>
     <lastmod>2019-12-10T10:57:45-06:00</lastmod>
   </url>
   
@@ -683,17 +273,7 @@
   </url>
   
   <url>
-    <loc>https://nearwood.dev/tags/mining/</loc>
-    <lastmod>2019-12-10T10:57:45-06:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://nearwood.dev/280z-speedhut-gauge-conversion/</loc>
-    <lastmod>2019-12-10T10:57:45-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nearwood.dev/tags/windows-7/</loc>
     <lastmod>2019-12-10T10:57:45-06:00</lastmod>
   </url>
   
@@ -708,22 +288,12 @@
   </url>
   
   <url>
-    <loc>https://nearwood.dev/tags/thinkpad/</loc>
-    <lastmod>2019-12-10T10:57:45-06:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://nearwood.dev/custom-speed-app-update/</loc>
     <lastmod>2019-12-10T10:57:45-06:00</lastmod>
   </url>
   
   <url>
     <loc>https://nearwood.dev/exporting-drupal-pagesposts-to-wordpress/</loc>
-    <lastmod>2019-12-10T10:57:45-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nearwood.dev/tags/python/</loc>
     <lastmod>2019-12-10T10:57:45-06:00</lastmod>
   </url>
   
@@ -748,16 +318,6 @@
   </url>
   
   <url>
-    <loc>https://nearwood.dev/tags/javascript/</loc>
-    <lastmod>2019-12-10T10:57:45-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nearwood.dev/tags/reddit/</loc>
-    <lastmod>2019-12-10T10:57:45-06:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://nearwood.dev/first-autocross-in-the-280z/</loc>
     <lastmod>2019-12-10T10:57:45-06:00</lastmod>
   </url>
@@ -778,11 +338,6 @@
   </url>
   
   <url>
-    <loc>https://nearwood.dev/tags/laptop/</loc>
-    <lastmod>2019-12-10T10:57:45-06:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://nearwood.dev/switched-to-arch-linux-from-gentoo/</loc>
     <lastmod>2019-12-10T10:57:45-06:00</lastmod>
   </url>
@@ -793,17 +348,7 @@
   </url>
   
   <url>
-    <loc>https://nearwood.dev/tags/udev/</loc>
-    <lastmod>2019-12-10T10:57:45-06:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://nearwood.dev/udev-broke-server-broke-router-broke/</loc>
-    <lastmod>2019-12-10T10:57:45-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nearwood.dev/tags/apple/</loc>
     <lastmod>2019-12-10T10:57:45-06:00</lastmod>
   </url>
   
@@ -818,22 +363,7 @@
   </url>
   
   <url>
-    <loc>https://nearwood.dev/tags/obd/</loc>
-    <lastmod>2019-12-10T10:57:45-06:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://nearwood.dev/bbcs-top-gear-top-gear-usa/</loc>
-    <lastmod>2019-12-10T10:57:45-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nearwood.dev/tags/top-gear/</loc>
-    <lastmod>2019-12-10T10:57:45-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nearwood.dev/tags/home-server/</loc>
     <lastmod>2019-12-10T10:57:45-06:00</lastmod>
   </url>
   
@@ -848,17 +378,7 @@
   </url>
   
   <url>
-    <loc>https://nearwood.dev/tags/efi/</loc>
-    <lastmod>2019-12-10T10:57:45-06:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://nearwood.dev/gentoo-on-a-mid-2012-macbook-pro/</loc>
-    <lastmod>2019-12-10T10:57:45-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nearwood.dev/tags/refind/</loc>
     <lastmod>2019-12-10T10:57:45-06:00</lastmod>
   </url>
   
@@ -875,20 +395,6 @@
   <url>
     <loc>https://nearwood.dev/posts/2012/qemu-on-windows/</loc>
     <lastmod>2019-12-10T10:57:45-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nearwood.dev/tags/ubuntu/</loc>
-    <lastmod>2019-12-10T10:57:45-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nearwood.dev/tags/vm/</loc>
-    <lastmod>2019-12-10T10:57:45-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nearwood.dev/tags/c/c&#43;&#43;/</loc>
   </url>
   
 </urlset>

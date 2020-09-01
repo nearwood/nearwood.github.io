@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#1b1b1b">
+	<title>CTF: MBR - Internet Protocol | Nick</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		<meta property="og:title" content="CTF: MBR - Internet Protocol" />
+<meta property="og:description" content="MBR Capture the Flag Challenge
+Album released: 20 Mar 2019
+https://masterbootrecord.bandcamp.com/album/internet-protocol
+
+Note: This is the same challenge that&rsquo;s currently (20 Mar 2020) on the http://mbrserver.com landing page.
+" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://nearwood.dev/posts/2020/ctf-mbr-ip/" />
+<meta property="article:published_time" content="2020-04-04T21:32:06-05:00" />
+<meta property="article:modified_time" content="2020-08-31T22:50:37-05:00" /><meta property="og:see_also" content="https://nearwood.dev/posts/2020/ctf-kgc-bullug/" /><meta property="og:see_also" content="https://nearwood.dev/posts/2020/ctf-mbr-irq/" /><meta property="og:see_also" content="https://nearwood.dev/posts/2020/ctf-mbr-copy/" /><meta property="og:see_also" content="https://nearwood.dev/posts/2020/ctf-mbr-chkdsk/" /><meta property="og:see_also" content="https://nearwood.dev/posts/2020/ctf-mbr-fdo/" />
+
+
+		<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="CTF: MBR - Internet Protocol"/>
+<meta name="twitter:description" content="MBR Capture the Flag Challenge
+Album released: 20 Mar 2019
+https://masterbootrecord.bandcamp.com/album/internet-protocol
+
+Note: This is the same challenge that&rsquo;s currently (20 Mar 2020) on the http://mbrserver.com landing page.
+"/>
+
+	<link rel="stylesheet" href="/css/bundle.css">
+	<link rel="stylesheet" href="/css/themes/dark-orange.css">
+	<link rel="icon" href="/icons/16.png" sizes="16x16" type="image/png">
+	<link rel="icon" href="/icons/32.png" sizes="32x32" type="image/png">
+		
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-5743113-11', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</head>
+<body>
+	<header class="header">
+	<a class="logo" href="/">Nick</a>
+	
+<nav class="main-nav" role="navigation">
+	<button id="toggle" class="main-nav__btn" aria-label="Menu toggle" aria-expanded="false" tabindex="0">
+		<div class="main-nav__btn-box" tabindex="-1">
+			<svg class="main-nav__icon icon-menu" width="18" height="18" viewBox="0 0 18 18">
+				<path class="icon-menu__burger" d="M18 0v3.6H0V0h18zM0 10.8h18V7.2H0v3.6zM0 18h18v-3.6H0V18z"/>
+				<path class="icon-menu__x" d="M11.55 9L18 15.45 15.45 18 9 11.55 2.55 18 0 15.45 6.45 9 0 2.55 2.55 0 9 6.45 15.45 0 18 2.55 11.55 9z"/>
+			</svg>
+		</div>
+	</button>
+	<ul id="menu" class="main-nav__list">
+			<li class="main-nav__item">
+				<a class="main-nav__link" href="/pages/about/">
+					
+					<span class="main-nav__text">About</span>
+					
+				</a>
+			</li>
+			<li class="main-nav__item">
+				<a class="main-nav__link" href="/pages/contact/">
+					
+					<span class="main-nav__text">Contact</span>
+					
+				</a>
+			</li>
+	</ul>
+</nav>
+</header>
+
+	<div class="primary">
+	
+	<main class="main">
+		
+		<div class="single block">
+			<article class="entry">
+	<div class="entry__meta meta mb">
+	<time class="entry__meta-published meta-published" datetime="2020-04-04T21:32:06-05:00">04 Apr 2020</time>
+	<time class="entry__meta-lastmod meta-lastmod" datetime="2020-08-31T22:50:37-05:00">Updated: 31 Aug 2020</time>
+<span class="entry__meta-categories meta-categories">
+	<span class="meta-categories__list">Categories:
+		<a class="meta-categories__link" href="/categories/computing" rel="category">Computing</a>, 
+		<a class="meta-categories__link" href="/categories/ctf" rel="category">CTF</a>, 
+		<a class="meta-categories__link" href="/categories/mbr" rel="category">MBR</a>
+	</span>
+</span>
+	</div>
+				<h1 class="entry__title">CTF: MBR - Internet Protocol</h1>
+				<div class="entry__content"><p><a href="/posts/2019/master-boot-record/">MBR Capture the Flag Challenge</a></p>
+<p>Album released: 20 Mar 2019</p>
+<p><a href="https://masterbootrecord.bandcamp.com/album/internet-protocol">https://masterbootrecord.bandcamp.com/album/internet-protocol</a></p>
+<blockquote>
+<p>Note: This is the same challenge that&rsquo;s currently (20 Mar 2020) on the <a href="http://mbrserver.com">http://mbrserver.com</a> landing page.</p>
+</blockquote>
+<blockquote>
+<p>Note: There&rsquo;s a guide with helpful hints here: <a href="http://mbrserver.com/guide/">http://mbrserver.com/guide/</a></p>
+</blockquote>
+<p>User is in pop3
+pw is gopher</p>
+<p>hidden data in audio and image files. steganography. no password. &ldquo;mona lisa&rdquo;</p>
+<h3 id="secret">Secret</h3>
+<pre><code class="language-code" data-lang="code">087 101 108 099 111 109 101 032 098 097 099 107 032 097 103 097 105 110 032 119 104 101 114 101 032 105 116 032 097 108 108 032 098 101 103 097 110 013 010 079 112 101 110 032 097 114 101 032 116 104 101 032 112 111 114 116 115 046 032 083 101 114 118 105 099 101 115 032 097 108 108 032 115 116 097 114 116 101 100 046 013 010 075 110 111 099 107 032 097 116 032 101 118 101 114 121 032 100 111 111 114 032 097 110 100 032 103 114 097 098 032 116 104 101 032 109 105 115 115 105 110 103 032 115 116 114 105 110 103 115 013 010 080 117 116 032 116 104 101 109 032 105 110 032 097 032 114 111 119 032 097 110 100 032 099 114 097 099 107 032 116 104 101 032 099 111 100 101 032 116 111 032 119 105 110 013 010 013 010 083 099 097 110 110 105 110 103 032 099 108 111 115 101 032 116 104 101 032 102 105 108 101 115 032 109 097 121 032 114 101 118 101 097 108 032 115 111 109 101 032 116 104 105 110 103 115 013 010 068 097 116 097 032 121 111 117 032 099 097 110 039 116 032 104 101 097 114 046 032 068 097 116 097 032 121 111 117 032 099 097 110 039 116 032 115 101 101 046 013 010 083 099 097 116 116 101 114 101 100 032 097 114 101 032 116 104 101 032 099 108 117 101 115 032 097 108 108 032 097 114 111 117 110 100 032 116 104 101 032 100 105 115 107 013 010 083 111 109 101 032 097 114 101 032 105 110 032 112 108 097 105 110 032 115 105 103 104 116 032 115 111 109 101 032 121 111 117 032 110 101 101 100 032 116 111 032 116 104 105 110 107 013 010 013 010 067 104 101 099 107 032 121 111 117 114 032 109 097 105 108 032 102 111 114 032 109 101 115 115 097 103 101 115 044 032 108 111 103 032 111 110 032 073 082 067 013 010 070 101 101 108 105 110 103 032 111 108 100 032 097 108 114 101 097 100 121 063 032 079 104 032 073 032 098 101 116 032 121 111 117 032 100 105 100 046 013 010 089 111 117 032 119 105 108 108 032 110 101 101 100 032 115 111 109 101 032 116 111 111 108 115 044 032 108 111 111 107 032 097 114 111 117 110 100 032 102 111 114 032 104 097 099 107 115 013 010 084 097 108 107 032 119 105 116 104 032 097 108 108 032 116 104 101 032 100 097 101 109 111 110 115 032 104 105 100 105 110 103 032 105 110 032 116 104 101 032 100 097 114 107 013 010 013 010 078 111 119 032 100 111 110 039 116 032 098 101 032 097 102 114 097 105 100 046 032 073 116 039 115 032 097 032 115 105 109 112 108 101 032 103 097 109 101 046 013 010 065 108 108 032 121 111 117 032 110 101 101 100 032 097 114 101 032 109 101 109 111 114 105 101 115 032 098 117 114 105 101 100 032 105 110 032 121 111 117 114 032 098 114 097 105 110 013 010 070 111 114 032 105 116 039 115 032 105 110 032 116 104 101 032 112 097 115 116 032 119 104 101 114 101 032 121 111 117 032 110 101 101 100 032 116 111 032 115 116 097 114 116 013 010 083 117 114 102 105 110 103 032 108 105 107 101 032 097 032 112 105 114 097 116 101 046 032 073 032 119 105 115 104 032 121 111 117 032 103 111 111 100 032 108 117 099 107 046</code></pre>
+<h3 id="analysis">Analysis</h3>
+<p>Looks like ASCII again, just pasted it in my simple decoder:</p>
+<pre><code>Welcome back again where it all began
+Open are the ports. Services all started.
+Knock at every door and grab the missing strings
+Put them in a row and crack the code to win
+
+Scanning close the files may reveal some things
+Data you can't hear. Data you can't see.
+Scattered are the clues all around the disk
+Some are in plain sight some you need to think
+
+Check your mail for messages, log on IRC
+Feeling old already? Oh I bet you did.
+You will need some tools, look around for hacks
+Talk with all the daemons hiding in the dark
+
+Now don't be afraid. It's a simple game.
+All you need are memories buried in your brain
+For it's in the past where you need to start
+Surfing like a pirate. I wish you good luck.
+</code></pre><p>An port scan of mbrserver.com shows:</p>
+<pre><code>&gt; nmap -vA mbrserver.com
+Scanning mbrserver.com (80.211.167.123) [1000 ports]
+Discovered open port 21/tcp on 80.211.167.123
+Discovered open port 110/tcp on 80.211.167.123
+Discovered open port 80/tcp on 80.211.167.123
+Discovered open port 23/tcp on 80.211.167.123
+Discovered open port 6667/tcp on 80.211.167.123
+Discovered open port 70/tcp on 80.211.167.123
+</code></pre><h4 id="gopher">Gopher</h4>
+<p>First, I tried gopher since I could use a <a href="http://gopher.floodgap.com/gopher/gw">web-based client</a> rather than installing one on my machine.</p>
+<p>There&rsquo;re two files: <code>welcome.txt</code> and <code>gw.png</code>. The text file has a 71kB Base64 string.</p>
+<blockquote>
+<p><code>welcome.txt</code></p>
+</blockquote>
+<pre><code>WELCOME BACK TO THE EARLY 90'S! HERE'S YOUR E-MAIL PASSWORD:
+
+iVBORw0KGgoAAAANSUh...
+</code></pre><p>The PNG has an MBR logo and rows of binary octets. I tried a few attempts at OCR, but could not get
+it to parse the 0s and 1s reliably. I transcribed 4 rows, but then found: http://80.211.167.123/mbr.png.txt</p>
+<pre><code>00110011 00110001 00100000 00110011 00110000 00100000 00110011
+00110111 00100000 00110010 00110000 00100000 00110011 00110000
+00100000 00110011 00111000 00100000 00110011 00110000 00100000
+00110010 00110000 00100000 00110011 00110001 00100000 00110011
+00110001 00100000 00110011 00110001 00100000 00110010 00110000
+00100000 00110011 00110000 00100000 00110011 00110100 00100000
+00110011 00110111 00100000 00110010 00110000 00100000 00110011
+00110000 00100000 00110011 00111001 00100000 00110011 00110000
+00100000 00110010 00110000 00100000 00110011 00110000 00100000
+00110011 00111001 00100000 00110011 00111000 00100000 00110010
+00110000 00100000 00110011 00110001 00100000 00110011 00110000
+00100000 00110011 00111001 00100000 00110010 00110000 00100000
+00110011 00110000 00100000 00110011 00110111 00100000 00110011
+00110110 00100000 00110010 00110000 00100000 00110011 00110000
+00100000 00110011 00111000 00100000 00110011 00110011 00100000
+00110010 00110000 00100000 00110011 00110000 00100000 00110011
+00110110 00100000 00110011 00110101 00100000 00110010 00110000
+00100000 00110011 00110000 00100000 00110011 00110100 00100000
+00110011 00111001 00100000 00110010 00110000 00100000 00110011
+00110000 00100000 00110011 00110101 00100000 00110011 00110010
+00100000 00110010 00110000 00100000 00110011 00110000 00100000
+00110011 00110101 00100000 00110011 00110100 00100000 00110010
+00110000 00100000 00110011 00110000 00100000 00110011 00111001
+00100000 00110011 00110111 00100000 00110010 00110000 00100000
+00110011 00110001 00100000 00110011 00110000 00100000 00110011
+00110001 00100000 00110010 00110000 00100000 00110011 00110001
+00100000 00110011 00110000 00100000 00110011 00110100
+</code></pre><p>I don&rsquo;t see any bits above the 2^5 place, so <code>63</code> decimal max. Maybe ASCCI.</p>
+<p>It results in: <code>31 30 37 20 30 38 30 20 31 31 31 20 30 34 37 20 30 39 30 20 30 39 38 20 31 30 39 20 30 37 36 20 30 38 33 20 30 36 35 20 30 34 39 20 30 35 32 20 30 35 34 20 30 39 37 20 31 30 31 20 31 30 34</code>.</p>
+<p>If you decode those as ASCII characters, it results in:</p>
+<pre><code>var s = &quot;31 30 37 20 30 38 30 20 31 31 31 20 30 34 37 20 30 39 30 20 30 39 38 20 31 30 39 20 30 37 36 20 30 38 33 20 30 36 35 20 30 34 39 20 30 35 32 20 30 35 34 20 30 39 37 20 31 30 31 20 31 30 34&quot;
+console.log(s.split(' ').map(c =&gt; String.fromCharCode(parseInt(c, 16))).join(''));
+107 080 111 047 090 098 109 076 083 065 049 052 054 097 101 104
+
+var s = &quot;107 080 111 047 090 098 109 076 083 065 049 052 054 097 101 104&quot;
+console.log(s.split(' ').map(c =&gt; String.fromCharCode(parseInt(c, 10))).join(''));
+kPo/ZbmLSA146aeh
+</code></pre><h4 id="ftp-server">FTP Server</h4>
+<p>There are two &ldquo;out of place&rdquo; files here, a BMP and a WAV file. There&rsquo;s some steganography involved.
+I tried using GCHQ&rsquo;s <a href="https://gchq.github.io/CyberChef/">CyberChef</a> and filtering out the least significant bits, but it didn&rsquo;t work quite right.
+After some additional searching the software to use is: <a href="https://download.cnet.com/Xiao-Steganography/3000-2092_4-10541494.html">XIAO Seganography</a>, which turned out to be
+way down on the page of search results. And it looks super shady. I can confirm it works on 64-bit prefix Wine, though.</p>
+<p>The BMP reveals just <code>nothingiseverything</code> and the WAV:</p>
+<pre><code>Congratulations! 
+
+Here is the second part of the code:
+
+30 38 34 20 30 38 33 20 30 35 34 20 31 30 37 20 31 31 35 20 31 31 33 20 31 30 34 20 31 32 32 20 31 31 36 20 30 35 35 20 30 39 30 20 31 31 38 20 31 31 34 20 30 38 35 20 31 31 33 20 31 30 39
+</code></pre><p>Which is literal ASCII integers in hexadecimal (the <code>20</code>s give it away): <code>TS6ksqhzt7ZvrUqm</code></p>
+<h4 id="irc-server">IRC Server</h4>
+<p>The IRC server shows this on connecting: <code>This is the last part of the string: KLBioykc7vK8rEso</code></p>
+<h4 id="bbs-server">BBS Server</h4>
+<p>Connecting and browsing there&rsquo;s a message saying the first part of the string is on Gopher.</p>
+<pre><code>Some hints for the FTP files.
+
+Hint1) Beware the cats. They can contain malware.
+
+Hint2) Mona Lisa knows the solution.
+
+Hint3) Don't call that phone number LOL
+
+Hint4) Beware of red herrings!
+
+Hint5) Google it and go for the best!
+</code></pre></div>
+				
+				<footer class="entry__footer">
+					
+					
+<div class="entry__share share">
+	<a class="share__link btn" title="Share on Twitter" href="https://twitter.com/intent/tweet/?url=https%3a%2f%2fnearwood.dev%2fposts%2f2020%2fctf-mbr-ip%2f&amp;text=CTF%3a%20MBR%20-%20Internet%20Protocol" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, 'Share on Twitter', 'width=800,height=450,resizable=yes,toolbar=0,status=0'); return false">
+		<svg class="share__icon" aria-label="Twitter" role="img" width="32" height="32" viewBox="0 0 512 512"><path d="M437 152a72 72 0 0 1-40 12 72 72 0 0 0 32-40 72 72 0 0 1-45 17 72 72 0 0 0-122 65 200 200 0 0 1-145-74 72 72 0 0 0 22 94 72 72 0 0 1-32-7 72 72 0 0 0 56 69 72 72 0 0 1-32 1 72 72 0 0 0 67 50 200 200 0 0 1-105 29 200 200 0 0 0 309-179 200 200 0 0 0 35-37"/></svg>
+	</a>
+	<a class="share__link btn" title="Share on Reddit" href="https://www.reddit.com/submit?url=https%3a%2f%2fnearwood.dev%2fposts%2f2020%2fctf-mbr-ip%2f&amp;title=CTF%3a%20MBR%20-%20Internet%20Protocol" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, 'Share on Reddit', 'width=832,height=624,toolbar=0,status=0'); return false">
+		<svg class="share__icon" aria-label="Reddit" role="img" width="32" height="32" viewBox="0 0 512 512"><path fill-rule="evenodd" d="M375 146a32 32 0 1 0-29-46l-65-13c-5-1-9 2-10 6l-22 97c-45 1-85 15-113 36a42 42 0 1 0-45 69l-1 12c0 65 74 117 166 117s166-52 166-117l-1-11a42 42 0 1 0-44-69c-28-21-67-35-111-37l19-86 58 13a32 32 0 0 0 32 29zM190 353c2-1 4 0 5 1 15 11 38 18 61 18s46-6 61-18a7 7 0 0 1 8 10c-18 14-44 21-69 21-25-1-51-7-69-21a6 6 0 0 1 3-11zm23-44a31 31 0 1 1-44-44 31 31 0 0 1 44 44zm130 0a31 31 0 1 0-44-44 31 31 0 0 0 44 44z"/></svg>
+	</a>
+</div>
+				</footer>
+				
+			</article>
+		</div>
+	</main>
+	
+	
+
+
+
+	
+
+	</div>
+	<footer class="footer">
+<div class="footer__social social">
+		<a class="social__link" target="_blank" rel="noopener noreferrer" href="https://twitter.com/nearwood">
+			<svg class="social__icon" aria-label="Twitter" role="img" width="32" height="32" viewBox="0 0 512 512"><path d="M437 152a72 72 0 0 1-40 12 72 72 0 0 0 32-40 72 72 0 0 1-45 17 72 72 0 0 0-122 65 200 200 0 0 1-145-74 72 72 0 0 0 22 94 72 72 0 0 1-32-7 72 72 0 0 0 56 69 72 72 0 0 1-32 1 72 72 0 0 0 67 50 200 200 0 0 1-105 29 200 200 0 0 0 309-179 200 200 0 0 0 35-37"/></svg>
+		</a>
+		<a class="social__link" target="_blank" rel="noopener noreferrer" href="https://github.com/nearwood">
+			<svg class="social__icon" aria-label="Github" role="img" width="32" height="32" viewBox="0 0 512 512"><path d="M335 499c14 0 12 17 12 17H165s-2-17 12-17c13 0 16-6 16-12l-1-50c-71 16-86-28-86-28-12-30-28-37-28-37-24-16 1-16 1-16 26 2 40 26 40 26 22 39 59 28 74 22 2-17 9-28 16-35-57-6-116-28-116-126 0-28 10-51 26-69-3-6-11-32 3-67 0 0 21-7 70 26 42-12 86-12 128 0 49-33 70-26 70-26 14 35 6 61 3 67 16 18 26 41 26 69 0 98-60 120-117 126 10 8 18 24 18 48l-1 70c0 6 3 12 16 12z"/></svg>
+		</a>
+		<a class="social__link" target="_blank" rel="noopener noreferrer" href="https://stackoverflow.com/users/numberid">
+			<svg class="social__icon" aria-label="Stack Overflow" role="img" width="32" height="32" viewBox="0 0 512 512"><g stroke-width="30"><path fill="none" d="M125 297v105h241V297"/><path d="M170 341h150m-144-68l148 31M199 204l136 64m-95-129l115 97M293 89l90 120"/></g></svg>
+		</a>
+</div>
+	<div class="footer__copyright">© 2020 Nick Earwood. <span class="footer__copyright-credits">Powered by <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/vimux/binario" rel="nofollow noopener" target="_blank">Binario</a> theme.</span></div>
+</footer>
+<script src="/js/menu.js"></script>
+</body>
+</html>
