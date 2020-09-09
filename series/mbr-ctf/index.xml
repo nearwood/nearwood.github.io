@@ -126,5 +126,27 @@ The albums routinely contain &amp;ldquo;secrets&amp;rdquo; as the album descript
 &lt;p&gt;Below is a list of links to a post about each album and whether or not it I solved it.&lt;/p&gt;</description>
     </item>
     
+    <item>
+      <title>CTF: MBR - FIXMBR</title>
+      <link>https://nearwood.dev/posts/2019/ctf-mbr-fixmbr/</link>
+      <pubDate>Mon, 09 Dec 2019 14:54:29 -0500</pubDate>
+      
+      <guid>https://nearwood.dev/posts/2019/ctf-mbr-fixmbr/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://nearwood.dev/posts/2019/master-boot-record/&#34;&gt;MBR Capture the Flag Challenge&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Album released: 01 Sep 2016&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://masterbootrecord.bandcamp.com/album/c-fixmbr&#34;&gt;https://masterbootrecord.bandcamp.com/album/c-fixmbr&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>CTF: MBR - 486DX</title>
+      <link>https://nearwood.dev/posts/2019/ctf-mbr-486dx/</link>
+      <pubDate>Mon, 09 Dec 2019 14:44:39 -0500</pubDate>
+      
+      <guid>https://nearwood.dev/posts/2019/ctf-mbr-486dx/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://nearwood.dev/posts/2019/master-boot-record/&#34;&gt;MBR Capture the Flag Challenge&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Album released: 15 May 2017&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://masterbootrecord.bandcamp.com/album/486dx&#34;&gt;https://masterbootrecord.bandcamp.com/album/486dx&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
   </channel>
 </rss>
