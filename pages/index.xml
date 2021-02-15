@@ -7,11 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2019 Nicholas Earwood</copyright>
-    <lastBuildDate>Thu, 11 Dec 2014 03:10:39 +0000</lastBuildDate>
-    
-	<atom:link href="https://nearwood.dev/pages/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Thu, 11 Dec 2014 03:10:39 +0000</lastBuildDate><atom:link href="https://nearwood.dev/pages/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>MSQur</title>
       <link>https://nearwood.dev/pages/msqur/</link>

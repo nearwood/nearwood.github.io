@@ -7,15 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2019 Nicholas Earwood</copyright>
-    <lastBuildDate>Mon, 31 Aug 2020 22:37:43 -0500</lastBuildDate>
-    
-	<atom:link href="https://nearwood.dev/series/index.xml" rel="self" type="application/rss+xml" />
-    
+    <lastBuildDate>Mon, 15 Feb 2021 16:40:12 -0600</lastBuildDate><atom:link href="https://nearwood.dev/series/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>umbra</title>
+      <link>https://nearwood.dev/series/umbra/</link>
+      <pubDate>Mon, 15 Feb 2021 16:40:12 -0600</pubDate>
+      
+      <guid>https://nearwood.dev/series/umbra/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>saas-project</title>
       <link>https://nearwood.dev/series/saas-project/</link>
-      <pubDate>Mon, 31 Aug 2020 22:37:43 -0500</pubDate>
+      <pubDate>Tue, 29 Dec 2020 19:34:33 -0600</pubDate>
       
       <guid>https://nearwood.dev/series/saas-project/</guid>
       <description></description>

@@ -10,7 +10,7 @@
 	<meta name="description" content="">
 		<meta property="og:title" content="Delete all your reddit comments" />
 <meta property="og:description" content="I noticed that my reddit account had a few posts that were too revealing. So, I decided to remove them. I stumbled upon a couple greasemonkey scripts to delete all posts, which got my interested in seeing if I could write up a quick script to do the same that could run in the Developer Tools of any browser, rather than relying on an extension.
-The catch is that you, apparently, should edit each comment&rsquo;s content to remove it before deleting it, otherwise it&rsquo;s still cached in other users&rsquo; inboxes or something." />
+The catch is that you, apparently, should edit each comment&rsquo;s content to remove it before deleting it, otherwise it&rsquo;s still cached in other users&#39; inboxes or something." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://nearwood.dev/delete-all-your-reddit-comments/" />
 <meta property="article:published_time" content="2013-08-07T00:29:51+00:00" />
@@ -19,7 +19,7 @@ The catch is that you, apparently, should edit each comment&rsquo;s content to r
 		<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Delete all your reddit comments"/>
 <meta name="twitter:description" content="I noticed that my reddit account had a few posts that were too revealing. So, I decided to remove them. I stumbled upon a couple greasemonkey scripts to delete all posts, which got my interested in seeing if I could write up a quick script to do the same that could run in the Developer Tools of any browser, rather than relying on an extension.
-The catch is that you, apparently, should edit each comment&rsquo;s content to remove it before deleting it, otherwise it&rsquo;s still cached in other users&rsquo; inboxes or something."/>
+The catch is that you, apparently, should edit each comment&rsquo;s content to remove it before deleting it, otherwise it&rsquo;s still cached in other users&#39; inboxes or something."/>
 
 	<link rel="stylesheet" href="/css/bundle.css">
 	<link rel="stylesheet" href="/css/themes/dark-orange.css">
@@ -37,6 +37,15 @@ if (!doNotTrack) {
 </script>
 <script async src='https://www.google-analytics.com/analytics.js'></script>
 
+	
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-5743113-11"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-5743113-11');
+	</script>
 </head>
 <body>
 	<header class="header">
@@ -87,7 +96,7 @@ if (!doNotTrack) {
 	</div>
 				<h1 class="entry__title">Delete all your reddit comments</h1>
 				<div class="entry__content"><p>I noticed that my reddit account had a few posts that were too revealing. So, I decided to remove them. I stumbled upon a couple greasemonkey scripts to delete <em>all</em> posts, which got my interested in seeing if I could write up a quick script to do the same that could run in the Developer Tools of any browser, rather than relying on an extension.</p>
-<p>The catch is that you, apparently, should edit each comment&rsquo;s content to remove it before deleting it, otherwise it&rsquo;s still cached in other users&rsquo; inboxes or something. Another catch is that reddit&rsquo;s servers don&rsquo;t like lots of simultaneous requests.</p>
+<p>The catch is that you, apparently, should edit each comment&rsquo;s content to remove it before deleting it, otherwise it&rsquo;s still cached in other users' inboxes or something. Another catch is that reddit&rsquo;s servers don&rsquo;t like lots of simultaneous requests.</p>
 <p>Still, it turned out easier than I expected:</p>
 <pre class="brush: jscript; title: ; notranslate" title="">var total = $('div#siteTable div.comment:not(.hidden)').length;
 $('div#siteTable div.comment:not(.hidden)').each(function (i) {
@@ -175,7 +184,7 @@ $('div#siteTable div.comment:not(.hidden)').each(function (i) {
 			<svg class="social__icon" aria-label="Stack Overflow" role="img" width="32" height="32" viewBox="0 0 512 512"><g stroke-width="30"><path fill="none" d="M125 297v105h241V297"/><path d="M170 341h150m-144-68l148 31M199 204l136 64m-95-129l115 97M293 89l90 120"/></g></svg>
 		</a>
 </div>
-	<div class="footer__copyright">© 2020 Nick Earwood. <span class="footer__copyright-credits">Powered by <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/vimux/binario" rel="nofollow noopener" target="_blank">Binario</a> theme.</span></div>
+	<div class="footer__copyright">© 2021 Nick Earwood. <span class="footer__copyright-credits">Powered by <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/vimux/binario" rel="nofollow noopener" target="_blank">Binario</a> theme.</span></div>
 </footer>
 <script src="/js/menu.js"></script>
 </body>

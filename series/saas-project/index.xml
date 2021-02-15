@@ -7,10 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2019 Nicholas Earwood</copyright>
-    <lastBuildDate>Mon, 31 Aug 2020 22:37:43 -0500</lastBuildDate>
-    
-	<atom:link href="https://nearwood.dev/series/saas-project/index.xml" rel="self" type="application/rss+xml" />
-    
+    <lastBuildDate>Tue, 29 Dec 2020 19:34:33 -0600</lastBuildDate><atom:link href="https://nearwood.dev/series/saas-project/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Typefast</title>
+      <link>https://nearwood.dev/posts/2020/typefast/</link>
+      <pubDate>Tue, 29 Dec 2020 19:34:33 -0600</pubDate>
+      
+      <guid>https://nearwood.dev/posts/2020/typefast/</guid>
+      <description>&lt;p&gt;Earlier this month, I launched my new SaaS site: &lt;a href=&#34;https://typefast.dev&#34;&gt;https://typefast.dev&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s an online typing website I designed to be better and cheaper than competitors. And I believe it is.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>New SaaS Project</title>

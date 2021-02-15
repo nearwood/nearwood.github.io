@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>umbra on Nick</title>
+    <link>https://nearwood.dev/series/umbra/</link>
+    <description>Recent content in umbra on Nick</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© 2019 Nicholas Earwood</copyright>
+    <lastBuildDate>Mon, 15 Feb 2021 16:40:12 -0600</lastBuildDate><atom:link href="https://nearwood.dev/series/umbra/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Umbra</title>
+      <link>https://nearwood.dev/posts/2021/umbra/</link>
+      <pubDate>Mon, 15 Feb 2021 16:40:12 -0600</pubDate>
+      
+      <guid>https://nearwood.dev/posts/2021/umbra/</guid>
+      <description>&lt;p&gt;Last week, I decided for my next side project I&amp;rsquo;d try out live streaming. So, I created &lt;a href=&#34;https://www.twitch.tv/blozup&#34;&gt;a Twitch account&lt;/a&gt;, installed Twitch&amp;rsquo;s streaming software (and then moved to OBS), and started just last week.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

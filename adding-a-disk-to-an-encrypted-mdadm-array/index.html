@@ -9,8 +9,8 @@
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
 		<meta property="og:title" content="Adding a disk to an encrypted mdadm array" />
-<meta property="og:description" content="My RAID6 was originally planned with 6 drives, but only had 5 for a while due to space concerns with the case. However, I found as a file, media, and multiple cryptocurrency node it filled up the 2.7TB pretty quickly. So, I got a new case (and some more RAM), which has proper space for 6 3.5&rdquo; drives (and 2 5.25&rdquo;). When migrating to this I decided to add the extra 1TB WD Red NAS drive I bought but have not been able to use.
-The case is a Fractal Design Define Mini, and I am thoroughly impressed. Six 3.5&rdquo; slots, two 5.25&rdquo; external slots, and lots of sound padding on the doors and sides.
+<meta property="og:description" content="My RAID6 was originally planned with 6 drives, but only had 5 for a while due to space concerns with the case. However, I found as a file, media, and multiple cryptocurrency node it filled up the 2.7TB pretty quickly. So, I got a new case (and some more RAM), which has proper space for 6 3.5&quot; drives (and 2 5.25&quot;). When migrating to this I decided to add the extra 1TB WD Red NAS drive I bought but have not been able to use.
+The case is a Fractal Design Define Mini, and I am thoroughly impressed. Six 3.5&quot; slots, two 5.25&quot; external slots, and lots of sound padding on the doors and sides.
 " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://nearwood.dev/adding-a-disk-to-an-encrypted-mdadm-array/" />
@@ -19,8 +19,8 @@ The case is a Fractal Design Define Mini, and I am thoroughly impressed. Six 3.5
 
 		<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Adding a disk to an encrypted mdadm array"/>
-<meta name="twitter:description" content="My RAID6 was originally planned with 6 drives, but only had 5 for a while due to space concerns with the case. However, I found as a file, media, and multiple cryptocurrency node it filled up the 2.7TB pretty quickly. So, I got a new case (and some more RAM), which has proper space for 6 3.5&rdquo; drives (and 2 5.25&rdquo;). When migrating to this I decided to add the extra 1TB WD Red NAS drive I bought but have not been able to use.
-The case is a Fractal Design Define Mini, and I am thoroughly impressed. Six 3.5&rdquo; slots, two 5.25&rdquo; external slots, and lots of sound padding on the doors and sides.
+<meta name="twitter:description" content="My RAID6 was originally planned with 6 drives, but only had 5 for a while due to space concerns with the case. However, I found as a file, media, and multiple cryptocurrency node it filled up the 2.7TB pretty quickly. So, I got a new case (and some more RAM), which has proper space for 6 3.5&quot; drives (and 2 5.25&quot;). When migrating to this I decided to add the extra 1TB WD Red NAS drive I bought but have not been able to use.
+The case is a Fractal Design Define Mini, and I am thoroughly impressed. Six 3.5&quot; slots, two 5.25&quot; external slots, and lots of sound padding on the doors and sides.
 "/>
 
 	<link rel="stylesheet" href="/css/bundle.css">
@@ -39,6 +39,15 @@ if (!doNotTrack) {
 </script>
 <script async src='https://www.google-analytics.com/analytics.js'></script>
 
+	
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-5743113-11"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-5743113-11');
+	</script>
 </head>
 <body>
 	<header class="header">
@@ -89,8 +98,8 @@ if (!doNotTrack) {
 </span>
 	</div>
 				<h1 class="entry__title">Adding a disk to an encrypted mdadm array</h1>
-				<div class="entry__content"><p>My RAID6 was originally planned with 6 drives, but only had 5 for a while due to space concerns with the case. However, I found as a file, media, and multiple cryptocurrency node it filled up the 2.7TB pretty quickly. So, I got a new case (and some more RAM), which has proper space for 6 3.5&rdquo; drives (and 2 5.25&rdquo;). When migrating to this I decided to add the extra 1TB WD Red NAS drive I bought but have not been able to use.</p>
-<p>The case is a Fractal Design Define Mini, and I am thoroughly impressed. Six 3.5&rdquo; slots, two 5.25&rdquo; external slots, and lots of sound padding on the doors and sides.</p>
+				<div class="entry__content"><p>My RAID6 was originally planned with 6 drives, but only had 5 for a while due to space concerns with the case. However, I found as a file, media, and multiple cryptocurrency node it filled up the 2.7TB pretty quickly. So, I got a new case (and some more RAM), which has proper space for 6 3.5&quot; drives (and 2 5.25&quot;). When migrating to this I decided to add the extra 1TB WD Red NAS drive I bought but have not been able to use.</p>
+<p>The case is a Fractal Design Define Mini, and I am thoroughly impressed. Six 3.5&quot; slots, two 5.25&quot; external slots, and lots of sound padding on the doors and sides.</p>
 <p><img src="/images/server.jpg" alt="My SuperMicro server in the Fractal Design case"></p>
 <p>So, at first I was worried it would be a huge PITA to add another drive, since I have a fake RAID under a encrypted volume. But, Linux. It was easy. Keep in mind in this instance,  the new device node is <code>/dev/sdf</code>, yours will likely be different. After connecting the disk and powering up, partition the disk. I have set it up identical to all other disks, 128MiB EFI partition on <code>sdf1</code>, 931.4GiB <code>sdf2</code> (you can use <code>fdisk</code>/<code>gdisk</code> to partition manually or <code>sfdisk</code> to copy the partition structure of another drive). Having the EFI partition on each disk allows me to boot if any drive fails, since the mdraid is setup only across the second partitions on each drive. That is, my boot partition is not part of the array. Note that you have to synchronize any updated kernel or boot files across these boot partitions. This can be automated with a kernel build time hook.</p>
 <p>Now you can add the disk (more accurately, the partition) as a spare:</p>
@@ -150,7 +159,7 @@ if (!doNotTrack) {
 			<svg class="social__icon" aria-label="Stack Overflow" role="img" width="32" height="32" viewBox="0 0 512 512"><g stroke-width="30"><path fill="none" d="M125 297v105h241V297"/><path d="M170 341h150m-144-68l148 31M199 204l136 64m-95-129l115 97M293 89l90 120"/></g></svg>
 		</a>
 </div>
-	<div class="footer__copyright">© 2020 Nick Earwood. <span class="footer__copyright-credits">Powered by <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/vimux/binario" rel="nofollow noopener" target="_blank">Binario</a> theme.</span></div>
+	<div class="footer__copyright">© 2021 Nick Earwood. <span class="footer__copyright-credits">Powered by <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/vimux/binario" rel="nofollow noopener" target="_blank">Binario</a> theme.</span></div>
 </footer>
 <script src="/js/menu.js"></script>
 </body>

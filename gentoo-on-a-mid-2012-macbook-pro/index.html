@@ -9,7 +9,7 @@
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
 		<meta property="og:title" content="Gentoo on a mid-2012 MacBook Pro" />
-<meta property="og:description" content="If your sick of your brand new MacBook just working (more or less), and you just feel like modifying your kernel&rsquo;s source to get your computer to work right, you&rsquo;ve come to the right place. I (finally) managed to get Gentoo booting on a new MacBook Pro (15&rdquo;, Core i7, mid-2012) alongside OS X 10.8.2. I suppose it actually wasn&rsquo;t that bad, it could have been much worse. I only had to reinstall OS X once after a wonky partition editor&hellip;." />
+<meta property="og:description" content="If your sick of your brand new MacBook just working (more or less), and you just feel like modifying your kernel&rsquo;s source to get your computer to work right, you&rsquo;ve come to the right place. I (finally) managed to get Gentoo booting on a new MacBook Pro (15&quot;, Core i7, mid-2012) alongside OS X 10.8.2. I suppose it actually wasn&rsquo;t that bad, it could have been much worse. I only had to reinstall OS X once after a wonky partition editor&hellip;." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://nearwood.dev/gentoo-on-a-mid-2012-macbook-pro/" />
 <meta property="article:published_time" content="2012-11-19T05:50:42+00:00" />
@@ -17,7 +17,7 @@
 
 		<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Gentoo on a mid-2012 MacBook Pro"/>
-<meta name="twitter:description" content="If your sick of your brand new MacBook just working (more or less), and you just feel like modifying your kernel&rsquo;s source to get your computer to work right, you&rsquo;ve come to the right place. I (finally) managed to get Gentoo booting on a new MacBook Pro (15&rdquo;, Core i7, mid-2012) alongside OS X 10.8.2. I suppose it actually wasn&rsquo;t that bad, it could have been much worse. I only had to reinstall OS X once after a wonky partition editor&hellip;."/>
+<meta name="twitter:description" content="If your sick of your brand new MacBook just working (more or less), and you just feel like modifying your kernel&rsquo;s source to get your computer to work right, you&rsquo;ve come to the right place. I (finally) managed to get Gentoo booting on a new MacBook Pro (15&quot;, Core i7, mid-2012) alongside OS X 10.8.2. I suppose it actually wasn&rsquo;t that bad, it could have been much worse. I only had to reinstall OS X once after a wonky partition editor&hellip;."/>
 
 	<link rel="stylesheet" href="/css/bundle.css">
 	<link rel="stylesheet" href="/css/themes/dark-orange.css">
@@ -35,6 +35,15 @@ if (!doNotTrack) {
 </script>
 <script async src='https://www.google-analytics.com/analytics.js'></script>
 
+	
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-5743113-11"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-5743113-11');
+	</script>
 </head>
 <body>
 	<header class="header">
@@ -84,7 +93,7 @@ if (!doNotTrack) {
 </span>
 	</div>
 				<h1 class="entry__title">Gentoo on a mid-2012 MacBook Pro</h1>
-				<div class="entry__content"><p>If your sick of your brand new MacBook just working (more or less), and you just feel like modifying your kernel&rsquo;s source to get your computer to work right, you&rsquo;ve come to the right place. I (finally) managed to get Gentoo booting on a new MacBook Pro (15&rdquo;, Core i7, mid-2012) alongside OS X 10.8.2. I suppose it actually wasn&rsquo;t that bad, it could have been much worse. I only had to reinstall OS X once after a wonky partition editor&hellip;. edited a little more than I wanted.</p>
+				<div class="entry__content"><p>If your sick of your brand new MacBook just working (more or less), and you just feel like modifying your kernel&rsquo;s source to get your computer to work right, you&rsquo;ve come to the right place. I (finally) managed to get Gentoo booting on a new MacBook Pro (15&quot;, Core i7, mid-2012) alongside OS X 10.8.2. I suppose it actually wasn&rsquo;t that bad, it could have been much worse. I only had to reinstall OS X once after a wonky partition editor&hellip;. edited a little more than I wanted.</p>
 <p>What I have in the end is a MacBook Pro that dual boots Gentoo Linux and OS X using rEFInd. Gentoo boots via EFI, I did not use a boot loader (in the traditional sense).</p>
 <p>My first attempt-you know, the one where I left my backup drive at work, was a miserable failure from the get-go. I went with what I was reading online, to use a boot manager/loader. Specifically GRUB/GRUB2 (I tried both). Also I used rEFIt, which has a wobbly gptsync utility, that as far as I can tell, hosed my entire drive. I had even tried building a modified gptsync from source. Although, maybe it was gparted. Since I had problems with that on both occassions.</p>
 <p>In either case, I couldn&rsquo;t get gparted/parted to change the partition type to linux (0x83 or  82 or whatever it is). It kept reporting that the partition I created was &lsquo;MSDOS&rsquo;. And in both cases, I shrugged it off because as far as I know, the kernel doesn&rsquo;t really care as long as it has the drivers to load the root filesystem&rsquo;s actual type.</p>
@@ -154,7 +163,7 @@ if (!doNotTrack) {
 			<svg class="social__icon" aria-label="Stack Overflow" role="img" width="32" height="32" viewBox="0 0 512 512"><g stroke-width="30"><path fill="none" d="M125 297v105h241V297"/><path d="M170 341h150m-144-68l148 31M199 204l136 64m-95-129l115 97M293 89l90 120"/></g></svg>
 		</a>
 </div>
-	<div class="footer__copyright">© 2020 Nick Earwood. <span class="footer__copyright-credits">Powered by <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/vimux/binario" rel="nofollow noopener" target="_blank">Binario</a> theme.</span></div>
+	<div class="footer__copyright">© 2021 Nick Earwood. <span class="footer__copyright-credits">Powered by <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/vimux/binario" rel="nofollow noopener" target="_blank">Binario</a> theme.</span></div>
 </footer>
 <script src="/js/menu.js"></script>
 </body>

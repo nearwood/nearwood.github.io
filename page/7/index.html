@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en-us">
 <head>
-	<meta name="generator" content="Hugo 0.74.3" />
+	<meta name="generator" content="Hugo 0.80.0" />
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,7 +13,7 @@
 <meta property="og:description" content="Responsive card-based &amp; code-light Hugo theme" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://nearwood.dev/" />
-<meta property="og:updated_time" content="2020-09-09T14:47:04-05:00" />
+<meta property="og:updated_time" content="2021-02-15T16:52:37-06:00" />
 
 		<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Nick"/>
@@ -36,6 +36,15 @@ if (!doNotTrack) {
 </script>
 <script async src='https://www.google-analytics.com/analytics.js'></script>
 
+	
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-5743113-11"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-5743113-11');
+	</script>
 </head>
 <body>
 	<header class="header">
@@ -73,6 +82,38 @@ if (!doNotTrack) {
 	
 	<main class="main">
 			<div class="cards">
+					<div class="card card--2col">
+					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/libgdx/">LibGDX</a></h1>
+	<div class="entry__content">I&rsquo;ve been busy these past few weeks trying to get my 280Z autocross ready, and porting my C++/DirectX windows game to Java with LibGDX.
+Overall I am very impressed with LibGDX. The GUI API isn&rsquo;t very good though. I&rsquo;ve decided to roll my own (again!) for this game. At least the first release. I see that the LibGDX one supports nice fonts and textures and whatnot. It shouldn&rsquo;t be too difficult to reimplement the base class with it and refactor when it matures.</div>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2013-04-27T02:37:32Z">27 Apr 2013</time>
+	<time class="entry__meta-lastmod meta-lastmod" datetime="2019-12-10T10:57:45-06:00">Updated: 10 Dec 2019</time>
+<span class="entry__meta-categories meta-categories">
+	<span class="meta-categories__list">Categories:
+		<a class="meta-categories__link" href="/categories/programming" rel="category">Programming</a>
+	</span>
+</span>
+	</div>
+</article>
+					</div>
+					<div class="card card--2col">
+					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/moving-home-server-to-arch/">Moving home server to Arch</a></h1>
+	<div class="entry__content">I&rsquo;ve ordered a 2 terabyte hard drive to appropriately serve as a backup drive for my home server. This would normally just require swapping the old backup drive out for it, and then performing a backup. But I figure since I&rsquo;ll have it down anyway, I&rsquo;ll have enough drives to swap to Arch Linux and get things going again with the old drive as a &hellip; backup.
+I&rsquo;ve got quite a few services setup on it, and I&rsquo;m not looking forward to moving all the config files over</div>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2013-04-26T23:13:52Z">26 Apr 2013</time>
+	<time class="entry__meta-lastmod meta-lastmod" datetime="2019-12-10T10:57:45-06:00">Updated: 10 Dec 2019</time>
+<span class="entry__meta-categories meta-categories">
+	<span class="meta-categories__list">Categories:
+		<a class="meta-categories__link" href="/categories/computing" rel="category">Computing</a>
+	</span>
+</span>
+	</div>
+</article>
+					</div>
 					<div class="card card--2col">
 					<article class="entry card__box block">
 	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/switched-to-arch-linux-from-gentoo/">Switched to Arch Linux from Gentoo</a></h1>
@@ -212,37 +253,6 @@ Replace with: \tfunction \1(
 	</div>
 </article>
 					</div>
-					<div class="card card--2col">
-					<article class="entry card__box block">
-	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/gentoo-on-a-mid-2012-macbook-pro/">Gentoo on a mid-2012 MacBook Pro</a></h1>
-	<div class="entry__content">If your sick of your brand new MacBook just working (more or less), and you just feel like modifying your kernel&rsquo;s source to get your computer to work right, you&rsquo;ve come to the right place. I (finally) managed to get Gentoo booting on a new MacBook Pro (15&rdquo;, Core i7, mid-2012) alongside OS X 10.8.2. I suppose it actually wasn&rsquo;t that bad, it could have been much worse. I only had to reinstall OS X once after a wonky partition editor&hellip;.</div>
-	<div class="entry__meta meta mt tar">
-	<time class="entry__meta-published meta-published" datetime="2012-11-19T05:50:42Z">19 Nov 2012</time>
-	<time class="entry__meta-lastmod meta-lastmod" datetime="2019-12-10T10:57:45-06:00">Updated: 10 Dec 2019</time>
-<span class="entry__meta-categories meta-categories">
-	<span class="meta-categories__list">Categories:
-		<a class="meta-categories__link" href="/categories/computing" rel="category">Computing</a>
-	</span>
-</span>
-	</div>
-</article>
-					</div>
-					<div class="card card--2col">
-					<article class="entry card__box block">
-	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/2012/qemu-on-windows/">QEMU on Windows</a></h1>
-	<div class="entry__content">After fumbling around with various downloads and patches, I was able to find a working QEMU build for windows. I am running Windows 7 64-bit, and I wanted to run an ARM system (specifically, to develop for a Stratus plug computer). Before this, I was running a virtualized Ubuntu using VirtualBox and then running QEMU within that. Performance was not noticeably bad.
-However, I had problems bridging the QEMU to the Ubuntu host, which was bridged itself.</div>
-	<div class="entry__meta meta mt tar">
-	<time class="entry__meta-published meta-published" datetime="2012-07-06T01:29:31Z">06 Jul 2012</time>
-	<time class="entry__meta-lastmod meta-lastmod" datetime="2019-12-10T10:57:45-06:00">Updated: 10 Dec 2019</time>
-<span class="entry__meta-categories meta-categories">
-	<span class="meta-categories__list">Categories:
-		<a class="meta-categories__link" href="/categories/computing" rel="category">Computing</a>
-	</span>
-</span>
-	</div>
-</article>
-					</div>
 			</div>
 	</main>
 	
@@ -252,7 +262,8 @@ However, I had problems bridging the QEMU to the Ubuntu host, which was bridged 
 				<a class="pagination__item pagination__item--desktop" href="/page/3/">3</a>
 			<span class="pagination__item pagination__item--gap">&hellip;</span>
 				<a class="pagination__item pagination__item--desktop" href="/page/6/">6</a>
-				<span class="pagination__item pagination__item--active" data-total="7">7</span>
+				<span class="pagination__item pagination__item--active" data-total="8">7</span>
+				<a class="pagination__item pagination__item--desktop" href="/page/8/">8</a>
 </div>
 
 	</div>
@@ -268,7 +279,7 @@ However, I had problems bridging the QEMU to the Ubuntu host, which was bridged 
 			<svg class="social__icon" aria-label="Stack Overflow" role="img" width="32" height="32" viewBox="0 0 512 512"><g stroke-width="30"><path fill="none" d="M125 297v105h241V297"/><path d="M170 341h150m-144-68l148 31M199 204l136 64m-95-129l115 97M293 89l90 120"/></g></svg>
 		</a>
 </div>
-	<div class="footer__copyright">© 2020 Nick Earwood. <span class="footer__copyright-credits">Powered by <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/vimux/binario" rel="nofollow noopener" target="_blank">Binario</a> theme.</span></div>
+	<div class="footer__copyright">© 2021 Nick Earwood. <span class="footer__copyright-credits">Powered by <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/vimux/binario" rel="nofollow noopener" target="_blank">Binario</a> theme.</span></div>
 </footer>
 <script src="/js/menu.js"></script>
 </body>

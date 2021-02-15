@@ -53,6 +53,15 @@ if (!doNotTrack) {
 </script>
 <script async src='https://www.google-analytics.com/analytics.js'></script>
 
+	
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-5743113-11"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-5743113-11');
+	</script>
 </head>
 <body>
 	<header class="header">
@@ -141,7 +150,7 @@ DECIMAL HEXADECIMAL DESCRIPTION
 314263106 0x12BB4642 Zip archive data, at least v2.0 to extract, compressed size: 33193, uncompressed size: 5242880, name: sbios_dual.bin
 314296995 0x12BBCAA3 End of Zip archive, footer length: 22
 </pre>
-<p>Here we go. A kernel with a sane size and name string, some recovery images, and what looks like a filesystem image! qboot_ddx.bin must be part of Ubiquitous&rsquo; <a href="https://www.ubiquitous.co.jp/en/products/qb/md/quickboot/" rel="noopener" target="_blank">QuickBoot</a> software. It does boot awfully fast, so that explains that. Would be interesting to see full kernel and init output on a stereo headunit. Well, once anyway.</p>
+<p>Here we go. A kernel with a sane size and name string, some recovery images, and what looks like a filesystem image! qboot_ddx.bin must be part of Ubiquitous' <a href="https://www.ubiquitous.co.jp/en/products/qb/md/quickboot/" rel="noopener" target="_blank">QuickBoot</a> software. It does boot awfully fast, so that explains that. Would be interesting to see full kernel and init output on a stereo headunit. Well, once anyway.</p>
 <p>Running binwalk on MAIN_V1_0_2758_0400/MainFw_1.0.2758.0400.mfu didn&rsquo;t output anything. Not sure what that is.</p>
 <p>I tried unzip to extract Soc_V2_7_0008_0600.nfu. Seemed to work, though it complained about a 41MB extra bytes at the beginning. I was really just interested in the filesystem image for the moment:</p>
 <pre class="brush: plain; light: true; title: ; notranslate" title="">[SOC_V2_7_0008_0600]$ unzip Soc_V2_7_0008_0600.nfu
@@ -208,7 +217,7 @@ DB filesave lib mnt opt run share system tmp
 			<svg class="social__icon" aria-label="Stack Overflow" role="img" width="32" height="32" viewBox="0 0 512 512"><g stroke-width="30"><path fill="none" d="M125 297v105h241V297"/><path d="M170 341h150m-144-68l148 31M199 204l136 64m-95-129l115 97M293 89l90 120"/></g></svg>
 		</a>
 </div>
-	<div class="footer__copyright">© 2020 Nick Earwood. <span class="footer__copyright-credits">Powered by <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/vimux/binario" rel="nofollow noopener" target="_blank">Binario</a> theme.</span></div>
+	<div class="footer__copyright">© 2021 Nick Earwood. <span class="footer__copyright-credits">Powered by <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/vimux/binario" rel="nofollow noopener" target="_blank">Binario</a> theme.</span></div>
 </footer>
 <script src="/js/menu.js"></script>
 </body>
